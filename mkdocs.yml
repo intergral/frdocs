@@ -1,0 +1,204 @@
+site_name: FusionReactor Documentation
+theme:
+  name: material
+  favicon: images/FRAtom_White.svg
+  logo: images/FRAtom_White.svg
+  features:
+    - navigation.sections
+    #- toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  font:  
+    text: 'Sohne'
+    code: 'monospace'
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mod
+
+nav:
+  - Home: index.md
+  - GETTING STARTED: 
+     - Introduction to FusionReactor: Getting-started/intro-to-fr.md
+     - Install FusionReactor:  Getting-started/install-fr.md
+     - Tutorials & walkthroughs: 
+        - Get to know the UI: Getting-started/Tutorials/know-the-ui.md
+        - Create a dashboard: Getting-started/Tutorials/create-dashboard.md
+        - Troubleshooting:
+           - todo.md
+  - MONITOR YOUR DATA:
+     - Best Practices:      
+           - Overview: Best-Practices/Installation/installation-overview.md
+           - Local server:
+              - ColdFusion & databases: Best-Practices/Installation/CF-guide.md
+              - Java/Lucee & databases: Best-Practices/Installation/Lucee-Java-guide.md
+              - Java/Lucee, databases & other languages: Best-Practices/Installation/Java-Lucee-OTel.md
+           - Scripted: 
+              - Java/CFML & databases: Best-Practices/Installation/scripted1.md
+              - Java/CFML, databases & other languages: Best-Practices/Installation/scripted2.md
+              - Databases & other languages: Best-Practices/Installation/scripted3.md
+           - Docker:
+              - Java/CFML & databases: Best-Practices/Installation/FR-ObsAgent.md
+              - Java/CFML, databases & other languages: Best-Practices/Installation/FR-ObsAgent-OTel.md
+              - Databases & other languages: Best-Practices/Installation/ObsAgent-OTel.md
+     - FusionReactor Agent:
+        - Overview: Monitor-your-data/FR-Agent/agent-overview.md
+        - Install: 
+           - Automatic: Monitor-your-data/FR-Agent/Installation/Automatic.md
+           - FRAM: Monitor-your-data/FR-Agent/Installation/FRAM.md  
+           - Manual: Monitor-your-data/FR-Agent/Installation/Manual.md
+        - Upgrade:
+           - Automatic: Monitor-your-data/FR-Agent/Upgrade/Auto-upgrade.md
+           - Manual: Monitor-your-data/FR-Agent/Upgrade/Manual-upgrade.md
+           - Docker: Monitor-your-data/FR-Agent/Upgrade/upgrade-docker.md
+           - CommandBox: Monitor-your-data/FR-Agent/Upgrade/upgrade-commandbox.md
+        - Uninstall:
+           - FRAM: Monitor-your-data/FR-Agent/Uninstall/FRAMdeactivate.md
+           - Manual: Monitor-your-data/FR-Agent/Uninstall/MANdeactivate.md
+        - More:
+           - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
+           - Configuration: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
+           - Distributed tracing: 
+               - Distributed-Tracing/attributes.md
+               - Distributed-Tracing/propagators.md
+               - Distributed-Tracing/sampling.md
+               - Distributed-Tracing/exporting.md
+               - Distributed-Tracing/span-lifecycle.md
+               - Distributed-Tracing/linkage-in-grafana.md
+        - FAQs & troubleshooting: todo.md
+     - Observability Agent:
+        - Overview: Cloud/integrations/Metric-Integrations.md
+        - Install:
+           - FRAM: Cloud/Observability-Agent-Install/FRAM.md
+           - Local install using code snippets: Cloud/Observability-Agent-Install/observability-agent.md
+           - Docker: Cloud/Observability-Agent-Install/Docker.md
+        - Configuration: Cloud/Observability-Agent-Install/Configuration.md
+        - Ingesting data into FR: Cloud/integrations/Ingesting-into-FRCloud.md
+     - OpenTelemetry:
+        - Overview: Cloud/OpenTelemetry/OTel-overview.md
+        - Instrumentation guides:
+           - Overview: Cloud/OpenTelemetry/Overview.md
+           - Go: Cloud/OpenTelemetry/Instrumenting-OTel.md
+           - Python: Cloud/OpenTelemetry/Python.md
+        - Shipping OTel to FR: Cloud/OpenTelemetry/OTel-shipping.md
+        - Distributed tracing: Cloud/OpenTelemetry/distributed-tracing.md
+     - Kubernetes monitoring:
+        - Overview: Cloud/platform-integrations/K8overview.md
+        - Shipping Kubernetes data to FR: Cloud/platform-integrations/shippingK8stoFR.md
+     - Log monitoring:
+        - Overview: Cloud/logs/log-overview.md
+        - Log shipper: Cloud/logs/Log-Shipper.md
+        - FR Agent shipper: Cloud/logs/FusionReactor-Agent-Shipper.md
+  - DATA INSIGHTS: 
+       # - Data-insights/Features/account.md
+        - Data-insights/Features/alerting.md
+        - Anomaly Detection:
+            - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
+            - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
+        - Data-insights/Features/applications.md
+        - Crash Protection:
+            - todo.md
+        - Dashboards: Data-insights/Features/dashboards.md
+        - Debugger:
+            - todo.md
+        - Deep: 
+            - todo.md
+        - Enterprise Dashboard:
+            - todo.md
+        - Data-insights/Features/explore.md
+        - Historic data: Data-insights/Features/timepicker.md
+        - On-Prem UI:
+            - CPU Sampler:
+              - todo.md
+            - Crash Protection:
+              - todo.md
+            - Debugger:
+              - todo.md
+            - Enterprise Dashboard:
+              - todo.md
+            - JDBC:
+              - todo.md
+            - Logging:
+              - todo.md
+            - Memory:
+              - todo.md
+            - Metrics:
+              - todo.md
+            - Profiler:
+              - todo.md
+            - Requests:
+              - todo.md
+            - Resources: 
+              - todo.md
+            - System Resources:
+              - todo.md
+            - Transactions:
+              - todo.md
+            - UEM Sessions:
+              - todo.md
+        - OpsPilot:
+            - Overview: Data-insights/Features/OpsPilot/AIoverview.md
+            - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
+        - Profiler:
+            - todo.md
+        - Data-insights/Features/servers.md
+  - LATEST UPDATES: 
+     - What's new: 
+        - todo.md
+     - Releases: 
+          - todo.md
+  - ADMIN & DATA:
+     - Account & user management: 
+        - todo.md
+     - Data: 
+        - todo.md
+     - Security: 
+        - todo.md
+     - Licenses: 
+        - todo.md
+
+plugins:
+  - glightbox
+  - search
+  
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: |
+ &copy; 2024 <a href="https://github.com/yourusername"  target="_blank" rel="noopener">Your Name</a>
