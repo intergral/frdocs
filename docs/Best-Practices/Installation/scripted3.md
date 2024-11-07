@@ -1,4 +1,4 @@
-![!Screenshot](/Best-Practices/Installation/Images/Script3.png)
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Script3.png)
 
 ## Step 1: Install the Observability Agent
 

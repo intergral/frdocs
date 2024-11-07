@@ -1,7 +1,7 @@
 # Java/Lucee & databases
 
 
-![!Screenshot](/Best-Practices/Installation/Images/LuceeJava.png)
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/LuceeJava.png)
 
 ## Step 1: Install FRAM (FusionReactor Administration Manager)
 

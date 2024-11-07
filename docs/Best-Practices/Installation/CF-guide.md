@@ -1,6 +1,6 @@
 # ColdFusion & databases
 
-![!Screenshot](/Best-Practices/Installation/Images/CF guide.png)
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/CF guide.png)
 
 ## Step 1: Install FRAM (FusionReactor Administration Manager)
 

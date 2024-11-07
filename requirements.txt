@@ -1,4 +1,4 @@
-mkdocs
+mkdocs==1.6.1
 mkdocs-material
-mkdocs-glightbox
-mkdocs-video
+mkdocs-glightbox==0.3.6
+mkdocs-video==1.5.0

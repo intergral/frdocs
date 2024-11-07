@@ -1,7 +1,7 @@
 #  Java/Lucee, databases & other languages
 
 
-![!Screenshot](/Best-Practices/Installation/Images/Docker2.png)
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Docker2.png)
 
 ## Step 1: Add FusionReactor to your image
 
@@ -62,7 +62,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 
 ### Run via Docker
 
-Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/Cloud/logs/Log-Shipper/#generating-api-keys) and adjusting the environment variables as needed: 
+Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/frdocs-oss/frdocs/Cloud/logs/Log-Shipper/#generating-api-keys) and adjusting the environment variables as needed: 
 
 ```
 docker run --env  otel_collection=true --env api_key=YOUR_API_KEY --env ENV_VARIABLE=VALUE --env mysql_connection_string=root:my-secret-pw@(mysql:3306)/ intergral/observability-agent:latest
@@ -111,7 +111,7 @@ services:
 ```
 
 !!! info "Learn more"
-    [Log collection and other databases](/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
+    [Log collection and other databases](/frdocs-oss/frdocs/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
 
     
 ## Step 3: Instrument OpenTelemetry

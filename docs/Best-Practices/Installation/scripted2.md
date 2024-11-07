@@ -1,4 +1,4 @@
-![!Screenshot](/Best-Practices/Installation/Images/Script2.png)
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Script2.png)
 
 
 Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers.
