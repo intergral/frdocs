@@ -15,15 +15,15 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 **Step 1**: Select **Dashboards** from the navigation menu.
 
-![!Screenshot](/Getting-started/Tutorials/step1.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step1.png)
 
 **Step 2**: Click **Create New Dashboard**.
 
-![!Screenshot](/Getting-started/Tutorials/step2.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step2.png)
 
 **Step 3**: On the empty dashboard, click **+ Add visualization**.
 
-![!Screenshot](/Getting-started/Tutorials/step3.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step3.png)
 
 **Step 4**: In the dialog box that opens, do one of the following:
 
@@ -33,7 +33,7 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 * Click **Configure a new data source** to set up a new one (Admins only).
 
-![!Screenshot](/Getting-started/Tutorials//step4.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials//step4.png)
 
 
 
@@ -46,14 +46,14 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 **Step 6**: Select the **Refresh dashboard** icon to query the data source.
 
-![!Screenshot](/Getting-started/Tutorials/step6.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step6.png)
 
 **Step 7**: In the visualization list, select a visualization type.
 
-![!Screenshot](/Getting-started/Tutorials/step7.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step7.png)
 
 !!! info "Learn more"
-	Full list of available [visualizations](/Cloud/guides/create-dashboard/#visualizations)     
+	Full list of available [visualizations](/frdocs-oss/frdocs/Cloud/guides/create-dashboard/#visualizations)     
 
 !!! info
 	FusionReactor displays a preview of your query results with the visualization applied.
@@ -91,7 +91,7 @@ Alternatively, click **Apply** if you want to see your changes applied to the da
 
 **Step 14**: To add more panels to the dashboard, click **Add** in the dashboard header and select **Visualization** in the drop-down.
 
-![!Screenshot](/Getting-started/Tutorials/add.png)
+![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/add.png)
 
 ## Visualizations 
 

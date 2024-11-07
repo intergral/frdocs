@@ -2,7 +2,7 @@ site_name: FusionReactor Documentation
 site_url: https://intergral.github.io/frdocs/
 repo_name: frdocs
 repo_url: https://intergral.github.io/frdocs/
-edit_uri: edit/master/docs/docs
+
 
 theme:
   name: material
