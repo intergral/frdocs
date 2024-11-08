@@ -20,7 +20,7 @@ hide:
             <div class="fr-step-title">Start your FR journey</div>
             <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
             <div class="fr-step-action">
-                <a href="/frdocs-oss/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Get started</a>
+                <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Get started</a>
             </div>
         </div>
         <div class="fr-step">
@@ -28,7 +28,7 @@ hide:
             <div class="fr-step-title">Install FusionReactor</div>
             <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.</div>
             <div class="fr-step-action">
-                <a href="/frdocs-oss/frdocs/Getting-started/install-fr/" class="fr-btn">Install FR</a>
+                <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Install FR</a>
             </div>
         </div>
         <div class="fr-step">
@@ -36,7 +36,7 @@ hide:
             <div class="fr-step-title">Tutorials & walkthroughs</div>
             <div class="fr-step-description">Practical ways to use FusionReactor to solve everyday challenges.</div>
             <div class="fr-step-action">
-                <a href="/frdocs-oss/frdocs/Getting-started/Tutorials/know-the-ui/" class="fr-btn">Learn more</a>
+                <a href="/frdocs/Getting-started/Tutorials/know-the-ui/" class="fr-btn">Learn more</a>
             </div>
         </div>
     </div>
