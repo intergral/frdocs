@@ -3,48 +3,40 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - main  # Set this to your default branch
-  pull_request:
-    branches:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
-          cache: 'pip'
-
-      - name: Install dependencies and create lock file
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip freeze > requirements.lock
-
-      - name: Upload requirements.lock
-        uses: actions/upload-artifact@v4
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+      - uses: actions/cache@v3
         with:
-          name: requirements-lock
-          path: requirements.lock
-          if-no-files-found: error
-
-      - name: Build documentation
-        run: |
-          mkdocs build
-          
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install -r requirements.txt
+      - run: mkdocs build -d./_site
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
-          force_orphan: true
+        id: deployment
+        uses: actions/deploy-pages@v2

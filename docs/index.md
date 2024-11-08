@@ -110,7 +110,7 @@ hide:
                 <a href="#" class="fr-tile-link">Get to know the UI</a>
             </div>
             <div class="fr-tile">
-                <a href="#" class="fr-tile-link">Create a dashboard</a>
+                <a href="#" class="fr-tile-link">Create a Dashboard</a>
             </div>
             <div class="fr-tile">
                 <a href="#" class="fr-tile-link">OpsPilot</a>
