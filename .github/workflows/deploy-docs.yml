@@ -30,6 +30,8 @@ jobs:
           # This key is a 'deploy key' for the intergral/material project
           ssh-private-key: ${{ secrets.MATERIAL_SSH_KEY }}
       - run: pip install -r requirements.txt
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: mkdocs build -d./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
