@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - insiders
 
 permissions:
   contents: read
@@ -28,19 +27,20 @@ jobs:
             mkdocs-material-
       - uses: webfactory/ssh-agent@v0.9.0
         with:
+          # This key is a 'deploy key' for the intergral/material project
           ssh-private-key: ${{ secrets.MATERIAL_SSH_KEY }}
       - run: pip install -r requirements.txt
       - run: mkdocs build -d./_site
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         
-#  deploy:
-#    needs: build
-#    environment:
-#      name: github-pages
-#      url: ${{ steps.deployment.outputs.page_url }}
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Deploy to GitHub Pages
-#        id: deployment
-#        uses: actions/deploy-pages@v2
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
