@@ -32,10 +32,10 @@ The OpsPilot Assistant currently has the following custom templates:
 
 * [Performance](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#performance)  
 
-* [Billing & usage](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#billing-usage) 
+* [Billing & usage](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#billing-usage) 
 
-* [General](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#general)  
-
+* [General](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#general)  
+>>>>>>> 9e76b47 (added OP to data insights)
 
 !!! info 
     New conversation templates will continue to be added over time.
@@ -153,6 +153,7 @@ OpsPilot is capable of providing real-time status updates and comprehensive over
 * Resource utilization & performance
 
 * Advanced analysis & management
+
 
 
 Selecting **Blank template** displays the following screen which offers some suggested prompts. 
