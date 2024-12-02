@@ -2,7 +2,7 @@
 
 The Knowledge section in OpsPilot allows you to add general information that helps the system understand your entire technology stack and organization. This feature enhances OpsPilot's ability to provide relevant and contextualized responses.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/knowledge.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/knowledge.png)
 
 When adding content to OpsPilot Knowledge, it's crucial to understand that the system relies heavily on titles and descriptions to locate relevant information when answering questions. To maximize the effectiveness of your knowledge base, ensure that your titles and descriptions are comprehensive and accurately reflect all the topics covered in each snippet or document. 
 
@@ -11,9 +11,9 @@ When adding content to OpsPilot Knowledge, it's crucial to understand that the s
 
 Currently, two types of knowledge can be added to OpsPilot:
 
-1. [Snippets](/Cloud/guides/OpsPilot/OpsPilot-Hub/#snippets)
+1. [Snippets](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#snippets)
 
-2. [Files](/Cloud/guides/OpsPilot/OpsPilot-Hub/#files)
+2. [Files](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#files)
 
 ### Snippets
 - Text-based information with a 5,000 character limit.

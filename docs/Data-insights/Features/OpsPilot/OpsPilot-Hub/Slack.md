@@ -4,7 +4,7 @@
 
 ## Installation 
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/add-slack.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/add-slack.png)
 
 
 1. In OpsPilot Hub, navigate to the Integrations tab.
@@ -12,7 +12,7 @@
 3. Click the **Install** button, which will redirect you to Slack.
 4. In Slack, you'll see a permissions window - review and click **Allow**.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/slack-allow.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/slack-allow.png)
 
 
 5. Select your desired workspace if you have multiple workspaces.
@@ -30,7 +30,7 @@
 5. Paste the API key and submit.
 6. Your Slack workspace is now connected to OpsPilot.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/slack.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/slack.png)
 
 
 

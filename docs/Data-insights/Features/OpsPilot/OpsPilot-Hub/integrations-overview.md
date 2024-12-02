@@ -14,19 +14,18 @@ OpsPilot seamlessly integrates with your essential workplace tools to streamline
 - Create and manage tickets with full context
 - Automatic duplicate detection
 - Custom field support
-- [Set up Jira integration →](/Cloud/guides/OpsPilot/OpsPilot-Hub/Jira/)
-
+- [Set up Jira integration →](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira/)
 ### Slack
 - Query OpsPilot directly in channels
 - Share monitoring insights and visualizations
 - Access via direct messages or mentions
-- [Set up Slack integration →](/Cloud/guides/OpsPilot/OpsPilot-Hub/Slack/)
+- [Set up Slack integration →](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack/)
 
 ### Microsoft Teams
 - Access OpsPilot via @mentions
 - Interactive monitoring insights
 - Team-wide visibility
-- [Set up Microsoft Teams integration →](/Cloud/guides/OpsPilot/OpsPilot-Hub/Teams/)
+- [Set up Microsoft Teams integration →](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams/)
 
 ### Pre-installed integrations
 - Loki - logs

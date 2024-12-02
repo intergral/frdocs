@@ -4,7 +4,7 @@
 
 The Services feature is a core component of OpsPilot Hub, designed to enhance the capabilities of the OpsPilot Assistant while providing a comprehensive system for documenting, managing, and discovering your organization's services. By populating the Services section with detailed information about your organization's offerings, you empower the OpsPilot Assistant to deliver more accurate, context-aware solutions and recommendations.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/Services.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/Services.png)
 
 ### Service Page Features
 - Progress bars for each service, indicating completeness of information.

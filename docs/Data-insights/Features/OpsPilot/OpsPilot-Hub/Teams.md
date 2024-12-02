@@ -4,7 +4,7 @@
 - Must be a Microsoft Teams administrator for your organization.
 - Access to OpsPilot Hub.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/add-teams.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/add-teams.png)
 
 
 
@@ -23,11 +23,11 @@
    - Go to [Teams Admin Center](https://admin.teams.microsoft.com).
    - Navigate to Teams apps → Manage apps.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/manage-apps.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/manage-apps.png)
 
    - Click Actions → Upload new app.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/upload-new-app.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/upload-new-app.png)
 
 
    - Upload the OpsPilot ZIP file.
@@ -36,15 +36,15 @@
    - In Teams Admin Center, go to Teams apps → Setup policies.
    - Edit Global policy or create new one.
 
-   ![!Screenshot](/../Cloud/guides/OpsPilot/images/manage-policies.png)
+   ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/manage-policies.png)
 
    - Click **Add apps** and search for **OpsPilot**.
 
-   ![!Screenshot](/../Cloud/guides/OpsPilot/images/add-apps.png)
+   ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/add-apps.png)
 
    - Select and add OpsPilot to the policy.
 
-   ![!Screenshot](/../Cloud/guides/OpsPilot/images/install-op.png)
+   ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/install-op.png)
 
    - Save the policy (deployment may take up to 24 hours).
 
@@ -52,25 +52,25 @@
    - Generate an API key from OpsPilot Hub.
    - Open Teams and go to the Apps tab.
 
-   ![!Screenshot](/../Cloud/guides/OpsPilot/images/built-for-org.png)
+   ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/built-for-org.png)
 
 
    - Find OpsPilot under **Built for your organisation**.
    - Add the app and open it.
    - Navigate to the **Home** tab.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/home.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/home.png)
 
    - Enter the API key and click **Submit**.
 
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/home2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/home2.png)
 
 
 
 !!! info
     There is also a dropdown which allows for the app to be added in different contexts:
-    ![!Screenshot](/../Cloud/guides/OpsPilot/images/open.png)
+    ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/open.png)
 
 
 
