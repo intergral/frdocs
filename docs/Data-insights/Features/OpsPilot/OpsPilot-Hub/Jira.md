@@ -2,7 +2,7 @@
 
 OpsPilot's Jira integration enables seamless ticket management and tracking directly through the OpsPilot interface. This integration supports both Atlassian Cloud and Data Center deployments.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/Jira1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/Jira1.png)
 
 !!! info
     Single project integration per connection.
@@ -43,7 +43,7 @@ There are two ways to add the Jira integration:
 
 Jira Cloud integration requires downloading our app from the [Atlassian Marketplace](https://marketplace.atlassian.com/vendors/1227151/)
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/jira-connect.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/jira-connect.png)
 
 ### Add Jira integration:
 
@@ -55,12 +55,12 @@ Jira Cloud integration requires downloading our app from the [Atlassian Marketpl
 6. On the configuration page, click the **Connect** button and follow any further prompts.
 7. The following screen is displayed after once installation is complete:
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/jira-successful.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/jira-successful.png)
 
 
 After successfully connecting the Jira integration, the configuration screen is displayed: 
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/Jira-config.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/Jira-config.png)
 
 !!! note
     An account can be disconnected at any time. Upon disconnection, OpsPilot immediately loses access to Jira features for that specific account.
@@ -74,7 +74,7 @@ To integrate OpsPilot with your Jira Data Center instance, you'll need:
 * A Personal Access Token (PAT)
 
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/OpsPilot/data-centre.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/data-centre.png)
 
 
 !!! tip
@@ -122,7 +122,7 @@ After connecting Jira, configure your integration by selecting a project:
 
 The selected project can be changed at any time from the Jira integration page in OpsPilot Hub.
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/update-jira.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images//update-jira.png)
 
 When a project is selected, OpsPilot can:
 
@@ -131,7 +131,7 @@ When a project is selected, OpsPilot can:
 - Add comments to issues
 - Search within project content
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/create-ticket.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/create-ticket.png)
 
 
 
@@ -185,5 +185,5 @@ Search tickets by:
 
 #### Usage example 
 
-![!Screenshot](/../Cloud/guides/OpsPilot/images/jira-example.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/jira-example.png)
 
