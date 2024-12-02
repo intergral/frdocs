@@ -1,4 +1,4 @@
-# OpsPilot Assistant user guide
+# User guide
 
 OpsPilot is meticulously designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. Through the fusion of large language models (LLMs) with our extensive telemetry data platform, we've engineered an AI companion adept at comprehending the nuances inherent in both your system and OpsPilot's functionalities. OpsPilot streamlines the comprehension of your stack's intricacies, facilitates the resolution of service interruptions, and enhances productivity by facilitating simple inquiries in plain language.
 
@@ -33,8 +33,6 @@ The OpsPilot Assistant currently has the following custom templates:
 * [Performance](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#performance)  
 
 * [Billing & usage](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#billing-usage) 
-
-* [Navigate](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#show-me) 
 
 * [General](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#general)  
 
@@ -136,23 +134,6 @@ Available templates:
 |On-demand usage | How much have I spent on on-demand usage? |
 |OpsPilot tokens | How many OpsPilot tokens do I have remaining? |
 
-### Navigation
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/874728565?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Navigation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-OpsPilot's navigation capabilities are designed to make your experience as seamless as possible. It possesses an intimate knowledge of your metrics, traces, services, and dashboards, effortlessly curating the ideal view to provide you with the information you require. Even if you're new to the cloud, OpsPilot serves as a friendly guide, simplifying the learning curve by showing you the ropes and helping you navigate the potentially overwhelming terrain of cloud services. With OpsPilot, you'll always have useful insights at your fingertips, no matter your level of experience.
-
-Available templates:
-
-| **Issue**         | **Question**     | 
-|--------------|-----------|
-|Span metrics dashboard | Take me to the span metrics dashboard |
-|API keys | Show me where I can create API keys |
-
-!!! example 
-    Show me a dashboard about my database usage.
-
-![!Screenshot](/../../images/OpsPilot/showme.png)
 
 ### General
 
@@ -172,7 +153,7 @@ OpsPilot is capable of providing real-time status updates and comprehensive over
 
 * Advanced analysis & management
 
-* Navigation & visualization
+
 
 Selecting **Blank template** displays the following screen which offers some suggested prompts. 
 
