@@ -8,7 +8,7 @@ OpsPilot is meticulously designed to elevate observability for every team member
 
 ## Access
 
-![!Screenshot](/../../images/OpsPilot/access.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/access.png)
 
 OpsPilot opens by default upon login, providing instant access to its wealth of monitoring and troubleshooting capabilities. The ingenious concept behind the slider is its unobtrusive presence, meaning OpsPilot is always ready to assist without getting in the way. 
 

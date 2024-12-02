@@ -19,11 +19,11 @@ Whether you're running a ColdFusion setup or a more complex Lucee/Java environme
 <br> (See Fig 3 below)
 
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Local-server.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Local-server.png)
 
 
 !!! info "Learn more" 
-    [ColdFusion guide](/frdocs-oss/frdocs/Cloud/Best-Practices/CF-guide/) | [Java/Lucee guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Java-Lucee-OTel/)<br>
+    [ColdFusion guide](/frdocs/Cloud/Best-Practices/CF-guide/) | [Java/Lucee guide](/frdocs/Cloud/Best-Practices/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs/Cloud/Best-Practices/Java-Lucee-OTel/)<br>
 
 ### Scripted 
 
@@ -42,7 +42,7 @@ Installing FusionReactor manually entails placing the FusionReactor installation
 <br> (See Fig 3 below)
 
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Scripted.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Scripted.png)
 
 
 !!! info "Learn more" 
@@ -68,12 +68,12 @@ The Docker install guides provide clear instructions for effortlessly adding Fus
 <br> (See Fig 3 below)
 
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Docker.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Docker.png)
 
 
 
 !!! info "Learn more" 
-    [FR Agent + Observability Agent guide](/frdocs-oss/frdocs/Cloud/Best-Practices/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/ObsAgent-OTel/)
+    [FR Agent + Observability Agent guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/ObsAgent-OTel/)
 
 
 
@@ -92,7 +92,7 @@ OpenTelemetry code instrumentation is supported for many popular programming lan
 
 ## Supported databases & frameworks
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/supported.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/supported.png)
 
 
 

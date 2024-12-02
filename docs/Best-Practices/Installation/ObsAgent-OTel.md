@@ -1,6 +1,6 @@
 #  Databases & other languages
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Docker3.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Docker3.png)
 
 ## Step 1: Run the Observability Agent
 
