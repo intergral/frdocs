@@ -13,7 +13,7 @@ There are three ways to send telemetry data to FusionReactor Cloud.
 * [Observability Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
 
 
-* [Grafana Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
+* [Grafana Alloy](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
 
 ___
 

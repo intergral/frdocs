@@ -1,5 +1,5 @@
 # User guide
-# User guide
+
 
 OpsPilot is meticulously designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. Through the fusion of large language models (LLMs) with our extensive telemetry data platform, we've engineered an AI companion adept at comprehending the nuances inherent in both your system and OpsPilot's functionalities. OpsPilot streamlines the comprehension of your stack's intricacies, facilitates the resolution of service interruptions, and enhances productivity by facilitating simple inquiries in plain language.
 

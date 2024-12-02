@@ -4,7 +4,7 @@
 
 Integration allows you to ingest vital metrics to monitor the health of your entire infrastructure, with metrics from all aspects of your application stack.
 
-Metric exporters are libraries that expose integration metrics to an agent. At FusionReactor, we have developed a wrapper for the Grafana Agent called the **Observability Agent** which allows you to ingest metrics with minimal configuration required. 
+Metric exporters are libraries that expose integration metrics to an agent. At FusionReactor, we have developed a wrapper for Grafana Alloy called the **Observability Agent** which allows you to ingest metrics with minimal configuration required. 
 
 
 With our Observability Agent you can ingest any data into the FusionReactor Cloud, and visualise your data within the [Integration dashboards](#).

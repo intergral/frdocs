@@ -1,10 +1,6 @@
 # Java/Lucee/CFML & databases 
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Script1.png)
-=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/Script1.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers.
 
@@ -86,7 +82,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
     !!! info
-        The installer for Windows assumes you are installing the Grafana Agent in the default location on the C drive. This is required for the config file to be placed in the correct location for the Grafana Agent to read it.
+        The installer for Windows assumes you are installing Grafana Alloy in the default location on the C drive. This is required for the config file to be placed in the correct location for Grafana Alloy to read it.
 
 === "Linux" 
 
@@ -100,4 +96,4 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
 !!! info "Learn more"
-    Further [options](/Cloud/Observability-Agent-Install/observability-agent/#options) are available when installing the Observability Agent.
+    Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
