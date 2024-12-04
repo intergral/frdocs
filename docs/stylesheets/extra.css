@@ -31,7 +31,8 @@
 :root {
     --card-bg-light: #edeff1;
     --card-bg-dark:  #343942;;
-    --card-border-focus: white;
+    --card-border-focus-light: white;
+    --card-border-focus-dark: #4a5568; 
   }
   
   [data-md-color-scheme="default"] {
