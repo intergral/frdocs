@@ -1,6 +1,6 @@
 .md-button {
     width: 300px; /* Set the desired width */
-    text-align: centre; /* Center the button text */
+    text-align: center; /* Center the button text */
 }
   
   
@@ -18,21 +18,22 @@
     margin-left: 0;
     margin-right: auto;
 }
-  
-.md-typeset .grid.cards>ol>li,.md-typeset .grid.cards>ul>li,.md-typeset .grid>.card {
+
+  /* Large grid cards custom colours */
+.md-typeset .grid.cards>ol>li,
+.md-typeset .grid.cards>ul>li,
+.md-typeset .grid>.card {
     transition: border .75s,box-shadow .75s
 }
   
-.md-typeset .grid.cards>ol>li:focus-within,.md-typeset .grid.cards>ol>li:hover,.md-typeset .grid.cards>ul>li:focus-within,.md-typeset .grid.cards>ul>li:hover,.md-typeset .grid>.card:focus-within,.md-typeset .grid>.card:hover {
-    border-color: #53AFDA;
-}
   
-
-:root {
+ /* Smaller grid cards custom colours */
+ :root {
     --card-bg-light: #edeff1;
-    --card-bg-dark:  #343942;;
+    --card-bg-dark:  #343942;
     --card-border-focus-light: white;
-    --card-border-focus-dark: #4a5568; 
+    --card-border-focus-dark: #343942; 
+    
   }
   
   [data-md-color-scheme="default"] {
@@ -42,14 +43,17 @@
   [data-md-color-scheme="slate"] {
     --card-bg: var(--card-bg-dark);
   }
+
   
+  /*Custom grid card colours*/
   .md-typeset .grid.cards>ol>li,
   .md-typeset .grid.cards>ul>li,
   .md-typeset .grid>.card {
       transition: border .75s,box-shadow .75s;
       background-color: var(--card-bg);
+
   }
-    
+
   .md-typeset .grid.cards>ol>li:focus-within,
   .md-typeset .grid.cards>ol>li:hover,
   .md-typeset .grid.cards>ul>li:focus-within,
@@ -59,6 +63,7 @@
       border-color: var(--card-border-focus);
   }
   
+   /* Custom colours */
 :root {
     --md-primary-fg-color: #53AFDA;
     --md-primary-fg-color--light: #53AFDA;
@@ -69,25 +74,11 @@
     --md-accent-fg-color--dark: #FFA500;
 }
   
-.md-nav {    font-size: 0.6rem;
-    line-height: 2.3;
+.md-nav {    font-size: 0.6rem;  /* Reduces nav font */
+    line-height: 1.8; /* Creates space between nav items*/
 }
   
-.md-typeset h1 {
-    font-weight: 400;
-    letter-spacing: -.01em;
-}
-  
-.md-typeset h2 {
-    font-size: 1.5625em;
-    line-height: 1.4;
-    margin: 1.6em 0 .64em;
-}
-  
-.md-typeset h2 {
-    font-weight: 300;
-    letter-spacing: -.01em;
-}
+
 
 
 
