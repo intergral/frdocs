@@ -13,15 +13,15 @@ hide:
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            font-family: Roboto
         }
 
         .fr-journey-title {
             text-align: center;
-            color: #333;
+            color: #4a5568s;
             margin-bottom: 50px;
             font-size: 2.5em;
-            font-weight: 600;
+            font-weight: 800;
         }
 
         .fr-steps {
@@ -34,8 +34,9 @@ hide:
         .fr-step {
             flex: 1;
             min-width: 250px;
-            background:  #343942;
+            background: #53AFDA;
             border-radius: 10px;
+            border: 2px solid white;
             padding: 25px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -52,7 +53,7 @@ hide:
         .fr-step-number {
             width: 40px;
             height: 40px;
-            background: #53AFDA;
+            background: #FFA500;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -65,16 +66,16 @@ hide:
 
         .fr-step-title {
             font-weight: bold;
-            margin-bottom: 1.1rem;
-            font-size: 1.2rem;
+            margin-bottom: 1.0rem;
+            font-size: 1.15rem;
             color: white;
         }
 
         .fr-step-description {
             font-size: 0.7rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.0rem;
             flex-grow: 1;
-            color: #ccc; /* Lighter color for description */
+            color: #343942; /* Lighter color for description */
         }
 
         .fr-step-action {
@@ -83,18 +84,18 @@ hide:
 
         .fr-btn {
             display: inline-block;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 1rem;
             background-color: #343942; /* Match the card background */
-            color: #53AFDA; /* Light blue text color */
+            color: #343942; /* Light blue text color */
             text-decoration: none;
             border: 2px solid white; /* Light blue border */
             border-radius: 5px;
-            font-size: 0.9rem;
+            font-size: 0.7rem;
             transition: background-color 0.3s, color 0.3s;
         }
 
         .fr-btn:hover {
-            background: #343942;
+            background: white;
         }
 
         @media (max-width: 768px) {
@@ -155,7 +156,7 @@ hide:
 
 
 
-## POPULAR DOCS
+### POPULAR DOCS
 
 <div class="grid" markdown>
 
@@ -169,7 +170,7 @@ hide:
 { .card }
 </div>
 
-## MONITOR YOUR DATA
+### MONITOR YOUR DATA
 
 <div class="grid cards" markdown>
 
@@ -252,7 +253,7 @@ hide:
 </div>
 
 
-## DATA INSIGHTS
+### DATA INSIGHTS
 
 <div class="grid" markdown>
 
@@ -306,7 +307,7 @@ hide:
 
 
 
-## LATEST UPDATES
+### LATEST UPDATES
 
 <div class="grid" markdown>
 
@@ -319,4 +320,20 @@ hide:
 
 </div>
 
-## ADMIN & DATA
+### ADMIN & DATA
+
+<div class="grid" markdown>
+
+[Account & user management](#)
+{ .card }
+
+[Security](#)
+{ .card }
+
+[Data](#)
+{ .card }
+
+[Licenses](#)
+{ .card }
+
+</div>

@@ -19,7 +19,7 @@ theme:
     - content.code.copy
   language: en
   font:  
-    text: 'Sohne'
+    text: 'Roboto'
     code: 'monospace'
   palette:
     # Palette toggle for light mode
@@ -50,7 +50,7 @@ nav:
         - Troubleshooting:
            - todo.md
   - HOW TO CONTRIBUTE:
-           - todo.md
+           - Contribute/how-to-contribute.md
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
@@ -220,5 +220,4 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-copyright: |
- &copy; 2024 <a href="https://github.com/yourusername"  target="_blank" rel="noopener">Your Name</a>
+copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2024 Intergral GmbH. All rights reserved.</a>'
