@@ -82,7 +82,6 @@ hide:
             width: 100%;
         }
 
-
         .fr-btn {
             display: inline-block;
             padding: 0.4rem 1rem;
