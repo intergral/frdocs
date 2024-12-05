@@ -11,7 +11,7 @@ Installing the FusionReactor Agent is a straightforward process that ensures you
 
 [Manual installation](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/){ .md-button .md-button--primary} 
 
-## Install the Oservability Agent
+## Install the Observability Agent
 
 To monitor the machine running Coldfusion/CFML itself and any databases (eg Redis, MySQL, MSSQL etc) we recommend you install the Observability Agent. Installing the Observability Agent, an open source autoconfiguration and installation tool, allows you to export metrics, logs and OTel data from all aspects of your stack into the cloud, with no configuration required. The Observability Agent can detect which services are running on your machine, and automatically create a configuration file with integrations for detected services.
 
