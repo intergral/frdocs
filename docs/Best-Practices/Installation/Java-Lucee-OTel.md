@@ -1,7 +1,11 @@
 # Java/Lucee, databases & other languages
 
 
+<<<<<<< HEAD
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/JLOTel.png)
+=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/JLOTel.png)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ## Step 1: Install FRAM (FusionReactor Administration Manager)
 
@@ -49,7 +53,11 @@ To monitor the machine running Lucee or Java itself and any databases eg Redis, 
 
 
 !!! info "Learn more"
+<<<<<<< HEAD
+    [Observability Agent](/frdocs-oss/frdocs/Cloud/integrations/Metric-Integrations/)
+=======
     [Observability Agent](/frdocs/Cloud/integrations/Metric-Integrations/)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ## Step 4: Instrument OpenTelemetry
 

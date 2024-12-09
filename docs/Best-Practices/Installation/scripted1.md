@@ -1,6 +1,10 @@
 # Java/Lucee/CFML & databases 
 
+<<<<<<< HEAD
+![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Script1.png)
+=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/Script1.png)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers.
 

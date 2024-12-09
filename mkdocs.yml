@@ -92,24 +92,32 @@ nav:
                - Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: todo.md
      - Observability Agent:
-        - Overview: Cloud/integrations/Metric-Integrations.md
+        - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:
-           - FRAM: Cloud/Observability-Agent-Install/FRAM.md
-           - Local install using code snippets: Cloud/Observability-Agent-Install/observability-agent.md
-           - Docker: Cloud/Observability-Agent-Install/Docker.md
-        - Configuration: Cloud/Observability-Agent-Install/Configuration.md
-        - Ingesting data into FR: Cloud/integrations/Ingesting-into-FRCloud.md
+           - FRAM: Monitor-your-data/Observability-agent/Installation/FRAM.md
+           - Local install using code snippets: Monitor-your-data/Observability-agent/Installation/Snippets.md
+           - Docker: Monitor-your-data/Observability-agent/Installation/Docker.md
+        - Configuration: Monitor-your-data/Observability-agent/Configuration.md
+        - Ingesting data into FR: Monitor-your-data/Observability-agent/Ingest.md
      - OpenTelemetry:
-        - Overview: Cloud/OpenTelemetry/OTel-overview.md
-        - Instrumentation guides:
-           - Overview: Cloud/OpenTelemetry/Overview.md
-           - Go: Cloud/OpenTelemetry/Instrumenting-OTel.md
-           - Python: Cloud/OpenTelemetry/Python.md
-        - Shipping OTel to FR: Cloud/OpenTelemetry/OTel-shipping.md
-        - Distributed tracing: Cloud/OpenTelemetry/distributed-tracing.md
-     - Kubernetes monitoring:
-        - Overview: Cloud/platform-integrations/K8overview.md
-        - Shipping Kubernetes data to FR: Cloud/platform-integrations/shippingK8stoFR.md
+       - Getting started: Monitor-your-data/OpenTelemetry/getting-started.md
+       - Instrumentation guides:
+         - Overview: Monitor-your-data/OpenTelemetry/Instrumentation/Overview.md
+         - C++: Monitor-your-data/OpenTelemetry/Instrumentation/Cpp.md
+      #  - .NET: Cloud/OpenTelemetry/NET.md
+         - Go: Monitor-your-data/OpenTelemetry/Instrumentation/Go.md
+         - Python: Monitor-your-data/OpenTelemetry/Instrumentation/Python.md
+       - Shipping data to FR:
+         - Overview: Monitor-your-data/OpenTelemetry/Shipping/overview.md
+         - OpenTelemetry Collector: Monitor-your-data/OpenTelemetry/Shipping/Collector.md
+         - Observability Agent: Monitor-your-data/OpenTelemetry/Shipping/Observability-agent.md
+         - Grafana Alloy: Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent.md
+     #Cloud/OpenTelemetry/OTel-shipping.md
+       - Visualize your data:
+         - Metrics: Monitor-your-data/OpenTelemetry/Visualize/Metrics.md
+         - Traces: Monitor-your-data/OpenTelemetry/Visualize/Traces.md
+         - Logs: Monitor-your-data/OpenTelemetry/Visualize/Logs.md
+         - Distributed tracing: Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md
      - Log monitoring:
         - Overview: Cloud/logs/log-overview.md
         - Log shipper: Cloud/logs/Log-Shipper.md
