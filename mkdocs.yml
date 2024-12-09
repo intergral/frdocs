@@ -92,13 +92,13 @@ nav:
                - Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: todo.md
      - Observability Agent:
-        - Overview: Cloud/integrations/Metric-Integrations.md
+        - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:
-           - FRAM: Cloud/Observability-Agent-Install/FRAM.md
-           - Local install using code snippets: Cloud/Observability-Agent-Install/observability-agent.md
-           - Docker: Cloud/Observability-Agent-Install/Docker.md
-        - Configuration: Cloud/Observability-Agent-Install/Configuration.md
-        - Ingesting data into FR: Cloud/integrations/Ingesting-into-FRCloud.md
+           - FRAM: Monitor-your-data/Observability-agent/Installation/FRAM.md
+           - Local install using code snippets: Monitor-your-data/Observability-agent/Installation/Snippets.md
+           - Docker: Monitor-your-data/Observability-agent/Installation/Docker.md
+        - Configuration: Monitor-your-data/Observability-agent/Configuration.md
+        - Ingesting data into FR: Monitor-your-data/Observability-agent/Ingest.md
      - OpenTelemetry:
        - Getting started: Monitor-your-data/OpenTelemetry/getting-started.md
        - Instrumentation guides:
