@@ -125,31 +125,6 @@ hide:
                     <a href="https://app.fusionreactor.io/auth/login" class="fr-btn">Sign up here</a>
                 </div>
             </div>
-<<<<<<< HEAD
-        </div>
-        <div class="fr-step">
-            <div class="fr-step-number">2</div>
-            <div class="fr-step-title">Start your FR journey</div>
-            <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
-            <div class="fr-step-action">
-                <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Get started</a>
-            </div>
-        </div>
-        <div class="fr-step">
-            <div class="fr-step-number">3</div>
-            <div class="fr-step-title">Install FusionReactor</div>
-            <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.</div>
-            <div class="fr-step-action">
-                <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Install FR</a>
-            </div>
-        </div>
-        <div class="fr-step">
-            <div class="fr-step-number">4</div>
-            <div class="fr-step-title">Tutorials & walkthroughs</div>
-            <div class="fr-step-description">Practical ways to use FusionReactor to solve everyday challenges.</div>
-            <div class="fr-step-action">
-                <a href="/frdocs/Getting-started/Tutorials/know-the-ui/" class="fr-btn">Learn more</a>
-=======
             <div class="fr-step">
                 <div class="fr-step-number">2</div>
                 <div class="fr-step-title">Start your FR journey</div>
@@ -173,7 +148,6 @@ hide:
                 <div class="fr-step-action">
                     <a href="/frdocs/Getting-started/Tutorials/know-the-ui/" class="fr-btn">Learn more</a>
                 </div>
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
             </div>
         </div>
     </div>

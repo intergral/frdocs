@@ -1,12 +1,8 @@
 site_name: FusionReactor Documentation
 site_url: https://intergral.github.io/frdocs/
 repo_name: frdocs
-<<<<<<< HEAD
-repo_url: https://intergral.github.io/frdocs/
-=======
 repo_url: https://github.com/intergral/frdocs
 edit_uri: edit/master/docs/docs
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 theme:
@@ -96,13 +92,13 @@ nav:
                - Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: todo.md
      - Observability Agent:
-        - Overview: Cloud/integrations/Metric-Integrations.md
+        - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:
-           - FRAM: Cloud/Observability-Agent-Install/FRAM.md
-           - Local install using code snippets: Cloud/Observability-Agent-Install/observability-agent.md
-           - Docker: Cloud/Observability-Agent-Install/Docker.md
-        - Configuration: Cloud/Observability-Agent-Install/Configuration.md
-        - Ingesting data into FR: Cloud/integrations/Ingesting-into-FRCloud.md
+           - FRAM: Monitor-your-data/Observability-agent/Installation/FRAM.md
+           - Local install using code snippets: Monitor-your-data/Observability-agent/Installation/Snippets.md
+           - Docker: Monitor-your-data/Observability-agent/Installation/Docker.md
+        - Configuration: Monitor-your-data/Observability-agent/Configuration.md
+        - Ingesting data into FR: Monitor-your-data/Observability-agent/Ingest.md
      - OpenTelemetry:
         - Overview: Cloud/OpenTelemetry/OTel-overview.md
         - Instrumentation guides:
