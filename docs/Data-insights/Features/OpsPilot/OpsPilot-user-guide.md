@@ -1,4 +1,5 @@
-# OpsPilot Assistant user guide
+# User guide
+# User guide
 
 OpsPilot is meticulously designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. Through the fusion of large language models (LLMs) with our extensive telemetry data platform, we've engineered an AI companion adept at comprehending the nuances inherent in both your system and OpsPilot's functionalities. OpsPilot streamlines the comprehension of your stack's intricacies, facilitates the resolution of service interruptions, and enhances productivity by facilitating simple inquiries in plain language.
 
@@ -8,7 +9,7 @@ OpsPilot is meticulously designed to elevate observability for every team member
 
 ## Access
 
-![!Screenshot](/../../images/OpsPilot/access.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/access.png)
 
 OpsPilot opens by default upon login, providing instant access to its wealth of monitoring and troubleshooting capabilities. The ingenious concept behind the slider is its unobtrusive presence, meaning OpsPilot is always ready to assist without getting in the way. 
 
@@ -26,17 +27,15 @@ The OpsPilot Assistant takes the complexity out of monitoring your application: 
 
 The OpsPilot Assistant currently has the following custom templates:
 
-* [System health](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#system-health) 
+* [System health](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#system-health) 
 
-* [Errors](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#errors) 
+* [Errors](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#errors) 
 
-* [Performance](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#performance)  
+* [Performance](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#performance)  
 
-* [Billing & usage](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#billing-usage) 
+* [Billing & usage](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#billing-usage) 
 
-* [Navigate](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#show-me) 
-
-* [General](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#general)  
+* [General](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#general)  
 
 !!! info 
     New conversation templates will continue to be added over time.
@@ -136,23 +135,6 @@ Available templates:
 |On-demand usage | How much have I spent on on-demand usage? |
 |OpsPilot tokens | How many OpsPilot tokens do I have remaining? |
 
-### Navigation
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/874728565?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Navigation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-OpsPilot's navigation capabilities are designed to make your experience as seamless as possible. It possesses an intimate knowledge of your metrics, traces, services, and dashboards, effortlessly curating the ideal view to provide you with the information you require. Even if you're new to the cloud, OpsPilot serves as a friendly guide, simplifying the learning curve by showing you the ropes and helping you navigate the potentially overwhelming terrain of cloud services. With OpsPilot, you'll always have useful insights at your fingertips, no matter your level of experience.
-
-Available templates:
-
-| **Issue**         | **Question**     | 
-|--------------|-----------|
-|Span metrics dashboard | Take me to the span metrics dashboard |
-|API keys | Show me where I can create API keys |
-
-!!! example 
-    Show me a dashboard about my database usage.
-
-![!Screenshot](/../../images/OpsPilot/showme.png)
 
 ### General
 
@@ -172,16 +154,17 @@ OpsPilot is capable of providing real-time status updates and comprehensive over
 
 * Advanced analysis & management
 
-* Navigation & visualization
+
+
 
 Selecting **Blank template** displays the following screen which offers some suggested prompts. 
 
-![!Screenshot](/../../images/OpsPilot/General1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/General1.png)
 
 
 Alternatively, you can input your own questions in the box at the bottom of the screen.
 
-![!Screenshot](/../../images/OpsPilot/askme.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/askme.png)
 
 
 OpsPilot will respond to your queries using a comprehensive language model to give insightful human-like responses. With OpsPilot, you can ask questions in plain English and receive relevant insights and recommendations. We enhance the prompts with additional context, to provide more accurate and relevant responses to your questions.
@@ -206,7 +189,6 @@ OpsPilot can be given information about your system structure or the specific is
 
 OpsPilot introduces OpsPilot Vision, a groundbreaking feature that enriches its capabilities by allowing users to upload images for added context to their inquiries. With OpsPilot Vision, users can now provide supplementary visual information alongside their questions, enabling OpsPilot to deliver more comprehensive and tailored responses.
 
-![!Screenshot](../../new-img/Vision2.png)
 
 Images can be uploaded to OpsPilot Vision in three ways:
 
@@ -214,14 +196,7 @@ Images can be uploaded to OpsPilot Vision in three ways:
 
 2. Click on the **Attach Image** button located in the bottom left corner of OpsPilot to upload an image.
 
-![!Screenshot](../../new-img/OPimage.png)
-
 3. Drag and drop an image from your file explorer directly into OpsPilot to upload it.
-
-
-
-
-
 
 
 
@@ -233,7 +208,7 @@ Images can be uploaded to OpsPilot Vision in three ways:
 Effortlessly gain deeper insights into your system's performance and health by visualizing complex datasets with OpsPilot. Graph messages provide clarity within the intricate web of information, facilitating the quick identification of trends and anomalies at a glance. OpsPilot further enhances exploration capabilities by enabling users to delve deeper through the seamless opening of related dashboards or the [Explore](/Cloud/guides/explore/) page. This can be achieved with a simple push of a button, offering a convenient and efficient way to investigate and analyze system data.
 
 
-[![](/../../images/OpsPilot/Graphs1.png)](/../../images/OpsPilot/Graphs1.png)    
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/Graphs1.png)
 
 ## PromQL queries
 
@@ -243,18 +218,15 @@ Effortlessly gain deeper insights into your system's performance and health by v
 OpsPilot achieves a significant advancement through its capability to generate and execute PromQL queries, facilitating the extraction of targeted information to address your inquiries. This feature empowers users to pose nuanced questions about their system's metrics, ensuring the delivery of more precise and actionable answers. Unlock the full potential of your telemetry data, streamlining the process of extracting meaningful insights from the system's metrics.
 
 
-[![](/../../images/OpsPilot/promql.png)](/../../images/OpsPilot/promql.png)
-
-## Commands
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/promql.png)
 
 OpsPilot understands the value of efficiency in operations, and with the latest update, executing repetitive tasks becomes a seamless process. Simply start by typing ‘/’, to see a list of available commands. Click on the command you require and tap the send button.
 
 
-[![](/../../images/OpsPilot/commands.png)](/../../images/OpsPilot/commands.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/commands.png)
 
 
-
-[![](/../../images/OpsPilot/activity.png)](/../../images/OpsPilot/activity.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/activity.png)
 
 
 ## NLP-powered preferences
@@ -268,20 +240,20 @@ OpsPilot introduces a highly customizable feature that empowers users to set the
 
 Whether you prefer streamlined, high-level insights for a quick overview or seek more in-depth, granular data for thorough analysis, OpsPilot adapts to your specific needs. With this capability, you can effortlessly toggle between simpler or more comprehensive answers, ensuring that you always receive the level of detail that best serves your monitoring and troubleshooting objectives.
 
-[![](/../../images/OpsPilot/detaillevel1.png)](/../../images/OpsPilot/detaillevel1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/detaillevel1.png)
 
 ### User role
 
 OpsPilot introduces a unique capability that enables users to tailor their experience based on their specific user role. This means you have the power to influence the responses you receive, adjusting the level of detail or specificity to align with your role's requirements. Whether you're a developer seeking granular insights or a manager looking for high-level overviews, OpsPilot's NLP-powered user role customization puts you in control, ensuring a personalized and efficient experience tailored to your unique needs.
 
-[![](/../../images/OpsPilot/detaillevel2.png)](/../../images/OpsPilot/detaillevel2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/detaillevel2.png)
 
 ## Auto-complete functionality
 
 OpsPilot is more intuitive 
 with the introduction of auto-complete functionality. Enjoy the convenience of suggestions for services, applications, commands, time frames, and status codes. Accelerate your workflow with quick and accurate auto-completions.
 
-[![](/../../images/OpsPilot/autocomplete.png)](/../../images/OpsPilot/autocomplete.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/autocomplete.png)
 
 
 
@@ -294,17 +266,17 @@ with the introduction of auto-complete functionality. Enjoy the convenience of s
 Whether you need to scrutinize recent performance data, investigate anomalies from a particular week, or review long-term trends, OpsPilot is at your service. Simply request information for the time frame of your choice, and OpsPilot swiftly generates insights tailored to that period. This feature ensures that you have the flexibility to focus on the time intervals that matter most to your monitoring and analysis efforts, empowering you to pinpoint issues, track progress, and make data-driven decisions with precision and confidence.
 
 
-![!Screenshot](/../../images/OpsPilot/timeframe.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/timeframe.png)
 
 ## Real-time error notifications & code solutions
 
 OpsPilot Assistant boasts an invaluable capability that keeps you informed about errors within your services. When responding to a query regarding any existing problems, OpsPilot promptly notifies you with a clear and concise message if any issues are detected. This capability not only expedites the troubleshooting process but also empowers you with actionable insights and solutions, ensuring that you can swiftly address and resolve issues as they arise, enhancing the overall reliability and performance of your applications.
 
-![!Screenshot](/../../images/OpsPilot/problem1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/problem1.png)
 
 What sets this feature apart is its ability to provide more than just an alert. With OpsPilot, you have the option to dive deeper into the issue by clicking on one of the displayed green buttons circled in red in the above image. This action not only offers a comprehensive breakdown of the problem but, in some cases, can even provide a code solution tailored to your exact codebase.
 
-![!Screenshot](/../../images/OpsPilot/problem2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/problem2.png)
 
 
 !!! info
@@ -314,7 +286,7 @@ What sets this feature apart is its ability to provide more than just an alert. 
 
 OpsPilot offers a convenient feature that allows users to access and review their chat history seamlessly. Whether you need to revisit a past conversation for reference or track the progression of discussions, the **History** feature empowers you to do so effortlessly. Simply click the **History** icon in the taskbar, and you'll find a comprehensive record of your previous interactions with OpsPilot. 
 
-![!Screenshot](/../../images/OpsPilot/history.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/history.png)
 
 This feature enhances user experience and ensures that important information and insights shared in conversations are readily accessible whenever needed, facilitating a more efficient and informed monitoring process.
 
@@ -338,14 +310,14 @@ Wherever the blue OpsPilot AI link is displayed, users can easily access relevan
 
 The error context integration can be found anywhere there is decompiled code. 
 
-![!Screenshot](/../../images/OpsPilot/code1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/code1.png)
 
 
 
 Selecting the blue OpsPilot AI button will send details about how the error was thrown into OpsPilot. You will then be provided with a general explanation of the method and OpsPilot will point out any potential causes of errors. 
 
 
-![!Screenshot](/../../images/OpsPilot/code2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/code2.png)
 
 Once in OpsPilot, you can then continue the conversation with the OpsPilot Assistant and ask further questions about the code snippet provided. 
 
@@ -354,12 +326,12 @@ Once in OpsPilot, you can then continue the conversation with the OpsPilot Assis
 !!! example "Rewrite code"
     OpsPilot can even rewrite the code for you to avoid future issues. <br>
 
-    ![!Screenshot](/../../images/OpsPilot/rewritecode.png)
+    ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/rewritecode.png)
 
 !!! example "Translate code"
     OpsPilot can be asked to translate the code into another programming language for usage or just to help you understand it. <br>
 
-    ![!Screenshot](/../../images/OpsPilot/translate.png)
+    ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/translate.png)
     
 ### Code helper 
 
@@ -370,7 +342,7 @@ Once in OpsPilot, you can then continue the conversation with the OpsPilot Assis
 The code helper feature can be used in any place with decompiled code.
 
 
-![!Screenshot](/../../images/OpsPilot/codehelp1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/codehelp1.png)
 
 To use the code helper feature, simply highlight a portion of code and right click to open the menu. Three options will be displayed:
 
@@ -392,13 +364,13 @@ Select any one of the three options to send the code to OpsPilot for an explanat
 
 The profile integration can be found anywhere that gives a profile.
 
-![!Screenshot](/../../images/OpsPilot/profile1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/profile1.png)
 
 
 Selecting the OpsPilot AI button sends information about the profile to OpsPilot which will initially give an explanation of the profile and where any issues may be located.
 
 
-![!Screenshot](/../../images/OpsPilot/profile2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/profile2.png)
 
 ### Log explain
 
@@ -409,11 +381,11 @@ Selecting the OpsPilot AI button sends information about the profile to OpsPilot
 
 The log explain integration can be found anywhere there are logs.
 
-![!Screenshot](/../../images/OpsPilot/logexplain.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/logexplain.png)
 
 Selecting the OpsPilot AI button sends the given log to OpsPilot where it is analyzed.  OpsPilot Assistant provides an explanation of the type of the log and how it is generally caused as well as offers potential fixes.
 
-![!Screenshot](/../../images/OpsPilot/logexplain2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/logexplain2.png)
 
 ### Stack trace 
 
@@ -423,13 +395,13 @@ Selecting the OpsPilot AI button sends the given log to OpsPilot where it is ana
 
 The stack trace button is located anywhere there are error stack traces. 
 
-![!Screenshot](/../../images/OpsPilot/stacktracezoom.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/stacktracezoom.png)
 
-![!Screenshot](/../../images/OpsPilot/stacktrace1.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/stacktrace1.png)
 
 Clicking the blue OpsPilot AI button to the right of an error will provide the stack trace information to OpsPilot which will give you general insight into the stack trace and provide potential causes of the error. You can choose to continue the conversation if required by asking OpsPilot targeted questions to dive deeper and fix the problem.
 
-![!Screenshot](/../../images/OpsPilot/stacktrace2.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/stacktrace2.png)
 
 ## Voice mode
 

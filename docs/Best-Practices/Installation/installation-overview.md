@@ -19,11 +19,19 @@ Whether you're running a ColdFusion setup or a more complex Lucee/Java environme
 <br> (See Fig 3 below)
 
 
+<<<<<<< HEAD
 ![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Local-server.png)
 
 
 !!! info "Learn more" 
     [ColdFusion guide](/frdocs-oss/frdocs/Cloud/Best-Practices/CF-guide/) | [Java/Lucee guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Java-Lucee-OTel/)<br>
+=======
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Local-server.png)
+
+
+!!! info "Learn more" 
+    [ColdFusion guide](/frdocs/Cloud/Best-Practices/CF-guide/) | [Java/Lucee guide](/frdocs/Cloud/Best-Practices/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs/Cloud/Best-Practices/Java-Lucee-OTel/)<br>
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ### Scripted 
 
@@ -42,7 +50,11 @@ Installing FusionReactor manually entails placing the FusionReactor installation
 <br> (See Fig 3 below)
 
 
+<<<<<<< HEAD
 ![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Scripted.png)
+=======
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Scripted.png)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 !!! info "Learn more" 
@@ -68,12 +80,20 @@ The Docker install guides provide clear instructions for effortlessly adding Fus
 <br> (See Fig 3 below)
 
 
+<<<<<<< HEAD
 ![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Docker.png)
+=======
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Docker.png)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
 !!! info "Learn more" 
+<<<<<<< HEAD
     [FR Agent + Observability Agent guide](/frdocs-oss/frdocs/Cloud/Best-Practices/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/ObsAgent-OTel/)
+=======
+    [FR Agent + Observability Agent guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/ObsAgent-OTel/)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
@@ -92,7 +112,11 @@ OpenTelemetry code instrumentation is supported for many popular programming lan
 
 ## Supported databases & frameworks
 
+<<<<<<< HEAD
 ![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/supported.png)
+=======
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/supported.png)
+>>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
