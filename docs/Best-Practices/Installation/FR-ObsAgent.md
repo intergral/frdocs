@@ -1,11 +1,7 @@
 #  Java/Lucee & databases 
 
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Docker1.png)
-=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/Docker1.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ## Step 1: Add FusionReactor to your image
 
@@ -67,11 +63,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 
 ### Run via Docker
 
-<<<<<<< HEAD
-Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/frdocs-oss/frdocs/Cloud/logs/Log-Shipper/#generating-api-keys) and adjusting the environment variables as needed: 
-=======
 Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/frdocs/Cloud/logs/Log-Shipper/#generating-api-keys) and adjusting the environment variables as needed: 
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ```
 docker run --env api_key=YOUR_API_KEY --env ENV_VARIABLE=VALUE --env mysql_connection_string=root:my-secret-pw@(mysql:3306)/ intergral/observability-agent:latest
@@ -88,11 +80,7 @@ docker run --env api_key=YOUR_API_KEY --env ENV_VARIABLE=VALUE --env mysql_conne
 
 
 !!! info "Learn more"
-<<<<<<< HEAD
-    [Log collection, OTEL and other databases](/frdocs-oss/frdocs/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
-=======
     [Log collection, OTEL and other databases](/frdocs/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
