@@ -11,6 +11,7 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 !!! example
 	logql, promql or traceql
+ 
 
 ## How to create a dashboard
 
