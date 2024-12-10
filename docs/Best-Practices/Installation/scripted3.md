@@ -26,7 +26,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
     !!! info
-        The installer for Windows assumes you are installing the Grafana Agent in the default location on the C drive. This is required for the config file to be placed in the correct location for the Grafana Agent to read it.
+        The installer for Windows assumes you are installing Grafana Alloy in the default location on the C drive. This is required for the config file to be placed in the correct location for Grafana Alloy to read it.
 
 === "Linux" 
 

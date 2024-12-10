@@ -6,9 +6,9 @@ The OpenTelemetry Collector manages the reception, processing, and export of tel
 
 Here is a common setup which includes receivers, processors and exporters: 
 
-![!Screenshot](../../OpenTelemetry/Otelcollector.png)
+![!Screenshot](/frdocs/Monitor-your-data/OpenTelemetry/images/Otelcollector.png)
 
-The setup operates as a structured pipeline with key components in the OpenTelemetry Collector:
+The setup operates as a structured pipeline with key components in the OpenTelemetry Collector.
 
 ### Receivers
 The initial stage involves Receivers, which can handle data in various protocols such as Prometheus (for time series data), Jaeger (for distributed tracing of user requests), and OTLP. 

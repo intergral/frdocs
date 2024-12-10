@@ -10,10 +10,10 @@ To begin analyzing and monitoring your OpenTelemetry data with FusionReactor, yo
 
 FusionReactor provides step-by-step guides for the following languages: 
 
-* [C++]()
-* [Go](/Cloud/OpenTelemetry/Instrumenting-OTel/)
+* [C++](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
+* [Go](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
 
-* [Python](/Cloud/OpenTelemetry/Python/)
+* [Python](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
 
 !!! info
     More guides will continue to be added over time.

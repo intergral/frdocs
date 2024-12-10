@@ -1,24 +1,27 @@
-The Grafana Agent is a telemetry collector that prioritizes vendor neutrality and comes equipped with essential features. Its configuration draws inspiration from Terraform, offering flexibility and ease of setup. Engineered to deliver high performance, the Grafana Agent seamlessly integrates with various ecosystems, including Prometheus and OpenTelemetry, ensuring compatibility across diverse environments.
+# Grafana Alloy
 
-To send OpenTelemetry data to FusionReactor Cloud requires the installation of the Grafana Agent. 
+Grafana Alloy is your all-in-one telemetry collector, combining the power of OpenTelemetry with Grafana Labs' expertise. Built to handle everything from metrics and logs to traces and profiles, it excels at collecting Prometheus data while remaining fully compatible with OTLP (OpenTelemetry Protocol). Think of it as OpenTelemetry Collector, enhanced with Grafana's special optimizations for better performance and seamless integration.
+
+To send OpenTelemetry data to FusionReactor Cloud requires the installation of Grafana Alloy. 
+
 
 !!! info "Learn more"
-    [Installing the Grafana Agent](https://grafana.com/docs/agent/latest/flow/tasks/)
+    [Installing Grafana Alloy](https://grafana.com/docs/alloy/latest/set-up/install/)
 
 
 ## Configuration
 
-Consult the Grafana documentation for instructions on how to configure the Grafana Agent and set the environmental variables.
+Consult the Grafana documentation for instructions on how to configure Grafana Alloy and set the environmental variables.
 
 !!! info "Learn more"
-    [Configure the Grafana Agent](https://grafana.com/docs/opentelemetry/instrumentation/configuration/grafana-agent/#configuration)
+    [Configure Grafana Alloy](https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/collector/grafana-alloy/#configuration)
 
 
 
-## Running the Agent
+## Run the Grafana Alloy
 
-Consult the Grafana documentation for instructions on how to start the Grafana Agent in flow mode.
+Consult the Grafana documentation for instructions on how to start Grafana Alloy in flow mode.
 
 
 !!! info "Learn more"
-    [Run the Grafana Agent](https://grafana.com/docs/opentelemetry/instrumentation/configuration/grafana-agent/#running-the-agent)
+    [Run Grafana Alloy](https://grafana.com/docs/grafana-cloud/monitor-applications/application-observability/collector/grafana-alloy/#running-the-agent)

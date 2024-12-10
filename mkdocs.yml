@@ -111,13 +111,13 @@ nav:
          - Overview: Monitor-your-data/OpenTelemetry/Shipping/overview.md
          - OpenTelemetry Collector: Monitor-your-data/OpenTelemetry/Shipping/Collector.md
          - Observability Agent: Monitor-your-data/OpenTelemetry/Shipping/Observability-agent.md
-         - Grafana Agent: Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent.md
+         - Grafana Alloy: Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent.md
      #Cloud/OpenTelemetry/OTel-shipping.md
        - Visualize your data: 
-         - Metrics: Cloud/OpenTelemetry/VisMetrics.md
-         - Traces: Cloud/OpenTelemetry/VisTraces.md 
-         - Logs: Cloud/OpenTelemetry/VisLogs.md 
-         - Distributed tracing: Cloud/OpenTelemetry/distributed-tracing.md
+         - Metrics: Monitor-your-data/OpenTelemetry/Visualize/Metrics.md
+         - Traces: Monitor-your-data/OpenTelemetry/Visualize/Traces.md 
+         - Logs: Monitor-your-data/OpenTelemetry/Visualize/Logs.md 
+         - Distributed tracing: Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md
      - Kubernetes monitoring:
         - Overview: Cloud/platform-integrations/K8overview.md
         - Shipping Kubernetes data to FR: Cloud/platform-integrations/shippingK8stoFR.md

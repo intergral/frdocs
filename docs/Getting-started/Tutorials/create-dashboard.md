@@ -1,3 +1,6 @@
+# Create a dashboard
+
+
 Dashboards and panels enable you to visually represent your data. To display a visualization within a panel, you must have at least one associated query.
 
 ## Before you start
@@ -9,23 +12,12 @@ Dashboards and panels enable you to visually represent your data. To display a v
 !!! example
 	logql, promql or traceql
 
-## Create a dashboard
+## How to create a dashboard
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/893302849?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to create a FusionReactor dashboard"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 **Step 1**: Select **Dashboards** from the navigation menu.
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step1.png)
-
-**Step 2**: Click **Create New Dashboard**.
-
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step2.png)
-
-**Step 3**: On the empty dashboard, click **+ Add visualization**.
-
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step3.png)
-=======
 ![!Screenshot](/frdocs/Getting-started/Tutorials/step1.png)
 
 **Step 2**: Click **Create New Dashboard**.
@@ -35,7 +27,6 @@ Dashboards and panels enable you to visually represent your data. To display a v
 **Step 3**: On the empty dashboard, click **+ Add visualization**.
 
 ![!Screenshot](/frdocs/Getting-started/Tutorials/step3.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 **Step 4**: In the dialog box that opens, do one of the following:
 
@@ -45,11 +36,7 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 * Click **Configure a new data source** to set up a new one (Admins only).
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials//step4.png)
-=======
 ![!Screenshot](/frdocs/Getting-started/Tutorials//step4.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
@@ -62,16 +49,6 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 **Step 6**: Select the **Refresh dashboard** icon to query the data source.
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step6.png)
-
-**Step 7**: In the visualization list, select a visualization type.
-
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/step7.png)
-
-!!! info "Learn more"
-	Full list of available [visualizations](/frdocs-oss/frdocs/Cloud/guides/create-dashboard/#visualizations)     
-=======
 ![!Screenshot](/frdocs/Getting-started/Tutorials/step6.png)
 
 **Step 7**: In the visualization list, select a visualization type.
@@ -80,7 +57,6 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 !!! info "Learn more"
 	Full list of available [visualizations](/frdocs/Cloud/guides/create-dashboard/#visualizations)     
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 !!! info
 	FusionReactor displays a preview of your query results with the visualization applied.
@@ -118,11 +94,7 @@ Alternatively, click **Apply** if you want to see your changes applied to the da
 
 **Step 14**: To add more panels to the dashboard, click **Add** in the dashboard header and select **Visualization** in the drop-down.
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Getting-started/Tutorials/add.png)
-=======
 ![!Screenshot](/frdocs/Getting-started/Tutorials/add.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ## Visualizations 
 
