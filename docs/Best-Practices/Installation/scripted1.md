@@ -11,6 +11,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 
 !!! note 
     Ensure that you always use the latest version of FusionReactor.
+    
 
 === "Windows"
 
