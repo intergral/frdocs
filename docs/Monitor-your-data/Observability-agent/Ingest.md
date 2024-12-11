@@ -2,19 +2,19 @@
 
 
 <iframe src="https://player.vimeo.com/video/810456295?h=3294f36424" width="640" height="353" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/810456295">Ingest data into FusionReactor using the Grafana agent in Docker</a> from <a href="https://vimeo.com/user109619720">FusionReactorAPM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p><a href="https://vimeo.com/810456295">Ingest data into FusionReactor using Grafana Alloy in Docker</a> from <a href="https://vimeo.com/user109619720">FusionReactorAPM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-## Setting up the Grafana Agent
+## Setting up Grafana Alloy
 
 This is a simple procedure that gives additional insight into your product and the metrics it produces, so you can quickly investigate and pinpoint issues. Scraped metrics are available in both **Explore** and the **Integrations Dashboards** within the **FusionReactor Cloud**.
 
 
-!!! example "Example: Using Docker with two containers (one for the Grafana agent, and the other with the MySQL database)"
+!!! example "Example: Using Docker with two containers (one for Grafana Alloy, and the other with the MySQL database)"
 
 !!! note 
     The Docker example below uses files from the Grafana source code [GitHub](https://github.com/grafana/agent). 
 
-## Configure the Grafana Agent 
+## Configure Grafana Alloy 
 
 ### **Step 1**: Access your agent.yaml configuration file
 
@@ -67,7 +67,7 @@ Replace the **credentials** under **authorization** with your API key to authent
 
 ### **Step 4**: Create the containers 
 
-Create the Grafana Agent container and the MySQL container with the following code:
+Create Grafana Alloy container and the MySQL container with the following code:
 
 ```yaml
 services:
@@ -109,14 +109,14 @@ Navigate to FusionReactor Cloud to access the many features available such as Da
 Select the **MySQL integrations dashboard** > **Explore** > **Code** to display the Metrics browser. 
 
 !!! tip
-    Selecting, for example, **mysql_up query** > **use query** > **run query** will show the agent is now receiving data from the Grafana Agent.
+    Selecting, for example, **mysql_up query** > **use query** > **run query** will show the agent is now receiving data from Grafana Alloy.
 
 
-The Grafana Agent is a powerful tool to pull metrics from your servers, and this is just one example of the many implementations to use Grafana with FusionReactor. 
+Grafana Alloy is a powerful tool to pull metrics from your servers, and this is just one example of the many implementations to use Grafana with FusionReactor. 
 
 ## Local Grafana Agent example
 
-The following video demonstrates how to set up the Grafana Agent so that it can be used to ingest data into the FusionReactor Cloud. The example uses Linux with the Grafana Agent already installed, but the agent is also usable on Docker, Windows and MacOS.
+The following video demonstrates how to set up Grafana Alloy so that it can be used to ingest data into the FusionReactor Cloud. The example uses Linux with Grafana Alloy already installed, but the agent is also usable on Docker, Windows and MacOS.
 
 <iframe src="https://player.vimeo.com/video/810501529?h=3294f36424" width="640" height="353" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/810501529">Ingest data into FusionReactor using a local Grafana Agent.</a> from <a href="https://vimeo.com/user109619720">FusionReactorAPM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

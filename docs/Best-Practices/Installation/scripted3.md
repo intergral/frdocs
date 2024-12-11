@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Script3.png)
-=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/Script3.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 ## Step 1: Install the Observability Agent
 
@@ -26,7 +22,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
     !!! info
-        The installer for Windows assumes you are installing the Grafana Agent in the default location on the C drive. This is required for the config file to be placed in the correct location for the Grafana Agent to read it.
+        The installer for Windows assumes you are installing Grafana Alloy in the default location on the C drive. This is required for the config file to be placed in the correct location for Grafana Alloy to read it.
 
 === "Linux" 
 
@@ -40,7 +36,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
 !!! info "Learn more"
-    Further [options](/Cloud/Observability-Agent-Install/observability-agent/#options) are available when installing the Observability Agent.
+    Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
 ## Step 2: Instrument OpenTelemetry
 
 Instrument your code to support OpenTelemetry on your application (Node.js, Python, Go etc).
