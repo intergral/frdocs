@@ -22,7 +22,7 @@ The OpsPilot Assistant is designed to be a constant  and trusted helper; it even
 
 The OpsPilot Assistant takes the complexity out of monitoring your application: pre-defined question templates are built right into the system. These conversation  templates consist of carefully designed questions to simplify the monitoring process, making it effortless for users to gather crucial insights and track performance metrics. Whether you're new to monitoring or a seasoned professional, these intuitive tools help streamline your workflow, ensuring that you have the right data at your fingertips to assess your application's health and swiftly address any issues that may arise. With OpsPilot, monitoring your application becomes not just efficient but also exceptionally user-friendly.
 
-![!Screenshot](/../../images/OpsPilot/templates.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/stemplates.png)
 
 The OpsPilot Assistant currently has the following custom templates:
 
@@ -30,12 +30,12 @@ The OpsPilot Assistant currently has the following custom templates:
 
 * [Errors](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#errors) 
 
-* [Performance](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#performance)  
+* [Performance](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#performance)  
 
-* [Billing & usage](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#billing-usage) 
+* [Billing & usage](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#billing-usage) 
 
-* [General](/Cloud/guides/OpsPilot/OpsPilot-user-guide/#general)  
->>>>>>> 9e76b47 (added OP to data insights)
+* [General](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#general)  
+
 
 !!! info 
     New conversation templates will continue to be added over time.
