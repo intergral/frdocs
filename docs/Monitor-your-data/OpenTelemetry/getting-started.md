@@ -47,7 +47,7 @@ For instance, when instrumenting a typical web application, each request can be 
 FusionReactor is now able to provide distributed trace information which is captured and displayed in a graphical format, so you can visualize the entire request flow and quickly identify any issues or bottlenecks.  
 
 !!! info "Learn more"
-    [Distributed tracing](/Cloud/OpenTelemetry/distributed-tracing/)
+    [Distributed tracing](/frdocs/Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing/)
 
 
 ### Logs
@@ -71,20 +71,20 @@ Instrumentation is the process of extending your application to generate, collec
 
 
 !!! info “Learn more”
-[Instrumentation](/Cloud/OpenTelemetry/Overview/)
+    [Instrumentation](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview//)
 
 ### Shipping telemetry data to FusionReactor Cloud
 
 There are 3 ways to send data to FusionReactor Cloud:
 
-* [OTel collector]()
+* [OTel collector](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
 
-* [Observability Agent]()
+* [Observability Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
 
-* [Grafana Agent]()
+* [Grafana Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
 
 !!! info "Learn more"
-    [Sending data to FR Cloud](/Cloud/OpenTelemetry/OTel-shipping/)
+    [Sending data to FR Cloud](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/overview/)
 
 
 ### OpenTelemetry collector
