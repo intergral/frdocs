@@ -92,11 +92,7 @@ OpenTelemetry code instrumentation is supported for many popular programming lan
 
 ## Supported databases & frameworks
 
-<<<<<<< HEAD
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/supported.png)
-=======
 ![!Screenshot](/frdocs/Best-Practices/Installation/Images/supported.png)
->>>>>>> 8c4a48ccd55a6aaf74eaa82df95b486e789748bb
 
 
 
