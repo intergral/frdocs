@@ -127,18 +127,18 @@ hide:
             </div>
             <div class="fr-step">
                 <div class="fr-step-number">2</div>
-                <div class="fr-step-title">Start your FR journey</div>
-                <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
+                <div class="fr-step-title">Install FusionReactor</div>
+                <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.Familiarize yourself with our comprehensive monitoring platform.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Get started</a>
+                    <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Install FR</a>
                 </div>
             </div>
             <div class="fr-step">
                 <div class="fr-step-number">3</div>
-                <div class="fr-step-title">Install FusionReactor</div>
-                <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.</div>
+                <div class="fr-step-title">Start your FR journey</div>
+                <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Install FR</a>
+                    <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Get started</a>
                 </div>
             </div>
             <div class="fr-step">
@@ -153,7 +153,6 @@ hide:
     </div>
 </body>
 </html>
-
 
 
 ### POPULAR DOCS
@@ -200,7 +199,7 @@ hide:
 
 
 
-    [:octicons-arrow-right-24: Learn more](/Monitor-your-data/FR-Agent/agent-overview/)
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/FR-Agent/agent-overview/)
 
 
 -    __Observability Agent__
@@ -212,7 +211,7 @@ hide:
     Monitor your databases
 
 
-    [:octicons-arrow-right-24: Learn more](#)
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Observability-agent/overview/)
 
 
 -    __OpenTelemetry__
@@ -224,7 +223,7 @@ hide:
     Monitor telemetry data
 
 
-    [:octicons-arrow-right-24: Learn more](#)
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/OpenTelemetry/getting-started/)
 
 
 -   __Kubernetes__
