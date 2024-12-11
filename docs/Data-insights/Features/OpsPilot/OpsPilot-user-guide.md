@@ -1,6 +1,5 @@
 # User guide
 
-
 OpsPilot is meticulously designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. Through the fusion of large language models (LLMs) with our extensive telemetry data platform, we've engineered an AI companion adept at comprehending the nuances inherent in both your system and OpsPilot's functionalities. OpsPilot streamlines the comprehension of your stack's intricacies, facilitates the resolution of service interruptions, and enhances productivity by facilitating simple inquiries in plain language.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871379062?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot Assistant"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
@@ -36,6 +35,7 @@ The OpsPilot Assistant currently has the following custom templates:
 * [Billing & usage](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#billing-usage) 
 
 * [General](/frdocs/Data-insights/OpsPilot/OpsPilot-user-guide/#general)  
+
 
 !!! info 
     New conversation templates will continue to be added over time.
@@ -153,8 +153,6 @@ OpsPilot is capable of providing real-time status updates and comprehensive over
 * Resource utilization & performance
 
 * Advanced analysis & management
-
-
 
 
 Selecting **Blank template** displays the following screen which offers some suggested prompts. 

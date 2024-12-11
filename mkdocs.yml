@@ -50,7 +50,11 @@ nav:
         - Troubleshooting:
            - todo.md
   - HOW TO CONTRIBUTE:
+<<<<<<< HEAD
            - Contribute/how-to-contribute.md
+=======
+           - todo.md
+>>>>>>> 9e76b47 (added OP to data insights)
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
