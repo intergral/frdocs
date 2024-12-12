@@ -128,7 +128,7 @@ hide:
             <div class="fr-step">
                 <div class="fr-step-number">2</div>
                 <div class="fr-step-title">Install FusionReactor</div>
-                <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.Familiarize yourself with our comprehensive monitoring platform.</div>
+                <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.</div>
                 <div class="fr-step-action">
                     <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Install FR</a>
                 </div>
