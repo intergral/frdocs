@@ -2,6 +2,7 @@ site_name: FusionReactor Documentation
 site_url: https://intergral.github.io/frdocs/
 repo_name: frdocs
 repo_url: https://github.com/intergral/frdocs
+repo_url: https://github.com/intergral/frdocs
 edit_uri: edit/master/docs/docs
 
 
@@ -51,6 +52,8 @@ nav:
            - todo.md
   - HOW TO CONTRIBUTE:
            - Contribute/how-to-contribute.md
+  - HOW TO CONTRIBUTE:
+           - todo.md
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
@@ -118,6 +121,9 @@ nav:
          - Traces: Monitor-your-data/OpenTelemetry/Visualize/Traces.md
          - Logs: Monitor-your-data/OpenTelemetry/Visualize/Logs.md
          - Distributed tracing: Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md
+     - Kubernetes monitoring:
+        - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
+        - Shipping K8s data to FR: Monitor-your-data/Kubernetes-monitoring/Shipping.md
      - Log monitoring:
         - Overview: Cloud/logs/log-overview.md
         - Log shipper: Cloud/logs/Log-Shipper.md
@@ -170,6 +176,20 @@ nav:
             - UEM Sessions:
               - todo.md
         - OpsPilot:
+            - OpsPilot Assistant:
+              - Overview: Data-insights/Features/OpsPilot/AIoverview.md
+            - OpsPilot Integrations:
+              - Overview: Data-insights/Features/OpsPilot/OpsPilot-Hub/integrations-overview.md
+            - OpsPilot Hub: 
+              - Overview: Data-insights/Features/OpsPilot/OpsPilot-Hub/overview.md 
+              - Assistant:
+                - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
+              - Services: Data-insights/Features/OpsPilot/OpsPilot-Hub/Services.md
+              - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
+              - Integrations:
+                - Jira: Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira.md
+                - Microsoft Teams: Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams.md
+                - Slack: Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md
             - OpsPilot Assistant:
               - Overview: Data-insights/Features/OpsPilot/AIoverview.md
             - OpsPilot Integrations:
