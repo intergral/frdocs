@@ -52,8 +52,6 @@ nav:
            - todo.md
   - HOW TO CONTRIBUTE:
            - Contribute/how-to-contribute.md
-  - HOW TO CONTRIBUTE:
-           - todo.md
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
@@ -132,11 +130,11 @@ nav:
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
   - DATA INSIGHTS: 
        # - Data-insights/Features/account.md
-        - Data-insights/Features/alerting.md
+        - Alerting: Data-insights/Features/alerting.md
         - Anomaly Detection:
             - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
             - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
-        - Data-insights/Features/applications.md
+        - Applications: Data-insights/Features/applications.md
         - Crash Protection:
             - todo.md
         - Dashboards: Data-insights/Features/dashboards.md
@@ -146,7 +144,7 @@ nav:
             - todo.md
         - Enterprise Dashboard:
             - todo.md
-        - Data-insights/Features/explore.md
+        - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
         - On-Prem UI:
             - CPU Sampler:
@@ -232,7 +230,7 @@ nav:
                 - Slack: Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md
         - Profiler:
             - todo.md
-        - Data-insights/Features/servers.md
+        - Servers: Data-insights/Features/servers.md
   - LATEST UPDATES: 
      - What's new: 
         - todo.md
