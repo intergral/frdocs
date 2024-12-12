@@ -121,6 +121,9 @@ nav:
          - Traces: Monitor-your-data/OpenTelemetry/Visualize/Traces.md
          - Logs: Monitor-your-data/OpenTelemetry/Visualize/Logs.md
          - Distributed tracing: Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md
+     - Kubernetes monitoring:
+        - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
+        - Shipping K8s data to FR: Monitor-your-data/Kubernetes-monitoring/Shipping.md
      - Log monitoring:
         - Overview: Cloud/logs/log-overview.md
         - Log shipper: Cloud/logs/Log-Shipper.md
