@@ -84,7 +84,7 @@ In order to do this:
 2. Create an alerting rule.
 
 !!! info "Learn more"
-    [Log alerting](/Cloud/guides/log-alerting/) 
+    [Alerting](/frdocs/Monitor-your-data/Log-monitoring/alerting/) 
 
 ___
 

@@ -66,7 +66,7 @@ It is possible that applications can log sensitive data.
 
 For example if you log passwords in debug logs, these may need to be obfuscated:
 
-![](../../images/Logs/obfuscation.png)
+![](/frdocs/Monitor-your-data/Log-monitoring/images/obfuscation.png)
 
 You have the ability to obfuscate and data within log files by adding regex replacement rules under [Logging > Cloud Obfuscation settings](/Logs/Cloud-Log-Obfuscation-Rules/).
 

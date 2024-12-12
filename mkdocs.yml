@@ -128,6 +128,7 @@ nav:
         - Overview: Monitor-your-data/Log-monitoring/overview.md
         - Log shipper: Monitor-your-data/Log-monitoring/log-shipper.md
         - FR Agent shipper: Monitor-your-data/Log-monitoring/agent-shipper.md
+        - Alerting: Monitor-your-data/Log-monitoring/alerting.md
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
   - DATA INSIGHTS: 
        # - Data-insights/Features/account.md
@@ -158,8 +159,32 @@ nav:
               - todo.md
             - JDBC:
               - todo.md
-            - Logging:
-              - todo.md
+            - Logs:
+                - todo.md
+               # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
+                #- Data-insights/Features/Onprem-UI/Logs/Logs.md
+                #- Data-insights/Features/Onprem-UI/Logs/Log-Archives.md
+                #- Data-insights/Features/Onprem-UI/Logs/Log-Archive-Viewer.md
+                #- Data-insights/Features/Onprem-UI/Logs/Cloud-Settings.md
+               # - Data-insights/Features/Onprem-UI/Logs/Cloud-Log-Obfuscation-Rules.md
+                #- Data-insights/Features/Onprem-UI/Logs/Cloud-Log-MultiLine-Blocks.md
+               # - Data-insights/Features/Onprem-UI/Logs/Settings.md
+                #- Files:
+                 # - Data-insights/Features/Onprem-UI/Logs/Memory-Logs.md
+                  #- Data-insights/Features/Onprem-UI/Logs/Files/Class-Loading-Log.md
+                 # - Data-insights/Features/Onprem-UI/Logs/Files/Cloud-State-Log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/CPU-Thread-Log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/Crash-Protection-Log.md
+                 # - Data-insights/Features/Onprem-UI/Logs/Files/Device-Log.md
+                  #- Data-insights/Features/Onprem-UI/Logs/Files/Garbage-Collection-Logs.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/Instance-Manager-Log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/JDBC-Log.md
+                # - Data-insights/Features/Onprem-UI/Logs/Files/Notification-Log.md
+              # - Data-insights/Features/Onprem-UI/Logs/Files/Reactor-Log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/Request-Log.md
+                 # - Data-insights/Features/Onprem-UI/Logs/Files/Resource-Log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/Stdout.log-and-Stderr.log.md
+                #  - Data-insights/Features/Onprem-UI/Logs/Files/Thread-State-Log.md
             - Memory:
               - todo.md
             - Metrics:
