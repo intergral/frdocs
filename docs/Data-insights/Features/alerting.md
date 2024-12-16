@@ -7,7 +7,7 @@
 **FusionReactor Cloud Alerting** allows you to create automated checks on the values of metric data gathered by a
 FusionReactor agent, and generate alerts when user-made conditions are met.
 
-![!Screenshot](../new-img/alerting/alertnew.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/alertnew.png)
 
 The alerting system is comprised of **Checks** and **Subscriptions**:
 
@@ -32,13 +32,13 @@ In the **Checks** screen, you can perform the following actions:
 * **Edit**, **Duplicate** or **Delete** a check.
 
 
-![!Screenshot](../new-img/alerting/alertactions.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/alertactions.png)
 
 ### Alert status
 
 Hovering over the first icon at the right of the screen displays information about the alert.
 
-![!Screenshot](../new-img/alerting/alertinfo.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/alertinfo.png)
 
 1. **Ok** - This alert has not passed its alert threshold.
 
@@ -53,17 +53,17 @@ Hovering over the first icon at the right of the screen displays information abo
 
 6. **Unknown** - The data for this check could not be found or processed. 
 
-### Creating a check 
+### Create a check 
 
 🔎**Find it**: **FusionReactor** > **Alerting** > **Checks** > **+ Check**
 
 To create a check, select **+ Check** on the top right of page.
 
-![!Screenshot](../new-img/alerting/create.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/create.png)
 
 The **Create new check** screen is displayed.
 
-![!Screenshot](../new-img/alerting/createdet.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/createdet.png)
 
 !!! tip
     We recommend only creating checks that fire when action to correct a situation is required. If you have too many alerts fire, we tend to find that alerts begin to be ignored. As a result crucial alerts that are important can be missed.
@@ -73,9 +73,9 @@ The **Create new check** screen is displayed.
 
 There are two ways to set a query:
 
-* [Builder](/Cloud/guides/alerting/#builder)
+* [Builder](/frdocs/Data-insights/Features/alerting/#builder)
 
-* [Code](/Cloud/guides/alerting/#code)
+* [Code](/frdocs/Data-insights/Features/alerting/#code)
 
 #### Builder
 
@@ -90,12 +90,12 @@ The first step in creating a check is naming it.
 
 The metrics list contains every metric that has been ingested into your cloud account
 
-![!Screenshot](../new-img/alerting/buildq.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/buildq.png)
 
 Functions can be applied to your metric if required.
 
 
-![!Screenshot](../new-img/alerting/funct.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/funct.png)
 
 Functions include:
 
@@ -111,17 +111,17 @@ Functions include:
 
 The **Grouped by labels** dropdown will set which labels the data is grouped by, before a function is run on each group.
 
-![!Screenshot](../new-img/alerting/grplabel.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/grplabel.png)
 
 Any changes to your metric selection, function or group will be applied to the graph showing the metric state.
 
-![](../../images/alerting/metricGraph.png)
+![](../../Data-insights/Features/images/Alerting/metricGraph.png)
 
 The timeframe of the metric can be adjusted from one hour, up to 2 weeks.
 
 **Step 3: Filter with labels**
 
-![](../../images/alerting/filter.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/filter.png)
 
 The alerting UI will display each label associated with your selected metric.
 
@@ -135,7 +135,7 @@ The alerting UI will display each label associated with your selected metric.
 
 Using the metric graph for reference, you can set your alert threshold.
 
-![](../../images/alerting/thresh.png)
+![](../../Data-insights/Features/images/Alerting/thresh.png)
 
 Use the selector to specify whether the value needs to be greater than, less than or equal to the threshold.
 
@@ -143,13 +143,13 @@ Use the selector to specify whether the value needs to be greater than, less tha
 
 Specify which of your existing subscriptions you would like your alert to be sent to, or alternatively create a new subscription.
 
-![](../../images/alerting/subs.png)
+![](../../Data-insights/Features/images/Alerting/subs.png)
 
 **Step 6: Optional configuration**
 
 You can set a summary and runbook for your alert notification. These are optional.
 
-![](../../images/alerting/optional.png)
+![](../../Data-insights/Features/images/Alerting/optional.png)
 
 
 - **Summary** is a short description of the check, so the receiver knows what the alert is about.
@@ -171,20 +171,20 @@ The first step in creating a check is naming it.
 
 To build your query using PromQL, select the **code** button.
 
-![](../new-img/alerting/code.png)
+![](../../Data-insights/Features/images/Alerting/code.png)
 
 The following screen is displayed:
 
-![](../new-img/alerting/code2.png)
+![](../../Data-insights/Features/images/Alerting/code2.png)
 
 !!! example "Example Query"
-    ![](../new-img/alerting/code3.png)
+    ![](../../Data-insights/Features/images/Alerting/code3.png)
 
 **Step 3: Set your thresholds**
 
 Using the metric graph for reference, you can set your alert threshold.
 
-![](../../images/alerting/thresh.png)
+![](../../Data-insights/Features/images/Alerting/thresh.png)
 
 Use the selector to specify whether the value needs to be greater than, less than or equal to the threshold.
 
@@ -192,13 +192,13 @@ Use the selector to specify whether the value needs to be greater than, less tha
 
 Specify which of your existing subscriptions you would like your alert to be sent to, or alternatively create a new subscription.
 
-![](../../images/alerting/subs.png)
+![](../../Data-insights/Features/images/Alerting/subs.png)
 
 **Step 5: Optional configuration**
 
 You can set a summary and runbook for your alert notification. These are optional.
 
-![](../../images/alerting/optional.png)
+![](../../Data-insights/Features/images/Alerting/optional.png)
 
 - **Summary** is a short description of the check, so the receiver knows what the alert is about.
 - **Runbook** is for a URL. This is usually the location of the resources/instructions for *What to do when this alert fires*.
@@ -220,7 +220,7 @@ To more reliably monitor the online status of a specific job/instance, see the [
 It's also possible the graph will say **no data** when you are editing your check. This simply means no instances have gone offline within the time frame shown.
 
 !!! example
-    ![!Screenshot](../new-img/alerting/alert-examples/any-instance-offline.png)
+    ![!Screenshot](../../Data-insights/Features/images/Alerting/any-instance-offline.png)
 
     * This check relies on the function **Unless**, which returns the value from 5 minutes ago when **no data** is present now.
 
@@ -237,7 +237,7 @@ If you choose more than one **Job** or **Instance** with these alert conditions,
 It's possible the graph will say **no data** when you are editing your check. This simply means the selected instance has not been offline within the time frame shown.
 
 !!! example
-    ![!Screenshot](../new-img/alerting/alert-examples/single-job-offline.png)
+    ![!Screenshot](../../Data-insights/Features/images/Alerting/single-job-offline.png)
 
     The important parts here are:
 
@@ -249,7 +249,7 @@ It's possible the graph will say **no data** when you are editing your check. Th
 In this example, we make use of the threshold value to have an alert that fires if an instance is using over 90% of the system CPU.
 
 !!! example 
-    ![!Screenshot](../new-img/alerting/alert-examples/any-instance-90-cpu.png)
+    ![!Screenshot](../../Data-insights/Features/images/Alerting/any-instance-90-cpu.png)
 
 !!! tip
     You can also use **less than** with the threshold for underflow alerts, to detect unusually low activity. This is useful for services that receive many requests, as low activity could be a sign that requests are not reaching your service.
@@ -260,9 +260,9 @@ Instances can be assigned a group which will appear as a label. In the example s
 and each of those instances will be assessed by the check.
 
 !!! example
-    ![!Screenshot](../new-img/alerting/alert-examples/group-90-memory.png)
+    ![!Screenshot](../../Data-insights/Features/images/Alerting/group-90-memory.png)
 
-### Editing and duplicating checks
+### Edit and duplicate checks
 
 **Edit** - Editing a check will provide you with a form identical to the form for creating one. It will be populated with the existing configuration of the check and when you save it the original check is overwritten.
 
@@ -275,7 +275,7 @@ and each of those instances will be assessed by the check.
 
 Subscriptions require a service they can send their subscribed alerts to. These are set-up in the configuration menu. 
 
-![!Screenshot](../new-img/alerting/alertservice.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/alertservice.png)
 
 
 The following alerting services are currently supported:
@@ -286,7 +286,7 @@ The following alerting services are currently supported:
 * [Microsoft Teams](https://products.office.com/en-us/microsoft-teams/group-chat-software/) (via HTTP webhook)
 * [Slack](https://slack.com/)
 
-### Configuring alerting services
+### Configure alerting services
 
 Service configurations can be found under [Alert services]( https://app.fusionreactor.io/configuration/alerts) in the
 **Configuration** menu. From there you can configure the services you wish to use when creating subscriptions.
@@ -294,11 +294,11 @@ Service configurations can be found under [Alert services]( https://app.fusionre
 To configure a service simply click the **Configure** next to that service.
 
 
-![!Screenshot](../new-img/alerting/config1.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/config1.png)
 
 A menu like the one shown below will appear:
 
-![!Screenshot](../new-img/alerting/alerting_config_drawer.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/alerting_config_drawer.png)
 
 The required information differs for each service, and are explained in more detail below:
 
@@ -338,7 +338,7 @@ For the FusionReactor Cloud Slack app:
     
     After granting the app access, you will be redirected back to FusionReactor Cloud and your service will be configured.
 
-### Disabling alerting services
+### Disable alerting services
 
 Clicking the toggle next to the service will switch it between being **Enabled** or **Disabled**.
 
@@ -351,11 +351,11 @@ When a service configuration is disabled, the following will happen:
 
 * The settings saved on that service will be kept, so no extra set-up is required when re-enabling them.
 
-### Resetting alerting services
+### Reset alerting services
 
 You can reset the configuration for a service by selecting **Reset**  next to that service.
 
-![!Screenshot](../new-img/alerting/reset.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/reset.png)
 
 
 When a service configuration is reset, the following occurs:
@@ -371,19 +371,19 @@ When a service configuration is reset, the following occurs:
 
 The subscriptions tab lets you manage and test your subscriptions.
 
-![!Screenshot](../new-img/alerting/subscriptions2.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/subscriptions2.png)
 
 To view a subscription in more detail, select its name on the left-side of the row.
 
-## Creating subscriptions
+## Create subscriptions
 
 Clicking the subscription button as shown below, will open the form for creating subscriptions. 
 
-![!Screenshot](../new-img/alerting/addsubscriptions2.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/addsubscriptions2.png)
 
 The **Create new subscription** screen is displayed:
 
-![!Screenshot](../new-img/alerting/createnewsub.png)
+![!Screenshot](../../Data-insights/Features/images/Alerting/createnewsub.png)
 
 Within this form you will be able to set the active times and days of the subscription, as well as which alert states it watches for.
 
@@ -460,7 +460,7 @@ Once you have the URL, enter it into your subscription as the Target URL, as men
 
     Resulting output:
 
-    ![!Screenshot](../new-img/alerting/msteams_message.png)
+    ![!Screenshot](../../Data-insights/Features/images/Alerting/msteams_message.png)
 
 
 !!! info "Learn more"
@@ -475,10 +475,10 @@ For the FusionReactor Cloud Slack app:
 * If required, sign into Slack, and then select the channel you want alerts to appear in.
 * After, you will be redirected back to FusionReactor Cloud where you can continue to configure your subscription.
 
-### Editing and duplicating subscriptions
+### Edit and duplicate subscriptions
 
 Clicking the **Edit** button on the row of the subscription you wish to edit will present you with an interface just like
-the one used to [create subscriptions](alerting.md#creating-subscriptions).
+the one used to [create subscriptions](/frdocs/Data-insights/Features/alerting/#create-subscriptions).
 
 The values shown will match what's currently set on the subscription. Once you've made your desired changes, simply
 click **Save** and your changes will overwrite on the subscription.
@@ -487,7 +487,7 @@ If you don't wish to overwrite the existing subscription you can click **Duplica
 
 Clicking **Save** at the end of the form, creates a new subscription.
 
-### Deleting and disabling subscriptions
+### Delete and disable subscriptions
 
 Clicking **Delete** results in a message requesting confirmation that you wish to delete the subscription. Choosing **Ok** will delete the subscription from your account.
 
