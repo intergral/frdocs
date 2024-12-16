@@ -235,7 +235,7 @@ hide:
     Monitor your clusters
 
 
-    [:octicons-arrow-right-24: Learn more](#)
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Kubernetes-monitoring/overview/)
 
 
 -   __Log Monitoring__
@@ -247,7 +247,7 @@ hide:
     Monitor your logs
 
 
-    [:octicons-arrow-right-24: Learn more](#)
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Log-monitoring/overview/)
 
 </div>
 
@@ -256,10 +256,10 @@ hide:
 
 <div class="grid" markdown>
 
-[Alerting](#)
+[Alerting](/frdocs/Data-insights/Features/alerting/)
 { .card }
 
-[Anomaly Detection](#)
+[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)
 { .card }
 
 [Applications](#)
@@ -268,7 +268,7 @@ hide:
 [Crash Protection](#)
 { .card }
 
-[Dashboards](#)
+[Dashboards](/frdocs/Data-insights/Features/dashboards/#log-dashboards)
 { .card }
 
 [Debugger](#)
@@ -280,7 +280,7 @@ hide:
 [Enterprise Dashboard](#)
 { .card }
 
-[Explore](#)
+[Explore](/frdocs/Data-insights/Features/explore/)
 { .card }
 
 [Historic Data](#)
@@ -292,13 +292,13 @@ hide:
 [On-Prem UI](#)
 { .card }
 
-[OpsPilot](#)
+[OpsPilot](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)
 { .card }
 
 [Profiler](#)
 { .card }
 
-[Servers](#)
+[Servers](/frdocs/Data-insights/Features/servers/)
 { .card }
 
 
