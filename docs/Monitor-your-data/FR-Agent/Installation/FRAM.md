@@ -8,7 +8,7 @@ Choose the automatic installer from the FusionReactor download page, select your
 
 
 !!! info "Learn more"
-    [Automatic installer](/Installation/Installer/Install/)
+    [Automatic installer](/frdocs/Monitor-your-data/FR-Agent/Installation/Automatic/)
 
 ## **Step 2**: Install a FusionReactor instance using FRAM
 

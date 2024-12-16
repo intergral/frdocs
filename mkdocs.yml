@@ -72,7 +72,14 @@ nav:
         - Install: 
            - Automatic: Monitor-your-data/FR-Agent/Installation/Automatic.md
            - FRAM: Monitor-your-data/FR-Agent/Installation/FRAM.md  
-           - Manual: Monitor-your-data/FR-Agent/Installation/Manual.md
+           - Manual: 
+                - Install: Monitor-your-data/FR-Agent/Installation/Manual.md
+                - Configuration examples: Monitor-your-data/FR-Agent/Installation/Configuration-examples.md
+                - More:
+                    - Download links: Monitor-your-data/FR-Agent/Installation/Download-Links.md
+                    - MD5s: Monitor-your-data/FR-Agent/Installation/md5.md
+           - Docker: Monitor-your-data/FR-Agent/Installation/Docker.md         
+           - CommandBox: Monitor-your-data/FR-Agent/Installation/CommandBox.md
         - Upgrade:
            - Automatic: Monitor-your-data/FR-Agent/Upgrade/Auto-upgrade.md
            - Manual: Monitor-your-data/FR-Agent/Upgrade/Manual-upgrade.md
