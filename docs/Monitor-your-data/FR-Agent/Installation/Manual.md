@@ -6,7 +6,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
     Installing FusionReactor manually requires some knowledge of your application server configuration and can be completed in just a few minutes.
 
 !!! tip
-    For scenarios where you have VMs or containers running in your environment, such as Hypervisor, Kubernetes, or Rocket, being able to script and install FusionReactor and automatically deploy the latest version of the application is ideal.
+    For environments with VMs or containers like Hypervisor, Kubernetes, or Rocket, scripting the FusionReactor installation and automating deployment of the latest version is ideal.
 
 
 ## Installing FusionReactor
@@ -16,14 +16,20 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 To begin installing FusionReactor onto your application server, first create a directory structure for FusionReactor files to be stored within. This directory will contain your logs, configurations and installation files.
 
 !!! warning
-    Ensure the user running your application server server has read and write permissions to this directory, otherwise you may be unable to start the application server or save any information such as logs or configuration to disk.
+    Make sure the user running your application server has read and write permissions for this directory. Without these permissions, the server might not start, or it could fail to save logs and configurations.
 
  The recommended FusionReactor directory structure is ```{FusionReactor root}/instance/{Instance Name}```.
 
 !!! tip
-    You could use a name unique to your server, but you would need to remember it. See below the recommended directory structure: 
+    You can use a unique name for your server, but make sure to remember it. 
 
-{!Common/Platform-Directory!}
+Below is the recommended directory structure:
+
+| Platform | Path|
+|--- |--- |
+| **Windows** | ```C:\\FusionReactor\Instance\myInstance``` |
+| **Linux** | ```/opt/fusionreactor/instance/myInstance``` |
+| **MacOS** | ```/Applications/FusionReactor/instance/myInstance``` |
 
 ### **Step 2**: Download the FusionReactor installation files
 The installation of FusionReactor requires a Java agent to run the core FusionReactor product when your application starts.
@@ -32,7 +38,7 @@ There is also a Debug library that can be optionally added for use of the Debugg
 
 Download the **fusionreactor.jar** file and **Debug library**, [here](https://www.fusion-reactor.com/download-fusionreactor/).
 
-![!Screenshot](/Installation/Manual/dlweb.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/dlweb.jpg)
 
 !!! tip
     We recommend installing this argument if you have a trial, ultimate or developer edition to access the full functionality of FusionReactor.
@@ -83,7 +89,7 @@ Below are some examples of adding FusionReactor to a java process that runs a ja
 
 For a **comprehensive** list of example configurations:
 !!! info "Learn more"
-    [Configuration examples](/Installation/Manual/Manual-Configuration-Examples/)
+    [Configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 !!! example
     #### **Windows:**

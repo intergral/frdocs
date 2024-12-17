@@ -11,11 +11,11 @@ You can download the full installer from the [FusionReactor download](https://ww
 The full installer or preconfigured installation of FusionReactor both include the
 FRAM (FusionReactor Administration Manager) and should only take a few minutes to set up.
 
-![](/images/Installation/Full-Installer-download.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-Installer-download.jpg)
 
 The full installer includes a JRE (Java Runtime Environment) and allows you to customize your setup location, runtime user, password and port.
 
-![](/images/Installation/Preconfigured-Installers.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Pre-Configured-Installers.jpg)
 
 The preconfigured installation assumes the default configuration of the FusionReactor and requires you to have your own JRE configured on the server. You will be prompted to set a password as soon as the installer runs.
 
@@ -45,43 +45,47 @@ Running the installer for the first time, you will have the option to configure 
 
 When running the installer, you will first see a welcome screen.
 
-![](/images/Installation/Full-installer-welcome.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-welcome.jpg)
 
 **Step 1**: Clicking the **Next** button will proceed with the installation and open the license agreement screen.
 
-![](/images/Installation/Full-installer-license-agreement.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-license-agreement.jpg)
 
 **Step 2**: Carefully review the license agreement before continuing, then choose the **I accept the agreement** option (if you accept the terms and conditions) and click **Next** to proceed. Press **Cancel** if you do not accept the license agreement. This will exit the installer.
 
 **Step 3**: If you have accepted the license agreement, clicking **Next**  displays the **Select Destination Directory** screen.
 
-![](/images/Installation/Full-installer-directory.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-directory.jpg)
 
 On this screen you select the directory in which FusionReactor should be installed. By default FusionReactor will be installed into:
 
-{!Common/Platform-Directory!}
+| Platform | Path|
+|--- |--- |
+| **Windows** | ```C:\\FusionReactor\Instance\myInstance``` |
+| **Linux** | ```/opt/fusionreactor/instance/myInstance``` |
+| **MacOS** | ```/Applications/FusionReactor/instance/myInstance``` |
 
 **Step 4**:Click **Next** to proceed to the **FusionReactor Configuration** screen.
 
-![](/images/Installation/Full-installer-port.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-port.jpg)
 
 The default HTTP port for FusionReactor Administrator is 8087. The installer will check if the selected port is available by attempting to open a connection to it and change the default port if it is in use. However, if you have another application using this port which is currently not running the installer will not be able to warn you.
 
 **Step 5**: Clicking **Next** opens the **FusionReactor Configuration** screen.
 
-![](/images/Installation/Full-installer-password.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-password.jpg)
 
 Specify the password to be used by the Administrator user on FusionReactor. To validate the password you have to enter it one more time in the confirmation field. The installer will check that the password is at least five characters long and that the two values you have entered are identical.
 
 On Linux and MacOS installations, clicking next will open a further FusionReactor **Configuration** screen.
 
-![](/images/Installation/Full-installer-unix-runtime-user.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-unix-runtime-user.jpg)
 
 On this screen you configure the user and group the FusionReactor daemon will run under. Typically you will choose the same user and group as used by the application servers on this computer into which you want to install instances of FusionReactor.
 
 **Step 6**: Clicking next opens the **Confirm Settings** screen.
 
-![](/images/Installation/Full-installer-confirmation.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-confirmation.jpg)
 
 On the **Confirm Settings** screen shown  you can choose if the installer should create a desktop shortcut to FusionReactor Administrator (Windows only) and if the FRAM service should be started after all files have been installed.
 
@@ -98,7 +102,7 @@ On the **Confirm Settings** screen shown  you can choose if the installer should
 
 Click **Start configuring instances** or navigate to {hostname}:{FRAM port} to access the instance manager on the FRAM service.
 
-![](/images/Installation/Full-installer-complete.jpg)
+![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-complete.jpg)
 
 
 !!! warning

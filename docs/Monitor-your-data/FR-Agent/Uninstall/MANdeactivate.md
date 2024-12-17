@@ -28,7 +28,7 @@ Once FusionReactor has been removed, restart the application server.
 
 When FusionReactor is not running, the instance directory can now be removed from the local file system.
 
-If you are using the default installation path, the paths to your instance are:
+If you are using the default installation path, the instance directories are located at:
 
 | Platform | Path|
 |--- |--- |
@@ -37,7 +37,7 @@ If you are using the default installation path, the paths to your instance are:
 | **MacOS** | ```/Applications/FusionReactor/instance/myInstance``` |
 
 !!! tip
-    If you are uninstalling FusionReactor as it is not required at this time, skip this step to retain any log and configuration date when you reinstall FusionReactor.
+    If you're uninstalling FusionReactor as it is not required at this time, skip this step to retain any log and configuration date when you reinstall FusionReactor.
 
 ___
 
