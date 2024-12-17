@@ -2,7 +2,6 @@
 
 The Documentation Team at FusionReactor welcome contributions to this repository. This doc walks you through the different methods for making or requesting changes to the docs site. 
 
-
 ## Prerequisites
 
 * A GitHub account
@@ -88,6 +87,11 @@ Contributing to our documentation is simpler than you might think. While you don
 - Select your cloned docs site folder.
 - Create a new branch for your changes.
 - Open the folder in VS Code or your preferred editor.
+
+!!! Note
+    To run the documentation locally, use the docker command below:
+    ```docker build --no-cache -t frdocs-docs ./local-run && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs```
+    For more details see the Readme of the github prject
 
 **Step 5: Make Your Test PR**
 
