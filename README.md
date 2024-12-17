@@ -29,6 +29,18 @@ We welcome contributions from the community! Whether you're fixing a typo, impro
 
 For detailed guidelines on contributing, please see our [Contributing Guide](link-to-contributing-guide).
 
+## Running locally
+
+To run the docs locally, you are required to use Docker.
+
+There are 2 run commands within the project, one for project owners and one for contributors
+# Contributors
+Execute the command
+```docker build --no-cache -t frdocs-docs ./local-run && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs```
+# Owners
+Execute the command
+```docker build --no-cache -t frdocs-docs-owner . && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs-owner```
+
 
 ## Support
 If you encounter any issues, our support team is here to help Monday to Friday, 8:00–18:00 Central European Time. Reach out using our support form, email us at support@fusion-reactor.com, or start a live chat for assistance
