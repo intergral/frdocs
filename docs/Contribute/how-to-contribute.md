@@ -2,9 +2,15 @@
 
 The Documentation Team at FusionReactor welcome contributions to this repository. This doc walks you through the different methods for making or requesting changes to the docs site. 
 
+!!! info "Learn more"
+    [Style guide](/frdocs/Contribute/style-guide/overview/)
 ## Prerequisites
 
 * A GitHub account
+
+## Timeframe for Contribution Review
+
+We value your contributions and are committed to ensuring they are reviewed in a timely manner. Our team will review all submitted edits and pull requests within 5 working days.
 
 ## Contribute to the FR docs
 

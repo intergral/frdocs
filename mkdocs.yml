@@ -52,6 +52,14 @@ nav:
            - todo.md
   - HOW TO CONTRIBUTE:
            - Contribute/how-to-contribute.md
+           - Style Guide:
+              - Overview: Contribute/style-guide/overview.md
+              - Images: Contribute/style-guide/images.md
+              - Language & grammar: 
+                  - Abbreviations: Contribute/style-guide/Language-and-grammar/Abbreviations.md
+                  - Capitalization: Contribute/style-guide/Language-and-grammar/Capitalization.md
+                  - Contractions: Contribute/style-guide/Language-and-grammar/Contractions.md
+                  - Formatting: Contribute/style-guide/Language-and-grammar/Formatting.md
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md

@@ -27,19 +27,20 @@ We welcome contributions from the community! Whether you're fixing a typo, impro
 - Share your expertise and use cases
 - Suggest new documentation topics
 
-For detailed guidelines on contributing, please see our [Contributing Guide](link-to-contributing-guide).
+For detailed guidelines on contributing, please see our [Contributing Guide](/frdocs/Contribute/how-to-contribute/).
 
 ## Running locally
 
 To run the docs locally, you are required to use Docker.
 
-There are 2 run commands within the project, one for project owners and one for contributors
-# Contributors
-Execute the command
-```docker build --no-cache -t frdocs-docs ./local-run && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs```
-# Owners
-Execute the command
-```docker build --no-cache -t frdocs-docs-owner . && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs-owner```
+There are two run commands within the project, one for project owners and one for contributors:
+
+### Contributors
+Execute the command:
+`docker build --no-cache -t frdocs-docs ./local-run && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs`
+### Owners
+Execute the command:
+`docker build --no-cache -t frdocs-docs-owner . && docker run --rm -p 8000:8000 -v $(pwd):/docs frdocs-docs-owner`
 
 
 ## Support
