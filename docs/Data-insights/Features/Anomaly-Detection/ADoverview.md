@@ -1,8 +1,6 @@
 
 
-![!Screenshot](../../new-img/anomaly detection/anomalyreport.png)
-
-
+![Screenshot](../../images/Anomaly-detection/anomalyreport.png)
 
 ## What is anomaly detection?
 
@@ -49,9 +47,9 @@ Understanding and categorizing anomalies is crucial for effective system monitor
 * **Data-driven decision making**: By providing insights into abnormal patterns or trends in data, anomaly detection empowers organizations to make informed decisions based on real-time information and actionable insights.
 
 !!! info "Learn more"
-    [Anomaly detection user guide](/Cloud/guides/Anomaly-Detection/ADuserguide/) 
+    [Anomaly detection user guide](/frdocs/Data-insights/Features/Anomaly-Detection/ADuserguide/) 
 
-![!Screenshot](../../new-img/anomaly detection/anomalyalert.png)
+![!Screenshot](../../images/Anomaly-detection/anomalyalert.png)
 
 ___
 

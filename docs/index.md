@@ -162,7 +162,7 @@ hide:
 [Get to know the UI](/frdocs/Getting-started/Tutorials/know-the-ui/)
 { .card }
 
-[Anomaly Detection](#)
+[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)
 { .card }
 
 [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
