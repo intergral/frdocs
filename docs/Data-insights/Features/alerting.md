@@ -269,7 +269,7 @@ and each of those instances will be assessed by the check.
 **Duplicate** - Duplicate similarly shows the same form with the check's settings already filled in. Selecting **Save** when duplicating will create a new check instead.
 
 
-## Alerting services
+## Alert services
 
 🔎**Find it**: **FusionReactor** > **User Icon** > **Configuration** 
 

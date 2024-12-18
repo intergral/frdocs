@@ -1,6 +1,6 @@
 
 
-![!Screenshot](../../new-img/anomaly detection/anomalyreport.png)
+![!Screenshot](../../Data-insights/Features/images/Anomaly-detection/anomalyreport.png)
 
 
 
