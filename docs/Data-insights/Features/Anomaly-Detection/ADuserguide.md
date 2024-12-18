@@ -1,4 +1,4 @@
-![!Screenshot](../../new-img/anomaly detection/overview.png)
+![!Screenshot](../../images/Anomaly-detection/overview.png)
 
 
 ## Anomaly Detection feature in FusionReactor Cloud
@@ -49,11 +49,11 @@ To enable anomaly detection in FusionReactor Cloud, follow these steps:
 
 **Step 1**: Use your web browser to navigate to the **Alerting** page in FusionReactor Cloud.
 
-![!Screenshot](../../new-img/anomaly detection/Step1.png)
+![!Screenshot](../../images/Anomaly-detection/Step1.png)
 
 **Step 2**: Select the **Anomaly Detection** tab to access the Anomaly Detection configuration page.
 
-![!Screenshot](../../new-img/anomaly detection/Step2.png)
+![!Screenshot](../../images/Anomaly-detection/Step2.png)
 
 !!! info
     FR Cloud automatically detects your services and lists them on the Anomaly Detection configuration page. 
@@ -81,7 +81,7 @@ By expanding a service row, you can access and adjust settings for the RED metri
 
 Here is an example screen shot illustrating the configuration interface:
 
-![!Screenshot](../../new-img/anomaly detection/REDconfigview.png)
+![!Screenshot](../../images/Anomaly-detection/REDconfigview.png)
 
 !!! note
     The actual interface may vary slightly, and you should consult the latest version of FR Cloud for the most up-to-date information.
@@ -120,7 +120,7 @@ For each service listed, the following features are available:
 
 Example screenshot showing the current anomaly alert status:
 
-![!Screenshot](../../new-img/anomaly detection/Alertstatus.png)
+![!Screenshot](../../images/Anomaly-detection/Alertstatus.png)
 
 
 
@@ -138,7 +138,7 @@ Each service within the system allows for separate configuration of its RED metr
 | **Setting Alert Duration** | Define the required duration for which an anomaly must exceed your chosen threshold to trigger an alert. For example, an anomaly is recognized when its probability stays at or above a set level (like 95%) for a predetermined time (such as 4 minutes).
 
 
-![!Screenshot](../../new-img/anomaly detection/RAQS.png)
+![!Screenshot](../../images/Anomaly-detection/anomaly detection/RAQS.png)
 
 ## Best practice for Anomaly Detection configuration
 

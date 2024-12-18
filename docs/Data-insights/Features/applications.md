@@ -2,7 +2,7 @@
 
 🔎**Find it**: **FusionReactor** > **Applications**
 
-![!Screenshot](../new-img/applications/app.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/app.png)
 
 The **Applications** list view on FusionReactor Cloud displays an overview of all your applications on servers running FusionReactor.
 
@@ -10,7 +10,7 @@ The **Applications** list view on FusionReactor Cloud displays an overview of al
 
 Applications can be filtered by **View**, **Filter**, **Sort by** and **Sort order**.
 
-![!Screenshot](../new-img/applications/appfil.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/appfil.png)
 
 * In the **View** dropdown, you can choose to display your applications in either a **Grid** or **Row** view. 
 
@@ -37,7 +37,7 @@ Applications can be filtered by **View**, **Filter**, **Sort by** and **Sort ord
 
 * To clear all filters, select the icon at the far right of the screen.
 
-![!Screenshot](../new-img/applications/clear.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/clear.png)
 
 !!! tip
     Search directly for an application **name** (or **alias**) using the search box inside the filter bar.
@@ -47,13 +47,13 @@ Applications can be filtered by **View**, **Filter**, **Sort by** and **Sort ord
 
 The applications details screen is displayed when an application is selected.
 
-![!Screenshot](../new-img/applications/appopen.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/appopen.png)
 
 ## Transaction bars
 
 🔎**Find it**: **FusionReactor** > **Applications** > **Performance**
 
-![!Screenshot](../new-img/applications/transops.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/transops.png)
 
 The transaction list displays all the transactions associated with that application for the set timeframe as well as the selected tab in the filter bar. 
 
@@ -70,7 +70,7 @@ Transactions can be filtered by selecting the relevant tab:
 🔎**Find it**: **FusionReactor** > **Applications** > **Graphs**
 
 
-![!Screenshot](../new-img/applications/graphs.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/graphs.png)
 
 The graph data is displayed by:
 
@@ -87,11 +87,11 @@ The graph can be manipulated in a number of ways:
 
 1. Hovering the mouse over the graph will show all the data for that time point. 
 
-![!Screenshot](../new-img/applications/detgraph.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/detgraph.png)
 
 2. The graphs can be filtered by:
 
-![!Screenshot](../new-img/applications/graphdd.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/graphdd.png)
 
 * **Profile** - either **System** or **Custom**
 
@@ -109,7 +109,7 @@ The graph can be manipulated in a number of ways:
 
 ## **Interesting transactions**
 
-![!Screenshot](../new-img/applications/inttrans.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/inttrans.png)
 
 This list shows all the interesting transactions related to the selected application. 
 
@@ -138,7 +138,7 @@ The following information is displayed by the interesting transactions list:
 
 The interesting transactions list has two ways to filter and sort it:
 
-![!Screenshot](../new-img/applications/inttransfil.png)
+![!Screenshot](../../Data-insights/Features/images/Applications/inttransfil.png)
 
 1. The **Reason** dropdown will filter by reason type, with the options of **Slow** and **Errors**.
 
