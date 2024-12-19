@@ -8,9 +8,6 @@ The Documentation Team at FusionReactor welcome contributions to this repository
 
 * A GitHub account
 
-## Timeframe for Contribution Review
-
-We value your contributions and are committed to ensuring they are reviewed in a timely manner. Our team will review all submitted edits and pull requests within 5 working days.
 
 ## Contribute to the FR docs
 
@@ -147,7 +144,9 @@ Contributing to our documentation is simpler than you might think. While you don
 - Create a pull request for review.
 - Our team will help finalize and position your content.
 
+## Timeframe for Contribution Review
 
+We value your contributions and are committed to ensuring they are reviewed in a timely manner. Our team will review all submitted edits and pull requests within 5 working days.
 
 
 
