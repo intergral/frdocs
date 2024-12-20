@@ -3,19 +3,19 @@
 
 🔎**Find it**: **FusionReactor** > **Servers**
 
-![!Screenshot](../new-img/servers/serverintro.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/serverintro.png)
 
- The **Server** view presents an overview of the servers running a FusionReactor agent inside your infrastructure. From inside this view you can choose an overview of your servers or [more detailed information](servers.md#detailed-server-view) about a subset of them. The **Servers** page is the only part of cloud with live mode.
+ The **Server** view presents an overview of the servers running a FusionReactor agent inside your infrastructure. From inside this view you can choose an overview of your servers or [more detailed information](/frdocs/Data-insights/Features/servers/#detailed-server-overview) about a subset of them. The **Servers** page is the only part of cloud with live mode.
 
 !!! info 
-    There is no offline filter on the servers home page. To debug offline servers go to [Explore](/Cloud/guides/explore/). 
+    There is no offline filter on the servers home page. To debug offline servers go to [Explore](/frdocs/Data-insights/Features/explore/). 
     
 
 ## Live mode, immediate and historic data
 
 * The Servers screen defaults to **Live mode** indicated by the orange clock.
 
-![!Screenshot](../new-img/servers/liveclock.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/liveclock.png)
 
 * Live mode refers to data that is live streamed from an instance and is streamed in real-time. It is useful for viewing and resolving immediate issues. 
 
@@ -24,7 +24,7 @@
 * Historic data is stored traces which are powered by the [time picker](/Cloud/guides/timepicker/) To view historic data, simply toggle the **Live mode** clock. 
 
 
-![!Screenshot](../new-img/servers/livemode.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/livemode.png)
 
 * Historic data can be filtered according to the default times, for example **last hour** or you can customize your time frame according to your needs.
 
@@ -50,13 +50,13 @@
 
 !!! tip
     Pinching an individual **metrics** graph will enable deeper insight in **historic mode only**.  
-    ![!Screenshot](../new-img/servers/pinch.png)
+    ![!Screenshot](../../Data-insights/Features/images/Servers/pinch.png)
 
 
 
 ## Filtering
 
-![!Screenshot](../new-img/servers/filtering.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/filtering.png)
 
 The filter bar allows you to:
  
@@ -66,7 +66,7 @@ The filter bar allows you to:
 * Show or hide labels, in the **Labels** dropdown
 
 !!! note
-    Only on the [overview](servers.md#server-overview) screen.
+    Only on the [overview](/frdocs/Data-insights/Features/servers/#detailed-server-overview) screen.
 
 * Choose to sort the entire page, in the **Sort by** dropdown by:
     * Name
@@ -78,7 +78,7 @@ The filter bar allows you to:
 
 * Use the icon on the far right of the screen to clear all filters.
 
-![!Screenshot](../new-img/servers/clear.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/clear.png)
 
 
 
@@ -86,12 +86,12 @@ The filter bar allows you to:
 
 Each FusionReactor instance is represented as a server panel, which displays metric data based on the selected time frame, alongside some basic information for that instance.
 
-![!Screenshot](../new-img/servers/detview.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/detview.png)
 
 
 Clicking on an individual server panel displays the following screen:
 
-![!Screenshot](../new-img/servers/serveroverview.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/serveroverview.png)
 
 
 
@@ -99,7 +99,7 @@ Clicking on an individual server panel displays the following screen:
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Metrics** (default)
 
-![!Screenshot](../new-img/servers/Metrics1.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/Metrics1.png)
 
 The default view is the **Web Server** profile and on this screen you can filter by **Profile**, **Graphs**, **Hide empty** and **View**.
 
@@ -123,7 +123,7 @@ The default view is the **Web Server** profile and on this screen you can filter
 ### Web Requests
 🔎**Find it**: **FusionReactor** > **Servers** > **Web Requests**
 
-![!Screenshot](../new-img/servers/webrequests.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/webrequests.png)
 
 **Web Requests** gives you the ability to view and administer running requests on your server.
 
@@ -134,7 +134,7 @@ On the Web Requests view, you can see if the transaction is running, if it's fin
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Transactions**
 
-![!Screenshot](../new-img/servers/transactions.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/transactions.png)
 
 **Transactions** displays all transactions that are currently running on your server. 
 
@@ -147,7 +147,7 @@ On the transactions view, you can see if the transaction is running, if it's fin
 🔎**Find it**: **FusionReactor** > **Servers** > **JDBC**
 
 
-![!Screenshot](../new-img/servers/jdbcmain.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/jdbcmain.png)
 The **JDBC** tab gives you the ability to view and administer running JDBC transactions on your server.This information is controlled by the storage strategy and other settings found on the [JDBC Settings](/JDBC/Settings/) page.
 
 
@@ -159,64 +159,42 @@ On the JDBC view, you can see if the transaction is running, if it's finished an
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Transactions** > **View details**
 
-![!Screenshot](../new-img/servers/viewdetails.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/viewdetails.png)
 
 Selecting the **view details** icon pictured above, displays the **request details** screen below containing detailed information about that transaction.
 
-![!Screenshot](../new-img/servers/tdetails.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tdetails.png)
 
 #### Tab selection
 At the top of the **request details** screen there is a copy of the request line from the page you came from. Underneath that there are at least 5 tabs, plus 1 for each context on that transaction. The available tabs are as follows:
 
-=== "General"
-
-    All types
-
-
-=== "Tracing"
-
-    Web Request
-
-    JDBC Request
-
-
-=== "Sub-transactions"
-
-    Web Request
-
-
-=== "Headers"
-
-    Web Request
-
-    HTTPClient
-
-
-=== "JDBC"
-
-    Web Request
-
-    JDBC
+| Category           | Types                                                                 |
+|--------------------|----------------------------------------------------------------------|
+| **General**        | All types                                                            |
+| **Tracing**        | Web Request, JDBC Request                                            |
+| **Sub-transactions**| Web Request                                                         |
+| **Headers**        | Web Request, HTTPClient                                              |
+| **JDBC**           | Web Request, JDBC                                                   |
 
 ##### General
 
 The **General** tab shows broad information about a request such as **Stream metrics**, **Execution** time, **Memory** levels and **Flags**.
 
-![!Screenshot](../new-img/servers/tabgeneral.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tabgeneral.png)
 
 
 ##### Sub-transactions
 
 The **Sub-transactions** tab shows any child transactions or internal transactions that are initiated as a result of the execution of a main transaction.
 
-![!Screenshot](../new-img/servers/tabsubt.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tabsubt.png)
 
 ##### Headers
 
 The **Headers** tab shows the HTTP headers for the request and response objects.
 
 
-![!Screenshot](../new-img/servers/tabheaders.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tabheaders.png)
 
 
 !!! info "Learn more"
@@ -225,7 +203,7 @@ The **Headers** tab shows the HTTP headers for the request and response objects.
 
 #### Transaction filtering  
 
-![!Screenshot](../new-img/servers/tfilter.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tfilter.png)
 
 All transactions can be filtered by:
 
@@ -242,19 +220,19 @@ All transactions can be filtered by:
 
 
 !!! info 
-    Transactions stored in FR Cloud from offline instances can be found in the [Explore](/Cloud/guides/explore/) section under Traces. <br> ![!Screenshot](../new-img/servers/explore.png)
+    Transactions stored in FR Cloud from offline instances can be found in the [Explore](/frdocs/Data-insights/Features/explore/) section under Traces. <br> ![!Screenshot](../../Data-insights/Features/images/Servers/explore.png)
 
 ### Threads
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Threads**
 
-![!Screenshot](../new-img/servers/threads.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/threads.png)
 
 This feature retrieves and collects all live system thread data and their respective metadata. This includes: thread IDs, thread names, thread groups, thread states and critical CPU timing.
 
 Sample information is given at the top left, this data relates to the current sample being processed:
 
-![!Screenshot](../new-img/servers/threads2.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/threads2.png)
 
 Name|Description|
 |--- |--- |
@@ -269,7 +247,7 @@ Name|Description|
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Threads** > **Thread state**
 
-![!Screenshot](../new-img/servers/threadsfilter.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/threadsfilter.png)
 
 Threads can be filtered by:
 
@@ -292,7 +270,7 @@ Threads can be filtered by:
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Threads** > **CPU sampler**
 
-![!Screenshot](../new-img/servers/cpu.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/cpu.png)
 
 The **CPU sampler** retrieves all active threads and their CPU information since the Java Virtual Machine started. Alongside this, it also render the live state the thread is in. This data will be updated at every page refresh.
 
@@ -312,7 +290,7 @@ To assess the performance of certain CPU-heavy threads the user can sort the tab
 
 ##### NEW CPU snapshot
 
-![!Screenshot](../new-img/servers/newcpusnap.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/newcpusnap.png)
 
 
 Snapshots provide CPU Sampler information at the exact moment of capture. Multiple CPU Snapshots can be taken and stored in FusionReactor.
@@ -328,13 +306,13 @@ Snapshots can be taken at any moment during the execution of a sample, this is a
 
 The **Thread Visualizer** page shows all threads within the Java Virtual Machine (JVM) for this server. Each color represents the state the thread was in when the data was updated. 
 
-![!Screenshot](../new-img/servers/threadvisualiser.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/threadvisualiser.png)
 
 The **Thread Visualizer** page is session based. As soon as the browser tab is closed or refreshed the data will be lost and the graph will restart.
 
 #### Searching
 
-![!Screenshot](../new-img/servers/tvsearch.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/tvsearch.png)
 
 The search bar allows the user to filter the threads shown based on if
 the thread name contains the characters in the search. For example, if the user inputted "http" into the search bar, any thread names containing **http** will be shown along with their table elements.
@@ -359,7 +337,7 @@ Threads can also be filtered using the dropdown by:
 
 #### Sorting
 
-![!Screenshot](../new-img/servers/threadvlabels.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/threadvlabels.png)
 
 Threads in the **Thread visualizer** page are sorted by five categories both ascending and descending:
 
@@ -380,7 +358,7 @@ Name|Description|
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Profiles**
 
-![!Screenshot](../new-img/servers/profile.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/profile.png)
 
 This section  provides more information about the Code Profiler details of a transaction or thread.  The Profiler is used to discover what part of an application (method) consumes the most amount of CPU and time. Essentially the Code Profiler can be used to isolate performance bottlenecks in your code.
 
@@ -392,7 +370,7 @@ In the screenshot above, you can see if the transaction or thread is running, if
 
 Clicking the icon below **Actions** on the right of the screen, displays the following screen:
 
-![!Screenshot](../new-img/servers/profilemain.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/profilemain.png)
 
 You have the ability to:
 
@@ -419,7 +397,7 @@ You have the ability to:
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Stack trace**
 
-![!Screenshot](../new-img/servers/stacktrace.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/stacktrace.png)
 
 Stack traces provide information on the threads at a specific point in time. 
 
@@ -427,7 +405,7 @@ Stack traces provide information on the threads at a specific point in time.
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Threads** > **Thread state**
 
-![!Screenshot](../new-img/servers/STfilter.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/STfilter.png)
 
 Stack traces can be filtered by state:
 
@@ -460,7 +438,7 @@ Stack traces can also be filtered by view:
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Logs**
 
-![!Screenshot](../new-img/servers/serverlogs.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/serverlogs.png)
 
 The **Logs** tab allows you to view all records of events and activities that occur within a system, application, or infrastructure that are generated by your servers. They contain information about various aspects, such as user actions, errors, warnings, security events, and system performance. Logs are not stored and give live information about an instance.
 
@@ -470,18 +448,18 @@ The **Logs** tab allows you to view all records of events and activities that oc
 
 The **Applications** tab provides an overview of the applications running on your instance.
 
-![!Screenshot](../new-img/servers/applications.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/applications.png)
 
 
 ### Info
 
 🔎**Find it**: **FusionReactor** > **Servers** > **Info**
 
-![!Screenshot](../new-img/servers/serverinfo.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/serverinfo.png)
 
 The **Info** page of FusionReactor provides information on  **Agent details**, **Server type**, **Operating system details**, **Java details** and the **Environment** FusionReactor is running within.
 
-![!Screenshot](../new-img/servers/infomain.png)
+![!Screenshot](../../Data-insights/Features/images/Servers/infomain.png)
 
 !!! note 
     When contacting support it is helpful to copy this page to your clipboard and attach a copy to your request to give our support engineers information on your configured environment.

@@ -204,7 +204,7 @@ Images can be uploaded to OpsPilot Vision in three ways:
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/901146401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot graph messages for intuitive visualizations"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-Effortlessly gain deeper insights into your system's performance and health by visualizing complex datasets with OpsPilot. Graph messages provide clarity within the intricate web of information, facilitating the quick identification of trends and anomalies at a glance. OpsPilot further enhances exploration capabilities by enabling users to delve deeper through the seamless opening of related dashboards or the [Explore](/Cloud/guides/explore/) page. This can be achieved with a simple push of a button, offering a convenient and efficient way to investigate and analyze system data.
+Effortlessly gain deeper insights into your system's performance and health by visualizing complex datasets with OpsPilot. Graph messages provide clarity within the intricate web of information, facilitating the quick identification of trends and anomalies at a glance. OpsPilot further enhances exploration capabilities by enabling users to delve deeper through the seamless opening of related dashboards or the [Explore](/frdocs/Data-insights/Features/explore/) page. This can be achieved with a simple push of a button, offering a convenient and efficient way to investigate and analyze system data.
 
 
 ![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/Graphs1.png)
