@@ -2,12 +2,11 @@
 
 **Dashboards** allow you to visualize your Cloud data with superior, unparalleled depth.
 
-You can combine metrics, logs and traces in one place to give you a complete picture of your data.
+Combine metrics, logs and traces in one place to give you a complete picture of your data.
 
 <iframe src="https://player.vimeo.com/video/840492282?h=b7752d4c21" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-!!! note
-    At this time there is no capability for you to edit or create new dashboards, this is something we will be adding at a later date.
+
 
 
 ## Central FusionReactor dashboard
@@ -16,21 +15,20 @@ You can combine metrics, logs and traces in one place to give you a complete pic
 
 The central **Dashboard** contains links to all dashboards and can be used to quickly navigate between all dashboards.
 
-Log dashboards will be added and improved over time.
-This will include adding new categories of dashboards, new log views and new filters to gain insight and value from your logs.
+Log dashboards will be added and improved over time, including adding new categories of dashboards, new log views and new filters to gain insight and value from your logs.
 
 ### Using dashboards
 
 Navigate to individual dashboards from the new **Dashboard** tab of FusionReactor Cloud. Use the links in the top right to navigate back to the main FusionReactor dashboards.
 
-![!Screenshot](../../images/dashboards/GSDashboards.png)
+![!Screenshot](../../Data-insights/Features/images/Dashboards/GSDashboards.png)
 
 
 The dashboard user interface provides a number of features that you can use to customize the presentation of your data.
 
 The following image and descriptions highlights all of the dashboards features.
 
-![!Screenshot](../../images/dashboards/dbparts.png)
+![!Screenshot](../../Data-insights/Features/images/Dashboards/dbparts.png)
 
 1. **Dashboard title**: When you click the dashboard title you can search for dashboard contained in the current folder.
 
@@ -75,35 +73,35 @@ The following image and descriptions highlights all of the dashboards features.
 
 ### Log dashboards
 
-For the list of log dashboards see the [log dashboard index](/Cloud/guides/logging/#dashboard-index). 
+For the list of log dashboards see the [log dashboard index](#). 
 
 ### Integration dashboards
 
-**MySQL** - Observe metrics from the [MySQL exporter](/Cloud/integrations/Metric-Integrations/#mysql).
+**MySQL** - Observe metrics from the [MySQL exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters).
 
-![!Screenshot](../../images/dashboards/mysql.png)
+![!Screenshot](../../Data-insights/Features/images/Dashboards/mysql.png)
 
-**MSSQL** - Observe metrics from the [MSSQL exporter](/Cloud/integrations/Metric-Integrations/#mssql).
-
-
-**Node exporter** - Observe metrics from the [Node exporter](/Cloud/integrations/Metric-Integrations/#node-exporter)
-
-![!Screenshot](../../images/dashboards/node.png)
-
-**NGINX community** - Observe metrics from the [NGINX exporter](/Cloud/integrations/Metric-Integrations/#nginx)
-
-![!Screenshot](../../images/dashboards/nginx.png)
-
-**NGINX pro** - Observe metrics from the [NGINX exporter](/Cloud/integrations/Metric-Integrations/#nginx)
+**MSSQL** - Observe metrics from the [MSSQL exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters).
 
 
-**Kafka** - Observe metrics from the [Kafka exporter](/Cloud/integrations/Metric-Integrations/)
+**Node exporter** - Observe metrics from the [Node exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters
 
-![!Screenshot](../../images/dashboards/Kafka.png)
+![!Screenshot](../../Data-insights/Features/images/Dashboards/node.png)
 
-**OracleDB Monitor**- Observe metrics from the [OracleDB Monitor](/Cloud/integrations/Metric-Integrations/)
+**NGINX community** - Observe metrics from the [NGINX exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
 
-![!Screenshot](../../images/dashboards/oracledb.png)
+![!Screenshot](../../Data-insights/Features/images/Dashboards/nginx.png)
+
+**NGINX pro** - Observe metrics from the [NGINX exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+
+
+**Kafka** - Observe metrics from the [Kafka exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+
+![!Screenshot](../../Data-insights/Features/images/Dashboards/Kafka.png)
+
+**OracleDB Monitor**- Observe metrics from the [OracleDB Monitor](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+
+![!Screenshot](../../Data-insights/Features/images/Dashboards/oracledb.png)
 
 
 ### Experimental dashboards

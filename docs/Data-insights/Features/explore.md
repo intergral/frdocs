@@ -13,7 +13,7 @@
 
 Within **Explore** there are three datasource configures. They are accessed using the dropdown located to the left of the screen. The default datasource is **Metrics**.
 
-![](../../images/dashboards/datasources.png)
+![](../../Data-insights/Features/images/Dashboards/datasources.png)
 
 - Metrics will contain any metric sent from a FusionReactor agent, plus some additional metrics created within our ingest engine.
 - Traces will contain any slow or error transactions sent from a FusionReactor agent, requests viewed in the recent or running tabs of the server view will not appear here as they are not ingested. 
@@ -28,15 +28,20 @@ Within **Explore** there are three datasource configures. They are accessed usin
 
 To explore metrics, use the **Metric** browser.
 
-![](../../images/dashboards/metricsbrowser2.png)
+![](../../Data-insights/Features/images/Dashboards/metricsbrowser2.png)
 
 Within the **Metric** browser you can:
 
 - Select one or more metrics to view.
+
 - Filter metrics by any label, such as **instance**, **group** or **application**.
+
 - Execute functions such as **Sum**, **Count**, or **Avg** on metrics.
+
 - Compare metrics by using mathematical functions.
+
 - Combine multiple queries in a single view.
+
 - View data as various chart types, or as raw data in a table.
 
 The metrics browser will create data views for you using [Promql](https://prometheus.io/docs/prometheus/latest/querying/basics/).
@@ -49,7 +54,7 @@ Using Promql directly you can create powerful and complex queries to get the mos
 
 To explore traces we advise using the **Search** feature.
 
-![](../../images/dashboards/tracemain.png)
+![](../../Data-insights/Features/images/Dashboards/tracemain.png)
 
 Within search, you can specify:
 
@@ -64,7 +69,7 @@ Within search, you can specify:
 
 You can view the trace information by clicking on the trace ID, which will open a window on the right of the screen.
 
-![](../../images/dashboards/trace.png)
+![](../../Data-insights/Features/images/Dashboards/trace.png)
 
 ## Log queries
 
@@ -74,20 +79,27 @@ To explore logs, use the **Logs** browser.
 
 The **Logs** browser allows you to filter and view any ingested logs.
 
-![](../../images/dashboards/logsmain.png)
+![](../../Data-insights/Features/images/Dashboards/logsmain.png)
 
-Within the log browser you can:
+  
 
-- Filter logs by any label, such as **job**, **filename** or **instance**.
-- Execute functions such as **Sum**, **Count**, or **Avg** on logs to extract metrics from logs themselves.
-- Combine multiple queries in a single view.
-- View data as various chart types, or as raw data in a table.
+The log browser lets you:  
 
-The log browser will build log queries for you and automatically generate [LogQL](https://grafana.com/docs/loki/latest/logql/)
+- Filter logs by labels like **job**, **filename** or **instance**.
 
-You can also use **Explore** to run your own LogQL queries not built using the browser.
+- Perform calculations like **Sum**, **Count**, or **Avg** to extract metrics from logs.  
 
-[LogQL](https://grafana.com/docs/loki/latest/logql/) is a query language developed by Grafana labs. It allows you to filter and search  across your log content  and can also generate metric data  based on your log data.
+- Combine multiple queries in one view.  
+
+- Display data as charts or raw tables.  
+
+The browser automatically builds log queries and generates [LogQL](https://grafana.com/docs/loki/latest/logql/) for you.  
+
+You can also use **Explore** to run custom LogQL queries.  
+
+!!! info
+    LogQL, developed by Grafana Labs, is a query language for filtering, searching, and generating metrics from log data.  
+
 
 
 ### LogQL examples
