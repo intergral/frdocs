@@ -42,7 +42,13 @@ Selecting  the **Edit**  button allows you to alter the license name and adjust 
 
 ## Manage subscriptions
 
-The Manage Subscription button is a shortcut that takes you to the edit section of the billing information page. It is important to note that any upgrades you make to your billing plan occur immediately while downgrades will only come into effect at the end of the billing period. Users can only upgrade or downgrade, not both simultaneously. 
+The Manage Subscription button is a shortcut that takes you to the edit section of the billing information page. 
+
+!!! note
+    Any upgrades you make to your billing plan occur immediately while downgrades only come into effect at the end of the billing period. 
+    
+!!! info
+    Users can only upgrade or downgrade, not both simultaneously. 
 
 ![!Screenshot](../../Billing/On-Premise//manage2.png)
 
@@ -52,6 +58,12 @@ The Manage Subscription button is a shortcut that takes you to the edit section 
 
 ## Create subscription license
 
-To add a new subscription, select the **Create Subscription License** option. In this interface, you can enter a custom name for the license, choose the desired edition, and specify the number of seats required for your subscription. 
+
+1. Select **Create Subscription License**
+2. Enter license details:
+     -    Custom name for identification.
+     -    Edition level.
+     -    Number of required seats.
+
 
 ![!Screenshot](../../Billing/On-Premise//CreateSL.png)

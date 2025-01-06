@@ -39,24 +39,28 @@ Once you’ve configured the proxy, click **Test Proxy** to ensure FusionReactor
 If the test is successful, FusionReactor will be able to activate through your proxy.
 
 
-## Setting a firewall rule
+## Firewall setup options
 
-If you’re running FusionReactor in a restricted environment where the firewall blocks access to certain external sites, you can configure a **firewall punch** to allow FusionReactor to contact its licensing server.
+1. **Allow by Hostname** (Recommended)
 
-1. **Allow Firewall Access**:  You can either allow connections to the **hostname** of the licensing server or to a **static IP address**.
+       - Configure firewall to allow licensing server hostname.
+       - Automatically handles server changes.
 
-2. **Using Static IP Address**: If you choose to use a static IP address in your firewall rule, you’ll also need to set system properties in your application server to point FusionReactor to the licensing server with the static IP.
+2. **Allow by IP Address**
 
-3. **Firewall Configuration Details**:  For more information on the required firewall rules and instructions on configuring the application server, see [FusionReactor firewall DNS and static IP address Rules](/frdocs/Admin-and-data/Licensing/Static-Licensing-Endpoints/#using-dns-firewall-rules).
+      - Configure static IP in firewall rules.
+      - Requires additional application server properties.
+      - See [Firewall Configuration Guide](/frdocs/Admin-and-data/Licensing/Static-Licensing-Endpoints/#using-dns-firewall-rules).
 
+## Manual activation process
 
-## Performing a manual activation
+For servers without external access:
 
-If your server is restricted and cannot contact external sites, you will need to perform a **manual activation**. This process involves obtaining an activation code from your server and applying it on the FusionReactor portal using a machine that has access to our licensing server.
-
-- **Manual Activation**: This process is more time-consuming than automatic activation.
-- **Repetition**: You'll need to repeat this process each time you upgrade FusionReactor or renew your license, as there is no way to retrieve updated information from the licensing server.
-
+- Get activation code from restricted server.
+- Apply code via FusionReactor portal using an internet-connected machine.
+- Required for upgrades and license renewals.
 
 !!! info "Learn more"
-    [Manually activating FusionReactor](/frdocs/Admin-and-data/Licensing/Manual-Activation/)
+    [Manual Activation](/frdocs/Admin-and-data/Licensing/Manual-Activation/)
+
+

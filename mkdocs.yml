@@ -240,8 +240,8 @@ nav:
           - todo.md
   - ADMIN & DATA:
      - Account & user management: 
-        - Cloud: Admin-and-data/Users/Cloud/users.md
-        - On-Premise: Admin-and-data/Users/On-Premise/OPusers.md
+        - Cloud: Admin-and-data/Account/Cloud/users.md
+        - On-Premise: Admin-and-data/Account/On-Premise/OPusers.md
      - Billing:
         - Cloud: Admin-and-data/Billing/Cloud/overview.md
         - On-Premise:
@@ -254,6 +254,7 @@ nav:
         - Static endpoints: Admin-and-data/Licensing/Static-Licensing-Endpoints.md
         - Troubleshooting: Admin-and-data/Licensing/Troubleshooting.md
      - Security: Admin-and-data/security.md
+     - Terms of Service: Admin-and-data/tos.md
      - Third Party Licenses: 
         - Cloud: Admin-and-data/Third-Party-Licenses/licenses.md
         - On-Premise: Admin-and-data/Third-Party-Licenses/Third_Party_License_Agreements.md

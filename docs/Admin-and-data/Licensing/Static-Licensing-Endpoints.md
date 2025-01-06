@@ -12,22 +12,20 @@ In order to communicate with the FusionReactor infrastructure, each FusionReacto
 * https://api.fusionreactor.io – port tcp/443
 
 
-### Firewall configuration requirements 
+### Firewall configuration
 
-These services require outgoing firewall rules to allow FusionReactor to communicate with FusionReactor Cloud. All communications are protected by SSL encryption.  
-
-If possible, configure the firewall with the DNS names of these services, as they may change due to scaling events.  
-
-If IP addresses are required, use `nslookup` to find their current values. 
+- Allow outbound SSL traffic to FusionReactor Cloud services.
+- Configure rules using DNS names (recommended) for automatic updates.
+- If using IP addresses, verify current values with `nslookup`.
 
 !!! note
-    Most services will return two IP addresses; both must be added to the firewall rules.  
+    Add all returned IP addresses to firewall rules (typically two per service).
 
 
 
 ## Using static IP addresses
 
-If you are unable or unwilling to use the dynamic DNS rules above, we've provided a static IP addresses which can be used for all services.
+If you're unable or unwilling to use the dynamic DNS rules above, we've provided a static IP addresses which can be used for all services.
 
 * 52.214.198.96 – port tcp/443 and port tcp/2804
 

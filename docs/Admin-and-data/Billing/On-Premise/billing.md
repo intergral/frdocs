@@ -42,11 +42,11 @@ A seat is a single unique virtual or physical host with up to four instances of 
 !!! note
     These licenses do not send monitoring data up to the cloud
 
-## How do I purchase a seat(s)?
+### How do I purchase a seat(s)?
 
 Seats can be bought in the purchase page of the product as follows:
 
-#### Step 1: Select number of seats
+**Step 1**: Select number of seats
 
 Enter the number of seats you require and select **Confirm**.
 
@@ -55,13 +55,13 @@ Enter the number of seats you require and select **Confirm**.
 
 ![!Screenshot](../../Billing/On-Premise/seatsbuy.png)
 
-#### Step 2: Pay with card
+**Step 2**: Pay with card
 
 Add your card information, cardholder details and billing address in the text boxes and select **Pay and subscribe**.
 
 ![!Screenshot](../../Billing/On-Premise//ccard.png)
 
-#### Step 3: View your subscriptions
+**Step 3**: View your subscriptions
 
 Once a purchase is made, you can view your subscriptions under the **Billing** tab.
 

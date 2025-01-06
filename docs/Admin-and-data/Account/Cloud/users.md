@@ -1,4 +1,4 @@
-# Users
+# Account & user management
 
 ## User types
 
@@ -6,11 +6,11 @@
 
 FusionReactor Cloud has five types of user:
 
-* [Account Admin](/frdocs/Admin-and-data/Users/Cloud/users/#account-admin)
-* [Account Manager](/frdocs/Admin-and-data/Users/Cloud/users/#account-manager)
-* [Account User](/frdocs/Admin-and-data/Users/Cloud/users/#account-user)
-* [Account Observer](/frdocs/Admin-and-data/Users/Cloud/users/#account-observer) 
-* [Business Contact](/frdocs/Admin-and-data/Users/Cloud//users/#business-contact)
+* [Account Admin](/frdocs/Admin-and-data/Account/Cloud/users/#account-admin)
+* [Account Manager](/frdocs/Admin-and-data/Account/Cloud/users/#account-manager)
+* [Account User](/frdocs/Admin-and-data/Account/Cloud/users/#account-user)
+* [Account Observer](/frdocs/Admin-and-data/Account/Cloud/users/#account-observer) 
+* [Business Contact](/frdocs/Admin-and-data/Account/Cloud//users/#business-contact)
 
 The account types have a hierarchical structure and each level above **Observer** inherits from the level below.
 
@@ -59,7 +59,7 @@ Administrators can create, edit, and remove users.
 
 2)  The following screen is displayed:
 
-  ![!Screenshot](../new-img/account/user.png)
+  ![!Screenshot](../../Images/user.png)
 
 3)  Complete the input boxes for **Email**, **First name** and **Last name**.
 

@@ -44,7 +44,7 @@ All customer data is processed and stored in the US. We do not currently store d
 
 ## Legal
 
-  * [License](Cloud/legal/licenses.md)
+  * [License](/frdocs/Admin-and-data/Third-Party-Licenses/licenses/)
   * [Terms of Service](Cloud/legal/tos.md)
   * [Privacy Statement](https://www.intergral.com/privacy-statement/)
   * [GDPR](http://www.intergral.com/GDPR/)
