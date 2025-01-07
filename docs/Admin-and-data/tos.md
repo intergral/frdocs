@@ -24,6 +24,7 @@ Intergral may choose to modify, suspend, stop or discontinue the service, includ
 The [Privacy policy](http://www.intergral.com/privacy-statement) governs any and all of the personal information that you provide to us.
 
 ### Accounts
+
 When you create an account (your **Account**) with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the terms, which may result in immediate termination of your Account on our service.
 
 You are responsible for maintaining the security of your account and password, and you are fully responsible for all activities that occur under the account, including any other actions taken in connection with the account, regardless of whether such activity is authorized by you.
