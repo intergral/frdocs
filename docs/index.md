@@ -323,16 +323,28 @@ hide:
 
 <div class="grid" markdown>
 
-[Account & user management](#)
+[Account & user management](/frdocs/Admin-and-data/Account/Cloud/users/)
 { .card }
 
-[Security](#)
+[Billing](/frdocs/Admin-and-data/Billing/Cloud/overview/)
 { .card }
 
-[Data](#)
+
+[Data limits](/frdocs/Admin-and-data/Limits/)
 { .card }
 
-[Licenses](#)
+[Licensing](/frdocs/Admin-and-data/Licensing/Licensing/)
 { .card }
+
+
+[Security](/frdocs/Admin-and-data/security/)
+{ .card }
+
+[Terms of Service](/frdocs/Admin-and-data/tos/)
+{ .card }
+
+[Third party licenses](/frdocs/Admin-and-data/Third-Party-Licenses/licenses/)
+{ .card }
+
 
 </div>
