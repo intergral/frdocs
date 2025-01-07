@@ -45,7 +45,7 @@ All customer data is processed and stored in the US. We do not currently store d
 ## Legal
 
   * [License](/frdocs/Admin-and-data/Third-Party-Licenses/licenses/)
-  * [Terms of Service](Cloud/legal/tos.md)
+  * [Terms of Service](/frdocs/Admin-and-data/tos/)
   * [Privacy Statement](https://www.intergral.com/privacy-statement/)
   * [GDPR](http://www.intergral.com/GDPR/)
   * [Patents](https://www.fusion-reactor.com/patents/)
