@@ -234,10 +234,11 @@ nav:
             - todo.md
         - Servers: Data-insights/Features/servers.md
   - LATEST UPDATES: 
-     - What's new: 
-        - todo.md
+     - What's new: Latest-updates/WhatsNew.md
      - Releases: 
-          - todo.md
+        - Overview: Latest-updates/Releases.md
+        - FR Agent: Latest-updates/release-notes.md
+        - OpsPilot: Latest-updates/OpsPilot-releases.md
   - ADMIN & DATA:
      - Account & user management: 
         - Cloud: Admin-and-data/Account/Cloud/users.md
@@ -245,7 +246,7 @@ nav:
      - Billing:
         - Cloud: Admin-and-data/Billing/Cloud/overview.md
         - On-Premise:
-             - Billing: Admin-and-data/Billing/On-Premise/billing.md
+             - Overview: Admin-and-data/Billing/On-Premise/billing.md
              - Licenses: Admin-and-data/Billing/On-Premise/licenses.md
      - Data limits: Admin-and-data/Limits.md
      - Licensing:

@@ -16,7 +16,7 @@ The following table lists the URLs for the agent jar file, debugger native libra
 
 ## Downloading legacy versions 
 
-To download [legacy versions](/release-notes/), replace `0.0.0` in the following URL:  
+To download [legacy versions](//Latest-updates/release-notes//), replace `0.0.0` in the following URL:  
 [https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-0.0.0/fusionreactor.jar](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-0.0.0/fusionreactor.jar)  
 
 with the desired version number.
