@@ -140,6 +140,48 @@ Each service within the system allows for separate configuration of its RED metr
 
 ![!Screenshot](../../images/Anomaly-detection/anomaly detection/RAQS.png)
 
+## Custom Detectors
+
+FusionReactor Cloud now features Custom Detectors, enhancing its ability to identify anomalies in your application's performance. This powerful tool allows for tailored monitoring based on your specific needs.
+
+Key points:
+
+* Custom Detectors require manual setup using PromQL.
+
+* Three pre-configured detectors are available for Java and ColdFusion users.
+
+* You can create your own detectors for any technology stack.
+
+* Monitor CPU, memory, or other critical resources.
+
+Custom Detectors enable precise identification of performance issues, helping maintain your application's efficiency across various technologies.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/992149064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Custom Detectors"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+### Adding a Custom Detector 
+
+Step 1: Navigate to **FusionReactor** > **Alerting** > **Anomaly Detection (Beta)** > **Custom Detector**
+
+
+Step 2: Select the **ADD DETECTOR** button and configure the Custom Detector settings as follows:
+
+* Enter a unique query label.
+
+* Set the aggregate.
+
+* Enter a PromQL expression.
+
+* Adjust the anomaly probability threshold according to your needs.
+
+* Select the Time Range and Pending For  intervals.
+
+* Select from predefined subscriptions to determine where alerts for anomalies should be sent.
+
+Step 3: Click the **APPLY CHANGES** button.
+
+Step 4: Toggle the Anomaly Detection check to enable the Custom Detector.
+
+
 ## Best practice for Anomaly Detection configuration
 
 ### Understanding service-specific metric profiles

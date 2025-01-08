@@ -234,10 +234,10 @@ nav:
             - todo.md
         - Servers: Data-insights/Features/servers.md
   - LATEST UPDATES: 
-     - What's new: 
-        - todo.md
+     - What's new: Latest-updates/WhatsNew.md
      - Releases: 
-          - todo.md
+        - Overview: Latest-updates/Releases.md
+        - FR Agent: Latest-updates/release-notes.md
   - ADMIN & DATA:
      - Account & user management: 
         - Cloud: Admin-and-data/Account/Cloud/users.md
