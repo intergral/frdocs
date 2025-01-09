@@ -310,10 +310,10 @@ hide:
 
 <div class="grid" markdown>
 
-[What's New](#)
+[What's New](/frdocs/Latest-updates/WhatsNew/)
 { .card }
 
-[Releases](#)
+[Releases](/frdocs/Latest-updates/Releases/)
 { .card }
 
 
