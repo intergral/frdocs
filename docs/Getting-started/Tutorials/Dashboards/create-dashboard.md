@@ -15,7 +15,7 @@ Dashboards and panels enable you to visually represent your data. To display a v
 
 **Step 1**: Select **Dashboards** from the navigation menu.
 
-![!Screenshot](/frdocs/Getting-started/Tutorials/step1.png)
+![!Screenshot](/frdocs/Getting-started/Tutorials/Dashboards/images/step1.png)
 
 **Step 2**: Click **Create New Dashboard**.
 

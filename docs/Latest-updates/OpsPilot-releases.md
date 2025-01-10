@@ -1,6 +1,7 @@
 # OpsPilot Releases
 
 
+
 ### OpsPilot 1.2.3 - 25th July, 2024
 
 | Issue Type | Summary                                                   |
