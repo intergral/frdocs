@@ -118,7 +118,6 @@ To stop a website scrape that is currently in progress, click the stop button lo
 
 
 
-
 ## Knowledge organization & retrieval
 
 ### Filtering
