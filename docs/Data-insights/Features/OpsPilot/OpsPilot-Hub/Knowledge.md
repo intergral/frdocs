@@ -1,4 +1,4 @@
-## Knowledge
+
 
 The Knowledge section in OpsPilot allows you to add general information that helps the system understand your entire technology stack and organization. This feature enhances OpsPilot's ability to provide relevant and contextualized responses.
 
