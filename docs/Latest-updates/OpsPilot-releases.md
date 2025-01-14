@@ -1,6 +1,24 @@
 # OpsPilot Releases
 
 
+
+### 13th January 2025
+
+| Issue Type   | Summary                                                                                       |
+|--------------|-----------------------------------------------------------------------------------------------|
+| Improvement  | New agentic metrics querying:                                                                 |
+|              | - Introduced new agentic system for dynamically querying metric data to help answer questions. |
+|              | - Graphs in responses will be more common and more consistently relevant to the conversation.  |
+|              | - OpsPilot will use a larger selection of metrics data.                                       |
+|              | - Quicker average response times.                                                             |
+
+### 9th January 2025
+
+| Issue Type   | Summary                                                                                       |
+|--------------|-----------------------------------------------------------------------------------------------|
+| New feature | Website Knowledge Sources: Scrape websites to ingest their content into your knowledge base. |
+
+
 ### OpsPilot 1.2.3 - 25th July, 2024
 
 | Issue Type | Summary                                                   |
