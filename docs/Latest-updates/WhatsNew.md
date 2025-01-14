@@ -1,6 +1,8 @@
 # What's new in FusionReactor
 
+## Opspilot updates
 
+We're excited to announce two major updates to OpsPilot! First, our new agentic system for querying metrics data enhances your experience with dynamic, relevant insights, more frequent and accurate graphs, and quicker response times. Second, we've introduced the ability to scrape websites and ingest their content directly into your knowledge base, expanding the ways you can gather and utilize information. These updates empower you to gain deeper insights and build a more comprehensive knowledge repository effortlessly.
 
 
 
