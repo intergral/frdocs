@@ -1,16 +1,19 @@
 # OpsPilot Releases
 
 
+### OpsPilot  13th January 2025
 
-### 13th January 2025
+
 
 | Issue Type   | Summary                                                                                       |
 |--------------|-----------------------------------------------------------------------------------------------|
-| Improvement  | New agentic metrics querying:                                                                 |
-|              | - Introduced new agentic system for dynamically querying metric data to help answer questions. |
-|              | - Graphs in responses will be more common and more consistently relevant to the conversation.  |
-|              | - OpsPilot will use a larger selection of metrics data.                                       |
-|              | - Quicker average response times.                                                             |
+| New Feature  | New Metrics AI Agent                        |
+|              | We have developed a new AI agent tuned for dealing with metric data. OpsPilot will utilize this new agent to:                                                         |
+|              |   - Use a wider selection of metrics for analysis.                                             |
+|              |   - Improve response accuracy when dealing with metrics.                                       |
+|              |   - Improve response speed when dealing with metrics.                                          |
+|              |   - Show graphs more frequently in responses.                                                  |
+|              |   - Generate graphs that more accurately reflect the conversation.                    |
 
 ### 9th January 2025
 
