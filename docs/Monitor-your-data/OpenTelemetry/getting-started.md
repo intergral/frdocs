@@ -11,12 +11,11 @@ OpenTelemetry, with its robust capabilities for distributed tracing and telemetr
 ### Three steps to seamless integration:
 FusionReactor has distilled the OTel integration process into three straightforward steps, making it accessible for users at all levels:
 
-Step 1: [Instrument code]()
+Step 1: [Instrument code](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
 
-Step 2: [Ship data to FR Cloud]()
+Step 2: [Ship data to FR Cloud](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/overview/)
 
-Step 3: [Visualize data]() 
-
+Step 3: [Visualize data](/frdocs/Monitor-your-data/OpenTelemetry/Visualize/Metrics/) 
 
 
 !!! info "Learn more"
@@ -70,8 +69,8 @@ Instrumentation is the process of extending your application to generate, collec
 
 
 
-!!! info “Learn more”
-    [Instrumentation](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview//)
+!!! info "Learn more"
+    [Instrumentation](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
 
 ### Shipping telemetry data to FusionReactor Cloud
 

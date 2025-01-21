@@ -12,7 +12,7 @@ FusionReactor provides step-by-step guides for the following languages:
 
 * [C++](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
 * [Go](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
-
+* [PHP](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/)
 * [Python](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
 
 !!! info
