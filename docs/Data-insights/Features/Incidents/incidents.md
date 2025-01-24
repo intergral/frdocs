@@ -204,7 +204,7 @@ The Incident Activity timeline:
 
 ### Task management
 
-Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The Task management dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
+Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The All Tasks dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
 
 !!! info
     Access this view by clicking the task page icon in the navigation menu.
@@ -240,7 +240,59 @@ The overview dashboard displays tasks in three key categories:
     !!! tip 
         Edit a task here by selecting the edit icon on the right. Quickly modify its status, reassign it to another team member, or update the task description. 
 
-#### Kanban
+#### Kanban view
+
+The Kanban view on **All Tasks** is designed to streamline task management related to incidents. It organizes tasks into three primary columns: **To Do**, **In Progress**, and **Done**, allowing users to easily track the status and progress of incident-related activities.
+
+##### Key Features:
+
+1. **Columns:**
+   - **To Do**: Contains tasks that are yet to be started. Each task is assigned to a specific team member, whose name and avatar are displayed.
+   - **In Progress**: Displays tasks currently being worked on, with a clear indication of the assignees.
+   - **Done**: Shows completed tasks with a green checkmark for quick identification.
+
+2. **Task Cards:**
+   - Each task is represented by a card with the following details:
+     - **Task Title**: A concise description of the task (e.g., "Reproduce the login crash issue").
+     - **Assigned User**: Displays the name and profile avatar of the user responsible for the task.
+     - **Actions**: Includes the option to delete a task for cleanup or reorganization.
+
+3. **Search and Filter:**
+   - A **search bar** at the top allows users to find specific tasks quickly.
+   - Users can filter tasks by assignee using the dropdown menu labeled **All Users**.
+
+!!! tip
+    The task status can be changed by clicking the checkbox next to the task.
+
+
+This Kanban system enables efficient collaboration and task prioritization for incident resolution. It provides a visual representation of task progress, ensuring all team members are aligned on the current workload and priorities.
+
+#### Incident view
+
+View and manage tasks grouped by their associated incidents to track progress across multiple response efforts. Each incident section shows:
+
+- Incident name (e.g., "Service Latency Spike")
+- Progress summary showing total tasks and their status (todo, in progress, done)
+- Visual progress bar indicating overall completion
+- Task cards displaying:
+    - Task description
+    - Assigned team member with avatar
+    - Task status indicator
+    - Quick-access delete button
+
+##### Key Features
+
+- Filter tasks by incident using the dropdown menu
+- Filter by team member using the **All Users** selector
+- Search across all incident tasks using the search bar
+- View completed tasks with strikethrough formatting
+- Access additional options via the menu (⋮) button:
+     - Go to incident
+     - Add task
+
+
+
+
 
 
 
