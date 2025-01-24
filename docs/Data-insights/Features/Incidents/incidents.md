@@ -27,6 +27,7 @@ The dashboard features **Incident Cards**, each representing a specific incident
 - The **Severity**, categorized as Minor, Major, or Critical to signify priority. 
 - **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
 - The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
+- An **Incident Duration Timer** located at the bottom-right corner of the incident card, this feature displays the total time the incident has been active, starting from the moment it was declared. The timer is continuously updated to help teams monitor how long the issue has been open and track the time to resolution effectively.
 
 ### Filtering 
 
@@ -83,26 +84,15 @@ To add a task within a specific incident:
 2. Provide a brief description of the task.
 3. Click on the +Task button.
 
-#### Update tasks
+#### Edit tasks
 
-To update and edit a task:
+To edit a task:
 
 1. Click on a task to edit details.
-2. Use the status dropdown to update progress.
 3. Assign tasks to different team members as needed.
 4. Mark tasks as complete when finished.
 
-#### Assign tasks
 
-Task assignment ensures clear accountability and provides visibility into ongoing activities. 
-
-To assign a task:
-
-1. Click on the people + icon next to the task.
-2. Search for and select the user you want to assign the task to.
-
-!!! tip
-    Tasks can be unassigned or reassigned at any time. Simply click the assigned user, then choose Unassign User or search for another team member to reassign the task.
 
 #### Update task status 
 
@@ -117,6 +107,19 @@ To update a task's status:
 1. Click the checkbox next to the task.  
 2. Each click cycles the task through the statuses in the following order:  
        - **To Do  → In Progress  → Done** 
+
+#### Assign tasks
+
+Task assignment ensures clear accountability and provides visibility into ongoing activities. 
+
+To assign a task:
+
+1. Click on the people + icon next to the task.
+2. Search for and select the user you want to assign the task to.
+
+!!! tip
+    Tasks can be unassigned or reassigned at any time. Simply click the assigned user, then choose Unassign User or search for another team member to reassign the task.
+
 
 
 ### Label management
@@ -140,7 +143,7 @@ Labels are added during incident creation or via the **Add Label** button on the
 
 
 !!! tip
-    Remove labels by clicking the **x** on the label badge.
+    Remove labels from an incident by clicking the **x** on the label badge.
 
 
 
@@ -167,7 +170,7 @@ To update an incident status:
 
 1. Use the **Status** dropdown on the incident details page.
 2. Select a new status:
-     - **Active**, **Resolved**, or other configured statuses.
+     - **Active** or **Resolved**.
 3. If resolving the incident:
      - Provide a resolution summary.
      - Confirm the status change.
@@ -238,7 +241,7 @@ The overview dashboard displays tasks in three key categories:
     - Related incident
         
     !!! tip 
-        Edit a task here by selecting the edit icon on the right. Quickly modify its status, reassign it to another team member, or update the task description. 
+        Edit a task here by clicking on the task title or selecting the edit icon on the right. Quickly modify its status, reassign it to another team member, or update the task description. 
 
 #### Kanban view
 
