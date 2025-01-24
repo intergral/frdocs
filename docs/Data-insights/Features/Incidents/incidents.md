@@ -27,7 +27,7 @@ The dashboard features **Incident Cards**, each representing a specific incident
 - The **Severity**, categorized as Minor, Major, or Critical to signify priority. 
 - **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
 - The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
-- An **Incident Duration Timer** located at the bottom-right corner of the incident card, this feature displays the total time the incident has been active, starting from the moment it was declared. The timer is continuously updated to help teams monitor how long the issue has been open and track the time to resolution effectively.
+- An **Incident Duration Timer** located at the bottom-right corner displays the total time the incident has been active, starting from the moment it was declared. 
 
 ### Filtering 
 
@@ -197,6 +197,8 @@ To adjust severity:
 
 The interactive timeline serves as your incident command center, providing a chronological view of all incident activities and enabling seamless collaboration. Responders can quickly scan past actions, review relevant context, and determine next steps without switching between multiple tools. 
 
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/activity.png)
+
 The Incident Activity timeline:
 
 1. Automatically logs all actions, including:
@@ -207,7 +209,7 @@ The Incident Activity timeline:
 
 ### Task management
 
-Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The All Tasks dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
+Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The **All Tasks** dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
 
 !!! info
     Access this view by clicking the task page icon in the navigation menu.
@@ -247,22 +249,25 @@ The overview dashboard displays tasks in three key categories:
 
 The Kanban view on **All Tasks** is designed to streamline task management related to incidents. It organizes tasks into three primary columns: **To Do**, **In Progress**, and **Done**, allowing users to easily track the status and progress of incident-related activities.
 
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/kanban.png)
+
 ##### Key Features:
 
 1. **Columns:**
-   - **To Do**: Contains tasks that are yet to be started. Each task is assigned to a specific team member, whose name and avatar are displayed.
-   - **In Progress**: Displays tasks currently being worked on, with a clear indication of the assignees.
-   - **Done**: Shows completed tasks with a green checkmark for quick identification.
+       - **To Do**: Contains tasks that are yet to be started. Each task is assigned to a specific team member, whose name and avatar are displayed.
+       - **In Progress**: Displays tasks currently being worked on, with a clear indication of the assignees.
+       - **Done**: Shows completed tasks with a green checkmark for quick identification.
 
 2. **Task Cards:**
-   - Each task is represented by a card with the following details:
-     - **Task Title**: A concise description of the task (e.g., "Reproduce the login crash issue").
-     - **Assigned User**: Displays the name and profile avatar of the user responsible for the task.
-     - **Actions**: Includes the option to delete a task for cleanup or reorganization.
+Each task is represented by a card with the following details:
+
+       -  **Task Title**: A concise description of the task (e.g., "Reproduce the login crash issue").
+       - **Assigned User**: Displays the name and profile avatar of the user responsible for the task.
+       - **Actions**: Includes the option to delete a task for cleanup or reorganization.
 
 3. **Search and Filter:**
-   - A **search bar** at the top allows users to find specific tasks quickly.
-   - Users can filter tasks by assignee using the dropdown menu labeled **All Users**.
+      - A **search bar** at the top allows users to find specific tasks quickly.
+      - Users can filter tasks by assignee using the dropdown menu labeled **All Users**.
 
 !!! tip
     The task status can be changed by clicking the checkbox next to the task.
@@ -272,7 +277,11 @@ This Kanban system enables efficient collaboration and task prioritization for i
 
 #### Incident view
 
-View and manage tasks grouped by their associated incidents to track progress across multiple response efforts. Each incident section shows:
+View and manage tasks grouped by their associated incidents to track progress across multiple response efforts. 
+
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/incident.png)
+
+Each incident section shows:
 
 - Incident name (e.g., "Service Latency Spike")
 - Progress summary showing total tasks and their status (todo, in progress, done)
