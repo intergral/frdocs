@@ -14,6 +14,32 @@ The application provides:
 - Comprehensive activity logs for auditing actions.
 - Tools for efficient collaboration and communication.
 
+## Incidents dashboard
+
+The **Incidents** dashboard helps teams track, prioritize, and resolve incidents efficiently by centralizing relevant details and offering quick filtering and reporting options.
+
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/card.png)
+
+The dashboard features **Incident Cards**, each representing a specific incident with essential details. These details include:
+
+- A **Title**, which provides a brief summary of the issue (e.g., Network Security Vulnerability).
+- The **Status** indicating whether the incident is Active or Resolved.
+- The **Severity**, categorized as Minor, Major, or Critical to signify priority. 
+- **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
+- The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
+
+### Filtering 
+
+The filtering feature allows you to refine the list of incidents displayed on the **Incidents** page. This helps users quickly identify incidents based on their status, severity, or associated labels.
+
+
+- Click the filter button (top-right corner) to open a dropdown menu containing the following options:
+     - Status
+     - Severity
+     - Labels
+
+!!! info
+    A red notification badge (e.g., 1) will appear on the button to indicate active filters.
 
 
 ## Key features & workflows
@@ -178,11 +204,47 @@ The Incident Activity timeline:
 
 ### Task management
 
-Task management streamlines incident response by keeping teams coordinated and accountable for specific actions.
+Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The Task management dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
 
-1. Filter tasks by status or user.
-2. Track task progress with visual indicators.
-3. Assign tasks to team members dynamically.
+!!! info
+    Access this view by clicking the task page icon in the navigation menu.
+    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/tasklist-icon.png)
+
+#### Overview
+
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/overview.png)
+
+
+The overview dashboard displays tasks in three key categories:
+
+1. The Team: Shows overall task distribution
+
+      - Todo 
+      - In Progress
+      - Done 
+      - Unassigned 
+
+
+2. My Tasks: Displays your personal task breakdown.
+
+    - My Todo 
+    - My In Progress 
+    - My Done 
+
+3. Task list view: Displays your assigned task information as a list.
+
+    - Task description
+    - Current status (Todo, Progress, Done)
+    - Related incident
+        
+    !!! tip 
+        Edit a task here by selecting the edit icon on the right. Quickly modify its status, reassign it to another team member, or update the task description. 
+
+#### Kanban
+
+
+
+
 
 ### User assignments
 
