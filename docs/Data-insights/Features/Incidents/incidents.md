@@ -76,6 +76,7 @@ To create a new incident:
 
 FusionReactor's integrated task management system helps you coordinate incident response by organizing critical actions and assignments. Using the built-in task manager, your team can collaborate effectively, monitor progress, and ensure swift completion of all necessary response activities.
 
+
 #### Add tasks
 
 To add a task within a specific incident:
@@ -91,6 +92,10 @@ To edit a task:
 1. Click on a task to edit details.
 3. Assign tasks to different team members as needed.
 4. Mark tasks as complete when finished.
+
+#### Filter tasks
+
+Tasks can be filtered by status within a specific incident using the status dropdown/dropdown filter. 
 
 
 
