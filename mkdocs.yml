@@ -152,8 +152,12 @@ nav:
             - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
             - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
         - Applications: Data-insights/Features/applications.md
-        - Crash Protection:
+        - CPU Sampler:
             - todo.md
+        - Crash Protection:
+            - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
+            - Events: Data-insights/Features/Crash-protection/Events.md
+            - Overview: Data-insights/Features/Crash-protection/Settings.md
         - Dashboards: Data-insights/Features/dashboards.md
         - Debugger:
             - todo.md
@@ -163,19 +167,10 @@ nav:
             - todo.md
         - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
-        - On-Prem UI:
-            - CPU Sampler:
-              - todo.md
-            - Crash Protection:
-              - todo.md
-            - Debugger:
-              - todo.md
-            - Enterprise Dashboard:
-              - todo.md
-            - JDBC:
-              - todo.md
-            - Logs:
-                - todo.md
+        - JDBC:
+            - todo.md
+        - Logs:
+          - todo.md
                # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
                 #- Data-insights/Features/Onprem-UI/Logs/Logs.md
                 #- Data-insights/Features/Onprem-UI/Logs/Log-Archives.md
@@ -200,22 +195,10 @@ nav:
                  # - Data-insights/Features/Onprem-UI/Logs/Files/Resource-Log.md
                 #  - Data-insights/Features/Onprem-UI/Logs/Files/Stdout.log-and-Stderr.log.md
                 #  - Data-insights/Features/Onprem-UI/Logs/Files/Thread-State-Log.md
-            - Memory:
-              - todo.md
-            - Metrics:
-              - todo.md
-            - Profiler:
-              - todo.md
-            - Requests:
-              - todo.md
-            - Resources: 
-              - todo.md
-            - System Resources:
-              - todo.md
-            - Transactions:
-              - todo.md
-            - UEM Sessions:
-              - todo.md
+        - Memory:
+            - todo.md
+        - Metrics:
+            - todo.md
         - OpsPilot:
             - OpsPilot Assistant:
               - Overview: Data-insights/Features/OpsPilot/AIoverview.md
@@ -233,7 +216,17 @@ nav:
                 - Slack: Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md
         - Profiler:
             - todo.md
+        - Requests:
+            - todo.md
+        - Resources: 
+            - todo.md
         - Servers: Data-insights/Features/servers.md
+        - System Resources:
+            - todo.md
+        - Transactions:
+            - todo.md
+        - UEM Sessions:
+            - todo.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
