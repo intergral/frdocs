@@ -98,7 +98,6 @@ To edit a task:
 Tasks can be filtered by status within a specific incident using the status dropdown/dropdown filter. 
 
 
-
 #### Update task status 
 
 Tasks have three statuses:
