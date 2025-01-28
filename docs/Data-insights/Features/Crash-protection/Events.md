@@ -1,16 +1,16 @@
-title: Events
+
 # Crash Protection Events
 
 **Request &gt; Crash Protection Events **shows summary of all requests
 that were triggered by the various survival strategies available
-in [Protection](Crash-Protection.md).
+in [Protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/).
 
 Below you can see a image of the Request Quantity Protection. Selected
 and showing is :
 
 -   Request Quantity Protection - Rejections
 
-![](/attachments/245550063/245550088.png)
+![](/frdocs/Data-insights/Features/Crash-protection/images/245550088.png)
 
 ##Rejections Overview
 
@@ -57,14 +57,14 @@ the page:
 This graphs show the average time that it took the requests that were
 triggered by the chosen strategy to execute.
 
-![](/attachments/245550063/245550082.png)
+![](/frdocs/Data-insights/Features/Crash-protection/images/245550082.png)
 
 ### Activity Graph
 
 This graph shows how much the selected protection type was triggered per
 minute.
 
-![](/attachments/245550063/245550071.png)
+![](/frdocs/Data-insights/Features/Crash-protection/images/245550071.png)
 
 ##Rejections Table
 

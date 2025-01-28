@@ -157,7 +157,7 @@ nav:
         - Crash Protection:
             - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
             - Events: Data-insights/Features/Crash-protection/Events.md
-            - Overview: Data-insights/Features/Crash-protection/Settings.md
+            - Settings: Data-insights/Features/Crash-protection/Settings.md
         - Dashboards: Data-insights/Features/dashboards.md
         - Debugger:
             - todo.md
