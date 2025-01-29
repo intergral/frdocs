@@ -24,7 +24,7 @@ The dashboard features **Incident Cards**, each representing a specific incident
 
 - A **Title**, which provides a brief summary of the issue (e.g., Network Security Vulnerability).
 - The **Status** indicating whether the incident is Active or Resolved.
-- The **Severity**, categorized as Pending, Minor, Major, or Critical to signify priority. 
+- The **Severity**, categorized as Pending, Low, Medium, High, Critical to signify priority. 
 - **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
 - The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
 - An **Incident Duration Timer** located at the bottom-right corner displays the total time the incident has been active, starting from the moment it was declared. 
@@ -60,7 +60,7 @@ To create a new incident:
     ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/createnew.png)
 
        - **Title**: A brief description of the incident.
-       - **Severity**: Select from predefined levels (e.g. Critical, Major, Minor).
+       - **Severity**: Select from predefined levels (e.g., Pending, Low, Medium, High, Critical).
        - **Status**: Set the initial status (typically **Active**).
        - **Labels**: (Optional) Add tags to categorize the incident.
        - **Description**: Provide detailed information about the incident.
@@ -192,7 +192,7 @@ Setting clear severity levels helps your team know who to involve and what actio
 To adjust severity:
 
 1. Click the **Severity** indicator on the incident.
-2. Select the desired severity level (e.g., Critical, Major, Minor).
+2. Select the desired severity level (e.g., Pending, Low, Medium, High, Critical).
 3. Changes are automatically logged in the activity timeline.
 
 
