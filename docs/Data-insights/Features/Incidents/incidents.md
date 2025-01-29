@@ -10,7 +10,7 @@ Incidents can be challenging, particularly during the critical initial stages of
 The application provides:
 
 - Real-time incident tracking and resolution.
-- Task assignment and progress monitoring.
+- Task assignment and progress monitoring.  
 - Comprehensive activity logs for auditing actions.
 - Tools for efficient collaboration and communication.
 
@@ -24,7 +24,7 @@ The dashboard features **Incident Cards**, each representing a specific incident
 
 - A **Title**, which provides a brief summary of the issue (e.g., Network Security Vulnerability).
 - The **Status** indicating whether the incident is Active or Resolved.
-- The **Severity**, categorized as Minor, Major, or Critical to signify priority. 
+- The **Severity**, categorized as Pending, Minor, Major, or Critical to signify priority. 
 - **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
 - The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
 - An **Incident Duration Timer** located at the bottom-right corner displays the total time the incident has been active, starting from the moment it was declared. 
@@ -161,6 +161,8 @@ Keep the incident timeline organized by adding formatted notes and updates about
 2. Click **Add note** to post your comment.
 3. Comments appear chronologically in the activity timeline.
 
+!!! info
+    The ellipsis button on comments in the activity timeline allows users to edit their posts. 
 
 ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/comment.png)
 
