@@ -257,7 +257,7 @@ The Kanban view on **All Tasks** is designed to streamline task management relat
 
 ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/kanban.png)
 
-##### Key Features:
+##### Key Features
 
 1. **Columns:**
        - **To Do**: Contains tasks that are yet to be started. Each task is assigned to a specific team member, whose name and avatar are displayed.
