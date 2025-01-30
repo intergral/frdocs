@@ -167,10 +167,20 @@ nav:
             - todo.md
         - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
-        - JDBC:
-            - todo.md
-        - Logs:
-          - todo.md
+        - Incidents: Data-insights/Features/Incidents/incidents.md
+        - On-Prem:
+            - CPU Sampler:
+              - todo.md
+            - Crash Protection:
+              - todo.md
+            - Debugger:
+              - todo.md
+            - Enterprise Dashboard:
+              - todo.md
+            - JDBC:
+              - todo.md
+            - Logs:
+                - todo.md
                # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
                 #- Data-insights/Features/Onprem-UI/Logs/Logs.md
                 #- Data-insights/Features/Onprem-UI/Logs/Log-Archives.md
