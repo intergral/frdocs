@@ -163,7 +163,8 @@ nav:
             - todo.md
         - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
-        - On-Prem UI:
+        - Incidents: Data-insights/Features/Incidents/incidents.md
+        - On-Prem:
             - CPU Sampler:
               - todo.md
             - Crash Protection:
