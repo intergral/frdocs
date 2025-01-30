@@ -160,7 +160,13 @@ nav:
             - Settings: Data-insights/Features/Crash-protection/Settings.md
         - Dashboards: Data-insights/Features/dashboards.md
         - Debugger:
-            - todo.md
+           - Data-insights/Features/Debugger/Overview.md
+           - Data-insights/Features/Debugger/Breakpoints.md
+           - Data-insights/Features/Debugger/Debug-Email-Alert.md
+           - Data-insights/Features/Debugger//Event-Snapshot.md
+           - Data-insights/Features/Debugger/Security.md
+           - Data-insights/Features/Debugger/Settings.md
+           - Data-insights/Features/Debugger/Sources.md
         - Deep: 
             - todo.md
         - Enterprise Dashboard:
