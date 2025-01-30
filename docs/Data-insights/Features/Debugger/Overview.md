@@ -191,9 +191,9 @@ At the top of the viewer, you'll find the thread information, which displays det
 
 ![](/frdocs/Data-insights/Features/Debugger/images/245552812.png)
 
-### Stack Trace / Stack Frames
+### Stack Trace/Stack Frames
 
-The stack trace view in the debugger shows the stack frames of the
+The **Stack Trace** view in the debugger shows the stack frames of the
 currently-paused thread.
 
 ![](/frdocs/Data-insights/Features/Debugger/images/245552863.png)
@@ -204,55 +204,41 @@ click on one of the grey arrows and the Thread View page loads the
 source and variables for that stack frame. The green arrow for the stack
 frame shows which stack frame you are currently viewing.
 
-The icons on the top right of the 'Frames' section of the UI are the
+The icons on the top right of the **Frames** section of the UI are the
 following (left to right):
 
 -   Decompile the currently-selected frame ![](/frdocs/Data-insights/Features/Debugger/images/245552782.png)
 -   Scroll the UI to show the currently-shown frame![](/frdocs/Data-insights/Features/Debugger/images/245552770.png)
--   The up button is to go up a frame (from the current) ![](/frdocs/Data-insights/Features/Debugger/images/245552764.png)
--   The down buttons goes down a frame (towards where the thread started) ![](/frdocs/Data-insights/Features/Debugger/images/245552776.png)
+-   Go up a frame (from the current) ![](/frdocs/Data-insights/Features/Debugger/images/245552764.png)
+-   Go down a frame (towards where the thread started) ![](/frdocs/Data-insights/Features/Debugger/images/245552776.png)
 
-### Variable Viewer
+### Variable viewer
 
-The variable viewer shows the variables currently available on the
+The Variable viewer shows the variables currently available on the
 thread at the specific location that the interactive debugger has
 paused.
 
 ![](/frdocs/Data-insights/Features/Debugger/images/245552818.png)
 
-The variables are shown as a tree, the top-most nodes in the tree show
-the variables which are local variables in the function. For all
-non-static method calls there should be a '`this`' object which the
-method is being called on (unless it has been optimized away).   
+Variables are displayed in a tree structure, with the top-most nodes representing local variables within the function. For non-static method calls, a '`this`' object will be shown (unless optimized away), representing the object on which the method is called.  
 
-The red text shows the variable name, the class name and
-`Object.hashCode()` is shown in light gray and on the far right (in
-black) is the `toString()` value of the variable. The full class name is
-available via a tooltip on mouse-over of the variable.
+- The variable name is highlighted in red.  
+- The class name and `Object.hashCode()` appear in light gray.  
+- The `toString()` value of the variable is shown in black, on the far right.  
+Hovering over a variable will display the full class name in a tooltip.
 
-Variables can be expanded for objects to see their fields, static
-variables and inherited variables.
+You can expand object variables to view their fields, static variables, and inherited variables.
 
-Any field or variable which is a primitive type (e.g. `int`, `boolean` )
-or a` java.lang.String` can be modified in the right side of the
-variables tree. Simply move your mouse over the value you want to
-change, it will change to an input area when your mouse is over the
-value and the value can be modified.   Simply modify the value and press
-return.
+Fields or variables of primitive types (e.g., `int`, `boolean`) or `java.lang.String` can be modified in the variables tree on the right side. Hover over the value you want to change, and it will turn into an editable input field. Simply edit the value and press **Enter** to apply the change.
+   
 
 #### Watches
+Watches can be set in the **Debugger → Thread** view once a thread is paused at a breakpoint (located at the bottom right of the FR page). Valid watches include Java or CFML expressions. The interactive debugger will attempt to evaluate these watches using the current variables and CF scopes at runtime.
 
-Watches can be set in the Debugger → Thread view once a breakpoint has
-paused a thread (the bottom right of the FR page). Valid watches are
-Java or CFML expressions. The interactive debugger will attempt to
-evaluate the watches with variables / CF scopes information at runtime.
 
-![](/attachments/245553023/245553043.png)
+![](/frdocs/Data-insights/Features/Debugger/images/2245553043.png)
 
-You can click the + to add a new watch or press the red x to delete the
-watch. You can also modify the watch by clicking the expression being
-evaluated. Watches are not deleted when the thread is resumed - they
-will be evaluated the next time a breakpoint is hit.
+Click the **+** to add a new watch, or press the red **X** to delete a watch. To modify a watch, simply click on the expression being evaluated. Watches are not deleted when the thread resumes; they will be re-evaluated the next time a breakpoint is hit.
 
 ## Stepping
 
@@ -260,7 +246,7 @@ The interactive debugger allows the user to control the flow of the
 thread, allowing them to view the variables, source and stack as the
 thread progresses through the code.
 
-![](/attachments/245552753/245552788.png)
+![](/frdocs/Data-insights/Features/Debugger/images/2245552788.png)
 
 This is done via the controls at the top of the code viewer when viewing
 a paused thread.
@@ -271,70 +257,44 @@ a paused thread.
 
 ### Resume
 
-When clicking the resume button, the thread will resume from its current
-location and continue to run until the next interactive breakpoint is
-hit.  
+When you click the **Resume** button, the thread will continue from its current location and run until it reaches the next interactive breakpoint.
 
-When pressed in the thread view, it shows a message box saying that the
-thread is now running or terminated. If the thread hits another
-breakpoint in under 1 second, the thread view will be shown for the
-thread again.
+In the thread view, pressing the button will display a message indicating whether the thread is now running or terminated. If the thread hits another breakpoint within 1 second, the thread view will reappear for that thread.
 
 ### Step Out
 
-When clicking the **step ou**t button the thread will continue to
-execute until the method that the thread is currently in returns. The
-thread will then pause in the interactive debugger. If this takes more
-than 1 second or the thread is terminated then a message will appear
-informing the user.
+Clicking the **Step Out** button causes the thread to continue executing until it exits the current method. Once the method returns, the thread will pause in the interactive debugger. If this takes longer than 1 second or if the thread is terminated, a message will notify the user.
 
 ### Step In
 
-When clicking the step in button the thread will continue to execute
-until the next line number is hit in the current method or the thread
-steps into a new method. The thread will then pause in the interactive
-debugger. If this takes more than 1 second or the thread is terminated
-then a message will appear informing the user.
-
+Clicking the **Step In** button allows the thread to execute until it hits the next line in the current method or steps into a new method. The thread will then pause in the interactive debugger. If this takes longer than 1 second or if the thread is terminated, a message will notify the user.
 ### Step Over
 
-When clicking the step over button the thread will execute until the
-next line number is hit in the current method or the current method
-returns. The thread will then pause in the interactive debugger, if this
-takes more than one second or the thread is terminated then a message
-will appear informing the user.
+Clicking the **Step Over** button causes the thread to execute until it reaches the next line in the current method or until the method returns. The thread will then pause in the interactive debugger. If this takes longer than 1 second or if the thread is terminated, a message will notify the user.
 
 ## CFML Scopes
 
-When the thread is paused inside a CFML-specific file (CFC / CFM) the
-variables view shows CFML scopes in the Variables View. These function
-the same as the local variables in the **Variables View,** but come from
-the scope locations which are available at the location that the thread
-is paused.
+When the thread is paused inside a CFML-specific file (CFC or CFM), the **Variables View** will display CFML scopes. These function similarly to local variables, but are sourced from the scope locations available at the point where the thread is paused.
 
-![](/attachments/245552753/245552824.png)
+![](/frdocs/Data-insights/Features/Debugger/images/2245552824.png)
 
 ### CFML Set Variable
 
-When the thread is paused inside a CFML-specific file (CFC / CFM), the
-top toolbar will show a new button labelled "**CF Set**". This button
-allows the user to set a variable in the CFML scopes by simply typing in
-a variable name and a variable value.
+When the thread is paused inside a CFML-specific file (CFC or CFM), the top toolbar will display a new button labeled "**CF Set**." This button allows you to set a variable in the CFML scopes by entering a variable name and value.
 
-Simply type the variable name into the Variable field and type the
-expression into the Expression field and then press the "Set" button.
+To use it, type the variable name in the **Variable** field, enter the expression in the **Expression** field, and then click the **Set** button to apply the changes.
 
-![](/attachments/245552753/245552903.png)
-
-E.g.
+![](/frdocs/Data-insights/Features/Debugger/images/245552903.png)
 
 **Variable**
 
-     VARIABLES.i
+!!! example 
+    VARIABLES.i
 
-**Expression**
+**Expression** 
 
-     VARIABLES.i + 10
+!!! example
+    VARIABLES.i + 10
 
 
 ## Sampler Graphs
@@ -342,7 +302,7 @@ E.g.
 The sampler graphs page of the debugger allows the user to see how often
 a breakpoint is being hit.
 
-![](/attachments/245553072/245553077.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553077.png)
 
 In the top right of the page the user can select which specific
 breakpoint sampler series to view.
@@ -355,24 +315,24 @@ daunting when you first start to use it.
 We have prepared some examples, which include the code, breakpoints and
 results, to aid your introduction to the debugger.
 
--   [Debug Example : Setting a conditional breakpoint in ColdFusion loop](Debug-Example-1.md)
--   [Debug Example : Setting an automatic breakpoint following a ColdFusion Exception throw](Debug-Example-2.md)
--   [Debug Example : Setting an email alert on first occurrence of an exception](Debug-Example-3.md)
--   [Debug Example : Setting conditional breakpoint in catch block](Debug-Example-4.md)
--   [Debug Example : Filter on a specific IP Address in JSP/Servlet requests](Debug-Example-5.md)
+-   [Debug Example: Setting a conditional breakpoint in ColdFusion loop](/frdocs/Data-insights/Features/Debugger/Debug-Example-1/)
+-   [Debug Example: Setting an automatic breakpoint following a ColdFusion Exception throw](/frdocs/Data-insights/Features/Debugger/Debug-Example-2/)
+-   [Debug Example: Setting an email alert on first occurrence of an exception](/frdocs/Data-insights/Features/Debugger/Debug-Example-3/)
+-   [Debug Example: Setting conditional breakpoint in catch block](/frdocs/Data-insights/Features/Debugger/Debug-Example-4/)
+-   [Debug Example: Filter on a specific IP Address in JSP/Servlet requests](/frdocs/Data-insights/Features/Debugger/Debug-Example-5/)
 
-## Manual Installation
+## Manual installation
 
 The debugger relies on a native library. If FusionReactor is not
 installed by FRAM, the [Manual Debug Installation](../Installation/Manual/Manual-Installation.md)
 instructions must be followed to enable the Production Debugger.
 
-## Known Issues and Limitations
+## Known issues and limitations
 
 !!! info
     The Production Debugger is only available on 64 bit operating systems
 
-### Database Table Lock Escalation
+### Database table lock escalation
 
 With some databases (especially Microsoft SQL Server) it's possible for
 a single thread to lock a database table completely until the
@@ -398,7 +358,7 @@ which need to acquire this table to lock to pause too.
 ### Double submits and replay attacks
 
 
-When using the Production Debugger it is good to ensure that the website
+When using the Debugger it is good to ensure that the website
 being debugged **can cope with multiple submits** from the same form.
 
 If you have the following case:
@@ -423,7 +383,7 @@ Tech note : [FRS-355](http://www.fusion-reactor.com/support/kb/frs-355/)
 provides a version of this ```libc.so.6``` and instructions on how to use it just for
 the debugger.
 
-### Rate Limiting ordering
+### Rate limiting ordering
 
 The production debugger has 3 different rate limit options.
 
@@ -435,12 +395,11 @@ The production debugger has 3 different rate limit options.
     be paused in the interactive debugger.  If this is hit all new
     breakpoints simply continue and never stop in the debug engine.
 
-#### Fire Count with Emails
+#### Fire count with emails
 
-When using the breakpoint fire count limit and the email alert interval
-it should be understood that the fire count is a precondition.  
+When using the breakpoint fire count limit and the email alert interval, it's important to understand that the fire count acts as a precondition.
 
-I.e. the code executes the breakpoint in the following steps.
+In other words, the code executes the breakpoint in the following sequence:
 
 1.  Check if the breakpoint fire count limit has been hit. If not
     continue to step 2 and increase the counter
@@ -450,12 +409,12 @@ I.e. the code executes the breakpoint in the following steps.
 This means that the precondition of the fire count will increase even
 though the email alert interval vetoes the email being sent.
 
-#### Fire Count with Max Threads.
+#### Fire count with max threads.
 
 When using the breakpoint fire count limit and an interactive breakpoint
 with the max threads settings the fire count is a precondition.
 
-I.e. the code executes the breakpoint in the following steps.
+In other words, the code executes the breakpoint in the following steps.
 
 1.  Check if the breakpoints fire count limit has been hit. iI not
     continue to step 2 and increase the counter
@@ -477,8 +436,8 @@ become slow. Also, this setting is known to heavily affect the
 compilation time of large files on ColdFusion and operations which throw
 a lot of exceptions (like javacc-based parsers).
 
-If you enable this, it is recommend that you also enable the "**Save
-Classes**" feature on ColdFusion servers to avoid recompilation. The
+If you enable this, it is recommend that you also enable the **Save
+Classes** feature on ColdFusion servers to avoid recompilation. The
 "**Save Classes**" feature can be found in the ColdFusion admin console
 under the **Server Settings &gt; Caching.** 
 
@@ -489,11 +448,9 @@ property in the JVM arguments file:
 -Dfr.jvmti.enable.exceptions=true
 ```
 !!! info
-    Event Snapshots can be triggered when exceptions occur.   The event snapshot
-    generation cannot be triggered from exceptions / errors unless the
-    exception support is enabled.
+    Event snapshots can be triggered when exceptions occur. However, event snapshot generation will not be triggered by exceptions or errors unless exception support is enabled.
 
-#### Stepping Mode
+#### Stepping mode
 
 By default, the Production Debugger runs in "**Low-impact stepping
 mode"**. This stepping mode ensures that the JVM runs as quick as
@@ -507,18 +464,11 @@ system property in the JVM arguments file:
 -Dfr.jvmti.enable.fast.stepping=true
 ```
 
-When the "**Fast stepping mode"** is enabled, it ensures that stepping
-operations are executed as quickly as possible however, keep in mind
-that this might have a negative impact on the JVMs performance.
+When "**Fast Stepping Mode**" is enabled, stepping operations are executed as quickly as possible. However, be aware that this may negatively impact the JVM's performance.
 
-Although generally, no performance impact will be felt with the "**Fast
-stepping mode**" enabled, it can cause some operations to become slow.
+While there is generally no noticeable performance impact with "**Fast Stepping Mode**" enabled, it can cause certain operations to slow down.
 
-!!! warning
-    The setting is known to heavily affect the compilation time of large
-    files on ColdFusion and operations which throw a lot of exceptions (like
-    javacc-based parsers). If you enable this mode, it is recommend that you
-    also enable the "**Save Classes**" feature on ColdFusion servers to
-    avoid recompilation.
+!!! warning  
+This setting is known to significantly affect the compilation time of large files in ColdFusion and operations that throw many exceptions (such as javacc-based parsers). If you enable this mode, it is recommended to also enable the "**Save Classes**" feature on ColdFusion servers to prevent unnecessary recompilation.
 
-{!Debugger/Settings.md!}
+
