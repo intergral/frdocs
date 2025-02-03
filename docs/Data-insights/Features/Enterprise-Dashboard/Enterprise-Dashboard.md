@@ -9,7 +9,7 @@ The **Enterprise Dashboard** lets you track the state of installations on one or
 
 Using the **Ephemeral Data Service** you also have the ability to proxy the FusionReactor user interface,  allowing you to access the local FusionReactor instance without having an exposed port.
 
-![Full Enterprise Dashboard](../images/Enterprise-Dashboard/Full-Dashboard.png)
+![Full Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/Full-Dashboard.png)
 
 Once you have your machines set up, go to the dashboard. The default view when bringing up the **Enterprise Dashboard** is to show all groups along with any servers which are currently ungrouped.
 
@@ -19,7 +19,7 @@ The **Enterprise Dashboard** contains either grouped or ungrouped instances of F
 
 ### Group information
 
-![Enterprise Dashboard group metrics](../images/Enterprise-Dashboard/Group-Metrics.jpg)
+![Enterprise Dashboard group metrics](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/Group-Metrics.jpg)
 
 The group information pane shows you how many servers are within this
 group as well as showing statistics for all grouped servers. These
@@ -40,7 +40,7 @@ statistics section but they are presented visually for ease of use.
 
 ### Server information
 
-![Enterprise Dashboard Group Metrics](../images/Enterprise-Dashboard/Server-Metrics.jpg)
+![Enterprise Dashboard Group Metrics](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/Server-Metrics.jpg)
 
 The server information pane shows you various statistics about your
 selected server. Statistics which are listed with blue titles are links.
@@ -109,7 +109,7 @@ These graphs show the same information displayed in the statistics section but t
 
 When you access FRAM, navigate to **Manage Server**. 
 
-![](../attachments/245548810/245548868.png)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images//245548868.png)
 
 From this screen you can add new servers to the **Enterprise Dashboard** or manage existing servers.
 
@@ -129,7 +129,7 @@ bottom of the page (Current Servers) along with its current connect
 status. 
 
 !!! example
-    ![](../attachments/245548810/245548885.png)
+    ![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548885.png)
 
 ### Add an external server in the Enterprise Dashboard
 
@@ -140,7 +140,7 @@ Amazon EC2 instance was used.
 Navigate to the **Manage Servers** tab and **add** all the details of
 the external server as described in the section above. 
 
-![](../attachments/245548810/245548897.jpg)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548897.jpg)
 
 From the screenshot above, we see that the Status code of the
 FusionReactor instance with name "tomcat8\_External\_Server" is set to
@@ -149,7 +149,7 @@ instance externally.
 
 The next step is to access the **Enterprise Dashboard**. Here, you should be able to see the new FusionReactor instance as in the screenshot below:
 
-![](/attachments/245548810/245548891.jpg)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548891.jpg)
 
 Now, you are able to monitor the external server with FusionReactor.
 
@@ -158,7 +158,7 @@ Now, you are able to monitor the external server with FusionReactor.
 Below the **Add Server** form you will see a list of all servers currently
 available in the Enterprise Dashboard.
 
-![](/attachments/245548810/245548879.png)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548879.png)
 
 Each server has three buttons next to it:
 
@@ -195,7 +195,7 @@ The process of creating a group is very simple. First, you need to
 navigate through the **Manage Groups** page. 
 
 !!! example
-    ![](/attachments/245548908/245548938.png)
+    ![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548938.png)
 
 When you access the page, you will see the following fields.
 
@@ -208,7 +208,7 @@ When you access the page, you will see the following fields.
 When the new group has been created, you will be able to see that under
 the **Current Server Groups** area. 
 
-![](/attachments/245548908/245548953.png)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548953.png)
 
 ### Manage existing groups
 
@@ -225,7 +225,7 @@ the **Current Server Groups** area.
 After the creation of the group, you can access the **Enterprise Dashboard**
 and see that a new group has been created. 
 
-![](/attachments/245548908/245548948.png)
+![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548948.png)
 
 
 ## Ephemeral Data Service

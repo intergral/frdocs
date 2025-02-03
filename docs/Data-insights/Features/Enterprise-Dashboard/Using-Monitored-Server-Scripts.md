@@ -363,7 +363,7 @@ FusionReactor Crash Protection Scripts are powerful functionality that
 can lead to an increase of server availability in local as well as
 distributed server environments.
 
-!!!warning
+!!! warning
     A script that is executed by a Crash Protection rule is executed by the
     server instance that is monitoring the problem server **not** by the
     problem server itself. If this is not the same computer, remote
