@@ -18,7 +18,7 @@ In addition, breakpoints have global configurations that apply to **all** breakp
 
 These settings govern whether the trigger should activate the handler for any given breakpoint.
 
-![](/attachments/245552928/245552950.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552950.png)
 
 The table displays the configured breakpoints.  
 
@@ -28,7 +28,7 @@ The table displays the configured breakpoints.
 
 Clicking the **information button** opens a popup with detailed state information about the breakpoint.
 
-![](/attachments/245552928/245552944.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552944.png)
 
 The locations section of this window contains the following fields:
 
@@ -48,12 +48,12 @@ the class has been loaded or if it's enabled.
 If there is an issue with the breakpoint, the icon will change to the
 following:
 
-![](/attachments/245552928/245552956.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552956.png)
 
 The information button's locations section will also change to 'Issues',
 and display information about issues with the breakpoint.
 
-![](/attachments/245552928/245552938.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552938.png)
 
 ## Creating breakpoints
 
@@ -61,7 +61,7 @@ To create a new breakpoint you can click on the "New Breakpoint" button
 on the top right of the **Debugger** page. A modal dialog will open
 allowing you to specify the configuration for the breakpoint.
 
-![](/attachments/245552928/245553003.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553003.png)
 
 ## Breakpoint triggers
 
@@ -236,7 +236,7 @@ value which is being set.  In other words, if the field is set to null, then th
 
 ### Editing breakpoints
 
-![](/attachments/245552928/245552992.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552992.png)
 
 You can edit the breakpoint by clicking the **Edit** button (the middle button). This opens the same dialog as the one used to create a new breakpoint.
 
@@ -248,21 +248,16 @@ to the left of the breakpoint name.
 An enabled breakpoint can have one of the following icons:
 
 
-
-![](/attachments/245552928/245552962.png)
-![](/attachments/245552928/245552956.png)
-
-- A **solid red square** indicates the breakpoint is enabled and properly installed.
-- A **broken red square** indicates an issue with the breakpoint. You can view the breakpoint's state, including any problems, by clicking the information button next to the breakpoint name.
-- A **disabled breakpoint** is represented by this icon:  
-
-  ![](/attachments/245552928/245552980.png)  
+- A **solid red square** ![](/frdocs/Data-insights/Features/Debugger/images/245552962.png)
+indicates the breakpoint is enabled and properly installed.
+- A **broken red square** ![](/frdocs/Data-insights/Features/Debugger/images/245552956.png) indicates an issue with the breakpoint. You can view the breakpoint's state, including any problems, by clicking the information button next to the breakpoint name.
+- A **disabled breakpoint** is represented by this icon:   ![](/frdocs/Data-insights/Features/Debugger/images/245552980.png)  
 
 When the breakpoint is disabled, it will appear as shown:
 
 
 
-![](/attachments/245552928/245552986.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552986.png)
 
 
 ### Deleting breakpoints

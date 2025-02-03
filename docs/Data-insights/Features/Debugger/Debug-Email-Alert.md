@@ -1,4 +1,4 @@
-title : Email Alert
+
 # Debugger Email Alert
 
 The Production Debugger Email Alert feature will cause FusionReactor to
@@ -6,14 +6,14 @@ send an automated email whenever a breakpoint is fired. The email alert
 is an invaluable tool for gaining insight and understanding what is
 happening in your production environment.
 
-![](/attachments/245553082/245553104.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553104.png)
 
 The email includes information about the transactions running on the
 thread, the thread information and stack trace as well as all the
 variables which are available when the breakpoint was hit. The email is
 very similar to the [crash protection email](/Crash-Protection/Crash-Protection/#email-alert).
 
-![](/attachments/245553082/245553094.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553094.png)
 
 The email alerts from the debugger include specific information about
 the breakpoint which triggered it. Like the exception being thrown or

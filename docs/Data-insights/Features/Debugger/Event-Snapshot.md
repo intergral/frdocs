@@ -94,12 +94,12 @@ These objects can be expanded to show their fields.
 
 If I select the stack frame which corresponds to my code I can see
 
-![](/attachments/245553109/245553125.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553125.png)
 
 You can see that a lot of information appears to be missing, but simply
 expanding the 'ds' field I can see :
 
-![](/attachments/245553109/245553120.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553120.png)
 
 
 ### Enabling Support for Event Snapshots
@@ -143,7 +143,7 @@ In order th track variables for every stack frame including within and CFC's you
 
 ## User Interface
 
-![](/attachments/245553109/245553130.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553130.png)
 
 Above is an example of the Event Snapshot UI.   This The *Event Snapshot* was
 triggered from the second attempt to call postgresql.   The first

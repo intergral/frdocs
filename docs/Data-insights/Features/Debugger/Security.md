@@ -8,16 +8,16 @@ Debugging allows you to gain additional insight to troubleshoot and errors occur
 
 Access the runtime variables for all scopes within the tracked thread
 
-![!Screenshot](../Debugger/scope.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/scope.png)
 
 ### The Debugger
 The Production Debugger provides the ideal solution for developers to gain insight into how code executes at production runtime. With the Debugger, you have the ability to pause and step through code.
 
-![!Screenshot](../Debugger/thread.png)
-![!Screenshot](../Debugger/thread2.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/thread.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/thread2.png)
 
 !!! info "Learn more"
-    [Debugger](/Debugger/Overview/)
+    [Debugger](/frdocs/Data-insights/Features/Debugger/images/Overview/)
 
 ### Event Snapshots
 
@@ -31,7 +31,7 @@ Event Snapshots are generated for specific events that may occur whilst FusionRe
 
 The ability to analyze and run functions on variables during runtime.
 
-![!Screenshot](../Debugger/watches.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images//watches.png)
 
 ## Requirements
 You need the agentpath argument installed.
@@ -43,7 +43,7 @@ You need the agentpath argument installed.
 
 Navigate to the Debug page and if the agentpath argument is not enabled, the following information will be displayed: 
 
-![!Screenshot](../Debugger/debugmissing.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/debugmissing.png)
 
 
 ## How do I disable the debug capability?
@@ -59,7 +59,7 @@ To disable the Debugger:
 
 **Step 2**: Disable the setting.
 
-![!Screenshot](../Debugger/config1.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/config1.png)
 
 To disable Event Snapshots:
 
@@ -67,7 +67,7 @@ To disable Event Snapshots:
 
 **Step 2**: Disable the setting.
 
-![!Screenshot](../Debugger/config2.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/config2.png)
 
 
 ### With Java arguments
