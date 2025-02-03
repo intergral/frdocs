@@ -247,7 +247,9 @@ nav:
         - Transactions:
             - todo.md
         - UEM Sessions:
-            - todo.md
+            - UEM-and-Sessions/Sessions.md
+            - UEM-and-Sessions/Settings.md
+            - UEM-and-Sessions/User-Experience-Monitoring.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
