@@ -1,9 +1,12 @@
-name: Deploy MkDocs to GitHub Pages
+name: PR Pipeline for MkDocs
 
 on:
   push:
     branches:
-      - main
+      - '**'  # Runs on all branches
+  pull_request:
+    branches:
+      - main  # Runs when a PR is created/updated against main
 
 permissions:
   contents: read
@@ -14,30 +17,44 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-      - uses: actions/cache@v4
+
+      - name: Set cache ID
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+
+      - name: Cache MkDocs dependencies
+        uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - uses: webfactory/ssh-agent@v0.9.0
+
+      - name: Set up SSH for deployment
+        uses: webfactory/ssh-agent@v0.9.0
         with:
-          # This key is a 'deploy key' for the intergral/material project
           ssh-private-key: ${{ secrets.MATERIAL_SSH_KEY }}
-      - run: pip install -r requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: mkdocs build -d./_site
+
+      - name: Build MkDocs site
+        run: mkdocs build -d ./_site
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        
+        uses: actions/upload-pages-artifact@v3
+
   deploy:
     needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'  # Deploy only if a push to main
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -46,5 +63,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-
