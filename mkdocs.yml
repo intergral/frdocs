@@ -180,7 +180,18 @@ nav:
         - Historic data: Data-insights/Features/timepicker.md
         - Incidents: Data-insights/Features/Incidents/incidents.md
         - JDBC:
-            - todo.md
+          - Data-insights/Features/JDBC/Databases.md
+          - Data-insights/Features/JDBC/JDBC-Activity-Graph.md
+          - Data-insights/Features/JDBC/JDBC-Activity.md
+          - Data-insights/Features/JDBC/JDBC-By-Mem.md
+          - Data-insights/Features/JDBC/JDBC-Error-History.md
+          - Data-insights/Features/JDBC/JDBC-Event-Snapshot-History.md
+          - Data-insights/Features/JDBC/JDBC-History.md
+          - Data-insights/Features/JDBC/JDBC-Monitoring.md
+          - Data-insights/Features/JDBC/JDBC-Time-Graph.md
+          - Data-insights/Features/JDBC/Long-JDBC.md
+          - Data-insights/Features/JDBC/Settings.md
+          - Data-insights/Features/JDBC/Slow-JDBC.md
         - Logs:
             - todo.md
                # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
