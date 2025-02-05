@@ -179,19 +179,10 @@ nav:
         - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
         - Incidents: Data-insights/Features/Incidents/incidents.md
-        - On-Prem:
-            - CPU Sampler:
-              - todo.md
-            - Crash Protection:
-              - todo.md
-            - Debugger:
-              - todo.md
-            - Enterprise Dashboard:
-              - todo.md
-            - JDBC:
-              - todo.md
-            - Logs:
-                - todo.md
+        - JDBC:
+            - todo.md
+        - Logs:
+            - todo.md
                # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
                 #- Data-insights/Features/Onprem-UI/Logs/Logs.md
                 #- Data-insights/Features/Onprem-UI/Logs/Log-Archives.md
@@ -247,9 +238,9 @@ nav:
         - Transactions:
             - todo.md
         - UEM Sessions:
-            - UEM-and-Sessions/Sessions.md
-            - UEM-and-Sessions/Settings.md
-            - UEM-and-Sessions/User-Experience-Monitoring.md
+            - Overview: Data-insights/Features/UEM/Sessions.md
+            - Data-insights/Features/UEM/Settings.md
+            - Data-insights/Features/UEM/User-Experience-Monitoring.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
