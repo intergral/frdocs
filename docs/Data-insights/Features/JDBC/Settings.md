@@ -49,7 +49,7 @@ are used to make the Java Stack Trace more manageable and readable.
 |||
 |--- |--- |
 |JDBC Transaction with the **Trace** tab activated and visible.|JDBC Transaction with the following filter active **.java**.<br>Therefore, it shows only and all .java file(s) in the stack trace.|
-|![](/attachments/245551289/245551327.png)|![](/attachments/245551289/245551334.png)|
+|![](/frdocs/attachments/245551289/245551327.png)|![](/frdocs/attachments/245551289/245551334.png)|
 
 
 #### New JDBC Java Stack Trace Filter
@@ -78,8 +78,8 @@ pattern has two icons next to it:
 
 |Button|Name|Description|
 |--- |--- |--- |
-|![](/attachments/245548393/245548405.png)|Edit|Clicking this button prefills the Filter Pattern dialogue with the pattern for editing. Click **Save Filter** when you're done. (Whilst editing any filters you will be unable to delete any filters)|
-|![](/attachments/245548393/245548420.png)|Delete|Clicking this button deletes the selected filter.|
+|![](/frdocs/attachments/245548393/245548405.png)|Edit|Clicking this button prefills the Filter Pattern dialogue with the pattern for editing. Click **Save Filter** when you're done. (Whilst editing any filters you will be unable to delete any filters)|
+|![](/frdocs/attachments/245548393/245548420.png)|Delete|Clicking this button deletes the selected filter.|
 
 
 ## Transaction Settings

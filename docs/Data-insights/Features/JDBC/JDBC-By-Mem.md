@@ -7,7 +7,7 @@ An example of the page can be seen below with the statement data
 obfuscated. The image lists the statements by their highest memory
 used.
 
-![](/frdocs//attachments/245551259/245551282.png)
+![](/frdocs/attachments/245551259/245551282.png)
 
 !!!note
     The Req. By Mem : JDBCRequest is the same as [Transaction->Trans By Mem](../Transactions/Trans.-By-Mem.md) but filtered to only show transactions of JDBC type.
