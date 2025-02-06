@@ -196,8 +196,9 @@ nav:
         - Logs:
                 - Overview: Data-insights/Features/Logs/Logs.md
                 - Data-insights/Features/Logs/Importing-and-Graphing-Data-in-Excel.md
-                - Data-insights/Features/Logs/Log-Archives.md
-                - Data-insights/Features/Logs/Log-Archive-Viewer.md
+                - Log Archives:
+                  - Overview: Data-insights/Features/Logs/Log-Archives.md
+                  - Data-insights/Features/Logs/Log-Archive-Viewer.md
                 - Data-insights/Features/Logs/Settings.md
                 - Cloud:
                      - Data-insights/Features/Logs/Cloud-Settings.md
