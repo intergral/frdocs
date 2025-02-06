@@ -153,7 +153,8 @@ nav:
             - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
         - Applications: Data-insights/Features/applications.md
         - CPU Sampler:
-            - todo.md
+          - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
+          - Settings: Data-insights/Features/CPU-Sampler/CPU-Sampler-Settings.md
         - Crash Protection:
             - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
             - Events: Data-insights/Features/Crash-protection/Events.md
@@ -238,7 +239,8 @@ nav:
                 - Microsoft Teams: Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams.md
                 - Slack: Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md
         - Profiler:
-            - todo.md
+            - Data-insights/Features/Profiler/Profiler.md
+            - Settings: Data-insights/Features/Profiler/Profiler-Settings.md
         - Requests:
             - todo.md
         - Resources: 
