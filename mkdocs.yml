@@ -221,7 +221,8 @@ nav:
                    - Data-insights/Features/Logs/Files/Stdout.log-and-Stderr.log.md
                    - Data-insights/Features/Logs/Files/Thread-State-Log.md
         - Memory:
-            - todo.md
+            -  Data-insights/Features/Memory/Overview.md
+            -  Data-insights/Features/Memory/Settings.md
         - Metrics:
             - Overview: Data-insights/Features/Metrics/Metrics-Page.md
             - Archive Metrics: Data-insights/Features/Metrics/Archive-Metrics.md
@@ -260,7 +261,15 @@ nav:
             - todo.md
         - Servers: Data-insights/Features/servers.md
         - System Resources:
-            - todo.md
+            -  Data-insights/Features/System-Resources/CPU.md
+            -  Data-insights/Features/System-Resources/Disk.md
+            -  Data-insights/Features/System-Resources/Network-Usage.md
+            -  Data-insights/Features/System-Resources/Process-Details.md
+            -  Data-insights/Features/System-Resources/Processes.md
+            -  Data-insights/Features/System-Resources/Server-Info.md
+            -  Data-insights/Features/System-Resources/Settings.md
+            -  Data-insights/Features/System-Resources/System-Memory.md
+            -  Data-insights/Features/System-Resources/System-Metrics.md
         - Transactions:
             - todo.md
         - UEM Sessions:
