@@ -271,8 +271,37 @@ nav:
             - Data-insights/Features/Requests/Settings.md
             - Data-insights/Features/Requests/Slow-Requests.md
         - Resources: 
-            - todo.md
+            - Data-insights/Features/Resources/Buffer-Pool.md
+            - Data-insights/Features/Resources/Classes.md
+            - Data-insights/Features/Resources/Class-Loading.md
+            - Data-insights/Features/Resources/CPU-Graph.md
+            - Data-insights/Features/Resources/Garbage-Collection.md
+            - Data-insights/Features/Resources/Heap-Non-Heap-Memory.md
+            - Data-insights/Features/Resources/JIT-Time.md
+            - Data-insights/Features/Resources/Memory-Heap.md
+            - Data-insights/Features/Resources/Memory-Spaces.md
+            - Data-insights/Features/esources/Settings.md
+            - Data-insights/Features/Resources/Thread-Activity.md
+            - Data-insights/Features/Resources/Threads.md
+            - Data-insights/Features/Resources/Thread-State.md
+            - Data-insights/Features/Resources/Thread-Visualizer.md
         - Servers: Data-insights/Features/servers.md
+        - Settings: 
+            - Data-insights/Features/Settings/CPU-Sampler.md
+            - Data-insights/Features/Settings/Debugger.md
+            - Data-insights/Features/Settings/Enterprise-Dashboard.md
+            - Data-insights/Features/Settings/Filter-Restrictions.md
+            - Data-insights/Features/Settings/JDBC.md
+            - Data-insights/Features/Settings/Logging.md
+            - Data-insights/Features/Settings/Logging-Cloud.md
+            - Data-insights/Features/Settings/Main-Menu.md
+            - Data-insights/Features/Settings/Memory.md
+            - Data-insights/Features/Settings/Profiler.md
+            - Data-insights/Features/Settings/Protection.md
+            - Data-insights/Features/Settings/Requests.md
+            - Data-insights/Features/Settings/Resources.md
+            - Data-insights/Features/Settings/System-Resources.md
+            - Data-insights/Features/Settings/UEM-Sessions.md
         - System Resources:
             -  Data-insights/Features/System-Resources/CPU.md
             -  Data-insights/Features/System-Resources/Disk.md
