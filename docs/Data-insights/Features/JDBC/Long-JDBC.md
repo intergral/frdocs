@@ -20,7 +20,7 @@ An example of the page can be seen below with the statement data
 obfuscated. The image lists the statements by their highest time
 taken to complete.
 
-![](/frdocs//attachments/245551176/245551225.png)
+![](/frdocs/attachments/245551176/245551225.png)
 
 !!!note
     The Longest Requests : JDBCRequest is the same as [Transaction->Long Transactions](../Transactions/Longest-Transactions.md) but filtered    
