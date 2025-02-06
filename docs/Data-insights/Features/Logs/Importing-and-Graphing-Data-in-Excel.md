@@ -20,9 +20,7 @@ plugin then you will also have access to the following additional log files:
 -   [hitcountstats.log](../Plugins/FusionReactor-ColdFusion-Plugin.md#cf-hit-count)
 -   [realtimestats.log](../Plugins/FusionReactor-ColdFusion-Plugin.md#cf-realtime)
 
-!!!note
-    All of the log file information can be imported and analyzed directly into
-    [FusionAnalytics](http://www.fusion-analytics.com)
+
 
 ## How To Import a FusionReactor Log File into Excel
 

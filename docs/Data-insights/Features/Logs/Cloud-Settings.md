@@ -96,15 +96,15 @@ To send just the CF exception and application log on Windows:
 To send the system logs
 ````C:\WINDOWS\system32\config\*log````
 
-> 💡 **Tip:**
-> For certain platforms or Java versions you may be required to escape slashes within your paths, so `C:\ColdFusion` would become `C:\\ColdFusion`. 
+!!! tip
+    For certain platforms or Java versions you may be required to escape slashes within your paths, so `C:\ColdFusion` would become `C:\\ColdFusion`. 
 
 ### Testing your scrape pattern
 
 Testing your scrape pattern displays a list of matching log files that will now be scraped.
 
-> 📖 **Learn more:**
-> [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+!!! info "Learn more" 
+    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
 
 ## Log exclusion
 
@@ -124,5 +124,5 @@ Example patterns to exclude the osgi and plugin logs of FusionReactor:
 
 Testing your exclude pattern will display a list of matching log files that will now be excluded from sending to the cloud.
 
-> 📖 **Learn more:**
-> [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+!!! info "Learn more" 
+    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)

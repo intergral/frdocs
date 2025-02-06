@@ -24,8 +24,8 @@ effects of clicking them is described below.
 
 |Button|Description|
 |--- |--- |
-|![](/attachments/245554491/245554511.png)|Clicking this will display additional information about the archive.  The page is split into two different sections, one contains information about the archive file and the other contains information about how the file was created. Below is two lists summarizing the key points from both sections of the page.<br><br>Top section:<br><br>Archive Filename : The absolute file path of the archive.<br>Original File: The name of the archive file.<br>Timezone: The timezone used by FusionReactor.<br>FusionAnalytics Target: Specifies if the archive is to be used by FusionAnalytics if so the FusionAnalytics target is listed.<br><br>Bottom Section:<br><br>Date : Date the archive was created.<br>Source System : The software used to capture the files for the archive and to create it.<br>Subsystem : The software component within the Source System (FusionReactor) used to perform an action.<br>Message : This is a brief description of the action that the Subsystem performed.|
-|![](/attachments/245554491/245554526.png)|Clicking this will remove the archive from FusionReactor and the machine that it is stored on.|
+|![](/frdocs/attachments/245554491/245554511.png)|Clicking this will display additional information about the archive.  The page is split into two different sections, one contains information about the archive file and the other contains information about how the file was created. Below is two lists summarizing the key points from both sections of the page.<br><br>Top section:<br><br>Archive Filename : The absolute file path of the archive.<br>Original File: The name of the archive file.<br>Timezone: The timezone used by FusionReactor.<br>Date : Date the archive was created.<br>Source System : The software used to capture the files for the archive and to create it.<br>Subsystem : The software component within the Source System (FusionReactor) used to perform an action.<br>Message : This is a brief description of the action that the Subsystem performed.|
+|![](/frdocs/attachments/245554491/245554526.png)|Clicking this will remove the archive from FusionReactor and the machine that it is stored on.|
 
 
 ## Rotate Logs
@@ -68,7 +68,7 @@ disabled if you do not wish to download Log Archives.
 When archive logging is enabled the Archive File column will be a
 download link rather than plain text.
 
-![](/attachments/245554325/245554352.png)
+![](/frdocs/attachments/245554325/245554352.png)
 
 To download logs right click, and select **Save Link As...** (or your
 browser's equivalent) to download these archives.

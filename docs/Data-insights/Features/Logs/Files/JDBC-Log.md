@@ -37,5 +37,5 @@ The log file is formatted as follows:
 |Message|23|For Notifications and Reminders, this will contain the notification or reminder message.|
 
 
-!!!note
+!!! note
     Depending on the type of log message, not all columns will have values.

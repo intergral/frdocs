@@ -76,7 +76,7 @@ fields are used by Enterprise scripting.
 |Script|Full command and arguments launched by FusionReactor|
 |Unused Fields|The remainder of the log string is unused.|
 
-!!!error ""
+!!! error 
     For the exceptional cases **SCRIPTREADFAILED** and **SCRIPTEXCEPTION**,
     FusionReactor will log the message associated with the exception to the
     FusionReactor log.

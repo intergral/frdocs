@@ -20,4 +20,5 @@ You can create multiple obfuscation rules, allowing obfuscation to occur on diff
 | Remove any IP address in Nginx logs                        | ```/opt/nginx/*```            | ```.*client_ip\:.*```             | ```ipRedacted```       |
 | Remove any credit card information from FusionReactor logs | ```/instance/tomcat/logs/*``` | ```^(?:4[0-9]{12}(?:[0-9]{3})?``` | ```cardInfo```         |
 
-For hints on specifying logfile patterns see [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+!!! info "Learn more" 
+    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)

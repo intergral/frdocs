@@ -1,4 +1,4 @@
-# Logs
+
 
 FusionReactor provides many helpful graphs and metrics to help you see
 how your system is performing.   These graphs are available in real-time
@@ -18,15 +18,9 @@ patterns, trends and to derive longer-term aggregate data. 
 
 As of FusionReactor 4.0, there are two styles of logging which is
 supported by FusionReactor. You can change current logging method on the
-[Log Settings](Settings.md) page.
+[Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) page.
 
 
-If you wish to use the FusionAnalytics Connector then you must be using
-the Centralized Archive and Rotation logging method. If you try to
-enable the FusionAnalytics Connector whilst in Traditional mode then you
-will be be notified that the logging method will need to change and be
-given the option of having FusionReactor automatically make that change
-for you.
 
 ## Centralized Archive and Rotation
 
@@ -34,7 +28,7 @@ If you install FusionReactor from scratch then this is the logging
 mechanism you will be using by default. The idea behind Centralized
 Archive and Rotation is that you end up with a set of log folders named
 with a timestamp (within the existing Log Directory specified on the
-[Log Settings](Settings.md) page that each contain
+[Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) page that each contain
 a complete set of log files for a specified period of time. You can
 choose whether a new folder be created every 'n' minutes, or you can
 specify a time at which the logs are daily rotated. Additionally you can
@@ -47,7 +41,7 @@ which is very useful when trying to compare values between log files or
 when importing them into something like FusionAnalytics.
 
 All of these log settings are available on the
-[Log Settings](Settings.md) page.
+[Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) page.
 
 ## Traditional Per-Log Rotation
 
@@ -60,7 +54,7 @@ you want to keep. If you specify a log size of 10MB and say that you
 want a history of 5 log files then you will have a maximum of 50MB of
 logs available to you at any time. With Traditional Per-Log Rotation,
 all the log files are stored in the Log Directory specified on the
-[Log Settings](Settings.md) page. For each type of
+[Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) page. For each type of
 log (e.g. request.log) you will end up with a set of numbered log files
 (e.g. request-0.log, request-1.log ... request-4.log). Once request-0.log
 is full, all the log files are renamed and a new request-0.log is
@@ -81,16 +75,16 @@ The Log View page in FusionReactor provides insight into the current
 logs FusionReactor is writing to. It can be found under the
 FusionReactor tab on the top menu level.
 
-[![](/attachments/245548584/245548591.png)](/attachments/245548584/245548591.png)
+![](/frdocs/attachments/245548584/245548591.png)
 
 ### Options
 
-![](/attachments/245548584/245548596.png)
+![](/frdocs/attachments/245548584/245548596.png)
 
 -   From the page buttons, you have the options to select other log
     files that might be in the current directory.
 
-!!!note
+!!! note
     In FusionReactor 7.3.0 the dropdown functionality was changed to only
     show files that are currently existing within the log directory.
     Non-existent files will no longer show up here.
