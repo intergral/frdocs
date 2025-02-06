@@ -194,35 +194,48 @@ nav:
           - Data-insights/Features/JDBC/Settings.md
           - Data-insights/Features/JDBC/Slow-JDBC.md
         - Logs:
-            - todo.md
-               # - Data-insights/Features/Onprem-UI/Logs/Importing-and-Graphing-Data-in-Excel.md
-                #- Data-insights/Features/Onprem-UI/Logs/Logs.md
-                #- Data-insights/Features/Onprem-UI/Logs/Log-Archives.md
-                #- Data-insights/Features/Onprem-UI/Logs/Log-Archive-Viewer.md
-                #- Data-insights/Features/Onprem-UI/Logs/Cloud-Settings.md
-               # - Data-insights/Features/Onprem-UI/Logs/Cloud-Log-Obfuscation-Rules.md
-                #- Data-insights/Features/Onprem-UI/Logs/Cloud-Log-MultiLine-Blocks.md
-               # - Data-insights/Features/Onprem-UI/Logs/Settings.md
-                #- Files:
-                 # - Data-insights/Features/Onprem-UI/Logs/Memory-Logs.md
-                  #- Data-insights/Features/Onprem-UI/Logs/Files/Class-Loading-Log.md
-                 # - Data-insights/Features/Onprem-UI/Logs/Files/Cloud-State-Log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/CPU-Thread-Log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/Crash-Protection-Log.md
-                 # - Data-insights/Features/Onprem-UI/Logs/Files/Device-Log.md
-                  #- Data-insights/Features/Onprem-UI/Logs/Files/Garbage-Collection-Logs.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/Instance-Manager-Log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/JDBC-Log.md
-                # - Data-insights/Features/Onprem-UI/Logs/Files/Notification-Log.md
-              # - Data-insights/Features/Onprem-UI/Logs/Files/Reactor-Log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/Request-Log.md
-                 # - Data-insights/Features/Onprem-UI/Logs/Files/Resource-Log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/Stdout.log-and-Stderr.log.md
-                #  - Data-insights/Features/Onprem-UI/Logs/Files/Thread-State-Log.md
+                - Overview: Data-insights/Features/Logs/Logs.md
+                - Data-insights/Features/Logs/Importing-and-Graphing-Data-in-Excel.md
+                - Log Archives:
+                  - Overview: Data-insights/Features/Logs/Log-Archives.md
+                  - Data-insights/Features/Logs/Log-Archive-Viewer.md
+                - Data-insights/Features/Logs/Settings.md
+                - Cloud:
+                     - Data-insights/Features/Logs/Cloud-Settings.md
+                     - Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules.md
+                     - Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks.md
+                - Files:
+                   - Data-insights/Features/Logs/Memory-Logs.md
+                   - Data-insights/Features/Logs/Files/Class-Loading-Log.md
+                   - Data-insights/Features/Logs/Files/Cloud-State-Log.md
+                   - Data-insights/Features/Logs/Files/CPU-Thread-Log.md
+                   - Data-insights/Features/Logs/Files/Crash-Protection-Log.md
+                   - Data-insights/Features/Logs/Files/Device-Log.md
+                   - Data-insights/Features/Logs/Files/Garbage-Collection-Logs.md
+                   - Data-insights/Features/Logs/Files/Instance-Manager-Log.md
+                   - Data-insights/Features/Logs/Files/JDBC-Log.md
+                   - Data-insights/Features/Logs/Files/Notification-Log.md
+                   - Data-insights/Features/Logs/Files/Reactor-Log.md
+                   - Data-insights/Features/Logs/Files/Request-Log.md
+                   - Data-insights/Features/Logs/Files/Resource-Log.md
+                   - Data-insights/Features/Logs/Files/Stdout.log-and-Stderr.log.md
+                   - Data-insights/Features/Logs/Files/Thread-State-Log.md
         - Memory:
             - todo.md
         - Metrics:
-            - todo.md
+            - Overview: Data-insights/Features/Metrics/Metrics-Page.md
+            - Archive Metrics: Data-insights/Features/Metrics/Archive-Metrics.md
+            - AWS:
+               - CloudWatch Metrics: Data-insights/Features/Metrics/AWS-CloudWatch-Metrics.md 
+               - Configuration: Data-insights/Features/Metrics/AWS-CloudMetrics-Configuration.md
+            - ColdFusion: 
+               - Metrics: Data-insights/Features/Metrics/ColdFusion-Metrics.md
+               - System Metrics: Data-insights/Features/Metrics/ColdFusion-System-Metrics.md
+            - Custom Metrics: Data-insights/Features/Metrics/Custom-Metrics.md
+            - JMX-MBeans: Data-insights/Features/Metrics/JMX-MBeans.md
+            - Kafka: Data-insights/Features/Metrics/Kafka-Metrics.md
+           #- Metrics/Kafka-Node-Metrics.md
+            - Web Metrics: Data-insights/Features/Metrics/Web-Metrics.md
         - OpsPilot:
             - OpsPilot Assistant:
               - Overview: Data-insights/Features/OpsPilot/AIoverview.md

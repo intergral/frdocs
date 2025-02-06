@@ -9,7 +9,7 @@ types of memory used by that server.
 
 ## Memory Summary Log
 
-For information on changing log settings see the [Log Settings](Settings.md) page. This log displays
+For information on changing log settings see the [Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) ttipage. This log displays
 information about the memory heap and non heap memory (into memorysummary.log). Each log entry
 occupies one line and contains various pieces of useful information,
 separated with a white space character. Below is a table explaining each
@@ -26,7 +26,7 @@ The log is called memorysummary.log.
 |Server Startup Time (ms)|5|Startup time of the application server in milliseconds (ms) since epoch.|
 |Heap Memory Allowance (Percentage)|6|The amount of heap memory that can be used for memory management.|
 |Heap Memory Used (Bytes)|7|The amount of heap memory used.|
-|Heap Memory Committed Bytes)|8|The amount of memory that can be used for the heap by the Java Virtual Machine.|
+|Heap Memory Committed Bytes|8|The amount of memory that can be used for the heap by the Java Virtual Machine.|
 |Heap Memory Requested (Bytes)|9|The amount of heap memory that the Java Virtual Machine initially requests from the operating system.|
 |Heap Memory Allowance (Bytes)|10|The amount of  heap memory that can be used for the heap by the Java Virtual Machine.|
 |Non Heap Memory Allowance (Percentage)|11|The amount of non heap memory that can be used for memory management.|
