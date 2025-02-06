@@ -6,9 +6,11 @@ The CPU Sampler. This tool can be
 used to track down the CPU usage of every instantiated thread on the
 server. Additionally, there are tools provided to use this information
 in a comprehensive way, thereby detecting any inefficient processes on
-your server. Note: this feature, just like every Profiler feature,
-requires a **FusionReactor Ultimate** or **FusionReactor Developer**
-license.
+your server. 
+
+!!! Note
+    This feature, just like every Profiler feature, requires a **FusionReactor Ultimate** or **FusionReactor Developer**
+    license.
 
 ## CPU Usage Monitoring
 
@@ -17,7 +19,7 @@ retrieves and collects all live system thread data and their respective
 metadata. This includes: thread IDs, thread names, thread groups, thread
 states and critical CPU timing.
 
-[![](/attachments/245552580/245552617.png)](/attachments/245552580/245552617.png)
+![](/frdocs/attachments/245552580/245552617.png)
 
 ### Overview
 
@@ -74,8 +76,7 @@ their server using preexisting FusionReactor tools, such as:
 Threads that are blocked will become highlighted on the page like the
 image below.
 
-[![](/attachments/245552580/245552592.png)](/attachments/245552580/245552592.png)
-
+![](/frdocs/attachments/245552580/245552592.png)
 
 ##  CPU Snapshots
 
@@ -86,8 +87,7 @@ FusionReactor.
 Snapshots can be taken at any moment during the execution of a sample,
 this is achieved by the 'Take Snapshot' button.
 
-[![](/attachments/245552624/245552690.png)](/attachments/245552624/245552690.png)
-
+![](/frdocs/attachments/245552624/245552690.png)
 
 It is important to note: unlike the Heap View, these snapshots are
 volatile and are not stored on disk. This means restarting FusionReactor
@@ -99,7 +99,7 @@ By selecting to view a certain snapshot, you are redirected to a very
 familiar page. This page is essentially identical to the CPU Sampling
 page at the moment the snapshot was taken.
 
-[![](/attachments/245552624/245552697.png)](/attachments/245552624/245552697.png)
+![](/frdocs/attachments/245552624/245552697.png)
 
 ### Diff View
 
@@ -107,7 +107,7 @@ To view compare two unique samples, select only two check-boxes on the
 CPU Snapshots page and click the 'Diff Selected' button. This will then
 generate the page shown below.
 
-[![](/attachments/245552624/245552704.png)](/attachments/245552624/245552704.png)
+![](/frdocs/attachments/245552624/245552704.png)
 
 This is another helpful tool, as it can describe the changes in thread
 execution over a period of time. This page will render the inner-join
@@ -143,7 +143,7 @@ both names under Thread Name.
 On certain machines, the CPU Sampler might return an error page like
 this:
 
-[![](/attachments/245552711/245552718.png)](/attachments/245552711/245552718.png)
+![](/frdocs/attachments/245552711/245552718.png)
 
 There are several cases where an error page will be returned:
 
@@ -168,4 +168,7 @@ It is important to note that that performance in some Java Virtual
 Machine implementations could be affected by setting this parameter to
 true. This does not apply to the aforementioned Hotspot JVM.
 
-{!Profiler/CPU-Sampler-Settings.md!}
+!!! info "Learn more"
+   [CPU Sampler Settings](/frdocs/Data-insights/Features/CPU-Sampler/CPU-Sampler-Settings/)
+
+

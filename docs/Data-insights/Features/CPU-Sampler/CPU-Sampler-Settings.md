@@ -1,4 +1,4 @@
-## CPU Sampler Settings
+
 
 The CPU Sampler has its own configuration model under the CPU Sampler
 tab in Profiler Settings.
