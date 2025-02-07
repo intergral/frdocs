@@ -280,7 +280,7 @@ nav:
             - Data-insights/Features/Resources/JIT-Time.md
             - Data-insights/Features/Resources/Memory-Heap.md
             - Data-insights/Features/Resources/Memory-Spaces.md
-            - Data-insights/Features/esources/Settings.md
+            - Data-insights/Features/Resources/Settings.md
             - Data-insights/Features/Resources/Thread-Activity.md
             - Data-insights/Features/Resources/Threads.md
             - Data-insights/Features/Resources/Thread-State.md
@@ -289,7 +289,7 @@ nav:
         - Settings: 
             - Data-insights/Features/Settings/CPU-Sampler.md
             - Data-insights/Features/Settings/Debugger.md
-            - Data-insights/Features/Settings/Enterprise-Dashboard.md
+            - Enterprise Dashboard: Data-insights/Features/Settings/Enterprise-Dashboard.md
             - Data-insights/Features/Settings/Filter-Restrictions.md
             - Data-insights/Features/Settings/JDBC.md
             - Data-insights/Features/Settings/Logging.md
@@ -298,7 +298,7 @@ nav:
             - Data-insights/Features/Settings/Memory.md
             - Data-insights/Features/Settings/Profiler.md
             - Data-insights/Features/Settings/Protection.md
-            - Data-insights/Features/Settings/Requests.md
+            - Requests: Data-insights/Features/Settings/Requests.md
             - Data-insights/Features/Settings/Resources.md
             - Data-insights/Features/Settings/System-Resources.md
             - Data-insights/Features/Settings/UEM-Sessions.md
@@ -365,7 +365,6 @@ nav:
 plugins:
   - glightbox
   - search
-  
 
 markdown_extensions:
   - pymdownx.highlight:
