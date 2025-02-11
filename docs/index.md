@@ -167,6 +167,15 @@ hide:
 
 [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
 { .card }
+
+[Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
+{ .card }
+
+[Crash Protection](frdocs/Data-insights/Features/Crash-protection/Crash-Protection/)
+{ .card }
+
+[Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
+{ .card }
 </div>
 
 ### MONITOR YOUR DATA
@@ -286,9 +295,20 @@ hide:
 [Historic Data](/frdocs/Data-insights/Features/timepicker/)
 { .card }
 
+[Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
+{ .card }
+
 [JDBC](/frdocs/Data-insights/Features/JDBC/Databases/)
 { .card }
 
+[Logs](/frdocs/Data-insights/Features/Logs/Logs/)
+{ .card }
+
+[Memory](/frdocs/Data-insights/Features/Memory/Overview/)
+{ .card }
+
+[Metrics](/frdocs/Data-insights/Features/Metrics/Metrics-Page/)
+{ .card }
 
 [OpsPilot](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)
 { .card }
@@ -296,9 +316,27 @@ hide:
 [Profiler](/frdocs/Data-insights/Features/Profiler/Profiler/)
 { .card }
 
+[Requests](/frdocs/Data-insights/Features/Requests/Applications/)
+{ .card }
+
+[Resources](/frdocs/Data-insights/Features/Resources/Buffer-Pool/)
+{ .card }
+
+
 [Servers](/frdocs/Data-insights/Features/servers/)
 { .card }
 
+[Settings](/frdocs/Data-insights/Features/Settings/CPU-Sampler/)
+{ .card }
+
+[System Resouces](/frdocs/Data-insights/Features/System-Resources/CPU/)
+{ .card }
+
+[Transactions](/frdocs/Data-insights/Features/Transactions/Activity/)
+{ .card }
+
+[UEM Sessions](/frdocs/Data-insights/Features/UEM/Sessions/)
+{ .card }
 
 </div>
 

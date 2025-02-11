@@ -8,7 +8,7 @@ The time picker allows users to select the time period they are interested in wi
 
 
 ## Context menu
-![!Screenshot](../new-img/timepicker/dropdown.png)
+![!Screenshot](../../Data-insights/Features/dropdown.png)
 
 The context menu allows refreshing of data for the current time frame, access to some predefined time ranges, control of the [refresh interval](timepicker.md#refresh-interval) and access to the time picker [configuration options](timepicker.md#configuration-options)
 
@@ -17,7 +17,7 @@ The context menu allows refreshing of data for the current time frame, access to
 The refresh interval controls how often FusionReactor Cloud should poll for new data.
 
 ## Configuration options
-![!Screenshot](../new-img/timepicker/timepicker.png)
+![!Screenshot](../../Data-insights/Features/timepicker.png)
 
 The time picker configuration options gives access to a more complete set of configuration options including: more predefined quick ranges as well as the ability to manually select both the start and end, time and date. 
 
