@@ -262,40 +262,38 @@ hide:
 [Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)
 { .card }
 
-[Applications](#)
+[Applications](/frdocs/Data-insights/Features/applications/)
 { .card }
 
-[Crash Protection](#)
+[Crash Protection](frdocs/Data-insights/Features/Crash-protection/Crash-Protection/)
 { .card }
 
 [Dashboards](/frdocs/Data-insights/Features/dashboards/#log-dashboards)
 { .card }
 
-[Debugger](#)
+[Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
 { .card }
 
 [Deep](#)
 { .card }
 
-[Enterprise Dashboard](#)
+[Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
 { .card }
 
 [Explore](/frdocs/Data-insights/Features/explore/)
 { .card }
 
-[Historic Data](#)
+[Historic Data](/frdocs/Data-insights/Features/timepicker/)
 { .card }
 
-[JDBC](#)
+[JDBC](/frdocs/Data-insights/Features/JDBC/Databases/)
 { .card }
 
-[On-Prem UI](#)
-{ .card }
 
 [OpsPilot](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)
 { .card }
 
-[Profiler](#)
+[Profiler](/frdocs/Data-insights/Features/Profiler/Profiler/)
 { .card }
 
 [Servers](/frdocs/Data-insights/Features/servers/)
