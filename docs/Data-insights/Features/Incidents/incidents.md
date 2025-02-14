@@ -229,7 +229,7 @@ Users will receive an email notification in the following situations:
 
 Here’s the documentation content for the new **Drill Incidents** feature:  
 
----
+
 
 ### Drill incidents  
 
@@ -266,7 +266,6 @@ Once a drill incident is created, it functions like a regular incident but does 
 - **Task Assignments**: Assign and track drill-specific tasks.  
 - **Status Updates**: Change the status from **Active** to **Resolved** once the drill is complete.  
 - **Activity Timeline**: Monitor actions taken during the drill for later review.  
-
 
 
 

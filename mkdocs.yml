@@ -179,7 +179,9 @@ nav:
                 - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
         - Explore: Data-insights/Features/explore.md
         - Historic data: Data-insights/Features/timepicker.md
-        - Incidents: Data-insights/Features/Incidents/incidents.md
+        - Incidents: 
+          - Overview: Data-insights/Features/Incidents/incidents.md
+          - Settings: Data-insights/Features/Incidents/Settings.md
         - JDBC:
           - Data-insights/Features/JDBC/Databases.md
           - Data-insights/Features/JDBC/JDBC-Activity-Graph.md
