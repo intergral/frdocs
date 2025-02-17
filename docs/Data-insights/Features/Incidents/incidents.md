@@ -281,9 +281,9 @@ The interactive timeline serves as your incident command center, providing a chr
 The Incident Activity timeline:
 
 1. Automatically logs all actions, including:
-    - Status changes.
-    - Comments.
-    - Task updates.
+    - Status changes
+    - Comments
+    - Task updates
 2. Provides a clear audit trail of who made changes and when.
 
 ### Task management
@@ -313,7 +313,11 @@ The overview dashboard displays tasks in three key categories:
 
     - My Todo 
     - My In Progress 
-    - My Done 
+    - My Done
+    - All Time Completed
+
+    !!! info
+        Tasks marked as **done** will only appear in the **My Done** section while the incident remains **active**. Once the incident is **resolved**, they will no longer be shown there. However, the **All Time Completed** section will maintain a record of all completed tasks, regardless of whether the incident is active or resolved.
 
 3. Task list view: Displays your assigned task information as a list.
 
