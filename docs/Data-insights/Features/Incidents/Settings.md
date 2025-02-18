@@ -57,8 +57,8 @@ Roles define responsibilities within an incident response.
 
 - To add a role, click **+ Add Role**, enter a name and description.  
 
-  !!! info
-      Checking the **"Important"** box ensures the role appears on all incidents by default.
+!!! info
+    Checking the **"Important"** box ensures the role appears on all incidents by default.
 
 
 - **Editing/Deleting:** Roles can be updated or removed, but at least **two roles** must always exist.  
