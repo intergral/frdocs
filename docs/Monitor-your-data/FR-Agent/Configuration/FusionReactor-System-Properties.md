@@ -5,7 +5,7 @@ FusionReactor has a number of [system properties](https://docs.oracle.com/javase
 These arguments should be added to your JVM configuration. 
 
 !!! info "Learn more"
-    [Manual Configuration Examples](/Installation/Manual/Manual-Configuration-Examples/).
+    [Manual Configuration Examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/).
 
 !!! note 
     The options below should be prefixed with '-D', for example:
@@ -202,8 +202,5 @@ Property | Default value  | Version added | Description
 |------------------------|---------------|---------------|--------------------------------------------------------------------------------------------------|
 | `fr.fim.cloud.enabled` | true          | 12.1.0        | If disabled, users will no longer be able to log in with their cloud email address and password. |
 
-## Need more help?
-
-<div style="padding: 15px; border: 1px solid transparent; border-color: transparent; margin-bottom: 20px; border-radius: 4px; color: #3c763d; background-color: #dff0d8; border-color: #d6e9c6;"> Contact support in the chat bubble and let us know how we can assist. </div> 
 
 
