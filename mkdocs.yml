@@ -96,6 +96,9 @@ nav:
         - Uninstall:
            - FRAM: Monitor-your-data/FR-Agent/Uninstall/FRAMdeactivate.md
            - Manual: Monitor-your-data/FR-Agent/Uninstall/MANdeactivate.md
+        - Configuration: 
+           - System Properties: Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties.md
+           - Managing reactor.conf: Monitor-your-data/FR-Agent/Configuration/reactorconf.md
         - More:
            - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
            - Configuration: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
@@ -107,7 +110,7 @@ nav:
                - Distributed-Tracing/span-lifecycle.md
                - Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: 
-               - todo.md
+               - How to copy FusionReactor configuration between instances: Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/
      - Observability Agent:
         - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:
