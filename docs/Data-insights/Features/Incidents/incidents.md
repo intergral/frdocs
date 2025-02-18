@@ -141,7 +141,8 @@ To assign a task:
 !!! tip
     Tasks can be unassigned or reassigned at any time. Simply click the assigned user, then choose Unassign User or search for another team member to reassign the task.
 
-
+### Real-time updates & notifications
+FusionReactor’s Incidents feature provides real-time collaboration capabilities, ensuring that teams stay informed and aligned while responding to incidents. These live updates reduce miscommunication and improve response efficiency.
 
 
 ### Label management
