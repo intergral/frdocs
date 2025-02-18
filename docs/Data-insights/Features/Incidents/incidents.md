@@ -226,9 +226,7 @@ Users will receive an email notification in the following situations:
 - **Incident Severity Change**: If the severity level of an incident they are assigned to changes.
 
 !!! note
-    Currently, there is no option to opt out of these email notifications. Notifications will always be sent to ensure users remain updated on critical incident developments.
-
-Here’s the documentation content for the new **Drill Incidents** feature:  
+    Currently, there is no option to opt out of these email notifications. Notifications will always be sent to ensure users remain updated on critical incident developments.  
 
 
 
