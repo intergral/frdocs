@@ -1,4 +1,19 @@
 
+<style>
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-purple { background-color:rgb(150, 190, 251); color:rgb(31, 36, 197); }
+</style>
+
+<span class="badge badge-purple">Available in public preview</span> 
+
 
 The **Incident Management Application** is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease.
 
@@ -27,17 +42,19 @@ The dashboard features **Incident Cards**, each representing a specific incident
 - The **Severity**, categorized as Pending, Low, Medium, High, Critical to signify priority. 
 - **Labels/Tags** based on areas such as Security, Infrastructure, API, or Database. 
 - The **Declared On** date and time the incident was reported, along with the **Reported By** field, which identifies the user who logged the incident. 
-- An **Incident Duration Timer** located at the bottom-right corner displays the total time the incident has been active, starting from the moment it was declared. 
+- An **Incident Duration Timer** located at the bottom-right corner displays the total time the incident has been active, starting from the moment it was declared. The time is always shown in white, but if the incident is still active (i.e., not yet resolved), an orange clock icon appears to the left of the time to indicate that it is still live. 
 
 ### Filtering 
 
-The filtering feature allows you to refine the list of incidents displayed on the **Incidents** page. This helps users quickly identify incidents based on their status, severity, or associated labels.
+The filtering feature allows you to refine the list of incidents displayed on the **Incidents** page. This helps users quickly identify incidents based on their status, severity, associated labels or whether they are drills.
 
 
 - Click the filter button (top-right corner) to open a dropdown menu containing the following options:
      - Status
      - Severity
      - Labels
+     - Show drills only? (Checkbox to filter and display only drill incidents)
+
 
 !!! info
     A red notification badge (e.g., 1) will appear on the button to indicate active filters.
@@ -63,7 +80,7 @@ To create a new incident:
        - **Severity**: Select from predefined levels (e.g., Pending, Low, Medium, High, Critical).
        - **Status**: Set the initial status (typically **Active**).
        - **Labels**: (Optional) Add tags to categorize the incident.
-       - **Description**: Provide detailed information about the incident.
+       - **Description**: Provide detailed information about the incident. The Description field allows up to 1,200 characters, enabling detailed documentation of the incident.
 
 4. Click **Save** to create the incident.
 
@@ -124,6 +141,8 @@ To assign a task:
 !!! tip
     Tasks can be unassigned or reassigned at any time. Simply click the assigned user, then choose Unassign User or search for another team member to reassign the task.
 
+### Real-time updates & notifications
+FusionReactor’s Incidents feature provides real-time collaboration capabilities, ensuring that teams stay informed and aligned while responding to incidents. These live updates reduce miscommunication and improve response efficiency.
 
 
 ### Label management
@@ -195,6 +214,59 @@ To adjust severity:
 2. Select the desired severity level (e.g., Pending, Low, Medium, High, Critical).
 3. Changes are automatically logged in the activity timeline.
 
+### Email notifications
+
+Users will receive automatic email notifications for key updates related to incidents they are involved in. These notifications ensure that all relevant stakeholders stay informed about important changes and assignments.
+
+Users will receive an email notification in the following situations:
+
+- **Role Assignment**: When they are assigned to a role on an incident.
+- **Task Assignment**: When they are assigned a task related to an incident.
+- **Incident Status Change**: If the status of an incident they are assigned to changes.
+- **Incident Severity Change**: If the severity level of an incident they are assigned to changes.
+
+!!! note
+    Currently, there is no option to opt out of these email notifications. Notifications will always be sent to ensure users remain updated on critical incident developments.  
+
+
+
+### Drill incidents  
+
+The **Drill Incidents** feature allows teams to simulate real-world incident scenarios in a controlled environment. These drills help improve response readiness, validate processes, and identify areas for improvement.  
+
+![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/drill-overview.png)
+
+
+#### Create a drill 
+
+
+To create a new drill incident:  
+
+1. Navigate to the **Incidents** page.  
+2. Click the **Create Drill** button to open the **Create a Drill Incident** form. 
+
+    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/drill-button.png)
+
+    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/create-drill.png)
+
+4. Fill in the required details:  
+       - **Title**: A brief description of the drill incident.
+       - **Severity**: Select from predefined levels (e.g., Pending, Low, Medium, High, Critical).
+       - **Status**: Set the initial status (typically **Active**).
+       - **Labels**: (Optional) Add tags to categorize the incident.
+       - **Description**: Provide detailed information about the drill incident. 
+
+5. Click **Save** to launch the drill.  
+
+#### Manage a drill
+
+Once a drill incident is created, it functions like a regular incident but does not impact production workflows. Key features include:  
+
+- **Task Assignments**: Assign and track drill-specific tasks.  
+- **Status Updates**: Change the status from **Active** to **Resolved** once the drill is complete.  
+- **Activity Timeline**: Monitor actions taken during the drill for later review.  
+
+
 
 
 ## Special features
@@ -208,9 +280,9 @@ The interactive timeline serves as your incident command center, providing a chr
 The Incident Activity timeline:
 
 1. Automatically logs all actions, including:
-    - Status changes.
-    - Comments.
-    - Task updates.
+    - Status changes
+    - Comments
+    - Task updates
 2. Provides a clear audit trail of who made changes and when.
 
 ### Task management
@@ -240,7 +312,11 @@ The overview dashboard displays tasks in three key categories:
 
     - My Todo 
     - My In Progress 
-    - My Done 
+    - My Done
+    - All Time Completed
+
+    !!! info
+        Tasks marked as **done** will only appear in the **My Done** section while the incident remains **active**. Once the incident is **resolved**, they will no longer be shown there. However, the **All Time Completed** section will maintain a record of all completed tasks, regardless of whether the incident is active or resolved.
 
 3. Task list view: Displays your assigned task information as a list.
 
@@ -375,9 +451,19 @@ Strengthen your incident response by instantly bringing in the right experts and
 - Use comments to explain status changes when needed.
 </details>
 
+<details>
+<summary><strong>Drills</strong></summary>
+
+- Ensure every drill has a goal, such as testing a specific process or response time.   <br>
+
+- Clearly define participant roles to simulate real incident conditions.  <br>
+
+- Base drills on past incidents or potential threats to improve preparedness.  <br>
+
+- After completion, analyze the drill’s performance and document lessons learned.  <br>
+</details>
 
 
----
 
 ## Troubleshooting
 
