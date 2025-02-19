@@ -203,7 +203,7 @@ hide:
 
 
     ---
-    Monitor Java and CFML
+   Monitor Java and ColdFusion applications to gain real-time and historical insights into web transactions, memory, CPU usage and more.
 
 
 
