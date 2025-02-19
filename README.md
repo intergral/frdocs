@@ -27,7 +27,7 @@ We welcome contributions from the community! Whether you're fixing a typo, impro
 - Share your expertise and use cases
 - Suggest new documentation topics
 
-For detailed guidelines on contributing, please see our [Contributing Guide](/frdocs/Contribute/how-to-contribute/).
+For detailed guidelines on contributing, please see our [Contributing Guide](https://github.com/intergral/frdocs/blob/main/docs/Contribute/how-to-contribute.md).
 
 ## Running locally
 

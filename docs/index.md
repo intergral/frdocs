@@ -157,26 +157,11 @@ hide:
 
 ### POPULAR DOCS
 
-<div class="grid" markdown>
 
-[Get to know the UI](/frdocs/Getting-started/Tutorials/know-the-ui/)
-{ .card }
 
-[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)
-{ .card }
+[Get to know the UI](/frdocs/Getting-started/Tutorials/know-the-ui/)  |  [Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)  |  [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)  |   [Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
 
-[OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
-{ .card }
 
-[Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
-{ .card }
-
-[Crash Protection](frdocs/Data-insights/Features/Crash-protection/Crash-Protection/)
-{ .card }
-
-[Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
-{ .card }
-</div>
 
 ### MONITOR YOUR DATA
 
@@ -193,7 +178,7 @@ hide:
     ---
 
 
-    Best setup for your environment
+    Explores the optimal setup for your environment - local server, scripted, or Docker - ensuring seamless integration and efficient performance.
 
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Best-Practices/Installation/installation-overview/)
@@ -217,7 +202,7 @@ hide:
     ---
 
 
-    Monitor your databases
+    Monitor many aspects of your infrastructure including databases, Kafka, Docker, machine system metrics and more.
 
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Observability-agent/overview/)
@@ -229,7 +214,7 @@ hide:
     ---
 
 
-    Monitor telemetry data
+    Monitor your app's performance with OTel, an open-source framework for collecting, processing, and exporting telemetry data. 
 
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/OpenTelemetry/getting-started/)
@@ -241,7 +226,7 @@ hide:
     ---
 
 
-    Monitor your clusters
+    Monitor your K8s clusters by tracking health and performance of pods, ensuring efficient resource utilization, scaling, and real-time observability.
 
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Kubernetes-monitoring/overview/)
@@ -253,7 +238,7 @@ hide:
     ---
 
 
-    Monitor your logs
+    Monitor logs from any location seamlessly alongside your existing FusionReactor data for unified observability and deeper insights.
 
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Log-monitoring/overview/)
