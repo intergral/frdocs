@@ -392,4 +392,24 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  analytics: 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+extra_javascript:
+  - javascripts/feedback.js
+
 copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2024 Intergral GmbH. All rights reserved.</a>'
