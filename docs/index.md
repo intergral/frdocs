@@ -4,6 +4,27 @@ hide:
   - toc
 ---
 
+<style>
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-purple { background-color: #d8b5ff; color: #5a189a; }
+.badge-orange { background-color: #ff9f45; }
+.badge-light-orange { background-color: #ffcc99; color: #663300; }
+</style>
+
+<span class="badge badge-orange">This documentation is currently in preview and is subject to updates and changes. We're actively working on improvements, and new content will be added regularly. <br> Want help improve these docs? Check out our [How to Contribute](https://intergral.github.io/frdocs/Contribute/how-to-contribute/#contribute-to-the-fr-docs) guide for details on how you can provide feedback.</span>
+
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
