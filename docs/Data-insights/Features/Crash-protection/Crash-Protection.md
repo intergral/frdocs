@@ -23,11 +23,12 @@ Using these rules, either individually or in combination, FusionReactor can keep
 
 ### WebRequest Quantity Protection
 
-Any request which runs longer than a given threshold causes this rule to fire.
+This rule is triggered when the number of simultaneous requests reaches a predefined threshold, preventing further incoming requests from being processed.
 
 ### WebRequest Timeout Protection
 
-Once the number of simultaneous requests reaches this threshold, further incoming requests cause this rule to fire.
+This rule is triggered when a request exceeds a given time threshold, ensuring that long-running requests are detected and handled appropriately.
+
 
 ### WebRequest Memory Protection
 
