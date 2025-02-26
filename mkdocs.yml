@@ -111,6 +111,14 @@ nav:
                - Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: 
                - How to copy FusionReactor configuration between instances: Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/
+               - Troubleshooting/How-CVEs-are-addressed-in-the-FusionReactor-Agent.md
+               - Troubleshooting/APP-Transaction-Naming-How-To.md
+               - Troubleshooting/Cloned-FusionReactor-Instances.md #agent
+               - Troubleshooting/Debugger-will-not-start-without-Glibc.md #agent
+               - Troubleshooting/Known-Issues/JVM-crash-JDK-11.md #agent
+               - Troubleshooting/Known-Issues/System-Metrics-unavailable-in-Locked-down-ColdFusion.md #agent
+               - Troubleshooting/Requests-from-Adobe-PMT-tracked-in-FusionReactor.md #agent
+               - Troubleshooting/Adding-FR-Error-Stack-Trace-On-CFCatch-CFOnError.md #agent
      - Observability Agent:
         - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:
@@ -341,6 +349,34 @@ nav:
             - Overview: Data-insights/Features/UEM/Sessions.md
             - Data-insights/Features/UEM/Settings.md
             - Data-insights/Features/UEM/User-Experience-Monitoring.md
+        - FAQs & troubleshooting:
+            - Cloud: 
+              - Troubleshooting/logging-regex-pattern-hints.md
+              - Troubleshooting cloud connections: Cloud/trouble.md
+              - Troubleshooting/Cloud-historical-data.md
+              - Troubleshooting/Optimize-data.md
+              - Troubleshooting/Cloud-span-name.md
+              - Troubleshooting/Cloud-find-slow-pages.md
+              - Troubleshooting/Cloud-offline.md
+              - Troubleshooting/cloud-storing-logs.md
+            - On-Premise:  
+              - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
+              - Troubleshooting/Resetting-Instance-Password.md #onprem
+              - Troubleshooting/Server-is-suffering-from-Clock-Drift.md #onprem
+              - Troubleshooting/OnPrem-Exception-Support.md
+              - Troubleshooting/Configuration/Application-Naming-Configuration.md
+              - Troubleshooting/Configuration/Automatic-FusionReactor-Login.md
+              - Troubleshooting/Configuration/Copying-FusionReactor-Configuration-Between_Instances.md
+              - Troubleshooting/Configuration/Email-Configuration.md
+              - Troubleshooting/Configuration/Enabling-and-Disabling-FusionReactor-functions.md
+              - Troubleshooting/Configuration/Enterprise-Dashboard-Configuration.md
+              - Troubleshooting/Configuration/Transaction-Naming-Configuration.md
+              - Troubleshooting/Configuration/Using-FusionReactor-via-external-web-server.md
+              - Troubleshooting/OP-historical-data.md
+              - Troubleshooting/OP-deadlocks.md
+              - Troubleshooting/OP-offline-server.md
+              - Troubleshooting/storing-fr-logs.md
+              - Troubleshooting/OP-setting-up-reports.md 
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
