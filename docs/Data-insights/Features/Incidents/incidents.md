@@ -285,9 +285,9 @@ The Incident Activity timeline:
     - Task updates
 2. Provides a clear audit trail of who made changes and when.
 
-### Task management
+### Tasks on Active Incidents
 
-Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The **All Tasks** dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
+Task management streamlines incident response by keeping teams coordinated and accountable for specific actions. The **Tasks on Active Incidents** dashboard provides a comprehensive view of all incident-related tasks, organized into clear sections. 
 
 !!! info
     Access this view by clicking the task page icon in the navigation menu.
@@ -302,21 +302,23 @@ The overview dashboard displays tasks in three key categories:
 
 1. The Team: Shows overall task distribution
 
-      - Todo 
-      - In Progress
-      - Done 
-      - Unassigned 
+      - Todo: The number of tasks that have not been started by any team member.
+      - In Progress: The number of tasks the team are currently working on.
+      - Done:  The number of tasks successfully completed by the team.
+      - Unassigned: The number of tasks that have not yet been assigned to any team member.
 
 
 2. My Tasks: Displays your personal task breakdown.
 
-    - My Todo 
-    - My In Progress 
-    - My Done
-    - All Time Completed
+    - My Todo: The number of tasks assigned to you that have not been started. 
+    - My In Progress: The number of tasks you are currently working on.
+    - My Done: The number of tasks you have completed.
+    - My Progress: The percentage of tasks you've completed out of your total assigned tasks for active incidents.
+
+    
 
     !!! info
-        Tasks marked as **done** will only appear in the **My Done** section while the incident remains **active**. Once the incident is **resolved**, they will no longer be shown there. However, the **All Time Completed** section will maintain a record of all completed tasks, regardless of whether the incident is active or resolved.
+        Tasks marked as **done** will only appear in the **My Done** section while the incident remains **active**. Once the incident is **resolved**, they will no longer be shown there. 
 
 3. Task list view: Displays your assigned task information as a list.
 
