@@ -157,6 +157,7 @@ nav:
         - FR Agent shipper: Monitor-your-data/Log-monitoring/agent-shipper.md
         - Alerting: Monitor-your-data/Log-monitoring/alerting.md
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
+     - Deep: Monitor-your-data/Deep/overview.md
   - DATA INSIGHTS: 
        # - Data-insights/Features/account.md
         - Alerting: Data-insights/Features/alerting.md
@@ -181,7 +182,8 @@ nav:
            - Data-insights/Features/Debugger/Settings.md
            - Data-insights/Features/Debugger/Sources.md
         - Deep: 
-            - todo.md
+           - Search: Data-insights/Features/Deep/Search.md
+           - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
         - Enterprise Dashboard:
             - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard.md
             - Settings: Data-insights/Features/Enterprise-Dashboard/Settings.md
