@@ -32,8 +32,10 @@ Use the search function to find triggered snapshots.
 !!! info "Learn more"
     [Search](/frdocs/Data-insights/Features/Deep/Search/)
 
-#### Create Tracepoint
+#### Tracepoints
+
+The **Tracepoints** section allows you to list existing tracepoints, create new ones by specifying a file and line number, and delete tracepoints using their unique ID.
 
 !!! info "Learn more"
-    [Create Tracepoint](/frdocs/Data-insights/Features/Deep/Create-Tracepoint/)
+    [Tracepoint](/frdocs/Data-insights/Features/Deep/Create-Tracepoint/)
 

@@ -19,7 +19,7 @@ hide:
 .badge-light-orange { background-color: #ffcc99; color: #663300; }
 </style>
 
-<span class="badge badge-orange">This documentation is currently in preview and is subject to updates and changes. We're actively working on improvements, and new content will be added regularly. <br> Want help improve these docs? Check out our [How to Contribute](https://intergral.github.io/frdocs/Contribute/how-to-contribute/#contribute-to-the-fr-docs) guide for details on how you can provide feedback.</span>
+<span class="badge badge-orange">This documentation is currently in preview and is subject to updates and changes. We're actively working on improvements, and new content will be added regularly. Want help improve these docs? Check out our [How to Contribute](https://intergral.github.io/frdocs/Contribute/how-to-contribute/#contribute-to-the-fr-docs) guide for details on how you can provide feedback.</span>
 
 
 
@@ -264,6 +264,17 @@ hide:
 
     [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Log-monitoring/overview/)
 
+-   __Deep__
+
+
+    ---
+
+
+    Powered by DeepQL, a monitoring-centric query language inspired by PromQL, Deep enables real-time logging, metrics, tracing, and live data snapshots.
+
+
+    [:octicons-arrow-right-24: Learn more](/frdocs/Monitor-your-data/Deep/overview/)
+
 </div>
 
 
@@ -289,7 +300,7 @@ hide:
 [Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
 { .card }
 
-[Deep](#)
+[Deep](/frdocs/Data-insights/Features/Deep/Search/)
 { .card }
 
 [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
