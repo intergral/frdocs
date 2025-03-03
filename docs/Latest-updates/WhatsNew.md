@@ -1,5 +1,24 @@
 # What's new in FusionReactor
 
+## What's new in FusionReactor 2025.1.0
+
+
+
+FusionReactor 2025.1.0 introduces several new features, improvements, and bug fixes to enhance performance, observability, and ease of use. This release includes support for Adobe ColdFusion 2025, ensuring seamless monitoring for the latest ColdFusion applications. Bug fixes include resolving an issue where certain transactions were not displaying correctly in Lucee, ensuring service names are correctly set in Deep Integration, and moving a cloud connection from port 2804 to port 443 for easier setup. Observability enhancements include metadata descriptions for metrics in the cloud (which can be disabled using `-Dfr.observability.metric.prometheus.remotewrite.metadata.enabled=false`), expanded FRAPI capabilities for creating web request transactions and setting transaction properties, and the ability to view transaction profiles in Pyroscope and Tempo traces. Additional fixes and enhancements are also included in this update. 
+
+!!! info "Learn more"
+    [Full release notes](/frdocs/Latest-updates/release-notes/#202510-3rd-march-2025).
+
+### Pyroscope continuous profiling
+
+Pyroscope is a multi-tenant, continuous profiling aggregation system designed to seamlessly integrate with existing observability tools. By correlating profiling data with metrics, logs, and traces, Pyroscope provides deeper insights into application performance. With structured querying and analysis of production data, you can efficiently identify bottlenecks and optimize resource usage. 
+
+![!Screenshot](/frdocs/Data-insights/Features/Pyroscope/trace.png)
+
+
+
+
+
 ## Opspilot updates
 
 We're excited to announce two major updates to OpsPilot! First, our new agentic system for querying metrics data enhances your experience with dynamic, relevant insights, more frequent and accurate graphs, and quicker response times. Second, we've introduced the ability to scrape websites and ingest their content directly into your knowledge base, expanding the ways you can gather and utilize information. These updates empower you to gain deeper insights and build a more comprehensive knowledge repository effortlessly.

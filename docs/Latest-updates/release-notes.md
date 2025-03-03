@@ -1,6 +1,21 @@
 
 # FusionReactor Agent Releases
 
+## 2025.1.0 - 3rd March 2025
+
+
+| Issue Type  | Summary                                                                                                |
+|-------------|--------------------------------------------------------------------------------------------------------|
+| Feature     | Add support for ColdFusion 2025.                                                                       |
+| Bug         | Prevent stack overflow when viewing certain transactions in Lucee.                                     |
+| Feature     | Ship metric metadata with metrics so that their help info is displayed in cloud.                       |
+| Bug         | Fix service name not being set for Deep integration.                                                   |
+| Improvement | Update CC websocket port to connect using port 443.                                                    |
+| Feature     | Add support for creating web requests via FRAPI.                                                       |
+| Feature     | Add support for setting properties on transactions via FRAPI.                                          |
+| Improvement | Improve UI elements: Cloud Logging settings button location, FRAM instance name help info.             |
+| Improvement | Accessing instances via external port should be disabled by default when installing instances in FRAM. |
+| New Feature | Add ability to view transaction profiles in Pyroscope and support traces to profiles linkage in Tempo. |
 
 ## 12.1.1 - 26th Sep. 2024
 
