@@ -103,12 +103,12 @@ nav:
            - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
            - Configuration: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
            - Distributed tracing: 
-               - Distributed-Tracing/attributes.md
-               - Distributed-Tracing/propagators.md
-               - Distributed-Tracing/sampling.md
-               - Distributed-Tracing/exporting.md
-               - Distributed-Tracing/span-lifecycle.md
-               - Distributed-Tracing/linkage-in-grafana.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: 
                - How to copy FusionReactor configuration between instances: Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/
                - Troubleshooting/How-CVEs-are-addressed-in-the-FusionReactor-Agent.md
@@ -271,6 +271,7 @@ nav:
         - Profiler:
             - Data-insights/Features/Profiler/Profiler.md
             - Settings: Data-insights/Features/Profiler/Profiler-Settings.md
+        - Pyroscope: Data-insights/Features/Pyroscope/pyroscope.md
         - Requests:
             - Data-insights/Features/Requests/Applications.md
             - Data-insights/Features/Requests/Compression.md
@@ -379,12 +380,34 @@ nav:
               - Troubleshooting/OP-offline-server.md
               - Troubleshooting/storing-fr-logs.md
               - Troubleshooting/OP-setting-up-reports.md 
+        - Extras: 
+            - FRAPI: Data-insights/Extras/FRAPI.md
+            - Observability Agent: Data-insights/Extras/fr-observability-agent.md
+            - Plugins:
+              - Data-insights/Extras/Plugins/Overview.md
+              - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Line-Performance-Profiler.md
+              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Deadlock-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Heartbeat-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-HitCount-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-JRun-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Log-Rotator-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Log-Tracker-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Lucee-and-Railo-Line-Performance-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Notification-Generator-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Production-Debugger-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
         - Overview: Latest-updates/Releases.md
         - FR Agent: Latest-updates/release-notes.md
         - OpsPilot: Latest-updates/OpsPilot-releases.md
+     - Downloads: Latest-updates/Downloads.md
   - ADMIN & DATA:
      - Account & user management: 
         - Cloud: Admin-and-data/Account/Cloud/users.md

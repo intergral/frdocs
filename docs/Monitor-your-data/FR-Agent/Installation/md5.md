@@ -1,6 +1,26 @@
 #FusionReactor MD5s
 ## Values for FusionReactor install files
 
+## FusionReactor 2025.1.0
+Release Date: 3 March 2025
+
+| File                                        | MD5                              |
+|---------------------------------------------|----------------------------------|
+| debuglibs-2025.1.0.zip                      | f206eecf4a4deb7505ab022e86969b31 |
+| frjvmti_x64.dll                             | 058627a4c528570ff3c1589109017f6e |
+| fusionreactor-core-api-2025.1.0-javadoc.jar | 863d6ca08af2d5883aa594862ef13aa2 |
+| fusionreactor.jar                           | 3c953fe864d702318d43f17247ec4bf0 |
+| FusionReactor_linux-x64_2025_1_0.sh         | efef449daa71e5eda825ca309f73b98e |
+| FusionReactor_macos_2025_1_0.dmg            | ade15355b18dd6ffce2421d016c7aeee |
+| FusionReactor_unix_nojre_2025_1_0.tar.gz    | 221a7495b83b31b95f99354141ae52a0 |
+| FusionReactor_windows_nojre_2025_1_0.zip    | 9e29b73a1c105c314c994c9041ca612b |
+| FusionReactor_windows-x64_2025_1_0.exe      | 087a873b678548e70b00cdeb78bd4ccd |
+| libfrjvmti_aarch64.so                       | b3d10b68ce3d5948e3b5248e5024d85a |
+| libfrjvmti_arm64.dylib                      | 5db7bc848f0394f825a08db685c56793 |
+| libfrjvmti_x64.dylib                        | 7e6dc7facadbde1a9e2c1e0ccab278f0 |
+| libfrjvmti_x64.so                           | d5b5b066385cb9c9a0b1251ea500890b |
+
+
 ## FusionReactor 12.1.1
 Release Date: 26th Sep 2024
 

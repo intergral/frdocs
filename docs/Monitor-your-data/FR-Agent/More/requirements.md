@@ -55,11 +55,11 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 * Amazon Corretto 8, 11, 17
 * Azul Zulu 11, 17
 
-!!!warning "Java 7 support removed"
-     Java 7 support was discontinued with FusionReactor 11.0.0.  If you need to use Java 7 we recommend you stay with version [10.0.2](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-10.0.2/fusionreactor.jar) or [10.0.1](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-10.0.1/fusionreactor.jar) of you wish to use the cloud.
+!!! warning "Java 7 support removed"
+    Java 7 support was discontinued with FusionReactor 11.0.0.  If you need to use Java 7 we recommend you stay with version [10.0.2](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-10.0.2/fusionreactor.jar) or [10.0.1](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-10.0.1/fusionreactor.jar) of you wish to use the cloud.
 
-!!!warning "Java 6 support removed"
-     Java 6 support was discontinued with FusionReactor 8.3.0.  If you need to use Java 6 we recommend you stay with version [8.2.3](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-8.2.3/fusionreactor.jar).
+!!! warning "Java 6 support removed"
+    Java 6 support was discontinued with FusionReactor 8.3.0.  If you need to use Java 6 we recommend you stay with version [8.2.3](https://intergral-download.s3.eu-west-1.amazonaws.com/FR/FusionReactor-8.2.3/fusionreactor.jar).
 
 ### Servers
 
@@ -74,6 +74,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 #### ![](/images/requirements/cf1.gif)  ColdFusion Servers
 
+  * Adobe ColdFusion 2023
   * Adobe ColdFusion 2023
   * Adobe ColdFusion 2021
   * Adobe ColdFusion 2018
