@@ -103,12 +103,12 @@ nav:
            - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
            - Configuration: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
            - Distributed tracing: 
-               - Distributed-Tracing/attributes.md
-               - Distributed-Tracing/propagators.md
-               - Distributed-Tracing/sampling.md
-               - Distributed-Tracing/exporting.md
-               - Distributed-Tracing/span-lifecycle.md
-               - Distributed-Tracing/linkage-in-grafana.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
         - FAQs & troubleshooting: 
                - How to copy FusionReactor configuration between instances: Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/
                - Troubleshooting/How-CVEs-are-addressed-in-the-FusionReactor-Agent.md
