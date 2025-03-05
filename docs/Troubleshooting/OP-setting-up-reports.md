@@ -12,15 +12,15 @@ The reports plugin is enabled by default, but **will not** send an email until t
 
 **Step 1**: Navigate to **FusionReactor** > **Plugins** > **Active Plugins**
 
-![!Screenshot](../Cloud/new-img/trouble/pluginsettings.png)
+![!Screenshot](/frdocs/Troubleshooting/images/pluginsettings.png)
 
 **Step 2**: Locate **FusionReactor Reports** and select the **Configuration**icon to the right of the screen.
 
-![!Screenshot](../Cloud/new-img/trouble/FRreports.png)
+![!Screenshot](/frdocs/Troubleshooting/images/FRreports.png)
 
 **Step 3**: Configure or edit your reports in **FusionReactor Reports Config**
 
-![!Screenshot](../Cloud/new-img/trouble/FRrepconfig.png)
+![!Screenshot](/frdocs/Troubleshooting/images/FRrepconfig.png)
 
 ___
 

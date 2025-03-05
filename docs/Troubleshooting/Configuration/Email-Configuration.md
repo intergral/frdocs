@@ -6,39 +6,37 @@ To use features such as **Reporting**, **Debug** alerts, **Enterprise dashboard*
  
  To copy the configuration of FusionReactor from one instance to another:
 
-> 📖 **Learn more:**
->  [Copying FusionReactor configuration between instances](/Configuration/Copying-FusionReactor-Configuration-Between_Instances). 
+!!! info "Learn more"
+    [Copying FusionReactor configuration between instances](/Configuration/Copying-FusionReactor-Configuration-Between_Instances). 
  
  With this approach you can configure one instance of FusionReactor then copy the configuration across all five instances.
 
 ## Configure email settings
 
-🔎**Find it**: **FusionReactor** > **Settings** > **Email Settings**
 
+**Step 1:** To configure the email settings in FusionReactor, access the [Email Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#email-setting) by navigating to: **FusionReactor menu** (on the top left hand side) >  **Settings**.
 
-**Step 1:** To configure the email settings in FusionReactor, access the [Email Settings](../Settings/Main-Menu.md#email-settings) by navigating to: **FusionReactor menu** (on the top left hand side) >  **Settings**.
-
-![Screenshot](../images/configuration/settingsemail.png)
+![Screenshot](/frdocs/Troubleshooting/images/settingsemail.png)
 
 **Step 2:** Configure the SMTP settings for your chosen mail server. 
 
-> 💡 **Tip:**
-> To retrieve the SMTP configuration on most
- public mail servers, simply Google: *SMTP server gmail/gmx/outlook/etc...*.
+
+!!! tip
+    To retrieve the SMTP configuration on most public mail servers, simply Google: *SMTP server gmail/gmx/outlook/etc...*.
 
  **Step 3:** Once your SMTP server details have been entered, save the settings and select **Send Test Email**.
 
  **Step 4:** Sending a test email, should display the following green banner:
 
-  ![Email Success](../images/configuration/Email-success.jpg)
+  ![Email Success](/frdocs/Troubleshooting/images/Email-success.jpg)
  
- You will now start to receive [Reporting](../Plugins/FusionReactor-Reports-Plugin.md) and [Enterprise dashboard alerts](../Enterprise-Dashboard/Enterprise-Dashboard.md) and can configure [Crash protection](../Crash-Protection/Crash-Protection.md) and [Email breakpoints](../Debugger/Debug-Email-Alert.md).
+ You will now start to receive [Reporting](/frdocs/Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin/) and [Enterprise dashboard alerts](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/) and can configure [Crash protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/) and [Email breakpoints](/frdocs/Data-insights/Features/Debugger/Debug-Email-Alert/).
 
 
 
 ## What to do if the test email fails to send
 
-![Email_Failure](../images/configuration/Email-Failure.jpg)
+![Email_Failure](/frdocs/Troubleshooting/images/Email-Failure.jpg)
 
 There are many reasons that sending an email from FusionReactor may fail, including:
 
@@ -61,7 +59,7 @@ Any error FusionReactor sees when an attempt to send an email is stored in the [
 
 If you are using Gmail either on a personal or business account, you can configure emails with a configuration similar to:
 
-![Email Gmail Example](../images/configuration/Email-Gmail.jpg)
+![Email Gmail Example](/frdocs/Troubleshooting/images/Email-Gmail.jpg)
 
 The fields from the screenshot above are represented in a table below:
 
