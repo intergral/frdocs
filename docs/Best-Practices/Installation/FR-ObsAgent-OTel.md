@@ -62,7 +62,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 
 ### Run via Docker
 
-Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/frdocs/Cloud/logs/Log-Shipper/#generating-api-keys) and adjusting the environment variables as needed: 
+Run the following command, replacing **YOUR_API_KEY** with your actual [API key](/frdocs/Monitor-your-data/Log-monitoring/log-shipper/#generating-api-keys) and adjusting the environment variables as needed: 
 
 ```
 docker run --env  otel_collection=true --env api_key=YOUR_API_KEY --env ENV_VARIABLE=VALUE --env mysql_connection_string=root:my-secret-pw@(mysql:3306)/ intergral/observability-agent:latest
@@ -79,7 +79,7 @@ docker run --env  otel_collection=true --env api_key=YOUR_API_KEY --env ENV_VARI
 
 
 !!! info "Learn more"
-    [Log collection and other databases](/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
+    [Log collection and other databases](/frdocs/Monitor-your-data/Observability-agent/Configuration/) can be enabled by setting the appropriate environment variables.
 
 
 ### Run via Docker Compose
@@ -111,7 +111,7 @@ services:
 ```
 
 !!! info "Learn more"
-    [Log collection and other databases](/frdocs/Cloud/Observability-Agent-Install/Configuration/) can be enabled by setting the appropriate environment variables.
+    [Log collection and other databases](/frdocs/Monitor-your-data/Observability-agent/Configuration/) can be enabled by setting the appropriate environment variables.
 
     
 ## Step 3: Instrument OpenTelemetry
