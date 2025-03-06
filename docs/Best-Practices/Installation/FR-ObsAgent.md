@@ -72,7 +72,7 @@ docker run --env api_key=YOUR_API_KEY --env ENV_VARIABLE=VALUE --env mysql_conne
 
 
 !!! info
-    Docker automatically pulls the latest version of the Observability Agent image from the [Dockerhub](intergral/observability-agent - Docker Image | Docker Hub) repository.
+    Docker automatically pulls the latest version of the Observability Agent image from the [Dockerhub](https://hub.docker.com/r/intergral/observability-agent) repository.
 
 
 <iframe src="https://player.vimeo.com/video/827268952?h=0f2c0e8fad" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
@@ -113,7 +113,7 @@ services:
 ```
 
 !!! info "Learn more"
-    [Log collection, OTEL and other databases](frdocs/Monitor-your-data/Observability-agent/Configuration/) can be enabled by setting the appropriate environment variables.
+    [Log collection, OTEL and other databases](/frdocs/Monitor-your-data/Observability-agent/Configuration/) can be enabled by setting the appropriate environment variables.
 
 ___
     

@@ -47,7 +47,7 @@ JVM arguments for your application server are only read when the server/JRE (Jav
 ### c) Add FusionReactor to the JVM arguments 
 
 !!! info 
-    App servers use different methods to do this and we advise reading the [Manual configuration examples](/Installation/Manual/Manual-Configuration-Examples/)
+    App servers use different methods to do this and we advise reading the [Manual configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 ```
 ENV JAVA_OPTS="-javaagent:/opt/fusionreactor/instance/{name}/fusionreactor.jar=name=tomcat,address=8088 -agentpath:/opt/fusionreactor/instance/{name}/libfrjvmti_x64.so"

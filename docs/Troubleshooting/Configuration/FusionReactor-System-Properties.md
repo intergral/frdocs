@@ -5,7 +5,7 @@ FusionReactor has a number of [system properties](https://docs.oracle.com/javase
 These arguments should be added to your JVM configuration. 
 
 !!! info "Learn more"
-    [Manual Configuration Examples](/Installation/Manual/Manual-Configuration-Examples/).
+    [Manual Configuration Examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/).
 
 !!! note 
     The options below should be prefixed with '-D', for example:
