@@ -46,4 +46,4 @@ On the **About** page, you can perform various license operations, including:
 
 
 !!! info "Learn more"
-    [FusionReactor Proxy Settings](#)
+    [FusionReactor Proxy Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#proxy-settings)

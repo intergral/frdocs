@@ -157,6 +157,7 @@ nav:
         - FR Agent shipper: Monitor-your-data/Log-monitoring/agent-shipper.md
         - Alerting: Monitor-your-data/Log-monitoring/alerting.md
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
+        - Log dashboards: Monitor-your-data/Log-monitoring/Log-dashboards.md
      - Deep: Monitor-your-data/Deep/overview.md
   - DATA INSIGHTS: 
        # - Data-insights/Features/account.md

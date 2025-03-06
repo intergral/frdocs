@@ -68,7 +68,7 @@ For example if you log passwords in debug logs, these may need to be obfuscated:
 
 ![](/frdocs/Monitor-your-data/Log-monitoring/images/obfuscation.png)
 
-You have the ability to obfuscate and data within log files by adding regex replacement rules under [Logging > Cloud Obfuscation settings](/Logs/Cloud-Log-Obfuscation-Rules/).
+You have the ability to obfuscate and data within log files by adding regex replacement rules under [Logging > Cloud Obfuscation settings](/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/).
 
 ## How to rollup multiple log lines into one
 
@@ -78,7 +78,7 @@ Usually they are formatted in such a way that they are sent up as a single multi
 
 We provide you with the capability to design your own rules for rolling up multiple logs into one before they are sent up in the observability chain. They can be specified on FusionReactor and scraped logs.
 
-You can add rollup rules within [Logging > Cloud Log Multiline Blocks](/Logs/Cloud-Log-MultiLine-Blocks/)
+You can add rollup rules within [Logging > Cloud Log Multiline Blocks](/frdocs/Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks/)
 
 ___
 

@@ -107,10 +107,10 @@ Click **Start configuring instances** or navigate to {hostname}:{FRAM port} to a
 
 !!! warning
     Installing the FRAM service of FusionReactor is only part of the install process. The FRAM will installation will give you
-     access to the Instance Manager and [Enterprise Dashboard](#), which you must then use to install FusionReactor onto your 
+     access to the Instance Manager and [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/), which you must then use to install FusionReactor onto your 
       Application
       Servers.
-    To continue the installation see [Configuring a FusionReactor instance in FRAM](#)
+    To continue the installation see [Configuring a FusionReactor instance in FRAM](/frdocs/Monitor-your-data/FR-Agent/Installation/FRAM/)
 
 
 ___
