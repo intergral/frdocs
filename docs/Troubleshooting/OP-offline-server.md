@@ -12,7 +12,7 @@ In order to detect if a server becomes unavailable, the **Enterprise Dashboard**
 
 It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Enterprise-Dashboard.md) page.
 
-![Screenshot](../images/configuration/serverstart.png)
+![Screenshot](/frdocs/Troubleshooting/images/serverstart.png)
 
 Under **Server Shutdown/Startup Alerts** you can disable these alerts entirely, or specify whether to receive emails on shutdown only.
 
@@ -20,11 +20,11 @@ Under **Server Shutdown/Startup Alerts** you can disable these alerts entirely, 
 
 Under **Heartbeat Settings** you can configure the heartbeat interval, timeout and failure threshold.
 
-![Screenshot](../images/configuration/heartbeat.png)
+![Screenshot](/frdocs/Troubleshooting/images/heartbeat.png)
 
 While in most cases these settings should provide optimal alerts, it may be that at times your application server stalls and can stop serving requests for a limited time. For example, if a large Garbage Collection is occurring. When this happens it is possible to receive false alarms that your application is unavailable.
 
-![ED Heartbeat Setting](../images/configuration/ED_Heartbeat_Setting.jpg)
+![ED Heartbeat Setting](/frdocs/Troubleshooting/images/ED_Heartbeat_Setting.jpg)
 
 !!! tip
     Increase the heartbeat interval or failure threshold to prevent these false alarms.

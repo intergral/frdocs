@@ -355,7 +355,7 @@ nav:
         - FAQs & troubleshooting:
             - Cloud: 
               - Troubleshooting/logging-regex-pattern-hints.md
-              - Troubleshooting cloud connections: Cloud/trouble.md
+              - Troubleshooting cloud connections: Troubleshooting/trouble.md
               - Troubleshooting/Cloud-historical-data.md
               - Troubleshooting/Optimize-data.md
               - Troubleshooting/Cloud-span-name.md
@@ -474,4 +474,4 @@ extra:
 extra_javascript:
   - javascripts/feedback.js
 
-copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2024 Intergral GmbH. All rights reserved.</a>'
+copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2025 Intergral GmbH. All rights reserved.</a>'

@@ -36,9 +36,9 @@ FRAPI.setTransactionName("Transaction Name");
 
 Any change to the application or transaction name is reflected in FusionReactor as shown below:
 
-![!Screenshot](../../images/apptxn1.png)
+![!Screenshot](/frdocs/Troubleshooting/images/apptxn1.png)
 
-![!Screenshot](../../images/apptxn2.png)
+![!Screenshot](/frdocs/Troubleshooting/images/apptxn2.png)
 
 In this example the application name was set to “Application Query”, and transaction name was set to “Transaction Query”.
 
