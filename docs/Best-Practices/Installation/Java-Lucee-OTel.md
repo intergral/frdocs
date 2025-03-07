@@ -30,7 +30,7 @@ Use the auto discovery tool to scan your server and automatically locate your Ja
 
 
 !!! tip 
-    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/Cloud/Best-Practices/scripted1/) to install FR. to install FR.
+    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/frdocs/Best-Practices/Installation/scripted1/) to install FR. to install FR.
 <br>
 
 ## Step 3: Install the Observability Agent using FRAM
@@ -48,8 +48,8 @@ To monitor the machine running Lucee or Java itself and any databases eg Redis, 
     Log collection can also be enabled in the Observability Agent to collect logs from your application using a wildcard path. 
 
 
-!!! info "Learn more"
-    [Observability Agent](/frdocs/Cloud/integrations/Metric-Integrations/)
+!!! info "Learn more"/
+    [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/)
 
 ## Step 4: Instrument OpenTelemetry
 

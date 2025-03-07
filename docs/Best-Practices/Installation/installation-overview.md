@@ -19,11 +19,11 @@ Whether you're running a ColdFusion setup or a more complex Lucee/Java environme
 <br> (See Fig 3 below)
 
 
-![!Screenshot](/frdocs-oss/frdocs/Best-Practices/Installation/Images/Local-server.png)
+![!Screenshot](/frdocs/Best-Practices/Installation/Images/Local-server.png)
 
 
 !!! info "Learn more" 
-    [ColdFusion guide](/frdocs-oss/frdocs/Cloud/Best-Practices/CF-guide/) | [Java/Lucee guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs-oss/frdocs/Cloud/Best-Practices/Java-Lucee-OTel/)<br>
+    [ColdFusion guide](/frdocs/Best-Practices/Installation/CF-guide/) | [Java/Lucee guide](/frdocs/Best-Practices/Installation/Lucee-Java-guide/) | [Java/Lucee + OTel guide](/frdocs/Best-Practices/Installation/Java-Lucee-OTel/)<br>
 
 ### Scripted 
 
@@ -46,7 +46,7 @@ Installing FusionReactor manually entails placing the FusionReactor installation
 
 
 !!! info "Learn more" 
-    [FR Agent + Observability Agent guide](/Cloud/Best-Practices/scripted1/) | [FR Agent + Observability Agent + OTel guide](/Cloud/Best-Practices/scripted2/) | [Observability Agent + OTel guide](/Cloud/Best-Practices/scripted3/)
+    [FR Agent + Observability Agent guide](/frdocs/Best-Practices/Installation/scripted1/) | [FR Agent + Observability Agent + OTel guide](/frdocs/Best-Practices/Installation/scripted2/) | [Observability Agent + OTel guide](/frdocs/Best-Practices/Installation/scripted3/)
 
 
 
@@ -73,7 +73,7 @@ The Docker install guides provide clear instructions for effortlessly adding Fus
 
 
 !!! info "Learn more" 
-    [FR Agent + Observability Agent guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs/Cloud/Best-Practices/ObsAgent-OTel/)
+    [FR Agent + Observability Agent guide](/frdocs/Best-Practices/Installation/FR-ObsAgent/) | [FR Agent + Observability Agent + OTel guide](/frdocs/Best-Practices/Installation/FR-ObsAgent-OTel/) | [Observability Agent + OTel guide](/frdocs/Best-Practices/Installation/ObsAgent-OTel/)
 
 
 

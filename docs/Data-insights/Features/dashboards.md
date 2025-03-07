@@ -84,7 +84,7 @@ For the list of log dashboards see the [log dashboard index](#).
 **MSSQL** - Observe metrics from the [MSSQL exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters).
 
 
-**Node exporter** - Observe metrics from the [Node exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters
+**Node exporter** - Observe metrics from the [Node exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/node.png)
 

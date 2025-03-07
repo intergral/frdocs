@@ -53,7 +53,7 @@ Dashboards and panels enable you to visually represent your data. To display a v
 ![!Screenshot](/frdocs/Getting-started/Tutorials/step7.png)
 
 !!! info "Learn more"
-	Full list of available [visualizations](/frdocs/Cloud/guides/create-dashboard/#visualizations)     
+	Full list of available [visualizations](/frdocs/Getting-started/Tutorials/create-dashboard/#visualizations)     
 
 !!! info
 	FusionReactor displays a preview of your query results with the visualization applied.

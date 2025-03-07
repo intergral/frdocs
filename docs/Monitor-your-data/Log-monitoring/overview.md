@@ -56,8 +56,8 @@ The agent can also be utilized to ship any logs stored on the server using its [
 
 Any logs sent via the agent have the option to be:
 
-- [Obfuscated](/Logs/Cloud-Log-Obfuscation-Rules/) to remove any sensitive content.
-- [Rolled up](/Logs/Cloud-Log-MultiLine-Blocks/) to create more readable log formats.
+- [Obfuscated](/frdocs/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/) to remove any sensitive content.
+- [Rolled up](/frdocs/Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks/) to create more readable log formats.
 
 ### Sending logs from dedicated logging agents
 

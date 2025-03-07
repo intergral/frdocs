@@ -213,7 +213,7 @@ Before running your application in Docker, obtain an [API key](/Cloud/integratio
 
 **Step 2**: Determine the environment variables
 
-Determine which [environment variables](/Cloud/Observability-Agent-Install/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
+Determine which [environment variables](/frdocs/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
 
 
 **Step 3**: Run the Docker container

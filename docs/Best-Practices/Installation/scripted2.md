@@ -46,13 +46,13 @@ JVM arguments for your application server are only read when the server/JRE (Jav
 ### c) Add FusionReactor to the JVM arguments 
 
 !!! info 
-    App servers use different methods to do this and we advise reading the [Manual configuration examples](/Installation/Manual/Manual-Configuration-Examples/)
+    App servers use different methods to do this and we advise reading the [Manual configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 ```
 ENV JAVA_OPTS="-javaagent:/opt/fusionreactor/instance/{name}/fusionreactor.jar=name=tomcat,address=8088 -agentpath:/opt/fusionreactor/instance/{name}/libfrjvmti_x64.so"
 ```
 !!! example
-    [Manual configuration examples](/Installation/Manual/Manual-Configuration-Examples/)
+    [Manual configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 ### d) Start your application server
 With your JVM arguments now modified, FusionReactor should start within the Java process.
@@ -95,7 +95,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     ````
 
 !!! info "Learn more"
-    Further [options](/Cloud/Observability-Agent-Install/observability-agent/#options) are available when installing the Observability Agent.
+    Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
 
 ## Step 3: Instrument OpenTelemetry
 

@@ -31,7 +31,7 @@ Use the auto discovery tool to scan your server and automatically locate your Co
     If the auto discovery tool  doesn't pick up the instance you can then specify the file path to find it yourself.
 
 !!! tip 
-    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/Cloud/Best-Practices/scripted1/) to install FR. to install FR.
+    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/frdocs/Best-Practices/Installation/scripted1/) to install FR. to install FR.
 <br>
 
 ## Step 3: Install the Observability Agent using FRAM

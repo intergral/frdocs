@@ -93,7 +93,7 @@ Clicking any server link on the Enterprise Dashboard automatically logs you into
     A Manager on an instance monitoring another instance of FusionReactor will also be granted Manager-level access to the monitored instance.  
 
 !!! info "Learn more"
-    [Enterprise Dashboard](#)
+    [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
 
 ## Access management configuration
 FusionReactor Identity manages system access through role-based authentication. It replaces the previous password management system in versions 8.2.0 and above.
