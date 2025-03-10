@@ -21,7 +21,7 @@
 
 * Immediate is data requested from instance in realtime.
 
-* Historic data is stored traces which are powered by the [time picker](/Cloud/guides/timepicker/) To view historic data, simply toggle the **Live mode** clock. 
+* Historic data is stored traces which are powered by the [time picker](/frdocs/Data-insights/Features/timepicker/) To view historic data, simply toggle the **Live mode** clock. 
 
 
 ![!Screenshot](../../Data-insights/Features/images/Servers/livemode.png)

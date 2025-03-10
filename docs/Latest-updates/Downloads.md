@@ -209,7 +209,7 @@ After you have installed or upgraded your FRAM version, you’ll find the Observ
 
 **Step 1**: Prepare the API key
 
-Before running your application in Docker, obtain an [API key](/Cloud/integrations/Metric-Integrations/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
+Before running your application in Docker, obtain an [API key](/frdocs/Monitor-your-data/Observability-agent/overview/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
 
 **Step 2**: Determine the environment variables
 
@@ -226,7 +226,7 @@ docker run --env api_key=<your_api_key> --env mysql_connection_string=root:my-se
 
 
 !!! info "Learn more"
-    [Observability Agent ](/Cloud/integrations/Metric-Integrations/)
+    [Observability Agent ](/frdocs/Monitor-your-data/Observability-agent/overview/)
 ## Kubernetes
 
 **Step 1**: Download files from our [GitHub repo](https://github.com/intergral/fr-cloud-kps)
