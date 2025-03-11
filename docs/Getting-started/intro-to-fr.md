@@ -43,99 +43,19 @@ Here's a brief overview of our most popular capabilities and features.
 ## Explore
 ![Image title](../images/Getting-started/explore.png){ align=left width="350" height="250"} Explore allows you to query and analyse all metrics, logs and traces ingested to your cloud account. Create new data views and filter data in any way you require. <br> Learn more about Explore **[here](/frdocs/Data-insights/Features/explore/)**. 
 
+## Incidents
+![Image title](../images/Getting-started/overview.png){ align=right width="350" height="250"} The Incident Management Application is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease. <br> Learn more about Incidents **[here](/frdocs/Data-insights/Features/Incidents/)**. 
+
+
 
 ## OpsPilot 
-![Image title](../images/Getting-started/OP.png){ align=right width="350" height="250"} OpsPilot is designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. <br> Learn more about OpsPilot **[here](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)**. 
+![Image title](../images/Getting-started/OP.png){ align=left width="350" height="250"} OpsPilot is designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. <br> Learn more about OpsPilot **[here](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)**. 
 
 
 <br>
 ## Profiler
 
-![Image title](../images/Getting-started/profiler.png){ align=left width="350" height="250"} The Profiler is designed to help you identify performance bottlenecks in your production environment with **very** low overhead, so you gain maximum benefit, without impacting your running applications. Learn more about the Profiler **[here](/frdocs/Data-insights/Features/Profiler/Profiler/)**. 
+![Image title](../images/Getting-started/profiler.png){ align=right width="350" height="250"} The Profiler is designed to help you identify performance bottlenecks in your production environment with **very** low overhead, so you gain maximum benefit, without impacting your running applications. Learn more about the Profiler **[here](/frdocs/Data-insights/Features/Profiler/Profiler/)**. 
 
 <br>
 
-## Get started
-
-Already have a FusionReactor account? Then you're good to go.  
-
-If you're **new** to FusionReactor, just follow the easy steps below to register.
-
-
-### Register for a trial
-
-FusionReactor gives you additional powerful capability and innovative ways to analyze your metrics as well as log data. 
-  
-Starting a **free 14-day trial** is simple: 
-
- **Step 1**: Register for a [FusionReactor](https://app.fusionreactor.io/auth/register) trial account.
- 
- **Step 2**:  Login to your new account.
-
-
-!!! info
-    All FusionReactor  users will have the On-Prem (on-premises) implementation (user interface). That’s the classic implementation of FR.  
-
-
-
-### Ingest data into the Cloud
-
-![!Screenshot](../../Getting-started/images/ingest.png)
-
-Use a combination of the three ingest methods to get powerful insight into your full stack.
-
-
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/870988379?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor quickstart guide"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-#### FusionReactor Java Agent
-
-With FusionReactor Cloud APM, you can diagnose both live and historic issues with our powerful metrics engine and dashboards.
-
-Our APM goes beyond Java and ColdFusion to deliver a combination of metrics, profiles, logs, and code enabling you to quickly understand and diagnose issues on your application or your server'
-
-
-!!! info "Learn more"
-    [FusionReactor Java Agent](/frdocs/Monitor-your-data/FR-Agent/agent-overview/)
-
-!!! note
-    Installing the agent also gives access to the On-Premise UI.
-
-#### Observability Agent
-
-Integrations allow you to ingest vital metrics to monitor the health of your entire infrastructure. Installing the Observability Agent, an [open source](https://github.com/intergral/observability-agent/releases) autoconfiguration and installation tool, allows you to export metrics, logs and OTel data from all aspects of your stack into the cloud, with no configuration required. The Observability Agent can detect which services are running on your machine, and automatically create a configuration file with integrations for detected services.
-
-
-#### Instrument OpenTelemetry
-
-OpenTelemetry is an open-source project created by the Cloud Native Computing Foundation (CNCF) consisting of APIs, SDKs, and tools to help developers create, monitor, and export their system data (metrics, traces, logs and more) to observability back-ends. We recommend installing the [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/) and adding the OTel component to allow receiving of traces, logs and metrics.
-
-!!! info "Learn more"
-    [OpenTelemetry](https://opentelemetry.io/docs/getting-started/)
-
-
-#### Kubernetes
-
-Kubernetes (also known as K8s) is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. The [Kubernetes-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) is a deployable Helm chart which enables monitoring of Kubernetes clusters in FusionReactor Cloud. This stack is meant for cluster monitoring, so it is pre-configured to collect metrics from all Kubernetes components.
-
-!!! info "Learn more"
-    [Kubernetes](/frdocs/Monitor-your-data/Kubernetes-monitoring/overview/)
-
-#### Programming languages supported
-
-![!Screenshot](../../Getting-started/images/proglang.png)
-
-!!! info "Learn more"
-    [OTel status & releases](https://opentelemetry.io/docs/instrumentation/#status-and-release)
-
-
-
-### Visualize your data
-
-With FusionReactor Cloud, you can diagnose both live and historic issues with our powerful metrics engine and dashboards. 
-
-!!! info "Learn more"
-    [Visualize data in Cloud](/frdocs/Data-insights/Features/dashboards/)
-
-
-<br>

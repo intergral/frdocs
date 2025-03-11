@@ -178,11 +178,36 @@ hide:
 
 ### POPULAR DOCS
 
+<div class="grid" markdown>
+
+[Get to know the UI](/frdocs/Getting-started/Tutorials/know-the-ui/)  
+{ .card }
 
 
-[Get to know the UI](/frdocs/Getting-started/Tutorials/know-the-ui/)  |  [Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)  |  [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)  |   [Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
+[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)  
+{ .card }
 
 
+[OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)  
+{ .card }
+
+
+[Incidents](/frdocs/Data-insights/Features/Incidents/incidents/)
+{ .card }
+
+</div>
+### LATEST UPDATES
+
+<div class="grid" markdown>
+
+[What's New](/frdocs/Latest-updates/WhatsNew/)
+{ .card }
+
+[Releases](/frdocs/Latest-updates/Releases/)
+{ .card }
+
+
+</div>
 
 ### MONITOR YOUR DATA
 
@@ -358,19 +383,6 @@ hide:
 </div>
 
 
-
-### LATEST UPDATES
-
-<div class="grid" markdown>
-
-[What's New](/frdocs/Latest-updates/WhatsNew/)
-{ .card }
-
-[Releases](/frdocs/Latest-updates/Releases/)
-{ .card }
-
-
-</div>
 
 ### ADMIN & DATA
 
