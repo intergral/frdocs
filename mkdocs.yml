@@ -43,6 +43,7 @@ theme:
 nav:
   - Home: index.md
   - GETTING STARTED: 
+     - Create your account: Getting-started/Trial.md
      - Introduction to FusionReactor: Getting-started/intro-to-fr.md
      - Install FusionReactor:  Getting-started/install-fr.md
      - Tutorials & walkthroughs: 
@@ -60,6 +61,13 @@ nav:
                   - Capitalization: Contribute/style-guide/Language-and-grammar/Capitalization.md
                   - Contractions: Contribute/style-guide/Language-and-grammar/Contractions.md
                   - Formatting: Contribute/style-guide/Language-and-grammar/Formatting.md
+  - LATEST UPDATES: 
+     - What's new: Latest-updates/WhatsNew.md
+     - Releases: 
+        - Overview: Latest-updates/Releases.md
+        - FR Agent: Latest-updates/release-notes.md
+        - OpsPilot: Latest-updates/OpsPilot-releases.md
+        - Downloads: Latest-updates/Downloads.md
   - MONITOR YOUR DATA:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
@@ -402,13 +410,6 @@ nav:
               - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
               - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
               - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
-  - LATEST UPDATES: 
-     - What's new: Latest-updates/WhatsNew.md
-     - Releases: 
-        - Overview: Latest-updates/Releases.md
-        - FR Agent: Latest-updates/release-notes.md
-        - OpsPilot: Latest-updates/OpsPilot-releases.md
-     - Downloads: Latest-updates/Downloads.md
   - ADMIN & DATA:
      - Account & user management: 
         - Cloud: Admin-and-data/Account/Cloud/users.md

@@ -171,10 +171,10 @@ screenshot.
 You now have the ability to view the decompiled Method.
 
 Decompilation is not enabled by default if you are accessing
-FusionReactor over the external web server, for more information on how
-to enable this and more locations you are able to decompile a class see
-[On the fly Decompile)(/On-the-fly-Decompile.md)
+FusionReactor over the external web server.
 
+!!! info "Learn more"
+    See [System properties - decompilation](/frdocs/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/?h=system+pro#decompilation) for more information on how to enable decompilation  and more locations to decompile a class.
 ### Example 3: Add an Entry Point into a Method
 
 Based on the following screenshot, we are going to add an entry point
