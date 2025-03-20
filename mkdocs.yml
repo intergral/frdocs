@@ -50,8 +50,12 @@ nav:
         - Get to know the UI: Getting-started/Tutorials/know-the-ui.md
         - Create a dashboard: Getting-started/Tutorials/create-dashboard.md
      - Troubleshooting:
+        - Getting-started/Troubleshooting/best-ways-to-monitor.md
         - Getting-started/Troubleshooting/reports.md
         - Getting-started/Troubleshooting/ignore-scheduled-tasks.md
+        - Getting-started/Troubleshooting/cpu-spikes.md
+        - Getting-started/Troubleshooting/identify-slow-requests.md
+        - Getting-started/Troubleshooting/alerts-slow-requests.md
   - HOW TO CONTRIBUTE:
            - Contribute/how-to-contribute.md
            - Style Guide:
