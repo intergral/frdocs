@@ -441,7 +441,8 @@ nav:
 plugins:
   - glightbox
   - search
-  - redirects:
+  
+redirects:
         redirect_maps:
             # Redirect for all FR pages icc-help-service/src/main/resources/FusionReactor.en_US.hcat
             # http://docs.intergral.com/fr/8.4.0/help/Using+a+License+provided+by+a+System+Property
@@ -529,7 +530,6 @@ plugins:
             'cloud/trouble': 'Cloud/trouble.md'
             'Cloud/guides/anomalydetection/' : '/Cloud/guides/Anomaly-Detection/ADoverview/'
             'Cloud/integrations/observability-agent/': 'Cloud/integrations/Metric-Integrations/'
-            
 
 markdown_extensions:
   - pymdownx.highlight:
