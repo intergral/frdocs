@@ -529,6 +529,7 @@ plugins:
             'cloud/trouble': 'Cloud/trouble.md'
             'Cloud/guides/anomalydetection/' : '/Cloud/guides/Anomaly-Detection/ADoverview/'
             'Cloud/integrations/observability-agent/': 'Cloud/integrations/Metric-Integrations/'
+            
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
