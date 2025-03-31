@@ -530,6 +530,20 @@ redirects:
             'cloud/trouble': 'Troubleshooting/trouble.md'
             'Cloud/guides/anomalydetection/' : 'Data-insights/Features/Anomaly-Detection/ADoverview.md'
             'Cloud/integrations/observability-agent/': 'Monitor-your-data/Observability-agent/overview.md'
+            #intercom redirects
+            'Getting-started/GSFRJA.md' : 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
+            'Cloud/Downloads/Downloads/' : 'Latest-updates/Downloads.md'
+            'Cloud/OpenTelemetry/Instrumenting-OTel/' : 'Monitor-your-data/OpenTelemetry/getting-started.md'
+            'FeatureIntros/infrastructure-intro.md' : 'Monitor-your-data/Observability-agent/overview.md'
+            'Getting-started/Releases/#distributed-tracing' : 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
+            'Getting-started/DVCloud/#alerting' :  'Data-insights/Features/alerting.md'
+            'Getting-started/GSOnpremsetup/' : 'Getting-started/Trial.md'
+            'Profiler/Profiler.md' : 'Data-insights/Features/Profiler/Profiler.md'
+            'JDBC/Databases/' : 'Data-insights/Features/JDBC/Databases.md'
+            'Metrics/Metrics-Page/' : 'Data-insights/Features/Metrics/Metrics-Page.md'
+            'Cloud/quick-start/' : 'Getting-started/Trial.md'
+            'Installation/Download-Links/#download-urls' : 
+
 
 markdown_extensions:
   - pymdownx.highlight:
