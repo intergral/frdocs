@@ -139,6 +139,11 @@ On-demand data will be charged at:
 |  $0.13 /hour|$10 /1K  | $0.5 /1 GB |  $0.5 /1 GB  |$20 for 250 | $0.5 /1 GB |
 
 
+
+!!! info 
+    [How to reduce costs in FR Cloud](/frdocs/Troubleshooting/Optimize-data/)
+    
+
 ## Usage calculations
 
 Both annual and monthly plan usage is calculated and billed each month. 

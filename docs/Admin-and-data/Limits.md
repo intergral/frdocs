@@ -17,3 +17,7 @@ FR Cloud enforces rate limits for ingested data.  The ingest system will return 
 
 - Standard rate limit:  12 MB/s
 - Bursting to:  18 MB/s
+
+
+!!! info 
+    [How to reduce billing usage costs in FR Cloud](/frdocs/Troubleshooting/Optimize-data/)

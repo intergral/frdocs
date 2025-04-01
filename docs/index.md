@@ -209,7 +209,7 @@ hide:
 
 </div>
 
-### MONITOR YOUR DATA
+### INSTALLATION GUIDES
 
 <div class="grid cards" markdown>
 
@@ -303,7 +303,7 @@ hide:
 </div>
 
 
-### DATA INSIGHTS
+### FEATURES
 
 <div class="grid" markdown>
 
