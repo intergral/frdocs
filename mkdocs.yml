@@ -543,6 +543,15 @@ redirects:
             'Metrics/Metrics-Page/' : 'Data-insights/Features/Metrics/Metrics-Page.md'
             'Cloud/quick-start/' : 'Getting-started/Trial.md'
             'Installation/Download-Links/#download-urls' : 
+            'on-prem-new/onpremoverview/' :
+            'https://docs.fusion-reactor.com/' : 'index.md'
+            'Cloud/OpenTelemetry/Instrumenting-OTel/' : 'Monitor-your-data/OpenTelemetry/getting-started.md'
+            'Getting-started/GSIntegrate/' : 'Monitor-your-data/Observability-agent/overview.md'
+            'Cloud/guides/alerting/' : 'Data-insights/Features/alerting.md'
+            'Cloud/guides/explore/' : 'Data-insights/Features/explore.md'
+            'Cloud/guides/dashboards/' : 'Data-insights/Features/dashboards.md'
+            'Cloud/guides/OpsPilot/OpsPilot-user-guide/' : 'Data-insights/Features/OpsPilot/OpsPilot-user-guide.md'
+            
 
 
 markdown_extensions:
