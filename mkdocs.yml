@@ -49,6 +49,9 @@ nav:
      - Tutorials & walkthroughs: 
         - Get to know the UI: Getting-started/Tutorials/know-the-ui.md
         - Create a dashboard: Getting-started/Tutorials/create-dashboard.md
+        - Getting-started/Tutorials/resolve-slow-queries.md
+        - Getting-started/Tutorials/scalability.md
+        - Getting-started/Tutorials/RCA-in-Services.md
      - Troubleshooting:
         - Getting-started/Troubleshooting/best-ways-to-monitor.md
         - Getting-started/Troubleshooting/reports.md
@@ -56,16 +59,6 @@ nav:
         - Getting-started/Troubleshooting/cpu-spikes.md
         - Getting-started/Troubleshooting/identify-slow-requests.md
         - Getting-started/Troubleshooting/alerts-slow-requests.md
-  - HOW TO CONTRIBUTE:
-           - Contribute/how-to-contribute.md
-           - Style Guide:
-              - Overview: Contribute/style-guide/overview.md
-              - Images: Contribute/style-guide/images.md
-              - Language & grammar: 
-                  - Abbreviations: Contribute/style-guide/Language-and-grammar/Abbreviations.md
-                  - Capitalization: Contribute/style-guide/Language-and-grammar/Capitalization.md
-                  - Contractions: Contribute/style-guide/Language-and-grammar/Contractions.md
-                  - Formatting: Contribute/style-guide/Language-and-grammar/Formatting.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
@@ -73,7 +66,7 @@ nav:
         - FR Agent: Latest-updates/release-notes.md
         - OpsPilot: Latest-updates/OpsPilot-releases.md
         - Downloads: Latest-updates/Downloads.md
-  - MONITOR YOUR DATA:
+  - INSTALLATION GUIDES:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
            - Local server:
@@ -174,7 +167,7 @@ nav:
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
         - Log dashboards: Monitor-your-data/Log-monitoring/Log-dashboards.md
      - Deep: Monitor-your-data/Deep/overview.md
-  - DATA INSIGHTS: 
+  - FEATURES: 
        # - Data-insights/Features/account.md
         - Alerting: Data-insights/Features/alerting.md
         - Anomaly Detection:
@@ -437,6 +430,16 @@ nav:
      - Third Party Licenses: 
         - Cloud: Admin-and-data/Third-Party-Licenses/licenses.md
         - On-Premise: Admin-and-data/Third-Party-Licenses/Third_Party_License_Agreements.md
+     - HOW TO CONTRIBUTE:
+           - Contribute/how-to-contribute.md
+           - Style Guide:
+              - Overview: Contribute/style-guide/overview.md
+              - Images: Contribute/style-guide/images.md
+              - Language & grammar: 
+                  - Abbreviations: Contribute/style-guide/Language-and-grammar/Abbreviations.md
+                  - Capitalization: Contribute/style-guide/Language-and-grammar/Capitalization.md
+                  - Contractions: Contribute/style-guide/Language-and-grammar/Contractions.md
+                  - Formatting: Contribute/style-guide/Language-and-grammar/Formatting.md
 
 plugins:
   - glightbox
