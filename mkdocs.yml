@@ -46,19 +46,6 @@ nav:
      - Create your account: Getting-started/Trial.md
      - Introduction to FusionReactor: Getting-started/intro-to-fr.md
      - Install FusionReactor:  Getting-started/install-fr.md
-     - Tutorials & walkthroughs: 
-        - Get to know the UI: Getting-started/Tutorials/know-the-ui.md
-        - Create a dashboard: Getting-started/Tutorials/create-dashboard.md
-        - Getting-started/Tutorials/resolve-slow-queries.md
-        - Getting-started/Tutorials/scalability.md
-        - Getting-started/Tutorials/RCA-in-Services.md
-     - Troubleshooting:
-        - Getting-started/Troubleshooting/best-ways-to-monitor.md
-        - Getting-started/Troubleshooting/reports.md
-        - Getting-started/Troubleshooting/ignore-scheduled-tasks.md
-        - Getting-started/Troubleshooting/cpu-spikes.md
-        - Getting-started/Troubleshooting/identify-slow-requests.md
-        - Getting-started/Troubleshooting/alerts-slow-requests.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
@@ -66,6 +53,22 @@ nav:
         - FR Agent: Latest-updates/release-notes.md
         - OpsPilot: Latest-updates/OpsPilot-releases.md
         - Downloads: Latest-updates/Downloads.md
+  - TUTORIALS & WALKTHROUGHS: 
+     - Overview: Getting-started/Tutorials/Overview.md
+     - Performance Analysis:
+        - Getting-started/Tutorials/resolve-slow-queries.md
+        - Getting-started/Troubleshooting/best-ways-to-monitor.md
+        - Getting-started/Troubleshooting/ignore-scheduled-tasks.md
+        - Getting-started/Troubleshooting/identify-slow-requests.md
+     - Application Observability:  
+        - Get to know the UI: Getting-started/Tutorials/know-the-ui.md
+        - Create a dashboard: Getting-started/Tutorials/create-dashboard.md
+        - Getting-started/Tutorials/RCA-in-Services.md
+        - Getting-started/Troubleshooting/alerts-slow-requests.md
+     - Infrastructure Observability:
+        - Getting-started/Tutorials/scalability.md
+        - Getting-started/Troubleshooting/reports.md
+        - Getting-started/Troubleshooting/cpu-spikes.md    
   - INSTALLATION GUIDES:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
@@ -136,7 +139,7 @@ nav:
         - Configuration: Monitor-your-data/Observability-agent/Configuration.md
         - Ingesting data into FR: Monitor-your-data/Observability-agent/Ingest.md
      - OpenTelemetry:
-       - Getting started: Monitor-your-data/OpenTelemetry/getting-started.md
+       - Overview: Monitor-your-data/OpenTelemetry/getting-started.md
        - Instrumentation guides:
          - Overview: Monitor-your-data/OpenTelemetry/Instrumentation/Overview.md
          - C++: Monitor-your-data/OpenTelemetry/Instrumentation/Cpp.md
@@ -166,7 +169,11 @@ nav:
         - Alerting: Monitor-your-data/Log-monitoring/alerting.md
         - Labels & fields: Monitor-your-data/Log-monitoring/labels-and-fields.md
         - Log dashboards: Monitor-your-data/Log-monitoring/Log-dashboards.md
-     - Deep: Monitor-your-data/Deep/overview.md
+     - Deep: 
+        - Overview: Monitor-your-data/Deep/overview.md
+        - Features: 
+            - Search: Data-insights/Features/Deep/Search.md
+            - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
   - FEATURES: 
        # - Data-insights/Features/account.md
         - Alerting: Data-insights/Features/alerting.md
@@ -191,8 +198,10 @@ nav:
            - Data-insights/Features/Debugger/Settings.md
            - Data-insights/Features/Debugger/Sources.md
         - Deep: 
-           - Search: Data-insights/Features/Deep/Search.md
-           - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
+           - Overview: Monitor-your-data/Deep/overview.md
+           - Features: 
+              - Search: Data-insights/Features/Deep/Search.md
+              - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
         - Enterprise Dashboard:
             - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard.md
             - Settings: Data-insights/Features/Enterprise-Dashboard/Settings.md
@@ -200,7 +209,9 @@ nav:
                 - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting.md
                 - Scripting example: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting-Example.md
                 - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
-        - Explore: Data-insights/Features/explore.md
+        - Explore: 
+            - Overview: Data-insights/Features/explore.md
+            - Servers: Data-insights/Features/Explore-servers.md
         - Historic data: Data-insights/Features/timepicker.md
         - Incidents: 
           - Overview: Data-insights/Features/Incidents/incidents.md

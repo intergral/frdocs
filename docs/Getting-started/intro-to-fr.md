@@ -44,7 +44,7 @@ Here's a brief overview of our most popular capabilities and features.
 ![Image title](../images/Getting-started/explore.png){ align=left width="350" height="250"} Explore allows you to query and analyse all metrics, logs and traces ingested to your cloud account. Create new data views and filter data in any way you require. <br> Learn more about Explore **[here](/frdocs/Data-insights/Features/explore/)**. 
 
 ## Incidents
-![Image title](../images/Getting-started/overview.png){ align=right width="350" height="250"} The Incident Management Application is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease. <br> Learn more about Incidents **[here](/frdocs/Data-insights/Features/Incidents/)**. 
+![Image title](../images/Getting-started/overview.png){ align=right width="350" height="250"} The Incident Management Application is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease. <br> Learn more about Incidents **[here](/frdocs/Data-insights/Features/Incidents/incidents/)**. 
 
 
 

@@ -1,7 +1,29 @@
+!!! note
+    Anomaly Detection is ONLY available on the Pro AI plan.
+
+
 ![!Screenshot](../../images/Anomaly-detection/overview.png)
 
 
 ## Anomaly Detection feature in FusionReactor Cloud
+
+<style>
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-purple { background-color:rgb(150, 190, 251); color:rgb(31, 36, 197); }
+</style>
+
+<span class="badge badge-purple">Available in public preview</span> 
+
+
+
 
 Monitoring an application is essential for delivering a high-quality product and ensuring a positive user experience. However, merely gathering a multitude of application metrics doesn't address the core issue. What software companies truly require is a mechanism to derive actionable insights from their metrics, enabling them to promptly address any issues their users may encounter.
 
@@ -9,7 +31,8 @@ Enter the RED method.
 
 This new feature enhances observability by enabling users to track the **probability of anomalies** in critical service metrics, known as RED (Request, Errors and Duration rates). RED not only allows for closer monitoring of these key metrics but also provides notifications when they exceed set thresholds, offering a more proactive approach to service management.
 
-
+!!! tip
+    Remember that the Anomaly Detection feature needs to be turned on in your FusionReactor settings. Don't miss out on its ability to proactively identify potential issues!
 
 
 ### Core metrics: The RED framework
@@ -35,6 +58,9 @@ Central to FusionReactor Cloud's new anomaly detection feature are the RED metri
 
 
 ### Configurable alert system
+
+!!! note
+    The Anomaly Detection feature is not enabled by default. Ensure you explicitly switch it on in the settings to utilize its benefits
 
 FusionReactor Cloud allows you to set up alerts for anomalies detected in your system, providing an opportunity to proactively manage and mitigate potential service issues.
 
