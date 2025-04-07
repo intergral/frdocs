@@ -23,15 +23,16 @@
 .md-typeset .grid.cards>ol>li,
 .md-typeset .grid.cards>ul>li,
 .md-typeset .grid>.card {
-    transition: border .75s,box-shadow .75s
+  border: 1px solid #8b8686; /* Darker border */
+  transition: border .75s,box-shadow .75s
 }
   
   
  /* Smaller grid cards custom colours */
  :root {
-    --card-bg-light: #edeff1;
-    --card-bg-dark:  #343942;
-    --card-border-focus-light: white;
+    --card-bg-light: white;
+    --card-bg-dark:  #787a7d;
+    --card-border-focus-light: black;
     --card-border-focus-dark: #343942; 
     
   }
@@ -78,7 +79,4 @@
     line-height: 1.8; /* Creates space between nav items*/
 }
   
-
-
-
 

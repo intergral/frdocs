@@ -1,8 +1,11 @@
-
-
+!!! note
+    Anomaly Detection is ONLY available on the Pro AI plan.
+    
 ![Screenshot](../../images/Anomaly-detection/anomalyreport.png)
 
 ## What is anomaly detection?
+
+
 
 Anomaly detection is an algorithmic capability designed to recognize instances when a metric displays behavior that diverges from its historical patterns. This process considers trends, seasonal variations, and time-of-day patterns. It is particularly effective for metrics exhibiting robust trends and recurring patterns, which are challenging to monitor using threshold-based alerting systems.
 
