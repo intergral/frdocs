@@ -315,7 +315,7 @@ hide:
     ">
       <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
       <h4 style="margin: 10px 0 6px;">Releases</h4>
-      <p style="font-size: 0.85em;">Explore our latest releases and updates.</p>
+      <p style="font-size: 0.85em;">Explore our latest releases & updates.</p>
     </div>
   </a>
 
