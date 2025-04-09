@@ -27,13 +27,25 @@ theme:
     - scheme: default
       primary: custom
       accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mod
 
 nav:
   - Home: index.md
   - GETTING STARTED: 
      - Create your account: Getting-started/Trial.md
-     - Install FusionReactor:  Getting-started/install-fr.md
      - Introduction to FusionReactor: Getting-started/intro-to-fr.md
+     - Install FusionReactor:  Getting-started/install-fr.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 

@@ -2,12 +2,10 @@
 
 ## What's new in FusionReactor 2025.1.0
 
-
-
 FusionReactor 2025.1.0 introduces several new features, improvements, and bug fixes to enhance performance, observability, and ease of use. This release includes support for Adobe ColdFusion 2025, ensuring seamless monitoring for the latest ColdFusion applications. Bug fixes include resolving an issue where certain transactions were not displaying correctly in Lucee, ensuring service names are correctly set in Deep Integration, and moving a cloud connection from port 2804 to port 443 for easier setup. Observability enhancements include metadata descriptions for metrics in the cloud (which can be disabled using `-Dfr.observability.metric.prometheus.remotewrite.metadata.enabled=false`), expanded FRAPI capabilities for creating web request transactions and setting transaction properties, and the ability to view transaction profiles in Pyroscope and Tempo traces. Additional fixes and enhancements are also included in this update. 
 
 !!! info "Learn more"
-    [Full release notes](/frdocs/Latest-updates/release-notes/#202510-3rd-march-2025).
+    [Full release notes](/frdocs/Latest-updates/release-notes/#202510-3rd-march-2025)
 
 ### Pyroscope continuous profiling
 

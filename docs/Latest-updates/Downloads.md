@@ -11,8 +11,11 @@ Current version:  2025.1.0 - 3 March 2025
     [MD5](/frdocs/Monitor-your-data/FR-Agent/Installation/md5/)
 
  
+    
 
-=== "Automatic"
+
+???+ info "Automatic Installation"
+
     Installing the FusionReactor Administration Manager using the automatic installer is a simple process that starts with the download page. <br>
 
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/930599280?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Quick and Easy Installation of FusionReactor Administration Manager (FRAM) on Windows"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script> 
@@ -43,37 +46,33 @@ Current version:  2025.1.0 - 3 March 2025
         [Observability Agent](/Cloud/Observability-Agent-Install/FRAM/)
     
     <br>
-    
 
+---
 
-=== "Manual"
+??? info "Manual Installation"
+
     Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers. 
 
     <div style="padding:55.83% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/465101100?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor Java APM - Manual Install for Tomcat on Windows Server 2016"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-    **Step 1**: Create a directory structure for FusionReactor
-    
-    **Step 2**: Download files into the directory structure
+    **Step 1**: Create a directory structure for FusionReactor and download the files:
 
     [FusionReactor JAR](https://download.fusionreactor.io/FR/Latest/fusionreactor.jar)<br>
     [Debugger Native Library](https://download.fusionreactor.io/FR/Latest/debuglibs.zip)
 
-    **Step 3**: Stop your application server
+    **Step 2**: Stop your application server
 
-    **Step 4**: Add additional JVM arguments to your application server configuration <br>
+    **Step 3**: Add additional JVM arguments to your application server configuration <br>
 
     * Add a Java agent path (-javaagent argument) pointing to the fusionreactor.jar file.
 
     * The Debug native library path (-agentpath argument) needs to be pointing to the debug library.
 
-     **Step 5**: Restart your application server
+     **Step 4**: Restart your application server
+---
 
+??? info "Docker Installation"
 
-    !!! info "Learn more"
-        [Manual installation](/Installation/Manual/Manual-Installation/)
-
-=== "Docker"
-    
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/465103334?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Installing FusionReactor in Docker - Java Example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     
     **Step 1**: Start with your base image
@@ -116,7 +115,9 @@ Current version:  2025.1.0 - 3 March 2025
         [Install in Docker](/Installation/Docker/)
 
 
-=== "CommandBox"
+---
+
+??? info "CommandBox Installation"
 
     To install FusionReactor in your CommandBox, we recommend using the [commandbox-fusionreactor module](https://www.forgebox.io/view/commandbox-fusionreactor). <br>
 
@@ -153,6 +154,7 @@ Current version:  2025.1.0 - 3 March 2025
 
 
 
+
 ### Legacy versions
 
 It is possible to download previous versions of the FusionReactor Agent.
@@ -170,19 +172,21 @@ detect which services are running on your machine, and automatically create a co
 !!! info 
     For a simple install that doesn't rely on scripts, the Observability Agent is available via [FRAM](/Cloud/Observability-Agent-Install/FRAM/)
 
-### Install via FRAM
+### FRAM
 
-After you have installed or upgraded your FRAM version, you’ll find the Observability Agent installer on the FRAM summary screen. Click the **Install** button, then **Configure Install**, and here you can configure your integrations to start monitoring them with FusionReactor Cloud.
+??? info "Install via FRAM"
 
-!!! note
-    To install the Observability Agent via FRAM, you must have a minimum version of FusionReactor 12.
+    After you have installed or upgraded your FRAM version, you’ll find the Observability Agent installer on the FRAM summary screen. Click the **Install** button, then **Configure Install**, and here you can configure your integrations to start monitoring them with FusionReactor Cloud.
+
+    !!! note
+        To install the Observability Agent via FRAM, you must have a minimum version of FusionReactor 12.
 
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/928407325?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to install the Observability Agent using FRAM"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/928407325?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to install the Observability Agent using FRAM"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ### Local install using code snippets
 
-=== "Linux" 
+??? info "Linux"
 
     **Step 1**: In a terminal, download and run the installer
 
@@ -195,7 +199,7 @@ After you have installed or upgraded your FRAM version, you’ll find the Observ
     
 
 
-=== "Windows"
+??? info "Windows"
 
 
     **Step 1** In a terminal, download and run the installer
@@ -207,54 +211,60 @@ After you have installed or upgraded your FRAM version, you’ll find the Observ
 
 ### Docker
 
-**Step 1**: Prepare the API key
 
-Before running your application in Docker, obtain an [API key](/Cloud/integrations/Metric-Integrations/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
+??? info "Docker"
 
-**Step 2**: Determine the environment variables
+    **Step 1**: Prepare the API key
 
-Determine which [environment variables](/frdocs/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
+    Before running your application in Docker, obtain an [API key](/Cloud/integrations/Metric-Integrations/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
 
+    **Step 2**: Determine the environment variables
 
-**Step 3**: Run the Docker container
-
-```
-docker run --env api_key=<your_api_key> --env mysql_connection_string=root:my-secret-pw@(mysql:3306)/ intergral/observability-agent:latest
-```
-
-<iframe src="https://player.vimeo.com/video/827268952?h=0f2c0e8fad" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    Determine which [environment variables](/frdocs/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
 
 
-!!! info "Learn more"
-    [Observability Agent ](/Cloud/integrations/Metric-Integrations/)
+    **Step 3**: Run the Docker container
+
+    ```
+    docker run --env api_key=<your_api_key> --env mysql_connection_string=root:my-secret-pw@(mysql:3306)/ intergral/observability-agent:latest
+    ```
+
+    <iframe src="https://player.vimeo.com/video/827268952?h=0f2c0e8fad" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+    !!! info "Learn more"
+        [Observability Agent ](/Cloud/integrations/Metric-Integrations/)
+
 ## Kubernetes
 
-**Step 1**: Download files from our [GitHub repo](https://github.com/intergral/fr-cloud-kps)
+??? info "Kubernetes"
 
- - `fr-cloud-kps-values.yaml`
+    **Step 1**: Download files from our [GitHub repo](https://github.com/intergral/fr-cloud-kps)
 
- - `fr-cloud-kps-authentication-secret.yaml`
+    - `fr-cloud-kps-values.yaml`
 
-**Step 2**: Customize the two files for installation
+    - `fr-cloud-kps-authentication-secret.yaml`
 
-- `fr-cloud-kps-values.yaml`
+    **Step 2**: Customize the two files for installation
 
-Change `CLUSTER_NAME` to your Kubernetes cluster name.
+    - `fr-cloud-kps-values.yaml`
 
-- `fr-cloud-authentication-secret.yaml`
+    Change `CLUSTER_NAME` to your Kubernetes cluster name.
 
-Change `PASSWORD` to your FR Cloud API key. 
+    - `fr-cloud-authentication-secret.yaml`
 
-**Step 3**: Run the following commands to create a new namespace to hold & deploy stack 
+    Change `PASSWORD` to your FR Cloud API key. 
 
-``` bash
-kubectl create namespace kube-prometheus-stack
-helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm repo update
-kubectl apply -n kube-prometheus-stack -f fr-cloud-kps-authentication-secret.yaml
-helm upgrade --install -n kube-prometheus-stack -f fr-cloud-kps-values.yaml kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 52.0.1
-```
+    **Step 3**: Run the following commands to create a new namespace to hold & deploy stack 
 
-!!! info "Learn more"
-    [Shipping K8s to FR](/Cloud/platform-integrations/shippingK8stoFR/)
+    ``` bash
+    kubectl create namespace kube-prometheus-stack
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    helm repo update
+    kubectl apply -n kube-prometheus-stack -f fr-cloud-kps-authentication-secret.yaml
+    helm upgrade --install -n kube-prometheus-stack -f fr-cloud-kps-values.yaml kube-prometheus-stack prometheus-community/kube-prometheus-stack --version 52.0.1
+    ```
+
+    !!! info "Learn more"
+        [Shipping K8s to FR](/Cloud/platform-integrations/shippingK8stoFR/)
 
