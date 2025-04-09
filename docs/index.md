@@ -164,7 +164,7 @@ hide:
                 <div class="fr-step-title">Set up integrations</div>
                 <div class="fr-step-description">Monitor key parts of your infrastructure like databases, Docker etc.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Install Observability Agent</a>
+                    <a href="/frdocs/Monitor-your-data/Observability-agent/overview/" class="fr-btn">Install Observability Agent</a>
                 </div>
             </div>
             <div class="fr-step">

@@ -28,12 +28,13 @@ theme:
       primary: custom
       accent: custom
 
+
 nav:
   - Home: index.md
   - GETTING STARTED: 
      - Create your account: Getting-started/Trial.md
-     - Install FusionReactor:  Getting-started/install-fr.md
      - Introduction to FusionReactor: Getting-started/intro-to-fr.md
+     - Install FusionReactor:  Getting-started/install-fr.md
   - LATEST UPDATES: 
      - What's new: Latest-updates/WhatsNew.md
      - Releases: 
