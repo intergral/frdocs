@@ -358,9 +358,9 @@ nav:
             - Data-insights/Features/Transactions/Trans.-By-Mem.md
             - Data-insights/Features/Transactions/Transit.md
         - UEM Sessions:
-            - Overview: Data-insights/Features/UEM/Sessions.md
+            - Overview: Data-insights/Features/UEM/User-Experience-Monitoring.md
+            - Sessions: Data-insights/Features/UEM/Sessions.md
             - Data-insights/Features/UEM/Settings.md
-            - Data-insights/Features/UEM/User-Experience-Monitoring.md
         - FAQs & troubleshooting:
             - Cloud: 
               - Troubleshooting/logging-regex-pattern-hints.md
