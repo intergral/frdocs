@@ -21,7 +21,7 @@ Event Snapshots bridge the gap between basic error tracking (stack traces) and t
 
 **Dependency**: The native Debug library is essential for Event Snapshots, as it provides the API necessary to inspect Java local variables on the call stack. This library captures variable values and the thread stack trace at the time of the triggering event.
 
-**Installation**: The automated FusionReactor installer includes the native [Debug library](https://www.fusion-reactor.com/download-fusionreactor/). For [manual installations](frdocs/Monitor-your-data/FR-Agent/Installation/Manual/), this library must be installed separately.
+**Installation**: The automated FusionReactor installer includes the native [Debug library](https://www.fusion-reactor.com/download-fusionreactor/). For [manual installations](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/), this library must be installed separately.
 
 
 ## Rate Limiting for Event Snapshots
