@@ -48,7 +48,7 @@ To monitor the machine running Lucee or Java itself and any databases eg Redis, 
     Log collection can also be enabled in the Observability Agent to collect logs from your application using a wildcard path. 
 
 
-!!! info "Learn more"/
+!!! info "Learn more"
     [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/)
 
 ## Step 4: Instrument OpenTelemetry

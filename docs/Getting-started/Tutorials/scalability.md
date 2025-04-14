@@ -35,7 +35,7 @@
     * Based on the identified bottlenecks, implement appropriate optimizations. These may include:
         * **Scaling up:** Increasing the resources of your existing servers (e.g., more CPU, RAM).
         * **Scaling out:** Distributing the application load across multiple server instances.
-        * **Optimizing slow database queries:** As identified through tracing, tune inefficient SQL queries (refer to the "Slow SQL Queries" documentation).
+        * **Optimizing slow database queries:** As identified through tracing, tune inefficient [Slow SQL Queries](/frdocs/Getting-started/Tutorials/resolve-slow-queries/).
         * **Implementing caching strategies:** Reduce the load on backend systems by caching frequently accessed data.
         * **Adjusting connection pooling:** Optimize the management of connections to databases and other external services.
         * **Setting up auto-scaling policies:** Configure your environment to automatically add or remove resources based on real-time demand.
@@ -50,17 +50,8 @@
 
 6.  **Ensure ongoing performance with monitoring & alerts:**
     * Configure **real-time alerts** in FusionReactor to detect early signs of performance degradation. Utilize features like:
-        * **On-Premise Crash Protection:** Set up alerts for specific error conditions or slow transactions.
-        * **Metric alerting (Cloud UI):** Create alerts based on thresholds for key performance metrics (CPU, memory, response time, etc.).
-        * **Anomaly Detection (Cloud UI):** Leverage AI-powered anomaly detection to identify unusual performance patterns that might indicate a problem.
+        * **On-Premise [Crash Protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/):** Set up alerts for specific error conditions or slow transactions.
+        * **Metric [alerting](/frdocs/Data-insights/Features/alerting/) (Cloud UI):** Create alerts based on thresholds for key performance metrics (CPU, memory, response time, etc.).
+        * **[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADuserguide/) (Cloud UI):** Leverage AI-powered anomaly detection to identify unusual performance patterns that might indicate a problem.
     * Continuously monitor your application's performance with FusionReactor to proactively identify and address potential scalability issues.
-
-## Best practices for application scalability
-
-* Implement thorough load testing to understand your application's breaking points.
-* Analyze performance metrics regularly to identify trends and potential bottlenecks.
-* Optimize slow components (e.g., database queries, external API calls) identified through tracing.
-* Design your application with scalability in mind, considering statelessness and distributed architectures.
-* Implement auto-scaling where appropriate to handle fluctuating traffic.
-* Continuously monitor your application in production using FusionReactor to ensure ongoing performance and stability.
 

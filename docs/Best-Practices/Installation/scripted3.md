@@ -12,7 +12,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 
 
 
-=== "Windows" 
+??? info "Windows" 
    
     To download and run the installer, open powershell admin terminal, navigate to your desired download folder and run: 
 
@@ -24,7 +24,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     !!! info
         The installer for Windows assumes you are installing Grafana Alloy in the default location on the C drive. This is required for the config file to be placed in the correct location for Grafana Alloy to read it.
 
-=== "Linux" 
+??? info "Linux" 
 
     To download and run the installer, in a terminal, run:
 
@@ -37,6 +37,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 
 !!! info "Learn more"
     Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
+    
 ## Step 2: Instrument OpenTelemetry
 
 Instrument your code to support OpenTelemetry on your application (Node.js, Python, Go etc).
