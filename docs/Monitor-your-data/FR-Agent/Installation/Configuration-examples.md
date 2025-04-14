@@ -33,7 +33,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
 
 ## Adobe ColdFusion solr
 
-=== "Windows"
+??? info "Windows"
 
     1. Navigate to the following directory: {ColdFusion-Home}\solr\.
 
@@ -54,7 +54,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
         lax.nl.java.option.additional=-server -Xmx256m -XX:+AggressiveOpts -XX:+ScavengeBeforeFullGC -XX:-UseParallelGC -DSTOP.PORT=8079 -DSTOP.KEY=cfstop -Dsolr.solr.home=multicore -javaagent:C:\FusionReactor\instance\cf9-solr\fusionreactor.jar=name=cf9-solr,address=8088 -agentpath:C:\FusionReactor\instance\cf9-solr\frjvmti_x64.dll
         ```
 
-=== "Linux"
+??? info "Linux"
 
     1. Navigate to the following directory: {ColdFusion-Home}/solr/.
 
@@ -95,7 +95,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
 
 ## Lucee
 
-=== "Windows"
+??? info "Windows"
 
     1. Navigate to the following directory: {Lucee-Home}\tomcat\bin\.
 
@@ -119,7 +119,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
         -agentpath:C:\FusionReactor\instance\lucee4\frjvmti_x64.dll
         ```
 
-=== "Linux"
+??? info "Linux"
 
     1. Navigate to the following directory: {Lucee-Home}/bin/.
 
@@ -141,7 +141,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
 
 ## Tomcat
 
-=== "Windows"
+??? info "Windows"
 
     1. Navigate to the following directory: {Apache-Tomcat-Home}\bin\.
 
@@ -165,7 +165,7 @@ Below are examples of configuring your Application Server / JVM arguments for th
         -agentpath:C:\FusionReactor\instance\tomcat8\frjvmti_x64.dll
         ```
 
-=== "Linux"
+??? info "Linux"
 
     1. Navigate to the following directory: {Apache-Tomcat-Home}/bin/.
 

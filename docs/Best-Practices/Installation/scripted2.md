@@ -11,7 +11,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 !!! note 
     Ensure that you always use the latest version of FusionReactor.
 
-=== "Windows"
+??? info "Windows"
 
 
     ```
@@ -21,7 +21,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 
     ```
 
-=== "Linux"
+??? info "Linux"
 
     ```
     mkdir -p /opt/fusionreactor/instance/{name}
@@ -32,7 +32,7 @@ Manually installing FusionReactor requires you to directly place the FusionReact
 
 
 
-=== "MacOS"
+??? info "MacOS"
 
     ```
     mkdir -p /Applications/fusionreactor/instance/{name}
@@ -72,7 +72,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 <iframe src="https://player.vimeo.com/video/946516448?h=2875944fd9" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/946516448">How to install the observability Agent locally</a> from <a href="https://vimeo.com/user109619720">FusionReactor APM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-=== "Windows" 
+??? info "Windows" 
    
     To download and run the installer, open powershell admin terminal, navigate to your desired download folder and run: 
 
@@ -84,7 +84,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
     !!! info
         The installer for Windows assumes you are installing Grafana Alloy in the default location on the C drive. This is required for the config file to be placed in the correct location for Grafana Alloy to read it.
 
-=== "Linux" 
+??? info "Linux" 
 
     To download and run the installer, in a terminal, run:
 

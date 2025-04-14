@@ -22,35 +22,35 @@ Installing FusionReactor helps improve the stability, reliability and performanc
 ### Performance troubleshooting
 
 !!! info "Learn more"
-    [Metrics](/Metrics/Archive-Metrics/) |
-    [Requests](/Requests/Applications/) |
-    [Transactions](/Transactions/Transactions/) |
-    [JDBC](/JDBC/JDBC-Activity/) |
-    [UEM & sessions](/UEM-and-Sessions/Sessions/) |
-    [Profiler](/Profiler/Profiler/) |
-    [Memory](/Memory/Overview/) |
-    [Distributed tracing](/Distributed-Tracing/attributes/) 
+    [Metrics](/frdocs/Data-insights/Features/Metrics/Archive-Metrics/) |
+    [Requests](/frdocs/Data-insights/Features/Requests/Applications/) |
+    [Transactions](/frdocs/Data-insights/Features/Transactions/Transactions/) |
+    [JDBC](/frdocs/Data-insights/Features/JDBC/JDBC-Activity/) |
+    [UEM & sessions](/frdocs/Data-insights/Features/UEM/Sessions/) |
+    [Profiler](/frdocs/Data-insights/Features/Profiler/Profiler/) |
+    [Memory](/frdocs/Data-insights/Features/Memory/Overview/) |
+    [Distributed tracing](/frdocs/Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes/) 
 
 ### Resource monitoring
 
 !!! info "Learn more"
-    [Resources](/Resources/Buffer-Pool/) |
-    [Logging](/Logs/Logs/) |
-    [System resources](/System-Resources/CPU/)
+    [Resources](/frdocs/Data-insights/Features/Resources/Buffer-Pool/) |
+    [Logging](/frdocs/Data-insights/Features/Logs/Logs/) |
+    [System resources](/frdocs/Data-insights/Features/System-Resources/CPU/)
 
 
 ### Root cause analysis
 
 !!! info "Learn more"
-    [Debugger](/Debugger/Overview/) |
-    [Event snapshots](/Debugger/Event-Snapshot/)
+    [Debugger](/frdocs/Data-insights/Features/Debugger/Overview/) |
+    [Event snapshots](/frdocs/Data-insights/Features/Debugger/Event-Snapshot/)
 
 
 ### Alerting 
 
 !!! info "Learn more"
-    [Enterprise dashboard](/Enterprise-Dashboard/Enterprise-Dashboard/) |
-    [Crash protection](/Crash-Protection/Crash-Protection/) 
+    [Enterprise dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/) |
+    [Crash protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/) 
 
 
 ___
