@@ -261,16 +261,12 @@ To control your usage and spending costs it is possible to create an alert to fi
 
 #### Example billing usage checks
 
-The first example uses the **fr_billing_charges_metered** metric. This usage metric provides a breakdown of on-demand usage.
+For instructions on configuring billing checks, see the [Billing usage checks](/frdocs/Data-insights/Features/billing-check) section. The following are examples of common billing usage checks: 
 
-![!Screenshot](../../Billing/Cloud/createcheck1.png)
-
-The second example uses the **fr_billing_usage** metric. This  metric calculates the amount of data to be billed. 
-
-![!Screenshot](../../Billing/Cloud/createcheck2.png)
-
-**fr_billing_charges_total**: This metric provides information on your current bill as a total of what's in your plan and any additional on-demand charges.
-
+* `fr_billing_usage_current`
+* `fr_billing_charges_metered`
+* `fr_billing_usage`
+* `fr_billing_charges_total`
 
 ## Modifications
 
