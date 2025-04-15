@@ -168,7 +168,11 @@ nav:
             - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
   - FEATURES: 
        # - Data-insights/Features/account.md
-        - Alerting: Data-insights/Features/alerting.md
+        - Alerting: 
+            - Overview: Data-insights/Features/alerting.md
+            - Alerting examples: 
+               - Performance checks: Data-insights/Features/alerting-examples.md
+               - Billing usage checks: Data-insights/Features/billing-check.md
         - Anomaly Detection:
             - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
             - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
