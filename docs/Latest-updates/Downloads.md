@@ -11,10 +11,9 @@ Current version:  2025.1.0 - 3 March 2025
     [MD5](/frdocs/Monitor-your-data/FR-Agent/Installation/md5/)
 
  
-    
+### Automatic    
 
-
-???+ info "Automatic Installation"
+??? info "View more"
 
     Installing the FusionReactor Administration Manager using the automatic installer is a simple process that starts with the download page. <br>
 
@@ -47,9 +46,9 @@ Current version:  2025.1.0 - 3 March 2025
     
     <br>
 
----
+### Manual 
 
-??? info "Manual Installation"
+??? info "View more"
 
     Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers. 
 
@@ -69,9 +68,10 @@ Current version:  2025.1.0 - 3 March 2025
     * The Debug native library path (-agentpath argument) needs to be pointing to the debug library.
 
      **Step 4**: Restart your application server
----
 
-??? info "Docker Installation"
+
+### Docker 
+??? info "View more"
 
     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/465103334?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Installing FusionReactor in Docker - Java Example"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     
@@ -115,9 +115,11 @@ Current version:  2025.1.0 - 3 March 2025
         [Install in Docker](/Installation/Docker/)
 
 
----
 
-??? info "CommandBox Installation"
+
+### CommandBox
+
+??? info "View more"
 
     To install FusionReactor in your CommandBox, we recommend using the [commandbox-fusionreactor module](https://www.forgebox.io/view/commandbox-fusionreactor). <br>
 
@@ -157,12 +159,16 @@ Current version:  2025.1.0 - 3 March 2025
 
 ### Legacy versions
 
-It is possible to download previous versions of the FusionReactor Agent.
+??? info "View more"
+
+    It is possible to download previous versions of the FusionReactor Agent.
 
 
-!!! info
-    [Download legacy versions](/Installation/Download-Links/#downloading-legacy-versions)
+    !!! info
+        [Download legacy versions](/Installation/Download-Links/#downloading-legacy-versions)
 
+
+---
 
 ## Observability Agent
 
@@ -174,7 +180,7 @@ detect which services are running on your machine, and automatically create a co
 
 ### FRAM
 
-??? info "Install via FRAM"
+??? info "View more"
 
     After you have installed or upgraded your FRAM version, you’ll find the Observability Agent installer on the FRAM summary screen. Click the **Install** button, then **Configure Install**, and here you can configure your integrations to start monitoring them with FusionReactor Cloud.
 
@@ -186,7 +192,9 @@ detect which services are running on your machine, and automatically create a co
 
 ### Local install using code snippets
 
-??? info "Linux"
+#### Linux
+
+??? info "View more"
 
     **Step 1**: In a terminal, download and run the installer
 
@@ -196,10 +204,10 @@ detect which services are running on your machine, and automatically create a co
     sudo /bin/bash observability-agent-autoconf.sh
     ````
 
-    
+#### Windows   
 
 
-??? info "Windows"
+??? info "View more"
 
 
     **Step 1** In a terminal, download and run the installer
@@ -212,7 +220,7 @@ detect which services are running on your machine, and automatically create a co
 ### Docker
 
 
-??? info "Docker"
+??? info "View more"
 
     **Step 1**: Prepare the API key
 
@@ -234,10 +242,14 @@ detect which services are running on your machine, and automatically create a co
 
     !!! info "Learn more"
         [Observability Agent ](/Cloud/integrations/Metric-Integrations/)
+        
+
+
+---
 
 ## Kubernetes
 
-??? info "Kubernetes"
+??? info "View more"
 
     **Step 1**: Download files from our [GitHub repo](https://github.com/intergral/fr-cloud-kps)
 
