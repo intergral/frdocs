@@ -36,6 +36,5 @@ Once the license is deactivated on the previous instance, simply enter your Fusi
 
 ### Temporary license for overlapping uptime
 
-If you anticipate a period where both your old and new servers might be running simultaneously during the migration, you can request a temporary FusionReactor license key. Please contact our [Sales team](sales@fusion-reactor.com) with your request, and we will be happy to assist you.
-
+If you anticipate a period where both your old and new servers might be running simultaneously during the migration, you can request a temporary FusionReactor license key. Please contact our Sales team on [sales@fusion-reactor.com](mailto:sales@fusion-reactor.com) with your request, and we will be happy to assist you.
 
