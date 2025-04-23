@@ -21,7 +21,7 @@ This can be seen as part of the [request details](../Requests/Request-Details.md
 To change the Log Tracker settings, click the drop down and select a log
 capture level.
 
-![](/attachments/245548311/245548338.png)
+![](/frdocs/attachments/245548311/245548338.png)
 
 This setting defines the level at which the plugin will track log
 statements (and more specific).

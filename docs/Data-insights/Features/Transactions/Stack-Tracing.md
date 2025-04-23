@@ -119,12 +119,12 @@ displayed at the top of the page to show this.
 
 !!! example 
     A lock link is shown below: <br>
-    [![](/attachments/245550463/245550503.png)](/attachments/245550463/245550503.png)
+    [![](/frdocs/attachments/245550463/245550503.png)](/frdocs/attachments/245550463/245550503.png)
 
 !!! info 
     Lock links are available from any page showing locks (Stack Traces, Debug Frames, Profiles).
 
-[![](/attachments/245550463/245550493.png)](/attachments/245550463/245550493.png)
+[![](/attachments/245550463/245550493.png)](/frdocs/attachments/245550463/245550493.png)
 
 ## Thread / Transaction table
 
@@ -134,7 +134,7 @@ thread as well as some limited information about the active request.
 
 !!! example 
     A blocked thread running the synchronised\_released.jsp test page.
-    [![](/attachments/245550463/245550513.png)](/attachments/245550463/245550513.png)
+    [![](/frdocs/attachments/245550463/245550513.png)](/frdocs/attachments/245550463/245550513.png)
 
 The table shows the following information:
 

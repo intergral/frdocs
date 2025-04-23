@@ -42,7 +42,7 @@ there are two alternating types: `NumberFormatException` and
 For this example, we will use a breakpoint with the following
 configuration:
 
-![](/attachments/245553613/245553636.png)
+![](/frdocs/attachments/245553613/245553636.png)
 
 |Production Debugger Field|Value|Meaning|
 |--- |--- |--- |
@@ -67,7 +67,7 @@ within the looped `try-catch` block.
     the /opt/ directory. I have configured this as a source, so
     FusionReactor displays that while viewing the paused thread's details.
 
-![](/attachments/245553613/245553618.png)
+![](/frdocs/attachments/245553613/245553618.png)
 
 ### Conditional Breakpoint in catch block
 
@@ -85,7 +85,7 @@ or ColdFusion scripting language (for any ColdFusion file extension
 locations). For our **`objectArrayExcep.jsp`** example, we would do the
 following:
 
-![](/attachments/245553613/245553624.png)
+![](/frdocs/attachments/245553613/245553624.png)
 
 This means that the breakpoint will trigger on line 7 if the variable e
 is of class type `NumberFormatException`.

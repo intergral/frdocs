@@ -34,7 +34,7 @@ navigate to: **FusionReactor &gt; Profiler &gt; Profile History** and
 you will be able to see the transaction that took part. See screenshot
 below.
 
-![](/attachments/245552484/245552500.png)
+![](/frdocs/attachments/245552484/245552500.png)
 
 From the screenshot above, you can see a number of useful information about
 the transaction that has occurred such as:
@@ -53,9 +53,9 @@ about the transaction that has occurred such as:
 If you click on the following icon ( *See below* ) you will be taken to
 another page which lists the Transaction Details. ( *See below icon )*
 
-![](/attachments/245552484/245552495.png)
+![](/frdocs/attachments/245552484/245552495.png)
 
-![](/attachments/245552484/245552490.png)
+![](/frdocs/attachments/245552484/245552490.png)
 
 By viewing the screenshot, we can see that 55% of the total Duration
 time was consumed by the

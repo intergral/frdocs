@@ -27,14 +27,14 @@ You must have FusionReactor 6.2.0 or above currently installed on your
 Lucee or Railo application server
 
 1.  Go to: **FusionReactor** &gt; **Plugins **&gt; **Active Plugins**  
-    ![](/attachments/245548033/245548045.png)
+    ![](/frdocs/attachments/245548033/245548045.png)
 
 2.  On the Active Plugins page depending upon your application server
     search for the relative line performance plugin.  
-    ![](/attachments/245548033/245548055.png)
+    ![](/frdocs/attachments/245548033/245548055.png)
 3.  On the Configuration page - **Enable Track CFML Line Execution
     Times**  
-    ![](/attachments/245548033/245548060.png)
+    ![](/frdocs/attachments/245548033/245548060.png)
 
 4.  Save the updated configuration.
 
@@ -73,7 +73,7 @@ Lucee or Railo application server
         address; 
         1.  <a href="http://localhost:8888/cfperformanceexplorer-master/#content" class="uri external-link">http://localhost:8888/cfperformanceexplorer-master/#content</a>
 
-    ![](/attachments/245548033/245548050.png)
+    ![](/frdocs/attachments/245548033/245548050.png)
 
     This tool can be
     found [https://github.com/intergral/cfperformanceexplorer](https://github.com/intergral/cfperformanceexplorer) in our GitHub repository.

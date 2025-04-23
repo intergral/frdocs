@@ -13,13 +13,13 @@ then attached to the transaction as a context.
 Json Data appears as a transaction context in the history list, as shown
 below:
 
-[![](/attachments/245548346/245548358.png)](/attachments/245548346/245548358.png)
+[![](/frdocs/attachments/245548346/245548358.png)](/frdocs/attachments/245548346/245548358.png)
 
 
 The actual data is rendered in a tab in the transaction details view, as
 shown below:
 
-[![](/attachments/245548346/245548352.png)](/attachments/245548346/245548352.png)
+[![](/frdocs/attachments/245548346/245548352.png)](/frdocs/attachments/245548346/245548352.png)
 
 ## Configuration
 
