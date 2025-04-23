@@ -1,11 +1,11 @@
 # How to configure the reports plugin
 
-The [report plugin](/Plugins/FusionReactor-Reports-Plugin/) polls the metrics every minute and gathers data throughout the day. This data is then used to create a several reports for your server including daily, weekly and monthly reports.
+The [report plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin/) polls the metrics every minute and gathers data throughout the day. This data is then used to create a several reports for your server including daily, weekly and monthly reports.
 
 The reports plugin is enabled by default, but **will not** send an email until the email settings are set in **FusionReactor** > **Settings**. 
 
 !!! info "Learn more"
-    [Configure email settings](/Configuration/Email-Configuration/)
+    [Configure email settings](/frdocs/Troubleshooting/Configuration/Email-Configuration/)
 
 
 ## Configure reports 

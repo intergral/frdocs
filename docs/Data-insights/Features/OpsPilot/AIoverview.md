@@ -7,7 +7,7 @@ OpsPilot is designed to elevate observability for every team member, transcendin
 OpsPilot is now also equipped with a metrics knowledge base. This enhancement empowers OpsPilot to make informed graph generation and query creation decisions and ensures your visualizations are meaningful and insightful.
 
 !!! info "Learn more"
-    [OpsPilot user guide](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/)
+    [OpsPilot user guide](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/)
 
 ## Ways to interact with OpsPilot
 
@@ -87,7 +87,7 @@ corrective action.
 
 
 !!! info "Learn more"
-    [How to use OpsPilot AI](/Cloud/guides/OpsPilot/OpsPilot-user-guide/) 
+    [How to use OpsPilot AI](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/) 
 
 ___
 

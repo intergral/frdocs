@@ -237,7 +237,7 @@ You can use the Ephemeral Data Service to get instant insight into your fleet of
 When an instance registers to the **Enterprise Dashboard**, it establishes an SSL secure channel to FRAM.  This tunnel is used to get metric data and as a proxy for web requests.  This means that FusionReactor instances within your containerized overlay network – which were previously opaque and unavailable to you – can now be accessed directly from the **Enterprise Dashboard**.  All the functionality of FusionReactor's user interface is available.
 
 !!! info "Learn more"
-    [Automatically registering FusionReactor instances to the dashboard](/Configuration/Enterprise-Dashboard-Configuration/).
+    [Automatically registering FusionReactor instances to the dashboard](/frdocs/Troubleshooting/Configuration/Enterprise-Dashboard-Configuration/).
 
 !!! note
     With the Ephemeral Data Service, if an instance becomes unresponsive or goes offline, it is not possible to receive an alert as the instance unregisters from the dashboard automatically.
@@ -253,7 +253,7 @@ You can manually add a server in the **Manage Servers** page of the **Enterprise
 ### Automatically adding instances
 
 !!! info "Learn more"
-    [Automatically registering FusionReactor instances to the dashboard](/Configuration/Enterprise-Dashboard-Configuration/).
+    [Automatically registering FusionReactor instances to the dashboard](/frdocs/Troubleshooting/Configuration/Enterprise-Dashboard-Configuration/).
 
 ## Restart or connection issue alerts
 
@@ -290,7 +290,7 @@ The script will be run with the current working directory (CWD) of the applicati
 
 
 !!! info "Learn more"
-    [Enterprise scripting](/Enterprise-Dashboard/Enterprise-Scripting/)
+    [Enterprise scripting](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting/)
 ___
 
 

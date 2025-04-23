@@ -24,20 +24,20 @@ The Production Debugger provides the ideal solution for developers to gain insig
 Event Snapshots are generated for specific events that may occur whilst FusionReactor (FR) monitors your application.  Event Snapshots are intended to provide deep level insight whenever a problem, such as an exception or thread latency occurs.
 
 !!! info "Learn more"
-    [Event Snapshot](/Debugger/Event-Snapshot/)
+    [Event Snapshot](/frdocs/Data-insights/Features/Debugger/Event-Snapshot/)
 
 
 ### Watches 
 
 The ability to analyze and run functions on variables during runtime.
 
-![!Screenshot](/frdocs/Data-insights/Features/Debugger/images//watches.png)
+![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/watches.png)
 
 ## Requirements
 You need the agentpath argument installed.
 
 !!! info "Learn more"
-    [Install Debug Library](/Installation/Manual/Manual-Installation/#step-2-download-the-fusionreactor-installation-files)
+    [Install Debug Library](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/#step-2-download-the-fusionreactor-installation-files)
 
 ### How do I know if the agentpath argument is already enabled?
 
@@ -85,7 +85,7 @@ To disable the debugger you need to take out the agentpath:
     Disabling the debugger also disables snapshots.
 
 !!! info "Learn more"
-    [Uninstall Debugger](/Installation/Manual/Manual-Installation/#step-1-stop-your-application-server)
+    [Uninstall Debugger](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/#step-1-stop-your-application-server)
 
 
 

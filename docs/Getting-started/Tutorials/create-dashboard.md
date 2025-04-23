@@ -71,7 +71,7 @@ While not required, most visualizations need some adjustment before they properl
 
 * [Override field values](https://grafana.com/docs/grafana/latest/panels-visualizations/configure-overrides/?pg=oss-graf&plcmt=hero-btn-2)
 
-* [Configure thresholds](/Cloud/guides/create-dashboard/#configure-thresholds)
+* [Configure thresholds](/frdocs/Getting-started/Tutorials/create-dashboard/#configure-thresholds)
 
 * [Configure standard](https://grafana.com/docs/grafana/latest/panels-visualizations/configure-standard-options/?pg=oss-graf&plcmt=hero-btn-2) 
 
