@@ -22,7 +22,7 @@ The OpsPilot Assistant is designed to be a constant  and trusted helper; it even
 
 The OpsPilot Assistant takes the complexity out of monitoring your application: pre-defined question templates are built right into the system. These conversation  templates consist of carefully designed questions to simplify the monitoring process, making it effortless for users to gather crucial insights and track performance metrics. Whether you're new to monitoring or a seasoned professional, these intuitive tools help streamline your workflow, ensuring that you have the right data at your fingertips to assess your application's health and swiftly address any issues that may arise. With OpsPilot, monitoring your application becomes not just efficient but also exceptionally user-friendly.
 
-![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/stemplates.png)
+![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/templates.png)
 
 The OpsPilot Assistant currently has the following custom templates:
 
@@ -174,7 +174,7 @@ Should you receive an answer that perhaps lacks the expected level of detail, yo
 OpsPilot can be given information about your system structure or the specific issue you are having that it will utilize for later questions in the conversation. 
 
 !!! warning 
-    As the OpsPilot uses previous prompts and responses to reply to a query, long involved responses can prove costly. For further information regarding OpsPilot token usage costs, refer to the [Billing](/Cloud/billing/overview/#opspilot-ai-usage) page.
+    As the OpsPilot uses previous prompts and responses to reply to a query, long involved responses can prove costly. For further information regarding OpsPilot token usage costs, refer to the [Billing](/frdocs/Admin-and-data/Billing/Cloud/overview/#opspilot-ai) page.
 
 !!! example "Example questions"
 

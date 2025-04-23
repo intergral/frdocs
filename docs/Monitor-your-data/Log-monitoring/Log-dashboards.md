@@ -28,9 +28,9 @@ Within the dashboard you can view the rate of logs, as well as the log lines the
 
 Log filters operate on the job label.
 
-The job label is automatically be applied to [logs shipped by FusionReactor](/Cloud/logs/FusionReactor-Agent-Shipper) and set to the instance name.
+The job label is automatically be applied to [logs shipped by FusionReactor](/frdocs/Monitor-your-data/Log-monitoring/agent-shipper/) and set to the instance name.
 
-Logs shipped via an [External Log Shipper](/Cloud/logs/Log-Shipper) must have a job label specified to allow for log filters to function.
+Logs shipped via an [External Log Shipper](/frdocs/Monitor-your-data/Log-monitoring/log-shipper/) must have a job label specified to allow for log filters to function.
 
 Search text allows you to search for any log line content from within your ingested logs, for example:
 

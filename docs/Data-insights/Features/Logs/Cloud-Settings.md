@@ -33,7 +33,7 @@ Metric logs are considered as logs created by the agent to track metrics over ti
 - heartbeat.log
 - resource.log
 
-Transaction logs are logs of any tracked transaction in FusionReactor. By default, only a request log is created, but [JDBC logging](/Settings/JDBC/#logging-metrics) and [Txn logging](/Plugins/FusionReactor-Transaction-Logger-Plugin/) can be enabled. Log files include:
+Transaction logs are logs of any tracked transaction in FusionReactor. By default, only a request log is created, but [JDBC logging](/Settings/JDBC/#logging-metrics) and [Txn logging](/frdocs/Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin/) can be enabled. Log files include:
 
 - request.log
 - jdbc.log

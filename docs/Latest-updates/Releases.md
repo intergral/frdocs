@@ -34,7 +34,7 @@ Introducing OpsPilot Hub: Your centralized knowledge repository for enhanced ope
 
 
 !!! info "Learn more"
-    [OpsPilot Hub](/Cloud/guides/OpsPilot/OpsPilot-Hub/)
+    [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
 
 
 ### FusionReactor 12.1
@@ -110,7 +110,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 ## FusionReactor 12
 
-We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/Cloud/integrations/Metric-Integrations/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
+We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
 
 
 !!! info "Learn more"
@@ -167,7 +167,7 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## FusionReactor 10.0.2 
 
-**FusionReactor 10.0.2** revolutionizes how you monitor and view your data. Latest updates include cloud support for M1 Macs and new cloud transaction views or filters such as error history, longest transactions, slow transactions and more. Further improvements allow you to configure [Request Content Capture](/Requests/Settings/#request-content-capture) to only capture responses as well as the ability to capture either headers or body only.   
+**FusionReactor 10.0.2** revolutionizes how you monitor and view your data. Latest updates include cloud support for M1 Macs and new cloud transaction views or filters such as error history, longest transactions, slow transactions and more. Further improvements allow you to configure [Request Content Capture](/frdocs/Data-insights/Features/Requests/Settings/#request-content-capture) to only capture responses as well as the ability to capture either headers or body only.   
 
 !!! warning
     Cloud data now requires FusionReactor to be running on Java 8 or above. Live data will still work for Java 7.

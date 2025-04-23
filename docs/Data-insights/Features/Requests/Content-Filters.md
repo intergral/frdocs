@@ -45,9 +45,9 @@ works in, change the Restrictions option on the [Content Filter settings](#filte
 
 The **Content Filter Restrictions** page has two main areas: 
 
-* [New Content Filter Restriction](/Requests/Content-Filters/#new-content-filter-restriction)
+* [New Content Filter Restriction](/frdocs/Data-insights/Features/Requests/Content-Filters/#new-content-filter-restriction)
 
-* [Managing Content Filter Restrictions](/Requests/Content-Filters/#managing-content-filter-restrictions)
+* [Managing Content Filter Restrictions](/frdocs/Data-insights/Features/Requests/Content-Filters/#managing-content-filter-restrictions)
 
 !!! info
     At the top of the page there is a form to enter new restrictions and below this is a list of all existing restrictions for this feature.

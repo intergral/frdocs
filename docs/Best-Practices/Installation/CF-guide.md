@@ -49,7 +49,7 @@ To monitor the machine running Coldfusion itself and any databases (eg Redis, My
     If you have more than one server, don’t monitor the same database multiple times as this sends excess data to the Cloud.
 
 !!! info "Learn more" 
-    [Observability Agent](/Cloud/integrations/Metric-Integrations/)
+    [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/)
 
 
 

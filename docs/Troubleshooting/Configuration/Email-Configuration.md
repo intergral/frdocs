@@ -7,7 +7,7 @@ To use features such as **Reporting**, **Debug** alerts, **Enterprise dashboard*
  To copy the configuration of FusionReactor from one instance to another:
 
 !!! info "Learn more"
-    [Copying FusionReactor configuration between instances](/Configuration/Copying-FusionReactor-Configuration-Between_Instances). 
+    [Copying FusionReactor configuration between instances](/frdocs/Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/). 
  
  With this approach you can configure one instance of FusionReactor then copy the configuration across all five instances.
 

@@ -21,7 +21,7 @@
 
 * Immediate is data requested from instance in realtime.
 
-* Historic data is stored traces which are powered by the [time picker](/Cloud/guides/timepicker/) To view historic data, simply toggle the **Live mode** clock. 
+* Historic data is stored traces which are powered by the [time picker](/frdocs/Data-insights/Features/timepicker/) To view historic data, simply toggle the **Live mode** clock. 
 
 
 ![!Screenshot](../../Data-insights/Features/images/Servers/livemode.png)
@@ -44,7 +44,7 @@
 
 
 !!! info "Learn more"
-    [Time picker](/Cloud/guides/timepicker/)
+    [Time picker](/frdocs/Data-insights/Features/timepicker/)
 
 
 
@@ -148,7 +148,7 @@ On the transactions view, you can see if the transaction is running, if it's fin
 
 
 ![!Screenshot](../../Data-insights/Features/images/Servers/jdbcmain.png)
-The **JDBC** tab gives you the ability to view and administer running JDBC transactions on your server.This information is controlled by the storage strategy and other settings found on the [JDBC Settings](/JDBC/Settings/) page.
+The **JDBC** tab gives you the ability to view and administer running JDBC transactions on your server.This information is controlled by the storage strategy and other settings found on the [JDBC Settings](/frdocs/Data-insights/Features/JDBC/Settings/) page.
 
 
 On the JDBC view, you can see if the transaction is running, if it's finished and the time that it finished. You can also view the application that generated the transaction,  the URL of the transaction and finally, the total amount of time in milliseconds the transaction took to complete.
@@ -198,7 +198,7 @@ The **Headers** tab shows the HTTP headers for the request and response objects.
 
 
 !!! info "Learn more"
-    [Request details](/Requests/Request-Details/)
+    [Request details](/frdocs/Data-insights/Features/Requests/Request-Details/)
 
 
 #### Transaction filtering  
@@ -298,7 +298,7 @@ Snapshots provide CPU Sampler information at the exact moment of capture. Multip
 Snapshots can be taken at any moment during the execution of a sample, this is achieved by the **New CPU snapshot** button.
 
 !!! info "Learn more"
-    [CPU snapshots](/Profiler/CPU-Sampler/#cpu-snapshots)
+    [CPU snapshots](/frdocs/Data-insights/Features/CPU-Sampler/CPU-Sampler/#cpu-snapshots)
 
 #### Thread visualizer
 
@@ -350,7 +350,7 @@ Name|Description|
 |**Blocked time (ms)**|Total time a thread is blocked waiting for a monitor lock.|
 
 !!! info "Learn more"
-    [Thread visualizer](/Resources/Thread-Visualizer/#thread-visualizer)
+    [Thread visualizer](/frdocs/Data-insights/Features/Resources/Thread-Visualizer/#thread-visualizer)
 
 
 
@@ -387,7 +387,7 @@ You have the ability to:
     You cannot access, decompile or debug any **native methods.**
 
 !!! info "Learn more"
-    [Profile examples](/Profiler/Profiler/#examples)
+    [Profile examples](/frdocs/Data-insights/Features/Profiler/Profiler/#examples)
 
 
 
@@ -431,7 +431,7 @@ Stack traces can also be filtered by view:
 
 
 !!! info "Learn more"
-    [Stack trace](/Transactions/Stack-Tracing/#stack-trace)
+    [Stack trace](/frdocs/Data-insights/Features/Transactions/Stack-Tracing/#stack-trace)
 
 
 ### Logs
@@ -465,7 +465,7 @@ The **Info** page of FusionReactor provides information on  **Agent details**, *
     When contacting support it is helpful to copy this page to your clipboard and attach a copy to your request to give our support engineers information on your configured environment.
 
 !!! info "Learn more"
-    [Server info](/System-Resources/Server-Info/#overview)
+    [Server info](/frdocs/Data-insights/Features/System-Resources/Server-Info/#overview)
 
 
 ---

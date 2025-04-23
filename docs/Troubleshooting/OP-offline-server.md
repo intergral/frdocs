@@ -6,7 +6,7 @@ When instances are added to the **Enterprise Dashboard** either by [manually](..
     In order to receive these email alerts you must have the email settings for the instance correctly configured. 
     
 !!! info "Learn more"
-    [Email configuration guide](/Configuration/Email-Configuration/).
+    [Email configuration guide](/frdocs/Troubleshooting/Configuration/Email-Configuration/).
 
 In order to detect if a server becomes unavailable, the **Enterprise Dashboard** uses a heartbeat mechanism. This means that by default it will attempt to contact the monitored FusionReactor instance, after three failed attempts we assume that the instance is no longer available.
 

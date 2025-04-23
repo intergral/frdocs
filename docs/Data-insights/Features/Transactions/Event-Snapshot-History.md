@@ -62,7 +62,7 @@ ERROR log messages or higher from log4j, slf4j and apache commons logging.  
 **Event Snapshots** are generated on the first log ERROR call. This captures all the stack variables and the call stack when this error is called This allows the developer to know when a log error statement was triggered and why. 
 
 !!! info "Learn more"
-    [Debug → Settings](/Debugger/Settings)
+    [Debug → Settings](/frdocs/Data-insights/Features/Debugger/Settings/)
 
 ## Exception Snapshots
 
