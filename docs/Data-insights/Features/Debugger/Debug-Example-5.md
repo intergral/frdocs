@@ -44,7 +44,7 @@ of the year from the Array.
 1.  Go to **FusionReactor → Debug → Debugger** and select **New
     Breakpoint.**
 2.  Configure the breakpoint as below:  
-    ![](/frdocs/frdocs/attachments/245553669/245553716.png)
+    ![](/frdocs/attachments/245553669/245553716.png)
 
 3.  In the **Trigger** **Condition** field we have
     added **request.getRemoteAddr().toString().equals("IP Address")**.

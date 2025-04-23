@@ -38,12 +38,12 @@ clicking the "**New Breakpoint**" button in the top right.
 
 You should enter the configuration values as follows:
 
-![](/attachments/245553542/245553577.png)
+![](/frdocs/attachments/245553542/245553577.png)
 
 Once you confirm this breakpoint, you should see a new breakpoint listed
 in the breakpoint section of the debugger like this :
 
-![](/attachments/245553542/245553571.png)
+![](/frdocs/attachments/245553542/245553571.png)
 
 The information button on the breakpoint will show the following
 information.
@@ -51,16 +51,16 @@ information.
 Once the class is loaded and the location is valid it will change to
 show the location where the breakpoint will fire.
 
-![](/attachments/245553542/245553565.png)
+![](/frdocs/attachments/245553542/245553565.png)
 
 If you have executed the cfm page then it will appear like this :
 
-![](/attachments/245553542/245553559.png)
+![](/frdocs/attachments/245553542/245553559.png)
 
 In this case, the information button on the breakpoint will show similar
 information as below:
 
-![](/attachments/245553542/245553553.png)
+![](/frdocs/attachments/245553542/245553553.png)
 
 If you now call the `div0catch.cfm` page in your browser you should
 receive an email.  
@@ -78,7 +78,7 @@ You can get the same information from the Exception Caught/Thrown
 breakpoint type. You can set this by using the following breakpoint
 configuration:
 
-![](/attachments/245553542/245553547.png)
+![](/frdocs/attachments/245553542/245553547.png)
 
 When the exception occurs you will receive an email and then the
 breakpoint will become disabled. The breakpoint will be disabled even if

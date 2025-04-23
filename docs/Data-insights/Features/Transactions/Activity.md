@@ -41,7 +41,7 @@ see the following below in a table:
 |--- |--- |
 |**Started**|The date and time at which the request was received.|
 |**Status / Type**|This is the status of the transaction, this will typically be Running. The type of the transaction is also displayed here, as well as any protection contributed statues.|
-|**App / Txn**|The application (App) in which the request occurred from or to - shown on the top line The transaction (Txn) shown on the lower line, is based on whichever rules you wish to use for your transaction naming - these rules can be set on the **FusionReactor Menu / Settings** page. <br> Learn more: [Transaction Naming](/Transactions/Transaction-Naming/)|
+|**App / Txn**|The application (App) in which the request occurred from or to - shown on the top line The transaction (Txn) shown on the lower line, is based on whichever rules you wish to use for your transaction naming - these rules can be set on the **FusionReactor Menu / Settings** page. <br> Learn more: [Transaction Naming](/frdocs/Data-insights/Features/Transactions/Transaction-Naming/)|
 |**ID / Thread**|The request ID and the name of the thread which is servicing the request.|
 |**Description / URL / Statement**|This is the description of the transaction, used for flavors such as MongoDB and FRAPI. Depending on the flavor of the transaction, you will see either Description, URL or Statement.|
 |**Time (ms)**|The time that the transaction took to complete. If available then you will also see the amount of actual CPU time that this transaction used below it.|

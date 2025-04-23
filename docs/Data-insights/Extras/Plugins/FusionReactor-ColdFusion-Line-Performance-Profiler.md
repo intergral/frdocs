@@ -25,14 +25,14 @@ on Productions systems.](#considerations-for-production-systems)
 1.  You must have FusionReactor 6.0.4 or above  
 
 2.  Go to FusionReactor-&gt;Plugins-&gt;Active Plugins  
-    ![](/attachments/245547997/245548018.png")
+    ![](/frdocs/attachments/245547997/245548018.png")
 
 3.  On the Active Plugins page choose the FusionReactor ColdFusion
     Plugin Configuration  
-    ![](/attachments/245547997/245548028.png)
+    ![](/frdocs/attachments/245547997/245548028.png)
 4.  On the Configuration page - Enable Track CFML Line Execution Times  
 
-    ![](/attachments/245547997/245548008.png)
+    ![](/frdocs/attachments/245547997/245548008.png)
 
 5.  Save the configuration - Note this will have immediate effect. When
     you enable CFML Line Performance Tracking the currently compiled
@@ -50,7 +50,7 @@ on Productions systems.](#considerations-for-production-systems)
     have enabled Track CFML Line Execution Times in the FusionReactor
     ColdFusion Plugin.  
 
-    ![](/attachments/245547997/245548023.png)
+    ![](/frdocs/attachments/245547997/245548023.png)
 
     This tool can be found
     [https://github.com/intergral/cfperformanceexplorer](https://github.com/intergral/cfperformanceexplorer) in our GitHub repository.

@@ -35,7 +35,7 @@ However, with the difference that a file is deleted after has been read.
 to find the transaction in the **Profiled Thread History** tab. ( *See
 screenshot below *)
 
-![](/frdocs/frdocs/attachments/245552522/245552529.png)
+![](/frdocs/attachments/245552522/245552529.png)
 
 Lets take a better look of the transaction. ( *See screenshot below* )
 

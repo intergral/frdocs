@@ -12,7 +12,7 @@ Page](../Requests/Request-Details.md).
 FusionReactor makes it easy by decoding your streaming AMF connections
 to help you debug your applications.
 
-![](/attachments/245547840/245547850.png)
+![](/frdocs/attachments/245547840/245547850.png)
 
 **Figure 1: Decoded AMF details.**
 
