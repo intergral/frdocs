@@ -23,27 +23,27 @@ FANTASTIC - PAGE WORKED FINE - YOU SAVED PRODUCTION
 After running the example file show above - we generated the following
 HTTP 500 Error.
 
-![](/attachments/245553374/245553470.png)
+![](/frdocs/245553374/245553470.png)
 
 In the [Requests->Request History](../Requests/Request-History.md) page, we see
 the following error has been captured:
 
-![](/attachments/245553374/245553464.png)
+![](/frdocs/attachments/245553374/245553464.png)
 
-By clicking on the Request Details Icon ![](/attachments/245553374/245553497.png) we can drill into the Error Details tab.
+By clicking on the Request Details Icon ![](/frdocs/attachments/245553374/245553497.png) we can drill into the Error Details tab.
 
-![](/attachments/245553374/245553458.png)
+![](/frdocs/attachments/245553374/245553458.png)
 
 The source file and the line where the error is shown is here:
 
-![](/attachments/245553374/245553452.png)
+![](/frdocs/attachments/245553374/245553452.png)
 
 If we simply click on the Source File Link -
 (`/opt/intergral/servers/coldfusion2018/cfusion/wwwroot/test.500.cfm` in
 our example), then FusionReactor will automatically set the breakpoint
 for us and the following dialog will appear.
 
-![](/attachments/245553374/245553446.png)
+![](/frdocs/attachments/245553374/245553446.png)
 
 |Production Debugger Field|Value|Meaning|
 |--- |--- |--- |
@@ -59,7 +59,7 @@ for us and the following dialog will appear.
 When the breakpoint has been set up, you will see the following when you
 click the breakpoint information button in the **Debugger** page.
 
-![](/attachments/245553374/245553428.png)
+![](/frdocs/attachments/245553374/245553428.png)
 
 ##  Seeing when a breakpoint fires
 
@@ -73,30 +73,30 @@ You can either click on the **Debugger** icon or click the **Debugger**
 link in the Debug Menu to view the currently paused threads - together
 with the Timeout Countdown
 
-![](/attachments/245553374/245553422.png)
+![](/frdocs/attachments/245553374/245553422.png)
 
 To start the Production Debugger session, you need to click on the Debug
-Icon for the thread - ![](/attachments/245553374/245553416.png)
+Icon for the thread - ![](/frdocs/attachments/245553374/245553416.png)
 
 ## Working with the Production Debugger in the Thread View Page
 
 The Thread View page shows the details of a specific thread once the
 thread has been paused in the interactive debugger.
 
-![](/attachments/245553374/245553404.png)
+![](/frdocs/attachments/245553374/245553404.png)
 
 ## Source Code Viewer
 
 The source code viewer will show the source code for the location where
 the interactive debugger is currently paused - line 2 in our example.
 
-![](/attachments/245553374/245553398.png)
+![](/frdocs/attachments/245553374/245553398.png)
 
 The variables viewer shows the variables currently available on the
 thread at the specific location that the interactive debugger has
 paused.
 
-![](/attachments/245553374/245553392.png)
+![](/frdocs/attachments/245553374/245553392.png)
 
 ## Modifying a variable value
 
@@ -108,12 +108,12 @@ to a value ( other than `0` )
  In this case - as we are setting a Numeric value, we can simply
 overwrite the value in the Variables form field
 
-![](/attachments/245553374/245553386.png)
+![](/frdocs/attachments/245553374/245553386.png)
 
 After changing the value of the field, you must hit the `RETURN | ENTER`
 key for the value to be updated.
 
-Once you have changed the variable value, hit the Resume icon ![](/attachments/245553374/245553380.png) above
+Once you have changed the variable value, hit the Resume icon ![](/frdocs/attachments/245553374/245553380.png) above
 the source code view to continue execution of the program.
 
 The page results will then look like.

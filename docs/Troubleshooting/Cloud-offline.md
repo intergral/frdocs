@@ -7,7 +7,7 @@ The following example is a check that will monitor the online status of all Fusi
 !!! note
     Any instance which has been offline for over five minutes will stop being counted as offline by the check.
 
-To more reliably monitor the online status of a specific job/instance, see the [check below](/Troubleshooting/Cloud-offline/#when-a-single-job-goes-offline-for-5-minutes).
+To more reliably monitor the online status of a specific job/instance, see the [check below](/frdocs/Troubleshooting/Cloud-offline/#when-a-single-job-goes-offline-for-5-minutes).
 
 It's also possible the graph will say **no data** when you are editing your check. This simply means no instances have gone offline within the time frame shown.
 

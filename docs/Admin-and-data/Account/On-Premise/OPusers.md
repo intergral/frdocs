@@ -2,9 +2,9 @@
 
 FusionReactor has three user accounts / roles
 
-1.  [Administrator](#administrators)
-2.  [Manager](#managers)
-3.  [Observer](#observers)
+1.  [Administrator](#administrator)
+2.  [Manager](#manager)
+3.  [Observer](#observer)
 
 ##  Roles
 
@@ -43,7 +43,7 @@ Administrators can:
     In hosting environments this account might be used by the hosting provider to configure FusionReactor for customers on their application server instances.
 
 
-### Managers
+### Manager
 
 Managers are instance-level administrators who can manage a single FusionReactor installation.
 
@@ -184,7 +184,7 @@ login page, and uses three
 <a href="https://ldap.com/ldap-filters/" class="external-link">LDAP Filters</a>
 to attempt to authenticate the user.
 
-![](/attachments/245548444/256213075.png)
+![](/frdocs/attachments/245548444/256213075.png)
 
 *Example X.500/LDAP Login Dialog*
 

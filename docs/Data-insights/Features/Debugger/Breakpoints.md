@@ -204,7 +204,7 @@ Additionally, the interactive debugger includes a thread rate limiter. You can c
 
 For example, the following configuration will pause the thread for 60 seconds unless you view the thread in the debugger. It will trigger for all threads that hit the breakpoint.
 
-![](/attachments/245552928/245552998.png)
+![](/frdocs/attachments/245552928/245552998.png)
 
 ### Generate email stack/variable event
 
