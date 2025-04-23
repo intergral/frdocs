@@ -44,7 +44,7 @@ of the year from the Array.
 1.  Go to **FusionReactor → Debug → Debugger** and select **New
     Breakpoint.**
 2.  Configure the breakpoint as below:  
-    ![](/attachments/245553669/245553716.png)
+    ![](/frdocs/frdocs/attachments/245553669/245553716.png)
 
 3.  In the **Trigger** **Condition** field we have
     added **request.getRemoteAddr().toString().equals("IP Address")**.
@@ -66,16 +66,16 @@ of the year from the Array.
 When the breakpoint has been set up, in the case that your page has not
 yet been executed, you should be able to see the following:
 
-![](/attachments/245553669/245553710.png)
+![](/frdocs/attachments/245553669/245553710.png)
 
-![](/attachments/245553669/245553704.png)
+![](/frdocs/attachments/245553669/245553704.png)
 
 In the case that your page has been executed, your breakpoint will look
 like this:
 
-![](/attachments/245553669/245553698.png)
+![](/frdocs/attachments/245553669/245553698.png)
 
-![](/attachments/245553669/245553692.png)
+![](/frdocs/attachments/245553669/245553692.png)
 
 
 ## Fire a Breakpoint
@@ -85,18 +85,18 @@ In order for the Breakpoint to be fired, you need to execute the
 page will halt the execution.
 
 If the breakpoint was fired, you should be able to see the Production
-Debugger icon ![](/attachments/245553669/245553757.png)
-on the top menu of FusionReactor. ![](/attachments/245553669/245553767.png)
+Debugger icon ![](/frdocs/attachments/245553669/245553757.png)
+on the top menu of FusionReactor. ![](/frdocs/attachments/245553669/245553767.png)
 
 You can either click on the **Debugger** icon or click the
 **Debugger** link in the **Debug Menu: **you will then see the **Paused
 Thread** - together with the **Timeout Countdown.** See screenshot
 below.
 
-![](/attachments/245553669/245553686.png)
+![](/frdocs/attachments/245553669/245553686.png)
 
 To start the **Production Debugger** session, you need to click on the
-Debug Icon: ![](/attachments/245553669/245553680.png)
+Debug Icon: ![](/frdocs/attachments/245553669/245553680.png)
 
 ## Change the IP Address to an External IP Address
 
@@ -111,4 +111,4 @@ example, we are going to use 192.168.0.1. To change the **Trigger
 Condition** to use this new IP Address, the breakpoint must be
 configured as follows.
 
-![](/attachments/245553669/245553674.png)
+![](/frdocs/attachments/245553669/245553674.png)

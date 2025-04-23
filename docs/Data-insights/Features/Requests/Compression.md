@@ -40,8 +40,8 @@ restrictions. Each restriction has two icons next to it:
 
 |Button|Description|
 |--- |--- |
-|![](/attachments/245550099/245550116.png)|Clicking this icon will change the **Add Restriction** form above into the **Edit Restriction** form, and it will be filled out with the details of the selected restriction. With this form you can change any of the information which is listed above (New MIME Type Restriction).<br>Click **Save** on the right to save the modified restriction details.|
-|![](/attachments/245550099/245550121.png)|Clicking this icon prompts gets you to confirm you want to delete this restriction. If you select **OK** the restriction is removed from the **Existing Restrictions** list and the page  is refreshed.|
+|![](/frdocs/attachments/245550099/245550116.png)|Clicking this icon will change the **Add Restriction** form above into the **Edit Restriction** form, and it will be filled out with the details of the selected restriction. With this form you can change any of the information which is listed above (New MIME Type Restriction).<br>Click **Save** on the right to save the modified restriction details.|
+|![](/frdocs/attachments/245550099/245550121.png)|Clicking this icon prompts gets you to confirm you want to delete this restriction. If you select **OK** the restriction is removed from the **Existing Restrictions** list and the page  is refreshed.|
 
 
 ## Exclude URLs
@@ -72,8 +72,8 @@ exclusions. Each exclusion has two icons next to it:
 
 |Button|Description|
 |--- |--- |
-|![](/attachments/245550141/245550157.png)|Clicking this icon takes you to the **Modify Exclusion** page. From this page you can change any of the information which is listed above (New URL Exclusion).|
-|![](/attachments/245550141/245550172.png)|Clicking this icon prompts if you are sure you want to delete this exclusion. Selecting **OK** removes the exclusion from the **Existing Exclusion** list and the page will be refreshed.|
+|![](/frdocs/attachments/245550141/245550157.png)|Clicking this icon takes you to the **Modify Exclusion** page. From this page you can change any of the information which is listed above (New URL Exclusion).|
+|![](/frdocs/attachments/245550141/245550172.png)|Clicking this icon prompts if you are sure you want to delete this exclusion. Selecting **OK** removes the exclusion from the **Existing Exclusion** list and the page will be refreshed.|
 
 
 ## Compression Settings

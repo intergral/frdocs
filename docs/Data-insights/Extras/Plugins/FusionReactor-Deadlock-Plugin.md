@@ -18,7 +18,7 @@ operation. Thread-1 may even have a hold on other resources (for example
 Object3, Object4 and Object5) that other threads require causing further
 deadlocks.
  
-[![](/attachments/245548182/245548200.jpg)](/attachments/245548182/245548200.jpg)
+[![](/frdocs/attachments/245548182/245548200.jpg)](/frdocs/attachments/245548182/245548200.jpg)
 
 There is no specific effect that a deadlock will have on your
 application as there are no two identical applications. Some of the

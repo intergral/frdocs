@@ -35,11 +35,11 @@ However, with the difference that a file is deleted after has been read.
 to find the transaction in the **Profiled Thread History** tab. ( *See
 screenshot below *)
 
-![](/attachments/245552522/245552529.png)
+![](/frdocs/frdocs/attachments/245552522/245552529.png)
 
 Lets take a better look of the transaction. ( *See screenshot below* )
 
-![](/attachments/245552522/245552534.png)
+![](/frdocs/attachments/245552522/245552534.png)
 
 By looking the screenshot above, we are able to see a number of
 differences in performance between the [this example](Profile-Example-2.md) and this

@@ -54,7 +54,7 @@ FRAM via your browser by typing localhost:8087, where 8087 is the
 default port for FRAM. In case you have used another port, then access
 FRAM by typing the configures port.
 
-![](/attachments/245549054/245549074.jpg)
+![](/frdocs/attachments/245549054/245549074.jpg)
 
 #### Install FusionReactor instance
 
@@ -66,7 +66,7 @@ System** feature  to search for an application server.
     is already installed in the following directory: C:\\applicationservers\\coldfusion\\2016.
     Add that directory in the **Root Scan Directory** field press the **Scan System** button. 
 
-    ![](/attachments/245549054/245549068.png)
+    ![](/frdocs/attachments/245549054/245549068.png)
 
 When the application server, for the above example Coldfusion 2016, is going
 to appear, press the add button :fa-plus: ,
@@ -74,7 +74,7 @@ and install a FusionReactor instance by following the **Configuration Dialog**.
 
 If the process has been successful, the following is displayed: 
 
-![](/attachments/245549054/245549086.png)
+![](/frdocs/attachments/245549054/245549086.png)
 
 !!! info "Learn more"
     [Install a FusionReactor Instance via FRAM](../Installation/Installer/Install.md)</a>.
@@ -102,7 +102,7 @@ to use the script with a ColdFusion 2016 application server.
 -   Firstly, you might want to change the location of the
     output of the script. For this example, I have set the location of
     the log file to be: C:\\FusionReactor\\etc\\cp.  
-    ![](/attachments/245549054/245549080.png)
+    ![](/frdocs/attachments/245549054/245549080.png)
 -   Secondly, you might want to change the **username**
     and the **password**. In case FRAM and the ColdFusion 2016
     application server are running under a **Local System account**,
@@ -114,14 +114,14 @@ to use the script with a ColdFusion 2016 application server.
     the **Windows Services**, locate the **FusionReactor AM Service**
     or the **ColdFusion 2016 Application server**, **right click &gt;
     Properties &gt; Log On**.  
-    ![](/attachments/245549054/245549098.png)
+    ![](/frdocs/attachments/245549054/245549098.png)
 -   As we previously said, the script has been created for a ColdFusion
     9 application server, so the last change will be in the **Command
     to execute** part of the script. There we need to change the value
     set COMMAND=sc \\\\%HOST% start **ColdFusion 9 Application Server** to
     set COMMAND=sc \\\\%HOST% start **ColdFusion 2016 Application Server**.  
 
-    ![](/attachments/245549054/245549092.png)
+    ![](/frdocs/attachments/245549054/245549092.png)
 
 **These were the main changes made in the script, please make sure that
 you SAVE any changes made before you apply the script.**
@@ -135,17 +135,17 @@ configuration. To do that, follow the steps described below:
 
 2.  Press the **Globe** icon and navigate to the **Manage Servers**
     tab.  
-    ![](/attachments/245549054/245549110.png)
+    ![](/frdocs/attachments/245549054/245549110.png)
 
 3.  Locate the ColdFusion 2016 application server and press 
     **Edit**.  
-    ![](/attachments/245549054/245549104.png)
+    ![](/frdocs/attachments/245549054/245549104.png)
 
 4.  In the **Script** field add the directory of the script. 
 
     !!! example
         C:\\FusionReactor\\etc\\cp\\Restart-Coldfusion9-OnWindows.bat  
-        ![](/attachments/245549054/245549126.png)
+        ![](/frdocs/attachments/245549054/245549126.png)
 
 5.  **Save** the new configuration.
 

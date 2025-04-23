@@ -245,12 +245,12 @@ These settings can be enabled in the ColdFusion Administrator for
 ColdFusion 9 - 2016, in the section 'Server Monitoring' and its
 'Monitoring Settings' page.
 
-![](/attachments/245547884/245547939.png)
+![](/frdocs/attachments/245547884/245547939.png)
 
 Alternatively, the settings an be enabled at the top of the ColdFusion
 server monitor itself.
 
-![](/attachments/245547884/245547933.png)
+![](/frdocs/attachments/245547884/245547933.png)
 
 If running ColdFusion 9.0 or earlier, you can only enabled the settings
 via the monitor itself.
@@ -265,7 +265,7 @@ Plugins"**,  pages available in the **"Plugins"** menu item in the
 In the list of plugins, locate the plugin named **"FusionReactor
 ColdFusion Plugin"**, see Figure 1.
 
-![FusionReactor ColdFusion Plugin in Active Plugins](/attachments/245547884/245547907.png)
+![FusionReactor ColdFusion Plugin in Active Plugins](/frdocs/attachments/245547884/245547907.png)
 
 Figure 1: To Configure the FusionReactor ColdFusion plugin, click the
 button **'Configuration'**.
