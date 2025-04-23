@@ -116,6 +116,11 @@ When FusionReactor attempts to start the instance, there is a timeout of 30 seco
     * The start up process timed out
     * There was No JRE specified for the Application Server
 
+### Video guide
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/928407289?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to install a FusionReactor instance using FRAM"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
 ## Upgrade the FusionReactor instance on your Application Server
 
 Upgrading an installed instance of FusionReactor requires you to first upgrade the FRAM installation:
@@ -143,7 +148,4 @@ In the **Configure Instance** modal, you can specify whether to restart the Appl
 Clicking **Next** and then **Confirm** upgrades FusionReactor and restart your Application Server.
 
 ![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-success.jpg)
-## Video guide
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/928407289?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to install a FusionReactor instance using FRAM"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

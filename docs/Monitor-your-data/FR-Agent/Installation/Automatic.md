@@ -2,7 +2,7 @@
 
 FusionReactor can be installed using either a full installer (recommended) or preconfigured archives. The full installer includes a Java Runtime Environment (JRE) and provides options for customizing the installation path, runtime user, password, and port. Preconfigured archives require an existing JRE on your server and use default settings.
 
-## Download options:
+## Download options
 
 * Full Installer (Recommended): [Download](/frdocs/Latest-updates/Downloads/) directly from the FusionReactor download page or use the direct links below:
     * [Windows](https://download.fusionreactor.io/FR/Latest/FusionReactor_windows-x64.exe)
