@@ -81,7 +81,7 @@ The number of files stored on the disk can be limit by a number to retain or a m
 
 
 !!! info "Learn more"
-    [Debug → Settings](/Debugger/Settings)
+    [Debug → Settings](/frdocs/Data-insights/Features/Debugger/Settings/)
 
 ## Enabling support for Event Snapshots
 

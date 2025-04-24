@@ -35,7 +35,7 @@ If you have security concerns about exposing the FR interface via your external 
 
 🔎**Find it**: **FusionReactor** > **Settings** > **Web Root**
 
-There are optionally configurable aspects of this feature using the [Web Root](/Settings/Main-Menu/#webroot) and [URI Matching settings](/Settings/Main-Menu/#webroot) in the FusionReactor Settings page, as discussed below.
+There are optionally configurable aspects of this feature using the [Web Root](/frdocs/Data-insights/Features/Settings/Main-Menu/#webroot) and [URI Matching settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#webroot) in the FusionReactor Settings page, as discussed below.
 
 
  ![Screenshot](../images/configuration/webroot.png)
@@ -51,5 +51,5 @@ The next setting controls the file extension (.cfm, .jsp, etc.) which would be u
 
 When using UEM via an external web server, there are additional considerations. 
 
-> 📖 **Learn more:**
-> [UEM manual](/UEM-and-Sessions/User-Experience-Monitoring/#using-uem-with-an-external-web-server).
+!!! info "Learn more"
+    [UEM manual](/frdocs/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples#using-uem-with-an-external-web-server).

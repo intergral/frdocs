@@ -66,7 +66,7 @@ Licensees may convey the work under these licenses
 | yaml	                            | [ISC](/tpl/ISC_LICENSE/)                                                                                   |
 
 ## FusionReactor Agent licenses
-[Third-party license agreements & additional notices](/Third_Party_License_Agreements/)
+[Third-party license agreements & additional notices](/frdocs/Admin-and-data/Third-Party-Licenses/Third_Party_License_Agreements/)
 
 ## EULA
 [EULA](https://fusion-reactor.com/eula-intergral-software-end-user-license-agreement/)
