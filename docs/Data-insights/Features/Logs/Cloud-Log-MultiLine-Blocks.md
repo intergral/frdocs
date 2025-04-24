@@ -22,4 +22,4 @@ You can specify the following rule so customer 2 order would be rolled up into a
 | ```/path/to/*.log``` | ```Customer \d .*``` | ```false```        |
 Alternatively if you switch the positive lookahead to `true` Customer 1 and 2 will be rolled up into a single message.
 
-For hints on specifying logfile patterns see [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+For hints on specifying logfile patterns see [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints/)
