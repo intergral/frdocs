@@ -85,7 +85,7 @@ nav:
         - Install: 
            - Automatic vs manual installation: Monitor-your-data/FR-Agent/Installation/manual-or-automatic.md
            - Automatic: Monitor-your-data/FR-Agent/Installation/Automatic.md
-           - FRAM: Monitor-your-data/FR-Agent/FRAM.md  
+           - FRAM: Monitor-your-data/FR-Agent/Installation/FRAM.md  
            - Manual: 
                 - Install: Monitor-your-data/FR-Agent/Installation/Manual.md
                 - Configuration examples: Monitor-your-data/FR-Agent/Installation/Configuration-examples.md

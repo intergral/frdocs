@@ -43,8 +43,8 @@ The **FusionReactor Production Debugger** allows you to **pause threads** and in
 
 You can access the **interactive debugger** from:  
 - The **Debugger** page by clicking the debug icon on a paused thread.  
-- A [running request or transaction](../Transactions/Activity.md) with a paused thread.  
-- The [Resources → Threads](../Resources/Threads.md) page by selecting the debug icon on a paused thread.  
+- A [running request or transaction](/frdocs/Data-insights/Features/Transactions/Activity/) with a paused thread.  
+- The [Resources → Threads](/frdocs/Data-insights/Features//Resources/Threads.md) page by selecting the debug icon on a paused thread.  
 
 The **Debugger** page provides an overview of **source and class files, configured breakpoints, and paused threads**, allowing for efficient debugging and issue resolution.  
 
@@ -236,7 +236,7 @@ Fields or variables of primitive types (e.g., `int`, `boolean`) or `java.lang.St
 Watches can be set in the **Debugger → Thread** view once a thread is paused at a breakpoint (located at the bottom right of the FR page). Valid watches include Java or CFML expressions. The interactive debugger will attempt to evaluate these watches using the current variables and CF scopes at runtime.
 
 
-![](/frdocs/Data-insights/Features/Debugger/images/2245553043.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245553043.png)
 
 Click the **+** to add a new watch, or press the red **X** to delete a watch. To modify a watch, simply click on the expression being evaluated. Watches are not deleted when the thread resumes; they will be re-evaluated the next time a breakpoint is hit.
 
@@ -246,7 +246,7 @@ The interactive debugger allows the user to control the flow of the
 thread, allowing them to view the variables, source and stack as the
 thread progresses through the code.
 
-![](/frdocs/Data-insights/Features/Debugger/images/2245552788.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552788.png)
 
 This is done via the controls at the top of the code viewer when viewing
 a paused thread.
@@ -276,7 +276,7 @@ Clicking the **Step Over** button causes the thread to execute until it reaches 
 
 When the thread is paused inside a CFML-specific file (CFC or CFM), the **Variables View** will display CFML scopes. These function similarly to local variables, but are sourced from the scope locations available at the point where the thread is paused.
 
-![](/frdocs/Data-insights/Features/Debugger/images/2245552824.png)
+![](/frdocs/Data-insights/Features/Debugger/images/245552824.png)
 
 ### CFML Set Variable
 
@@ -324,7 +324,7 @@ results, to aid your introduction to the debugger.
 ## Manual installation
 
 The debugger relies on a native library. If FusionReactor is not
-installed by FRAM, the [Manual Debug Installation](../Installation/Manual/Manual-Installation.md)
+installed by FRAM, the [Manual Debug Installation](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/)
 instructions must be followed to enable the Production Debugger.
 
 ## Known issues and limitations

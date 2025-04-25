@@ -7,7 +7,7 @@ FusionReactor functionality from directly within your application code
 and web pages.
 
 !!! info "Learn more"
-   [FusionReactor API JavaDoc](https://docs.fusionreactor.io/FRAPI/javadoc/overview-summary.html)
+    [FusionReactor API JavaDoc](https://docs.fusionreactor.io/FRAPI/javadoc/overview-summary.html)
 
 ## FRAPI Examples in ColdFusion
 

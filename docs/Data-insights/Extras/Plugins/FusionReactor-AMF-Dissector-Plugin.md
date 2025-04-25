@@ -6,8 +6,7 @@ AMF messages being sent to and from the server from within
 FusionReactor’s Request Detail page. AMF is a binary format used to
 serialize ActionScript objects. It is used primarily to exchange data
 between an Adobe Flash application and a remote service, usually over
-the internet. The AMF tab can be found under the [Request Details
-Page](../Requests/Request-Details.md).
+the internet. The AMF tab can be found under the [Request Details Page](/frdocs/Data-insights/Features/Requests/Request-Details/).
 
 FusionReactor makes it easy by decoding your streaming AMF connections
 to help you debug your applications.

@@ -5,7 +5,7 @@ and under certain server configurations.
 
 
 !!! info "Learn more"
-    [ColdFusion Plugin](../Plugins/FusionReactor-ColdFusion-Plugin.md)
+    [ColdFusion Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
 
 
 The ColdFusion Metrics page is used to display various details

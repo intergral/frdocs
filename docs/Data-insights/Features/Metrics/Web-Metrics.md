@@ -155,7 +155,7 @@ The following is displayed in this table:
 
 ### Protection table
 
-This table displays the statistics of the [Crash Protection](../Crash-Protection/Crash-Protection.md)
+This table displays the statistics of the [Crash Protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/)
 triggers, displaying the type of protection that caused the trigger.
 
 ![](/frdocs/attachments/245549190/245549275.png)

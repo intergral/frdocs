@@ -4,7 +4,7 @@ title: Deadlock
 The FusionReactor Deadlock plugin polls all Java threads running in the
 JVM that your server is running on every 30 seconds. Any Java thread
 deadlocks detected are written to a log file (deadlock.log, see below)
-and a [notification](../UI/Notifications.md) (see below) is
+and a [notification](/frdocs/UI/Notifications/) (see below) is
 created for that particular deadlock. 
 
 A deadlock occurs when two or more threads are waiting for each other to

@@ -13,12 +13,12 @@ There are several log files that you can be useful import and analyze:
 -   [memory\[\*\].log](Memory-Logs.md)
 -   [gc\[\*\].log](Files/Garbage-Collection-Logs.md)
 
-If you are using the [FusionReactor ColdFusion Plugin](../Plugins/FusionReactor-ColdFusion-Plugin.md)
+If you are using the [FusionReactor ColdFusion Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
 plugin then you will also have access to the following additional log files:
 
--   [dbpoolstats.log](../Plugins/FusionReactor-ColdFusion-Plugin.md#cf-stats)
--   [hitcountstats.log](../Plugins/FusionReactor-ColdFusion-Plugin.md#cf-hit-count)
--   [realtimestats.log](../Plugins/FusionReactor-ColdFusion-Plugin.md#cf-realtime)
+-   [dbpoolstats.log](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/#cf-stats)
+-   [hitcountstats.log](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/#cf-hit-count)
+-   [realtimestats.log](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/#cf-realtime)
 
 
 
