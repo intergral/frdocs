@@ -30,7 +30,7 @@ Use the auto discovery tool to scan your server and automatically locate your Ja
 
 
 !!! tip 
-    This is a manual process so if you have over 100 servers,  we recommend manual activation or [scripting](/frdocs/Best-Practices/Installation/) to install FR.
+    This is a manual process so if you have over 100 servers,  we recommend manual activation or [scripting](/frdocs/Best-Practices/Installation/scripted1/) to install FR.
 <br>
 
 ## Step 3: Install the Observability Agent using FRAM
