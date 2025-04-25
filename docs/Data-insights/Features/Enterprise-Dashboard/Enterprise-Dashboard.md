@@ -140,7 +140,7 @@ Amazon EC2 instance was used.
 Navigate to the **Manage Servers** tab and **add** all the details of
 the external server as described in the section above. 
 
-![](/frdocs/Data-insights/Features/Enterprise-Dashboard/images/245548897.jpg)
+![](/frdocs/docs/Data-insights/Features/Enterprise-Dashboard/images/245548897.png)
 
 From the screenshot above, we see that the Status code of the
 FusionReactor instance with name "tomcat8\_External\_Server" is set to
@@ -259,7 +259,7 @@ You can manually add a server in the **Manage Servers** page of the **Enterprise
 
 Instances that were manually added to the **Enterprise Dashboard** will be actively monitored and generate alerts if an instance restarts or becomes unresponsive.
 
-These alerts come in the form of [notifications in FusionReactor](../UI/Notifications.md) or through an email alert.
+These alerts come in the form of [notifications in FusionReactor](/frdocs/UI/Notifications/) or through an email alert.
 
 ![Instance unavailable alert](/images/Enterprise-Dashboard/Instance-Unavailable-Email.jpg)
 

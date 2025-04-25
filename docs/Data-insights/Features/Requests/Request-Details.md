@@ -132,7 +132,7 @@ The AMF tabs displays detailed information about any AMF data that has been used
 FusionReactor **AMF Dissector**.  AMF is typically used for data transfer in Flash Remoting and in Flex-based Rich Internet Applications, as well as those using Flash Remoting.
 
 !!! info "Learn more"
-    [AMF Dissector Plugin](../Plugins/FusionReactor-AMF-Dissector-Plugin.md)
+    [AMF Dissector Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin/)
 
 ![](/frdocs/attachments/245550303/245550436.png)
 
@@ -162,12 +162,12 @@ The Logging tab displays log statements captured by the Log Tracker plugin throu
 ## Json Data
 
 !!! info "Learn more"
-    [Json Data Tracker Plugin](../Plugins/FusionReactor-Json-Data-Tracker-Plugin.md)
+    [Json Data Tracker Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin/)
 
 ## Event Snapshot
 
 !!! info "Learn more"
-    [Event Snapshot](../Debugger/Event-Snapshot.md) page
+    [Event Snapshot](/frdocs/Data-insights/Features/Debugger/Event-Snapshot/) page
 
 ___
 

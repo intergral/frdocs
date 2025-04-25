@@ -41,7 +41,7 @@ Once the instance CPU has breached this threshold (specified as a percentage of
 ## Email alert
 
 Configure your FusionReactor instance to send an email when
-Crash Protection is fired. To do this you need to setup the [email configuration](../Configuration/Email-Configuration.md) and enable notification emails in the [Crash Protection Settings](/frdocs/Data-insights/Features/Crash-protection/Settings/).
+Crash Protection is fired. To do this you need to setup the [email configuration](/frdocs/Troubleshooting/Configuration/Email-Configuration/) and enable notification emails in the [Crash Protection Settings](/frdocs/Data-insights/Features/Crash-protection/Settings/).
 
 To avoid a flood of email in marginal situations, notification can be
 turned off completely, or can be set to only send email once in a given

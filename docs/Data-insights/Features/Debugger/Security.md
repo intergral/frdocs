@@ -17,7 +17,7 @@ The Production Debugger provides the ideal solution for developers to gain insig
 ![!Screenshot](/frdocs/Data-insights/Features/Debugger/images/thread2.png)
 
 !!! info "Learn more"
-    [Debugger](/frdocs/Data-insights/Features/Debugger/images/Overview/)
+    [Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
 
 ### Event Snapshots
 

@@ -104,7 +104,7 @@ To send the system logs
 Testing your scrape pattern displays a list of matching log files that will now be scraped.
 
 !!! info "Learn more" 
-    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+    [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints/)
 
 ## Log exclusion
 

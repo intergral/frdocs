@@ -3,7 +3,7 @@ title: Notification Generator
 
 The Notification Generator plugin allows you to create notifications
 whilst logged into FusionReactor. See
-the [Notifications](../UI/Notifications.md) page for
+the [Notifications](/frdocs/UI/Notifications/) page for
 information on what a notification is.
 
 ## Usage

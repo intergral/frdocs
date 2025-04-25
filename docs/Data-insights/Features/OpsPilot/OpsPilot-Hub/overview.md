@@ -28,5 +28,5 @@ OpsPilot Hub is accessible through the OpsPilot tab in the FusionReactor Cloud i
 
 2. [Knowledge](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/): Add and maintain your organization's operational knowledge.
 
-3. [Integrations](/frdocs/Data-insights/Features/OpsPilot/integrations-overview/): Connect and configure third-party tools like Jira to extend OpsPilot's capabilities.
+3. [Integrations](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/integrations-overview/): Connect and configure third-party tools like Jira to extend OpsPilot's capabilities.
 

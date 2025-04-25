@@ -4,7 +4,7 @@ ColdFusion Metrics are only available for certain ColdFusion versions
 and under certain server configurations.
 
 !!! info "Learn more"
-    [ColdFusion Plugin](../Plugins/FusionReactor-ColdFusion-Plugin.md)
+    [ColdFusion Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
 
 The ColdFusion System Metrics page is very similar to the ColdFusion
 Metrics page, except that it is more focused on showing information

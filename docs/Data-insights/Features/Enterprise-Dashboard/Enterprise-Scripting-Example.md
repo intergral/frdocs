@@ -43,7 +43,7 @@ the link in order to get a copy,
 <a href="http://www.fusion-reactor.com/download/" class="external-link">Download FusionReactor</a>.
 
 !!! info "Learn more"
-    [Installers](../Installation/Installer/Install.md)
+    [Installers](/frdocs/Monitor-your-data/FR-Agent/Installation/Automatic/)
 
 ### **Step 2**: Access FRAM via the browser & install FusionReactor instance
 
