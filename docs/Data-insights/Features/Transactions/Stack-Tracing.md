@@ -124,7 +124,7 @@ displayed at the top of the page to show this.
 !!! info 
     Lock links are available from any page showing locks (Stack Traces, Debug Frames, Profiles).
 
-[![](/attachments/245550463/245550493.png)](/frdocs/attachments/245550463/245550493.png)
+![](/frdocs/attachments/245550463/245550493.png)
 
 ## Thread / Transaction table
 

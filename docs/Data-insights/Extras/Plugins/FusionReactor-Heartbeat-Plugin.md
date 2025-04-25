@@ -11,7 +11,7 @@ Constantly logs whether or not a specific instance is up (running).
 
 ## Configuration
 
-This plugin can be configured in [Enterprise Settings](../Enterprise-Dashboard/Settings.md).
+This plugin can be configured in [Enterprise Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Settings/).
 
 |Configuration|Description|
 |--- |--- |
