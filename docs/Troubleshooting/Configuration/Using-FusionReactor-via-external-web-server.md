@@ -38,7 +38,7 @@ If you have security concerns about exposing the FR interface via your external 
 There are optionally configurable aspects of this feature using the [Web Root](/frdocs/Data-insights/Features/Settings/Main-Menu/#webroot) and [URI Matching settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#webroot) in the FusionReactor Settings page, as discussed below.
 
 
- ![Screenshot](../images/configuration/webroot.png)
+ ![Screenshot](/frdocs/Troubleshooting/images/webroot.png)
 ### Web Root
 
 The first setting here is **Web Root**. This is the root path for FusionReactor requests (whether accessed via an external web server or FusionReactor's own web server). The default web root value is /fusionreactor, but this could be changed, if you prefer. For example, changing this **Web Root** setting to /this/is/fusionreactor will make FusionReactor available from the path http://127.0.0.1:8088/this/is/fusionreactor.

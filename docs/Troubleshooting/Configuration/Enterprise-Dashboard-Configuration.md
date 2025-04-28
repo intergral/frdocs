@@ -8,8 +8,8 @@ From this dashboard, you can:
 
 *  set thresholds for instances to enter a warning or error state based on the resource usage. 
 
-> 📖 **Learn more:**
-> [Enterprise Dashboard features](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/).
+!!! info "Learn more"
+    [Enterprise Dashboard features](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/).
 
 
 Below are three common configurations you may want to setup when you using FusionReactor.
@@ -21,8 +21,8 @@ We recommend using the **Ephemeral Data Service** in FusionReactor to automatica
 
 For a working example of configuring automatic registration to the Enterprise Dashboard in Docker: 
 
-> 📖 **Learn more:**
-> [Ephemeral Docker example](https://github.com/intergral/fusionreactor-docker/tree/master/ephemeral).
+!!! info "Learn more"
+    [Ephemeral Docker example](https://github.com/intergral/fusionreactor-docker/tree/master/ephemeral).
 
 {!Common/ED_FRAPI_Registration_Warning!}
 
@@ -98,28 +98,28 @@ Within the **Enterprise Dashboard** instances will change colour depending on th
 
 If any instance within a group changes to a Warning or Error state, the group itself will change to this state.
 
-![ED Memory Setting](../images/configuration/ED_Statuses.jpg)
+![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Statuses.jpg)
 
 You can configure when an instance will enter either the Warning or Error state in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Settings.md).  Changing these settings allows you to monitor the health of your infrastructure and know if you are experiencing any issues quickly.
 
 In **Memory** you can configure the percentage of Heap memory used required to be a warning or error state.
 
-![ED Memory Setting](../images/configuration/ED_Mem_Status.jpg)
+![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Mem_Status.jpg)
 
 In **Average Request Time** you can configure a warning or error for when the average request time in the last 60 seconds ia above
  a millisecond value.
 
-![ED Memory Setting](../images/configuration/ED_Req_Status.jpg)
+![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Req_Status.jpg)
 
 In **JDBC** you can configure a warning or error for when the average JDBC request time in the last 60 seconds ia above
  a millisecond value.
 
- ![ED Memory Setting](../images/configuration/ED_JDBC_Status.jpg)
+ ![ED Memory Setting](/frdocs/Troubleshooting/images/ED_JDBC_Status.jpg)
 
  In **Slow Requests** you can configure a warning or error when the number of Slow requests in the last 60 seconds is above a
   defined value.
 
-![ED Memory Setting](../images/configuration/ED_Slow_Status.jpg)
+![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Slow_Status.jpg)
 
 ## Offline instance alerts
 
@@ -135,19 +135,19 @@ In order to detect if a server becomes unavailable, the **Enterprise Dashboard**
 
 It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Enterprise-Dashboard.md) page.
 
-![Screenshot](../images/configuration/serverstart.png)
+![Screenshot](/frdocs/Troubleshooting/images/serverstart.png)
 
 Under **Server Shutdown/Startup Alerts** you can disable these alerts entirely, or specify whether to receive emails on shutdown only.
 
-![ED Alert Setting](../images/configuration/ED_Alert_Setting.jpg)
+![ED Alert Setting](/frdocs/Troubleshooting/images/ED_Alert_Setting.jpg)
 
 Under **Heartbeat Settings** you can configure the heartbeat interval, timeout and failure threshold.
 
-![Screenshot](../images/configuration/heartbeat.png)
+![Screenshot](/frdocs/Troubleshooting/images/heartbeat.png)
 
 While in most cases these settings should provide optimal alerts, it may be that at times your application server stalls and can stop serving requests for a limited time. For example, if a large Garbage Collection is occurring. When this happens it is possible to receive false alarms that your application is unavailable.
 
-![ED Heartbeat Setting](../images/configuration/ED_Heartbeat_Setting.jpg)
+![ED Heartbeat Setting](/frdocs/Troubleshooting/images/ED_Heartbeat_Setting.jpg)
 
 !!! tip
     Increase the heartbeat interval or failure threshold to prevent these false alarms.

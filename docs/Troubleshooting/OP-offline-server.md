@@ -10,13 +10,13 @@ When instances are added to the **Enterprise Dashboard** either by [manually](..
 
 In order to detect if a server becomes unavailable, the **Enterprise Dashboard** uses a heartbeat mechanism. This means that by default it will attempt to contact the monitored FusionReactor instance, after three failed attempts we assume that the instance is no longer available.
 
-It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Enterprise-Dashboard.md) page.
+It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
 
 ![Screenshot](/frdocs/Troubleshooting/images/serverstart.png)
 
 Under **Server Shutdown/Startup Alerts** you can disable these alerts entirely, or specify whether to receive emails on shutdown only.
 
-![ED Alert Setting](../images/configuration/ED_Alert_Setting.jpg)
+![ED Alert Setting](/frdocs/Troubleshooting/images/ED_Alert_Setting.jpg)
 
 Under **Heartbeat Settings** you can configure the heartbeat interval, timeout and failure threshold.
 

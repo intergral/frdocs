@@ -71,7 +71,7 @@ This bit of code will print out a list of all requests currently
 running. (We've added a wait at the bottom so we can run it several
 times and get a result something like this:
 
-![](/images/FRAPI/frapi2.png)
+![](/frdocs/Data-insights/Extras/frapi2.png)
 
 ### The FusionRequestSurrogate
 
