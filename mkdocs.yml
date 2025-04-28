@@ -325,7 +325,7 @@ nav:
         - Settings: 
             - Data-insights/Features/Settings/CPU-Sampler.md
             - Data-insights/Features/Settings/Debugger.md
-            - Enterprise Dashboard: Data-insights/Features/Settings/Enterprise-Dashboard.md
+            - Enterprise Dashboard: Data-insights/Features/Enterprise-Dashboard/Settings/
             - Data-insights/Features/Settings/Filter-Restrictions.md
             - Data-insights/Features/Settings/JDBC.md
             - Data-insights/Features/Settings/Logging.md

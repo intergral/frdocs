@@ -17,7 +17,7 @@ current status of FusionReactor.
 |Icon|Name|Notes|
 |--- |--- |--- |
 |![](/frdocs/attachments/245547453/245547570.png)|Metrics||
-|![](/frdocsattachments/245547453/245547585.png)|Requests||
+|![](/frdocs/attachments/245547453/245547585.png)|Requests||
 |![](/frdocs/attachments/245547453/245547610.png)|Transactions||
 |![](/frdocs/attachments/245547453/245547671.png)|JDBC||
 |![](/frdocs/attachments/245547453/245547595.png)|UEM and Sessions||
@@ -37,7 +37,7 @@ FusionReactor Menu.
 From this menu, you can set the various preferences that you want for
 your FusionReactor.
 
-![FusionReactor Menu](/attachments/245547453/245547755.png)
+![FusionReactor Menu](/frdocs/attachments/245547453/245547755.png)
 
 -   **Enable/Disable**: You can choose to turn
     on/off **WebRequest Tracking**, **User
@@ -52,8 +52,7 @@ your FusionReactor.
     not limited to **Email Settings**, **Web
     Root**, and **Instance Name**.
 -   **Restrictions:** You can add **filters for
-    request tracking** at this page. See [Filter
-    Restrictions](../Settings/Filter-Restrictions.md)
+    request tracking** at this page. See [Filter Restrictions](/frdocs/Data-insights/Features/Settings/Filter-Restrictions/)
 -   **Change Password**: Change passwords and
     add passwords for the Observer, Manager, and
     Administrator accounts here.
@@ -67,11 +66,11 @@ your FusionReactor.
 
 For additional details on these elements of the main FusionReactor menu,
 see the next page in this documentation on the
-[Main Menu](../Settings/Main-Menu.md) settings,
+[Main Menu](/frdocs/Data-insights/Features/Settings/Main-Menu/) settings,
 
 ## Notifications
 
-![](/attachments/245547453/245547509.png)
+![](/frdocs/attachments/245547453/245547509.png)
 
 Notifications created by the [Notifications
 Plugin](Notifications.md) in FusionReactor are shown here.
@@ -133,16 +132,15 @@ FusionReactor.
 license expiry banner 13 days before expiration, with its drop-down
 message box.
 
-![](/attachments/245547453/245547502.png)
+![](/frdocs/attachments/245547453/245547502.png)
 
 ## Enterprise Dashboard
 
 This is only available in **FusionReactor Enterprise Edition or higher**
 
-![](/attachments/245547453/245547496.png)
+![](/frdocs/attachments/245547453/245547496.png)
 
-The Globe Icon is used to access the** **[Enterprise
-Dashboard](../Enterprise-Dashboard/Enterprise-Dashboard.md) in FusionReactor. This
+The Globe Icon is used to access the [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/) in FusionReactor. This
 contains information about any other FusionReactor instances you are
 monitoring for other application servers at this location.
 
@@ -165,7 +163,7 @@ four options:
 
 #### Instance Management
 
-![](/attachments/245547453/245547490.png)
+![](/frdocs/attachments/245547453/245547490.png)
 
 To the right side of the top-menu, there will be the name of your
 current instance. If you have online instances in the Enterprise
@@ -180,7 +178,7 @@ FusionReactor web page for that instance.
 This is only available in **FusionReactor Ultimate
 Edition.**
 
-![](/attachments/245547453/245547484.png)
+![](/frdocs/attachments/245547453/245547484.png)
 
 With the addition of in FusionReactor 6, there is a now an alert that
 appears on the top menu when a thread is paused by a breakpoint being
@@ -190,7 +188,7 @@ click on this icon, you are redirected to the
 
 ## Home Button
 
-![](/attachments/245547453/245547478.png)
+![](/frdocs/attachments/245547453/245547478.png)
 
 By clicking on the Home icon in the top-right, you will be redirected to
 your chosen Homepage (if you have no configured one, this will be the
@@ -198,13 +196,13 @@ About page).
 
 To configure your chosen home page:
 
--   Go to a page with a  ![](/attachments/245547453/245547786.png)
+-   Go to a page with a  ![](/frdocs/attachments/245547453/245547786.png)
     button. This button will be in the top-right corner of the page.
     Pressing this button will configure your home page to be this page
 
 Not every page can be specified as a home page. Only pages with the
 
-![](/attachments/245547453/245547786.png)
+![](/frdocs/attachments/245547453/245547786.png)
 can be configured.
 
 ## Cloud Status
@@ -227,10 +225,10 @@ two connection to the Cloud:
 
 |Icon|Status|Meaning|
 |--- |--- |--- |
-|![](/attachments/245547453/245547665.png)|OK|Both the Control Channel and at least one Datapack Transport are available and successfully connected.|
-|![](/attachments/245547453/245547682.png)|Degraded|The Control Channel connection has failed, but at least one Metric Transport is successfully uploading periodic data. FusionReactor cloud will show statistical data, but immediate requests for data will not run successfully, and may time out.|
-|![](/attachments/245547453/245547682.png)|Degraded|The Metric Transport is failing to upload data, but a Control Channel connection is established. FusionReactor cloud will not show any new statistical data while in this state.|
-|![](/attachments/245547453/245547693.png)|Disconnected|Neither the Control Channel nor any Metric Transport could connect to FusionReactor cloud.|
+|![](/frdocs/attachments/245547453/245547665.png)|OK|Both the Control Channel and at least one Datapack Transport are available and successfully connected.|
+|![](/frdocs/attachments/245547453/245547682.png)|Degraded|The Control Channel connection has failed, but at least one Metric Transport is successfully uploading periodic data. FusionReactor cloud will show statistical data, but immediate requests for data will not run successfully, and may time out.|
+|![](/frdocs/attachments/245547453/245547682.png)|Degraded|The Metric Transport is failing to upload data, but a Control Channel connection is established. FusionReactor cloud will not show any new statistical data while in this state.|
+|![](/frdocs/attachments/245547453/245547693.png)|Disconnected|Neither the Control Channel nor any Metric Transport could connect to FusionReactor cloud.|
 
 FusionReactor only starts attempting to transfer periodic information
 one minute after startup.  If the Datapack Transport cannot connect, but
@@ -248,7 +246,7 @@ The Cloud menu item can be dropped down to allow access to:
 -   **Status: **Shows the status of the two communications channels,
     along with some hints to problem resolution (where applicable) and a
     link to the manual page for the status, which is
-    [here](../Cloud/Agent/Cloud-Status.md).
+    [here](/frdocs/Monitor-your-data/FR-Agent/Agent/Cloud-Status/).
 
 ## Decompilation
 
@@ -260,10 +258,10 @@ Throughout FusionReactor when ever there are Java Class names or Method
 names displayed, they are displayed as links. These links will open a
 new modal that will display the decompiled code. In addition to single
 Java Class names, if there is a Stack Trace, for example in the [Thread
-details page](../Resources/Threads.md) the decompiler modal will allow
+details page](/frdocs/Data-insights/Features/Resources/Threads/) the decompiler modal will allow
 for easily walking up and down the Stack Frames to assist in navigation.
 
-[![Decompiler UI](/attachments/245554957/245554969.png)](/attachments/245554957/245554969.png)
+[![Decompiler UI](/frdocs/attachments/245554957/245554969.png)](/frdocs/attachments/245554957/245554969.png)
 
 The top section of the modal contains the class name (and method name).
 Then there is a large section that contains the decompiled code, in this
@@ -298,7 +296,7 @@ most notable locations being:
 If you are accessing FusionReactor over the external server and attempt
 to decompile a class you will see the following notification:
 
-[![Decompile Error](/attachments/245550524/245550539.png)](/attachments/245550524/245550539.png)
+[![Decompile Error](/frdocs/attachments/245550524/245550539.png)](/frdocs/attachments/245550524/245550539.png)
 
 To enable decompilation over the external web server you must add a
 system property to your JVM start up properties of your application
