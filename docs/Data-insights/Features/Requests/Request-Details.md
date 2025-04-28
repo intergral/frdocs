@@ -1,7 +1,7 @@
 # Request Details
 
 You can get to the **Request Detail** page from any page which lists requests and
-pages linked from [Request Metrics](../Metrics/Web-Metrics.md).
+pages linked from [Request Metrics](/frdocs/Data-insights/Features/Metrics/Web-Metrics/).
 
 Clicking the **Request Details** button by a request or clicking on the URL field takes you to a page containing detailed information about that request.
 
@@ -80,7 +80,7 @@ perfect tool for identifying poorly performing code in your production environme
 You can profile any requests or transactions which are running on the JVM – e.g. Tomcat, JBoss, WildFly, Glassfish, Jetty etc. CFML applications can also be profiled.    
 
 !!! tip
-    Click on individual classes or methods, to perform [instant de-compilation](../UI/Overview.md#decompilation)  
+    Click on individual classes or methods, to perform [instant de-compilation](/frdocs/UI/Overview)  
 
 
 ![](/frdocs/attachments/245550303/245550322.jpg)
@@ -90,7 +90,7 @@ You can profile any requests or transactions which are running on the JVM – e.
 If an error is  detected, then details of this will be displayed in the **Error Details** tab.   This will include the error exception details, as well as a stack trace of where the error happened.
 
 !!! tip
-    Click on individual classes or methods, to perform [instant de-compilation](../UI/Overview.md#decompilation)  
+    Click on individual classes or methods, to perform [instant de-compilation](/frdocs/UI/Overview)  
 
 ![](/frdocs/attachments/245550303/245550316.jpg)
 

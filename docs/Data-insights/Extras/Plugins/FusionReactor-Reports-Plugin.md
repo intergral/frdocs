@@ -1,4 +1,4 @@
-title: Reports
+
 # FusionReactor Reports Plugin
 
 The report plugin polls the metrics every minute and gathers data throughout
@@ -13,7 +13,7 @@ for the day will remain persistent.
 
 This plugin is enabled by default, **but will not send an email until
 the email settings are set in FusionReactor-&gt;Settings**. For more
-information on setting these see [Email Settings](../Settings/Main-Menu.md).
+information on setting these see [Email Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#email-settings).
 Once these are set there is nothing else you need to do to start
 receiving reports.
 

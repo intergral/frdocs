@@ -7,7 +7,7 @@ There are two steps to this process:
 
 1. [Download Python library dependencies](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/#step-1-download-python-library-dependencies)
 
-2. [Instrument your code](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/Python/#step-2-instrument-your-code)
+2. [Instrument your code](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/#step-2-instrument-your-code)
 
 
 

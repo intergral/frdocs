@@ -77,7 +77,7 @@ If the process has been successful, the following is displayed:
 ![](/frdocs/attachments/245549054/245549086.png)
 
 !!! info "Learn more"
-    [Install a FusionReactor Instance via FRAM](../Installation/Installer/Install.md)</a>.
+    [Install a FusionReactor Instance via FRAM](/frdocs/Monitor-your-data/FR-Agent/Installation/Automatic/)</a>.
 
 ### **Step 3**: Script preparation
 

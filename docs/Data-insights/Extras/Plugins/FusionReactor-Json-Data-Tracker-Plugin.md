@@ -1,4 +1,4 @@
-title: Json Data Tracker
+
 
 # FusionReactor Json Data Tracker Plugin
 
@@ -24,4 +24,4 @@ shown below:
 ## Configuration
 
 The configuration options are located in [Requests >
-Settings > Json Data](../Requests/Settings.md#json-data).
+Settings > Json Data](/frdocs/Data-insights/Features/Requests/Settings/#json-data).

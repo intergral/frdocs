@@ -125,4 +125,4 @@ Example patterns to exclude the osgi and plugin logs of FusionReactor:
 Testing your exclude pattern will display a list of matching log files that will now be excluded from sending to the cloud.
 
 !!! info "Learn more" 
-    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+    [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints/)

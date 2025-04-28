@@ -184,9 +184,9 @@ Edition.**
 
 With the addition of in FusionReactor 6, there is a now an alert that
 appears on the top menu when a thread is paused by a breakpoint being
-triggered in the [Production Debugger](../Debugger/Overview.md). If you
+triggered in the [Production Debugger](/frdocs/Data-insights/Features/Debugger/Overview/). If you
 click on this icon, you are redirected to the
-[Debugger](../Debugger/Overview.md) page to further debug.
+[Debugger](/frdocs/Data-insights/Features/Debugger/Overview/) page to further debug.
 
 ## Home Button
 

@@ -223,7 +223,7 @@ After an email is sent, the debugger can pause the thread in the interactive deb
 
 ### Sampler graph - capture event data
 
-A breakpoint can be configured to generate a sample, enabling you to graph how often a specific breakpoint is triggered. This helps identify patterns in code execution and can highlight when certain issues occur. Once a breakpoint is set to trigger a sampler, the resulting graph will be available on the [Sampler Graphs](../Debugger/Overview.md#sampler-graphs) page. The graph series will remain until the breakpoint is deleted by the user.
+A breakpoint can be configured to generate a sample, enabling you to graph how often a specific breakpoint is triggered. This helps identify patterns in code execution and can highlight when certain issues occur. Once a breakpoint is set to trigger a sampler, the resulting graph will be available on the [Sampler Graphs](/frdocs/Data-insights/Features/Debugger/Overview/#sampler-graphs) page. The graph series will remain until the breakpoint is deleted by the user.
 
 ### Set Field Value
 
