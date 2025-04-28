@@ -164,7 +164,7 @@ Each service within the system allows for separate configuration of its RED metr
 | **Setting Alert Duration** | Define the required duration for which an anomaly must exceed your chosen threshold to trigger an alert. For example, an anomaly is recognized when its probability stays at or above a set level (like 95%) for a predetermined time (such as 4 minutes).
 
 
-![!Screenshot](../../images/Anomaly-detection/anomaly detection/RAQS.png)
+![!Screenshot](../../images/Anomaly-detection/RAQS.png)
 
 ## Custom Detectors
 

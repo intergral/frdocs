@@ -130,7 +130,7 @@ When FusionReactor attempts to start the instance, there is a timeout of 30 seco
 
 
 !!! tip
-    Check the [Instance Manager log file](../Logs/Files/Instance-Manager-Log.md) to diagnose why the start command failed. Likely causes for this are:
+    Check the [Instance Manager log file](/frdocs/Data-insights/Features/Logs/Files/Instance-Manager-Log/) to diagnose why the start command failed. Likely causes for this are:
 
 
    * There was a permissions issue starting the Application Server

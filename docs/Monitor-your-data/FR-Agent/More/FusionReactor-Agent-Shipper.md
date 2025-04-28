@@ -26,7 +26,7 @@ These logs are:
 ## Sending FusionReactor metric and transaction logs
 Logs generated from the FusionReactor Agent that contain the metrics, traces and support information are not shipped by default.
 
-You can enable sending of these logs in the [logging > cloud settings](/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/frdocs/Data-insights/Features/Logs/Cloud-Settings/#log-shipping).
+You can enable sending of these logs in the [logging > cloud settings](/frdocs/Data-insights/Features/Logs/Cloud-Settings/#log-shipping).
 
 ## Scraping additional logs using FusionReactor
 
@@ -42,7 +42,7 @@ This could include application logs for ColdFusion, Tomcat, Lucee or other appli
 !!! tip 
     When scraping additional logs, ensure that multiple FusionReactor instances are not scraping the same files, for example if you have 3 instances on one machine scraping system files or stdout / stderr. While this won't cause errors, it results in duplicate data.
 
-Configure scraped logs within [logging > cloud settings](/frdocs/Data-insights/Features/frdocs/Data-insights/Features/Logs/Cloud-Settings/#log-scraping).
+Configure scraped logs within [logging > cloud settings](/frdocs/Data-insights/Features/Logs/Cloud-Settings/#log-scraping).
 
 ### Scrape examples
 
@@ -65,10 +65,10 @@ Prevent log files shipping using a regex pattern in the [logging > cloud setting
 It is possible that applications can log sensitive data.
 
 For example if you log passwords in debug logs, these may need to be obfuscated:
+.
+![](/frdocs/Monitor-your-data/Log-monitoring/images/obfuscation.png)
 
-![](../../images/Logs/obfuscation.png)
-
-You have the ability to obfuscate and data within log files by adding regex replacement rules under [Logging > Cloud Obfuscation settings](/frdocs/Data-insights/Features/frdocs/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/).
+You have the ability to obfuscate and data within log files by adding regex replacement rules under [Logging > Cloud Obfuscation settings](/frdocs/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/).
 
 ## How to rollup multiple log lines into one
 

@@ -122,7 +122,7 @@
 | Improvement | Add JVM arg (-D) for disabling email notification from reports plugin.                                                                                        |
 | Improvement | Add JVM arg (-D) for setting homepage.                                                                                                                        |
 | Improvement | Add JVM args (-D) for setting passwords for manager and observer roles.                                                                                       |
-| New Feature | Implement transaction tracking for JMS/MDB. See [FusionReactor System Properties](./Configuration/FusionReactor-System-Properties.md) for configuration info. |
+| New Feature | Implement transaction tracking for JMS/MDB. See [FusionReactor System Properties](/frdocs/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) for configuration info. |
 | New Feature | Replace datapack with Prometheus Remote Write for sending FR metrics.                                                                                         |
 | Bug         | Protect against NullPointerException when detecting CommandBox servers.                                                                                       |
 | Improvement | Add JVM arg (-D) for disabling CommandBox server detection.                                                                                                   |                                                                                                      |
@@ -167,7 +167,7 @@
 | FR8392 | New Feature  | Transactions will be created to track RabbitMQ operations.                                                                                                                                                                                  |
 | FR8393 | New Feature  | Transactions will be created to track Kafka Streams operations.                                                                                                                                                                             |
 | FR8394 | Improvement  | The CF metrics graphs and CF system metrics graphs now have all metrics in ColdFusion 2021                                                                                                                                                  |
-| FR8395 | New Feature  | Support for setting up to 8 custom key-value labels on metrics, logs, and traces. [More info.](../Cloud/guides/data-labels)                                                                                                                 |
+| FR8395 | New Feature  | Support for setting up to 8 custom key-value labels on metrics, logs, and traces.                                                                                                                 |
 | FR8396 | Bug          | FR now shows the correct source code for recompiled classes in Lucee.                                                                                                                                                                       | 
 
 ## 9.1.0

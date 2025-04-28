@@ -193,7 +193,7 @@ about the configuration of the Breakpoints can be found here,
 [Breakpoint configuration](../Debugger/Breakpoints.md). When
 a new Breakpoint has been created, it can be viewed in FusionReactor
 under  **Debug &gt; Breakpoints**. For more information see the
-following link, [Production Debugger](../Debugger/Overview.md)
+following link, [Production Debugger](/frdocs/Data-insights/Features/Debugger/Overview/)
 
 ### Example: Lock links
 

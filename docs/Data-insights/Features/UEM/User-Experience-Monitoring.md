@@ -108,7 +108,7 @@ the time of server execution is not included in the client time.
 
 
 !!! note
-    It is safe to cache the FRAPI object to use for other [FRAPI](../FRAPI/FRAPI.md) calls.
+    It is safe to cache the FRAPI object to use for other [FRAPI](/frdocs/Data-insights/Extras/FRAPI/) calls.
 
 #### JSP Script example
 

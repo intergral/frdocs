@@ -44,7 +44,7 @@ The **FusionReactor Production Debugger** allows you to **pause threads** and in
 You can access the **interactive debugger** from:  
 - The **Debugger** page by clicking the debug icon on a paused thread.  
 - A [running request or transaction](/frdocs/Data-insights/Features/Transactions/Activity/) with a paused thread.  
-- The [Resources → Threads](/frdocs/Data-insights/Features//Resources/Threads.md) page by selecting the debug icon on a paused thread.  
+- The [Resources → Threads](/frdocs/Data-insights/Features/Resources/Threads.md) page by selecting the debug icon on a paused thread.  
 
 The **Debugger** page provides an overview of **source and class files, configured breakpoints, and paused threads**, allowing for efficient debugging and issue resolution.  
 

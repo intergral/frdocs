@@ -41,10 +41,10 @@ The stack traces in FusionReactor are are displayed in two formats: **Rich** and
 
 ![](/frdocs/attachments/245550463/245550498.png)
 
--   Clicking on the **blue** class name opens up the [decompile](../UI/Overview.md#decompilation) code
+-   Clicking on the **blue** class name opens up the [decompile](/frdocs/UI/Overview/) code
     for the specific class.
 
--   Clicking on the **red** method name opens up the [decompile](../UI/Overview.md#decompilation) code
+-   Clicking on the **red** method name opens up the [decompile](/frdocs/UI/Overview/) code
     for the method, or methods if there are more than one method with
     the same name, of the specific class.
 
@@ -53,12 +53,12 @@ The stack traces in FusionReactor are are displayed in two formats: **Rich** and
     location prefilled. 
 
 
-With **FusionReactor** it is possible to [decompile](../UI/Overview.md#decompilation) both Java and CFML (cfc
+With **FusionReactor** it is possible to [decompile](/frdocs/UI/Overview/) both Java and CFML (cfc
 and cfm files). If **FusionReactor** has access to the CFML code we will
 display the cfm or cfc file as it is stored on disk, however if
 **FusionReactor** has no access to the code decompiled Java code for your
 CFML will be displayed. Allowing **FusionReactor** access to the application
-code can be configured in [Debug Sources](../Debugger/Sources.md)
+code can be configured in [Debug Sources](/frdocs/Data-insights/Features/Debugger/Sources/)
 
 ## Debug
 
@@ -77,7 +77,7 @@ failed due to an **Exception**, from the **Request Detail** page:
 ![](/frdocs/attachments/245550463/245550508.png)
 
 !!! info "Learn more"
-    [Debug](../Debugger/Overview.md).
+    [Debug](/frdocs/Data-insights/Features/Debugger/Overview/).
 
 
 ## Locks

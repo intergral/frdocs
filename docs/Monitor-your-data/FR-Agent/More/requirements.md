@@ -15,7 +15,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
     The native debugger library only supports 64 bit operating systems on Windows and Mac OS
     and is only provided for aarch64 and amd64 processors on Linux operating systems.
 
-#### ![](/images/requirements/ms.gif) Windows
+#### ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/ms.gif) Windows
 
   * Microsoft Windows Server 2022
   * Microsoft Windows Server 2019
@@ -28,7 +28,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
   * Microsoft Windows 8
   * Microsoft Windows 7
 
-#### ![](/images/requirements/tux.gif) Linux
+#### ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/tux.gif) Linux
 
   * Red Hat Enterprise Linux 5 + Above
   * openSuse Linux 10.2 – 12.2
@@ -40,7 +40,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
   * Kubuntu 9 + Above
   * Fedora 15 + Above
 
-#### ![](/images/requirements/apple.gif) macOS
+#### ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/apple.gif) macOS
 
   * Apple macOS 13: "Ventura"
   * Apple macOS 12: "Monterey"
@@ -63,7 +63,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 ### Servers
 
-#### ![](/images/requirements/j2eee.gif) J2EE / Other Servers
+#### ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/j2eee.gif) J2EE / Other Servers
 
   * Apache Tomcat 7 – 10
   * JBoss AS 6 / 7
@@ -72,7 +72,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
   * GlassFish 4 / 5
   * Payara 5
 
-#### ![](/images/requirements/cf1.gif)  ColdFusion Servers
+#### ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/cf1.gif)  ColdFusion Servers
 
   * Adobe ColdFusion 2023
   * Adobe ColdFusion 2023
@@ -92,7 +92,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 | | | | |
 | - | - | - | - |
-| ![](/images/requirements/chrome.png) <br>Chrome 21+ | ![](/images/requirements/firefox.png) <br>Firefox 20+ | ![](/images/requirements/safari.png) <br>Safari<br><br>Windows: Safari 5.1.7+<br>Mac OSX: Safari 5.1.9+ | ![](/images/requirements/edge.png) <br>Microsoft Edge |
+| ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/chrome.png) <br>Chrome 21+ | ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/firefox.png) <br>Firefox 20+ | ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/safari.png) <br>Safari<br><br>Windows: Safari 5.1.7+<br>Mac OSX: Safari 5.1.9+ | ![](/frdocs/Monitor-your-data/FR-Agent/More/requirements/edge.png) <br>Microsoft Edge |
 
 !!!warning "Internet Explorer support removed"
     Due to security concerns Internet Explorer support was removed in FusionReactor 8.5.0 and above.

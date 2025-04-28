@@ -17,7 +17,7 @@ With this in mind, the ability to quickly correlate the three provides a signifi
 ## Logs to traces
 Logs can be linked to their corresponding traces via a trace ID, provided the log includes one as a field.
 
-| <a href="/images/Tracing/loki-settings.png" target="_blank">![](/images/Tracing/loki-settings.png)</a> |
+| <a href="/frdocs/images/Tracing/loki-settings.png" target="_blank">![](/frdocs/images/Tracing/loki-settings.png)</a> |
 | -- |
 | Loki settings allowing linkage to Tempo spans via a trace ID field. |
 
@@ -27,7 +27,7 @@ Traces can be linked to potentially relevant logs by matching a span's attribute
 !!! example
     Transaction logs (request.log, transaction.log and fr-exception.log) are logged with an app_name label. Use this to show logs that occurred within a specific application during a span's duration. 
 
-| <a href="/images/Tracing/tempo-settings.png" target="_blank">![](/images/Tracing/tempo-settings.png)</a> |
+| <a href="/frdocs/images/Tracing/tempo-settings.png" target="_blank">![](/frdocs/images/Tracing/tempo-settings.png)</a> |
 | -- |
 | Tempo settings allowing linkage to Loki via an `app_name` tag. |
 

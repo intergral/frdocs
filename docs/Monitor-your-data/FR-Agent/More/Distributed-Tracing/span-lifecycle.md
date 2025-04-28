@@ -15,7 +15,7 @@ A trace parent header is also injected if the span is of the necessary flavor ty
 ## During a span
 If an error is thrown during the span, an event will be recorded on the span. This includes the exception type, message and stacktrace.
 
-| <a href="/images/Tracing/trace.png" target="_blank">![](/images/Tracing/trace.png)</a> |
+| <a href="/frdocs/images/Tracing/trace.png" target="_blank">![](/frdocs/images/Tracing/trace.png)</a> |
 | -- |
 | An example of a span with a trace, displaying a captured error and a limited example of attributes. |
 

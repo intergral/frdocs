@@ -16,18 +16,18 @@ current status of FusionReactor.
 
 |Icon|Name|Notes|
 |--- |--- |--- |
-|![](/attachments/245547453/245547570.png)|Metrics||
-|![](/attachments/245547453/245547585.png)|Requests||
-|![](/attachments/245547453/245547610.png)|Transactions||
-|![](/attachments/245547453/245547671.png)|JDBC||
-|![](/attachments/245547453/245547595.png)|UEM and Sessions||
-|![](/attachments/245547453/245547580.png)|Resources||
-|![](/attachments/245547453/245547739.png)|Profiler|Available in FusionReactor Ultimate or Developer Edition.|
-|![](/attachments/245547453/245547761.png)|Debug|Available in FusionReactor Ultimate or Developer Edition.|
-|![](/attachments/245547453/245547615.png)|Memory|Available in FusionReactor Ultimate or Developer Edition.|
-|![](/attachments/245547453/245547605.png)|Protection||
-|![](/attachments/245547453/245547590.png)|Logging||
-|![](/attachments/245547453/245547745.png)|System Resources|Available in FusionReactor Enterprise, Ultimate or Developer Edition.|
+|![](/frdocs/attachments/245547453/245547570.png)|Metrics||
+|![](/frdocsattachments/245547453/245547585.png)|Requests||
+|![](/frdocs/attachments/245547453/245547610.png)|Transactions||
+|![](/frdocs/attachments/245547453/245547671.png)|JDBC||
+|![](/frdocs/attachments/245547453/245547595.png)|UEM and Sessions||
+|![](/frdocs/attachments/245547453/245547580.png)|Resources||
+|![](/frdocs/attachments/245547453/245547739.png)|Profiler|Available in FusionReactor Ultimate or Developer Edition.|
+|![](/frdocs/attachments/245547453/245547761.png)|Debug|Available in FusionReactor Ultimate or Developer Edition.|
+|![](/frdocs/attachments/245547453/245547615.png)|Memory|Available in FusionReactor Ultimate or Developer Edition.|
+|![](/frdocs/attachments/245547453/245547605.png)|Protection||
+|![](/frdocs/attachments/245547453/245547590.png)|Logging||
+|![](/frdocs/attachments/245547453/245547745.png)|System Resources|Available in FusionReactor Enterprise, Ultimate or Developer Edition.|
 
 ## FusionReactor Menu
 
@@ -184,9 +184,9 @@ Edition.**
 
 With the addition of in FusionReactor 6, there is a now an alert that
 appears on the top menu when a thread is paused by a breakpoint being
-triggered in the [Production Debugger](../Debugger/Overview.md). If you
+triggered in the [Production Debugger](/frdocs/Data-insights/Features/Debugger/Overview/). If you
 click on this icon, you are redirected to the
-[Debugger](../Debugger/Overview.md) page to further debug.
+[Debugger](/frdocs/Data-insights/Features/Debugger/Overview/) page to further debug.
 
 ## Home Button
 

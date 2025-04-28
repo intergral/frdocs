@@ -27,7 +27,7 @@ Both the full installer and preconfigured installations include the FusionReacto
 There is a separate installer for each support platform.
 
 !!! note
-    As of FusionReactor version 8.1.0, 32-bit installers are no longer available. For 32-bit systems, please refer to the [manual installation guide](../Manual/Manual-Installation.md).
+    As of FusionReactor version 8.1.0, 32-bit installers are no longer available. For 32-bit systems, please refer to the [manual installation guide](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/).
 
 | Platform | Installer name | To run |
 | --- | --- | --- |
@@ -92,7 +92,7 @@ Running the installer for the first time, you will have the option to configure 
     ![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/Full-installer-complete.jpg){ width="350" height="250" }
 
 !!! warning
-    Installing the FRAM service is only the first step. You must use the Instance Manager (accessible via the provided link or URL) to install FusionReactor onto your application servers. Refer to [Configuring a FusionReactor instance in FRAM](/frdocs/Monitor-your-data/FR-Agent/FRAM/) for the next steps.
+    Installing the FRAM service is only the first step. You must use the Instance Manager (accessible via the provided link or URL) to install FusionReactor onto your application servers. Refer to [Configuring a FusionReactor instance in FRAM](/frdocs/Monitor-your-data/FR-Agent/Installation/FRAM/) for the next steps.
 
 
 ### Video guide

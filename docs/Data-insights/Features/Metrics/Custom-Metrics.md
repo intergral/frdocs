@@ -1,7 +1,7 @@
 # Custom Metrics
 
 On this page you can see custom metrics.  These metrics are usually
-submitted by using a [FRAPI](../FRAPI/FRAPI.md) method.
+submitted by using a [FRAPI](/frdocs/Data-insights/Extras/FRAPI/) method.
 
 ![](/frdocs/attachments/245549420/245549427.png)
 

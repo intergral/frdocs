@@ -5,7 +5,7 @@ This plugin captures log statements throughout the life of a
 transaction, and attaches these statements to the transaction as a
 context.
 
-This can be seen as part of the [request details](../Requests/Request-Details.md).
+This can be seen as part of the [request details](/frdocs/Data-insights/Features/Requests/Request-Details/).
 
 ## Supported Logging
 
@@ -36,5 +36,5 @@ statements.
 
 OFF disables log capturing.  
 
-Click Save Configuration on the right side of the window to save your
+Click **Save Configuration** on the right side of the window to save your
 configuration.
