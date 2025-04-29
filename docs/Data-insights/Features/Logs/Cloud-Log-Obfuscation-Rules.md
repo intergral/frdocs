@@ -21,4 +21,4 @@ You can create multiple obfuscation rules, allowing obfuscation to occur on diff
 | Remove any credit card information from FusionReactor logs | ```/instance/tomcat/logs/*``` | ```^(?:4[0-9]{12}(?:[0-9]{3})?``` | ```cardInfo```         |
 
 !!! info "Learn more" 
-    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
+    [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints//)

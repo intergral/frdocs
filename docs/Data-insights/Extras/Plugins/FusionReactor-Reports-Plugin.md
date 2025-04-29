@@ -100,7 +100,7 @@ the instance name of the FusionReactor. In this example the host name is
 "6e9b20a222d4" and the instance name is "tc-Docker-fr". This is also a
 link to the instance using the displayed host name (6e9b20a222d4). This
 can be changed using the "Host Name" setting on the [FusionReactor -&gt;
-Settings](../Settings/Main-Menu.md) page.
+Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/) page.
 
 The second line shows the date for which the report is for. In this
 example the date is "Monday, September 7, 2015". This means that the

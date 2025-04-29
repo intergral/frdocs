@@ -100,7 +100,7 @@ If any instance within a group changes to a Warning or Error state, the group it
 
 ![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Statuses.jpg)
 
-You can configure when an instance will enter either the Warning or Error state in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Settings.md).  Changing these settings allows you to monitor the health of your infrastructure and know if you are experiencing any issues quickly.
+You can configure when an instance will enter either the Warning or Error state in the [Enterprise Dashboard Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Settings/).  Changing these settings allows you to monitor the health of your infrastructure and know if you are experiencing any issues quickly.
 
 In **Memory** you can configure the percentage of Heap memory used required to be a warning or error state.
 
@@ -133,7 +133,7 @@ When instances are added to the **Enterprise Dashboard** either by [manually](..
 
 In order to detect if a server becomes unavailable, the **Enterprise Dashboard** uses a heartbeat mechanism. This means that by default it will attempt to contact the monitored FusionReactor instance, after three failed attempts we assume that the instance is no longer available.
 
-It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](../Enterprise-Dashboard/Enterprise-Dashboard.md) page.
+It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Settings/) page.
 
 ![Screenshot](/frdocs/Troubleshooting/images/serverstart.png)
 

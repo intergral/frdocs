@@ -21,7 +21,7 @@ on Productions systems.](#considerations-for-production-systems)
 1.  You must have FusionReactor 6.0.4 or above  
 
 2.  Go to FusionReactor-&gt;Plugins-&gt;Active Plugins  
-    ![](/frdocs/attachments/245547997/245548018.png)
+    ![](/frdocs/attachments/245547997/245548008.png)
 
 3.  On the Active Plugins page choose the FusionReactor ColdFusion
     Plugin Configuration  
