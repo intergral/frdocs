@@ -123,7 +123,7 @@ In **JDBC** you can configure a warning or error for when the average JDBC reque
 
 ## Offline instance alerts
 
-When instances are added to the **Enterprise Dashboard** either by [manually](../Enterprise-Dashboard/Enterprise-Dashboard.md#manage-servers) adding the server, or through the **Instance Manager** by [manually adding instances](../Enterprise-Dashboard/Enterprise-Dashboard.md#manually-adding-instances), you will receive alerts in the form of emails if an instance becomes unavailable.
+When instances are added to the **Enterprise Dashboard** either by [manually](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manage-servers) adding the server, or through the **Instance Manager** by [manually adding instances](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manually-adding-instances), you will receive alerts in the form of emails if an instance becomes unavailable.
 
 !!! note
     In order to receive these email alerts you must have the email settings for the instance correctly configured. 

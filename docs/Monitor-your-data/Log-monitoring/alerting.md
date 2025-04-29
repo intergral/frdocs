@@ -68,7 +68,7 @@ The condition of a rule can be configured to be greater, less than or equal to y
 
 A graphical representation of your query values and threshold values is displayed to the right of the condition:
 
-![](../../images/logging/LogAlertCondition.png)
+![](/frdocs/Monitor-your-data/Log-monitoring/images/LogAlertCondition.png)
 
 Here you can see at what point your alert would fire, and adjust the time period of your graph up to the last two weeks of data.
 

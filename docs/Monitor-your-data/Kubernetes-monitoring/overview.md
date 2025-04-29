@@ -76,7 +76,7 @@ Our **FusionReactor** Kubernetes monitoring integration gives you visibility int
 
 An easy-to-scan overview of the performance and resource demands of the different tenants in a cluster.
 
-![!Screenshot](../../images/K8scluster.png)
+![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
 
 
 
@@ -84,7 +84,7 @@ An easy-to-scan overview of the performance and resource demands of the differen
 
 Displays the resource demand for each individual pod, broken down per namespace.
 
-![!Screenshot](../../images/K8spod.png)
+![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8spod.png)
 
 ---
 !!! question "Need more help?"

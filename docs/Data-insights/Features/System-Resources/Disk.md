@@ -20,4 +20,4 @@ series:
 
 * **Disk Usage -** The current usage of disk at that data point.
 
-![](/frdocss/attachments/245554908/245554914.png)
+![](/frdocs/attachments/245554908/245554914.png)
