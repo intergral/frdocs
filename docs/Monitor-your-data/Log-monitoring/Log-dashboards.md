@@ -11,7 +11,7 @@ Some views are specifically designed to work with FusionReactor agent logs, othe
 
 The central log dashboard contains links to all log dashboards and can be used to quickly navigate between logging views.
 
-![](../../images/Logs/CentralDashboard.png)
+![](/frdocs/Monitor-your-data/Log-monitoring/images/CentralDashboard.png)
 
 Log dashboards will be added and improved over time. 
 This will include adding new categories of dashboards, new log views and new filters to gain insight and value from your logs.
@@ -22,7 +22,7 @@ From this dashboard, you can navigate into any log dashboard, then return to the
 
 The log events Dashboard allows you to quickly browse your logs, by filtering by log source and searching for any text within logs.
 
-![](../../images/Logs/events.png)
+![](/frdocs/Monitor-your-data/Log-monitoring/images/events.png)
 
 Within the dashboard you can view the rate of logs, as well as the log lines themselves.
 

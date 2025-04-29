@@ -53,7 +53,7 @@ It may be that we are able to send a mail to the SMTP server, but the mail serve
 
 If this is the case we will show **Email sent successfully**, but the email may never arrive in your mailbox. Please contact your mail server administrator.
 
-Any error FusionReactor sees when an attempt to send an email is stored in the [reactor.log](../Logs/Files/Reactor-Log.md). In this log file you will see the cause of the send failure and be able to diagnose what is stopping emails from being sent.
+Any error FusionReactor sees when an attempt to send an email is stored in the [reactor.log](/frdocs/Data-insights/Features/Logs/Files/Reactor-Log/). In this log file you will see the cause of the send failure and be able to diagnose what is stopping emails from being sent.
 
 ## Configuring Gmail with FusionReactor
 

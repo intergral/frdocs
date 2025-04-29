@@ -44,7 +44,7 @@ not be available. 
 |Button|Name|Description|
 |--- |--- |--- |
 |![](/frdocs/attachments/245548637/245548649.png)|Remove|Remove - removes this notification. Some notifications - usually serious issues - can't be removed. They will be removed by the originating system when the condition to which they pertain clears.|
-|![](/frdocs/attachments/245548637/245548643.png)![](/attachments/245548637/245548661.png)|Mark Read / Mark Unread|Mark Read - marks this notification as having been read.  It won't appear as a New Notification in Enterprise Dashboard, or the Notifications drop down. The row will be grayed out slightly to indicate this notification has been read. The Mark Read button will change to Mark Unread - which resets the notification back to its unread state.|
+|![](/frdocs/attachments/245548637/245548643.png)![](/frdocs/attachments/245548637/245548661.png)|Mark Read / Mark Unread|Mark Read - marks this notification as having been read.  It won't appear as a New Notification in Enterprise Dashboard, or the Notifications drop down. The row will be grayed out slightly to indicate this notification has been read. The Mark Read button will change to Mark Unread - which resets the notification back to its unread state.|
 
 ## Menu Options
 
