@@ -21,7 +21,7 @@ This guide shows you how to check your FusionReactor Cloud data and billing usag
     * Metrics
     * Logs
     * Traces
-    * Opspilot token consumption
+    * OpsPilot token consumption
        
 
 This dashboard provides a clear breakdown of your FusionReactor Cloud resource consumption.
