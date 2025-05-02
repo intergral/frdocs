@@ -1,10 +1,6 @@
 # Licensing
 
-FusionReactor is available in 4 editions with or without Cloud features:
-
-* STD - Standard Edition
-
-* ENT - Enterprise Edition
+FusionReactor is available in 2 editions with or without Cloud features:
 
 * ULT - Ultimate Edition
 
