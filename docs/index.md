@@ -321,7 +321,6 @@ hide:
 
   </div>
 
-
 <style>
 .doc-grid-item-link:hover * {
   color: #53AFDA !important; /* Use !important to override inline styles */

@@ -28,7 +28,6 @@ theme:
       primary: custom
       accent: custom
 
-
 nav:
   - Home: index.md
   - GETTING STARTED: 

@@ -13,7 +13,6 @@ FusionReactor’s **Email Reports#** offer an efficient way to monitor server pe
 * Admin-level permissions in FusionReactor
 
 
-
 ## Configure SMTP email settings
 
 ### Step 1: Access email settings
@@ -36,7 +35,6 @@ FusionReactor’s **Email Reports#** offer an efficient way to monitor server pe
 1. After entering the required fields, click **Save Settings**.
 2. Select **Send Test Email**.
 3. A green success banner will appear if the configuration is correct.
-
 
 
 ## 3. Enable & configure email reports
