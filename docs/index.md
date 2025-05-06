@@ -205,7 +205,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/frdocs/anomaly-detection" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -223,7 +223,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/opspilot-hub" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
