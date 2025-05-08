@@ -37,7 +37,7 @@ FusionReactor’s **Email Reports** offer an efficient way to monitor server per
 3. A green success banner will appear if the configuration is correct.
 
 
-## 3. Enable & configure email reports
+## Enable & configure email reports
 
 ### Step 1: Locate the reports plugin
 
