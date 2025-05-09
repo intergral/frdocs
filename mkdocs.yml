@@ -17,6 +17,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.action.edit  # This enables the edit button on each page
   language: en
   font:  
     text: 'Roboto'
