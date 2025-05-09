@@ -7,7 +7,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  favicon: images/FRAtom_White.svg
+  favicon: images/FRAtom_Blue.svg
   logo: images/FRAtom_White.svg
   features:
     - navigation.sections
@@ -84,17 +84,16 @@ nav:
               - Databases & other languages: Best-Practices/Installation/ObsAgent-OTel.md
      - FusionReactor Agent:
         - Overview: Monitor-your-data/FR-Agent/agent-overview.md
-        - Downloads: Latest-updates/Downloads.md
+        - Downloads: Monitor-your-data/FR-Agent/Installation/Download-Links.md
+        - MD5s: Monitor-your-data/FR-Agent/Installation/md5.md
         - Install: 
            - Automatic vs manual installation: Monitor-your-data/FR-Agent/Installation/manual-or-automatic.md
-           - Automatic: Monitor-your-data/FR-Agent/Installation/Automatic.md
-           - FRAM: Monitor-your-data/FR-Agent/Installation/FRAM.md  
+           - Automatic:
+               - Install: Monitor-your-data/FR-Agent/Installation/Automatic.md
+               - Using FRAM to deploy & manage instances: Monitor-your-data/FR-Agent/Installation/FRAM.md  
            - Manual: 
                 - Install: Monitor-your-data/FR-Agent/Installation/Manual.md
                 - Configuration examples: Monitor-your-data/FR-Agent/Installation/Configuration-examples.md
-                - More:
-                    - Download links: Monitor-your-data/FR-Agent/Installation/Download-Links.md
-                    - MD5s: Monitor-your-data/FR-Agent/Installation/md5.md
            - Docker: Monitor-your-data/FR-Agent/Installation/Docker.md         
            - CommandBox: Monitor-your-data/FR-Agent/Installation/CommandBox.md
         - Upgrade:
@@ -108,16 +107,8 @@ nav:
         - Configuration: 
            - System Properties: Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties.md
            - Managing reactor.conf: Monitor-your-data/FR-Agent/Configuration/reactorconf.md
-        - More:
-           - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
-           - Configuration: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
-           - Distributed tracing: 
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
+        - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
+        - Log collection: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
         - FAQs & troubleshooting: 
                - How to copy FusionReactor configuration between instances: Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances/
                - Troubleshooting/How-CVEs-are-addressed-in-the-FusionReactor-Agent.md
@@ -135,7 +126,6 @@ nav:
            - Local install using code snippets: Monitor-your-data/Observability-agent/Installation/Snippets.md
            - Docker: Monitor-your-data/Observability-agent/Installation/Docker.md
         - Configuration: Monitor-your-data/Observability-agent/Configuration.md
-        - Ingesting data into FR: Monitor-your-data/Observability-agent/Ingest.md
      - OpenTelemetry:
        - Overview: Monitor-your-data/OpenTelemetry/getting-started.md
        - Instrumentation guides:
@@ -404,7 +394,13 @@ nav:
               - Troubleshooting/OP-setting-up-reports.md 
         - Extras: 
             - FRAPI: Data-insights/Extras/FRAPI.md
-            - Observability Agent: Data-insights/Extras/fr-observability-agent.md
+            - Distributed tracing: 
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
             - Plugins:
               - Data-insights/Extras/Plugins/Overview.md
               - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
