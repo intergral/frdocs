@@ -1,6 +1,6 @@
 
 
-# Using FRAM
+# Using FRAM to deploy & manage instances
 
 Once FRAM is installed, you can deploy FusionReactor instances to your application servers. Remember, FRAM itself isn't a full FusionReactor instance; it provides the **Instance Manager** and the [Enterprise Dashboard](https://www.google.com/search?q=../Enterprise-Dashboard/Enterprise-Dashboard.md) to facilitate instance deployment and centralized monitoring.
 

@@ -1,6 +1,6 @@
-title: Static Endpoints
 
-# Static licensing endpoints
+
+# Static endpoints
 
 Some users run FusionReactor behind restricted firewalls which don't allow all outbound connections. In this case, these users may need to add specific firewall rules to allow FusionReactor to communicate with FusionReactor Cloud.
 
@@ -8,7 +8,7 @@ Some users run FusionReactor behind restricted firewalls which don't allow all o
 
 In order to communicate with the FusionReactor infrastructure, each FusionReactor instance attempts to connect to the following services, which are identified by their DNS names:
 
-* wss://cc.fusionreactor.io – port tcp/2804
+* wss://cc.fusionreactor.io – port tcp/2804 (FR 12 and below)
 * https://api.fusionreactor.io – port tcp/443
 
 
