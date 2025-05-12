@@ -32,7 +32,7 @@ Before installing FusionReactor instances, the **Instance Manager** needs to det
 During the scan, FusionReactor identifies application servers by looking for specific files. Upon completion, each detected server will be listed in the Instance Manager.
 
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-system-scan-no-instances.jpg)
+![](/Monitor-your-data/FR-Agent/Images/FRAM-system-scan-no-instances.jpg)
 
 
 With your application servers now detected, you can proceed with installing FusionReactor.
@@ -45,15 +45,15 @@ To set up a FusionReactor instance on an application server, click the **plus** 
 ### Configure Settings
 
 
-![Image title](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-configure-settings.jpg){ width="350" height="250" }
+![Image title](/Monitor-your-data/FR-Agent/Images/FRAM-install-configure-settings.jpg){ width="350" height="250" }
 
 The first tab, **Configure Settings**, allows you to define the instance name and connection details:
 
 
  * **FR Instance Name:** Defaults to the application server's name but can be customized.
- * **FR Port:** The port for the [Internal Web Server](/frdocs/Data-insights/Features/Settings/Main-Menu/#internal-http) (defaults to 8088 and increments if the port is in use).
+ * **FR Port:** The port for the [Internal Web Server](/Data-insights/Features/Settings/Main-Menu/#internal-http) (defaults to 8088 and increments if the port is in use).
  * **FR Address:** Optionally binds the FusionReactor port to a specific IP address. If disabled (default), it listens on all available addresses (0.0.0.0).
- * **External web server access:** Disables access to FusionReactor via the [External Web Server](/frdocs/Data-insights/Features/Settings/Main-Menu/), restricting access solely to the [Internal Web Server](/frdocs/Data-insights/Features/Settings/Main-Menu/#internal-http).
+ * **External web server access:** Disables access to FusionReactor via the [External Web Server](/Data-insights/Features/Settings/Main-Menu/), restricting access solely to the [Internal Web Server](/Data-insights/Features/Settings/Main-Menu/#internal-http).
 
 Click **Next** to proceed to the **Instance Password** tab.
 
@@ -61,23 +61,23 @@ Click **Next** to proceed to the **Instance Password** tab.
 ### Instance Password
 
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-password.jpg){ width="350" height="250" }
+![](/Monitor-your-data/FR-Agent/Images/FRAM-install-password.jpg){ width="350" height="250" }
 
 
 Here, you'll set and confirm the password for accessing the FusionReactor instance.
 
-Clicking **Next** will take you to the [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/) options.
+Clicking **Next** will take you to the [Enterprise Dashboard](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/) options.
 
 
 ### Enterprise Dashboard
 
 Choose whether to immediately add this instance to your Enterprise Dashboard.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-enterprise-dashboard.jpg){ width="350" height="250" }
+![](/Monitor-your-data/FR-Agent/Images/FRAM-install-enterprise-dashboard.jpg){ width="350" height="250" }
 
 
 !!! note
-    Select **No** if you intend to use the [Ephemeral Data Service](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#ephemeral-data-service).
+    Select **No** if you intend to use the [Ephemeral Data Service](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#ephemeral-data-service).
 
 
 Click **Next** to access the **Options** tab.
@@ -85,7 +85,7 @@ Click **Next** to access the **Options** tab.
 
 ### Options
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-options.jpg){ width="350" height="250" }
+![](/Monitor-your-data/FR-Agent/Images/FRAM-install-options.jpg){ width="350" height="250" }
 
 
 
@@ -120,17 +120,17 @@ The **restart** server option specifies whether your Application Server should b
 
 Clicking **Next** displays the **Confirm Settings** modal. If you click **Confirm** the instance of FusionReactor will be installed. If successful you will be redirected to the Instance Manager, where you will see a link to the FusionReactor instance.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-success.jpg)
+![](/Monitor-your-data/FR-Agent/Images/FRAM-install-success.jpg)
 
 If any error occurs during installation you'll see a **Start Failed** modal.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-install-error.jpg){ width="350" height="250" }
+![](/Monitor-your-data/FR-Agent/Images/FRAM-install-error.jpg){ width="350" height="250" }
 
 When FusionReactor attempts to start the instance, there is a timeout of 30 seconds in place, if your Application Server takes longer than 30 seconds to start, you may see **Start Failed** and as soon as the server comes online your server will then be running.
 
 
 !!! tip
-    Check the [Instance Manager log file](/frdocs/Data-insights/Features/Logs/Files/Instance-Manager-Log/) to diagnose why the start command failed. Likely causes for this are:
+    Check the [Instance Manager log file](/Data-insights/Features/Logs/Files/Instance-Manager-Log/) to diagnose why the start command failed. Likely causes for this are:
 
 
    * There was a permissions issue starting the Application Server
@@ -149,14 +149,14 @@ When FusionReactor attempts to start the instance, there is a timeout of 30 seco
 Upgrading an installed instance of FusionReactor requires you to first upgrade the FRAM installation:
 
 !!! info "Learn more"
-    [Upgrade Full Installer](/frdocs/Monitor-your-data/FR-Agent/Upgrade/Auto-upgrade/)
+    [Upgrade Full Installer](/Monitor-your-data/FR-Agent/Upgrade/Auto-upgrade/)
 
 
 
 Once the FRAM instance has been upgraded, in the Instance Manager you will see an **Upgrade** button appear next to the **Stop, Start/Restart** and **Remove** buttons.
 
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-button.jpg)
+![](/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-button.jpg)
 
 !!! note
     In order to upgrade FusionReactor the Application Server must be restarted, you may need to schedule the upgrade at a period of time where downtime is allowed.
@@ -164,7 +164,7 @@ Once the FRAM instance has been upgraded, in the Instance Manager you will see a
 
 Clicking the **Upgrade** button triggers the upgrade process.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-configure.jpg){ width="350" height="250" }
+![](/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-configure.jpg){ width="350" height="250" }
 
 
 In the **Configure Instance** modal, you can specify whether to restart the Application Server.
@@ -175,6 +175,6 @@ In the **Configure Instance** modal, you can specify whether to restart the Appl
 
 Clicking **Next** and then **Confirm** upgrades FusionReactor and restart your Application Server.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-success.jpg)
+![](/Monitor-your-data/FR-Agent/Images/FRAM-upgrade-success.jpg)
 
 

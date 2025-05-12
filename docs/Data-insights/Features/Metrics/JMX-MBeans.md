@@ -30,7 +30,7 @@ The JMX MBeans view consists of a tree representation of the current JMX
 hierarchy on the left, and tab panes for attributes and metadata on the
 right.
 
-![](/frdocs/attachments/245549330/245549375.png)
+![](/attachments/245549330/245549375.png)
 
 The tree can be unfolded to drill down through the hierarchy of JMX
 services.  Where an object supports instrumentation, it is colored blue
@@ -70,9 +70,9 @@ From left to right, the functionality presented is as follows:
 
 |Functionality|Description|
 |--- |--- |
-| ![](/frdocs/attachments/245549330/245549352.png) |Displays the FusionReactor graph associated with this tracked data.|
-| ![](/frdocs/attachments/245549330/245549358.png) |Instructs the FusionReactor AWS CloudWatch Metrics system to begin transferring this metric to CloudWatch. When Clicked, a dialog requests the CloudWatch Dimensions to be used for this series (see AWS CloudWatch Metrics). <br> The Play icon changes to a Stop icon to indicate this metric is being transferred to CloudWatch. Click this button again to stop transferring this value to CloudWatch.|
-| ![](/frdocs/attachments/245549330/245549369.png) |Removes this value from all FusionReactor tracking.|
+| ![](/attachments/245549330/245549352.png) |Displays the FusionReactor graph associated with this tracked data.|
+| ![](/attachments/245549330/245549358.png) |Instructs the FusionReactor AWS CloudWatch Metrics system to begin transferring this metric to CloudWatch. When Clicked, a dialog requests the CloudWatch Dimensions to be used for this series (see AWS CloudWatch Metrics). <br> The Play icon changes to a Stop icon to indicate this metric is being transferred to CloudWatch. Click this button again to stop transferring this value to CloudWatch.|
+| ![](/attachments/245549330/245549369.png) |Removes this value from all FusionReactor tracking.|
 
 ### Metadata
 
@@ -86,7 +86,7 @@ that bean (**MBeanAttributeInfo).**
 The **MBean Tracking Overview** provides a list of all attributes
 currently tracked by FusionReactor.
 
-![](/frdocs/attachments/245549391/245549397.png)
+![](/attachments/245549391/245549397.png)
 
 Attributes are listed by their owning bean, described in its position in
 the tree using **slash notation**. 
@@ -103,12 +103,12 @@ focussed.
 The **JMX MBean Graphs** page displays the tracked data for a single
 MBean-tracked value.
 
-![](/frdocs/attachments/245549403/245549408.png)
+![](/attachments/245549403/245549408.png)
 
 The drop-down at the top can be used to select which attribute should be
 displayed.
 
-![](/frdocs/attachments/245549403/245549414.png)
+![](/attachments/245549403/245549414.png)
 
 The range selector presents **Live**, **last hour**, **last
 day** or **last week** values, while the zoom selector zooms the graph

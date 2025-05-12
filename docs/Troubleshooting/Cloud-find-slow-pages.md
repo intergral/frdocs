@@ -5,7 +5,7 @@ For example, the **Request Performance** dashboard can provide you with the top 
 
 This graph will display your top traces by their overall execution time, focusing on potentially slower or more resource-intensive operations with your applications.
 
-![!Screenshot](/frdocs/Troubleshooting/images/top20.png)
+![!Screenshot](/Troubleshooting/images/top20.png)
 ___
 
 !!! question "Need more help?"

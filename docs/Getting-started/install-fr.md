@@ -6,18 +6,18 @@
 Installing the FusionReactor Agent is a straightforward process that ensures your applications are monitored effectively. For step-by-step guidance, refer to our comprehensive installation guides to ensure a seamless setup and take full advantage of FusionReactor's powerful monitoring capabilities.
 
 
-[Automatic installation](/frdocs/Monitor-your-data/FR-Agent/Installation/Automatic/){ .md-button .md-button--primary} 
+[Automatic installation](/Monitor-your-data/FR-Agent/Installation/Automatic/){ .md-button .md-button--primary} 
 
-[Manual installation](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/){ .md-button .md-button--primary} 
+[Manual installation](/Monitor-your-data/FR-Agent/Installation/Manual/){ .md-button .md-button--primary} 
 
 
 ## Choosing between Automated and Manual installation
 
 FusionReactor can be installed in two ways:
 
-1. [Automated](/frdocs/Getting-started/install-fr/#automated-installation)  
+1. [Automated](/Getting-started/install-fr/#automated-installation)  
 
-2. [Manual](/frdocs/Getting-started/install-fr/#manual-installation)  
+2. [Manual](/Getting-started/install-fr/#manual-installation)  
 
 
 

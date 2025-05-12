@@ -7,7 +7,7 @@ The Production debugger is only available in the **FusionReactor Ultimate Editio
 The Production Debugger plugin is a new feature added in FusionReactor 6,
 aiding in solving code related problems at production time. More
 information on how to use Production Debug can be found
-[here](/frdocs/Data-insights/Features/Debugger/Overview/).
+[here](/Data-insights/Features/Debugger/Overview/).
 
 ## Log File
 

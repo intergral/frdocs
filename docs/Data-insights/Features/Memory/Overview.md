@@ -75,11 +75,11 @@ The page shows the following :
     will find out what is keeping these objects live.  (See [Garbage
     Collection Roots](#garbage-collection-roots))
 
-![](/frdocs/attachments/245553871/245553928.png)
+![](/attachments/245553871/245553928.png)
 
 ### Filtering
 
-![](/frdocs/attachments/245553871/245553935.png)
+![](/attachments/245553871/245553935.png)
 
 The heap histogram pages can filter specific java packages.   By default
 FusionReactor excludes its own code (com.intergral).
@@ -101,7 +101,7 @@ substring of the classname.
 E.g.Press the find button enter ArrayList and the heap histogram page
 will only show classes which contain the string ArrayList :
 
-![](/frdocs/attachments/245553871/245553884.png)
+![](/attachments/245553871/245553884.png)
 
 Once you press Confirm to trigger the find, the UI will change to show
 something like this :
@@ -129,7 +129,7 @@ char\[\] live but not directly.  The HashMap Entries have a key field
 with is referencing a java.lang.String.  These String classes have a
 field called value which is actually keeping the char\[\] live.
 
-![](/frdocs/attachments/245553942/245553967.png)
+![](/attachments/245553942/245553967.png)
 You can expand each node to navigate to the GC root path to find what is
 keeping these objects live.
 
@@ -171,17 +171,17 @@ When you first come to the Heap Snapshot page it will be empty, but you
 can simply press the **New Snapshot** button to create a new snapshot. 
 Once its generated it will appear in the snapshots table, like below:
 
-![](/frdocs/attachments/245553974/245554026.png)
+![](/attachments/245553974/245554026.png)
 
 From this snapshots table, you can view the snapshot by pressing the
-![](/frdocs/attachments/245553974/245553985.png)
+![](/attachments/245553974/245553985.png)
 
-You can edit the name of the snapshot using the ![](/frdocs/attachments/245553974/245553980.png)
+You can edit the name of the snapshot using the ![](/attachments/245553974/245553980.png)
 button.   This name is fairly restricted as it is also the filename of
 the snapshot on the disk (normally inside the &lt;instance&gt;/heap
 directory)
 
-You can delete the snapshot by pressing ![](/frdocs/attachments/245553974/245553995.png)
+You can delete the snapshot by pressing ![](/attachments/245553974/245553995.png)
 
 ### View
 
@@ -209,7 +209,7 @@ The top 2 tables shows the information about the individual snapshots
 find features also work fully on the diff page (see [Heap
 View](#view-heap))
 
-![](/frdocs/attachments/245553974/245554033.png)
+![](/attachments/245553974/245554033.png)
 
 The lower part of the page shows the actual diff of the snapshots.
 

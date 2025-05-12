@@ -12,9 +12,9 @@ Kubernetes is highly modular and extensible, with a large ecosystem of plugins a
 To make things easier for you, we have introduced Kubernetes monitoring in **FusionReactor Cloud**. With this tool, you can automate many of the manual tasks and focus on getting the most out of your Kubernetes monitoring. Whether you're an SRE, application developer, or DevOps administrator, Kubernetes monitoring in **FusionReactor Cloud** can help you troubleshoot incidents, implement changes, and maintain servers more easily.
 
 !!! info "Learn more"
-    [Shipping K8s data to FR Cloud](/frdocs/Monitor-your-data/Kubernetes-monitoring/Shipping/)
+    [Shipping K8s data to FR Cloud](/Monitor-your-data/Kubernetes-monitoring/Shipping/)
 
-![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8s.png)
+![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8s.png)
 
 ## Benefits
 
@@ -76,7 +76,7 @@ Our **FusionReactor** Kubernetes monitoring integration gives you visibility int
 
 An easy-to-scan overview of the performance and resource demands of the different tenants in a cluster.
 
-![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
+![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
 
 
 
@@ -84,7 +84,7 @@ An easy-to-scan overview of the performance and resource demands of the differen
 
 Displays the resource demand for each individual pod, broken down per namespace.
 
-![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8spod.png)
+![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8spod.png)
 
 ---
 !!! question "Need more help?"

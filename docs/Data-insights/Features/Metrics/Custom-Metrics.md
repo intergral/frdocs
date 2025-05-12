@@ -1,9 +1,9 @@
 # Custom Metrics
 
 On this page you can see custom metrics.  These metrics are usually
-submitted by using a [FRAPI](/frdocs/Data-insights/Extras/FRAPI/) method.
+submitted by using a [FRAPI](/Data-insights/Extras/FRAPI/) method.
 
-![](/frdocs/attachments/245549420/245549427.png)
+![](/attachments/245549420/245549427.png)
 
 ```java
 FRAPI.getInstance().postMetric("metricName", 12.5);

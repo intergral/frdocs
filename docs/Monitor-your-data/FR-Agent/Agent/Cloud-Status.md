@@ -5,7 +5,7 @@ accessed via the Cloud menu in the upper notification area, and
 selecting **Status.** The page shows you the current status of
 FusionReactor's cloud connections.
 
-![](/frdocs/Monitor-your-data/FR-Agent/Agent/cloudstatusexample.png)
+![](/Monitor-your-data/FR-Agent/Agent/cloudstatusexample.png)
 
 The page is split into a **Health Check** section and two subsections:
 one for the **Control Channel** and one for the **Telemetry Shippers.**
@@ -13,7 +13,7 @@ one for the **Control Channel** and one for the **Telemetry Shippers.**
 ### Logging
 
 There is a log available which records changes of cloud state.  It's
-described [here](/frdocs/Data-insights/Features/Logs/Files/Cloud-State-Log/).
+described [here](/Data-insights/Features/Logs/Files/Cloud-State-Log/).
 
 ## Health Check
 

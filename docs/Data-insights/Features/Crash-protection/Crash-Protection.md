@@ -41,7 +41,7 @@ Once the instance CPU has breached this threshold (specified as a percentage of
 ## Email alert
 
 Configure your FusionReactor instance to send an email when
-Crash Protection is fired. To do this you need to setup the [email configuration](/frdocs/Troubleshooting/Configuration/Email-Configuration/) and enable notification emails in the [Crash Protection Settings](/frdocs/Data-insights/Features/Crash-protection/Settings/).
+Crash Protection is fired. To do this you need to setup the [email configuration](/Troubleshooting/Configuration/Email-Configuration/) and enable notification emails in the [Crash Protection Settings](/Data-insights/Features/Crash-protection/Settings/).
 
 To avoid a flood of email in marginal situations, notification can be
 turned off completely, or can be set to only send email once in a given
@@ -74,7 +74,7 @@ This is followed by a title in the email body as well.
 
 
 
-![](/frdocs/Data-insights/Features/Crash-protection/images/245554224.png)
+![](/Data-insights/Features/Crash-protection/images/245554224.png)
 
 The Crash Protection section shows the information of the actual
 trigger. This includes the following information:
@@ -89,7 +89,7 @@ trigger. This includes the following information:
 
 #### Server load
 
-![](/frdocs/Data-insights/Features/Crash-protection/images/245554235.png)
+![](/Data-insights/Features/Crash-protection/images/245554235.png)
 
 
 The Server Load section gives a brief overview of the state of the
@@ -105,7 +105,7 @@ information:
 
 #### Request information
 
-![](/frdocs/Data-insights/Features/Crash-protection/images/245554207.png)
+![](/Data-insights/Features/Crash-protection/images/245554207.png)
 
 The Request Information section tells the user what request caused the
 Crash Protection trigger, and what other requests were being processed
@@ -124,7 +124,7 @@ These tables show the following information:
 
 #### Stack traces
 
-![](/frdocs/Data-insights/Features/Crash-protection/images/245554218.png)
+![](/Data-insights/Features/Crash-protection/images/245554218.png)
 
 In the Crash Protection Email, stack traces of all threads running are
 dumped in order to help with pinpointing any issues. For information on
@@ -245,7 +245,7 @@ Protection restrictions are designed to let you specify which pages you
 want to be monitored by the Protection system, or alternatively, which
 pages you do not wish to be monitored. To select which mode the
 Restrictions page works in, change the Restrictions option on the
-[Protection Settings](/frdocs/Data-insights/Features/Crash-protection/Settings/) page. The
+[Protection Settings](/Data-insights/Features/Crash-protection/Settings/) page. The
 Protection Restrictions page has two main areas. At the top of the page
 there is a form for you to enter new restrictions and below this is a
 list of all existing restrictions for this feature.
@@ -404,7 +404,7 @@ Timeout Protection @ 8 seconds
 The Restrictions Engine decides which requests will be monitored by
 Protection, and which requests will be allowed to proceed unobserved. 
 The engine is configured in FusionReactor Administrator in the
-[Protection Restrictions](/frdocs/Data-insights/Features/Crash-protection/Settings/#protection-restrictions)
+[Protection Restrictions](/Data-insights/Features/Crash-protection/Settings/#protection-restrictions)
 section of the **Protection &gt; Settings** page. 
 
 Any changes you make to these settings, as well as any changes you make

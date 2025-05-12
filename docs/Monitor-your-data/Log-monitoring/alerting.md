@@ -18,7 +18,7 @@ The alerting dashboard displays a summary of all your current alert groups and r
 
 You can filter for rules, groups or both using the search capability and also filter by state.
 
-![](/frdocs/Monitor-your-data/Log-monitoring/images/alertDashboard.png)
+![](/Monitor-your-data/Log-monitoring/images/alertDashboard.png)
 
 ## Alert rules
 Alert rules are the individual checks that are made each time the group interval rotates. They are stored within groups, allowing for better organisation of your alerts and user defined intervals for rules to be checked.
@@ -68,7 +68,7 @@ The condition of a rule can be configured to be greater, less than or equal to y
 
 A graphical representation of your query values and threshold values is displayed to the right of the condition:
 
-![](/frdocs/Monitor-your-data/Log-monitoring/images/LogAlertCondition.png)
+![](/Monitor-your-data/Log-monitoring/images/LogAlertCondition.png)
 
 Here you can see at what point your alert would fire, and adjust the time period of your graph up to the last two weeks of data.
 
@@ -80,7 +80,7 @@ The rule name will be used in your received alert, so should be something identi
 
 Subscriptions are the targets your alerts will be dispatched to.  Supported integrations include Slack, email, Pagerduty, OpsGenie and HTTP Webhooks.
 
-You can either use [existing subscriptions](/frdocs/Data-insights/Features/alerting/) or configure new subscriptions for your rules to trigger.
+You can either use [existing subscriptions](/Data-insights/Features/alerting/) or configure new subscriptions for your rules to trigger.
 
 Subscriptions used for the current metric based alerting and cloud alerting are shared, so any subscription you use for metric alerting will already be usable in the rule creation screen.
 
@@ -114,7 +114,7 @@ An event based alert is designed to fire when a specific log line is sent to the
 Alert that occurs when a server encounters an OutOfMemory exception and subsequently crashes
 
 !!! example
-    ![](/frdocs/Monitor-your-data/Log-monitoring/images/LogAlertingEvent.png)
+    ![](/Monitor-your-data/Log-monitoring/images/LogAlertingEvent.png)
     LogQL Query: ```count_over_time({job=~".+"} |= "OutOfMemory" [10m])```
 
 ### Rate alerts
@@ -126,7 +126,7 @@ A rate based alert takes advantage of the rate function within LogQL, this allow
 Using a rate query to detect and alert based on a log flood
 
 !!! example
-    ![](/frdocs/Monitor-your-data/Log-monitoring/images/LogAlertingRate.png)
+    ![](/Monitor-your-data/Log-monitoring/images/LogAlertingRate.png)
     LogQL Query: ```sum(rate({ job=~".+" }[5m])) by (job)```
 
 !!! info 
@@ -141,7 +141,7 @@ Range based alerts utilize the count of log lines within a defined period using 
 Combining the data of two range queries to create a percentage value of errors within my ingested logs
 
 !!! example 
-    ![](/frdocs/Monitor-your-data/Log-monitoring/images/LogAlertingRange.png)
+    ![](/Monitor-your-data/Log-monitoring/images/LogAlertingRange.png)
     LogQL Query: ```sum by(job)(rate({job=~".+"} |= "Exception" [5m])) / sum by(job)(rate({job=~".+"}[5m])) *100```
 
 !!! info
@@ -156,7 +156,7 @@ Unlike range based queries that use the log lines and labels to generate an inte
 Extracting the CPU time from the request log in FusionReactor and summing this by URL. This will result in a CPU time per page metric, allowing us see which pages consume the most server resource
 
 !!! example
-    ![](/frdocs/Monitor-your-data/Log-monitoring/images/logAlertingUnwrapp.png)
+    ![](/Monitor-your-data/Log-monitoring/images/logAlertingUnwrapp.png)
     LogQL Example: ```topk(10, sum by (url)(avg_over_time({ filename="request"} | logfmt | __error__="" | unwrap cpuTime[5m])))```
 
 

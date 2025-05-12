@@ -19,7 +19,7 @@ Additionally, the Plugin can be found by navigating to **FusionReactor
 &gt; Plugins &gt; All Bundles &gt; FusionReactor HitCount**
 plugin. See screenshot below.
 
-[![](/frdocs/attachments/245548214/245548221.jpg)](/frdocs/attachments/245548214/245548221.jpg)
+[![](/attachments/245548214/245548221.jpg)](/attachments/245548214/245548221.jpg)
 
 ## Initial Setup
 
@@ -34,7 +34,7 @@ the users weren't able to control the collected amount of data. For that
 reason, the development team allowed further configuration of the plugin
 in the FusionReactor UI.
 
-[![](/frdocs/attachments/245548214/245548236.png)](/frdocs/attachments/245548214/245548236.png)
+[![](/attachments/245548214/245548236.png)](/attachments/245548214/245548236.png)
 
 The FusionReactor HitCount Plugin Configuration is accessible by the
 **"All Bundles" **area in the FusionReactor UI and allows you to alter

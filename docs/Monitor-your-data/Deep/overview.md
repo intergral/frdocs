@@ -21,7 +21,7 @@ At the heart of Deep lies its powerful query language, DeepQL. A monitoring-cent
 
 To use **Deep** in FusionReactor Cloud, navigate to the **Explore** page and select the Deep datasource.
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/deep1.png)
+![!Screenshot](/Monitor-your-data/Deep/images/deep1.png)
 
 ### Deep features
 
@@ -30,12 +30,12 @@ To use **Deep** in FusionReactor Cloud, navigate to the **Explore** page and sel
 Use the search function to find triggered snapshots. 
 
 !!! info "Learn more"
-    [Search](/frdocs/Data-insights/Features/Deep/Search/)
+    [Search](/Data-insights/Features/Deep/Search/)
 
 #### Tracepoints
 
 The **Tracepoints** section allows you to list existing tracepoints, create new ones by specifying a file and line number, and delete tracepoints using their unique ID.
 
 !!! info "Learn more"
-    [Tracepoint](/frdocs/Data-insights/Features/Deep/Create-Tracepoint/)
+    [Tracepoint](/Data-insights/Features/Deep/Create-Tracepoint/)
 

@@ -133,7 +133,7 @@ hide:
                 <div class="fr-step-title">Install FusionReactor</div>
                 <div class="fr-step-description">Dive into the UI and configure FusionReactor to monitor your stack.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Getting-started/install-fr/" class="fr-btn">Install FusionReactor</a>
+                    <a href="/Getting-started/install-fr/" class="fr-btn">Install FusionReactor</a>
                 </div>
             </div>
             <div class="fr-step">
@@ -141,7 +141,7 @@ hide:
                 <div class="fr-step-title">Set up integrations</div>
                 <div class="fr-step-description">Monitor key parts of your infrastructure like databases, Docker etc.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Monitor-your-data/Observability-agent/overview/" class="fr-btn">Install Observability Agent</a>
+                    <a href="/Monitor-your-data/Observability-agent/overview/" class="fr-btn">Install Observability Agent</a>
                 </div>
             </div>
             <div class="fr-step">
@@ -149,7 +149,7 @@ hide:
                 <div class="fr-step-title">Start your FR journey</div>
                 <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
                 <div class="fr-step-action">
-                    <a href="/frdocs/Getting-started/intro-to-fr/" class="fr-btn">Learn more about FR</a>
+                    <a href="/Getting-started/intro-to-fr/" class="fr-btn">Learn more about FR</a>
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -200,7 +200,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -218,7 +218,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -236,7 +236,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Getting-started/Tutorials/know-the-ui/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Getting-started/Tutorials/know-the-ui/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -260,7 +260,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/frdocs/Latest-updates/WhatsNew/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Latest-updates/WhatsNew/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -278,7 +278,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Latest-updates/Releases" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Latest-updates/Releases" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -322,7 +322,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/frdocs/Best-Practices/Installation/installation-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Best-Practices/Installation/installation-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -340,7 +340,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Monitor-your-data/FR-Agent/agent-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Monitor-your-data/FR-Agent/agent-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -358,7 +358,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Monitor-your-data/Observability-agent/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Monitor-your-data/Observability-agent/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -376,7 +376,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Monitor-your-data/OpenTelemetry/getting-started/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Monitor-your-data/OpenTelemetry/getting-started/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -395,7 +395,7 @@ hide:
   </a>
 
   
-  <a href="/frdocs/Monitor-your-data/Kubernetes-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Monitor-your-data/Kubernetes-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -413,7 +413,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Monitor-your-data/Log-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Monitor-your-data/Log-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -431,7 +431,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -475,7 +475,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/frdocs/Data-insights/Features/alerting/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/alerting/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -493,7 +493,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -511,7 +511,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/applications/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/applications/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -529,7 +529,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/CPU-Sampler/CPU-Sampler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/CPU-Sampler/CPU-Sampler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -548,7 +548,7 @@ hide:
   </a>
 
   
-  <a href="/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Crash-protection/Crash-Protection/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -566,7 +566,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/dashboards/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/dashboards/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -584,7 +584,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Debugger/Overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Debugger/Overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -602,7 +602,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -620,7 +620,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
      <div style="
         border: 1px solid #ccc;
         padding: 12px;
@@ -638,7 +638,7 @@ hide:
         </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/explore/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/explore/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -656,7 +656,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/timepicker/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/timepicker/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -674,7 +674,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -693,7 +693,7 @@ hide:
   </a>
 
   
-  <a href="/frdocs/Data-insights/Features/JDBC/Databases/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/JDBC/Databases/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -711,7 +711,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/Logs/Logs/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Logs/Logs/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -729,7 +729,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Memory/Overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Memory/Overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -747,7 +747,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/OpsPilot/AIoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/OpsPilot/AIoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -765,7 +765,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/Profiler/Profiler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Profiler/Profiler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -783,7 +783,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Requests/Applications/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Requests/Applications/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -801,7 +801,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Resources/Buffer-Pool/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Resources/Buffer-Pool/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -820,7 +820,7 @@ hide:
   </a>
 
   
-  <a href="/frdocs/Data-insights/Features/servers/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/servers/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -838,7 +838,7 @@ hide:
     </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/Settings/CPU-Sampler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Settings/CPU-Sampler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -856,7 +856,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/System-Resources/CPU/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/System-Resources/CPU/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -874,7 +874,7 @@ hide:
     </div>
   </a>
 
-   <a href="/frdocs/Data-insights/Features/Transactions/Activity/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+   <a href="/Data-insights/Features/Transactions/Activity/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
      <div style="
         border: 1px solid #ccc;
         padding: 12px;
@@ -892,7 +892,7 @@ hide:
         </div>
   </a>
 
-  <a href="/frdocs/Data-insights/Features/UEM/Sessions/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/UEM/Sessions/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;

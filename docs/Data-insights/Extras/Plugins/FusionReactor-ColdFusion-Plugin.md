@@ -170,7 +170,7 @@ each of the attributes in the log.
 |Active Session Count|6| The current amount of sessions on the server.                                                                                                                                                                                                                                                                                                                                                                                                |
 |Application Scope Size (bytes)|7| The size of the application.                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |Average Response Time (milliseconds)|8| The average server response time.                                                                                                                                                                                                                                                                                                                                                                                                            |
-|Cached Query Count|9| The number of queries that are stored in cache. Requires cached query monitoring to be enabled either via [system property](/frdocs/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                         |
+|Cached Query Count|9| The number of queries that are stored in cache. Requires cached query monitoring to be enabled either via [system property](/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                         |
 |CFC Requests Queued|10| The number of CFC requests (Sent via HTTP) that were queued and are waiting to run.                                                                                                                                                                                                                                                                                                                                                          |
 |CFC Requests Running|11| The number of CFC requests (Sent via HTTP) that are currently running.                                                                                                                                                                                                                                                                                                                                                                       |
 |CFC Requests Timed Out|12| The number of CFC requests (Sent via HTTP) that were timed out whilst waiting to run.                                                                                                                                                                                                                                                                                                                                                        |
@@ -182,8 +182,8 @@ each of the attributes in the log.
 |Flash Remoting Request Time out|18| The number of Flash Remoting Requests that were timed out whilst waiting to run.                                                                                                                                                                                                                                                                                                                                                             |
 |JVM Free Memory (bytes)|19| The free memory in the Java Virtual Machine.                                                                                                                                                                                                                                                                                                                                                                                                 |
 |JVM Used Memory (bytes)|20| The memory used by the Java Virtual Machine.                                                                                                                                                                                                                                                                                                                                                                                                 |
-|Query Cache Hit Ratio|21| The query cache hit ratio. Requires cached query monitoring to be enabled either via [system property](/frdocs/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                                              |
-|Query Cache Size (bytes)|22| The size of the cache. Requires cached query monitoring to be enabled either via [system property](/frdocs/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                                                  |
+|Query Cache Hit Ratio|21| The query cache hit ratio. Requires cached query monitoring to be enabled either via [system property](/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                                              |
+|Query Cache Size (bytes)|22| The size of the cache. Requires cached query monitoring to be enabled either via [system property](/Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties/) or [configuration.](#Configuration)                                                                                                                                                                                                                                                  |
 |Requests Queued|23| The number of request threads queued (JRun).                                                                                                                                                                                                                                                                                                                                                                                                 |
 |Requests Running|24| The number of requests that are running (JRun).                                                                                                                                                                                                                                                                                                                                                                                              |
 |Requests Timed Out|25| The number of request timeouts (JRun).                                                                                                                                                                                                                                                                                                                                                                                                       |
@@ -245,12 +245,12 @@ These settings can be enabled in the ColdFusion Administrator for
 ColdFusion 9 - 2016, in the section 'Server Monitoring' and its
 'Monitoring Settings' page.
 
-![](/frdocs/attachments/245547884/245547939.png)
+![](/attachments/245547884/245547939.png)
 
 Alternatively, the settings an be enabled at the top of the ColdFusion
 server monitor itself.
 
-![](/frdocs/attachments/245547884/245547933.png)
+![](/attachments/245547884/245547933.png)
 
 If running ColdFusion 9.0 or earlier, you can only enabled the settings
 via the monitor itself.
@@ -265,7 +265,7 @@ Plugins"**,  pages available in the **"Plugins"** menu item in the
 In the list of plugins, locate the plugin named **"FusionReactor
 ColdFusion Plugin"**, see Figure 1.
 
-![FusionReactor ColdFusion Plugin in Active Plugins](/frdocs/attachments/245547884/245547907.png)
+![FusionReactor ColdFusion Plugin in Active Plugins](/attachments/245547884/245547907.png)
 
 Figure 1: To Configure the FusionReactor ColdFusion plugin, click the
 button **'Configuration'**.
@@ -295,5 +295,5 @@ changes will be applied immediately.
 
 ## Also See
 
--   [ColdFusion Metrics](/frdocs/Data-insights/Features/Metrics/ColdFusion-Metrics/)
--   [ColdFusion System Metrics](/frdocs/Data-insights/Features/Metrics/ColdFusion-System-Metrics/)
+-   [ColdFusion Metrics](/Data-insights/Features/Metrics/ColdFusion-Metrics/)
+-   [ColdFusion System Metrics](/Data-insights/Features/Metrics/ColdFusion-System-Metrics/)

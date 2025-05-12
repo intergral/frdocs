@@ -9,7 +9,7 @@ From this dashboard, you can:
 *  set thresholds for instances to enter a warning or error state based on the resource usage. 
 
 !!! info "Learn more"
-    [Enterprise Dashboard features](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/).
+    [Enterprise Dashboard features](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/).
 
 
 Below are three common configurations you may want to setup when you using FusionReactor.
@@ -98,56 +98,56 @@ Within the **Enterprise Dashboard** instances will change colour depending on th
 
 If any instance within a group changes to a Warning or Error state, the group itself will change to this state.
 
-![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Statuses.jpg)
+![ED Memory Setting](/Troubleshooting/images/ED_Statuses.jpg)
 
-You can configure when an instance will enter either the Warning or Error state in the [Enterprise Dashboard Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Settings/).  Changing these settings allows you to monitor the health of your infrastructure and know if you are experiencing any issues quickly.
+You can configure when an instance will enter either the Warning or Error state in the [Enterprise Dashboard Settings](/Data-insights/Features/Enterprise-Dashboard/Settings/).  Changing these settings allows you to monitor the health of your infrastructure and know if you are experiencing any issues quickly.
 
 In **Memory** you can configure the percentage of Heap memory used required to be a warning or error state.
 
-![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Mem_Status.jpg)
+![ED Memory Setting](/Troubleshooting/images/ED_Mem_Status.jpg)
 
 In **Average Request Time** you can configure a warning or error for when the average request time in the last 60 seconds ia above
  a millisecond value.
 
-![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Req_Status.jpg)
+![ED Memory Setting](/Troubleshooting/images/ED_Req_Status.jpg)
 
 In **JDBC** you can configure a warning or error for when the average JDBC request time in the last 60 seconds ia above
  a millisecond value.
 
- ![ED Memory Setting](/frdocs/Troubleshooting/images/ED_JDBC_Status.jpg)
+ ![ED Memory Setting](/Troubleshooting/images/ED_JDBC_Status.jpg)
 
  In **Slow Requests** you can configure a warning or error when the number of Slow requests in the last 60 seconds is above a
   defined value.
 
-![ED Memory Setting](/frdocs/Troubleshooting/images/ED_Slow_Status.jpg)
+![ED Memory Setting](/Troubleshooting/images/ED_Slow_Status.jpg)
 
 ## Offline instance alerts
 
-When instances are added to the **Enterprise Dashboard** either by [manually](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manage-servers) adding the server, or through the **Instance Manager** by [manually adding instances](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manually-adding-instances), you will receive alerts in the form of emails if an instance becomes unavailable.
+When instances are added to the **Enterprise Dashboard** either by [manually](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manage-servers) adding the server, or through the **Instance Manager** by [manually adding instances](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/#manually-adding-instances), you will receive alerts in the form of emails if an instance becomes unavailable.
 
 !!! note
     In order to receive these email alerts you must have the email settings for the instance correctly configured. 
     
 !!! info "Learn more"
-    [Email configuration guide](/frdocs/Troubleshooting/Configuration/Email-Configuration/).
+    [Email configuration guide](/Troubleshooting/Configuration/Email-Configuration/).
 
 In order to detect if a server becomes unavailable, the **Enterprise Dashboard** uses a heartbeat mechanism. This means that by default it will attempt to contact the monitored FusionReactor instance, after three failed attempts we assume that the instance is no longer available.
 
-It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](/frdocs/Data-insights/Features/Enterprise-Dashboard/Settings/) page.
+It is possible to configure both the heartbeat settings and alert settings in the [Enterprise Dashboard Settings](/Data-insights/Features/Enterprise-Dashboard/Settings/) page.
 
-![Screenshot](/frdocs/Troubleshooting/images/serverstart.png)
+![Screenshot](/Troubleshooting/images/serverstart.png)
 
 Under **Server Shutdown/Startup Alerts** you can disable these alerts entirely, or specify whether to receive emails on shutdown only.
 
-![ED Alert Setting](/frdocs/Troubleshooting/images/ED_Alert_Setting.jpg)
+![ED Alert Setting](/Troubleshooting/images/ED_Alert_Setting.jpg)
 
 Under **Heartbeat Settings** you can configure the heartbeat interval, timeout and failure threshold.
 
-![Screenshot](/frdocs/Troubleshooting/images/heartbeat.png)
+![Screenshot](/Troubleshooting/images/heartbeat.png)
 
 While in most cases these settings should provide optimal alerts, it may be that at times your application server stalls and can stop serving requests for a limited time. For example, if a large Garbage Collection is occurring. When this happens it is possible to receive false alarms that your application is unavailable.
 
-![ED Heartbeat Setting](/frdocs/Troubleshooting/images/ED_Heartbeat_Setting.jpg)
+![ED Heartbeat Setting](/Troubleshooting/images/ED_Heartbeat_Setting.jpg)
 
 !!! tip
     Increase the heartbeat interval or failure threshold to prevent these false alarms.

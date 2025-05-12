@@ -20,4 +20,4 @@ FR Cloud enforces rate limits for ingested data.  The ingest system will return 
 
 
 !!! info 
-    [How to reduce billing usage costs in FR Cloud](/frdocs/Troubleshooting/Optimize-data/)
+    [How to reduce billing usage costs in FR Cloud](/Troubleshooting/Optimize-data/)

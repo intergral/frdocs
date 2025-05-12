@@ -93,7 +93,7 @@ Clicking any server link on the Enterprise Dashboard automatically logs you into
     A Manager on an instance monitoring another instance of FusionReactor will also be granted Manager-level access to the monitored instance.  
 
 !!! info "Learn more"
-    [Enterprise Dashboard](/frdocs/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
+    [Enterprise Dashboard](/Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard/)
 
 ## Access management configuration
 FusionReactor Identity manages system access through role-based authentication. It replaces the previous password management system in versions 8.2.0 and above.
@@ -135,7 +135,7 @@ from this tab.
     desired new password twice, and click **Save Login Settings**.
 
 !!! info "Learn more"
-    [Roles](/frdocs/Admin-and-data/Account/On-Premise/OPusers/#roles)
+    [Roles](/Admin-and-data/Account/On-Premise/OPusers/#roles)
 
 
 
@@ -184,7 +184,7 @@ login page, and uses three
 <a href="https://ldap.com/ldap-filters/" class="external-link">LDAP Filters</a>
 to attempt to authenticate the user.
 
-![](/frdocs/attachments/245548444/256213075.png)
+![](/attachments/245548444/256213075.png)
 
 *Example X.500/LDAP Login Dialog*
 

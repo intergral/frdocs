@@ -27,7 +27,7 @@ in a transaction log entry will be indicated by **""**.
 Below can be seen an example excerpt
 from a transaction log:
 
-![](/frdocs/attachments/245548275/245548292.png)
+![](/attachments/245548275/245548292.png)
 
 
 As can be seen from this example these are two connected transactions.
@@ -50,7 +50,7 @@ in the system.
 Below is another example which shows a
 JDBC transaction and its parent:
 
-[![](/frdocs/attachments/245548275/245548286.png)](/frdocs/attachments/245548275/245548286.png)
+[![](/attachments/245548275/245548286.png)](/attachments/245548275/245548286.png)
 
 This excerpt shows a parent WebRequest transaction with its child JDBC
 transaction. Note how the final field changes for the JDBC transaction

@@ -9,7 +9,7 @@ types of memory used by that server.
 
 ## Memory Summary Log
 
-For information on changing log settings see the [Log Settings](/frdocs/Data-insights/Features/Logs/Settings/) ttipage. This log displays
+For information on changing log settings see the [Log Settings](/Data-insights/Features/Logs/Settings/) ttipage. This log displays
 information about the memory heap and non heap memory (into memorysummary.log). Each log entry
 occupies one line and contains various pieces of useful information,
 separated with a white space character. Below is a table explaining each

@@ -73,9 +73,9 @@ The **Create new check** screen is displayed.
 
 There are two ways to set a query:
 
-* [Builder](/frdocs/Data-insights/Features/alerting/#builder)
+* [Builder](/Data-insights/Features/alerting/#builder)
 
-* [Code](/frdocs/Data-insights/Features/alerting/#code)
+* [Code](/Data-insights/Features/alerting/#code)
 
 #### Builder
 
@@ -206,8 +206,8 @@ You can set a summary and runbook for your alert notification. These are optiona
 
 ### Example checks
 
-* [Performance checks](/frdocs/Data-insights/Features/alerting-examples/)
-* [Billing/usage checks](/frdocs/Data-insights/Features/billing-check/)
+* [Performance checks](/Data-insights/Features/alerting-examples/)
+* [Billing/usage checks](/Data-insights/Features/billing-check/)
 
 
 
@@ -428,7 +428,7 @@ For the FusionReactor Cloud Slack app:
 ### Edit and duplicate subscriptions
 
 Clicking the **Edit** button on the row of the subscription you wish to edit will present you with an interface just like
-the one used to [create subscriptions](/frdocs/Data-insights/Features/alerting/#create-subscriptions).
+the one used to [create subscriptions](/Data-insights/Features/alerting/#create-subscriptions).
 
 The values shown will match what's currently set on the subscription. Once you've made your desired changes, simply
 click **Save** and your changes will overwrite on the subscription.

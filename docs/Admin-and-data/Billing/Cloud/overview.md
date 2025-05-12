@@ -20,7 +20,7 @@ To start your FusionReactor journey, first sign up for a free, no-obligation [tr
 
 
 !!! note
-    Additional [on-demand](/frdocs/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
+    Additional [on-demand](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
 
 ## Plans
 
@@ -37,7 +37,7 @@ The **Starter Plan** is recommended for strict observability, distributed tracin
 In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
 
 !!! info "Learn  more"
-    [On-demand usage costs](/frdocs/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
+    [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
 
 ### Pro AI Plan
@@ -55,7 +55,7 @@ The **Pro AI Plan** has a base cost of $249 which includes:
 In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
 
 !!! info "Learn  more"
-    [On-demand usage costs](/frdocs/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
+    [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
 
 
@@ -75,20 +75,20 @@ The **Advanced AI** plan also includes an audit of your OpsPilot queries. Additi
 In addition to this base cost, we also offer usage-based metered costs for OpsPilot tokens, logs, metrics, and traces, so you only pay for what you use beyond the included amount. 
 
 !!! info "Learn  more"
-    [On-demand usage costs](/frdocs/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
+    [On-demand usage costs](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs)
 
 
     
 ### Custom pricing
 
-Require a large number of [seats](/frdocs/Admin-and-data/Billing/Cloud/overview/#fusionreactor-ultimate)? Why not get in touch with our Sales Team who will create a custom pricing plan to suit your requirements. 
+Require a large number of [seats](/Admin-and-data/Billing/Cloud/overview/#fusionreactor-ultimate)? Why not get in touch with our Sales Team who will create a custom pricing plan to suit your requirements. 
 
 ## OpsPilot AI 
 
 **OpsPilot AI** is an advanced observability solution that leverages generative AI to provide powerful insights into the performance of your applications. Using OpsPilot AI tokens enables you to identify and resolve issues before they occur, optimize the performance of your applications, and reduce downtime.
 
 !!! info "Learn more"
-    [OpsPilot](/frdocs/Data-insights/Features/OpsPilot/AIoverview/)
+    [OpsPilot](/Data-insights/Features/OpsPilot/AIoverview/)
 
 
 !!! warning 
@@ -100,7 +100,7 @@ To effectively manage costs, a customer can optionally reserve a **FusionReactor
 
 
 !!! note
-    Additional [on-demand](/frdocs/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
+    Additional [on-demand](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.
 
 ### What is a seat?
 
@@ -141,7 +141,7 @@ On-demand data will be charged at:
 
 
 !!! info 
-    [How to reduce costs in FR Cloud](/frdocs/Troubleshooting/Optimize-data/)
+    [How to reduce costs in FR Cloud](/Troubleshooting/Optimize-data/)
     
 
 ## Usage calculations
@@ -257,11 +257,11 @@ Alongside each data source is a graph that provides further information on your 
 To control your usage and spending costs it is possible to create an alert to fire if you exceed the allowed usage. 
 
 !!! info "Learn more"
-    [Create a check](/frdocs/Data-insights/Features/alerting/#create-a-check)
+    [Create a check](/Data-insights/Features/alerting/#create-a-check)
 
 #### Example billing usage checks
 
-For instructions on configuring billing checks, see the [Billing usage checks](/frdocs/Data-insights/Features/billing-check) section. The following are examples of common billing usage checks: 
+For instructions on configuring billing checks, see the [Billing usage checks](/Data-insights/Features/billing-check) section. The following are examples of common billing usage checks: 
 
 * `fr_billing_usage_current`
 * `fr_billing_charges_metered`

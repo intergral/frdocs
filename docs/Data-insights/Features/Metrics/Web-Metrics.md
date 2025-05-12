@@ -25,13 +25,13 @@ By default, there are six graphs labelled as follows:
 -   **CPU(%):** The CPU load of two types - your **server**, and your
     **application server instance**.
 
-![](/frdocs/attachments/245549190/245549269.png)
+![](/attachments/245549190/245549269.png)
 
 ### Customizing graphs
 
 The graphs available allow a variety of customization.
 
-![](/frdocs/attachments/245549190/245549208.png)
+![](/attachments/245549190/245549208.png)
 
 You are able to change the **time range** shown on the graph by
 selecting one of the time choices at the **bottom-right** of the
@@ -39,12 +39,12 @@ graphs. 
 
 
 
-Clicking on the ![](/frdocs/attachments/245549289/245549295.png)
+Clicking on the ![](/attachments/245549289/245549295.png)
 icon next to a graph, a pop-up form will appear allowing you to be able to change various features of that graph.
 
 This modal, or pop-up, can be used to customize the graphs that are displayed on the Web Metrics page.
 
-![](/frdocs/attachments/245549289/245549301.png)
+![](/attachments/245549289/245549301.png)
 
 ### Title
 
@@ -86,7 +86,7 @@ To remove a series from the graph, click the **Remove Series** button on the ser
 You are able to enlarge a graph by clicking on its name below the graph.
 This will take you to a page showing just this graph only.
 
-![](/frdocs/attachments/245549190/245549214.png)
+![](/attachments/245549190/245549214.png)
 
 
 
@@ -97,7 +97,7 @@ This will take you to a page showing just this graph only.
 The **Overview** table displays general statistics about the application
 server.
 
-![](/frdocs/attachments/245549190/245549236.png)
+![](/attachments/245549190/245549236.png)
 
 The following is displayed in the table above:
 
@@ -121,7 +121,7 @@ The following is displayed in the table above:
 
 The **Counts** table provides numbers on the state of Web Requests and JDBC Requests by your Application Server within the last 60 seconds.
 
-![](/frdocs/attachments/245549190/245549281.png)
+![](/attachments/245549190/245549281.png)
 
 The following is displayed in the table above:
 
@@ -141,7 +141,7 @@ The following is displayed in the table above:
 
 The **Recent** table shows information about recent Web Requests and JDBC Requests (recent meaning any requests within the last minute).
 
-![](/frdocs/attachments/245549190/245549253.png)
+![](/attachments/245549190/245549253.png)
 
 The following is displayed in this table:
 
@@ -155,10 +155,10 @@ The following is displayed in this table:
 
 ### Protection table
 
-This table displays the statistics of the [Crash Protection](/frdocs/Data-insights/Features/Crash-protection/Crash-Protection/)
+This table displays the statistics of the [Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)
 triggers, displaying the type of protection that caused the trigger.
 
-![](/frdocs/attachments/245549190/245549275.png)
+![](/attachments/245549190/245549275.png)
  
 The following is displayed in this table, all giving the amount to
 trigger in the last 60 seconds, and the amount since application server
@@ -180,14 +180,14 @@ codes which have been returned by this application server. Each return
 code is also a link showing all requests from the current
 request history which have that return code.
 
-![](/frdocs/attachments/245549190/245549242.png)
+![](/attachments/245549190/245549242.png)
 
 ## Garbage collection
 
 Due to the nature of the Java Garbage Collector, this may not be
 instantaneous.
 
-![](/frdocs/attachments/245549190/245549220.png)
+![](/attachments/245549190/245549220.png)
 
 A button has been included on this page to allow for manual garbage collection, at the **bottom-right of the graphs**. After clicking this button, you will receive a toast notification indicating how much memory was freed.
 

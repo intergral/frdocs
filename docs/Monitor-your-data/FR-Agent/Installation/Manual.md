@@ -37,7 +37,7 @@ Then, download the **fusionreactor.jar** file and optionally the **Debug library
     We recommend installing this argument if you have a trial, ultimate or developer edition to access the full functionality of FusionReactor.
 
 
-![!Screenshot](/frdocs/Monitor-your-data/FR-Agent/Images/downloadweb.png)
+![!Screenshot](/Monitor-your-data/FR-Agent/Images/downloadweb.png)
 
 
 
@@ -78,7 +78,7 @@ Below are some examples of adding FusionReactor to a java process that runs a ja
 
 For a **comprehensive** list of example configurations:
 !!! info "Learn more"
-    [Configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
+    [Configuration examples](/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 !!! example
     #### **Windows:**

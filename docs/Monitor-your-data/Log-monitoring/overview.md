@@ -14,11 +14,11 @@ If you currently have an on-premise license, you can convert to Cloud [here](htt
 
 ## How to visualize your logs
 
-Logs can be viewed within the Cloud from within [Log dashboards](/frdocs/Data-insights/Features/dashboards/#log-dashboards) and via the [Explore](/frdocs/Data-insights/Features/explore/) feature.
+Logs can be viewed within the Cloud from within [Log dashboards](/Data-insights/Features/dashboards/#log-dashboards) and via the [Explore](/Data-insights/Features/explore/) feature.
 
 ### Preconfigured dashboards
 
-[Log dashboards](/frdocs/Data-insights/Features/dashboards/#log-dashboards) give you preconfigured, powerful views which you can use to analyze your log data with simple search capabilities, including:
+[Log dashboards](/Data-insights/Features/dashboards/#log-dashboards) give you preconfigured, powerful views which you can use to analyze your log data with simple search capabilities, including:
 
 - Dashboards to search and filter logs from sources such as ColdFusion, Application Server or FusionReactor logs
 - Dashboards to track down the root cause of error logs
@@ -29,7 +29,7 @@ Logs can be viewed within the Cloud from within [Log dashboards](/frdocs/Data-in
 Currently, dashboards are read-only. The ability to create and edit dashboards will be added in a later edition of the FusionReactor Cloud.
 
 ### Exploring your logs
-To deep dive into logs, you can use the [Explore](/frdocs/Data-insights/Features/explore/) feature to analyze logs using LogQL queries.
+To deep dive into logs, you can use the [Explore](/Data-insights/Features/explore/) feature to analyze logs using LogQL queries.
 
 ## Sending additional logs to the FusionReactor Cloud
 
@@ -50,14 +50,14 @@ Additional logs can be sent either by using the agent as a log shipper, or using
 
 FusionReactor logs will not be sent without additional configuration, as the metrics and transactions from the FusionReactor agent are already available in other views and dashboards.
 
-You can send FusionReactor logs by enabling them in the logging [Cloud settings](/frdocs/Data-insights/Features/Logs/Cloud-Settings/).
+You can send FusionReactor logs by enabling them in the logging [Cloud settings](/Data-insights/Features/Logs/Cloud-Settings/).
 
-The agent can also be utilized to ship any logs stored on the server using its [log scraping functionality](/frdocs/Data-insights/Features/Logs/Cloud-Settings/).
+The agent can also be utilized to ship any logs stored on the server using its [log scraping functionality](/Data-insights/Features/Logs/Cloud-Settings/).
 
 Any logs sent via the agent have the option to be:
 
-- [Obfuscated](/frdocs/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/) to remove any sensitive content.
-- [Rolled up](/frdocs/Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks/) to create more readable log formats.
+- [Obfuscated](/Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules/) to remove any sensitive content.
+- [Rolled up](/Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks/) to create more readable log formats.
 
 ### Sending logs from dedicated logging agents
 
@@ -66,7 +66,7 @@ You can ingest logs from other sources such as nginx, IIS, databases or any othe
 In order to do this:
 
 1. Configure an API key within your [FusionReactor Cloud account](https://app.fusionreactor.io/account/apikey)
-2. Configure a logging agent to [ship logs to FusionReactor](/frdocs/Monitor-your-data/Log-monitoring/log-shipper/)
+2. Configure a logging agent to [ship logs to FusionReactor](/Monitor-your-data/Log-monitoring/log-shipper/)
 
 ## Alerting on your log behavior
 .
@@ -84,7 +84,7 @@ In order to do this:
 2. Create an alerting rule.
 
 !!! info "Learn more"
-    [Alerting](/frdocs/Monitor-your-data/Log-monitoring/alerting/) 
+    [Alerting](/Monitor-your-data/Log-monitoring/alerting/) 
 
 ___
 

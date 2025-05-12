@@ -48,11 +48,11 @@ number of pages.
 When the execution of the script has finished, go to the **Profiled Thread History** tab and see the
 transaction details. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552539/245552549.png)
+![](/attachments/245552539/245552549.png)
 
 Lets take a better look of the transaction. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552539/245552544.png)
+![](/attachments/245552539/245552544.png)
 
 If we take a look in the Transaction details, we will be able to see
 that the most consuming method is the

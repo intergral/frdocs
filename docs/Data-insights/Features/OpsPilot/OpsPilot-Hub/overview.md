@@ -2,7 +2,7 @@ OpsPilot Hub is your central repository for storing, managing, and integrating c
 
 The Hub's knowledge base empowers OpsPilot to provide accurate, context-aware solutions to operational issues by combining your organization's information with integrated service data. By centralizing your operational knowledge and tool connections in one place, OpsPilot can quickly access relevant data and perform actions across your toolchain, enhancing its ability to assist team members in performing their roles effectively and efficiently.
 
-![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/OP-main.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/OP-main.png)
 
 
 ## Overview dashboard features
@@ -22,11 +22,11 @@ The overview page displays five cards showing different status elements:
 
 OpsPilot Hub is accessible through the OpsPilot tab in the FusionReactor Cloud interface and currently offers the following primary sections:
 
-1. [Assistant](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/): Elevate observability for every team member with the OpsPilot AI Assistant.
+1. [Assistant](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/): Elevate observability for every team member with the OpsPilot AI Assistant.
 
-2. [Services](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Services/): Organize and manage your service-specific information.
+2. [Services](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Services/): Organize and manage your service-specific information.
 
-2. [Knowledge](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/): Add and maintain your organization's operational knowledge.
+2. [Knowledge](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/): Add and maintain your organization's operational knowledge.
 
-3. [Integrations](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/integrations-overview/): Connect and configure third-party tools like Jira to extend OpsPilot's capabilities.
+3. [Integrations](/Data-insights/Features/OpsPilot/OpsPilot-Hub/integrations-overview/): Connect and configure third-party tools like Jira to extend OpsPilot's capabilities.
 

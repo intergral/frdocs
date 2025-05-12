@@ -8,7 +8,7 @@ the **Set Home Page** you can switch graphs quickly by clicking the
 Below is a sample image of the JDBC Time Graph with the tool-tip
 showing:
 
-![](/frdocs/attachments/245551148/245551169.png)
+![](/attachments/245551148/245551169.png)
 
 !!!note
     The JDBC Time Graph is the same as [Transaction->Time Graph](../Transactions/Time-Graph.md) but filtered to only show transactions of JDBC type.

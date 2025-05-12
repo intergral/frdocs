@@ -8,7 +8,7 @@ Starting with FusionReactor 12, the Observability Agent can be installed via FRA
 
 This enables the ability to analyse metrics within **Explore** and **Integration Dashboards**, providing insight into potential issues concerning your data sources.
 
-For advanced use, consider consulting/using the [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/) directly.
+For advanced use, consider consulting/using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/) directly.
 
 ## Supported Operating Systems
 The following operating systems are supported:

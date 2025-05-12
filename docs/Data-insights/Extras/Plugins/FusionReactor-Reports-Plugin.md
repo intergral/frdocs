@@ -13,7 +13,7 @@ for the day will remain persistent.
 
 This plugin is enabled by default, **but will not send an email until
 the email settings are set in FusionReactor-&gt;Settings**. For more
-information on setting these see [Email Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#email-settings).
+information on setting these see [Email Settings](/Data-insights/Features/Settings/Main-Menu/#email-settings).
 Once these are set there is nothing else you need to do to start
 receiving reports.
 
@@ -25,7 +25,7 @@ FusionReactor.
 There have been some changes to the report to improve the layout, and a
 few more values have been added.
 
-![](/frdocs/attachments/245548081/245548089.png)
+![](/attachments/245548081/245548089.png)
 
 *Figure 1: An example standard daily report.*
 
@@ -37,7 +37,7 @@ few more values have been added.
     FusionReactor believes that the clock on your server is not keeping
     correct time.
 
-    ![](/frdocs/attachments/245548099/245548108.png)
+    ![](/attachments/245548099/245548108.png)
 
     This is calculated by the data gathering thread. This thread collects
     the data from the system every 60 seconds, and determines clock drift by
@@ -100,7 +100,7 @@ the instance name of the FusionReactor. In this example the host name is
 "6e9b20a222d4" and the instance name is "tc-Docker-fr". This is also a
 link to the instance using the displayed host name (6e9b20a222d4). This
 can be changed using the "Host Name" setting on the [FusionReactor -&gt;
-Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/) page.
+Settings](/Data-insights/Features/Settings/Main-Menu/) page.
 
 The second line shows the date for which the report is for. In this
 example the date is "Monday, September 7, 2015". This means that the
@@ -118,7 +118,7 @@ The third line shows the time zone for the server, in this case
     FusionReactor believes that the clock on your server is not keeping
     correct time.
 
-    ![](/frdocs/attachments/245548099/245548108.png)
+    ![](/attachments/245548099/245548108.png)
 
     This is calculated by the data gathering thread. This thread collects
     the data from the system every 60 seconds, and determines clock drift by
@@ -145,7 +145,7 @@ Each tracked metric in this section is split into 3 numbers.
 -   Finally the number in the bottom left is the current target value
     for this metric.
 
-![](/frdocs/attachments/245548099/245548128.png)
+![](/attachments/245548099/245548128.png)
 
 *Figure 1: Main body of report*
 
@@ -174,7 +174,7 @@ FusionReactor will see this as a crash.
 To prevent the email from getting too large, the outage section is
 limited to the 10 longest outages for the weekly and monthly reports.
 
-![](/frdocs/attachments/245548099/245548138.png)
+![](/attachments/245548099/245548138.png)
 
 *Figure 2: Outage details for the day*
 
@@ -195,7 +195,7 @@ This table contains the following details:
 -   Uptime - The duration that the server has been up.
 -   Reason - The reason the server was last restarted (restart/crash)
 
-![](/frdocs/attachments/245548099/245548113.png)
+![](/attachments/245548099/245548113.png)
 
 ### Status Codes
 
@@ -214,7 +214,7 @@ This table contains the following details:
 -   % of Requests - The percentage of all web requests that this code
     makes up.
 
-![](/frdocs/attachments/245548099/245548133.png)
+![](/attachments/245548099/245548133.png)
 
 *Figure 2: HTTP status codes for the day*
 
@@ -241,7 +241,7 @@ This graph has two axis and two series, Runtime and Throughput.
 -   Throughput - This series uses the right axis, and shows the total
     number of web requests for that day.
 
-![](/frdocs/attachments/245548143/245548155.png)
+![](/attachments/245548143/245548155.png)
 
 *Figure 1: Overview graph from a weekly FusionReactor report.*
 
@@ -275,7 +275,7 @@ the busiest days of the week have been in the last month.
 This graph is graphing the number of requests for the month grouped by
 the day of week.
 
-![](/frdocs/attachments/245548160/245548167.png)
+![](/attachments/245548160/245548167.png)
 
 ### Status Codes
 
@@ -284,7 +284,7 @@ The status codes graph is intended to give a quick overview of the break
 down of HTTP status codes tracked by FusionReactor for the calender
 month.
 
-![](/frdocs/attachments/245548160/245548177.png)
+![](/attachments/245548160/245548177.png)
 
 ### Day of Week Break Down
 
@@ -301,7 +301,7 @@ this table shows the sum value for each day of the week.
 -   CPU - The average (mean) CPU usage.
 -   MEM (MB) - The average (mean) heap memory usage.
 
-![](/frdocs/attachments/245548160/245548172.png)
+![](/attachments/245548160/245548172.png)
 
 
 ## Configuration

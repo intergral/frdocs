@@ -1,4 +1,4 @@
-![!Screenshot](/frdocs/Best-Practices/Installation/Images/Script3.png)
+![!Screenshot](/Best-Practices/Installation/Images/Script3.png)
 
 ## Step 1: Install the Observability Agent
 
@@ -39,7 +39,7 @@ The Observability Agent provides you with the necessary tools and insights to ef
 ### Further options
 
 !!! info "Learn more"
-    Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
+    Further [options](/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
     
 ## Step 2: Instrument OpenTelemetry
 

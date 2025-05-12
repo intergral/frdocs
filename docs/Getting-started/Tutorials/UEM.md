@@ -11,7 +11,7 @@
 
 1.  **Install & set up User Experience Monitoring (UEM):**
     * Understand that UEM uses JavaScript embedded in your webpages to track user experience.
-    * Follow the detailed installation and setup instructions provided [here](/frdocs/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples).
+    * Follow the detailed installation and setup instructions provided [here](/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples).
     * Ensure the JavaScript snippet is correctly implemented on the webpages you wish to monitor.
 
 2.  **Monitor end-to-end transaction times with UEM:**
@@ -26,7 +26,7 @@
 3.  **Implement performance improvements based on UEM data:**
     * Based on the identified bottlenecks, implement appropriate performance optimizations. This may include:
         * **Optimizing ColdFusion code:** Refactor inefficient code segments.
-        * **Improving database query efficiency:** Tune slow SQL queries (refer to the [Slow SQL Queries](/frdocs/Getting-started/Tutorials/resolve-slow-queries/) documentation).
+        * **Improving database query efficiency:** Tune slow SQL queries (refer to the [Slow SQL Queries](/Getting-started/Tutorials/resolve-slow-queries/) documentation).
         * **Reducing external service call latency:** Investigate and optimize interactions with external APIs or services.
         * **Optimizing data sent to the browser**
            
@@ -48,7 +48,7 @@
 
 
 !!! info "Learn more"
-    [User Experience Monitoring](/frdocs/Data-insights/Features/UEM/User-Experience-Monitoring/)
+    [User Experience Monitoring](/Data-insights/Features/UEM/User-Experience-Monitoring/)
 
 
 

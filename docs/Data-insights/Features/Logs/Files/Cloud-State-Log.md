@@ -5,7 +5,7 @@ Available only on FusionReactor Cloud licenses.
 This log details changes in state of the **Control
 Channel** cloud connection channel.  A page
 describing the status of the channel can be found
-[here](/frdocs/Monitor-your-data/FR-Agent/Agent/Cloud-Status).
+[here](/Monitor-your-data/FR-Agent/Agent/Cloud-Status).
 
 
 |Field Name|Column|Description|

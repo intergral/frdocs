@@ -77,29 +77,29 @@ For the list of log dashboards see the [log dashboard index](#).
 
 ### Integration dashboards
 
-**MySQL** - Observe metrics from the [MySQL exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters).
+**MySQL** - Observe metrics from the [MySQL exporter](/Monitor-your-data/Observability-agent/overview/#exporters).
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/mysql.png)
 
-**MSSQL** - Observe metrics from the [MSSQL exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters).
+**MSSQL** - Observe metrics from the [MSSQL exporter](/Monitor-your-data/Observability-agent/overview/#exporters).
 
 
-**Node exporter** - Observe metrics from the [Node exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+**Node exporter** - Observe metrics from the [Node exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/node.png)
 
-**NGINX community** - Observe metrics from the [NGINX exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+**NGINX community** - Observe metrics from the [NGINX exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/nginx.png)
 
-**NGINX pro** - Observe metrics from the [NGINX exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+**NGINX pro** - Observe metrics from the [NGINX exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
 
 
-**Kafka** - Observe metrics from the [Kafka exporter](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+**Kafka** - Observe metrics from the [Kafka exporter](/Monitor-your-data/Observability-agent/overview/#exporters)
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/Kafka.png)
 
-**OracleDB Monitor**- Observe metrics from the [OracleDB Monitor](/frdocs/Monitor-your-data/Observability-agent/overview/#exporters)
+**OracleDB Monitor**- Observe metrics from the [OracleDB Monitor](/Monitor-your-data/Observability-agent/overview/#exporters)
 
 ![!Screenshot](../../Data-insights/Features/images/Dashboards/oracledb.png)
 

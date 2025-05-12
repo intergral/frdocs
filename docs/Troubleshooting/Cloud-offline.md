@@ -7,12 +7,12 @@ The following example is a check that will monitor the online status of all Fusi
 !!! note
     Any instance which has been offline for over five minutes will stop being counted as offline by the check.
 
-To more reliably monitor the online status of a specific job/instance, see the [check below](/frdocs/Troubleshooting/Cloud-offline/#when-a-single-job-goes-offline-for-5-minutes).
+To more reliably monitor the online status of a specific job/instance, see the [check below](/Troubleshooting/Cloud-offline/#when-a-single-job-goes-offline-for-5-minutes).
 
 It's also possible the graph will say **no data** when you are editing your check. This simply means no instances have gone offline within the time frame shown.
 
 !!! example
-    ![!Screenshot](/frdocs/Troubleshooting/images/any-instance-offline.png)
+    ![!Screenshot](/Troubleshooting/images/any-instance-offline.png)
 
     * This check relies on the function **Unless**, which returns the value from 5 minutes ago when **no data** is present now.
 
@@ -29,7 +29,7 @@ If you choose more than one **Job** or **Instance** with these alert conditions,
 It's possible the graph will say **no data** when you are editing your check. This simply means the selected instance has not been offline within the time frame shown.
 
 !!! example
-    ![!Screenshot](/frdocs/Troubleshooting/images/single-job-offline.png)
+    ![!Screenshot](/Troubleshooting/images/single-job-offline.png)
 
     The important parts here are:
 

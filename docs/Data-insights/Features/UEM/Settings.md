@@ -23,7 +23,7 @@ To use UEM in a web page all that is needed is the inclusion of a call
 to the FusionReactor API (FRAPI) method *getUemTrackingScript*. 
 
 !!! example
-    [UEM script usage examples](/frdocs/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples#script-examples)
+    [UEM script usage examples](/Data-insights/Features/UEM/User-Experience-Monitoring/#script-examples#script-examples)
 
 ## Sessions
 

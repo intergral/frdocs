@@ -5,7 +5,7 @@ and under certain server configurations.
 
 
 !!! info "Learn more"
-    [ColdFusion Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
+    [ColdFusion Plugin](/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
 
 
 The ColdFusion Metrics page is used to display various details
@@ -13,7 +13,7 @@ specifically for ColdFusion servers. Much this information is
 retrieved from the ColdFusion built-in Profiler and helps to
 understand the true state of your server traffic.
 
-![](/frdocs/attachments/245549433/245549445.png)
+![](/attachments/245549433/245549445.png)
 
 ## Graphs
 

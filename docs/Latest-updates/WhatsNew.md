@@ -5,13 +5,13 @@
 FusionReactor 2025.1.0 introduces several new features, improvements, and bug fixes to enhance performance, observability, and ease of use. This release includes support for Adobe ColdFusion 2025, ensuring seamless monitoring for the latest ColdFusion applications. Bug fixes include resolving an issue where certain transactions were not displaying correctly in Lucee, ensuring service names are correctly set in Deep Integration, and moving a cloud connection from port 2804 to port 443 for easier setup. Observability enhancements include metadata descriptions for metrics in the cloud (which can be disabled using `-Dfr.observability.metric.prometheus.remotewrite.metadata.enabled=false`), expanded FRAPI capabilities for creating web request transactions and setting transaction properties, and the ability to view transaction profiles in Pyroscope and Tempo traces. Additional fixes and enhancements are also included in this update. 
 
 !!! info "Learn more"
-    [Full release notes](/frdocs/Latest-updates/release-notes/#202510-3rd-march-2025)
+    [Full release notes](/Latest-updates/release-notes/#202510-3rd-march-2025)
 
 ### Pyroscope continuous profiling
 
 Pyroscope is a multi-tenant, continuous profiling aggregation system designed to seamlessly integrate with existing observability tools. By correlating profiling data with metrics, logs, and traces, Pyroscope provides deeper insights into application performance. With structured querying and analysis of production data, you can efficiently identify bottlenecks and optimize resource usage. 
 
-![!Screenshot](/frdocs/Data-insights/Features/Pyroscope/trace.png)
+![!Screenshot](/Data-insights/Features/Pyroscope/trace.png)
 
 
 
@@ -33,7 +33,7 @@ OpsPilot now integrates directly with Jira Cloud and Data Center, enabling you t
 ![!Screenshot](../../Latest-updates/images/Jira1.png)
 
 !!! info "Learn more"
-    [Jira integration](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira/)
+    [Jira integration](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira/)
 
 ## Explore: Servers 
 The new Servers tab in Explore provides enhanced server monitoring capabilities:
@@ -61,7 +61,7 @@ Introducing OpsPilot Hub: Your centralized knowledge repository for enhanced ope
 
 
 !!! info "Learn more"
-    [OpsPilot Hub](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
+    [OpsPilot Hub](/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
 
 ## FusionReactor 12.1
 
@@ -100,7 +100,7 @@ To help you begin, FusionReactor Cloud provides three pre-configured custom dete
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/992149064?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Custom Detectors"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 !!! info "Learn more" 
-    [Custom Detectors](/frdocs/Data-insights/Features/Anomaly-Detection/ADuserguide/#custom-detectors)
+    [Custom Detectors](/Data-insights/Features/Anomaly-Detection/ADuserguide/#custom-detectors)
 
 
 ## Enhanced On-Prem billing experience
@@ -129,7 +129,7 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 ![!Screenshot](../../Latest-updates/images/OPvision.png)
 
 !!! info "Learn more"
-    [OpsPilot Vision](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#opspilot-vision)
+    [OpsPilot Vision](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#opspilot-vision)
     
 * **Updated FR knowledge base**: OpsPilot has undergone a significant upgrade in its FusionReactor knowledge base, resulting in enhanced proficiency in understanding and addressing issues. With this improvement, OpsPilot can now provide more informed and effective responses when dealing with FusionReactor-related tasks. This advancement promises smoother operations and quicker resolutions, ultimately optimizing system performance and minimizing downtime.
 
@@ -149,20 +149,20 @@ With version 1.2.0, OpsPilot introduces exciting new features and improvements t
 
 ## FusionReactor 12
 
-We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
+We're excited to announce several enhancements in the latest release of FusionReactor 12. First off, we've seamlessly integrated the [Observability Agent](/Monitor-your-data/Observability-agent/overview/) within FRAM, offering enhanced monitoring capabilities for better insights into your applications. Additionally, our system now automatically detects supported application servers within FRAM, streamlining setup and management processes. We've also invested in improving support for Lucee 6 and Tomcat 10 within FRAM, ensuring smoother experiences for users of these technologies. These updates reflect our commitment to empowering developers with robust tools and features to optimize their workflows.
 
 ![!Screenshot](../../Latest-updates/images/FR12.png)
 
 
 !!! info "Learn more"
-    [Release notes](/frdocs/Latest-updates/release-notes/)
+    [Release notes](/Latest-updates/release-notes/)
 
 ## Anomaly Detection (Beta)
 
 For users familiar with FusionReactor Cloud (FR Cloud), the latest exciting update is the introduction of the Anomaly Detection component. This new feature enhances FR Cloud by enabling users to track the **probability of anomalies** in critical service metrics, known as RED (Request, Errors and Duration rates). It not only allows for closer monitoring of these key metrics but also provides notifications when they exceed set thresholds, offering a more proactive approach to service management.
 
 !!! info "Learn more"
-    [Anomaly Detection user guide](/frdocs/Data-insights/Features/Anomaly-Detection/ADoverview/)
+    [Anomaly Detection user guide](/Data-insights/Features/Anomaly-Detection/ADoverview/)
 
 
 
@@ -200,7 +200,7 @@ Stay tuned for more updates and enhancements as OpsPilot continues to evolve, de
 FusionReactor, the renowned application performance monitoring (APM) tool, has reached version 11.0.0. This release provides a significant improvement in security updates, reflecting the company's commitment to keeping your applications safe and secure. However, one notable change in this release is the discontinuation of Java 7 support, a decision made to address critical CVEs (Common Vulnerabilities and Exposures). We're also happy to announce integration with the upcoming Deep release as well as support for WebRequest tracking within servers using Jakarta servlet, which includes later versions of Tomcat and Wildfly amongst others.  
 
 !!! info "Learn more"
-    [Release notes](/frdocs/Latest-updates/release-notes/)
+    [Release notes](/Latest-updates/release-notes/)
     
 ## OpsPilot Assistant
 

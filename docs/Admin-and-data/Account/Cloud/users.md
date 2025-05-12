@@ -6,11 +6,11 @@
 
 FusionReactor Cloud has five types of user:
 
-* [Account Admin](/frdocs/Admin-and-data/Account/Cloud/users/#account-admin)
-* [Account Manager](/frdocs/Admin-and-data/Account/Cloud/users/#account-manager)
-* [Account User](/frdocs/Admin-and-data/Account/Cloud/users/#account-user)
-* [Account Observer](/frdocs/Admin-and-data/Account/Cloud/users/#account-observer) 
-* [Business Contact](/frdocs/Admin-and-data/Account/Cloud/users/#business-contact)
+* [Account Admin](/Admin-and-data/Account/Cloud/users/#account-admin)
+* [Account Manager](/Admin-and-data/Account/Cloud/users/#account-manager)
+* [Account User](/Admin-and-data/Account/Cloud/users/#account-user)
+* [Account Observer](/Admin-and-data/Account/Cloud/users/#account-observer) 
+* [Business Contact](/Admin-and-data/Account/Cloud/users/#business-contact)
 
 The account types have a hierarchical structure and each level above **Observer** inherits from the level below.
 

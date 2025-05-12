@@ -27,7 +27,7 @@
 
 3.  **Plan for future capacity needs:**
     * Use **historical data trends** from FusionReactor to forecast future resource requirements.
-    * Set up **[Anomaly Detection](/frdocs/Data-insights/Features/Anomaly-Detection/ADuserguide/) alerts** (with the Pro AI plan) to get early warnings of potential resource strain.
+    * Set up **[Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADuserguide/) alerts** (with the Pro AI plan) to get early warnings of potential resource strain.
     * Implement **scaling strategies** proactively to handle future growth.
     * Ensure your application can handle increased demand without performance degradation.
 
@@ -41,7 +41,7 @@
 5.  **Maintain continuous monitoring & Optimization:**
     * Continuously **monitor application demand** with FusionReactor.
     * **Optimize resource allocation** based on real-time insights.
-    * Use [historical data](/frdocs/Data-insights/Features/timepicker/) and proactive alerts for **future capacity planning**.
+    * Use [historical data](/Data-insights/Features/timepicker/) and proactive alerts for **future capacity planning**.
     * **Continuously validate and refine** capacity planning strategies.
     * Aim for **continuous optimization** to ensure ColdFusion applications are always ready to meet demand.
 

@@ -34,11 +34,11 @@ Lets run that script and see the output in the Profiler.
 When the script has been executed, we are going to find the transaction
 in the **Profiled Thread History** tab. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552505/245552512.png)
+![](/attachments/245552505/245552512.png)
 
 Now lets take a deeper look into the transaction. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552505/245552517.png)
+![](/attachments/245552505/245552517.png)
 
 By viewing the screenshot, we can see that **75.1%** of the total
 duration time was consumed by

@@ -94,7 +94,7 @@ The above example involves volume mounting the agent config file.  Alternatively
     Amend the file path under **source** to point to the location of the agent.yaml file and rename the MySQL image to your own.
 
 !!! info "Learn more"
-    [Further detail on metric integrations](/frdocs/Monitor-your-data/Observability-agent/overview/)
+    [Further detail on metric integrations](/Monitor-your-data/Observability-agent/overview/)
 
 ### **Step 5**: Run “docker-compose up -d” 
 

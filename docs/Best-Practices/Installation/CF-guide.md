@@ -1,6 +1,6 @@
 # ColdFusion & databases
 
-![!Screenshot](/frdocs/Best-Practices/Installation/Images/CF guide.png)
+![!Screenshot](/Best-Practices/Installation/Images/CF guide.png)
 
 ## Step 1: Install FRAM (FusionReactor Administration Manager)
 
@@ -31,7 +31,7 @@ Use the auto discovery tool to scan your server and automatically locate your Co
     If the auto discovery tool  doesn't pick up the instance you can then specify the file path to find it yourself.
 
 !!! tip 
-    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/frdocs/Best-Practices/Installation/scripted1/) to install FR. to install FR.
+    This is a manual process so if you have over 100 servers,  we recommend manual  activation or [scripting](/Best-Practices/Installation/scripted1/) to install FR. to install FR.
 <br>
 
 ## Step 3: Install the Observability Agent using FRAM
@@ -49,7 +49,7 @@ To monitor the machine running Coldfusion itself and any databases (eg Redis, My
     If you have more than one server, don’t monitor the same database multiple times as this sends excess data to the Cloud.
 
 !!! info "Learn more" 
-    [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/overview/)
+    [Observability Agent](/Monitor-your-data/Observability-agent/overview/)
 
 
 

@@ -5,7 +5,7 @@ The **Slow Transactions** page displays the transaction of the selected type tha
 The **Slow Requests** page shows a list of **currently running** and **finished** requests which have taken longer to run than
 the current **Slow Request Threshold** which is defined on the [Request+Settings](../Requests/Settings.md)
 
-![Slow Transaction Page](/frdocs/attachments/245550832/245550866.png)
+![Slow Transaction Page](/attachments/245550832/245550866.png)
 
 ## Slow Running Transactions Table
 

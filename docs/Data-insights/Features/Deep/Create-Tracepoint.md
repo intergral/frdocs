@@ -5,7 +5,7 @@
 
 To view a list of configured tracepoints, open **Explore**, select the **Deep** data source, and navigate to **Tracepoints → List Tracepoints**.  
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/list.png)
+![!Screenshot](/Monitor-your-data/Deep/images/list.png)
 
 You can adjust the **Limit** field to control the number of results displayed (default: 20). The results will show all currently configured tracepoints.  
 
@@ -17,11 +17,11 @@ You can adjust the **Limit** field to control the number of results displayed (d
 
 To create a tracepoint, open **Explore**, select the **Deep** data source, and navigate to **Tracepoints → Create Tracepoint**.
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/create.png)
+![!Screenshot](/Monitor-your-data/Deep/images/create.png)
 
 You now need to configure the tracepoint to trigger as required. To do this, you **must** set the file path and line number— all other settings are optional.
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/tracepoint-details.png)
+![!Screenshot](/Monitor-your-data/Deep/images/tracepoint-details.png)
 
 
 | Item Name     | Default | Example                         | Description |
@@ -32,7 +32,7 @@ You now need to configure the tracepoint to trigger as required. To do this, you
 | **Targeting**   | -       | `service.name=myapp`          | A query used to target triggers to specific clients based on the client resource. Using `service.name=myapp` will ensure only clients defining `service.name` as `myapp` receive this trigger. |
 | **Log Message** | -       | `user id = {user.id}`         | Allows dynamic log messages to be injected into the target application. These log messages can be consumed by log platforms such as Loki. Expressions within `{}` will be evaluated at the trigger location to extract local variables. |
 | **Trace**       | None | Line                       | Allows dynamic spans to be injected. Selecting **Line**  creates a span at the targeted line. Selecting **Method/Function** creates a span around the enclosing method/function. |
-| **Metrics**     | -       | `basket_size len(basket.items)` | Allows dynamic metrics to be created using local variables. [Read more below.](/frdocs/Data-insights/Features/Deep/Create-Tracepoint/#metrics) |
+| **Metrics**     | -       | `basket_size len(basket.items)` | Allows dynamic metrics to be created using local variables. [Read more below.](/Data-insights/Features/Deep/Create-Tracepoint/#metrics) |
 | **Watches**     | -       | `user.id`                     | Allows selection of specific variables when using snapshots. To learn more about watches, view the docs for [the client](https://intergral.github.io/deep/#client) being used. |
 
 ### Metrics
@@ -58,7 +58,7 @@ When defining metrics, ensure the expression is valid and results in a numeric v
 
 To delete a tracepoint using **Explore**, select the **Deep** data source and navigate to **Tracepoints → Delete Tracepoint**.  
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/delete.png)
+![!Screenshot](/Monitor-your-data/Deep/images/delete.png)
 
 - Enter the **ID** of the tracepoint you want to delete.  
 - The tracepoint ID can be found in the table view of the **List Tracepoints** response, which also provides a delete link.  

@@ -2,7 +2,7 @@
 
 To search for triggered snapshots, open **Explore**, select the **Deep** data source, and choose **Search**.  
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/Search.png)
+![!Screenshot](/Monitor-your-data/Deep/images/Search.png)
 
 You can refine your search using the following filters:  
 
@@ -11,4 +11,4 @@ You can refine your search using the following filters:
 
 Results are displayed in a table, where you can select a snapshot to view.  
 
-![!Screenshot](/frdocs/Monitor-your-data/Deep/images/table.png)
+![!Screenshot](/Monitor-your-data/Deep/images/table.png)
