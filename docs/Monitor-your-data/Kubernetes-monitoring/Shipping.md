@@ -6,7 +6,7 @@
 
 This guide explains how to deploy the Kubernetes-Prometheus-Stack to send metric data from your Kubernetes cluster(s) directly to FusionReactor Cloud.  This data can then be visualized in the **Kubernetes** dashboard set.
 
-![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
+![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/K8scluster.png)
 
 The [Kubernetes-Prometheus-Stack](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack) is a deployable Helm
 chart which enables monitoring of Kubernetes clusters in FusionReactor Cloud.
@@ -90,7 +90,7 @@ This data can be viewed in **FusionReactor Cloud** \>
 
 
 
-![!Screenshot](/frdocs/Monitor-your-data/Kubernetes-monitoring/images/k8clusters.png)
+![!Screenshot](/Monitor-your-data/Kubernetes-monitoring/images/k8clusters.png)
 
 ## Upgrading from a previous chart
 

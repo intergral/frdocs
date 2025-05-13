@@ -31,7 +31,7 @@ Alternative sources could be:
 Use a logging client such as [Promtail](https://grafana.com/docs/loki/latest/clients/promtail/), [fluent Bit](https://fluentbit.io/), [LOGBack](https://logback.qos.ch/), [Fluentd](https://www.fluentd.org/) or some other alternative.
 
 
-![alt](/frdocs/Monitor-your-data/Log-monitoring/images/promtail.png) ![alt](/frdocs/Monitor-your-data/Log-monitoring/images/fluentbit.png) ![alt](/frdocs/Monitor-your-data/Log-monitoring/images/logback.png) ![alt](/frdocs/Monitor-your-data/Log-monitoring/images/fluentd.png)
+![alt](/Monitor-your-data/Log-monitoring/images/promtail.png) ![alt](/Monitor-your-data/Log-monitoring/images/fluentbit.png) ![alt](/Monitor-your-data/Log-monitoring/images/logback.png) ![alt](/Monitor-your-data/Log-monitoring/images/fluentd.png)
 
 
 Send logs directly to **FusionReactor Cloud** by configuring the log destinations with the following URL,  ````https://api.fusionreactor.io/logs/v1/```` using basic authentication of **username** / **password**.
@@ -45,7 +45,7 @@ To generate an API key, go to your account settings page in **FusionReactor Clou
 
 Under the API keys tab, click generate and create a key.
 
-![](/frdocs/Monitor-your-data/Log-monitoring/images/apiKeys.png)
+![](/Monitor-your-data/Log-monitoring/images/apiKeys.png)
 
 ### Sending logs to FR Cloud
 
@@ -70,7 +70,7 @@ Recommended labels:
 - Filename (if applicable)
 
 !!! info "Learn more"
-    [Labels & fields](/frdocs/Monitor-your-data/Log-monitoring/labels-and-fields/)
+    [Labels & fields](/Monitor-your-data/Log-monitoring/labels-and-fields/)
 
 ## Logging client examples
 

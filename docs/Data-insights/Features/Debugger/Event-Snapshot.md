@@ -21,7 +21,7 @@ Event Snapshots bridge the gap between basic error tracking (stack traces) and t
 
 **Dependency**: The native Debug library is essential for Event Snapshots, as it provides the API necessary to inspect Java local variables on the call stack. This library captures variable values and the thread stack trace at the time of the triggering event.
 
-**Installation**: The automated FusionReactor installer includes the native [Debug library](https://www.fusion-reactor.com/download-fusionreactor/). For [manual installations](/frdocs/Monitor-your-data/FR-Agent/Installation/Manual/), this library must be installed separately.
+**Installation**: The automated FusionReactor installer includes the native [Debug library](https://www.fusion-reactor.com/download-fusionreactor/). For [manual installations](/Monitor-your-data/FR-Agent/Installation/Manual/), this library must be installed separately.
 
 
 ## Rate Limiting for Event Snapshots
@@ -74,11 +74,11 @@ In scenarios where the relevant operation (e.g., socket connect) occurs within l
 
 Selecting a stack frame corresponding to application code might initially show limited information, as illustrated below:
 
-![](/frdocs/Data-insights/Features/Debugger/images/245553125.png)
+![](/Data-insights/Features/Debugger/images/245553125.png)
 
 However, expanding relevant fields, such as the `'ds'` field in this example, can reveal further details:
 
-![](/frdocs/Data-insights/Features/Debugger/images/245553120.png)
+![](/Data-insights/Features/Debugger/images/245553120.png)
 
 ### Enabling Support for Event Snapshots
 
@@ -123,7 +123,7 @@ In order th track variables for every stack frame including within and CFC's you
 
 ## User Interface
 
-![](/frdocs/Data-insights/Features/Debugger/images/245553130.png)
+![](/Data-insights/Features/Debugger/images/245553130.png)
 
 The image above illustrates the Event Snapshot user interface. This specific Event Snapshot was generated due to a second attempt to connect to PostgreSQL. The initial connection attempt triggered an error that was tracked on a transaction. Subsequently, the second connection attempt resulted in an exception being thrown, which then triggered the Event Snapshot generation at the moment the exception occurred.
 

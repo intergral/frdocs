@@ -17,7 +17,7 @@
 
 The **Incident Management Application** is a robust tool for tracking and resolving incidents in real-time. It streamlines incident workflows, enabling teams to manage tasks, update statuses, and maintain detailed activity logs with ease.
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/mainpg.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/mainpg.png)
 
 
 Incidents can be challenging, particularly during the critical initial stages of investigation and identification. FusionReactor's **Incidents** feature is packed with powerful, time-saving tools designed to help you respond swiftly and efficiently, minimizing downtime and streamlining your resolution process.
@@ -33,7 +33,7 @@ The application provides:
 
 The **Incidents** dashboard helps teams track, prioritize, and resolve incidents efficiently by centralizing relevant details and offering quick filtering and reporting options.
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/card.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/card.png)
 
 The dashboard features **Incident Cards**, each representing a specific incident with essential details. These details include:
 
@@ -70,11 +70,11 @@ To create a new incident:
 1. Navigate to the **Incidents** page.
 2. Click the **Declare Incident** button to open the incident creation form.
 
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/declare.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/declare.png)
 
 3. Fill in the required information:
 
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/createnew.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/createnew.png)
 
        - **Title**: A brief description of the incident.
        - **Severity**: Select from predefined levels (e.g., Pending, Low, Medium, High, Critical).
@@ -156,13 +156,13 @@ Labels are added during incident creation or via the **Add Label** button on the
 
 
 1. Navigate to the **Settings** page using the cog icon.
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/settings-icon.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/settings-icon.png)
 2. Select **+ Add label**
 2. Enter a name.
 2. Choose a color.
 3. Add a description.
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/newlabel.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/newlabel.png)
 
 
 !!! tip
@@ -183,7 +183,7 @@ Keep the incident timeline organized by adding formatted notes and updates about
 !!! info
     The ellipsis button on comments in the activity timeline allows users to edit their posts. 
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/comment.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/comment.png)
 
 
 
@@ -234,7 +234,7 @@ Users will receive an email notification in the following situations:
 
 The **Drill Incidents** feature allows teams to simulate real-world incident scenarios in a controlled environment. These drills help improve response readiness, validate processes, and identify areas for improvement.  
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/drill-overview.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/drill-overview.png)
 
 
 #### Create a drill 
@@ -245,9 +245,9 @@ To create a new drill incident:
 1. Navigate to the **Incidents** page.  
 2. Click the **Create Drill** button to open the **Create a Drill Incident** form. 
 
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/drill-button.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/drill-button.png)
 
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/create-drill.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/create-drill.png)
 
 4. Fill in the required details:  
        - **Title**: A brief description of the drill incident.
@@ -275,7 +275,7 @@ Once a drill incident is created, it functions like a regular incident but does 
 
 The interactive timeline serves as your incident command center, providing a chronological view of all incident activities and enabling seamless collaboration. Responders can quickly scan past actions, review relevant context, and determine next steps without switching between multiple tools. 
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/activity.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/activity.png)
 
 The Incident Activity timeline:
 
@@ -291,11 +291,11 @@ Task management streamlines incident response by keeping teams coordinated and a
 
 !!! info
     Access this view by clicking the task page icon in the navigation menu.
-    ![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/tasklist-icon.png)
+    ![!Screenshot](/Data-insights/Features/Incidents/images/tasklist-icon.png)
 
 #### Overview
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/overview.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/overview.png)
 
 
 The overview dashboard displays tasks in three key categories:
@@ -333,7 +333,7 @@ The overview dashboard displays tasks in three key categories:
 
 The Kanban view on **All Tasks** is designed to streamline task management related to incidents. It organizes tasks into three primary columns: **To Do**, **In Progress**, and **Done**, allowing users to easily track the status and progress of incident-related activities.
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/kanban.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/kanban.png)
 
 ##### Key Features
 
@@ -363,7 +363,7 @@ This Kanban system enables efficient collaboration and task prioritization for i
 
 View and manage tasks grouped by their associated incidents to track progress across multiple response efforts. 
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/incident.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/incident.png)
 
 Each incident section shows:
 

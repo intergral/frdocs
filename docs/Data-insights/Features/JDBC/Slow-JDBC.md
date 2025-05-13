@@ -13,7 +13,7 @@ obfuscated. The image below lists any transactions that have gone over
 the slowest threshold. It also lists any running transactions that haven
 increased passed the threshold and are still running.
 
-![](/frdocs/attachments/245551232/245551252.png)
+![](/attachments/245551232/245551252.png)
 
 !!!note
     The Slow Transactions: JDBCRequest is the same as [Transaction->Slow Transactions](../Transactions/Slow-Transactions.md) but filtered to only show transactions of JDBC type.

@@ -22,14 +22,14 @@ Once your application is instrumented, you need to set up an exporter to send th
 If you are deploying your Node.js application using Docker, ensure you include the OpenTelemetry agent in your `docker-compose.yml` file. This agent will handle the collection and transmission of telemetry data from your application to the FusionReactor Cloud.
 
 !!! info "Learn more"
-    [Docker Observability Agent Installation](/frdocs/Monitor-your-data/Observability-agent/Installation/Docker/)
+    [Docker Observability Agent Installation](/Monitor-your-data/Observability-agent/Installation/Docker/)
 
 ### **Step 4**: Build the `otel-config.yaml` file
 
 To finalize the setup, create the `otel-config.yaml` file. This file contains the configuration needed for the OpenTelemetry agent to function correctly, including details about the exporter and the telemetry data to collect.
 
 !!! info "Learn more"
-    [Create an `otel-config.yaml` File](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Collector/#step-1-create-an-otel-configyaml-file)
+    [Create an `otel-config.yaml` File](/Monitor-your-data/OpenTelemetry/Shipping/Collector/#step-1-create-an-otel-configyaml-file)
 
 By following these steps, you'll successfully set up OpenTelemetry for your Node.js application, enabling seamless data ingestion into the FusionReactor Cloud.
 

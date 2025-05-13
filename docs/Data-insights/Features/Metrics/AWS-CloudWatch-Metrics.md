@@ -30,7 +30,7 @@ data can be uploaded to AWS CloudWatch. This is done by clicking the
  Configuration of this functionality is described
 [here](#aws-cloudmetrics-setting).
 
-![](/frdocs/attachments/245549462/245549477.png)
+![](/attachments/245549462/245549477.png)
 
 The **Metrics Selection** screen is split into a **selector** area,
 comprising a filter, series selector, dimensions selector and **Add to CloudWatch** button.  All series - including [JMX
@@ -80,7 +80,7 @@ shows the supported placeholders:
 
 The lower half of the screen shows the current **Available** and **Stale** metrics. 
 
-![](/frdocs/attachments/245549462/245549471.png)
+![](/attachments/245549462/245549471.png)
 
 The columns here show the name, description, dimensions, name of the
 metric within AWS, full ID and last sampled value.  The **Remove**

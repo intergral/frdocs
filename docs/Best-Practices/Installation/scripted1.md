@@ -1,6 +1,6 @@
 # Java/Lucee/CFML & databases 
 
-![!Screenshot](/frdocs/Best-Practices/Installation/Images/Script1.png)
+![!Screenshot](/Best-Practices/Installation/Images/Script1.png)
 
 Manually installing FusionReactor requires you to directly place the FusionReactor installation files and configure the JVM arguments on your application servers.
 
@@ -48,7 +48,7 @@ JVM arguments for your application server are only read when the server/JRE (Jav
 ### c) Add FusionReactor to the JVM arguments 
 
 !!! info 
-    App servers use different methods to do this and we advise reading the [Manual configuration examples](/frdocs/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
+    App servers use different methods to do this and we advise reading the [Manual configuration examples](/Monitor-your-data/FR-Agent/Installation/Configuration-examples/)
 
 ```
 ENV JAVA_OPTS="-javaagent:/opt/fusionreactor/instance/{name}/fusionreactor.jar=name=tomcat,address=8088 -agentpath:/opt/fusionreactor/instance/{name}/libfrjvmti_x64.so"
@@ -101,4 +101,4 @@ The Observability Agent provides you with the necessary tools and insights to ef
 ### Further options
 
 !!! info "Learn more"
-    Further [options](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.
+    Further [options](/Monitor-your-data/Observability-agent/Installation/Snippets/#options) are available when installing the Observability Agent.

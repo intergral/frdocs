@@ -21,7 +21,7 @@ To view the cookie for FusionReactor, use the console of your browser.
 **Step 1:** Navigate to the **Application** tab and view the cookie for FusionReactor.
 
 
-![Screenshot](/frdocs/Troubleshooting/images/FR_login_cookie.png)
+![Screenshot](/Troubleshooting/images/FR_login_cookie.png)
 
 
 **Step 2:** Create a blank html page.

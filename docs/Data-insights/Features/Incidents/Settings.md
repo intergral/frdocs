@@ -1,13 +1,13 @@
 # Settings
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/setting-main.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/setting-main.png)
 
 
 The **Settings** page allows users to configure key elements of the **Incidents** module, including **Labels**, **Severities**, **Statuses**, and **Roles**. 
 
 ## Access Settings
 
-![!Screenshot](/frdocs/Data-insights/Features/Incidents/images/settings-cog.png)
+![!Screenshot](/Data-insights/Features/Incidents/images/settings-cog.png)
 
 
 1. Click the **cog icon** in the top-right of the screen.  

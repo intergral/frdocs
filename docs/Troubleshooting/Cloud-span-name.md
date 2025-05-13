@@ -2,7 +2,7 @@
 
 To explore traces we advise using the **Search** feature.
 
-![](/frdocs/images/Tracing/tracemain.png)
+![](/images/Tracing/tracemain.png)
 
 Within search, you can specify:
 
@@ -18,7 +18,7 @@ Within search, you can specify:
 
 You can view the trace information by clicking on the trace ID, which will open a window to the right of the screen.
 
-![](/frdocs/images/Tracing/trace.png)
+![](/images/Tracing/trace.png)
 
 
 ___

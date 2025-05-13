@@ -2,7 +2,7 @@
 
 The Knowledge section in OpsPilot allows you to add general information that helps the system understand your entire technology stack and organization. This feature enhances OpsPilot's ability to provide relevant and contextualized responses.
 
-![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/knowledge.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/knowledge.png)
 
 When adding content to OpsPilot Knowledge, it's crucial to understand that the system relies heavily on titles and descriptions to locate relevant information when answering questions. To maximize the effectiveness of your knowledge base, ensure that your titles and descriptions are comprehensive and accurately reflect all the topics covered in each snippet or document. 
 
@@ -11,12 +11,12 @@ When adding content to OpsPilot Knowledge, it's crucial to understand that the s
 
 Currently, three types of knowledge can be added to OpsPilot:
 
-1. [Snippet](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#snippets)
+1. [Snippet](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#snippets)
 
-2. [File](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#files)
+2. [File](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#files)
 
 
-3. [Website](/frdocs/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#websites)
+3. [Website](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/#websites)
 
 ### Snippets
 - Text-based information with a 5,000 character limit.
@@ -99,7 +99,7 @@ Once configured, click **Add website** to finalize the process.
 
 In the OpsPilot Knowledge interface, you have the option to rescrape or delete websites that have been added to your knowledge base.
 
-![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/rescrape.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/rescrape.png)
 
 * **Rescrape button**: The icon highlighted in the red box is the Rescrape button. Clicking this will initiate a rescraping of the website, updating the content in your knowledge base to reflect any changes on the site.
 
@@ -113,7 +113,7 @@ Use these options to ensure your knowledge base remains up-to-date and relevant.
 
 To stop a website scrape that is currently in progress, click the stop button located on the right-hand side of the status panel. This will immediately halt the ongoing scraping process.
 
-![!Screenshot](/frdocs/Data-insights/Features/OpsPilot/images/cancelscrape.png)
+![!Screenshot](/Data-insights/Features/OpsPilot/images/cancelscrape.png)
 
 
 

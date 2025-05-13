@@ -4,7 +4,7 @@ ColdFusion Metrics are only available for certain ColdFusion versions
 and under certain server configurations.
 
 !!! info "Learn more"
-    [ColdFusion Plugin](/frdocs/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
+    [ColdFusion Plugin](/Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin/)
 
 The ColdFusion System Metrics page is very similar to the ColdFusion
 Metrics page, except that it is more focused on showing information
@@ -17,7 +17,7 @@ There are eight different graphs:
 **CF Threads** | **Throttled Memory**| **Throttled Queue Size** | **Concurrent User Count** |  
 
  
-![](/frdocs/attachments/245549451/245549457.png)
+![](/attachments/245549451/245549457.png)
 
 ### Scopes
 

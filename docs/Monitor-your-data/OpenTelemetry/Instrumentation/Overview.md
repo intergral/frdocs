@@ -10,11 +10,11 @@ To begin analyzing and monitoring your OpenTelemetry data with FusionReactor, yo
 
 FusionReactor provides step-by-step guides for the following languages: 
 
-* [C++](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
-* [Go](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
-* [Node.js](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/node/)
-* [PHP](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/)
-* [Python](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
+* [C++](/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
+* [Go](/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
+* [Node.js](/Monitor-your-data/OpenTelemetry/Instrumentation/node/)
+* [PHP](/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/)
+* [Python](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
 
 !!! info
     More guides will continue to be added over time.

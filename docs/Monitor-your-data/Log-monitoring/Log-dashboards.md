@@ -11,7 +11,7 @@ Some views are specifically designed to work with FusionReactor agent logs, othe
 
 The central log dashboard contains links to all log dashboards and can be used to quickly navigate between logging views.
 
-![](/frdocs/Monitor-your-data/Log-monitoring/images/CentralDashboard.png)
+![](/Monitor-your-data/Log-monitoring/images/CentralDashboard.png)
 
 Log dashboards will be added and improved over time. 
 This will include adding new categories of dashboards, new log views and new filters to gain insight and value from your logs.
@@ -22,15 +22,15 @@ From this dashboard, you can navigate into any log dashboard, then return to the
 
 The log events Dashboard allows you to quickly browse your logs, by filtering by log source and searching for any text within logs.
 
-![](/frdocs/Monitor-your-data/Log-monitoring/images/events.png)
+![](/Monitor-your-data/Log-monitoring/images/events.png)
 
 Within the dashboard you can view the rate of logs, as well as the log lines themselves.
 
 Log filters operate on the job label.
 
-The job label is automatically be applied to [logs shipped by FusionReactor](/frdocs/Monitor-your-data/Log-monitoring/agent-shipper/) and set to the instance name.
+The job label is automatically be applied to [logs shipped by FusionReactor](/Monitor-your-data/Log-monitoring/agent-shipper/) and set to the instance name.
 
-Logs shipped via an [External Log Shipper](/frdocs/Monitor-your-data/Log-monitoring/log-shipper/) must have a job label specified to allow for log filters to function.
+Logs shipped via an [External Log Shipper](/Monitor-your-data/Log-monitoring/log-shipper/) must have a job label specified to allow for log filters to function.
 
 Search text allows you to search for any log line content from within your ingested logs, for example:
 

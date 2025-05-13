@@ -7,7 +7,7 @@ Integration allows you to ingest vital metrics to monitor the health of your ent
 Metric exporters are libraries that expose integration metrics to an agent. At FusionReactor, we have developed a wrapper for Grafana Alloy called the **Observability Agent** which allows you to ingest metrics with minimal configuration required. 
 
 
-With our Observability Agent you can ingest any data into the FusionReactor Cloud, and visualise your data within the [Integration dashboards](/frdocs/Data-insights/Features/dashboards/#integration-dashboards).
+With our Observability Agent you can ingest any data into the FusionReactor Cloud, and visualise your data within the [Integration dashboards](/Data-insights/Features/dashboards/#integration-dashboards).
 
 !!! info
     For local servers, we recommend utilizing FRAM for installing the Observability Agent, while for all other environments, we suggest opting for Docker.
@@ -47,11 +47,11 @@ Under the API keys tab, click generate and create a key.
 Install the Observability Agent to monitor your integrations outside of ColdFusion and Java. 
 There are currently three install methods:
 
-* [FRAM](/frdocs/Monitor-your-data/Observability-agent/Installation/FRAM/)
+* [FRAM](/Monitor-your-data/Observability-agent/Installation/FRAM/)
 
-* [Local install using code snippets](/frdocs/Monitor-your-data/Observability-agent/Installation/Snippets/)
+* [Local install using code snippets](/Monitor-your-data/Observability-agent/Installation/Snippets/)
 
-* [Docker](/frdocs/Monitor-your-data/Observability-agent/Installation/Docker/) 
+* [Docker](/Monitor-your-data/Observability-agent/Installation/Docker/) 
 
 !!! info
     For local servers, we recommend utilizing FRAM for installing the Observability Agent, while for all other environments, we suggest opting for Docker.

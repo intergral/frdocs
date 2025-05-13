@@ -11,11 +11,11 @@ OpenTelemetry, with its robust capabilities for distributed tracing and telemetr
 ### Three steps to seamless integration:
 FusionReactor has distilled the OTel integration process into three straightforward steps, making it accessible for users at all levels:
 
-Step 1: [Instrument code](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
+Step 1: [Instrument code](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
 
-Step 2: [Ship data to FR Cloud](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/overview/)
+Step 2: [Ship data to FR Cloud](/Monitor-your-data/OpenTelemetry/Shipping/overview/)
 
-Step 3: [Visualize data](/frdocs/Monitor-your-data/OpenTelemetry/Visualize/Metrics/) 
+Step 3: [Visualize data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/) 
 
 
 !!! info "Learn more"
@@ -46,7 +46,7 @@ For instance, when instrumenting a typical web application, each request can be 
 FusionReactor is now able to provide distributed trace information which is captured and displayed in a graphical format, so you can visualize the entire request flow and quickly identify any issues or bottlenecks.  
 
 !!! info "Learn more"
-    [Distributed tracing](/frdocs/Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing/)
+    [Distributed tracing](/Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing/)
 
 
 ### Logs
@@ -70,20 +70,20 @@ Instrumentation is the process of extending your application to generate, collec
 
 
 !!! info "Learn more"
-    [Instrumentation](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
+    [Instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
 
 ### Shipping telemetry data to FusionReactor Cloud
 
 There are 3 ways to send data to FusionReactor Cloud:
 
-* [OTel collector](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
+* [OTel collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
 
-* [Observability Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
+* [Observability Agent](/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
 
-* [Grafana Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
+* [Grafana Agent](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
 
 !!! info "Learn more"
-    [Sending data to FR Cloud](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/overview/)
+    [Sending data to FR Cloud](/Monitor-your-data/OpenTelemetry/Shipping/overview/)
 
 
 ### OpenTelemetry collector

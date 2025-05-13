@@ -7,13 +7,13 @@ Shipping OpenTelemetry data to FusionReactor Cloud enhances observability, accel
 There are three ways to send telemetry data to FusionReactor Cloud. 
 
 
-* [OpenTelemetry Collector](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
+* [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
 
 
-* [Observability Agent](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
+* [Observability Agent](/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
 
 
-* [Grafana Alloy](/frdocs/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
+* [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
 
 ___
 

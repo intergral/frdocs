@@ -1,9 +1,9 @@
 
 FusionReactor is available in 2 editions with or without Cloud features:
 
-* [FusionReactor Ultimate](/frdocs/Admin-and-data/Billing/On-Premise/billing/#fusionreactor-ultimate)
+* [FusionReactor Ultimate](/Admin-and-data/Billing/On-Premise/billing/#fusionreactor-ultimate)
 
-* [FusionReactor Developer](/frdocs/Admin-and-data/Billing/On-Premise/billing/#fusionreactor-developer)
+* [FusionReactor Developer](/Admin-and-data/Billing/On-Premise/billing/#fusionreactor-developer)
 
 |**Edition**| **Annual** | **Monthly** | 
 |------------ | ------------- | ------------ | 

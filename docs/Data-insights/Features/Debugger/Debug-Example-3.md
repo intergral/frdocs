@@ -38,12 +38,12 @@ clicking the "**New Breakpoint**" button in the top right.
 
 You should enter the configuration values as follows:
 
-![](/frdocs/attachments/245553542/245553577.png)
+![](/attachments/245553542/245553577.png)
 
 Once you confirm this breakpoint, you should see a new breakpoint listed
 in the breakpoint section of the debugger like this :
 
-![](/frdocs/attachments/245553542/245553571.png)
+![](/attachments/245553542/245553571.png)
 
 The information button on the breakpoint will show the following
 information.
@@ -51,16 +51,16 @@ information.
 Once the class is loaded and the location is valid it will change to
 show the location where the breakpoint will fire.
 
-![](/frdocs/attachments/245553542/245553565.png)
+![](/attachments/245553542/245553565.png)
 
 If you have executed the cfm page then it will appear like this :
 
-![](/frdocs/attachments/245553542/245553559.png)
+![](/attachments/245553542/245553559.png)
 
 In this case, the information button on the breakpoint will show similar
 information as below:
 
-![](/frdocs/attachments/245553542/245553553.png)
+![](/attachments/245553542/245553553.png)
 
 If you now call the `div0catch.cfm` page in your browser you should
 receive an email.  
@@ -78,7 +78,7 @@ You can get the same information from the Exception Caught/Thrown
 breakpoint type. You can set this by using the following breakpoint
 configuration:
 
-![](/frdocs/attachments/245553542/245553547.png)
+![](/attachments/245553542/245553547.png)
 
 When the exception occurs you will receive an email and then the
 breakpoint will become disabled. The breakpoint will be disabled even if
@@ -109,8 +109,8 @@ not the page itself.
 This is an example of the results as sent
 from the source file name and line number breakpoint:[FusionReactor
 Production Debugger
-Alert.pdf](/frdocs/attachments/245553542/245553598.pdf)
+Alert.pdf](/attachments/245553542/245553598.pdf)
 
 This is an example of the results as sent from the exception thrown
 breakpoint: [FusionReactor Production Debug
-Alert.pdf](/frdocs/attachments/245553542/245553583.pdf)
+Alert.pdf](/attachments/245553542/245553583.pdf)

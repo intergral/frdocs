@@ -50,11 +50,11 @@ out.println(sb.toString());
 When the execution of the script has finished, go to the **Profiled Thread History**
 tab and see the transaction details. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552554/245552559.png)
+![](/attachments/245552554/245552559.png)
 
 Lets take a better look of the transaction. ( *See screenshot below* )
 
-![](/frdocs/attachments/245552554/245552564.png)
+![](/attachments/245552554/245552564.png)
 
 If we take a look in the Transaction details, we will be able to see
 that the most consuming method is the ```java.io.BufferedReader.readLine```

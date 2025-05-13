@@ -26,14 +26,14 @@ If you are experiencing issues with these areas of the software then you should 
 
 The Cloud status icon in the top right corner of FusionReactor shows the current connection status of the FusionReactor instance to the cloud.
 
-![!Screenshot](/frdocs/Troubleshooting/images/frcloudicon.png)
+![!Screenshot](/Troubleshooting/images/frcloudicon.png)
 
 | Description | State | Icon
 |------------ | ------------- | ------------
-|Agent connected and last transmission was successful | Connected | ![!Screenshot](/frdocs/Troubleshooting/images/greenup.png)|
-|Agent connected and last transmission was not successful | Degraded | ![!Screenshot](/frdocs/Troubleshooting/images/cloudamberdown.png)|
-|Agent disconnected and last transmission was successful | Degraded | ![!Screenshot](/frdocs/Troubleshooting/images/cloudiconupload.png)|
-|Agent disconnected and last transmission was unsuccessful | Disconnected | ![!Screenshot](/frdocs/Troubleshooting/images/reddowncloud.png)|
+|Agent connected and last transmission was successful | Connected | ![!Screenshot](/Troubleshooting/images/greenup.png)|
+|Agent connected and last transmission was not successful | Degraded | ![!Screenshot](/Troubleshooting/images/cloudamberdown.png)|
+|Agent disconnected and last transmission was successful | Degraded | ![!Screenshot](/Troubleshooting/images/cloudiconupload.png)|
+|Agent disconnected and last transmission was unsuccessful | Disconnected | ![!Screenshot](/Troubleshooting/images/reddowncloud.png)|
 
 Reasons for connection troubles included: network or internet connection issues, incorrect [firewall](trouble.md#firewall) or [detailed view](trouble.md#proxy) settings or [system failure](trouble.md#system-status).
 
@@ -41,9 +41,9 @@ Reasons for connection troubles included: network or internet connection issues,
 
 If you have a proxy server in place to access the internet, then you can configure it inside FusionReactor.
 
-![!Screenshot](/frdocs/Troubleshooting/images/fr_proxy_settings.png)
+![!Screenshot](/Troubleshooting/images/fr_proxy_settings.png)
 
-See [Proxy Settings](/frdocs/Data-insights/Features/Settings/Main-Menu/#proxy-settings) for more information on how to configure your proxy settings.
+See [Proxy Settings](/Data-insights/Features/Settings/Main-Menu/#proxy-settings) for more information on how to configure your proxy settings.
 
 #### Importing SSL cert
 

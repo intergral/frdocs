@@ -26,7 +26,7 @@ Go to [app.fusionreactor.io](https://app.fusionreactor.io) and sign in with your
 
 From the top navigation bar, click on **On Premise**.
 
-![Screenshot](/frdocs/Getting-started/Tutorials/Common-issues/licenseseat1.png){ width="350" height="250" }
+![Screenshot](/Getting-started/Tutorials/Common-issues/licenseseat1.png){ width="350" height="250" }
 
 
 ### 3. Review your license details
@@ -37,7 +37,7 @@ You’ll see:
 - The total number of seats per license
 - Seat usage across servers
 
-![Screenshot](/frdocs/Getting-started/Tutorials/Common-issues/licenseseat2.png){ width="350" height="250" }
+![Screenshot](/Getting-started/Tutorials/Common-issues/licenseseat2.png){ width="350" height="250" }
 
 
 
@@ -48,5 +48,5 @@ Click **View Activations** next to a license to see:
 - Which servers are using seats
 - How many instances are running on each server
 
-![Screenshot](/frdocs/Getting-started/Tutorials/Common-issues/licenseseat3.png){ width="350" height="250" }
+![Screenshot](/Getting-started/Tutorials/Common-issues/licenseseat3.png){ width="350" height="250" }
 

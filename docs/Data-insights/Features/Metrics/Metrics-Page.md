@@ -4,9 +4,9 @@ This Metrics page is very similar to the **Web Metrics** page. One
 difference however, is the ability to filter the Request graphs to display a single transaction flavor. 
 
 This is useful when monitoring your own group of requests through
-combination with the [FusionReactor API (FRAPI)](/frdocs/Data-insights/Extras/FRAPI/).
+combination with the [FusionReactor API (FRAPI)](/Data-insights/Extras/FRAPI/).
 
-![](/frdocs/attachments/245549307/245549314.png)
+![](/attachments/245549307/245549314.png)
 
 This page includes the following content:
 

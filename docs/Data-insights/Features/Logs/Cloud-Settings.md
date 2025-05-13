@@ -33,7 +33,7 @@ Metric logs are considered as logs created by the agent to track metrics over ti
 - heartbeat.log
 - resource.log
 
-Transaction logs are logs of any tracked transaction in FusionReactor. By default, only a request log is created, but [JDBC logging](/frdocs/Data-insights/Features/Settings/JDBC/#logging-metrics) and [Txn logging](/frdocs/Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin/) can be enabled. Log files include:
+Transaction logs are logs of any tracked transaction in FusionReactor. By default, only a request log is created, but [JDBC logging](/Data-insights/Features/Settings/JDBC/#logging-metrics) and [Txn logging](/Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin/) can be enabled. Log files include:
 
 - request.log
 - jdbc.log
@@ -104,7 +104,7 @@ To send the system logs
 Testing your scrape pattern displays a list of matching log files that will now be scraped.
 
 !!! info "Learn more" 
-    [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints/)
+    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)
 
 ## Log exclusion
 
@@ -125,4 +125,4 @@ Example patterns to exclude the osgi and plugin logs of FusionReactor:
 Testing your exclude pattern will display a list of matching log files that will now be excluded from sending to the cloud.
 
 !!! info "Learn more" 
-    [Logging Regex Pattern Hints](/frdocs/Troubleshooting/logging-regex-pattern-hints/)
+    [Logging Regex Pattern Hints](/Troubleshooting/logging-regex-pattern-hints/)

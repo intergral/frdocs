@@ -5,7 +5,7 @@ This plugin captures log statements throughout the life of a
 transaction, and attaches these statements to the transaction as a
 context.
 
-This can be seen as part of the [request details](/frdocs/Data-insights/Features/Requests/Request-Details/).
+This can be seen as part of the [request details](/Data-insights/Features/Requests/Request-Details/).
 
 ## Supported Logging
 
@@ -21,7 +21,7 @@ This can be seen as part of the [request details](/frdocs/Data-insights/Features
 To change the Log Tracker settings, click the drop down and select a log
 capture level.
 
-![](/frdocs/attachments/245548311/245548338.png)
+![](/attachments/245548311/245548338.png)
 
 This setting defines the level at which the plugin will track log
 statements (and more specific).

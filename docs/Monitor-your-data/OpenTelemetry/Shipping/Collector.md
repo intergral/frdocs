@@ -6,7 +6,7 @@ The OpenTelemetry Collector manages the reception, processing, and export of tel
 
 Here is a common setup which includes receivers, processors and exporters: 
 
-![!Screenshot](/frdocs/Monitor-your-data/OpenTelemetry/images/Otelcollector.png)
+![!Screenshot](/Monitor-your-data/OpenTelemetry/images/Otelcollector.png)
 
 The setup operates as a structured pipeline with key components in the OpenTelemetry Collector.
 

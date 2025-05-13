@@ -9,9 +9,9 @@ To visualize your OTel traces, simply navigate to FusionReactor Cloud and  acces
 ## Python example
 
 !!! info
-    The following example relies on a user having first [instrumented a Python application](/frdocs/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR CLoud. 
+    The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR CLoud. 
 
 In the FR Cloud **Explore** window, ensure the `Traces` datasource is selected. Using the `Search` query type, select `Resource Service Name = fib_by_iteration`. Click the blue spinner at the top left to execute the query. Several `fib-outer` spans should be returned. Click one to open the span split view, which should show the inner spans for that execution. Inner spans on the right can be clicked to open them, revealing more information - including the attribute we set in code: `iteration`.
 
 
-![!Screenshot](/frdocs/Monitor-your-data/OpenTelemetry/images/pythontraces.png)*Traces supplied by Python*
+![!Screenshot](/Monitor-your-data/OpenTelemetry/images/pythontraces.png)*Traces supplied by Python*

@@ -7,8 +7,8 @@ The FusionReactor Agent monitors Java and ColdFusion. It provides real-time and 
 Current version:  2025.1.0 - 3 March 2025
 
 !!! info "Learn more" 
-    [Release notes](/frdocs/Latest-updates/release-notes/) <br>
-    [MD5](/frdocs/Monitor-your-data/FR-Agent/Installation/md5/)
+    [Release notes](/Latest-updates/release-notes/) <br>
+    [MD5](/Monitor-your-data/FR-Agent/Installation/md5/)
 
  
 ### Automatic    
@@ -29,7 +29,7 @@ Current version:  2025.1.0 - 3 March 2025
     | [MacOS](https://download.fusionreactor.io/FR/Latest/FusionReactor_macos.dmg) | <br>
 
     !!! info "Learn more"
-        [Automatic installer](/frdocs/Monitor-your-data/FR-Agent/Installation/Automatic/)
+        [Automatic installer](/Monitor-your-data/FR-Agent/Installation/Automatic/)
 
     **Step 2**: Install a FusionReactor instance using FRAM <br>
 
@@ -42,7 +42,7 @@ Current version:  2025.1.0 - 3 March 2025
     FusionReactor has significantly simplified monitoring integrations beyond ColdFusion and Java With the inclusion of the Observability Agent in the FRAM installation package, accessing the installation option is conveniently available through your updated FRAM UI.   <br>
 
     !!! info "Learn more"
-        [Observability Agent](/frdocs/Monitor-your-data/Observability-agent/Installation/FRAM/)
+        [Observability Agent](/Monitor-your-data/Observability-agent/Installation/FRAM/)
     
     <br>
 
@@ -112,7 +112,7 @@ Current version:  2025.1.0 - 3 March 2025
     <br>
 
     !!! info "Learn more"
-        [Install in Docker](/frdocs/Monitor-your-data/Observability-agent/Installation/Docker/)
+        [Install in Docker](/Monitor-your-data/Observability-agent/Installation/Docker/)
 
 
 
@@ -151,7 +151,7 @@ Current version:  2025.1.0 - 3 March 2025
 
     <br>
     !!! info "Learn more"
-        [Install in CommandBox](/frdocs/Monitor-your-data/FR-Agent/Installation/CommandBox/)
+        [Install in CommandBox](/Monitor-your-data/FR-Agent/Installation/CommandBox/)
  
 
 
@@ -165,7 +165,7 @@ Current version:  2025.1.0 - 3 March 2025
 
 
     !!! info
-        [Download legacy versions](/frdocs/Monitor-your-data/FR-Agent/Installation/Download-Links/#downloading-legacy-versions)
+        [Download legacy versions](/Monitor-your-data/FR-Agent/Installation/Download-Links/#downloading-legacy-versions)
 
 
 ---
@@ -176,7 +176,7 @@ The Observability Agent, an [open source](https://github.com/intergral/observabi
 detect which services are running on your machine, and automatically create a configuration file with integrations for detected services.
 
 !!! info 
-    For a simple install that doesn't rely on scripts, the Observability Agent is available via [FRAM](/frdocs/Monitor-your-data/Observability-agent/Installation/FRAM/)
+    For a simple install that doesn't rely on scripts, the Observability Agent is available via [FRAM](/Monitor-your-data/Observability-agent/Installation/FRAM/)
 
 ### FRAM
 
@@ -224,11 +224,11 @@ detect which services are running on your machine, and automatically create a co
 
     **Step 1**: Prepare the API key
 
-    Before running your application in Docker, obtain an [API key](/frdocs/Monitor-your-data/Observability-agent/overview/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
+    Before running your application in Docker, obtain an [API key](/Monitor-your-data/Observability-agent/overview/#step-1-generate-an-api-key) from the service or application you are working with. This API key is essential for authentication and configuration.
 
     **Step 2**: Determine the environment variables
 
-    Determine which [environment variables](/frdocs/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
+    Determine which [environment variables](/Monitor-your-data/Observability-agent/Configuration/) are required for your specific service or application. These environment variables are used to configure and customize the behavior of the service when running in Docker. 
 
 
     **Step 3**: Run the Docker container
@@ -241,7 +241,7 @@ detect which services are running on your machine, and automatically create a co
 
 
     !!! info "Learn more"
-        [Observability Agent ](/frdocs/Monitor-your-data/Observability-agent/overview/)
+        [Observability Agent ](/Monitor-your-data/Observability-agent/overview/)
         
 
 
@@ -278,5 +278,5 @@ detect which services are running on your machine, and automatically create a co
     ```
 
     !!! info "Learn more"
-        [Shipping K8s to FR](/frdocs/Monitor-your-data/Kubernetes-monitoring/Shipping/)
+        [Shipping K8s to FR](/Monitor-your-data/Kubernetes-monitoring/Shipping/)
 
