@@ -533,7 +533,7 @@ plugins:
          'website/Protection+and+Monitoring+with+FusionReactor': 'Data-insights/Features/Crash-protection/Crash-Protection.md'
          'space/Instance+Manager': 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
          'trouble': 'Troubleshooting/trouble.md'
-         'cloud/trouble/': 'Troubleshooting/trouble.md'
+         'Cloud/trouble/': 'Troubleshooting/trouble.md'
          'Cloud/guides/anomalydetection/' : 'Data-insights/Features/Anomaly-Detection/ADoverview.md'
          'Cloud/integrations/observability-agent/': 'Monitor-your-data/Observability-agent/overview.md'
          'Getting-started/GSFRJA/' : 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
