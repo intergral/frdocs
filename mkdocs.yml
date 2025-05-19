@@ -66,7 +66,8 @@ nav:
         - Getting-started/Tutorials/Common-issues/billing-usage.md
         - Getting-started/Tutorials/Common-issues/increase-SQL-query.md
         - Getting-started/Tutorials/Common-issues/set-email-reports.md
-        - Getting-started/Tutorials/Common-issues/check-license-seat.md    
+        - Getting-started/Tutorials/Common-issues/check-license-seat.md 
+        - Getting-started/Tutorials/Common-issues/onprem-login.md   
   - INSTALLATION GUIDES:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
