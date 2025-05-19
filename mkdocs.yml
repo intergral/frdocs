@@ -536,7 +536,7 @@ plugins:
          'space/Instance+Manager.md': 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
          'Cloud/trouble.md': 'Troubleshooting/trouble.md'
          'Cloud/integrations/observability-agent.md': 'Monitor-your-data/Observability-agent/overview.md'
-         'Getting-started/GSFRJA.md' : 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
+         'Getting-started/GSFRJA.md': 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
          'Cloud/Downloads/Downloads.md': 'Latest-updates/Downloads.md'
          'Cloud/OpenTelemetry/Instrumenting-OTel.md': 'Monitor-your-data/OpenTelemetry/getting-started.md'
          'FeatureIntros/infrastructure-intro.md' : 'Monitor-your-data/Observability-agent/overview.md'
