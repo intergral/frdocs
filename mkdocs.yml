@@ -565,7 +565,7 @@ plugins:
          'Metrics/Archive-Metrics.md': 'Data-insights/Features/Metrics/Archive-Metrics.md'
          'FRAPI/FRAPI.md': 'Data-insights/Extras/FRAPI.md'
          'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
-         'Configuration/Copying-FusionReactor-Configuration-Between_Instances.md': 'Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances.md
+         'Configuration/Copying-FusionReactor-Configuration-Between_Instances.md': 'Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances.md'
          'Installation/Manual/Manual-Installation.md': 'Monitor-your-data/FR-Agent/Installation/Manual.md'
          'Cloud/guides/log-alerting.md': 'Monitor-your-data/Log-monitoring/alerting.md'
          'Cloud/guides/data-labels.md': 'Monitor-your-data/FR-Agent/Configuration/data-labels.md'
