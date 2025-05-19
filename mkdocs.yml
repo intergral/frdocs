@@ -108,6 +108,7 @@ nav:
         - Configuration: 
            - System Properties: Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties.md
            - Managing reactor.conf: Monitor-your-data/FR-Agent/Configuration/reactorconf.md
+           - Data labels: Monitor-your-data/FR-Agent/Configuration/data-labels.md
         - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
         - Log collection: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
         - FAQs & troubleshooting: 
@@ -566,7 +567,24 @@ plugins:
          'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
          'Configuration/Copying-FusionReactor-Configuration-Between_Instances.md': 'Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances.md
          'Installation/Manual/Manual-Installation.md': 'Monitor-your-data/FR-Agent/Installation/Manual.md'
-        
+         'Cloud/guides/log-alerting.md': 'Monitor-your-data/Log-monitoring/alerting.md'
+         'Cloud/guides/data-labels.md': 'Monitor-your-data/FR-Agent/Configuration/data-labels.md'
+         'Cloud/integrations/Metric-Integrations.md': 'Monitor-your-data/Observability-agent/overview.md'
+         'Cloud/logs/log-overview.md': 'Monitor-your-data/Log-monitoring/overview.md'
+         'Debugger/Security.md': 'Data-insights/Features/Debugger/Security.md'
+         'Getting-started/Releases.md': 'Latest-updates/Releases.md'
+         'Getting-started/WhatsNew.md': 'Latest-updates/WhatsNew.md'
+         'Installation/Download-Links.md': 'Monitor-your-data/FR-Agent/Installation/Download-Links.md'
+         'Installation/Installer/Upgrade.md': 'Installation/Installer/Upgrade.md'
+         'Installation/upgrade-commandbox.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-commandbox.md'
+         'Installation/upgrade-docker.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-docker.md'
+         'JDBC/Long-JDBC.md': 'Data-insights/Features/JDBC/Long-JDBC.md'
+         'Profiler/Pyroscope.md': 'Data-insights/Features/Pyroscope/pyroscope.md'
+         'UEM-and-Sessions/User-Experience-Monitoring.md': 'Data-insights/Features/UEM/User-Experience-Monitoring.md'
+         'deep.md': 'Monitor-your-data/Deep/overview.md'
+         'release-notes.md': 'Latest-updates/release-notes.md'
+         'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
+
 
 markdown_extensions:
   - pymdownx.highlight:
