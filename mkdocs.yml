@@ -575,17 +575,17 @@ plugins:
          'Getting-started/Releases.md': 'Latest-updates/Releases.md'
          'Getting-started/WhatsNew.md': 'Latest-updates/WhatsNew.md'
          'Installation/Download-Links.md': 'Monitor-your-data/FR-Agent/Installation/Download-Links.md'
-         'Installation/Installer/Upgrade.md': 'Installation/Installer/Upgrade.md'
+         'Installation/Installer/Upgrade.md': 'Monitor-your-data/FR-Agent/Installation/Automatic.md'
          'Installation/upgrade-commandbox.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-commandbox.md'
          'Installation/upgrade-docker.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-docker.md'
+         'Installation/Manual/Upgrade.md': 'Monitor-your-data/FR-Agent/Upgrade/Manual-upgrade.md'
          'JDBC/Long-JDBC.md': 'Data-insights/Features/JDBC/Long-JDBC.md'
          'Profiler/Pyroscope.md': 'Data-insights/Features/Pyroscope/pyroscope.md'
          'UEM-and-Sessions/User-Experience-Monitoring.md': 'Data-insights/Features/UEM/User-Experience-Monitoring.md'
          'deep.md': 'Monitor-your-data/Deep/overview.md'
          'release-notes.md': 'Latest-updates/release-notes.md'
          'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
-
-
+           
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
