@@ -108,6 +108,7 @@ nav:
         - Configuration: 
            - System Properties: Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties.md
            - Managing reactor.conf: Monitor-your-data/FR-Agent/Configuration/reactorconf.md
+           - Data labels: Monitor-your-data/FR-Agent/Configuration/data-labels.md
         - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
         - Log collection: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
         - FAQs & troubleshooting: 
@@ -493,7 +494,7 @@ plugins:
          'fr/help/Licensing.md': 'Admin-and-data/Licensing/Licensing.md'
          'fr/help/Ephemeral+Data+Service.md': 'Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard.md'
          'space/Settings.md' : 'Data-insights/Features/Settings/Main-Menu.md'
-         'space/FusionReactor+Report+Plugin.Monitored.md' : 'Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md'
+         'space/FusionReactor+Report+Plugin.Monitored.md': 'Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md'
          'website/Home.md': 'index.md'
          'website/FusionReactor+Installation+Guide.md': 'Monitor-your-data/FR-Agent/Installation/Automatic.md'
          'website/FusionReactor+Automated+Installer.md': 'Monitor-your-data/FR-Agent/Installation/Automatic.md'
@@ -535,12 +536,12 @@ plugins:
          'space/Instance+Manager.md': 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
          'Cloud/trouble.md': 'Troubleshooting/trouble.md'
          'Cloud/integrations/observability-agent.md': 'Monitor-your-data/Observability-agent/overview.md'
-         'Getting-started/GSFRJA.md' : 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
+         'Getting-started/GSFRJA.md': 'Monitor-your-data/FR-Agent/Installation/FRAM.md'
          'Cloud/Downloads/Downloads.md': 'Latest-updates/Downloads.md'
          'Cloud/OpenTelemetry/Instrumenting-OTel.md': 'Monitor-your-data/OpenTelemetry/getting-started.md'
          'FeatureIntros/infrastructure-intro.md' : 'Monitor-your-data/Observability-agent/overview.md'
          'Getting-started/Releases/#distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
-         'Getting-started/DVCloud/#alerting.md':  'Data-insights/Features/alerting.md'
+         'Getting-started/DVCloud/#alerting.md': 'Data-insights/Features/alerting.md'
          'Getting-started/GSOnpremsetup.md': 'Getting-started/Trial.md'
          'Profiler/Profiler.md': 'Data-insights/Features/Profiler/Profiler.md'
          'JDBC/Databases.md': 'Data-insights/Features/JDBC/Databases.md'
@@ -551,6 +552,7 @@ plugins:
          'Cloud/guides/alerting.md': 'Data-insights/Features/alerting.md'
          'Cloud/guides/explore.md': 'Data-insights/Features/explore.md'
          'Cloud/guides/dashboards.md': 'Data-insights/Features/dashboards.md'
+         'Cloud/guides/create-dashboard.md': 'Getting-started/Tutorials/create-dashboard.md'
          'Cloud/guides/OpsPilot/OpsPilot-user-guide.md': 'Data-insights/Features/OpsPilot/OpsPilot-user-guide.md'
          'Cloud/legal/licenses.md': 'Admin-and-data/Third-Party-Licenses/licenses.md'
          'licensing.md': 'Admin-and-data/Licensing/Licensing.md'
@@ -560,6 +562,29 @@ plugins:
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Slack.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md'
          'Cloud/guides/OpsPilot/OpsPilot-Hub/Teams.md': 'Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams.md'
          'FeatureIntros/dashboards-intro.md': 'Data-insights/Features/dashboards.md'
+         'Metrics/Archive-Metrics.md': 'Data-insights/Features/Metrics/Archive-Metrics.md'
+         'FRAPI/FRAPI.md': 'Data-insights/Extras/FRAPI.md'
+         'Cloud/OpenTelemetry/distributed-tracing.md': 'Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md'
+         'Configuration/Copying-FusionReactor-Configuration-Between_Instances.md': 'Monitor-your-data/FR-Agent/FAQs/Copying-FusionReactor-Configuration-Between_Instances.md'
+         'Installation/Manual/Manual-Installation.md': 'Monitor-your-data/FR-Agent/Installation/Manual.md'
+         'Cloud/guides/log-alerting.md': 'Monitor-your-data/Log-monitoring/alerting.md'
+         'Cloud/guides/data-labels.md': 'Monitor-your-data/FR-Agent/Configuration/data-labels.md'
+         'Cloud/integrations/Metric-Integrations.md': 'Monitor-your-data/Observability-agent/overview.md'
+         'Cloud/logs/log-overview.md': 'Monitor-your-data/Log-monitoring/overview.md'
+         'Debugger/Security.md': 'Data-insights/Features/Debugger/Security.md'
+         'Getting-started/Releases.md': 'Latest-updates/Releases.md'
+         'Getting-started/WhatsNew.md': 'Latest-updates/WhatsNew.md'
+         'Installation/Download-Links.md': 'Monitor-your-data/FR-Agent/Installation/Download-Links.md'
+         'Installation/Installer/Upgrade.md': 'Installation/Installer/Upgrade.md'
+         'Installation/upgrade-commandbox.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-commandbox.md'
+         'Installation/upgrade-docker.md': 'Monitor-your-data/FR-Agent/Upgrade/upgrade-docker.md'
+         'JDBC/Long-JDBC.md': 'Data-insights/Features/JDBC/Long-JDBC.md'
+         'Profiler/Pyroscope.md': 'Data-insights/Features/Pyroscope/pyroscope.md'
+         'UEM-and-Sessions/User-Experience-Monitoring.md': 'Data-insights/Features/UEM/User-Experience-Monitoring.md'
+         'deep.md': 'Monitor-your-data/Deep/overview.md'
+         'release-notes.md': 'Latest-updates/release-notes.md'
+         'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
+
 
 markdown_extensions:
   - pymdownx.highlight:
