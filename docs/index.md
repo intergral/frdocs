@@ -200,7 +200,7 @@ hide:
     </div>
   </a>
 
-  <a href="/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Getting-started/Tutorials/troubleshoot-crash/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -213,8 +213,8 @@ hide:
       color: var(--card-text, #333);
     ">
       <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">OpsPilot Hub</h4>
-      <p style="font-size: 0.85em;">Elevate observability with AI.</p>
+      <h4 style="margin: 10px 0 6px;">Troubleshooting</h4>
+      <p style="font-size: 0.85em;">Post crash troubleshooting with FR.</p>
     </div>
   </a>
 

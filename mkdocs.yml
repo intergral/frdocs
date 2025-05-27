@@ -44,6 +44,7 @@ nav:
   - TUTORIALS & WALKTHROUGHS: 
      - Overview: Getting-started/Tutorials/Overview.md
      - Performance analysis:
+        - Getting-started/Tutorials/troubleshoot-crash.md
         - Getting-started/Tutorials/resolve-slow-queries.md
         - Getting-started/Troubleshooting/best-ways-to-monitor.md
         - Getting-started/Troubleshooting/ignore-scheduled-tasks.md
