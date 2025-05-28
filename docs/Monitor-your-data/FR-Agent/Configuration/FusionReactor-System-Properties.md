@@ -1,3 +1,8 @@
+---
+search:
+  boost: 3
+---
+
 # System Properties
 
 FusionReactor has a number of [system properties](https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html) that can be set to configure FusionReactor.
@@ -12,7 +17,12 @@ These arguments should be added to your JVM configuration.
 
     ```
     -Dfrlicense=XXXXX-XXXXX-XXXXX-XXXXX-XXXXX.
+
     ```
+    _Info: These are also referred to as `-D flags` or `JVM flags`._
+
+
+    
 ## Agent Authentication
 
 Property | Default value | Values accepted | Version added | Description
@@ -57,7 +67,22 @@ Property | Default value | Values accepted | Version added | Description
 
 ## Enterprise Dashboard/Ephemeral Data Service
 
-{!Common/ED_Sys_Props!}
+The following properties should be added to the instance hosting the Enterprise Dashboard
+
+Property | Default Value | Values Accepted | Version Added | Description
+--- | --- | --- | --- | ---
+fr.ed.ds.enable | false | true/false | 8.1.0 | If provided, specifies the server port binding.
+fr.ed.ds.listen | 0.0.0.0:2106 | hostname:port | 8.1.0 | Specifies the listening IP address and port on the server
+fr.ed.ds.polltimeout | 1000 | Integer (ms) | 8.1.0 | Specifies the time EDS will wait after attempting to poll data from the client before marking the client as offline.
+fr.ed.ds.maxdatasize | 20 | Integer (MB) | 8.2.2 | The maximum size of a page or other data transfer that will be accepted over the tunnel.
+
+The following properties should be added to the instance connecting to the Enterprise Dashboard
+
+Property | Default Value | Values Accepted | Version Added | Description
+--- | --- | --- | --- | ---
+fr.ed.ds.target | Not defined | hostname:port | 8.1.0 | If specified, causes the instance to attempt to auto-register with the EDS system at the specified address
+fr.ed.ds.groups | Not defined | Comma-separated list | 8.1.0 | If provided, the instance will auto-register with the ED DS, specifying it is a part of the given groups.
+
 
 ## FusionReactor Cloud
 
@@ -202,6 +227,7 @@ Property | Default value  | Version added | Description
 | Property               | Default value | Version added | Description                                                                                      |
 |------------------------|---------------|---------------|--------------------------------------------------------------------------------------------------|
 | `fr.fim.cloud.enabled` | true          | 12.1.0        | If disabled, users will no longer be able to log in with their cloud email address and password. |
+
 
 
 
