@@ -5,7 +5,10 @@
 !!! question
     Is there a way to correlate a specific request or endpoint to the CPU spike, so we can act quickly?
 
-To correlate a specific request or endpoint to a CPU spike, you can use the **CPU Sampler** to track CPU usage by threads, identify CPU-heavy requests, and take actions like profiling or pausing threads. To access this, use the **on-premise tunnel** for the server in question, then navigate to **Profiler -> CPU Sampler**.
+To correlate a specific request or endpoint to a CPU spike, you can use the **[CPU Sampler](https://docs.fusionreactor.io/Data-insights/Features/CPU-Sampler/CPU-Sampler/)** to track CPU usage by threads, identify CPU-heavy requests, and take actions like profiling or pausing threads. To access this, use the **on-premise tunnel** for the server in question, then navigate to **Profiler -> CPU Sampler**.
+
+
+    
 
 !!! question
     Can FusionReactor send an email or SMS alert when a specific request is causing a slowdown?
