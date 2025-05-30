@@ -1,3 +1,9 @@
+---
+search:
+  exclude: true
+---
+
+
 # Licenses
 
 ## FusionReactor use of Grafana
