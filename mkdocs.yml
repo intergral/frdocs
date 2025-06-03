@@ -629,5 +629,8 @@ extra:
 
 extra_javascript:
   - javascripts/feedback.js
+  - 'https://code.jquery.com/jquery-3.4.1.min.js'
+  - 'script/custom.js'
+  - 'script/intercom.js'
 
 copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2025 Intergral GmbH. All rights reserved.</a>'
