@@ -141,7 +141,7 @@ hide:
                 <div class="fr-step-title">Set up integrations</div>
                 <div class="fr-step-description">Monitor key parts of your infrastructure like databases, Docker etc.</div>
                 <div class="fr-step-action">
-                    <a href="/Monitor-your-data/Observability-agent/overview/" class="fr-btn">Install Observability Agent</a>
+                    <a href="/Getting-started/set-up-integrations/" class="fr-btn">Install Observability Agent</a>
                 </div>
             </div>
             <div class="fr-step">

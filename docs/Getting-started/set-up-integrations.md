@@ -1,6 +1,6 @@
-# Set up Integrations
+# Set up integrations
 
-Welcome to the **Set Up Integrations** guide. This page introduces the **Observability Agent**, a powerful tool to help you ingest and monitor vital metrics from across your infrastructure.
+Welcome to the **Set up integrations** guide. This page introduces the **Observability Agent**, a powerful tool to help you ingest and monitor vital metrics from across your infrastructure.
 
 
 
@@ -10,7 +10,7 @@ The **Observability Agent** by FusionReactor is built as a wrapper around **Graf
 
 
 
-## Key Features
+### Key features
 
 - **Centralized Monitoring**: Collect metrics from across your entire stack — ColdFusion, Java, databases, servers, containers, and more.
 - **Simple Installation**: Deploy quickly using **FRAM**, **Docker**, or install snippets.
@@ -18,30 +18,30 @@ The **Observability Agent** by FusionReactor is built as a wrapper around **Graf
 
 
 
-## Supported Exporters
+### Supported exporters
 
 You can monitor a wide variety of infrastructure components using supported exporters, such as:
 
-- 🔸 **Databases** (e.g., MSSQL)
-- 🔸 **Web Servers** (IIS, Nginx)
-- 🔸 **System Metrics** (CPU, memory, etc.)
-- 🔸 **Containers** (e.g., Docker)
-- 🔸 **Orchestration Platforms** (e.g., Kubernetes)
-- 🔸 **Messaging Systems** (e.g., Kafka)
+-  **Databases** (e.g., MSSQL)
+-  **Web Servers** (IIS, Nginx)
+-  **System Metrics** (CPU, memory, etc.)
+-  **Containers** (e.g., Docker)
+-  **Orchestration Platforms** (e.g., Kubernetes)
+-  **Messaging Systems** (e.g., Kafka)
 
 !!! info 
     *Exporters may be embedded within the agent or require scraping, depending on the setup.*
 
 
 
-## Getting Started
+### Getting started
 
-### **Step 1**: Generate an API Key
+#### **Step 1**: Generate an API Key
 
 Head to your [FusionReactor Cloud Account Settings](https://app.fusionreactor.io/account/settings) to create an API key.
 
 
-### **Step 2**: Install the Observability Agent
+#### **Step 2**: Install the Observability Agent
 
 Choose the appropriate installation method:
 
@@ -54,7 +54,7 @@ Choose the appropriate installation method:
 
 
 
-## Viewing your metrics
+### Viewing your metrics
 
 Once installed, your metrics will appear in:
 
