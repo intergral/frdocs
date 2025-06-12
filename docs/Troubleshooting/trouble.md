@@ -115,11 +115,10 @@ After enabling this firewall rule, the following -D options need to be applied t
 If you are using a non-standard Java security policy, you may have to add rules to it to allow FusionReactor to connect to these services. The form of these rules is:
 
 ```
-permission java.net.SocketPermission "cc-static.fusionreactor.io:443", "connect, accept, resolve";
-
+permission java.net.SocketPermission "cc-static.fusionreactor.io:2804", "connect, accept, resolve";
 permission java.net.SocketPermission "api-static.fusionreactor.io:443", "connect, accept, resolve";
-
-permission java.net.SocketPermission "52.214.198.96:443", "connect, accept, resolve";
+permission java.net.SocketPermission "46.137.127.35:443", "connect, accept, resolve";
+permission java.net.SocketPermission "46.137.127.35:2804", "connect, accept, resolve";
 
 ```
 ## Debugger compatibility
