@@ -1,4 +1,20 @@
-# What's new in FusionReactor
+# What's New in FusionReactor
+
+
+## New Authentication System Now Live
+
+We’ve launched a major upgrade to FusionReactor’s authentication system to enhance security, usability, and flexibility across the board.
+
+**Here’s what’s new:**
+
+* **🔑 Passwordless Logins with Passkeys** – A faster, phishing-resistant way to log in using device-based authentication.
+* **🛡️ Built-in Multi-Factor Authentication (MFA)** – Add an extra layer of protection with TOTP or biometric verification.
+* **🔁 Seamless Multi-Account Switching** – Easily move between accounts and organizations without logging out.
+
+
+These changes help secure your FusionReactor access while reducing friction in your daily workflow.
+
+
 
 ## What's new in FusionReactor 2025.1.0
 
