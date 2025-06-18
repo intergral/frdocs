@@ -63,9 +63,43 @@ Click the **Invite** button in the top-right to add new users:
 Use the dropdown under Role to instantly change a member’s permission level.
 
 !!! info "Learn more"
-    [Roles](/Admin-and-data/Account/Cloud/roles.md)
+    [Roles](/Admin-and-data/Account/Cloud/roles/)
 
     
+### API Keys
+
+The **API Keys** page allows you to manage access credentials used by services or agents to communicate with FusionReactor Cloud.
+
+#### Viewing & managing keys
+
+Each listed API key displays:
+
+- **Name** – A user-defined label.
+- **Description** – A short explanation of the key’s purpose.
+- **Status Toggle** – Temporarily enable or disable a key.
+- **Copy Icon** – Instantly copies the key to your clipboard (if visible).
+- **Actions Menu (⋯)** – Click to:
+  - **Edit** – Change the key’s name or description.
+  - **Remove** – Permanently delete the key.
+
+!!! note
+    Deleting a key immediately revokes access for anything using it.
+
+
+
+#### Creating a new key
+
+Click **+ Generate** to create a key. You’ll enter:
+
+- **Name** (required)
+- **Description** (optional)
+
+### Billing
+
+The Billing section provides access to your organization's subscription details, invoices, and payment methods.
+
+!!! info "Learn more"
+    [Billing](/Admin-and-data/Billing/Cloud/overview/)
 
 
 
