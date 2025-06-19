@@ -1,6 +1,6 @@
 # Account & member management
 
-## Organizational Settings
+## Organizational settings
 
 ### General
 
@@ -13,16 +13,16 @@ This section covers the basic organization-level settings accessible under the *
 
 The Organization Profile section lets you view and update your organization's name and logo, which are shown to all members across the interface.
 
-#### Leave Organization
+#### Leave organization
 
-The **Leave Organization** option lets any member (except the last admin) remove themselves from the org, which immediately revokes access to all org data and requires a new admin invitation to rejoin.
+The **Leave organization** option lets any member (except the last admin) remove themselves from the org, which immediately revokes access to all org data and requires a new admin invitation to rejoin.
 
 !!! note
     If you're the last admin in the organization, you **cannot leave** — you must either promote another member to admin or delete the organization instead.
 
 
 
-#### Delete Organization
+#### Delete organization
 
 Only admins can delete the organization, which permanently removes all members, data, and settings — this action cannot be undone.
 
@@ -33,7 +33,7 @@ The **Members** tab in FusionReactor Cloud allows you to manage all users associ
 
 ![!Screenshot](../../Account/Cloud/general.png)
 
-#### Viewing Members
+#### Viewing members
 
 Each row in the Members list includes:
 
@@ -48,7 +48,7 @@ You can also:
 * Navigate through multiple pages if your org has many users.
 
 
-#### Inviting Members
+#### Inviting members
 
 Click the **Invite** button in the top-right to add new users:
 
@@ -59,7 +59,7 @@ Click the **Invite** button in the top-right to add new users:
     Users are notified by email when invited to an organization.
 
 
-#### Role Management
+#### Role management
 Use the dropdown under Role to instantly change a member’s permission level.
 
 !!! info "Learn more"
@@ -76,9 +76,9 @@ Each listed API key displays:
 
 - **Name** – A user-defined label.
 - **Description** – A short explanation of the key’s purpose.
-- **Status Toggle** – Temporarily enable or disable a key.
-- **Copy Icon** – Instantly copies the key to your clipboard (if visible).
-- **Actions Menu (⋯)** – Click to:
+- **Status toggle** – Temporarily enable or disable a key.
+- **Copy icon** – Instantly copies the key to your clipboard (if visible).
+- **Actions menu (⋯)** – Click to:
   - **Edit** – Change the key’s name or description.
   - **Remove** – Permanently delete the key.
 
