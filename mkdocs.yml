@@ -430,7 +430,9 @@ nav:
             - Account: 
                   - Organization: Admin-and-data/Account/Cloud/users.md
                   - Roles: Admin-and-data/Account/Cloud/roles.md
-            - Profile: todo.md
+            - Profile Settings:
+                  - Profile: Admin-and-data/Account/Cloud/profile.md
+                  - Security: Admin-and-data/Account/Cloud/security.md
         - On-Premise: Admin-and-data/Account/On-Premise/OPusers.md
      - Billing:
         - Cloud: Admin-and-data/Billing/Cloud/overview.md
