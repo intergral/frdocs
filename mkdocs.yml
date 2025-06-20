@@ -425,8 +425,14 @@ nav:
               - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
               - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
   - ADMIN & DATA:
-     - Account & user management: 
-        - Cloud: Admin-and-data/Account/Cloud/users.md
+     - Account & member management: 
+        - Cloud: 
+            - Account: 
+                  - Organization: Admin-and-data/Account/Cloud/users.md
+                  - Roles: Admin-and-data/Account/Cloud/roles.md
+            - Profile Settings:
+                  - Profile: Admin-and-data/Account/Cloud/profile.md
+                  - Security: Admin-and-data/Account/Cloud/security.md
         - On-Premise: Admin-and-data/Account/On-Premise/OPusers.md
      - Billing:
         - Cloud: Admin-and-data/Billing/Cloud/overview.md
