@@ -79,8 +79,8 @@ Each listed API key displays:
 - **Status toggle** – Temporarily enable or disable a key.
 - **Copy icon** – Instantly copies the key to your clipboard (if visible).
 - **Actions menu (⋯)** – Click to:
-  - **Edit** – Change the key’s name or description.
-  - **Remove** – Permanently delete the key.
+      - **Edit** – Change the key’s name or description.
+      - **Remove** – Permanently delete the key.
 
 !!! note
     Deleting a key immediately revokes access for anything using it.
