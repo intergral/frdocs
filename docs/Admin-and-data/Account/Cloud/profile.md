@@ -23,6 +23,7 @@ Below the image, you’ll find fields for your first and last name. Make any cha
 
 
 ![!Screenshot](../../Account/Cloud/update.png)
+
 ### Updating your email address
 
 To add another email address to your account, click the **+ Add email address** button. A field will appear where you can type in the new email you'd like to associate with your profile.

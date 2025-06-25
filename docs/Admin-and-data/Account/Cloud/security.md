@@ -2,6 +2,8 @@
 
 This dedicated Security page serves as your central hub for managing and enhancing the protection of your account. Here, you can actively control various aspects of your digital safety, including setting and updating your password, configuring secure passkeys for streamlined and robust authentication, and enabling two-step verification for an added layer of defense against unauthorized access. Additionally, you'll find a clear overview of your active devices, allowing you to monitor where your account is currently logged in. This comprehensive section empowers you to maintain strong control over your account's integrity and privacy.
 
+![!Screenshot](../../Account/Cloud/Security.png)
+
 ## Password
 
 This section allows you to change your account password.

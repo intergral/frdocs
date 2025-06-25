@@ -31,7 +31,7 @@ Only admins can delete the organization, which permanently removes all members, 
 
 The **Members** tab in FusionReactor Cloud allows you to manage all users associated with your organization. You can view member details, assign roles, invite new members, and control access.
 
-![!Screenshot](../../Account/Cloud/general.png)
+![!Screenshot](../../Account/Cloud/members.png)
 
 #### Viewing members
 
