@@ -14,7 +14,8 @@ FusionReactor Cloud supports multiple member roles, each with different levels o
 | **Observer**| The **Observer** account type is primarily a read-only user. This user type has access to all of the main functionality albeit with a read-only status. An observer has read and write access to their own data such as user information and quick links. |
 | **Business**| A **Business Contact** member is only able to view the on-premise billing and license keys for the Organization. |
 
-
+!!! note
+    The Business Contact role is a fallback role assigned to users who existed in the previous FusionReactor On-Premise Portal but had not been added to FusionReactor Cloud when the systems were unified. We recommend that organization admins review these users and, if needed, promote them to a more appropriate role to match their responsibilities.
 
 ### Removing members
 To remove a user:
