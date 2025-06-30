@@ -216,7 +216,7 @@ All transactions can be filtered by:
 |Longest Transactions | All transactions in a sequential order that have taken the highest amount of time to complete on this instance.  |Live |
 | Slow transactions| Transactions that have a run time that is longer than the threshold limit (8 seconds by default).  |Live |
 | By Memory| All transactions in a sequential order that have used the highest amount of memory on this instance.  | Live|
-| Stored Traces| Everything saved to a transaction including sampled and interesting transactions.  | Historic |
+| Saved in Cloud | This view shows the sampled and notable transactions that have been sent to FusionReactor Cloud. These transactions are stored for the full data retention period, and remain accessible even after the original instance goes offline. You can also view them anytime under **Explore** > **Traces**.  | Historic |
 
 
 !!! info 
@@ -423,11 +423,7 @@ Stack traces can be filtered by state:
 
 * BLOCKED
 
-Stack traces can also be filtered by view:
 
-* All Threads
-
-* Saved Traces
 
 
 !!! info "Learn more"
