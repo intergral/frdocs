@@ -13,7 +13,7 @@ To start your FusionReactor journey, first sign up for a free, no-obligation [tr
 |------------ | ------------- | ------------ | ----------- | ------ |-----|
 **Trial** | FREE | Unlimited |Unlimited| Unlimited| 1000 |
 **Starter Plan** | $49 (A) <br> $59 (M) | 10,000 | 25 GB  | 25 GB  | 500 |
-**Pro AI Plan** |$249 (A) <br>$299 (M) |20,000 |100 GB |  100 GB | 5,000 |
+**Pro AI Plan** | $249 (A) <br> $299 (M) |20,000 |100 GB |  100 GB | 5,000 |
 **Advanced AI Plan** | $899 (A) <br> $1,079 (M) |50,000 |250 GB |  250 GB |20,000 |
 **FusionReactor Ultimate** | $79 (A)<br> $95 (M) | 5,000 | 2 GB  | 2 GB | 
 **Historical data retention** |   | 13 months | 30 days|30 days |
