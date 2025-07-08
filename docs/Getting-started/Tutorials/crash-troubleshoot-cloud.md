@@ -4,28 +4,39 @@
 
 ## Overview
 
-This guide explains how to use **FusionReactor Cloud** to diagnose and prevent **application server crashes or performance degradation**. It walks you through identifying root causes using metrics, transaction traces, and logs, then shows how to implement proactive alerts to avoid future issues.
+This guide explains how to use **FusionReactor Cloud** to diagnose and prevent application server crashes. It includes steps to identify root causes using memory metrics, transaction traces, and logs, followed by setting up proactive alerts.
+
+!!! info 
+    While this guide highlights a memory-related example, the same process can help uncover other root causes like CPU saturation, slow database calls, or blocked threads.
 
 ---
 
+## Video
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089031476?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Investigating Server Crashes with FusionReactor Cloud"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+---
 
 ## Key features for crash investigation
 
-| Feature               | Description                                                              |
-| --------------------- | ------------------------------------------------------------------------ |
-| **Historic Metrics**  | Retained for **13 months** — accessible even after server restarts.      |
-| **Traces & Logs**     | Stored for **30 days** — detailed transaction-level visibility.          |
-| **Anomaly Detection** | Uses R.E.D. metrics to automatically flag unusual application behavior.  |
-| **Custom Alerts**     | User-defined thresholds for memory, CPU, latency, and uptime monitoring. |
+| Feature                 | Description                                                                 |
+|-------------------------|-----------------------------------------------------------------------------|
+| **Historic Metrics**    | Retained for **13 months** — accessible even after server restarts.         |
+| **Traces & Logs**       | Stored for **30 days** — detailed transaction-level visibility.             |
+| **Anomaly Detection**   | Uses R.E.D. metrics to automatically flag unusual application behavior.     |
+| **Custom Alerts**       | User-defined thresholds for memory, latency, CPU, and uptime monitoring.    |
 
 ---
 
-## Example crash scenario
+## Example scenario
 
-An application server (e.g., **Storefront 1**) is crashing or experiencing severe slowdowns intermittently. The goal is to:
+An application server (e.g., **Storefront 1**) is crashing intermittently. The goal is to:
 
-1. Investigate potential causes using FusionReactor Cloud (e.g., memory leaks, CPU saturation, blocked threads, or DB issues).
-2. Prevent future incidents using proactive alerting and anomaly detection.
+1. Investigate the cause using FusionReactor Cloud.  
+2. Prevent future crashes with proactive monitoring.
+
+This example focuses on memory issues, but the same steps apply when diagnosing other causes such as CPU pressure or database slowdowns.
 
 ---
 
@@ -34,46 +45,41 @@ An application server (e.g., **Storefront 1**) is crashing or experiencing sever
 1. Open the affected server in **FusionReactor Cloud**.
 2. Use the **Live Mode Clock** to select a custom time range (e.g., last 6 hours).
 3. The time filter syncs across:
-
-      * Metrics
-      * Transactions
-      * JDBC calls
-      * Logs
+    - Metrics  
+    - Transactions  
+    - JDBC calls  
+    - Logs  
 
 ### What to look for
 
-* Examine **Heap Memory**, **CPU Usage**, **Thread Activity**, and **GC behavior**.
-* Look for:
-
-      * Sharp spikes or sustained high levels
-      * A rapid drop (indicating a crash or restart)
-      * Abnormal patterns leading up to the issue
+- Inspect the **Used Heap Memory** graph.
+- Look for **sharp spikes** followed by **sudden drops** — a typical sign of a memory-related crash.
+- Also check for anomalies in:
+    - **CPU usage**
+    - **GC activity**
+    - **Thread states**
 
 ---
 
 ## Step 2: Isolate the root cause
 
 1. Navigate to the **Transactions** tab.
-2. Select **Saved in Cloud** to access historical transaction data.
-3. Sort by **Duration** to find slow or stuck requests.
+2. Select **Saved in Cloud** to access stored transaction history.
+3. Sort by **Duration** to identify slow or abnormal requests.
 
 ### Signs of trouble
 
-* Regular transactions (e.g., `Checkout`) taking longer than usual.
-* Outliers (e.g., `Store Cache`, `Payment Gateway`) consuming excessive **memory, CPU**, or **thread resources**.
-* High **database query time** or **JDBC connection pool exhaustion**.
-* Correlation between transaction anomalies and metric spikes.
+- A normally fast transaction (e.g., `Checkout`) starts taking significantly longer.
+- Specific outliers (e.g., `Store Cache`) may be consuming **excessive memory**, **CPU**, or holding resources.
+- Watch for patterns where long-running transactions line up with metric spikes.
 
 ### Validate with logs
 
-* Open the **Logs** tab or inspect your application/server logs
-* Look for:
-   
-     * Exceptions (e.g., `OutOfMemoryError`, database timeouts)
-     * Stack traces
-     * Repeated errors leading up to the crash
-
-* Match log timestamps to metric anomalies
+- Check server logs for crash-related errors like:
+    - `OutOfMemoryError`
+    - Thread deadlocks
+    - Uncaught exceptions
+- Match the timestamps to metrics and transactions to confirm correlation.
 
 ---
 
@@ -81,47 +87,30 @@ An application server (e.g., **Storefront 1**) is crashing or experiencing sever
 
 ### Anomaly Detection (AI Plan)
 
-Automatically detects abnormal behavior in:
+Detects irregularities in:
 
-* Request volume
-* Response time
-* Error rates
+- Request volume  
+- Response times  
+- Error rates  
 
-**Notifications via**:
+**Sends alerts via:**
 
-* Email
-* Webhooks (e.g., Slack, Microsoft Teams)
+- Email  
+- Webhooks (e.g., Slack, Microsoft Teams)  
 
-Sensitivity is configurable per environment or app tier.
+Sensitivity is adjustable per environment.
 
 ### Custom Alerts
 
-Use **Alerting & Thresholds** to define rules like:
+Set up rules under **Alerting & Thresholds**:
 
-* **Memory usage** > 80%
-* **CPU usage** > 90%
-* **Average response time** > 3 seconds
-* **Thread count** or **GC pause time** exceeds threshold
-* **Server offline** or **JDBC pool exhaustion**
+- Memory usage > 80%
+- CPU usage > 90%
+- Response time > 3 seconds
+- Server offline
+- JDBC pool nearly full
 
-Set up real-time alerts to trigger immediate action.
-
----
-
-## Common crash indicators
-
-Watch for these common early warning signs:
-
-* **High heap or CPU usage** before a crash
-* **Thread pool exhaustion** or blocked threads
-* **GC pauses** lasting multiple seconds
-* **Long-running DB queries**
-* **Spike in error rates**
-* Application logs with:
-
-    * `OutOfMemoryError`
-    * `StackOverflowError`
-    * `Database timeout` or `Connection refused`
+Get real-time alerts to act quickly when thresholds are breached.
 
 ---
 
@@ -129,19 +118,9 @@ Watch for these common early warning signs:
 
 By following this process, you can:
 
-* Identify and confirm the root cause of crashes or performance issues
-* Correlate data across metrics, transactions, and logs
-* Configure automated alerts to catch early warning signs
-* Improve application uptime and user experience
-
-## Video
-
-!!! note
-    The video below demonstrates post-crash troubleshooting using FusionReactor Cloud, with a focus on diagnosing a memory-related issue as an example scenario.
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1089031476?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Investigating Server Crashes with FusionReactor Cloud"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-
-
+- Identify the specific cause of a crash — whether memory, CPU, thread, or database related  
+- Correlate data between metrics, transactions, and logs  
+- Configure automated alerts to catch early warning signs and avoid recurrence  
 
 
 
