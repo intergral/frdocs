@@ -45,7 +45,10 @@ nav:
   - TUTORIALS & WALKTHROUGHS: 
      - Overview: Getting-started/Tutorials/Overview.md
      - Performance analysis:
-        - Getting-started/Tutorials/troubleshoot-crash.md
+        - Post-crash troubleshooting:
+            Overview: Getting-started/Tutorials/troubleshoot-crash.md
+            Cloud: Getting-started/Tutorials/crash-troubleshoot-cloud.md
+            On-Premise: Getting-started/Tutorials/crash-troubleshoot-onprem.md
         - Getting-started/Tutorials/resolve-slow-queries.md
         - Getting-started/Troubleshooting/best-ways-to-monitor.md
         - Getting-started/Troubleshooting/ignore-scheduled-tasks.md
@@ -594,6 +597,7 @@ plugins:
          'deep.md': 'Monitor-your-data/Deep/overview.md'
          'release-notes.md': 'Latest-updates/release-notes.md'
          'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
+         'Getting-started/DVCloud.md' : 'index.md'
            
 markdown_extensions:
   - pymdownx.highlight:
