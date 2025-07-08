@@ -50,6 +50,7 @@ This example focuses on memory issues, but the same steps apply when diagnosing 
     - JDBC calls  
     - Logs  
 
+
 ### What to look for
 
 - Inspect the **Used Heap Memory** graph.
@@ -59,6 +60,7 @@ This example focuses on memory issues, but the same steps apply when diagnosing 
     - **GC activity**
     - **Thread states**
 
+![!Screenshot](../../Getting-started/Tutorials/metrics.png)
 ---
 
 ## Step 2: Isolate the root cause
@@ -80,6 +82,8 @@ This example focuses on memory issues, but the same steps apply when diagnosing 
     - Thread deadlocks
     - Uncaught exceptions
 - Match the timestamps to metrics and transactions to confirm correlation.
+
+![!Screenshot](../../Getting-started/Tutorials/log2.png)
 
 ---
 
@@ -118,9 +122,9 @@ Get real-time alerts to act quickly when thresholds are breached.
 
 By following this process, you can:
 
-- Identify the specific cause of a crash — whether memory, CPU, thread, or database related  
-- Correlate data between metrics, transactions, and logs  
-- Configure automated alerts to catch early warning signs and avoid recurrence  
+- Identify the specific cause of a crash — whether memory, CPU, thread, or database related.  
+- Correlate data between metrics, transactions, and logs. 
+- Configure automated alerts to catch early warning signs and avoid recurrence. 
 
 
 

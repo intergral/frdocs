@@ -1,6 +1,6 @@
 
 
-# Post-crash Troubleshooting with FusionReactor On-Premise
+# Post-crash troubleshooting with FusionReactor On-Premise
 
 ## Overview
 
@@ -42,6 +42,8 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 1. Open **FusionReactor On-Premise** and launch the **Archive Viewer**.
 2. Scroll back to the crash timeframe using log rotation timestamps.
 
+![!Screenshot](../../Getting-started/Tutorials/archive.png)
+
 ### What to look for
 
 * In this example, memory usage spiked at **11:49** and remained high.
@@ -54,6 +56,9 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 * A `Store Cache` request appears right as memory maxes out.
 * Other requests begin to **slow down** or **queue**, indicating resource contention.
 
+!!! info "Learn more"
+    [Archive Metrics](/Data-insights/Features/Metrics/Archive-Metrics/)
+
 ---
 
 ## Step 2: Validate with logs
@@ -65,6 +70,8 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
   * Stack traces or fatal exceptions
 * In this case, an **Out of Memory error** is logged just before the crash, confirming the suspected cause.
 
+![!Screenshot](../../Getting-started/Tutorials/log1.png)
+
 ---
 
 ## Step 3: Prevent recurrence with Crash Protection
@@ -73,27 +80,33 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 
 **Crash Protection** helps you detect and manage problem requests before they crash the server.
 
+![!Screenshot](../../Getting-started/Tutorials/crash-p.png)
+
 ### How to enable:
 
 1. Open the **Crash Protection** section in the On-Premise dashboard.
 2. Configure **email settings** to receive alerts.
 3. Define thresholds for:
 
-   * Long-running or high-frequency requests
-   * High CPU or memory usage
+     * Long-running or high-frequency requests
+     * High CPU or memory usage
+
 4. Choose a response:
 
-   * **Throttle** or **abort** requests
-   * Apply rules to specific endpoints
+     * **Throttle** or **abort** requests
+     * Apply rules to specific endpoints
 
 !!! tip
     You can ignore known long-running requests to minimize false positives.
 
-### Sample alert:
+### Sample alert
 
 Here’s an example of the email notification sent when Crash Protection is triggered, including the endpoint, threshold breached, and recommended action.
 
+![!Screenshot](../../Getting-started/Tutorials/protection.png)
 
+!!! info "Learn more"
+    [Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)
 
 ---
 
@@ -104,7 +117,7 @@ If your crash may be database-related or you want SQL traceability:
 1. Go to **JDBC → Settings** in the on-prem UI.
 2. Set **JDBC Logging** to **Enabled**.
 
-### What it Provides:
+### What it provides:
 
 * Logs every SQL statement executed by the application
 * Includes **stack traces** for traceability
@@ -117,10 +130,10 @@ If your crash may be database-related or you want SQL traceability:
 
 By using FusionReactor On-Premise, you can:
 
-* Rewind system state leading up to a crash
-* Link metrics, logs, and requests to pinpoint the root cause
-* Set up proactive rules with **Crash Protection**
-* Monitor database behavior with **JDBC Logging**
+* Rewind system state leading up to a crash.
+* Link metrics, logs, and requests to pinpoint the root cause.
+* Set up proactive rules with **Crash Protection**.
+* Monitor database behavior with **JDBC Logging**.
 
 ---
 
