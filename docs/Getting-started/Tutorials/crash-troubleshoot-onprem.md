@@ -46,14 +46,14 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 
 ### What to look for
 
-* In this example, memory usage spiked at **11:49** and remained high.
-* The server crashed **14 minutes later**, with the logs ending due to hourly rotation.
+* In the video example, memory usage spiked at **11:49** and remained high.
+* The server crashed 14 minutes later - be sure to check the logs following the default hourly rotation.
 * By jumping back to the time of the spike, open the **Request Log** to examine what was happening.
 
 ### Identify the trigger
 
 * Sort the Request Log by **execution time**.
-* A `Store Cache` request appears right as memory maxes out.
+* In the video example a `Store Cache` request appears right as memory maxes out.
 * Other requests begin to **slow down** or **queue**, indicating resource contention.
 
 !!! info "Learn more"
@@ -63,12 +63,12 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 
 ## Step 2: Validate with logs
 
-* Open server logs for the relevant window.
+* Open Server Logs for the relevant window.
 * Look for entries like:
 
   * `java.lang.OutOfMemoryError`
   * Stack traces or fatal exceptions
-* In this case, an **Out of Memory error** is logged just before the crash, confirming the suspected cause.
+* In the video scenario, an **Out of Memory error** is logged just before the crash, confirming the suspected cause.
 
 ![!Screenshot](../../Getting-started/Tutorials/log1.png)
 
@@ -93,7 +93,7 @@ A server crash occurs unexpectedly during peak usage. Your objective is to:
 
 4. Choose a response:
 
-     * **Throttle** or **abort** requests
+     * **Queue** or **abort** requests
      * Apply rules to specific endpoints
 
 !!! tip

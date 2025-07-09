@@ -54,13 +54,14 @@ This example focuses on memory issues, but the same steps apply when diagnosing 
 ### What to look for
 
 - Inspect the **Used Heap Memory** graph.
-- Look for **sharp spikes** followed by **sudden drops** — a typical sign of a memory-related crash.
+- Look for sharp spikes, followed by sudden drops or gaps, in the graph.
 - Also check for anomalies in:
     - **CPU usage**
     - **GC activity**
     - **Thread states**
 
 ![!Screenshot](../../Getting-started/Tutorials/metrics.png)
+
 ---
 
 ## Step 2: Isolate the root cause
