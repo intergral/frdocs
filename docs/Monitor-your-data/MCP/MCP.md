@@ -11,7 +11,7 @@ To connect your AI tooling to FusionReactor Cloud using MCP, follow the steps be
 You’ll need an API key so your tooling can authenticate with the FusionReactor MCP.
 
 !!! info
-    [How to generate an FR API key](https://docs.fusionreactor.io/Admin-and-data/Account/Cloud/users/?h=api+key#api-keys)
+    [Generate an FR API key](https://docs.fusionreactor.io/Admin-and-data/Account/Cloud/users/?h=api+key#api-keys)
 
 ---
 
