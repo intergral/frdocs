@@ -175,6 +175,7 @@ nav:
         - Alerting: 
             - Overview: Data-insights/Features/alerting.md
             - Alerting examples: 
+               - FR Agent Metrics: Data-insights/Features/FR-Agent-Metrics.md
                - Performance checks: Data-insights/Features/alerting-examples.md
                - Billing usage checks: Data-insights/Features/billing-check.md
         - Anomaly Detection:
