@@ -16,11 +16,15 @@ MCP is used by many providers, including Claude Desktop, to help AI tooling acce
 
 The FusionReactor Cloud MCP is an integration of the [Grafana MCP](https://github.com/grafana/mcp-grafana) project.
 
+!!! note 
+    The FusionReactor Cloud MCP is a **read-only** data source – you can’t make changes to your account using it.
 
 ### Key Capabilities
 
 - Perform queries against Metrics (Mimir/Prometheus) and Logs (Loki).
 - Get dashboards, panels, and the queries behind those panels – and run them directly (Prometheus and Loki only).
 
-!!! note 
-    The FusionReactor Cloud MCP is a **read-only** data source – you can’t make changes to your account using it.
+
+!!! info "Learn more"
+    [Installing the FusionReactor Cloud MCP]()
+
