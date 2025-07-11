@@ -14,15 +14,15 @@ Use this reference to:
 * Configure meaningful dashboards and threshold-based alerts
 
 
-## Service uptime and Instance info
+## Service uptime & Instance info
 
-| Name                         | Description                          | Unit | 
-| ---------------------------- | ---------------------------- | ---- |
-| up                           | Indicates the instance is up. |      |      
-| fusionreactor\_build\_info   | FusionReactor build info.    |      |        
-| fr\_server\_info             | FusionReactor server info.   |      |      
-| fusionreactor\_license\_info | FusionReactor license info.  |      |     
-| fr\_cf\_hitcounts\_total     | ColdFusion hit count.        |      |            
+| Name                         | Description                       | Unit | Labels |
+| ---------------------------- | ---------------------------- | ---- |---- |
+| up                           | Indicates the instance is up. |    |      
+| fusionreactor\_build\_info   | FusionReactor build info.    |     |        
+| fr\_server\_info             | FusionReactor server info.   |     |      
+| fusionreactor\_license\_info | FusionReactor license info.  |     |     
+| fr\_cf\_hitcounts\_total     | ColdFusion hit count.        | Count |            
 
 ## CPU usage
 
@@ -98,3 +98,46 @@ Use this reference to:
 | fr\_filesystem\_total\_bytes        | Total disk space                                 | B    |
 | fr\_filesystem\_used\_bytes         | Used disk space                                  | B    |
 
+
+## Transactions & Throughput
+
+| Metric Name               | Description                                   | Unit |
+| ------------------------- | --------------------------------------------- | ---- |
+| app\_throughput           | Avg. duration of master transactions          | ms   |
+| app\_throughput\_cnt      | Master transaction count                      |      |
+| app\_throughput\_sum      | Total duration of master transactions         | ms   |
+| app\_txn\_throughput      | Avg. duration of transactions per transaction | ms   |
+| app\_txn\_throughput\_cnt | Count of transactions                         |      |
+
+## Garbage Collection
+
+| Metric Name                  | Description                           | Unit |
+| ---------------------------- | ------------------------------------- | ---- |
+| jvm\_gc\_collection\_seconds | Time spent in GC, per GC type         | ms/s |
+| jvm\_gc\_collection\_calls   | Number of GC invocations, per GC type | GC/s |
+
+
+## Sessions
+
+| Metric Name               | Description                      | Unit |
+| ------------------------- | -------------------------------- | ---- |
+| sessions\_created\_total  | Total number of sessions created |      |
+| sessions\_active\_total   | Number of active sessions        |      |
+| sessions\_rejected\_total | Number of rejected sessions      |      |
+
+
+## Coldfusion Metrics
+
+| Metric Name                       | Description                      | Unit |
+| --------------------------------- | -------------------------------- | ---- |
+| fr\_cf\_hitcounts\_total          | Total ColdFusion template hits   |      |
+| fr\_cf\_system\_cached\_templates | ColdFusion cached template count |      |
+
+## Transaction Timing
+
+| Metric Name             | Description                                          | Unit |
+| ----------------------- | ---------------------------------------------------- | ---- |
+| txn\_error\_time        | Avg. duration of failed transactions (per flavor)    | ms   |
+| txn\_error\_time\_sum   | Total time spent on failed transactions              | ms   |
+| txn\_history\_time      | Avg. time taken for base metric over the past minute | ms   |
+| txn\_history\_time\_sum | Sum of transaction time (per base metric)            | ms   |
