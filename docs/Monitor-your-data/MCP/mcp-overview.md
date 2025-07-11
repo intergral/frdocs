@@ -26,5 +26,5 @@ The FusionReactor Cloud MCP is an integration of the [Grafana MCP](https://githu
 
 
 !!! info "Learn more"
-    [Installing the FusionReactor Cloud MCP]()
+    [Installing the FusionReactor Cloud MCP](/Monitor-your-data/MCP/MCP/)
 
