@@ -171,6 +171,7 @@ nav:
             - Search: Data-insights/Features/Deep/Search.md
             - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
      - MCP Interfaces:
+        - FR Cloud MCP:
             - Overview: Monitor-your-data/MCP/mcp-overview.md
             - Install: Monitor-your-data/MCP/MCP.md
   - FEATURES: 
