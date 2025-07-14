@@ -602,6 +602,7 @@ plugins:
          'release-notes.md': 'Latest-updates/release-notes.md'
          'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
          'Getting-started/DVCloud.md' : 'index.md'
+         'Getting-started/GSCloudsetup.md' : 'Getting-started/Trial.md'
            
 markdown_extensions:
   - pymdownx.highlight:
