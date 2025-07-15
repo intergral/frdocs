@@ -18,46 +18,46 @@ Use this reference to:
 
 | Name                         | Description                       | Unit | Labels |
 | ---------------------------- | ---------------------------- | ---- |---- |
-| up                           | Indicates the instance is up. |    |      
-| fusionreactor\_build\_info   | FusionReactor build info.    |     |        
-| fr\_server\_info             | FusionReactor server info.   |     |      
-| fusionreactor\_license\_info | FusionReactor license info.  |     |     
+| up                           | Indicates the instance is up. |    |   [Labels](/Data-insights/Features/FR-Agent-Metrics/#up) |
+| fusionreactor\_build\_info   | FusionReactor build info.    |     |  [Labels](/Data-insights/Features/FR-Agent-Metrics/#fusionreactor_build_info)    | 
+| fr\_server\_info             | FusionReactor server info.   |     |  [Labels](fr_server_info) |
+| fusionreactor\_license\_info | FusionReactor license info.  |     | [Labels](/Data-insights/Features/FR-Agent-Metrics/#fusionreactor_license_info)   |
           
 
 ### CPU usage
 
 | Metric Name                     | Description                                                  | Unit |Labels |
-| ------------------------------- | ------------------------------------------------------------ | ---- |
-| process\_cpu\_usage             | CPU utilization (%) of the instance across all cores         | %    |
-| process\_cpu\_total\_usage      | Total CPU utilization (%) across all cores and all processes | %    |
+| ------------------------------- | ------------------------------------------------------------ | ---- |---- |
+| process\_cpu\_usage             | CPU utilization (%) of the instance across all cores         | %    |  Default |
+| process\_cpu\_total\_usage      | Total CPU utilization (%) across all cores and all processes | %    |  Default   |
 
 
 
 ### Memory usage
 
 | Metric Name                            | Description                       | Unit  |Labels |
-| -------------------------------------- | --------------------------------- | ----- |        
-| jvm\_memory\_pool\_bytes\_committed    | Committed memory per memory pool  | MiB   |
-| jvm\_memory\_pool\_bytes\_max          | Maximum memory per memory pool    | MiB   |
-| jvm\_memory\_pool\_bytes\_used         | Used memory per memory pool       | MiB   |
-| jvm\_memory\_pool\_bytes\_total        | Total memory pool size            | MiB   |
-| jvm\_memory\_bytes\_committed          | Committed memory                  | MiB   |
-| jvm\_memory\_bytes\_max                | Maximum available memory          | MiB   |
-| jvm\_memory\_bytes\_used               | Used memory                       | MiB   |
-| jvm\_memory\_bytes\_used\_percent      | Percentage of memory used         | %     |
-| jvm\_memory\_bytes\_committed\_percent | Percentage of memory committed    | %     |
-| jvm\_gc\_collection\_seconds | Time spent in GC, per GC type         | ms/s |
-| jvm\_gc\_collection\_calls   | Number of GC invocations, per GC type | GC/s |
+| -------------------------------------- | --------------------------------- | ----- |        |
+| jvm\_memory\_pool\_bytes\_committed    | Committed memory per memory pool  | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_pool_bytes_committed-jvm_memory_pool_bytes_used-jvm_memory_pool_bytes_max) |
+| jvm\_memory\_pool\_bytes\_max          | Maximum memory per memory pool    | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_pool_bytes_committed-jvm_memory_pool_bytes_used-jvm_memory_pool_bytes_max) |
+| jvm\_memory\_pool\_bytes\_used         | Used memory per memory pool       | MiB   |[Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_pool_bytes_committed-jvm_memory_pool_bytes_used-jvm_memory_pool_bytes_max) |
+| jvm\_memory\_pool\_bytes\_total        | Total memory pool size            | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_pool_bytes_committed-jvm_memory_pool_bytes_used-jvm_memory_pool_bytes_max) |
+| jvm\_memory\_bytes\_committed          | Committed memory                  | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_bytes_used-jvm_memory_bytes_committed-jvm_memory_bytes_ma-jvm_memory_bytes_used_percentage-jvm_memory_bytes_committed_percentage) |
+| jvm\_memory\_bytes\_max                | Maximum available memory          | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_bytes_used-jvm_memory_bytes_committed-jvm_memory_bytes_ma-jvm_memory_bytes_used_percentage-jvm_memory_bytes_committed_percentage) |
+| jvm\_memory\_bytes\_used               | Used memory                       | MiB   | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_bytes_used-jvm_memory_bytes_committed-jvm_memory_bytes_ma-jvm_memory_bytes_used_percentage-jvm_memory_bytes_committed_percentage) |
+| jvm\_memory\_bytes\_used\_percent      | Percentage of memory used         | %     | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_bytes_used-jvm_memory_bytes_committed-jvm_memory_bytes_ma-jvm_memory_bytes_used_percentage-jvm_memory_bytes_committed_percentage) |
+| jvm\_memory\_bytes\_committed\_percent | Percentage of memory committed    | %     | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_memory_bytes_used-jvm_memory_bytes_committed-jvm_memory_bytes_ma-jvm_memory_bytes_used_percentage-jvm_memory_bytes_committed_percentage) |
+| jvm\_gc\_collection\_seconds | Time spent in GC, per GC type         | ms/s | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls) |
+| jvm\_gc\_collection\_calls   | Number of GC invocations, per GC type | GC/s | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls) |
 
 ### Thread & Class activity
 
 | Metric Name                 | Description                            | Unit |Labels |
-| --------------------------- | -------------------------------------- | ---- |
-| jvm\_threads\_current       | Number of live JVM threads             |      |
-| jvm\_threads\_state         | JVM threads by state                   |      |
-| jvm\_classes\_loaded        | Count of classes loaded in the JVM     |      |
-| jvm\_classes\_unloaded      | Count of classes unloaded from the JVM |      |
-| jvm\_classes\_loaded\_total | Cumulative total of loaded classes     |      |
+| --------------------------- | -------------------------------------- | ---- |  ---- |
+| jvm\_threads\_current       | Number of live JVM threads             |      |  [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls)   |
+| jvm\_threads\_state         | JVM threads by state                   |      |[Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls) |
+| jvm\_classes\_loaded        | Count of classes loaded in the JVM     |      | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls) |
+| jvm\_classes\_unloaded      | Count of classes unloaded from the JVM |      |[Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls)|
+| jvm\_classes\_loaded\_total | Cumulative total of loaded classes     |      | [Labels](/Data-insights/Features/FR-Agent-Metrics/#jvm_gc_collection_seconds-jvm_gc_collection_calls)|
 
 ### Application
 
@@ -184,15 +184,15 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **up**
+#### up
 
 | Name      | Description       | Example      | More Info |
 | --------- | ----------------- | ------------ | --------- |
-| start\_ts | Start time of the | 173838589214 |           |
+| start\_ts | Start time of the JVM in milliseconds | 173838589214 |           |
 
 ---
 
-### **fusionreactor\_build\_info**
+#### fusionreactor\_build\_info
 
 | Name      | Description     | Example  | More Info |
 | --------- | --------------- | -------- | --------- |
@@ -203,7 +203,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **fr\_server\_info**
+#### fr\_server\_info
 
 | Name                | Description        | Example           | More Info                   |
 | ------------------- | ------------------ | ----------------- | --------------------------- |
@@ -226,7 +226,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **fusionreactor\_license\_info**
+### fusionreactor\_license\_info
 
 | Name  | Description   | Example | More Info |
 | ----- | ------------- | ------- | --------- |
@@ -236,7 +236,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **app\_database\_throughput / app\_database\_error**
+#### app\_database\_throughput / app\_database\_error
 
 | Name      | Description          | Example       | More Info |
 | --------- | -------------------- | ------------- | --------- |
@@ -247,7 +247,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **app\_cpu / app\_memory**
+#### app\_cpu / app\_memory
 
 | Name      | Description      | Example      | More Info |
 | --------- | ---------------- | ------------ | --------- |
@@ -255,7 +255,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **fr\_cf\_hitcounts\_total**
+#### fr\_cf\_hitcounts\_total
 
 | Name | Description    | Example          | More Info |
 | ---- | -------------- | ---------------- | --------- |
@@ -263,7 +263,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **app\_client\_error\_count / app\_server\_error\_count**
+#### app\_client\_error\_count / app\_server\_error\_count
 
 | Name      | Description      | Example      | More Info |
 | --------- | ---------------- | ------------ | --------- |
@@ -271,7 +271,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-### **app\_WebRequest**
+### app\_WebRequest
 
 | Name      | Description      | Example      | More Info                  |
 | --------- | ---------------- | ------------ | -------------------------- |
@@ -280,7 +280,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 
 
-###  `app_up` / `app_error_count` / `app_throughput`
+####  app_up / app_error_count / app_throughput
 
 | Name      | Description      | Example      | More Info |
 | --------- | ---------------- | ------------ | --------- |
@@ -288,7 +288,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `app_txn_error_count` / `app_txn_throughput`
+####  app_txn_error_count / app_txn_throughput
 
 | Name      | Description      | Example                         | More Info      |
 | --------- | ---------------- | ------------------------------- | -------------- |
@@ -297,7 +297,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `jvm_gc_collection_seconds` / `jvm_*`
+####  jvm_gc_collection_seconds / jvm_gc_collection_calls
 
 | Name | Description | Example      | More Info |
 | ---- | ----------- | ------------ | --------- |
@@ -305,7 +305,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `fr_system_cpu_seconds_total`
+#### fr_system_cpu_seconds_total
 
 | Name | Description          | Example | More Info |
 | ---- | -------------------- | ------- | --------- |
@@ -313,7 +313,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `jvm_threads_state`
+####  jvm_threads_state
 
 | Name  | Description  | Example  | More Info |
 | ----- | ------------ | -------- | --------- |
@@ -321,7 +321,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `uem`
+####  uem
 
 | Name | Description | Example | More Info |
 | ---- | ----------- | ------- | --------- |
@@ -329,7 +329,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `jvm_memory_pool_bytes_committed`
+####  jvm_memory_pool_bytes_committed \ jvm_memory_pool_bytes_used \ jvm_memory_pool_bytes_max
 
 | Name | Description  | Example    | More Info |
 | ---- | ------------ | ---------- | --------- |
@@ -337,7 +337,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `jvm_memory_bytes_used`
+####  jvm_memory_bytes_used / jvm_memory_bytes_committed / jvm_memory_bytes_ma / jvm_memory_bytes_used_percentage / jvm_memory_bytes_committed_percentage
 
 | Name | Description | Example | More Info |
 | ---- | ----------- | ------- | --------- |
@@ -345,7 +345,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `fr_network_received_bytes_total`
+###  fr_network_received_bytes_total / fr_network_transmitted_bytes_total
 
 | Name   | Description    | Example   | More Info |
 | ------ | -------------- | --------- | --------- |
@@ -353,7 +353,7 @@ Here's a clean and organized copy of the **Labels** content from your image, pre
 
 ---
 
-###  `fr_filesystem_read_bytes_total`
+###  fr_filesystem_read_bytes_total
 
 | Name   | Description | Example        | More Info |
 | ------ | ----------- | -------------- | --------- |
