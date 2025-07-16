@@ -30,7 +30,7 @@ All FusionReactor Agent metrics include a standard set of **default labels**. Th
 
 These labels are automatically attached to each metric and do not need to be configured manually.
 
-Some metrics also include **additional labels** to provide more specific context. For example:
+Some metrics also include **[additional labels](/Data-insights/Features/FR-Agent-Metrics/#labels)** to provide more specific context. For example:
 
 * `jvm_threads_state` includes a `state` label (e.g. `RUNNABLE`, `WAITING`, `BLOCKED`).
 * `fr_cf_requests_throughput_error_time` may include `status` to  distinguish between successful vs. failed requests (e.g., 200, 404, 500) and `type` to categorize request origin or type — such as api, static, internal, etc.
@@ -176,10 +176,6 @@ When extra labels are used, they are shown in the **Labels** column of the table
 | fr\_cf\_requests\_throughput          | ColdFusion request count per 5 seconds, per-request-type and per-request-status, 1-min avg. | [Labels](/Data-insights/Features/FR-Agent-Metrics/#fr_cf_requests_throughput)  | count/5s  |
 
 
-
-
-
-
 ### Sessions
 
 | Metric Name               | Description                      | Unit |Labels |
@@ -198,20 +194,11 @@ sessions\_destryed\_total | Total number of sessions destroyed, 1-min avg.     |
 
 
 
-
 ## Labels
 
 
 **Labels** are key-value pairs attached to metrics that provide additional context. They help distinguish between different dimensions of the same metric, such as the source, type, or environment. Labels are essential for querying, filtering, grouping, and visualizing metric data effectively.
 
-For example, a metric like `app_cpu` might have labels such as `app="frontend"` or `env="production"`. A single metric can have multiple labels, and the complete set of labels associated with a metric instance is known as its **label set**. The label set uniquely identifies each time series.
-
-For instance, `app_cpu{app="frontend",env="production"}` and `app_cpu{app="frontend",env="staging"}` represent two distinct time series because their label sets differ.
-
-Here's a clean and organized copy of the **Labels** content from your image, presented in a markdown-style table layout for clarity:
-
-
----
 
 
 #### app\_database\_throughput / app\_database\_error
