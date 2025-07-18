@@ -135,7 +135,7 @@ UNDER NO CIRCUMSTANCES SHALL **INTERGRAL**, ITS DIRECTORS, OFFICERS, EMPLOYEES A
 To the maximum extent permitted by law, you agree to defend, indemnify and hold harmless **INTERGRAL**, its directors, officers, employees and agents from and against any and all claims, actions, suits or proceedings, as well as any and all losses, liabilities, damages, costs and expenses (including reasonable attorneys fees) arising out of or accruing from: <br>
 **(a)** your use of the Software, <br>
 **(b)** any application you develop on the Software that infringes any copyright, trademark, trade secret, trade dress, patent or other intellectual property right of any person or defames any person or violates their rights of publicity or privacy, and <br>
-**(c)** any non- compliance by you with this License Agreement.
+**(c)** any non-compliance by you with this License Agreement.
 
 ### Confidentiality
 
@@ -143,18 +143,17 @@ The Software contains trade secrets and proprietary know-how that belong to **IN
 
 ### Publicity Rights
 
-Licensee grants **INTERGRAL** the right to include Licensee as a customer in Software promotional material. Licensee can deny **INTERGRAL** this right at any time by submitting a written request via email to SALES@**INTERGRAL**.COM, requesting to be excluded from Software promotional material. Requests ade after purchasing may take thirty (30) calendar days to process.
+Licensee grants **INTERGRAL** the right to include Licensee as a customer in Software promotional material. Licensee can deny **INTERGRAL** this right at any time by submitting a written request via email to **SALES@INTERGRAL.COM**, requesting to be excluded from Software promotional material. Requests ade after purchasing may take thirty (30) calendar days to process.
 
 ### Use of Decompiler
 
 The Software includes decompiling functionality (“Decompiler”) that enables reproducing source code from the original binary code. You hereby acknowledge that the binary code and source code may be protected by copyright, trademark and other laws which may prohibit you from decompiling them and/or using
 
-Decompiler. Before using Decompiler, you should make sure that the decompilation is not prohibited by any applicable license  agreement of the application and/or original binary code (except to the extent that you may be expressly permitted under applicable law) or that you have obtained permission to decompile the code from the copyright owner. Using Decompiler is entirely optional. **INTERGRAL** does neither encourage nor condone
-the use of the Decompiler and disclaims any liability for your  use of Decompiler in violation of applicable laws.
+Decompiler. Before using Decompiler, you should make sure that the decompilation is not prohibited by any applicable license  agreement of the application and/or original binary code (except to the extent that you may be expressly permitted under applicable law) or that you have obtained permission to decompile the code from the copyright owner. Using Decompiler is entirely optional. **INTERGRAL** does neither encourage nor condone the use of the Decompiler and disclaims any liability for your  use of Decompiler in violation of applicable laws.
 
 ### Use of Debugger
 
-The Software includes debugging functionality (“Debugger”) that enables debugging programs that may contain binary code, source code and intellectual property protected by copyright, trademark, patent and other laws which may prohibit you from debugging them and/or using Debugger. Before using debugger,you should make sure that debugging is not prohibited by any applicable license agreement of the program and/or original binary code (except to the extent that you may be expressly permitted under applicable law), or by other protecting laws, or that you have obtained permission to debug the program from all legal protection owner(s). Using Debugger is entirely optional.  **INTERGRAL** does neither encourage nor condone the use of the Debugger and disclaims any liability for your use of Debugger in violation of applicable laws.
+The Software includes debugging functionality (“Debugger”) that enables debugging programs that may contain binary code, source code and intellectual property protected by copyright, trademark, patent and other laws which may prohibit you from debugging them and/or using Debugger. Before using debugger, you should make sure that debugging is not prohibited by any applicable license agreement of the program and/or original binary code (except to the extent that you may be expressly permitted under applicable law), or by other protecting laws, or that you have obtained permission to debug the program from all legal protection owner(s). Using Debugger is entirely optional.  **INTERGRAL** does neither encourage nor condone the use of the Debugger and disclaims any liability for your use of Debugger in violation of applicable laws.
 
 ### FusionReactor Cloud Service
 
@@ -193,7 +192,7 @@ You acknowledge and agree that we may collect, transfer, process and store certa
 
 Any use of Information will be in accordance with the privacy policies of **INTERGRAL**.
 
-Info+mation may be processed, stored or transferred to **INTERGRAL** and its Data Processors which may be located in countries outside of your country of residence.
+Information may be processed, stored or transferred to **INTERGRAL** and its Data Processors which may be located in countries outside of your country of residence.
 
 **INTERGRAL** will use reasonable efforts to take appropriate technical and organizational measures to prevent unauthorized access to or disclosure of Information, but does not warrant it will eliminate all risk of misuse of Information.
 
@@ -209,7 +208,7 @@ This EULA is governed by the laws of Baden-Wuerttemberg, Germany without regard 
 
 ### Entire Agreement and Severability
 
-Thiss EULA is the entire agreement between **INTERGRAL** and you, and supersedes all prior or contemporaneous agreements or understandings, whether oral or written any other communications or advertising with respect to the Software; this EULA may be modified only by written agreement signed by authorized representatives of both you and **INTERGRA**. No **INTERGRAL** dealer or agent is authorized to make any amendment to this EULA.
+Thiss EULA is the entire agreement between **INTERGRAL** and you, and supersedes all prior or contemporaneous agreements or understandings, whether oral or written any other communications or advertising with respect to the Software; this EULA may be modified only by written agreement signed by authorized representatives of both you and **INTERGRAL**. No **INTERGRAL** dealer or agent is authorized to make any amendment to this EULA.
 
 If any provision of this EULA shall be held to be invalid or unenforceable, the remainder of this EULA shall remain in full force and effect and an enforceable term will be substituted reflecting our intent as closely as possible. All rights not expressly granted in this agreement are retained by **INTERGRAL**. To the extent any express or implied restrictions are not permitted by applicable laws, these express or implied restrictions shall remain in force and effect to the maximum extent permitted by such applicable laws. The failure or delay of **INTERGRAL** to exercise any of its rights under this EULA or upon any breach of this EULA shall not be deemed a waiver of those rights or of the breach. You agree that any varying or additional terms contained in any purchase order or other written notification or document issued by you in relation to the Software licensed hereunder shall be of no effect.
 
@@ -217,5 +216,5 @@ If any provision of this EULA shall be held to be invalid or unenforceable, the 
 
 This EULA does not authorize you to use **INTERGRAL’s** or its licensors’ names or any of their respective trademarks.
 
-!!! note
+!!! info
     The latest version of the EULA is available [here](https://fusion-reactor.com/eula-intergral-software-end-user-license-agreement/).
