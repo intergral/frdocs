@@ -453,6 +453,7 @@ nav:
         - Manual activation: Admin-and-data/Licensing/Manual-Activation.md
         - Static endpoints: Admin-and-data/Licensing/Static-Licensing-Endpoints.md
         - Troubleshooting: Admin-and-data/Licensing/Troubleshooting.md
+        - EULA: Admin-and-data/EULA.md
      - Security: Admin-and-data/security.md
      - Terms of Service: Admin-and-data/tos.md
      - Third Party Licenses: 
