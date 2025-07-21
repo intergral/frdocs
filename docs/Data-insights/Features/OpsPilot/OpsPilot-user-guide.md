@@ -51,8 +51,6 @@ This feature was added primarily for **privacy control**. While web search is he
 
 
 
-
-
 ## Conversation templates
 
 The OpsPilot Assistant takes the complexity out of monitoring your application: pre-defined question templates are built right into the system. These conversation  templates consist of carefully designed questions to simplify the monitoring process, making it effortless for users to gather crucial insights and track performance metrics. Whether you're new to monitoring or a seasoned professional, these intuitive tools help streamline your workflow, ensuring that you have the right data at your fingertips to assess your application's health and swiftly address any issues that may arise. With OpsPilot, monitoring your application becomes not just efficient but also exceptionally user-friendly.
