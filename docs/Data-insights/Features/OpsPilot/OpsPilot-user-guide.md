@@ -18,6 +18,39 @@ The OpsPilot Assistant is designed to be a constant  and trusted helper; it even
     The OpsPilot Assistant can also be accessed by selecting the OpsPilot integration buttons within the product.
 
 
+## Web search toggle
+
+OpsPilot now includes a feature that allows users to **enable or disable web search** when asking questions. This gives you better control over how your queries are handled - especially when working with private or internal information.
+
+### Where to find it
+
+In the assistant chat bar (bottom of the screen), there is a **globe icon** next to the microphone button. This icon is the **web search toggle**.
+
+
+![!Screenshot](/Data-insights/Features/OpsPilot/images/web-search.png)
+
+### How it works
+
+- **Enabled (<span style="color:blue">blue</span> icon):** OpsPilot will use **live web search** to help answer your question with up-to-date information.
+
+- **Disabled (<span style="color:gray">gray</span> icon):** OpsPilot will only use internal knowledge and the connected knowledge base - no external web queries are made.
+
+
+
+
+### Why this matters
+
+This feature was added primarily for **privacy control**. While web search is helpful, there may be cases where you might not want your input interpreted as a search (e.g., asking about passwords, credentials, or internal topics). With the toggle off, your message won't be used for any web searches.
+
+
+### Best practice
+
+- For **internal, private, or sensitive questions** → Keep web search **OFF**.
+
+- For **general knowledge or live information** → Toggle web search **ON**.
+
+
+
 ## Conversation templates
 
 The OpsPilot Assistant takes the complexity out of monitoring your application: pre-defined question templates are built right into the system. These conversation  templates consist of carefully designed questions to simplify the monitoring process, making it effortless for users to gather crucial insights and track performance metrics. Whether you're new to monitoring or a seasoned professional, these intuitive tools help streamline your workflow, ensuring that you have the right data at your fingertips to assess your application's health and swiftly address any issues that may arise. With OpsPilot, monitoring your application becomes not just efficient but also exceptionally user-friendly.
