@@ -1,5 +1,25 @@
 # What's New in FusionReactor
 
+## New in OpsPilot: Web Search Toggle
+
+You now have more control over your queries in OpsPilot with the new **Web Search Toggle**!
+
+Easily **enable or disable web search** depending on your needs — perfect for switching between private/internal topics and general web lookups.
+
+**Where to find it:**
+Look for the **globe icon** next to the mic in the chat bar.
+
+* **<span style="color:blue">Blue</span> icon = ON** (uses live web search)
+* **<span style="color:gray">Gray</span> icon = OFF** (uses only internal knowledge)
+
+
+!!! info "Learn more"
+    [Web Search Toggle](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/#web-search-toggle)
+
+
+
+
+
 
 ## New Authentication System Now Live
 

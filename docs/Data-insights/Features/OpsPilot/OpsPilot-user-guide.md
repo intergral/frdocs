@@ -18,13 +18,16 @@ The OpsPilot Assistant is designed to be a constant  and trusted helper; it even
     The OpsPilot Assistant can also be accessed by selecting the OpsPilot integration buttons within the product.
 
 
-## Web search toggle
+## Web Search Toggle
+
+
 
 OpsPilot now includes a feature that allows users to **enable or disable web search** when asking questions. This gives you better control over how your queries are handled - especially when working with private or internal information.
 
 ### Where to find it
 
-In the assistant chat bar (bottom of the screen), there is a **globe icon** next to the microphone button. This icon is the **web search toggle**.
+In the assistant chat bar (bottom of the screen), there is a **globe icon** next to the microphone button. This icon is the **web Search Toggle**.
+
 
 
 ![!Screenshot](/Data-insights/Features/OpsPilot/images/web-search.png)
