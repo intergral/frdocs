@@ -4,7 +4,7 @@
 
 The **FusionReactor Agent Metrics** page provides a comprehensive reference for all metrics collected by the FusionReactor agent across application, JVM, request, and cloud infrastructure layers. These metrics are essential for performance monitoring, alerting, and anomaly detection in both traditional and cloud-native environments.
 
-Metrics are grouped into categories based on the type of data they represent (e.g., CPU, memory, disk, transactions), and each entry includes a description and unit of measurement. Many of these metrics are designed to support real-time observability and are commonly used to configure alerts and build custom dashboards.
+Metrics are grouped into categories based on the type of data they represent (e.g., CPU, memory, disk, transactions), and each entry includes a description and unit of measurement. Many of these metrics are designed to support real-time observability and are commonly used to configure [alerts](/Data-insights/Features/alerting/) and build [custom dashboards](/Getting-started/Tutorials/create-dashboard/).
 
 
 Use this reference to:
