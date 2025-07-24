@@ -91,7 +91,7 @@ nav:
               - Databases & other languages: Best-Practices/Installation/ObsAgent-OTel.md
      - FusionReactor Agent:
         - Overview: Monitor-your-data/FR-Agent/agent-overview.md
-        - Downloads: Monitor-your-data/FR-Agent/Installation/Download-Links.md
+        - Download links: Monitor-your-data/FR-Agent/Installation/Download-Links.md
         - MD5s: Monitor-your-data/FR-Agent/Installation/md5.md
         - Install: 
            - Automatic vs manual installation: Monitor-your-data/FR-Agent/Installation/manual-or-automatic.md
