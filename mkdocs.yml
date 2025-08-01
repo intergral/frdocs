@@ -174,7 +174,7 @@ nav:
         - FR Cloud MCP:
             - Overview: Monitor-your-data/MCP/mcp-overview.md
             - Install: Monitor-your-data/MCP/MCP.md
-        - Katie - K8s tooling for AI:
+        - Katie - Kubernetes tooling for AI:
             - Overview: Monitor-your-data/Katie/overview.md
             - Install: Monitor-your-data/Katie/install.md
   - FEATURES: 
