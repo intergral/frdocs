@@ -219,6 +219,7 @@ nav:
                 - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
         - Explore: 
             - Overview: Data-insights/Features/explore.md
+            - Metrics: Data-insights/Features/explore-metrics.md
             - Logs: Data-insights/Features/explore-logs.md
             - Servers: Data-insights/Features/Explore-servers.md
         - Historic data: Data-insights/Features/timepicker.md
