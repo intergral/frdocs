@@ -17,7 +17,7 @@ Using Traces in Explore, you can:
 
 - Explore your data through automatically selected visualizations tailored to the metric type and structure.
 
-- Get powerful insights without the need to write TraceQL queries—everything works out of the box.
+- Get powerful insights without the need to write TraceQL queries - everything works out of the box.
 
 ## Get started
 
