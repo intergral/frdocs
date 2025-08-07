@@ -103,3 +103,6 @@ Explore is great for experimenting with queries and uncovering deeper insightsâ€
 5. Give your dashboard a name and description, choose a folder (if needed), and click **Save**.
 
     ![!Screenshot](../../Data-insights/Features/images/save-dashboard.png) 
+
+!!! info "Learn more"
+    [Metrics](https://grafana.com/docs/grafana/latest/explore/simplified-exploration/metrics/)
