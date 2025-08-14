@@ -611,6 +611,7 @@ plugins:
          'requirements.md': 'Monitor-your-data/FR-Agent/More/requirements.md'
          'Getting-started/DVCloud.md' : 'index.md'
          'Getting-started/GSCloudsetup.md' : 'Getting-started/Trial.md'
+         'LogBeta/LogQL-Logfmt.md' : 'Data-insights/Features/Logs/Logs.md'
            
 markdown_extensions:
   - pymdownx.highlight:
