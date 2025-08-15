@@ -1,5 +1,84 @@
 # What's New in FusionReactor
 
+## Model Context Protocol (MCP) Support in FusionReactor
+
+FusionReactor now supports the Model Context Protocol (MCP) — a vendor-neutral standard that allows AI tools to securely connect with external systems in real time. MCP enables AI models to access up-to-date information and even interact with supported tools.
+
+### FR Cloud MCP
+
+<div style="display: flex; gap: 20px;">
+  <div style="flex: 1;">
+    Connect AI assistants like Claude Desktop directly to your FusionReactor Cloud data using MCP. Gain real-time insights, run queries, and integrate FR Cloud with your AI workflows — powered by the open-source Grafana MCP project.
+  </div>
+  
+  <div style="flex: 1;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+      <iframe 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        src="https://player.vimeo.com/video/1109031163?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        title="MCP Integration" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+    
+!!! info "Learn more"
+    [FR Cloud MCP](/Monitor-your-data/MCP/mcp-overview/)
+
+### Katie 
+
+We're excited to introduce Katie and Katie MCP, two new tools designed to help you integrate and manage your Kubernetes clusters with AI.
+
+With an easy-to-install agent and MCP tooling, you can bring real-time data from your Kubernetes clusters into your AI's decision-making process. The Katie agent can be installed in two modes:
+
+- **Read-write mode**: This allows AI to not only receive live data but also to make changes to your cluster.
+
+- **Read-only mode**: This provides up-to-the-second data to AI language models without allowing them to make any modifications.
+
+
+!!! info "Learn more"
+    [Katie](/Monitor-your-data/Katie/overview/)
+
+## Explore: Logs Now Available
+
+We’ve added a new way to investigate issues by exploring logs directly inside FusionReactor. FusionReactor’s Logs Drilldown makes log exploration effortless with an intuitive, query-free interface. Your log data is instantly transformed into interactive visualizations, allowing engineers of any skill level to investigate issues and uncover insights - no LogQL needed.
+
+![!Screenshot](../../Latest-updates/images/logs.png)
+
+**Highlights:**
+
+* Instantly see log volume and sample log lines when opening Explore Logs — no more blank screen.
+* Browse labels and detected fields with volume and distribution insights; refine results without writing LogQL.
+* Spot common patterns to filter noise or focus on anomalies.
+
+!!! info 
+    [Explore Logs](/Data-insights/Features/explore-logs/)
+
+## Explore: Traces Now Available
+
+We’re excited to announce the availability  of Traces Drilldown in Explore, delivering a simplified, query-free way to analyze distributed traces. This release offers a refined, fully integrated deep-dive tracing solution.
+
+![!Screenshot](../../Latest-updates/images/traces.png)
+
+**Highlights:**
+
+- **No queries needed** – Jump straight from dashboards to detailed trace insights, connecting RED (Rate, Errors, Duration) metrics with exact trace data.
+
+- **Seamless navigation** – Move smoothly from high-level overviews to detailed span views while keeping context, making root cause analysis faster.
+
+- **Built-in tools** – Use integrated filtering, highlighting, comparisons, and correlation to quickly spot anomalies without leaving the interface.
+
+- **Rich trace visualization** – Inspect spans with metadata, duration, and status to pinpoint bottlenecks and errors.
+
+- **Unified workflow** – Link traces with logs, metrics, and profiles for a complete observability view, enabling rapid investigation from any signal.
+
+!!! info 
+    [Explore Traces](/Data-insights/Features/explore-traces/)
+
 ## New in OpsPilot: Web Search Toggle
 
 You now have more control over your queries in OpsPilot with the new **Web Search Toggle**!
