@@ -4,17 +4,44 @@
 
 FusionReactor now supports the Model Context Protocol (MCP) — a vendor-neutral standard that allows AI tools to securely connect with external systems in real time. MCP enables AI models to access up-to-date information and even interact with supported tools.
 
-New in this release:
-
 ### FR Cloud MCP
 
-Connect AI assistants like Claude Desktop directly to your FusionReactor Cloud data using MCP. Gain real-time insights, run queries, and integrate FR Cloud with your AI workflows — powered by the open-source Grafana MCP project.
+<div style="display: flex; gap: 20px;">
+  <div style="flex: 1;">
+    Connect AI assistants like Claude Desktop directly to your FusionReactor Cloud data using MCP. Gain real-time insights, run queries, and integrate FR Cloud with your AI workflows — powered by the open-source Grafana MCP project.
+  </div>
+  
+  <div style="flex: 1;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+      <iframe 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+        src="https://player.vimeo.com/video/1109031163?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+        title="MCP Integration" 
+        frameborder="0" 
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+    
+!!! info "Learn more"
+    [FR Cloud MCP](/Monitor-your-data/MCP/mcp-overview/)
 
 ### Katie 
 
-Our AI-powered assistant now leverages MCP to provide Kubernetes tooling for AI workflows, helping you troubleshoot and manage environments with natural language commands.
+We're excited to introduce Katie and Katie MCP, two new tools designed to help you integrate and manage your Kubernetes clusters with AI.
 
-This update makes FusionReactor more AI-ready than ever, with standards-based integrations that work across tools and vendors.
+With an easy-to-install agent and MCP tooling, you can bring real-time data from your Kubernetes clusters into your AI's decision-making process. The Katie agent can be installed in two modes:
+
+- **Read-write mode**: This allows AI to not only receive live data but also to make changes to your cluster.
+
+- **Read-only mode**: This provides up-to-the-second data to AI language models without allowing them to make any modifications.
+
+
+!!! info "Learn more"
+    [Katie](/Monitor-your-data/Katie/overview/)
 
 ## Explore: Logs Now Available
 
