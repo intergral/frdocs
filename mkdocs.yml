@@ -612,6 +612,8 @@ plugins:
          'Getting-started/DVCloud.md' : 'index.md'
          'Getting-started/GSCloudsetup.md' : 'Getting-started/Trial.md'
          'LogBeta/LogQL-Logfmt.md' : 'Data-insights/Features/Logs/Logs.md'
+         'https://docs.fusion-reactor.com/': 'https://docs.fusionreactor.io/'
+         
            
 markdown_extensions:
   - pymdownx.highlight:
