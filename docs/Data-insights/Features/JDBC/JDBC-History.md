@@ -13,7 +13,7 @@ You can change the size of the JDBC Longest Transactions via: 
 
 ![](/attachments/245551068/245551097.png)
 
-!!!note
+!!! note
     The JDBC History is the same as [Transaction->History](../Transactions/History.md) but filtered to only show transactions of JDBC type.
 
 !!! info "Learn more"

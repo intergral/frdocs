@@ -8,10 +8,11 @@ run than the current Slow Request Threshold.
 
 -   [JDBC+Settings](Settings.md) &gt; **History** &gt; **Slow Request Threshold**
 
-An example of the page can be seen below with the statement data
-obfuscated. The image below lists any transactions that have gone over
-the slowest threshold. It also lists any running transactions that haven
-increased passed the threshold and are still running.
+The example below shows the page with statement data obfuscated. The image lists:
+
+- Transactions that have exceeded the slowest threshold.
+
+- Transactions that are still running and have already passed the threshold.
 
 ![](/attachments/245551232/245551252.png)
 
