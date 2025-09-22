@@ -7,13 +7,12 @@ When installing FusionReactor on some Windows servers, you may encounter the err
 java.lang.IllegalStateException: wmic.exe cannot be found
 ````
 
-This happens because **`wmic.exe` is disabled or removed** in newer Windows builds (Windows 10/11 and Server 2022+).  
-FusionReactor relies on `wmic.exe` to query system information, so the absence of this utility prevents it from running correctly.
+This happens because **`wmic.exe` is disabled or removed** in newer Windows builds (Windows 10/11 and Server 2022+). FusionReactor relies on `wmic.exe` to query system information, so the absence of this utility prevents it from running correctly.
 
 
 ## Resolution
 
-### 1. Check if `wmic.exe` Exists
+### 1. Check if `wmic.exe` exists
 
 - Open **Command Prompt**.  
 - Run:
@@ -32,22 +31,23 @@ FusionReactor relies on `wmic.exe` to query system information, so the absence o
 - Click **Add a feature**.
 - Search for:
 
-   * **RSAT: Windows Management Instrumentation (WMI)** or
-   * **WMIC** (availability may differ by Windows build).
+     - **RSAT: Windows Management Instrumentation (WMI)** or
+     - **WMIC** (availability may differ by Windows build).
+
 - Install the feature.
 
 ---
 
-### 3. Verify Installation
+### 3. Verify installation
 
-1. Open **Command Prompt** again.
-2. Run:
+- Open **Command Prompt** again.
+- Run:
 
    ```sh
    wmic cpu get caption
    ```
 
-   * If a CPU description is returned, `wmic.exe` is working.
+- If a CPU description is returned, `wmic.exe` is working.
 
 ---
 
