@@ -74,6 +74,7 @@ nav:
         - Getting-started/Tutorials/Common-issues/check-license-seat.md 
         - Getting-started/Tutorials/Common-issues/onprem-login.md
         - Getting-started/Tutorials/Common-issues/endpoints.md   
+        - Getting-started/Tutorials/Common-issues/FR-wmic.exe-error.md  
   - INSTALLATION GUIDES:
      - Best Practices:      
            - Overview: Best-Practices/Installation/installation-overview.md
