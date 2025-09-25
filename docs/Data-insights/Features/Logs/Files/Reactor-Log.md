@@ -1,6 +1,6 @@
 # Reactor Log
 
-The Reactor log (reactor.log) which is automatically
+The **Reactor Log** (`reactor.log`) which is automatically
 generated under the
 '/FusionReactor/instance/\[your\_instance\_name\]/log' directory and
 named 'reactor.log'. The logs are a set of
