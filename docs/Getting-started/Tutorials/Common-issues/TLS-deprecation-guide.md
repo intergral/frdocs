@@ -94,13 +94,15 @@ Done.
 
 2. Import the roots into your JVM keystore:
 
-        ```bash
-        keytool -import -alias isrgrootx1 -keystore $JAVA_HOME/jre/lib/security/cacerts \
-            -file isrgrootx1.pem -storepass changeit -noprompt
+    ```
+    keytool -import -alias isrgrootx1 -keystore $JAVA_HOME/jre/lib/security/cacerts \
+           -file isrgrootx1.pem -storepass changeit -noprompt
 
-        keytool -import -alias isrgrootx2 -keystore $JAVA_HOME/jre/lib/security/cacerts \
-            -file isrgrootx2.pem -storepass changeit -noprompt
-        ```
+    keytool -import -alias isrgrootx2 -keystore $JAVA_HOME/jre/lib/security/cacerts \
+           -file isrgrootx2.pem -storepass changeit -noprompt
+    ```
+   
+
 
 3. Force TLS 1.2 (for Java 7 / early 8) by adding this line to:
 
@@ -130,12 +132,17 @@ Done.
 
 Use this if you cannot enable TLS 1.2 or add Let’s Encrypt roots.
 
-1. In the FusionReactor UI, go to **About → Manual Activation**.
+
+!!! note
+    Not available for FusionReactor Cloud licenses due to internet connection requirements.
+
+1. In the **FusionReactor On-Premise UI**, go to **About → Manual Activation**.
 2. Copy the activation code.
 3. On an internet-connected machine, open [https://fusion-reactor.com/manual](https://fusion-reactor.com/manual).
 4. Paste the activation code and click **Activate**.
 5. Copy the generated activation key.
 6. Back in the FusionReactor UI, paste the activation key and click **Activate**.
+
 
 !!! info "Learn more"
     [Goodbye TLS 1.0/1.1: How to keep your FusionReactor install secure in 2025 and beyond](https://fusion-reactor.com/blog/goodbye-tls-1-0-1-1-how-to-keep-your-fusionreactor-install-secure-in-2025-and-beyond/)
