@@ -49,7 +49,7 @@ The text shown is the **TLS cipher suite** (the encryption method used for the c
 
 ### ❌ Failed connection
 
-insert fail vid
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1123171388?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="TLS Failure"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 If the connection cannot be established (e.g. unsupported TLS version, network restrictions, configuration issues), the probe will display a Java error trace instead of a cipher suite.
 
@@ -94,23 +94,23 @@ Done.
 
 2. Import the roots into your JVM keystore:
 
-   ```bash
-   keytool -import -alias isrgrootx1 -keystore $JAVA_HOME/jre/lib/security/cacerts \
-     -file isrgrootx1.pem -storepass changeit -noprompt
+        ```bash
+        keytool -import -alias isrgrootx1 -keystore $JAVA_HOME/jre/lib/security/cacerts \
+            -file isrgrootx1.pem -storepass changeit -noprompt
 
-   keytool -import -alias isrgrootx2 -keystore $JAVA_HOME/jre/lib/security/cacerts \
-     -file isrgrootx2.pem -storepass changeit -noprompt
-   ```
+        keytool -import -alias isrgrootx2 -keystore $JAVA_HOME/jre/lib/security/cacerts \
+            -file isrgrootx2.pem -storepass changeit -noprompt
+        ```
 
 3. Force TLS 1.2 (for Java 7 / early 8) by adding this line to:
 
-   ```
-   $JAVA_HOME/jre/lib/security/java.security
-   ```
+    ```
+    $JAVA_HOME/jre/lib/security/java.security
+    ```
 
-   ```properties
-   jdk.tls.client.protocols=TLSv1.2
-   ```
+    ```properties   
+    jdk.tls.client.protocols=TLSv1.2
+    ```
 
 4. For **Java 6 only**, install [BouncyCastle JSSE](https://www.bouncycastle.org/):
 
@@ -120,6 +120,7 @@ Done.
      ```
      security.provider.1=org.bouncycastle.jsse.provider.BouncyCastleJsse
      ```
+     
 !!! info "Learn more"
     [Retrofitting your existing Java JVM](https://fusion-reactor.com/blog/retrofitting-your-existing-java-jvm-for-tls-1-2-lets-encrypt/)
 
@@ -136,10 +137,7 @@ Use this if you cannot enable TLS 1.2 or add Let’s Encrypt roots.
 5. Copy the generated activation key.
 6. Back in the FusionReactor UI, paste the activation key and click **Activate**.
 
----
-
-## Related Resources
-
-* [Goodbye TLS 1.0/1.1: How to keep your FusionReactor install secure in 2025 and beyond](https://fusion-reactor.com/blog/goodbye-tls-1-0-1-1-how-to-keep-your-fusionreactor-install-secure-in-2025-and-beyond/)
+!!! info "Learn more"
+    [Goodbye TLS 1.0/1.1: How to keep your FusionReactor install secure in 2025 and beyond](https://fusion-reactor.com/blog/goodbye-tls-1-0-1-1-how-to-keep-your-fusionreactor-install-secure-in-2025-and-beyond/)
 
 ---
