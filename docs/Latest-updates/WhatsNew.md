@@ -339,6 +339,27 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## Coming soon...
 
+We're excited to share what's next for FusionReactor. Here's a preview of the major features currently in development:
+
+### OpenTelemetry Standard Agent
+Send your FusionReactor data to popular APM tools like Grafana and Datadog. Our OpenTelemetry-compliant agent gives you the flexibility to work with the platforms you already use.
+
+### Unified Billing Model
+A simplified billing approach that supports on-premises, cloud, and hybrid deployments. Switch between environments without billing complexity – pay only for what you need.
+
+### Server View
+A centralized dashboard for monitoring all your servers in one place. Get high-level visibility into server health, performance metrics, and alerts, with the ability to drill down into individual server details and analyze historical trends.
+
+### Application View
+Monitor all your applications from a single dashboard. View key performance metrics at a glance, including transaction throughput, error counts, and response times, with detailed drill-down capabilities for deeper analysis.
+
+### Enhanced Alerting System
+Set alerts across any data source with support for additional notification channels. Your existing alerts will migrate automatically, and silencers return to give you full control over notifications.
+
+---
+
+Stay tuned for updates as these features roll out!
+
 
 ### Further integrations
 
