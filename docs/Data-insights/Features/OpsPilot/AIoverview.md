@@ -2,88 +2,86 @@
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871379062?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OpsPilot Assistant"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-OpsPilot is designed to elevate observability for every team member, transcending the boundaries of engineering to construct a comprehensive context around your systems. Through the fusion of large language models (LLMs) with our extensive telemetry data platform, we've engineered an AI companion adept at understanding the nuances inherent in both your system and OpsPilot's functionalities. OpsPilot streamlines the comprehension of your stack's intricacies, facilitates the resolution of service interruptions, and enhances productivity by answering simple inquiries in plain language.
+OpsPilot is your intelligent AI assistant for full-stack observability, designed to help every team member - from developers to SREs and engineering managers - understand, diagnose, and resolve issues faster than ever.
 
-OpsPilot is now also equipped with a metrics knowledge base. This enhancement empowers OpsPilot to make informed graph generation and query creation decisions and ensures your visualizations are meaningful and insightful.
+By combining FusionReactor’s powerful telemetry platform with advanced AI reasoning, OpsPilot transforms complex system data, code, and performance metrics into clear, actionable insights - all in natural, conversational language.
+
+OpsPilot goes beyond traditional monitoring to analyze code, detect memory anomalies, interpret metrics, and even suggest the next steps to resolve problems. It’s observability, explanation, and action - all in one assistant.
 
 !!! info "Learn more"
     [OpsPilot user guide](/Data-insights/Features/OpsPilot/OpsPilot-user-guide/)
 
+## What’s new in OpsPilot
+
+The latest version of OpsPilot introduces a suite of advanced capabilities designed to enhance your observability and reasoning experience:
+
+- **AI reasoning engine** – Understands complex system behavior and delivers context-rich explanations in plain language.
+
+- **Code analysis & logic review** – Detects bugs, logic errors, and refactoring opportunities directly from your code.
+
+- **Memory diagnostics** – Investigates heap and non-heap usage, identifies anomalies, and recommends performance optimizations.
+
+- **External knowledge & patch lookup** – Retrieves the latest version, patch, and release information from trusted sources.
+
+- **Grafana & Telemetry integration** – Correlates metrics with real-time data for deeper insights into system health.
+
+- **Actionable recommendations** – Prioritizes fixes and next steps to help you focus on what matters most.
+
+- **Seamless integrations** – Works with Microsoft Teams, Jira, and Slack — and can automatically create tickets to accelerate issue resolution.
+
+- **OpsPilot Vision** – Allows you to upload screenshots from FusionReactor, Grafana, or similar tools for instant, readable insights.
+
 ## Ways to interact with OpsPilot
 
-**Ask OpsPilot questions**
+### Ask OpsPilot questions
 
-You have the flexibility to engage with OpsPilot 24/7, at your convenience, through our interactive chat feature. Simply click the **New Chat** button and then type a question into the box.
+Engage with OpsPilot anytime through the interactive chat interface. Simply select **New Chat**, type your question, and receive an instant, clear response.
 
-OpsPilot offers a range of functionalities to assist you:
+**OpsPilot can:**
 
-* Convert natural language into queries 
+- Convert natural language into system or data queries.
 
-* Identify anomalies
+- Identify anomalies and correlate causes.
 
-* Analyze error logs
+- Analyze code and suggest improvements.
 
-* Interpret stack traces
+- Review logs, stack traces, and exceptions.
 
+- Generate meaningful charts and visualizations.
 
-OpsPilot is adept at conversing with engineers using everyday inquiries and straightforward language. If you're pressed for time to investigate any matter, you can simply ask OpsPilot, "Have there been any issues in the last day?" or "Give me a detailed breakdown of my system?" OpsPilot can promptly inform you about any issues within your system and assist you in analyzing data through visualizations like charts and tables.
+- Retrieve external patch, release, and version data.
 
-!!! tip
-    If you're struggling with where to begin, just use our handy conversation templates.
+**OpsPilot communicates naturally — so you can ask things like:**
 
-**Intuitive integration points**
+- “What’s causing memory spikes in the last hour?”
+- “Show me slow transaction trends this week.”
+- “Review this code and highlight potential issues.”
+- “What’s the latest patch version for ColdFusion 2025?”
 
-OpsPilot is seamlessly embedded within the FusionReactor UI at pivotal points to offer contextual insights where they matter most. 
+And OpsPilot will respond with structured, easy-to-understand answers - plus recommended actions you can take immediately.
 
-With OpsPilot you can easily analyze and interpret:
+### Intuitive integration points
 
-* error logs
+OpsPilot is built directly into the FusionReactor UI, offering contextual insights where they’re most useful. Whether you’re viewing traces, metrics, logs, or code, OpsPilot is right there to explain what’s happening - and why.
 
-* stack traces
-
-* exceptions
-
-* code
-
+With external integration support, OpsPilot also connects to Microsoft Teams, Jira, and Slack, allowing seamless collaboration and automatic ticket creation from within your observability workflow.
 
 
-## Benefits of using OpsPilot Assistant
+## Benefits of using OpsPilot 
 
-* **Efficiency**: OpsPilot automates routine system checks and issue detection, saving valuable time for IT and operations teams. Your team can focus on more strategic tasks rather than manual monitoring.
+- **Faster troubleshooting** – Real-time analysis and reasoning drastically reduce mean time to resolution (MTTR).
 
-* **Proactive issue detection & reduced downtime**: The assistant continuously monitors your environment and detects potential problems before they escalate into critical incidents. This proactive approach helps prevent downtime and service disruption.
+- **Proactive detection** – Identify potential issues before they impact users or uptime.
 
-* **24/7 availability**: OpsPilot operates around the clock, providing continuous monitoring and support, even during off-hours or when team members are not available.
+- **Consistency & reliability** – Automated checks ensure monitoring and diagnostics follow best practices every time.
 
-* **Swift issue resolution**: OpsPilot provides real-time insights and actionable recommendations, enabling faster troubleshooting and issue resolution. Engineers can identify the root cause of problems more quickly.
+- **Human-Friendly insights** – Get complex technical explanations in plain language, ready to share with your team.
 
-* **Consistency**: OpsPilot ensures that system checks and monitoring processes are consistently applied, reducing the risk of human error and ensuring compliance with best practices.
+- **Increased productivity** – Spend less time digging through logs and more time building.
 
-* **Cost savings**: By automating tasks and reducing downtime, OpsPilot can lead to cost savings in terms of both time and resources.
+- **Collaboration ready** – Share insights, tickets, and actions across Teams, Jira, or Slack with a single step.
 
-
-* **Natural language queries**: With
-OpsPilot Assistant, you can ask questions in
-plain English and receive relevant
-insights and recommendations. This
-feature makes it easier than ever to
-understand the performance of your
-applications and make informed
-decisions to optimize their
-performance.
-
-* **Gain deeper insights into code**:
-OpsPilot analyzes sections of
-code so you can quickly identify
-problem areas and gain a deeper
-understanding of complex programs.
-OpsPilot's natural language
-processing capabilities provide detailed
-explanations of code issues, allowing
-you to understand the nature of the
-problem and take the necessary
-corrective action.
-
+- **Continuous availability** – OpsPilot works 24/7, giving you confidence and clarity even outside business hours.
 
 
 !!! info "Learn more"
