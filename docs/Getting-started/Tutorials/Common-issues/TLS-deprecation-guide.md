@@ -22,6 +22,7 @@ The **TLS Probe** helps you test whether your system can successfully establish 
 
 ---
 
+
 ## Understanding the results
 
 ### ✅ Successful connection
