@@ -94,6 +94,45 @@ For Claude Desktop, the configuration to communicate with this is:
 	  }
 }
 ```
+
+
+## Configuring Claude Code
+
+This configuration uses the **MCP** in a local Docker container to connect to **FusionReactor Cloud**.
+
+### 1. Start the Docker container locally
+
+```bash
+docker run \ 
+    --restart always \
+    --name fr-katie \
+    -d \
+    -e API_KEY=FR_CLOUD_API_KEY \
+    -p 8000:8000 intergral/katie-mcp:main.345584e0.58 \
+    -t sse
+```
+
+!!! info
+    You can get the latest image tag from [here](https://hub.docker.com/r/intergral/katie-mcp/tags).
+
+
+### 2. Add the MCP to Claude Code
+
+Once the container is running, add the MCP to Claude Code on the command line:
+
+```bash
+claude mcp add --scope=user --transport=sse fr-katie-prod "http://localhost:8000/sse"
+```
+
+
+### 3. Validate the connection
+
+Finally, run the following command to validate the connection:
+
+```bash
+claude mcp list
+```
+
 ## Example prompts & workflows
 
 
