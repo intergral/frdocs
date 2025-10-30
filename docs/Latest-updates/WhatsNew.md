@@ -1,5 +1,21 @@
 # What's New in FusionReactor
 
+## Trace-powered investigations in OpsPilot
+
+OpsPilot can now query and analyze distributed traces, giving it the ability to investigate individual transactions in real time. This powerful new capability allows OpsPilot to:
+
+- Search for slow or failing requests using TraceQL.
+
+- View complete execution paths across microservices.
+
+- Identify performance bottlenecks and errors at the span level.
+
+- Correlate metrics with traces to show not just *what* is happening, but *why*.
+
+This feature transforms OpsPilot from a monitoring assistant into a true root cause analysis engine, helping you move from detection to diagnosis in seconds.
+
+<iframe src="https://player.vimeo.com/video/1130895710?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="600" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Why is checkout latency high?"></iframe>
+
 ## Model Context Protocol (MCP) Support in FusionReactor
 
 FusionReactor now supports the Model Context Protocol (MCP) — a vendor-neutral standard that allows AI tools to securely connect with external systems in real time. MCP enables AI models to access up-to-date information and even interact with supported tools.
@@ -132,7 +148,7 @@ Pyroscope is a multi-tenant, continuous profiling aggregation system designed to
 
 
 
-## Opspilot updates
+## OpsPilot updates
 
 We're excited to announce two major updates to OpsPilot! First, our new agentic system for querying metrics data enhances your experience with dynamic, relevant insights, more frequent and accurate graphs, and quicker response times. Second, we've introduced the ability to scrape websites and ingest their content directly into your knowledge base, expanding the ways you can gather and utilize information. These updates empower you to gain deeper insights and build a more comprehensive knowledge repository effortlessly.
 
@@ -339,7 +355,20 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## Coming soon...
 
-We're excited to share what's next for FusionReactor. Here's a preview of the major features currently in development:
+The next FusionReactor Agent release is scheduled for late October to early November. Here's what's included:
+
+### Light & Dark Theme (On-Premises UI)
+Choose between light and dark themes in the FusionReactor on-premises interface. Your theme preference will persist across sessions for a consistent visual experience.
+
+### OpenTelemetry (OTEL) Shipping Integration
+Native OTEL shipping support enables you to send telemetry data directly to OpenTelemetry-compatible platforms, providing seamless integration with your existing observability stack.
+
+### Crash Protection Logs in Cloud
+Crash Protection logs will automatically ship to FusionReactor Cloud, providing centralized visibility across all your servers. A new dedicated crash analysis page will be available in the Cloud UI.
+
+#### OpsPilot Analysis for Crash Protection
+Access intelligent crash analysis directly from the Cloud interface. The new **Analyse with OpsPilot** button provides AI-powered insights and recommendations for Crash Protection events, helping you diagnose and resolve issues faster. 
+
 
 ### OpenTelemetry Standard Agent
 Send your FusionReactor data to popular APM tools like Grafana and Datadog. Our OpenTelemetry-compliant agent gives you the flexibility to work with the platforms you already use.
@@ -361,9 +390,6 @@ Set alerts across any data source with support for additional notification chann
 Stay tuned for updates as these features roll out!
 
 
-### Further integrations
-
-Exporters are available in many forms and allow you to monitor many aspects of your infrastructure. With Kubernetes already added, FusionReactor Cloud will very soon be able to offer more integrations such as AWS, GCP, Mongo and more.
 
 
 
