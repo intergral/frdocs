@@ -16,7 +16,7 @@ There are many overloaded methods on FRAPI that can be used to post
 metrics.
 
 !!! info "Learn more"
-    [FRAPI JavaDoc](https://docs.fusionreactor.io/FRAPI/javadoc/overview-summary.html)
+    [FRAPI JavaDoc](https://fusion-reactor.com/frapi/8_0_0/)
 
 !!! info
     If a non-numeric metric is submitted to FRAPI, it will be displayed as a **column chart** instead of a line graph.
