@@ -70,7 +70,7 @@ This will automatically attach `region=us-east-1` and `team=payments` to every m
 | ---------------------------- | ---------------------------- |  ---- |---- |
 | up                           | Indicates the instance is up |      [Labels](/Data-insights/Features/FR-Agent-Metrics/#up) |    |
 | fusionreactor\_build\_info   | FusionReactor build info    |      [Labels](/Data-insights/Features/FR-Agent-Metrics/#fusionreactor_build_info)    | |
-| fr\_server\_info             | FusionReactor server info   |     [Labels](fr_server_info) |
+| fr\_server\_info             | FusionReactor server info   |     [Labels](/Data-insights/Features/FR-Agent-Metrics/#fr_server_info) |
 | fusionreactor\_license\_info | FusionReactor license info  |     [Labels](/Data-insights/Features/FR-Agent-Metrics/#fusionreactor_license_info)   |  |
           
 
