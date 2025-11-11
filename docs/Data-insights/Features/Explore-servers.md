@@ -308,12 +308,10 @@ When you click the arrow next to a log entry, it expands to show three sections:
 ![Screenshot](../../Data-insights/Features/Servers/links.png)
 
 
-### Info 
+## Info 
 
 The **Client Information** panel provides detailed configuration and environment data for the selected instance. Click any category to expand and view specific details.
 
-
-### Information categories
 
 - **OS** - Operating system details including name, version, and architecture
 - **Server** - Application server information such as type, version, and configuration
