@@ -1,147 +1,88 @@
 # Applications
 
 
-![!Screenshot](../../Data-insights/Features/images/Applications/app.png)
+The **Applications Overview** page provides a high-level visualization of all monitored applications within your environment. Each application is represented by a 3D cube, allowing users to quickly assess performance metrics such as throughput, transaction count, and error rates.
 
-The **Applications** list view on FusionReactor Cloud displays an overview of all your applications on servers running FusionReactor.
+![Screenshot](../../Data-insights/Features/images/Applications/applications.png) 
 
-## Applications filtering
 
-Applications can be filtered by **View**, **Filter**, **Sort by** and **Sort order**.
+## **Key Elements**
 
-![!Screenshot](../../Data-insights/Features/images/Applications/appfil.png)
 
-* In the **View** dropdown, you can choose to display your applications in either a **Grid** or **Row** view. 
+Each cube represents a monitored application instance. Hovering over a cube displays detailed metrics in a tooltip, including:
 
-* Use the **Filter** dropdown to filter the applications in a state of **Slow** or **Error**. 
+| Metric                         | Description                                                                                    |
+| ------------------------------ | ---------------------------------------------------------------------------------------------- |
+| **App Name**                   | The name of the application being monitored.                                                   |
+| **App Txn Throughput Sum Max** | Maximum cumulative throughput (transactions per minute) recorded over the selected time range. |
+| **App Txn Throughput Avg**     | Average transaction throughput across the selected period.                                     |
+| **App Txn Throughput Max**     | Peak transaction throughput observed.                                                          |
+| **App Txn Throughput Cnt**     | Current transaction count per minute (c/min).                                                  |
+| **App Txn Error Count Sum**    | Total number of errors recorded for this application.                                          |
 
-* You can also filter for applications that have been **deleted**. 
 
-* Use the **Sort by** dropdown to filter applications by:
+## Toolbar Controls
 
-    1. **Attribute** 
+Located at the top-right of the Applications Overview page are several key controls for time and data refresh management.
 
-        * Name
+| **Control**               | **Description**                                       | **Options / Function**                                                   | **Notes**                                                                                        |
+| ------------------------- | ----------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Time Range Selector**   | Adjusts the time frame of displayed data.             | - Last 5 minutes<br>- Last 15 minutes<br>- Last hour<br>- Custom range   | Selecting a new range automatically updates all metrics.                                         |
+| **Time Range Zoom Out**   | Expands the current time range by a factor of two.    | Example: Viewing last 15 mins → Zoom Out → 30 mins                       | Useful for broadening the analysis without changing the range manually.                          |
+| **Auto Refresh Dropdown** | Controls how often the dashboard refreshes live data. | - Off (no refresh)<br>- Auto 5s<br>- Auto 10s<br>- Auto 30s<br>- Auto 1m | “Auto 5s” or “Auto 10s” recommended for near real-time updates; longer intervals reduce UI load. |
 
-        * Last updated
 
-    2. **Metric**
-        * Request throughput
-        * Error count
-        * Average response
+## Quick Nav
 
-        * Max response
+The **Quick Nav** is a dropdown menu providing immediate, centralized access to the most frequently used views - **Home, Overview, Applications, Servers, and Configuration**.
 
-* In the **Sort order** dropdown, you can view your applications in **Ascending** or **Descending** order.
 
-* To clear all filters, select the icon at the far right of the screen.
 
-![!Screenshot](../../Data-insights/Features/images/Applications/clear.png)
+## Application Details
 
-!!! tip
-    Search directly for an application **name** (or **alias**) using the search box inside the filter bar.
+When you click on an application from the **Applications Overview**, you are taken to the **Application Details** view. This page provides detailed performance and transaction metrics for the selected application and helps you analyze the performance of individual endpoints or pages within the selected application (e.g., `QuoteCF`).
 
+You can filter and sort metrics to identify high-traffic pages, slow responses, and error trends.
 
-## Applications details 
+![Screenshot](../../Data-insights/Features/images/Applications/app-details.png) 
 
-The applications details screen is displayed when an application is selected.
+### Controls
 
-![!Screenshot](../../Data-insights/Features/images/Applications/appopen.png)
+| **Control**                           | **Description**                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Application Dropdown**              | Filters the data by application. Select which monitored application (e.g., `QuoteCF`) to analyze.                                                                                                                                                                                                                                                                                  |
+| **Show By Dropdown**                  | Allows filtering of displayed data by specific performance metrics: <br>• **Throughput** – Transaction rate per endpoint.<br>• **Time Taken** – Percentage of total execution time.<br>• **Average Time** – Mean response time per endpoint.<br>• **Slowest** – Endpoints with the longest recorded response times.<br>• **Errors** – Endpoints where transaction errors occurred. |
+| **Time Picker / Zoom / Auto Refresh** | Adjusts the visible time range, zooms out for a broader view, or sets live refresh intervals (e.g., 5s, 30s, 1m).                                                                                                                                                                                                                                                                  |
 
-## Transaction bars
 
-🔎**Find it**: **FusionReactor** > **Applications** > **Performance**
 
-![!Screenshot](../../Data-insights/Features/images/Applications/transops.png)
+### Metrics Panels
 
-The transaction list displays all the transactions associated with that application for the set timeframe as well as the selected tab in the filter bar. 
+| **Panel**                 | **Description**                                                                                                |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Top 20 – Throughput**   | Displays the top 20 endpoints ranked by transactions per minute (c/m). Helps identify the most active pages.   |
+| **Time Taken (%)**        | Shows the distribution of total execution time across endpoints. Highlights where most processing time occurs. |
+| **Average Response Time** | Displays the mean response time for each endpoint over the selected time range.                                |
+| **Max Response Time**     | Tracks the peak response time recorded for each endpoint. Useful for spotting performance spikes.              |
+| **Throughput**            | Graphs transaction throughput trends (requests per minute) for each endpoint.                                  |
+| **Error Count**           | Displays the number of errors encountered per endpoint. A flat line at 0 indicates no errors.                  |
 
-Transactions can be filtered by selecting the relevant tab:
 
-1. **Time taken** - This displays the percentage of time the application running that transaction.
-2. **Average time** - This shows the average time for each transaction, with a line displayed across all transactions showing the average for the entire application. The application average time is displayed below the transaction list.
-3. **Slowest** - This displays the longest response time for each transaction, with the total of the longest times shown below the transactions list.
-4. **Throughput** - This shows the number of requests for each transaction, with the total number of requests displayed below the transaction list.
-5. **Errors** - This displays the number of errors for each transaction that has caused errors, with the total number of errors displayed below the transaction list.
 
-## Transactions graphs
+### Traces Table
 
-🔎**Find it**: **FusionReactor** > **Applications** > **Graphs**
+Located at the bottom of the view, the **Traces** section lists recent transaction traces for the selected application.
 
+| **Column**     | **Description**                                                       |
+| -------------- | --------------------------------------------------------------------- |
+| **Trace ID**   | Unique identifier for a specific trace (clickable for detailed view). |
+| **Start Time** | Timestamp when the transaction began.                                 |
+| **Service**    | Service name or generator responsible for the transaction.            |
+| **Name**       | The HTTP method or endpoint invoked (e.g., GET, POST).                |
+| **Duration**   | Total transaction execution time in milliseconds (ms).                |
 
-![!Screenshot](../../Data-insights/Features/images/Applications/graphs.png)
+Clicking on an individual trace diplays the full trace details. 
 
-The graph data is displayed by:
+![Screenshot](../../Data-insights/Features/images/Applications/trace-details.png) 
 
-* **Time Taken**
 
-* **Average Response Time**
-
-* **Max Response Time**
-
-* **Error Count**
-
-
-The graph can be manipulated in a number of ways:
-
-1. Hovering the mouse over the graph will show all the data for that time point. 
-
-![!Screenshot](../../Data-insights/Features/images/Applications/detgraph.png)
-
-2. The graphs can be filtered by:
-
-![!Screenshot](../../Data-insights/Features/images/Applications/graphdd.png)
-
-* **Profile** - either **System** or **Custom**
-
-* **Graphs**  - **Average Response Time**, **Error Count** and more...
-
-* **Hide empty** - either **True** or **False**
-
-* **View** - **Grid** or **Row**
-
-
-
-
-
-
-
-## **Interesting transactions**
-
-![!Screenshot](../../Data-insights/Features/images/Applications/inttrans.png)
-
-This list shows all the interesting transactions related to the selected application. 
-
-A transaction is regarded as *interesting* if it is:
- 
-1. **Slow** - The slowest four transactions over 500ms for every minute.
-2. **Very slow** - The first four transactions over the slow request threshold as set in the FR Client (by default this is 8 seconds) for every minute.
-    * Set the threshold in the FR client by going to **Requests** > **Settings** > **WebRequest History** > **Slow Request Threshold** (seconds).
-3. **Error** - The transaction returned an error.
-
-The following information is displayed by the interesting transactions list:
-
-1. **Started** - The start time and date of the transaction.
-2. **Status** - The status code that the transaction returned, for example 200, 500, etc.
-3. **Flavor** - The type of transaction, for example Web Request, JDBC request, etc.
-4. **Txn (Transaction)** - Transaction name.
-5. **Description** - A description of the transaction. For example, the URL of the request, database query, etc.
-6. **Reason** - The reason the transaction is interesting (Slow, Very slow or Error).
-7. **Dur (Duration)** - Duration of the transaction in MS.
-8. **Actions** - Two actions:
-
-    * View the details page of that transaction.
-    * Save the transaction under the saved transactions view for that application / instance.
-
-## Filtering
-
-The interesting transactions list has two ways to filter and sort it:
-
-![!Screenshot](../../Data-insights/Features/images/Applications/inttransfil.png)
-
-1. The **Reason** dropdown will filter by reason type, with the options of **Slow** and **Errors**.
-
-2. The **Min duration** dropdown will filter the list to only show transactions with a duration time over the specified time.
- 
-!!! question "Need more help?"
-    Contact support in the chat bubble and let us know how we can assist.
