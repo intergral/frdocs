@@ -320,15 +320,15 @@ When you click the arrow next to a log entry, it expands to show three sections:
 The **Client Information** panel provides detailed configuration and environment data for the selected instance. Click any category to expand and view specific details.
 
 
-- **OS** - Operating system details including name, version, and architecture
-- **Server** - Application server information such as type, version, and configuration
-- **ENV Vars** - Environment variables configured for the instance
-- **Client** - Client-specific settings and identifiers
-- **System** - System-level properties and resource information
-- **JVM** - Java Virtual Machine details including version, memory settings, and runtime parameters
-- **Product** - Product or application version information
-- **Network** - Network configuration including hostnames, ports, and IP addresses
-- **Docker** - Container-specific information such as image name, container ID, and orchestration details
+- **OS** - Operating system details including name, version, and architecture.
+- **Server** - Application server information such as type, version, and configuration.
+- **ENV Vars** - Environment variables configured for the instance.
+- **Client** - Client-specific settings and identifiers.
+- **System** - System-level properties and resource information.
+- **JVM** - Java Virtual Machine details including version, memory settings, and runtime parameters.
+- **Product** - Product or application version information.
+- **Network** - Network configuration including hostnames, ports, and IP addresses.
+- **Docker** - Container-specific information such as image name, container ID, and orchestration details.
 
 ### Usage
 
