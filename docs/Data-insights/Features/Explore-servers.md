@@ -63,22 +63,22 @@ The Quick Nav is a dropdown menu providing immediate, centralized access to the 
 ![Screenshot](../../Data-insights/Features/Servers/quick-nav.png)
 
 
-## Server details
+## Server Details
 
 
-When you click on a Server cube from the System Overview dashboard, you'll be taken to a detailed management and monitoring view for that specific instance via the UI tunnel.
+When you click on a Server cube from the System Overview dashboard, you'll be taken to a detailed management and monitoring view for that specific instance.
 
 This detailed view is organized into top-level tabs that provide comprehensive diagnostics and monitoring capabilities:
 
-- **UI Tunnel** - Access your on-premises application's user interface directly through FusionReactor Cloud without exposing it to the public internet.
+- **UI Tunnel** - Access your on-premises application's user interface directly through FusionReactor Cloud.
 
-- **Metrics** - Performance metrics and resource utilization data
+- **Metrics** - Performance metrics and resource utilization data.
 
-- **Traces** - Deep-dive request tracing for diagnostics
+- **Traces** - Deep-dive request tracing for diagnostics.
 
-- **Logs** - Application and system log analysis
+- **Logs** - Application and system log analysis.
 
-- **Info** - Client and server configuration information
+- **Info** - Client and server configuration information.
 
 Each tab provides specialized tools for monitoring and troubleshooting your FusionReactor agent instance.
 
@@ -94,28 +94,19 @@ The **UI Tunnel** in FusionReactor is a specialized feature that enables secure 
 ### Changing the UI theme (Dark/Light Mode)
 
 
-The **UI Tunnel** defaults to dark mode for optimal viewing during extended monitoring sessions. You can easily switch between dark and light themes using the theme toggle in the header bar.
+The **UI Tunnel** defaults to dark mode for optimal viewing during extended monitoring sessions. You can easily switch between dark and light themes using the theme toggle (sun or moon) in the header bar.
 
 ![Screenshot](../../Data-insights/Features/Servers/darkmode.png)
 
-To switch to light mode:
-
-- Click the sun icon located on the far right of the UI Tunnel header bar
-
-To return to dark mode:
-
-- Click the moon icon in the same location
-
-The theme preference allows you to customize the interface based on your viewing environment and personal preference.
 
 ## Metrics
 
 
-The Metrics tab provides a near real-time view of your server’s performance and health. Data updates automatically if an auto-refresh interval is set, or manually when a new time range is selected.
+The **Metrics** tab provides an historic view of your server’s performance and health. Data updates automatically if an auto-refresh interval is set, or manually when a new time range is selected.
 
 ![Screenshot](../../Data-insights/Features/Servers/metrics.png)
 
-The green boxes at the top display the latest collected performance metrics for the selected instance, based on the selected time range.
+The boxes at the top display the latest collected performance metrics for the selected instance, based on the selected time range.
 
 | **Metric**                         | **Description**                                           | **Why It’s Useful**                                            |
 | ---------------------------------- | --------------------------------------------------------- | -------------------------------------------------------------- |
@@ -134,7 +125,7 @@ The green boxes at the top display the latest collected performance metrics for 
 ### Detailed graphs
 
 
-Each graph provides **historical trends** for the metrics shown above.
+Each graph provides **historical trends** for the metrics shown below.
 
 ![Screenshot](../../Data-insights/Features/Servers/metrics.png)
 
@@ -153,29 +144,32 @@ Graphs include:
 
 This helps with **root-cause analysis** — understanding what led to a performance change or incident.
 
+
 ### Metric graph actions
 
 ![Screenshot](../../Data-insights/Features/Servers/graph.png)
 
-The top-right corner of each metric graph contains four action icons:
+The top-right corner of each metric graph contains action icons that may vary depending on the dashboard and metric type:
+
+1. **Edit Threshold** - Configure alert thresholds for this metric to receive notifications when values exceed defined limits (available on select dashboards).
+
+2. **View Logs** - Access related log entries for the time period and service shown in the graph to investigate issues.
+
+3. **Ask OpsPilot** - Send this metric to OpsPilot AI for natural language explanations and analysis of patterns or anomalies.
+
+4. **Expand Graph** - Open the metric in full-screen view for detailed analysis and extended time ranges.
+
+These actions provide quick access to troubleshooting and monitoring capabilities directly from the metric visualization. Note that not all actions are available for every metric or dashboard type.
 
 
-1. **Edit Threshold** - Configure alert thresholds for this metric to receive notifications when values exceed defined limits
+### Threshold Configuration 
 
-2. **View Logs** - Access related log entries for the time period and service shown in the graph to investigate issues
+The **Configuration** page allows you to set and manage warning and critical thresholds for key performance metrics across your application. Thresholds help you identify performance degradation early — when a metric exceeds a configured limit, it triggers visual alerts in dashboards and monitoring panels.
 
-3. **Ask OpsPilot** - Send this metric to OpsPilot AI for natural language explanations and analysis of patterns or anomalies
+You can adjust thresholds individually on certain graphs using the icon in the top right, or view and edit all thresholds in one place via **Quick Nav** → **Configuration**. 
 
-4. **Expand Graph** - Open the metric in full-screen view for detailed analysis and extended time ranges
+![Screenshot](../../Data-insights/Features/Servers/configuration.png)
 
-These actions provide quick access to troubleshooting and monitoring capabilities directly from the metric visualization.
-
-
-### Editing thresholds
-
-Thresholds help you monitor metric health by highlighting when values exceed configured levels. Click the **Edit Threshold** icon on any metric graph to configure alerts.
-
-![Screenshot](../../Data-insights/Features/Servers/edit-threshold.png)
 
 #### Setting threshold values
 
@@ -188,26 +182,28 @@ Enter numeric values appropriate for the metric type. Percentage-based metrics u
 
 Once configured, thresholds appear as visual indicators in metric panels across the application. When a metric value exceeds:
 
-- The **Warning** threshold - displayed with a yellow/orange indicator
-- The **Critical** threshold - displayed with a red indicator
+- The **Warning** threshold - displayed with a yellow/orange indicator.
+- The **Critical** threshold - displayed with a red indicator.
 
 This visual feedback helps you quickly identify performance issues across your monitored services.
 
 Click **Update Thresholds** to apply your configuration. The new thresholds take effect immediately and will be used for all future metric evaluations.
 
+
 ### Filters & Controls
 
 At the top of the screen, you can:
 
-* **Select Group, Node, Job, Instance** – to view data for specific servers or services.
+* **Select Group, Node, Job, Instance** – to view data for specific servers or services. You can select multiple servers to compare metrics across your infrastructure.
 * **Set Time Range** – focus on the last hour, day, or a custom range.
 * **Add Adhoc Filters** – isolate data for specific endpoints, users, or environments.
 
-These filters make it easy to **narrow down the view** when diagnosing an issue.
+These dynamic filters make it easy to **narrow down the view** when diagnosing an issue. **Filters persist across tabs**, so when you switch between different dashboard views, your selected filters remain applied for consistent analysis.
+
 
 ## Traces
 
-The Traces tab provides deep insights into the performance of individual requests (spans) as they move through the system. This view is critical for identifying slow transactions, latency issues, and service dependencies.
+The **Traces** tab provides deep insights into the performance of individual requests (spans) as they move through the system. This view is critical for identifying slow transactions, latency issues, and service dependencies.
 
 ![Screenshot](../../Data-insights/Features/Servers/traces.png)
 
@@ -222,7 +218,7 @@ Use the filter bar to narrow down traces by:
 
 - **Job** - The service or application name (e.g., quote-service-lucee).
 - **Span Name** - Specific operation or endpoint.
-- **Status** - HTTP status code (All, 2xx, 4xx, 5xx).
+- **Status** - HTTP status code (All, error, ok, unset).
 - **Flavor** - Request type or protocol.
 - **Min/Max Duration** - Filter by response time range.
 - **Adhoc Filters** - Add custom filters with the + button.
@@ -236,7 +232,7 @@ Below the metrics, the trace list shows individual requests with:
 - **Duration** - Total request processing time in milliseconds.
 
 
-### Trace details
+### Trace Details
 
 When you click on a specific Trace ID from the Traces list, you navigate to the **Trace Details** view. This view is the core of distributed tracing, presenting the entire transaction flow as a precise waterfall diagram.
 
@@ -249,6 +245,17 @@ The header displays key information about the selected trace:
 - **Timestamp** - Exact date and time the request started.
 - **Status Code** - HTTP response code with visual badge (e.g., 200, POST).
 - **Endpoint Path** - The API endpoint or route accessed.
+
+#### Navigation Tabs
+
+The trace details interface includes multiple tabs:
+
+- **Detail** - The default view showing the waterfall diagram of the trace spans.
+- **Profile** - When available, this tab displays a hierarchical flame graph showing method execution times and call stacks. Each entry shows the percentage of total execution time and duration (e.g., "100% - 1.61s") along with the full method path, allowing you to identify performance hotspots at the code level.
+    ![Screenshot](../../Data-insights/Features/Servers/profile.png)
+
+- **[Event Snapshot](https://docs.fusionreactor.io/Data-insights/Features/Debugger/Event-Snapshot/)** - This tab appears when a snapshot is associated with the trace, providing deep diagnostics including decompilation, frames, and request/response details captured at the point of the event.
+     ![Screenshot](../../Data-insights/Features/Servers/event-snap.png)
 
 #### Trace Actions
 
