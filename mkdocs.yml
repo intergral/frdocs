@@ -226,6 +226,7 @@ nav:
             - Logs: Data-insights/Features/explore-logs.md
             - Traces: Data-insights/Features/explore-traces.md
             - Servers: Data-insights/Features/Explore-servers.md
+            - Applications: Data-insights/Features/new-applications.md
         - Historic data: Data-insights/Features/timepicker.md
         - Incidents: 
           - Overview: Data-insights/Features/Incidents/incidents.md
