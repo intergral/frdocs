@@ -94,7 +94,7 @@ The **UI Tunnel** in FusionReactor is a specialized feature that enables secure 
 ### Changing the UI theme (Dark/Light Mode)
 
 
-The **UI Tunnel** defaults to dark mode for optimal viewing during extended monitoring sessions. You can easily switch between dark and light themes using the theme toggle (sun or moon) in the header bar.
+The **UI Tunnel** defaults to light mode but can be changed to dark mode for optimal viewing during extended monitoring sessions. You can easily switch between dark and light themes using the theme toggle (sun or moon) in the header bar.
 
 ![Screenshot](../../Data-insights/Features/Servers/darkmode.png)
 
