@@ -31,9 +31,9 @@
  /* Smaller grid cards custom colours */
  :root {
     --card-bg-light: white;
-    --card-bg-dark:  #787a7d;
+    --card-bg-dark:  white;
     --card-border-focus-light: black;
-    --card-border-focus-dark: #343942; 
+    --card-border-focus-dark: #53AFDA; 
     
   }
   

@@ -24,10 +24,22 @@ theme:
     text: 'Roboto'
     code: 'monospace'
   palette:
-    # Palette toggle for light mode
+    # Light mode
     - scheme: default
       primary: custom
       accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+     
 
 nav:
   - Home: index.md
