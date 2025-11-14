@@ -11,6 +11,32 @@ hide:
 <head>
     <title>FusionReactor Journey Steps</title>
     <style>
+        /* Force light mode - disable dark mode on this page */
+        :root {
+            --card-bg: white !important;
+            --card-text: #333 !important;
+            --md-color-scheme-hover-bg: #f9f9f9 !important;
+        }
+        
+        body {
+            background-color: white !important;
+            color: #333 !important;
+        }
+        
+        /* Disable any dark mode classes */
+        body.dark-mode,
+        body[data-theme="dark"],
+        html[data-theme="dark"] {
+            background-color: white !important;
+            color: #333 !important;
+        }
+
+        /* Your existing styles below */
+        .fr-journey-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-family: Roboto
         .fr-journey-container {
             max-width: 1200px;
             margin: 0 auto;

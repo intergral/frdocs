@@ -74,7 +74,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 #### ![](/Monitor-your-data/FR-Agent/More/requirements/cf1.gif)  ColdFusion Servers
 
-  * Adobe ColdFusion 2023
+  * Adobe ColdFusion 2025
   * Adobe ColdFusion 2023
   * Adobe ColdFusion 2021
   * Adobe ColdFusion 2018

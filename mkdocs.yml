@@ -39,6 +39,7 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+     
 
 nav:
   - Home: index.md
@@ -675,6 +676,5 @@ extra_javascript:
   - 'https://code.jquery.com/jquery-3.4.1.min.js'
   - 'script/custom.js'
   - 'script/intercom.js'
-  - javascripts/no-dark-homepage.js
 
 copyright: '<a href="https://intergral.com" target="_blank">Copyright © 2025 Intergral GmbH. All rights reserved.</a>'
