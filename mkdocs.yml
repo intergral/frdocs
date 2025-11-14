@@ -11,6 +11,7 @@ theme:
   logo: images/FRAtom_White.svg
   features:
     - navigation.sections
+    - navigation.footer
     #- toc.integrate
     - search.suggest
     - search.highlight
