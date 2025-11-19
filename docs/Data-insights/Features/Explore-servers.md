@@ -86,7 +86,7 @@ Each tab provides specialized tools for monitoring and troubleshooting your Fusi
 
 ## UI Tunnel
 
-The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the FusionReactor Cloud platform.
+The **UI Tunnel** in FusionReactor is a specialized feature that enables secure remote access to the detailed, local user interface (UI) of an on-premises FusionReactor Agent through the FusionReactor Cloud platform. You can also filter the UI Tunnel view by **job** to focus on specific tasks or workloads.
 
 ![Screenshot](../../Data-insights/Features/Servers/tunnel-view.png)
 
@@ -317,7 +317,10 @@ When you click the arrow next to a log entry, it expands to show three sections:
 
 ## Info 
 
-The **Client Information** panel provides detailed configuration and environment data for the selected instance. Click any category to expand and view specific details.
+The **Client Information** panel provides detailed configuration and environment data for the selected job. Click any category to expand and view specific details.
+
+
+![Screenshot](../../Data-insights/Features/Servers/info.png)
 
 
 - **OS** - Operating system details including name, version, and architecture.
@@ -332,5 +335,168 @@ The **Client Information** panel provides detailed configuration and environment
 
 ### Usage
 
-Select an instance from the dropdown at the top to view its configuration. Expand any category to see the detailed key-value pairs for that aspect of the instance. This information is useful for troubleshooting configuration issues, verifying deployment settings, or understanding the runtime environment.
+Select a job from the dropdown at the top to view its configuration. Expand any category to see the detailed key-value pairs associated with that job. This information is useful for troubleshooting configuration issues, verifying deployment settings, or understanding the runtime environment.
 
+## Crash Protection
+
+Crash Protection is a new diagnostic feature available starting in **version 2025.2**. It provides deep visibility into runtime behavior when a Crash Protection (CP) event occurs. The feature uploads detailed crash snapshots to the cloud, enabling analysis of system state at the moment a triggering exception or condition occurred.
+
+![Screenshot](../../Data-insights/Features/Servers/CP.png)
+
+Crash Protection captures key runtime metrics:
+
+* **Heap memory usage** at the time of the event
+* **CPU utilization**
+* **Active web request count**
+* **Current database activity**
+
+Each report also includes the exception or condition that triggered the protection event (e.g., an `ArrayIndexOutOfBoundsException`, memory threshold breach).
+
+When a CP event occurs, the system captures a snapshot and uploads it to the cloud. These reports include:
+
+* The triggering request
+* Active threads at the time of capture
+* System resource utilization
+* Database activity
+* Lock information
+* Stack traces
+
+A **time picker** allows filtering events by any time range.
+
+
+### Viewing Crash Protection events
+
+On the left side of the **Crash Protection** page, a **Protection Events** panel lists all captured CP events for the selected job and time range. Each event shows the type (e.g., runtime, memory, quantity) and timestamp.
+
+Clicking any event in this list opens its full details in the **Crash Protection Report** section on the right. This report provides a complete breakdown of the system state at the moment the event was triggered.
+
+
+
+### Crash Protection Report structure
+
+Each **Crash Protection Report** contains several key sections that provide context and diagnostics for the event:
+
+#### Alert summary
+
+The notification banner at the top explains the nature of the protection event:
+
+- **Current State** - Key metrics at the time of trigger (e.g., free memory: 87%, used memory: 13%).
+- **Threshold Value** - The configured limit that triggered the alert (e.g., 3% memory threshold).
+- **Trigger Timing** - When the protection activated and for how long.
+- **Action Taken** - Whether this was notification-only or if protective measures were applied.
+
+#### Trigger information
+
+Displays the exact conditions that caused the alert:
+
+- **Triggered At** - Exact timestamp when the threshold was exceeded.
+- **Next Possible Trigger** - When the system will check again (helps prevent alert fatigue).
+- **Actual Value** - The metric value that exceeded the threshold.
+- **Threshold** - The configured limit for triggering protection.
+
+#### Server Load panel
+
+Real-time server metrics at the moment of capture:
+
+- **Active Web Requests** - Current HTTP requests being processed (with average timing).
+- **Active JDBC Transactions** - Database connections in use (with average timing).
+- **Heap Memory Usage** - Current memory consumption vs. total available.
+  - Displayed as both a progress bar with percentage and actual values (e.g., 124.81 / 910.30 MB).
+- **CPU Usage**
+  - **Instance** - This specific application instance.
+  - **System** - Overall server CPU utilization.
+
+#### Triggering Request
+
+![Screenshot](../../Data-insights/Features/Servers/trig-request.png)
+
+Details about the specific request that was active when protection triggered. The interface highlights the request responsible for the crash protection event:
+
+**Request identification:**
+- **URL** - The endpoint being accessed.
+- **User Agent** - Client making the request (browser, tool, API client, etc.).
+
+**Timing information:**
+- **Started** - When the request began.
+- **Duration** - How long the request has been running.
+- **GPU Time** - Graphics processing time (if applicable).
+- **DB Time** - Database query time.
+- **API Time** - External API call time.
+
+**System information:**
+- **Request ID** - Unique identifier for tracking and correlation.
+- **Thread** - The execution thread handling this request (e.g., `http-nio-8500-exec-5`).
+- **Memory** - Memory consumed by this specific request.
+- **Type** - HTTP method (GET, POST, PUT, DELETE, etc.).
+
+**Request details:**
+- **Status** - HTTP response code.
+- **Client IP** - Originating client address.
+
+#### Associated requests
+
+Other requests or threads running at the same time are also displayed in the **Running Requests** section. These may be related to the triggering condition or show overall system load during the event. If empty, displays "No running requests" - indicating the system has completed processing and may have recovered from the condition.
+
+![Screenshot](../../Data-insights/Features/Servers/running.png)
+
+
+
+#### Stack Trace section
+
+![Screenshot](../../Data-insights/Features/Servers/stacktrace.png)
+
+The **Stack Trace** panel provides thread-level debugging information:
+
+- **Thread State Filter** - View specific thread states (Running, Waiting, Blocked, etc.).
+- **Thread ID Filter** - Filter by specific thread identifiers.
+- **Search Field** - Text search within stack traces to quickly locate relevant code.
+
+The stack trace section helps developers identify which code was executing during the alert, enabling them to pinpoint potential memory leaks, deadlocks, or inefficient operations.
+
+### Thread analysis
+
+You can click on any **thread ID** to filter the report to only that thread's activity.
+
+#### Thread filtering
+
+Selecting a thread automatically shows:
+
+* Its current stack trace.
+* Its active operation (e.g., database call, waiting behavior).
+* Any objects or locks the thread is waiting on.
+
+
+### Lock inspection
+
+Clicking on a lock filters the display to show only the threads waiting on that specific lock. This allows you to:
+
+![Screenshot](../../Data-insights/Features/Servers/lock.png)
+
+* See which objects threads were waiting on.
+* Identify whether multiple threads are blocked on the same resource.
+
+This is particularly helpful during deadlock investigations or performance bottleneck analysis.
+
+
+![Screenshot](../../Data-insights/Features/Servers/lock2.png)
+
+
+## Using Crash Protection Reports
+
+Follow this workflow to diagnose issues effectively:
+
+1. **Immediate Assessment** - Review the alert summary to understand severity and type of event.
+2. **Identify Culprit** - Examine the triggering request details to see what operation caused the event.
+3. **Analyze Load** - Use server load metrics to understand overall system pressure and resource utilization.
+4. **Debug Code** - Examine stack traces to identify problematic code paths.
+5. **Check for Contention** - Review lock information and associated requests to identify blocking conditions.
+6. **Prevent Recurrence** - Adjust protection thresholds or optimize identified code sections based on findings.
+
+Reports are retained for historical analysis and can help establish patterns in system behavior over time.
+
+
+## OpsPilot Integration
+
+Each crash protection alert can be forwarded to **OpsPilot** directly from the interface. This sends the full report to Ops Pilot for automated analysis and guidance.
+
+![Screenshot](../../Data-insights/Features/Servers/askOP.png)
