@@ -441,7 +441,7 @@ Other requests or threads running at the same time are also displayed in the **R
 
 
 
-#### Stack Trace Section
+#### Stack Trace section
 
 ![Screenshot](../../Data-insights/Features/Servers/stacktrace.png)
 
@@ -453,11 +453,11 @@ The **Stack Trace** panel provides thread-level debugging information:
 
 The stack trace section helps developers identify which code was executing during the alert, enabling them to pinpoint potential memory leaks, deadlocks, or inefficient operations.
 
-### Thread Analysis
+### Thread analysis
 
 You can click on any **thread ID** to filter the report to only that thread's activity.
 
-#### Thread Filtering
+#### Thread filtering
 
 Selecting a thread automatically shows:
 
