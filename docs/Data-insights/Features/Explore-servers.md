@@ -497,6 +497,6 @@ Reports are retained for historical analysis and can help establish patterns in 
 
 ## OpsPilot Integration
 
-Each crash protection alert can be forwarded to **OpsPilot** directly from the interface. This sends the full report to Ops Pilot for automated analysis and guidance.
+Each Crash Protection alert can be forwarded to **OpsPilot** directly from the interface. This sends the full report to Ops Pilot for automated analysis and guidance.
 
 ![Screenshot](../../Data-insights/Features/Servers/askOP.png)
