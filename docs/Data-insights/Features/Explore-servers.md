@@ -364,7 +364,7 @@ When a CP event occurs, the system captures a snapshot and uploads it to the clo
 A **time picker** allows filtering events by any time range.
 
 
-## Viewing Crash Protection Events
+### Viewing Crash Protection events
 
 On the left side of the **Crash Protection** page, a **Protection Events** panel lists all captured CP events for the selected job and time range. Each event shows the type (e.g., runtime, memory, quantity) and timestamp.
 
@@ -372,11 +372,11 @@ Clicking any event in this list opens its full details in the **Crash Protection
 
 
 
-## Crash Protection Report Structure
+### Crash Protection Report structure
 
 Each **Crash Protection Report** contains several key sections that provide context and diagnostics for the event:
 
-### Alert Summary
+#### Alert summary
 
 The notification banner at the top explains the nature of the protection event:
 
@@ -385,7 +385,7 @@ The notification banner at the top explains the nature of the protection event:
 - **Trigger Timing** - When the protection activated and for how long.
 - **Action Taken** - Whether this was notification-only or if protective measures were applied.
 
-### Trigger Information
+#### Trigger information
 
 Displays the exact conditions that caused the alert:
 
@@ -394,7 +394,7 @@ Displays the exact conditions that caused the alert:
 - **Actual Value** - The metric value that exceeded the threshold.
 - **Threshold** - The configured limit for triggering protection.
 
-### Server Load Panel
+#### Server Load panel
 
 Real-time server metrics at the moment of capture:
 
@@ -406,34 +406,34 @@ Real-time server metrics at the moment of capture:
   - **Instance** - This specific application instance.
   - **System** - Overall server CPU utilization.
 
-### Triggering Request
+#### Triggering Request
 
 ![Screenshot](../../Data-insights/Features/Servers/trig-request.png)
 
 Details about the specific request that was active when protection triggered. The interface highlights the request responsible for the crash protection event:
 
-**Request Identification:**
+**Request identification:**
 - **URL** - The endpoint being accessed.
 - **User Agent** - Client making the request (browser, tool, API client, etc.).
 
-**Timing Information:**
+**Timing information:**
 - **Started** - When the request began.
 - **Duration** - How long the request has been running.
 - **GPU Time** - Graphics processing time (if applicable).
 - **DB Time** - Database query time.
 - **API Time** - External API call time.
 
-**System Information:**
+**System information:**
 - **Request ID** - Unique identifier for tracking and correlation.
 - **Thread** - The execution thread handling this request (e.g., `http-nio-8500-exec-5`).
 - **Memory** - Memory consumed by this specific request.
 - **Type** - HTTP method (GET, POST, PUT, DELETE, etc.).
 
-**Request Details:**
+**Request details:**
 - **Status** - HTTP response code.
 - **Client IP** - Originating client address.
 
-### Associated Requests
+#### Associated requests
 
 Other requests or threads running at the same time are also displayed in the **Running Requests** section. These may be related to the triggering condition or show overall system load during the event. If empty, displays "No running requests" - indicating the system has completed processing and may have recovered from the condition.
 
@@ -441,19 +441,7 @@ Other requests or threads running at the same time are also displayed in the **R
 
 
 
-## Thread Analysis
-
-You can click on any **thread ID** to filter the report to only that thread's activity.
-
-### Thread Filtering
-
-Selecting a thread automatically shows:
-
-* Its current stack trace.
-* Its active operation (e.g., database call, waiting behavior).
-* Any objects or locks the thread is waiting on.
-
-### Stack Trace Section
+#### Stack Trace Section
 
 ![Screenshot](../../Data-insights/Features/Servers/stacktrace.png)
 
@@ -465,8 +453,20 @@ The **Stack Trace** panel provides thread-level debugging information:
 
 The stack trace section helps developers identify which code was executing during the alert, enabling them to pinpoint potential memory leaks, deadlocks, or inefficient operations.
 
+### Thread Analysis
 
-### Lock Inspection
+You can click on any **thread ID** to filter the report to only that thread's activity.
+
+#### Thread Filtering
+
+Selecting a thread automatically shows:
+
+* Its current stack trace.
+* Its active operation (e.g., database call, waiting behavior).
+* Any objects or locks the thread is waiting on.
+
+
+### Lock inspection
 
 Clicking on a lock filters the display to show only the threads waiting on that specific lock. This allows you to:
 
