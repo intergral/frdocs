@@ -12,7 +12,7 @@ theme:
   features:
     - navigation.sections
     - navigation.footer
-    #- toc.integrate
+    # - toc.integrate
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -131,6 +131,7 @@ nav:
            - System Properties: Monitor-your-data/FR-Agent/Configuration/FusionReactor-System-Properties.md
            - Managing reactor.conf: Monitor-your-data/FR-Agent/Configuration/reactorconf.md
            - Data labels: Monitor-your-data/FR-Agent/Configuration/data-labels.md
+           - OTel Shipping: Monitor-your-data/FR-Agent/Configuration/OTel-shipping-config.md
         - Compatibility & requirements: Monitor-your-data/FR-Agent/More/requirements.md
         - Log collection: Monitor-your-data/FR-Agent/More/FusionReactor-Agent-Shipper.md
         - FAQs & troubleshooting: 
