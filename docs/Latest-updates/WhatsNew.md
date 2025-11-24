@@ -1,5 +1,19 @@
 # What's New in FusionReactor
 
+### FusionReactor 2025.2.0 released 
+
+- Support for OTLP data format allowing the export of FusionReactor data to any OTLP data ingest (Metrics, Logs, and Traces).
+- Crash Protection alerts in cloud adding improved clarity and analysis.
+- Added OpsPilot integration within the on-prem UI tunnel in cloud for AI analysis.
+- New colour themes for FusionReactor's on-prem UI.
+- Support for Lucee 7 installation via FRAM.
+- Updated version of the JRE bundled with FRAM (8u472) and other security updates within FusionReactor.
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140102032?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor 25.2 Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+!!! info "Learn more"
+   [Release notes](https://docs.fusionreactor.io/Latest-updates/release-notes/)
+
 ## Trace-powered investigations in OpsPilot
 
 OpsPilot can now query and analyze distributed traces, giving it the ability to investigate individual transactions in real time. This powerful new capability allows OpsPilot to:
