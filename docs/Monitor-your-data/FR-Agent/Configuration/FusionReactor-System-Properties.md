@@ -229,8 +229,5 @@ Property | Default value  | Version added | Description
 | `fr.fim.cloud.enabled` | true          | 12.1.0        | If disabled, users will no longer be able to log in with their cloud email address and password. |
 
 
-## OTel (OTLP)
-| Property                                 | Default value | Version added | Description                                                                                                                            |
-|------------------------------------------|---------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `fr.observability.otel.resource.enabled` | false         | 2025.2.0      | If enabled, allows modifying the resource via environment variables and system properties. e.g. `-Dotel.resource.attributes=key=value` |
+
 
