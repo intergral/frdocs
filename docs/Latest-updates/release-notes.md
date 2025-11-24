@@ -1,6 +1,17 @@
 
 # FusionReactor Agent Releases
 
+## 2025.2.0 - 24th Nov. 2025
+
+| Issue Type  | Summary                                                                                              |
+|-------------|------------------------------------------------------------------------------------------------------|
+| New Feature | Migrate exported data to OTLP format, allowing greater integration with other environments.          |
+| New Feature | Send Crash Protection alerts to cloud for greater visibility and analysis with other tools and data. |
+| New Feature | Add OpsPilot integration within the on-prem UI tunnel to include AI analysis within the on-prem UI.  |
+| Improvement | Implement new colour themes within the on-prem UI.                                                   |
+| New Feature | Support Lucee 7 installation within FRAM.                                                            |
+| Improvement | Update the JRE bundled with FRAM.                                                                    |
+
 ## 2025.1.0 - 3rd March 2025
 
 
