@@ -144,6 +144,7 @@ nav:
                - Troubleshooting/Known-Issues/System-Metrics-unavailable-in-Locked-down-ColdFusion.md #agent
                - Troubleshooting/Requests-from-Adobe-PMT-tracked-in-FusionReactor.md #agent
                - Troubleshooting/Adding-FR-Error-Stack-Trace-On-CFCatch-CFOnError.md #agent
+               - Monitor-your-data/FR-Agent/Agent/Cloud-Status.md
      - Observability Agent:
         - Overview: Monitor-your-data/Observability-agent/overview.md
         - Install:

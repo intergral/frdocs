@@ -2,7 +2,7 @@
 
 ## Overview
 
-The FusionReactor agent now supports shipping observability data to any OpenTelemetry (OTel) compatible provider. By default, the agent ships to FusionReactor Cloud, but you can configure it to send data to any single OTel endpoint or use a collector to send data to multiple destinations simultaneously.
+The FusionReactor agent now supports shipping observability data to any OpenTelemetry (OTel) compatible provider. By default, the agent ships to FusionReactor Cloud, but you can configure it to send data to any single OTel endpoint or use an OTel collector or Grafana Alloy to send data to multiple destinations simultaneously.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1139978038?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OTel Shipping Configuration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -21,8 +21,8 @@ The FusionReactor agent now supports shipping observability data to any OpenTele
 - **Requires a collector** - You cannot ship to multiple destinations directly from the agent.
 - The collector acts as a "fork" that receives data from the agent and distributes it to multiple destinations.
 - Two collector options available:
-   - **OTel Collector** - Standard OpenTelemetry collector
-   - **Alloy** - Grafana's collector with enhanced features
+    - **OTel Collector** - Standard OpenTelemetry collector
+    - **Alloy** - Grafana's collector with enhanced features
 
 ## Configuration methods
 
@@ -86,6 +86,8 @@ When you need to send data to multiple destinations simultaneously, configure th
 
 #### Agent Configuration for Collector
 
+The agent configuration is identical whether you're using an [OTel Collector](https://opentelemetry.io/docs/collector/) or [Alloy](https://grafana.com/docs/alloy/):
+
 **Using gRPC (Port 4317)**
 
 ```bash
@@ -101,6 +103,8 @@ OTEL_OPTS="$OTEL_OPTS -Dotel.exporter.otlp.protocol=http/protobuf"
 ```
 
 #### OTel Collector configuration
+
+The OpenTelemetry Collector is the standard collector from the OpenTelemetry project. It uses YAML configuration files and provides a straightforward way to receive, process, and export telemetry data.
 
 Create a `collector.yaml` file:
 
@@ -179,7 +183,12 @@ service:
 !!! tip
     **Customizing Pipelines**: Remove exporters from specific pipelines if you don't want certain signals sent to all destinations. For example, to exclude traces from Dash0, remove `otlp/dash0` from the traces pipeline.
 
+!!! info "Learn more"
+    [OTel Collector Documentation](https://opentelemetry.io/docs/collector/)
+
 #### Alloy Collector configuration
+
+Alloy is Grafana's distribution of the OpenTelemetry Collector with additional features and capabilities. It uses HCL (HashiCorp Configuration Language) syntax instead of YAML and offers advanced data processing features like relabeling, filtering, and transformation.
 
 Create a `collector.alloy` file:
 
@@ -306,6 +315,39 @@ otelcol.exporter.otlphttp "grafana_logs" {
 }
 ```
 
+!!! info "Learn more"
+    [Grafana Alloy Documentation](https://grafana.com/docs/alloy/)
+
+## Resource Attributes
+
+Resource attributes provide metadata about your application and environment. These attributes are attached to all telemetry data (metrics, traces, and logs) and help you identify and filter data in your observability platform.
+
+### Enabling OTel Resource Attributes
+
+To enable OpenTelemetry resource attributes in FusionReactor:
+
+```bash
+OTEL_OPTS="$OTEL_OPTS -Dfr.observability.otel.resource.enabled=true"
+```
+
+### Configuring Resource Attributes
+
+You can set custom resource attributes to identify your service:
+
+```bash
+OTEL_OPTS="$OTEL_OPTS -Dotel.resource.attributes=service.name=my-app,service.version=1.0.0,deployment.environment=production"
+```
+
+### Example configuration
+
+```bash
+# Enable OTel resources
+OTEL_OPTS="$OTEL_OPTS -Dfr.observability.otel.resource.enabled=true"
+
+# Set resource attributes
+OTEL_OPTS="$OTEL_OPTS -Dotel.resource.attributes=service.name=tc91,service.version=1.0.9,deployment.environment=prod"
+```
+
 ## Disabling signals
 
 You can disable individual signals (metrics, traces, or logs) by setting their exporter to `NONE`:
@@ -334,24 +376,12 @@ OTEL_OPTS="$OTEL_OPTS -Dotel.exporter.otlp.headers=api-key=abc123xyz"
 ```
 
 
-## Key configuration properties
-
-The following are the most commonly used OpenTelemetry configuration properties:
-
-- `-Dotel.exporter.otlp.endpoint` - Sets the endpoint for all signals
-- `-Dotel.exporter.otlp.protocol` - Protocol type (`grpc` or `http/protobuf`)
-- `-Dotel.exporter.otlp.headers` - Authentication headers
-- `-Dotel.exporter.otlp.metrics.endpoint` - Metrics-specific endpoint
-- `-Dotel.exporter.otlp.traces.endpoint` - Traces-specific endpoint
-- `-Dotel.exporter.otlp.log.endpoint` - Logs-specific endpoint
-- `-Dotel.metrics.exporter` - Set to `NONE` to disable metrics
-- `-Dotel.traces.exporter` - Set to `NONE` to disable traces
-- `-Dotel.logs.exporter` - Set to `NONE` to disable logs
-
-!!! info "Learn more"
-    For a complete list of OpenTelemetry configuration properties, see the [OpenTelemetry Java Agent Configuration Documentation](https://opentelemetry.io/docs/languages/java/configuration/).
-
 ## Troubleshooting
+
+#### Verifying Configuration
+
+- Check the [Cloud Status](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Agent/Cloud-Status/) page in the FusionReactor UI to verify if OTel shipping settings have been applied and if shipping is successful
+- Review the agent startup logs for any configuration errors or warnings
 
 #### Data not appearing
 - Verify your endpoint URL is correct.

@@ -2,7 +2,7 @@
 
 The **Cloud Status** page (available for Cloud-licenses only) is
 accessed via the Cloud menu in the upper notification area, and
-selecting **Status.** The page shows you the current status of
+selecting **Status**. The page shows you the current status of
 FusionReactor's cloud connections.
 
 ![](/Monitor-your-data/FR-Agent/Agent/cloudstatusexample.png)
