@@ -142,7 +142,6 @@ Property | Default value| Version added | Description
 
 Property | Default value| Version added | Description
 --- | --- | --- | ---
-`fr.observability.log.enabled`	|true	|9.0.0	|Enable/disable logs shipping.
 `fr.observability.log.labels`|	Not defined|	9.0.0|A comma-separated key-value list of labels to add a maximum of 8 (by default) to logs. Format  `labelKey1:labelValue1,labelKey2:labelValue2,...`
 `fr.observability.log.scrape.path`	|Not defined	|9.1.0	|Set the path(s) for the log scraper. Format `/{directory}/*.log,/{directory}/*.txt`
 `fr.observability.log.send.level` | INFO | 12.1.0 | Sets the minimum log level to send/ship to cloud. Case-insensitive. Also available as an evironment variable `FR_OBSERVABILITY_LOG_SEND_LEVEL`. One of `ALL`, `FINEST`, `FINER`, `FINE`, `CONFIG`, `INFO`, `WARNING`, `SEVERE`, `OFF`.
@@ -159,7 +158,6 @@ Property | Default value| Version added | Description
 
 Property | Default value| Version added | Description
 --- | --- | --- | ---		
-`fr.observability.trace.enabled`|true|9.2.0|	Enable/disable traces shipping.
 `fr.observability.trace.labels`|Not defined|9.2.0|	A comma-separated key-value list of labels to add a maximum of 8 (by default) to traces. Format `labelKey1:labelValue1,labelKey2:labelValue2,...`
 `fr.observability.trace.sampling.ratio`|0.05|9.2.0| The ration of tracked transactions that are shipped to the cloud. A sample rate of 1.0 would ship 100% of tracked transactions.
 `fr.observability.trace.itt.txn.max`|10|9.2.0	|Max number of ITTs to process as spans within each 60 seconds time window.
@@ -229,5 +227,20 @@ Property | Default value  | Version added | Description
 | `fr.fim.cloud.enabled` | true          | 12.1.0        | If disabled, users will no longer be able to log in with their cloud email address and password. |
 
 
+## OTel Shipping 
 
-
+| Property                                 | Default Value | Version Added | Description                                                                                                                                                                                   |
+| ---------------------------------------- | ------------- | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `fr.observability.otel.resource.enabled` | `false`       | 2025.2.0    | Enables support for custom OTel resource attributes. Must be set to `true` when supplying `otel.resource.attributes`.                                                                         |
+| `otel.resource.attributes`               | `null`        | 2025.2.0   | Sets custom OTel resource attributes such as `service.name`, `service.version`, and `deployment.environment`.  |
+| `otel.exporter.otlp.endpoint`            | `null`        | 2025.2.0   | Defines a single OTLP endpoint for **all** signals (metrics, traces, logs).                                                                                                                   |
+| `otel.exporter.otlp.protocol`            | `grpc`        | 2025.2.0   | Sets the OTLP protocol (`grpc` or `http/protobuf`).                                                                                                                                           |
+| `otel.exporter.otlp.headers`             | `null`        | 2025.2.0    | Defines custom authentication or metadata headers for OTLP export (e.g., API keys).                                                                                                           |
+| `otel.exporter.otlp.metrics.endpoint`    | `null`        | 2025.2.0    | Metrics-specific OTLP endpoint. Overrides the global OTLP endpoint if set.                                                                                                                    |
+| `otel.exporter.otlp.traces.endpoint`     | `null`        | 2025.2.0`    | Traces-specific OTLP endpoint. Overrides the global OTLP endpoint if set.                                                                                                                     |
+| `otel.exporter.otlp.log.endpoint`        | `null`        | 2025.2.0    | Logs-specific OTLP endpoint. Overrides the global OTLP endpoint if set.                                                                                                                       |
+| `otel.metrics.exporter`                  | `otlp`        | 2025.2.0    | Metrics exporter selection. Use `NONE` to disable metrics shipping.                                                                                                                           |
+| `otel.traces.exporter`                   | `otlp`        | 2025.2.0    | Traces exporter selection. Use `NONE` to disable trace shipping.                                                                                                                              |
+| `otel.logs.exporter`                     | `otlp`        | 2025.2.0   | Logs exporter selection. Use `NONE` to disable log shipping.                                                                                                                                  |
+!!! info 
+    For individual examples, see the [OTel Shipping page](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Configuration/OTel-shipping-config/).
