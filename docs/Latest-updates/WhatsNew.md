@@ -9,6 +9,13 @@
 - Support for Lucee 7 installation via FRAM.
 - Updated version of the JRE bundled with FRAM (8u472) and other security updates within FusionReactor.
 
+
+
+!!! Warning
+    If you are upgrading to **FusionReactor 2025.2** and are already using **OTel**, FusionReactor will now automatically use any existing configured endpoints. To ensure you continue receiving data in **FusionReactor Cloud** while using an OTel Collector, you must update your `collector.yaml` configuration file. Please refer to the [documentation linked here](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Configuration/OTel-shipping-config/) for the required changes.
+
+
+
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1140102032?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FusionReactor 25.2 Release"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 !!! info "Learn more"
