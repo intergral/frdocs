@@ -197,15 +197,18 @@ nav:
             - Install MCP: Monitor-your-data/Katie/install.md
   - FEATURES: 
        # - Data-insights/Features/account.md
-        - Alerting: 
-            - Overview: Data-insights/Features/alerting.md
-            - Alerting examples: 
-               - FR Agent Metrics: Data-insights/Features/FR-Agent-Metrics.md
-               - Performance checks: Data-insights/Features/alerting-examples.md
-               - Billing usage checks: Data-insights/Features/billing-check.md
-        - Anomaly Detection:
-            - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
-            - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
+        - Alerts & Anomaly Detection: 
+            - Anomaly Detection: 
+               - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
+               - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
+            - Alerts:
+               - Overview: Data-insights/Features/Alerts-&-AD/Alerts-overview.md
+               - Alert Rules: 
+                  - Overview: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
+                  - Configure Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Configure-rules.md
+               - Contact Points: todo.md#contact
+               - Notification Policy: todo.md#notification
+               - Silences: todo.md#Silences
         - Applications: Data-insights/Features/applications.md
         - CPU Sampler:
           - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
