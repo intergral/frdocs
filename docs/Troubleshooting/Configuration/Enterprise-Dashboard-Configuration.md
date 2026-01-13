@@ -24,11 +24,40 @@ For a working example of configuring automatic registration to the Enterprise Da
 !!! info "Learn more"
     [Ephemeral Docker example](https://github.com/intergral/fusionreactor-docker/tree/master/ephemeral).
 
-{!Common/ED_FRAPI_Registration_Warning!}
+!!! note
+    In FusionReactor 8.0.x and below automatic registration of FusionReactor used the FusionReactor API to automatically
+     register instances.
+     To do this you would set the following system properties:
+
+     * -Dfrregisterwith
+     * -Dfrshutdownaction
+     * -Dfrregisterhostname
+     * -Dfrregistergroup
+
+     This connection method has been deprecated and should no longer supported.
+
+     We recommend you remove these arguments and move to the Ephemeral Data Service in FusionReactor 8.1.x and
+      above.
+
 
 To configure the **Ephemeral Data Service** you are required to configure the system properties below:
 
-{!Common/ED_Sys_Props!}
+The following properties should be added to the instance hosting the Enterprise Dashboard
+
+Property | Default Value | Values Accepted | Version Added | Description
+--- | --- | --- | --- | ---
+fr.ed.ds.enable | false | true/false | 8.1.0 | If provided, specifies the server port binding.
+fr.ed.ds.listen | 0.0.0.0:2106 | hostname:port | 8.1.0 | Specifies the listening IP address and port on the server
+fr.ed.ds.polltimeout | 1000 | Integer (ms) | 8.1.0 | Specifies the time EDS will wait after attempting to poll data from the client before marking the client as offline.
+fr.ed.ds.maxdatasize | 20 | Integer (MB) | 8.2.2 | The maximum size of a page or other data transfer that will be accepted over the tunnel.
+
+The following properties should be added to the instance connecting to the Enterprise Dashboard
+
+Property | Default Value | Values Accepted | Version Added | Description
+--- | --- | --- | --- | ---
+fr.ed.ds.target | Not defined | hostname:port | 8.1.0 | If specified, causes the instance to attempt to auto-register with the EDS system at the specified address
+fr.ed.ds.groups | Not defined | Comma-separated list | 8.1.0 | If provided, the instance will auto-register with the ED DS, specifying it is a part of the given groups.
+
 
 !!! note
     Be aware that if you are using the Ephemeral Data Service, but have already configured your FusionReactor instances manually or through the FRAPI registration, you will need to remove these entries under the Manage Servers page for registration to take place.
