@@ -18,6 +18,9 @@ To start your FusionReactor journey, first sign up for a free, no-obligation [tr
 **FusionReactor Ultimate** | $79 (A)<br> $95 (M) | 5,000 | 2 GB  | 2 GB | 
 **Historical data retention** |   | 13 months | 30 days|30 days |
 
+!!! info
+    Custom dashboards are available on all plans at no additional cost.
+
 
 !!! note
     Additional [on-demand](/Admin-and-data/Billing/Cloud/overview/#on-demand-usage-costs) usage outside of the plan is chargeable.

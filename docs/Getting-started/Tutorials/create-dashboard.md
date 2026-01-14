@@ -1,13 +1,13 @@
-Dashboards and panels enable you to visually represent your data. To display a visualization within a panel, you must have at least one associated query.
+Custom dashboards allow you to curate specific datasets into a single, cohesive view. Whether you are monitoring high-level infrastructure health or debugging a specific microservice, dashboards provide the visual context needed to make informed decisions.
+
+!!! note
+	Custom dashboard creation is available on **all** FusionReactor plans.
 
 ## Before you start
 
-* Ensure that you have the correct permissions.
+- **Permissions**: Ensure your user profile has the necessary permissions to create and edit dashboards.
 
-* Understand the query language of the target data source. 
-
-!!! example
-	logql, promql or traceql
+- **Query Knowledge**: Familiarize yourself with the query language of your target data source (e.g., LogQL for logs, PromQL for metrics, or TraceQL for traces).
 
 ## Create a dashboard
 

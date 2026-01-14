@@ -50,6 +50,13 @@ The following image and descriptions highlights all of the dashboards features.
 
 10. **View mode**: Click to display the dashboard on a large screen such as a TV or a kiosk. View mode hides irrelevant information such as navigation menus.
 
+### Build custom dashboards
+
+Transform your raw data into actionable insights by building custom dashboards. Using our intuitive dashboard builder, you can connect to multiple data sources, write targeted queries (LogQL, PromQL, or TraceQL), and arrange visualizations to create a real-time view of your application's health. 
+
+!!! info 
+    [Learn how to create a dashboard →](https://docs.fusionreactor.io/Getting-started/Tutorials/create-dashboard/)
+
 
 ## Dashboard index
 

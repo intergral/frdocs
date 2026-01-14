@@ -1,5 +1,4 @@
-!!! note
-    Anomaly Detection is ONLY available on the Pro AI plan.
+
 
 
 ![!Screenshot](../../images/Anomaly-detection/overview.png)
