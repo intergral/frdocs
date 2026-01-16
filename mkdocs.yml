@@ -206,9 +206,9 @@ nav:
                - Alert Rules: 
                   - Overview: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
                   - Configure Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Configure-rules.md
-               - Contact Points: todo.md#contact
-               - Notification Policy: todo.md#notification
-               - Silences: todo.md#Silences
+               - Contact Points: Data-insights/Features/Alerts-&-AD/Contact-points.md
+               - Notification Policy: Data-insights/Features/Alerts-&-AD/Notifications.md
+               - Silences: Data-insights/Features/Alerts-&-AD/Silences.md
         - Applications: Data-insights/Features/applications.md
         - CPU Sampler:
           - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
