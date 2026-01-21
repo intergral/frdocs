@@ -21,7 +21,7 @@ theme:
     - content.action.edit  # This enables the edit button on each page
   language: en
   font:  
-    text: 'Roboto'
+    text: 'Inter'
     code: 'monospace'
   palette:
     # Light mode
@@ -203,11 +203,13 @@ nav:
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
             - Alerts:
                - Overview: Data-insights/Features/Alerts-&-AD/Alerts-overview.md
-               - Alert Rules: 
-                  - Overview: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
+               - Rules: 
+                  - Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
                   - Configure Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Configure-rules.md
                - Contact Points: Data-insights/Features/Alerts-&-AD/Contact-points.md
-               - Notification Policy: Data-insights/Features/Alerts-&-AD/Notifications.md
+               - Notifications:
+                  - Notification Policy: Data-insights/Features/Alerts-&-AD/Notifications.md
+                  - Mute Timings: Data-insights/Features/Alerts-&-AD/Mute-timings.md
                - Silences: Data-insights/Features/Alerts-&-AD/Silences.md
         - Applications: Data-insights/Features/applications.md
         - CPU Sampler:

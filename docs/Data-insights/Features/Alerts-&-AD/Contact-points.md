@@ -7,8 +7,12 @@ A **contact point** is simply a destination for your alerts. You can assign them
 ### How they work:
 
 * **Integrations:** A single contact point can contain one or several "integrations" (e.g., Slack, Email, PagerDuty, or Webhooks).
-* **Combinations:** You can mix and match. One contact point could send an alert to a single Slack channel, while another sends it to Slack, PagerDuty, and two different email addresses simultaneously.
-* **Custom Messaging:** For each integration, you can use the predefined message, write a custom one, or use a reusable template.
+
+*  **Combinations:** You can mix and match. One contact point could send an alert to a single Slack channel, while another sends it to Slack, PagerDuty, and two different email addresses simultaneously.
+
+* ***Custom Messaging:** For each integration, you can use the predefined message, write a custom one, or use a reusable template.
+
+
 
 ## Supported Services:
 
@@ -24,17 +28,14 @@ To configure Contact Points, define the destinations where your alerts should be
 
 ### **How to Add a Contact Point**
 
-1. **Navigate to Alerting:** Access the alerting section of your platform.
-2. **Open Contact Points:** Select the **Contact Points** tab.
-3. **Create New Point:** Click the **+ Create contact point** button located on the right side of the screen.
-4. **Enter a Name:** In the **Name** field, provide a unique and descriptive name for this contact point.
-5. **Select Integration:** Choose your desired service (such as Email, Slack, or Webhook) from the **Integration** dropdown menu.
-6. **Configure Details:** Fill in the mandatory fields for your integration. For example, if using **Email**, enter the recipient addresses in the **Addresses** text area.
-7. **Optional Settings:** * Expand **Optional settings** to add specific technical configurations for that service.
-* Expand **Notification settings** if you wish to customize how messages are bundled or formatted.
-
-
-8. **Save:** Click **Save contact point** at the bottom of the page to finalize.
+1. Navigate to **Alerting** > **Contact Points**.
+2. Click the **+ Create contact point** button located on the right side of the screen.
+4. In the **Name** field, provide a unique and descriptive name for this contact point.
+5. Choose your desired service (such as Email, Slack, or Webhook) from the **Integration** dropdown menu.
+6. Fill in the mandatory fields for your integration. For example, if using **Email**, enter the recipient addresses in the **Addresses** text area.
+7. Expand **Optional settings** to add specific technical configurations for that service.
+8. Expand **Notification settings** if you wish to customize how messages are bundled or formatted.
+8. Click **Save contact point** at the bottom of the page to finalize.
 
 ### **Adding Multiple Destinations**
 
