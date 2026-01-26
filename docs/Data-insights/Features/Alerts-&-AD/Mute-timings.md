@@ -24,15 +24,17 @@ Once you have defined a time interval, you can apply it to your notification pol
     * Optionally limit the interval to a specific year range.
 
 
-5. **Add Multiple Intervals:** If your schedule is complex (such as, different times for different days), click **+ Add another time interval** to create additional rules within the same mute timing.
-6. **Submit:** Click **Submit** to save the mute timing.
+5. Select **+ Add another time interval** to create additional rules within the same mute timing for complex schedules.
+6. Click **Submit** to save the time interval.
 
-## **Applying the Mute Timing**
+## **Applying the timing interval**
 
-After saving, your mute timing will not work until it is linked to a policy.
+After saving, your timing interval will not work until it is linked to a policy.
 
 1. Go to **Notification policies**.
 2. Find the policy you want to silence (Default or a specific child policy) and click **More** > **Edit**.
 3. Scroll to **Mute timings** and select your newly created timing from the dropdown.
 4. Click **Save policy**.
 
+!!! info "Learn more"
+    [Mute timings & active intervals](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/mute-timings/)

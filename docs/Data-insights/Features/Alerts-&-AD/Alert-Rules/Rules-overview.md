@@ -11,7 +11,7 @@ An alert rule is built from four core components:
 1. **Queries**
 
     The **Query** selects the specific dataset you want to monitor (such as, CPU usage, heap memory, or error rates).
-
+    
 2. **Conditions**
 
     The **Condition** is the threshold your query must reach or exceed to trigger an alert (such as, `CPU Usage > 90%`).

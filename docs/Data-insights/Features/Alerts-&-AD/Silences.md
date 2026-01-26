@@ -12,7 +12,7 @@ The table below highlights the key differences to help you choose the right tool
 | Feature | Silences | Mute Timings |
 | --- | --- | --- |
 | **Setup** | Created independently and applied to alerts using **Label Matchers**. | Defined as "Time Intervals" and then linked to specific **Notification Policies**. |
-| **Period** | Designed for **one-time** use with a fixed start and end time. | Designed for **recurring** schedules (e.g., every Monday or every weekend). |
+| **Period** | Designed for **one-time** use with a fixed start and end time. | Designed for **recurring** schedules (such as, every Monday or every weekend). |
 | **Primary Use** | Ad-hoc incident response or unexpected emergency maintenance. | Scheduled maintenance windows or "off-hours" for non-critical alerts. |
 
 
@@ -27,14 +27,16 @@ A **Silence** allows you to temporarily stop notifications during specific windo
 4. **Set the Window:** In **Silence start and end**, select the dates and times for the suppression period.
 
     !!! tip
-        You can also enter a **Duration** (e.g., `2h`), which will automatically calculate the end time for you.
+        You can also enter a **Duration** (such as, `2h`), which will automatically calculate the end time for you.
 
 
 5. **Define Matching Labels:** In the **Matching Labels** section, enter the specific **Label** and **Value** pairs to identify which alerts to mute.
-* Example: Entering `severity` = `critical` will only silence critical alerts, while other alerts will still notify as usual.
+
+    !!! Example
+        Entering `severity` = `critical` will only silence critical alerts, while other alerts will still notify as usual.
 
 
-6. **Add Comment (Recommended):** Enter a brief description explaining why the silence was created (e.g., "Replacing database server").
+6. **Add Comment (Recommended):** Enter a brief description explaining why the silence was created (such as, "Replacing database server").
 7. **Submit:** Click **Submit** to activate the silence.
 
 !!! info "Learn more"

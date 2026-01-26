@@ -29,19 +29,19 @@ The **Default Policy** handles any alert that doesn’t match a specific rule.
 
 
 
-## **Creating Child and Sibling Policies**
+## Creating child and sibling policies
 
-Use these policies to route specific alerts (e.g., `severity=critical`) away from the default path.
+Use these policies to route specific alerts (such as., `severity=critical`) away from the default path.
 
-### **Add a Child Policy (Nesting)**
+### Add a child policy (Nesting)
 
 1. Click **+ New child policy** under the policy you want to branch from.
-2. Add labels to define which alerts this policy handles (e.g., `team=operations`).
+2. Add labels to define which alerts this policy handles (such as, `team=operations`).
 3. Choose a destination. If left empty, it **inherits** the parent's contact point.
 4. Enable **Override grouping** or **Override general timings** if this policy needs different settings than its parent.
 5. Click **Save policy**.
 
-### **Add a Sibling Policy (Ordering)**
+### Add a sibling policy (Ordering)
 
 Policies are evaluated from **top to bottom**. Use siblings to prioritize one rule over another at the same level.
 
@@ -50,11 +50,11 @@ Policies are evaluated from **top to bottom**. Use siblings to prioritize one ru
 3. Follow the same label matching and contact point steps used for child policies.
 
 
-### **Key Routing Concepts**
+### Key routing concepts
 
-* **Label Matching:** Alerts only enter a policy if their labels match your rules.
-* **Top-to-Bottom:** The system checks the first policy in the list; if it matches, it moves to that policy's children.
-* **Continue Matching:** If you enable this, the system will keep checking other policies even after a match is found, allowing one alert to trigger multiple notifications.
+* **Label matching:** Alerts only enter a policy if their labels match your rules.
+* **Top-to-bottom:** The system checks the first policy in the list; if it matches, it moves to that policy's children.
+* **Continue matching:** If you enable this, the system will keep checking other policies even after a match is found, allowing one alert to trigger multiple notifications.
 
 !!! info "Learn more"
     [Create Notification Policies](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/)

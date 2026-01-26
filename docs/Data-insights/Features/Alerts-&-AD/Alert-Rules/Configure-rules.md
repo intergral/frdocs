@@ -16,7 +16,7 @@ Grafana-managed alert rules are the standard way to create alerts. They are base
 
 1. **Name the Alert Rule** 
 
-   Enter a descriptive and unique name in the **Name** field to identify the alert rule in your system.
+    Enter a descriptive and unique name in the **Name** field to identify the alert rule in your system.
 
 2. **Define Query and Alert Condition**
 
@@ -50,7 +50,7 @@ Grafana-managed alert rules are the standard way to create alerts. They are base
     * Write a brief description of what happened (such as,"High CPU usage detected").
     * Provide more detail or potential troubleshooting steps.
 
-7. **Save and Deploy**:
+7. **Save and Deploy**
 
     Once you have reviewed all sections, click the **Save rule and exit** button in the top right corner to activate the alert rule.
 

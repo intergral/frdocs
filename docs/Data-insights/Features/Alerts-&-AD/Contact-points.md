@@ -6,11 +6,11 @@ A **contact point** is simply a destination for your alerts. You can assign them
 
 ### How they work:
 
-* **Integrations:** A single contact point can contain one or several "integrations" (e.g., Slack, Email, PagerDuty, or Webhooks).
+* **Integrations:** A single contact point can contain one or several "integrations" (such as, Slack, Email, PagerDuty, or Webhooks).
 
 *  **Combinations:** You can mix and match. One contact point could send an alert to a single Slack channel, while another sends it to Slack, PagerDuty, and two different email addresses simultaneously.
 
-* ***Custom Messaging:** For each integration, you can use the predefined message, write a custom one, or use a reusable template.
+* **Custom Messaging:** For each integration, you can use the predefined message, write a custom one, or use a reusable template.
 
 
 
@@ -26,7 +26,7 @@ Grafana supports dozens of platforms, including **Slack, Microsoft Teams, Email,
 To configure Contact Points, define the destinations where your alerts should be sent, such as Slack, Email, or PagerDuty. You can combine multiple services into a single contact point to ensure the right people are notified across different platforms simultaneously.
 
 
-### **How to Add a Contact Point**
+### How to Add a Contact Point
 
 1. Navigate to **Alerting** > **Contact Points**.
 2. Click the **+ Create contact point** button located on the right side of the screen.
@@ -37,9 +37,9 @@ To configure Contact Points, define the destinations where your alerts should be
 8. Expand **Notification settings** if you wish to customize how messages are bundled or formatted.
 8. Click **Save contact point** at the bottom of the page to finalize.
 
-### **Adding Multiple Destinations**
+### Adding Multiple Destinations
 
-If you want one alert to go to multiple places at once (e.g., Email *and* a Webhook):
+If you want one alert to go to multiple places at once (such as, Email *and* a Webhook):
 
 1. While editing or creating a contact point, click **+ Add contact point integration**.
 2. Select a new integration type and fill in the required details.
@@ -50,6 +50,6 @@ If you want one alert to go to multiple places at once (e.g., Email *and* a Webh
     [Configure Contact Points](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/manage-contact-points/#add-a-contact-point)
 
 
-### Notification Templates
+## Notification Templates
 
 To do
