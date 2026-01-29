@@ -209,6 +209,7 @@ nav:
                - Notifications:
                   - Contact Points: Data-insights/Features/Alerts-&-AD/Contact-points.md
                   - Notification Policy: Data-insights/Features/Alerts-&-AD/Notifications.md
+                  - Notification Templates: Data-insights/Features/Alerts-&-AD/Templates.md
                   - Time intervals: Data-insights/Features/Alerts-&-AD/Mute-timings.md
                - Silences: Data-insights/Features/Alerts-&-AD/Silences.md
         - Applications: Data-insights/Features/applications.md
