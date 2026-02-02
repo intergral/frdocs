@@ -638,6 +638,7 @@ plugins:
          'Getting-started/GSCloudsetup.md' : 'Getting-started/Trial.md'
          'LogBeta/LogQL-Logfmt.md' : 'Data-insights/Features/Logs/Logs.md'
          'https://docs.fusion-reactor.com/': 'https://docs.fusionreactor.io/'
+         'OP-billing/licenses.md' : 'Admin-and-data/Billing/On-Premise/licenses.md'
          
            
 markdown_extensions:
