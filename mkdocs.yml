@@ -198,20 +198,23 @@ nav:
   - FEATURES: 
        # - Data-insights/Features/account.md
         - Alerts & Anomaly Detection: 
-            - Anomaly Detection: 
-               - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
-               - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
             - Alerts:
                - Overview: Data-insights/Features/Alerts-&-AD/Alerts-overview.md
                - Rules: 
                   - Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
                   - Configure Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Configure-rules.md
                - Notifications:
-                  - Contact Points: Data-insights/Features/Alerts-&-AD/Contact-points.md
-                  - Notification Policy: Data-insights/Features/Alerts-&-AD/Notifications.md
-                  - Notification Templates: Data-insights/Features/Alerts-&-AD/Templates.md
-                  - Time intervals: Data-insights/Features/Alerts-&-AD/Mute-timings.md
+                  - Contact Points: 
+                     - Overview: Data-insights/Features/Alerts-&-AD/Contact-points.md
+                     - Notification Templates: Data-insights/Features/Alerts-&-AD/Templates.md
+                  - Notification Policies: 
+                     - Overview: Data-insights/Features/Alerts-&-AD/Notifications.md
+                     - Time intervals: Data-insights/Features/Alerts-&-AD/Mute-timings.md
                - Silences: Data-insights/Features/Alerts-&-AD/Silences.md
+               - Active Notifcations: Data-insights/Features/Alerts-&-AD/Active-alerts.md
+        - Anomaly Detection: 
+               - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
+               - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
         - Applications: Data-insights/Features/applications.md
         - CPU Sampler:
           - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
