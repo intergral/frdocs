@@ -1,5 +1,13 @@
 # What's New in FusionReactor
 
+### FusionReactor 2025.2.1 released
+
+- Added support for Jersey classes that use Jakarta  (e.g. ColdFusion REST) while also prevent errors.
+- Fixed bug found when JDBC PreparedStatements have an odd number of quote characters (`'`) in comments
+- Fixed potential XSS exploit in UI.
+- Added HTTPS support, in the on-prem UI, for later versions of Java.
+- Prevents out-of-date metric labels.
+
 ### FusionReactor 2025.2.0 released 
 
 - Support for OTLP data format allowing the export of FusionReactor data to any OTLP data ingest (Metrics, Logs, and Traces).

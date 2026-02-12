@@ -1,6 +1,16 @@
 
 # FusionReactor Agent Releases
 
+## 2025.2.1 - 3rd feb. 2026
+
+| Issue Type | Summary                                                                                         |
+|------------|-------------------------------------------------------------------------------------------------|
+| Bug        | Prevent quotes in comments from breaking PreparedStatement binding.                             |
+| Bug        | Stop metrics being sent with old labels when client ID changes.                                 |
+| Bug        | Add support for Jersey classes that use Jakarta to prevent errors.                              |
+| Bug        | Prevent possibility of XSS exploit in UI.                                                       |
+| Bug        | Update Jetty dependency to support later versions of Java. Prevent use of deprecated functions. | 
+
 ## 2025.2.0 - 24th Nov. 2025
 
 | Issue Type  | Summary                                                                                              |
