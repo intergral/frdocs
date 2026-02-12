@@ -11,7 +11,7 @@ To visualize your OTel metrics, simply navigate to the **Explore** tab in Fusion
 ## Python example 
 
 !!! info
-    The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR CLoud. 
+    The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR Cloud. 
 
 In the FR Cloud **Explore** window, ensure the metrics datasource is selected. Then either use the **Builder** to find
 our metric (you can search for `job`: `fib_by_iteration`) or use the following in the **Code** search

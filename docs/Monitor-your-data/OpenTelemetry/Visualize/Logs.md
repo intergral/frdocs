@@ -7,7 +7,7 @@ To visualize your logs, simply navigate to FusionReactor Cloud, in a browser and
 ## Python example
 
 !!! info
-    The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR CLoud. 
+    The following example relies on a user having first [instrumented a Python application](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/) to ship data to FR Cloud. 
 
 
 In the FR Cloud **Logging** window, open the **Job** dropdown and select `fib_by_iteration`. All the log message emitted by the Python code appear.
