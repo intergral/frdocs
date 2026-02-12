@@ -1,113 +1,90 @@
-# Getting started
+
+
+# Getting started with OpenTelemetry
+
 
 ## What is OpenTelemetry?
 
-OpenTelemetry is an open-source observability framework that aims to make it easier to instrument, generate, collect, and export telemetry data from software applications and systems. It provides a set of standard APIs, libraries, and agents that can be used to collect and transmit telemetry data, including metrics, traces, and logs, from different types of sources and across different environments.
 
-<iframe src="https://player.vimeo.com/video/838704264?h=36eb02f737" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+OpenTelemetry (OTel) is an industry-standard, open-source observability framework designed to create and manage telemetry data—**Metrics, Traces, and Logs**. It provides a unified set of APIs and libraries that allow you to instrument your applications once and send the data to any backend, such as FusionReactor Cloud.
 
-OpenTelemetry, with its robust capabilities for distributed tracing and telemetry data collection, is a powerful tool for gaining insights into the intricacies of your applications. However, the sheer depth and complexity of OTel's features can present a challenge for users looking to implement effective monitoring. Recognizing the challenges associated with OpenTelemetry integration, FusionReactor has taken a proactive approach to simplify the process. Our goal is to empower users to harness the benefits of OTel without grappling with its inherent complexity.
+
+By adopting OpenTelemetry, you avoid vendor lock-in and gain deep visibility into the performance and health of your distributed systems.
+
 
 ### Three steps to seamless integration:
-FusionReactor has distilled the OTel integration process into three straightforward steps, making it accessible for users at all levels:
-
-Step 1: [Instrument code](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
-
-Step 2: [Ship data to FR Cloud](/Monitor-your-data/OpenTelemetry/Shipping/overview/)
-
-Step 3: [Visualize data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/) 
 
 
-!!! info "Learn more"
-    [What is OpenTelemetry?](https://opentelemetry.io/docs/concepts/what-is-opentelemetry/)
+FusionReactor has simplified the OTel integration process into three straightforward steps:
 
 
-
-## Core concepts, components & functional elements
-
-This section provides an insight into fundamental OpenTelemetry concepts, components, and foundational elements, and explains their functional scope and interplay.
-
-
-### Metrics
-
-Metrics provide ongoing visibility into numerical and statistical data points related to the performance of your applications and services.
-
-As an illustration, metrics can reveal information like the CPU utilization of a machine or the count of concurrent users at a specific time.
+1. **[Instrument code](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)**: Add OTel to your application (automatically or manually).
+2. **[Ship data to FR Cloud](/Monitor-your-data/OpenTelemetry/Shipping/overview/)**: Configure your data flow.
+3. **[Visualize data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Analyze your performance in the FusionReactor dashboard.
 
 
-### Traces
-
-Traces furnish a comprehensive examination of the execution flow within your services, offering insights into function hotspots, execution times, and the identification of warnings or errors embedded in your code.
-
-For instance, when instrumenting a typical web application, each request can be mapped to an individual trace object containing multiple child span objects. Each span may represent distinct aspects of your business logic, such as HTTP operations, database queries, and more.
-
-#### Distributed tracing
-
-FusionReactor is now able to provide distributed trace information which is captured and displayed in a graphical format, so you can visualize the entire request flow and quickly identify any issues or bottlenecks.  
-
-!!! info "Learn more"
-    [Distributed tracing](/Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing/)
+---
 
 
-### Logs
-
-Logs serve as OpenTelemetry's approach to traditional log information, facilitating the centralized storage, aggregation, correlation, and analysis of log files and sources.
+## Core concepts & components
 
 
+### The signals: Traces, Metrics, and Logs
 
-### OTLP
 
-OTLP (OpenTelemetry Protocol) acts as the standardized exchange format utilized by OpenTelemetry-supported components to communicate with one another. It specifies message structures and protocol details for the network layer.
+* **Traces:** Provide a complete map of a request as it moves through your services. They help identify bottlenecks and "hotspots" in your code. FusionReactor uses these to power **Distributed Tracing** visualizations.
+* **Metrics:** Numerical data points (Such as, CPU usage, request rates) used for monitoring trends and setting alerts.
+* **Logs:** Structured or unstructured text records that provide context to your traces and metrics, now fully integrated into the OTel standard.
+
+
+### OTLP (OpenTelemetry Protocol)
+
+
+OTLP is the standardized language that OpenTelemetry components use to communicate.
+
 
 !!! note
-    FusionReactor only supports OTLP
+    FusionReactor Cloud is built on OTLP, ensuring high-performance data ingestion and compatibility with the entire OTel ecosystem.
 
 
 ### Instrumentation
 
-Instrumentation is the process of extending your application to generate, collect, and publish telemetry data. The level of automation in this process may vary based on the language and platform, ranging from fully automatic to requiring code modifications for telemetry collection.
+
+Instrumentation is how your application generates telemetry. Over the last two years, **Zero-code injection** (Automatic Instrumentation) has become the standard for most languages (Java, Python, .NET, Go, etc.), allowing you to gather data without changing a single line of your source code.
 
 
-
-!!! info "Learn more"
-    [Instrumentation](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)
-
-### Shipping telemetry data to FusionReactor Cloud
-
-There are 3 ways to send data to FusionReactor Cloud:
-
-* [OTel collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/)
-
-* [Observability Agent](/Monitor-your-data/OpenTelemetry/Shipping/Observability-agent/)
-
-* [Grafana Agent](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)
-
-!!! info "Learn more"
-    [Sending data to FR Cloud](/Monitor-your-data/OpenTelemetry/Shipping/overview/)
+---
 
 
-### OpenTelemetry collector
-
-The OpenTelemetry Collector is one of the key components of the OpenTelemetry framework, which is responsible for collecting telemetry data from various sources, processing and transforming it, and exporting it to different backends.
-
-The OpenTelemetry Collector is designed to be highly flexible and extensible, allowing you to configure it to collect telemetry data from a wide range of sources, including distributed tracing systems, metrics systems, and logging frameworks. The collector can also perform transformations and enrichments on the collected data, such as adding contextual information, aggregating metrics, and filtering traces based on various criteria.
+## Shipping telemetry data to FusionReactor Cloud
 
 
+To send data to FusionReactor, you can choose the method that best fits your infrastructure:
 
 
+* **[OpenTelemetry Collector](https://www.google.com/search?q=/Monitor-your-data/OpenTelemetry/Shipping/Collector/)**: The recommended approach for production. A standalone service that receives, processes, and exports data. It acts as a central hub, offloading telemetry processing from your applications.
 
 
+* **[Grafana Agent / Alloy](https://www.google.com/search?q=/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)**: A lightweight telemetry collector compatible with OTel and Prometheus ecosystems.
 
 
+### Why use the OpenTelemetry Collector?
 
 
+The Collector is the 'Swiss Army Knife' of observability. It allows you to:
 
 
+* **Aggregate** data from multiple services.
+* **Scrub** sensitive data (PII) before it leaves your network.
+* **Batch** data to reduce network overhead and improve performance.
 
 
+---
 
-
-___
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
+
+
+!!! info "Learn more"
+    [Official OpenTelemetry Documentation](https://www.google.com/search?q=https://opentelemetry.io/docs/)

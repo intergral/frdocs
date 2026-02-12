@@ -153,19 +153,19 @@ nav:
            - Docker: Monitor-your-data/Observability-agent/Installation/Docker.md
         - Configuration: Monitor-your-data/Observability-agent/Configuration.md
      - OpenTelemetry:
-       - Overview: Monitor-your-data/OpenTelemetry/getting-started.md
-       - Instrumentation guides:
+       - Get started: Monitor-your-data/OpenTelemetry/getting-started.md
+       - Instrumentation:
          - Overview: Monitor-your-data/OpenTelemetry/Instrumentation/Overview.md
-         - C++: Monitor-your-data/OpenTelemetry/Instrumentation/Cpp.md
+       #  - C++: Monitor-your-data/OpenTelemetry/Instrumentation/Cpp.md
       #  - .NET: Cloud/OpenTelemetry/NET.md
-         - Go: Monitor-your-data/OpenTelemetry/Instrumentation/Go.md
-         - Node.js: Monitor-your-data/OpenTelemetry/Instrumentation/node.md
-         - PHP: Monitor-your-data/OpenTelemetry/Instrumentation/PHP.md
-         - Python: Monitor-your-data/OpenTelemetry/Instrumentation/Python.md
+       #  - Go: Monitor-your-data/OpenTelemetry/Instrumentation/Go.md
+        # - Node.js: Monitor-your-data/OpenTelemetry/Instrumentation/node.md
+        # - PHP: Monitor-your-data/OpenTelemetry/Instrumentation/PHP.md
+       #  - Python: Monitor-your-data/OpenTelemetry/Instrumentation/Python.md
        - Shipping data to FR:
          - Overview: Monitor-your-data/OpenTelemetry/Shipping/overview.md
          - OpenTelemetry Collector: Monitor-your-data/OpenTelemetry/Shipping/Collector.md
-         - Observability Agent: Monitor-your-data/OpenTelemetry/Shipping/Observability-agent.md
+       #  - Observability Agent: Monitor-your-data/OpenTelemetry/Shipping/Observability-agent.md
          - Grafana Alloy: Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent.md
      #Cloud/OpenTelemetry/OTel-shipping.md
        - Visualize your data:

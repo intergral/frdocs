@@ -1,20 +1,47 @@
-# Instrumenting OpenTelemetry
 
-OpenTelemetry enables tracing, metrics, and logging telemetry through a set of single-distribution multi-language libraries and tools that allow for a plug-and-play telemetry architecture that includes the concept of agents and collectors.
 
-Instrumentation is the process of extending your application to create, collect, and publish telemetry data. Depending on the language used and platform, this can be fully automatic or may require changes made to your code to include telemetry collection.
+# Instrumentation Overview
 
-Setting up OpenTelemetry to ingest data into the FusionReactor Cloud is a simple procedure that will only take a few minutes. It provides additional insight into your product and the metrics it produces, so you can quickly investigate and pinpoint issues.
+Instrumentation is the process of enabling your application to generate and send telemetry data (traces, metrics, and logs). In modern OpenTelemetry, there are two primary ways to achieve this: **Zero-code** and **Manual**.
 
-To begin analyzing and monitoring your OpenTelemetry data with FusionReactor, you first need to set up data ingestion. To achieve this you must explicitly export with OTLP to FusionReactor.
+### 1. Zero-code (Automatic) Instrumentation
 
-FusionReactor provides step-by-step guides for the following languages: 
+This is the recommended starting point for most users. It allows you to gather telemetry without modifying your application’s source code.
 
-* [C++](/Monitor-your-data/OpenTelemetry/Instrumentation/Cpp/)
-* [Go](/Monitor-your-data/OpenTelemetry/Instrumentation/Go/)
-* [Node.js](/Monitor-your-data/OpenTelemetry/Instrumentation/node/)
-* [PHP](/Monitor-your-data/OpenTelemetry/Instrumentation/PHP/)
-* [Python](/Monitor-your-data/OpenTelemetry/Instrumentation/Python/)
+* **How it works:** You use a language-specific agent or a Kubernetes Operator to "inject" observability into your application at runtime.
+* **Benefits:** Instant visibility into HTTP requests, database queries, and external API calls with zero effort.
+* **Best for:** Java, Python, .NET, Node.js, and Go (via eBPF).
 
-!!! info
-    More guides will continue to be added over time.
+[Learn more about Automatic Instrumentation](https://www.google.com/search?q=https://opentelemetry.io/docs/concepts/instrumentation/automatic/)
+
+### 2. Code-based (Manual) Instrumentation
+
+Manual instrumentation is used when you need to capture specific business logic or custom events that automatic tools cannot see.
+
+* **How it works:** You use the OpenTelemetry API within your source code to start spans, record custom metrics, or add specific attributes to your logs.
+* **Benefits:** Provides high-precision data tailored to your specific business requirements.
+* **Best for:** Custom performance requirements and complex business workflows.
+
+[Learn more about Manual Instrumentation](https://www.google.com/search?q=https://opentelemetry.io/docs/concepts/instrumentation/manual/)
+
+---
+
+### Which language are you using?
+
+The setup varies depending on your tech stack. We recommend following the official OpenTelemetry language guides for the most up-to-date SDK configurations:
+
+|  |  |  |
+| --- | --- | --- |
+| **[Java](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/java/)** | **[Python](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/python/)** | **[Go](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/go/)** |
+| **[Node.js](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/js/)** | **[.NET](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/net/)** | **[C++](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/cpp/)** |
+
+---
+
+### Next Step: Shipping your data
+
+Once your application is instrumented, you need to send that data to FusionReactor.
+
+**[Go to Shipping Telemetry Overview](/Monitor-your-data/OpenTelemetry/Shipping/overview/)**
+
+
+
