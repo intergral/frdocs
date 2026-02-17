@@ -1,47 +1,44 @@
-
-
 # Instrumentation Overview
 
-Instrumentation is the process of enabling your application to generate and send telemetry data (traces, metrics, and logs). In modern OpenTelemetry, there are two primary ways to achieve this: **Zero-code** and **Manual**.
+Instrumentation enables your application to generate and send telemetry data (traces, metrics, and logs). OpenTelemetry provides two primary approaches: **Zero-code** and **Manual**.
 
 ### 1. Zero-code (Automatic) Instrumentation
 
-This is the recommended starting point for most users. It allows you to gather telemetry without modifying your application’s source code.
+This is the recommended starting point for most users. It allows you to gather telemetry without modifying your application's source code.
 
-* **How it works:** You use a language-specific agent or a Kubernetes Operator to "inject" observability into your application at runtime.
-* **Benefits:** Instant visibility into HTTP requests, database queries, and external API calls with zero effort.
+* **How it works:** A language-specific agent or Kubernetes Operator injects observability into your application at runtime.
+* **Benefits:** Instant visibility into HTTP requests, database queries, and external API calls without code changes.
 * **Best for:** Java, Python, .NET, Node.js, and Go (via eBPF).
 
-[Learn more about Automatic Instrumentation](https://www.google.com/search?q=https://opentelemetry.io/docs/concepts/instrumentation/automatic/)
+!!! info "Learn more"
+    [Automatic Instrumentation](https://opentelemetry.io/docs/concepts/instrumentation/automatic/)
 
 ### 2. Code-based (Manual) Instrumentation
 
-Manual instrumentation is used when you need to capture specific business logic or custom events that automatic tools cannot see.
+Manual instrumentation captures specific business logic or custom events that automatic tools cannot detect.
 
-* **How it works:** You use the OpenTelemetry API within your source code to start spans, record custom metrics, or add specific attributes to your logs.
-* **Benefits:** Provides high-precision data tailored to your specific business requirements.
-* **Best for:** Custom performance requirements and complex business workflows.
+* **How it works:** Use the OpenTelemetry API in your source code to create spans, record custom metrics, or add specific attributes to logs.
+* **Benefits:** High-precision data tailored to your business requirements.
+* **Best for:** Custom performance tracking and complex business workflows.
 
-[Learn more about Manual Instrumentation](https://www.google.com/search?q=https://opentelemetry.io/docs/concepts/instrumentation/manual/)
+!!! info "Learn more"
+    [Manual Instrumentation](https://opentelemetry.io/docs/concepts/instrumentation/manual/)
 
 ---
 
-### Which language are you using?
+### Language-specific guides
 
-The setup varies depending on your tech stack. We recommend following the official OpenTelemetry language guides for the most up-to-date SDK configurations:
+Setup varies by tech stack. Follow the official OpenTelemetry language guides for the most up-to-date SDK configurations:
 
 |  |  |  |
 | --- | --- | --- |
-| **[Java](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/java/)** | **[Python](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/python/)** | **[Go](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/go/)** |
-| **[Node.js](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/js/)** | **[.NET](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/net/)** | **[C++](https://www.google.com/search?q=https://opentelemetry.io/docs/languages/cpp/)** |
+| **[Java](https://opentelemetry.io/docs/languages/java/)** | **[Python](https://opentelemetry.io/docs/languages/python/)** | **[Go](https://opentelemetry.io/docs/languages/go/)** |
+| **[Node.js](https://opentelemetry.io/docs/languages/js/)** | **[.NET](https://opentelemetry.io/docs/languages/net/)** | **[C++](https://opentelemetry.io/docs/languages/cpp/)** |
 
 ---
 
-### Next Step: Shipping your data
+### Next step: Shipping your data
 
-Once your application is instrumented, you need to send that data to FusionReactor.
+Once your application is instrumented, the next step is sending that data to FusionReactor Cloud.
 
-**[Go to Shipping Telemetry Overview](/Monitor-your-data/OpenTelemetry/Shipping/overview/)**
-
-
-
+[Shipping Telemetry Overview](/Monitor-your-data/OpenTelemetry/Shipping/overview/)

@@ -1,95 +1,411 @@
-# C++ 
+# C++
 
-This guide showcases the integration of OpenTelemetry into your C++ application within FusionReactor, allowing for tracing, metrics, and preparation for future logging capabilities once available.
+This guide demonstrates how to instrument a C++ application with OpenTelemetry to send traces and metrics to FusionReactor Cloud.
 
-## Procedure
+## Prerequisites
 
-**Step 1**: Set up OpenTelemetry
+* **FusionReactor API Key**: Obtain this from **Account Settings > API Keys** in FusionReactor Cloud.
+* **C++ Compiler**: C++17 or later (GCC 9+, Clang 10+, or MSVC 2019+)
+* **CMake**: Version 3.20 or later
+* **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your C++ application.
 
-Adjust the CMake build configuration in the `CMakeLists.txt` file for OpenTelemetry in FusionReactor:
+!!! tip "Set up your telemetry pipeline first"
+    Before instrumenting your C++ application, ensure you have completed either the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) so your telemetry data has a destination.
 
+## Step 1: Install dependencies
+
+The easiest way to install OpenTelemetry C++ is using [vcpkg](https://vcpkg.io/):
+
+```bash
+# Install vcpkg if you haven't already
+git clone https://github.com/Microsoft/vcpkg.git
+cd vcpkg
+./bootstrap-vcpkg.sh  # On Windows: .\bootstrap-vcpkg.bat
+
+# Install OpenTelemetry C++
+./vcpkg install opentelemetry-cpp[otlp-http]
 ```
+
+Alternatively, you can build OpenTelemetry C++ from source. See the [official documentation](https://github.com/open-telemetry/opentelemetry-cpp) for details.
+
+## Step 2: Configure your build
+
+Create a `CMakeLists.txt` file in your project directory:
+
+```cmake
+cmake_minimum_required(VERSION 3.20)
+project(otel-cpp-demo)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Find required packages
 find_package(CURL REQUIRED)
 find_package(Protobuf REQUIRED)
 find_package(opentelemetry-cpp CONFIG REQUIRED)
 
-include_directories("${OPENTELEMETRY_CPP_INCLUDE_DIRS}")
-
-target_link_libraries(
-    <YOUR_EXE_NAME> ${OPENTELEMETRY_CPP_LIBRARIES}
-    opentelemetry_trace
-    opentelemetry_common
-    opentelemetry_http_client_curl
-    opentelemetry_exporter_otlp_http
-    opentelemetry_exporter_otlp_http_client
-    opentelemetry_otlp_recordable
-    opentelemetry_resources
-    opentelemetry_metrics
-    opentelemetry_exporter_otlp_http_metric
+# Create executable
+add_executable(otel-demo
+    src/main.cpp
+    src/otel.cpp
 )
+
+# Link OpenTelemetry libraries
+target_link_libraries(otel-demo
+    PRIVATE
+        opentelemetry-cpp::trace
+        opentelemetry-cpp::metrics
+        opentelemetry-cpp::logs
+        opentelemetry-cpp::common
+        opentelemetry-cpp::resources
+        opentelemetry-cpp::otlp_http_exporter
+        opentelemetry-cpp::otlp_http_metric_exporter
+        opentelemetry-cpp::http_client_curl
+        ${CURL_LIBRARIES}
+        ${Protobuf_LIBRARIES}
+)
+
+target_include_directories(otel-demo PRIVATE src)
 ```
 
-Create a file named `otel.h` in your application directory and save the provided content.
+## Step 3: Create OpenTelemetry initialization
 
-**Step 2**: Instrument your application
+Create `src/otel.h`:
 
-Add the necessary header files: Include otel.h in your code files for OpenTelemetry functionality.
+```cpp
+#pragma once
 
+#include <string>
+#include <memory>
 
-```bash
+namespace otel_demo {
+
+// Initialize OpenTelemetry SDK with OTLP exporters
+void initOpenTelemetry(const std::string& endpoint, const std::string& service_name);
+
+// Shutdown OpenTelemetry SDK
+void shutdownOpenTelemetry();
+
+} // namespace otel_demo
+```
+
+Create `src/otel.cpp`:
+
+```cpp
 #include "otel.h"
+
+#include "opentelemetry/sdk/trace/tracer_provider.h"
+#include "opentelemetry/sdk/trace/simple_processor.h"
+#include "opentelemetry/sdk/trace/batch_span_processor.h"
+#include "opentelemetry/exporters/otlp/otlp_http_exporter.h"
+#include "opentelemetry/exporters/otlp/otlp_http_exporter_options.h"
+
+#include "opentelemetry/sdk/metrics/meter_provider.h"
+#include "opentelemetry/sdk/metrics/export/periodic_exporting_metric_reader.h"
+#include "opentelemetry/exporters/otlp/otlp_http_metric_exporter.h"
+#include "opentelemetry/exporters/otlp/otlp_http_metric_exporter_options.h"
+
+#include "opentelemetry/sdk/resource/resource.h"
+#include "opentelemetry/sdk/resource/semantic_conventions.h"
+
+#include "opentelemetry/trace/provider.h"
+#include "opentelemetry/metrics/provider.h"
+
+#include <iostream>
+
+namespace trace_api = opentelemetry::trace;
+namespace trace_sdk = opentelemetry::sdk::trace;
+namespace otlp = opentelemetry::exporter::otlp;
+namespace metrics_api = opentelemetry::metrics;
+namespace metrics_sdk = opentelemetry::sdk::metrics;
+namespace resource = opentelemetry::sdk::resource;
+
+namespace otel_demo {
+
+void initOpenTelemetry(const std::string& endpoint, const std::string& service_name) {
+    // Create resource attributes
+    auto resource_attributes = resource::ResourceAttributes{
+        {resource::SemanticConventions::kServiceName, service_name},
+        {resource::SemanticConventions::kServiceVersion, "1.0.0"}
+    };
+    auto resource_ptr = resource::Resource::Create(resource_attributes);
+
+    // Configure OTLP trace exporter
+    otlp::OtlpHttpExporterOptions trace_opts;
+    trace_opts.url = endpoint + "/v1/traces";
+    trace_opts.content_type = otlp::HttpRequestContentType::kJson;
+
+    auto trace_exporter = std::make_unique<otlp::OtlpHttpExporter>(trace_opts);
+    auto trace_processor = std::make_unique<trace_sdk::BatchSpanProcessor>(
+        std::move(trace_exporter)
+    );
+
+    // Create tracer provider
+    std::shared_ptr<trace_api::TracerProvider> tracer_provider =
+        std::make_shared<trace_sdk::TracerProvider>(
+            std::move(trace_processor),
+            resource_ptr
+        );
+
+    // Set global tracer provider
+    trace_api::Provider::SetTracerProvider(tracer_provider);
+
+    // Configure OTLP metric exporter
+    otlp::OtlpHttpMetricExporterOptions metric_opts;
+    metric_opts.url = endpoint + "/v1/metrics";
+    metric_opts.content_type = otlp::HttpRequestContentType::kJson;
+
+    auto metric_exporter = std::make_unique<otlp::OtlpHttpMetricExporter>(metric_opts);
+
+    metrics_sdk::PeriodicExportingMetricReaderOptions reader_options;
+    reader_options.export_interval_millis = std::chrono::milliseconds(5000);
+
+    auto metric_reader = std::make_unique<metrics_sdk::PeriodicExportingMetricReader>(
+        std::move(metric_exporter),
+        reader_options
+    );
+
+    // Create meter provider
+    std::shared_ptr<metrics_api::MeterProvider> meter_provider =
+        std::make_shared<metrics_sdk::MeterProvider>(
+            std::move(metric_reader),
+            resource_ptr
+        );
+
+    // Set global meter provider
+    metrics_api::Provider::SetMeterProvider(meter_provider);
+
+    std::cout << "OpenTelemetry initialized successfully" << std::endl;
+}
+
+void shutdownOpenTelemetry() {
+    std::cout << "Shutting down OpenTelemetry" << std::endl;
+}
+
+} // namespace otel_demo
 ```
 
-Initialize OpenTelemetry: Call the `initOpenTelemetry()`` function early in your application's startup code.
+## Step 4: Create your instrumented application
 
-### Add tracing
+Create `src/main.cpp`:
+
+```cpp
+#include "otel.h"
+
+#include "opentelemetry/trace/provider.h"
+#include "opentelemetry/metrics/provider.h"
+#include "opentelemetry/trace/span_startoptions.h"
+
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+namespace trace = opentelemetry::trace;
+namespace metrics = opentelemetry::metrics;
+
+// Fibonacci calculation with tracing
+uint64_t fibonacci(int n, const std::shared_ptr<trace::Tracer>& tracer) {
+    trace::StartSpanOptions options;
+    options.kind = trace::SpanKind::kInternal;
+
+    auto span = tracer->StartSpan("fibonacci-calculation", options);
+    span->SetAttribute("iteration.count", n);
+
+    uint64_t a = 0, b = 1;
+
+    for (int i = 0; i < n; i++) {
+        uint64_t temp = a;
+        a = b;
+        b = temp + b;
+    }
+
+    span->End();
+    return a;
+}
+
+int main() {
+    // Initialize OpenTelemetry
+    const std::string endpoint = "http://localhost:4318";
+    const std::string service_name = "cpp-otel-demo";
+
+    otel_demo::initOpenTelemetry(endpoint, service_name);
+
+    // Get tracer and meter
+    auto provider = trace::Provider::GetTracerProvider();
+    auto tracer = provider->GetTracer(service_name, "1.0.0");
+
+    auto meter_provider = metrics::Provider::GetMeterProvider();
+    auto meter = meter_provider->GetMeter(service_name, "1.0.0");
+
+    // Create custom metrics
+    auto request_counter = meter->CreateUInt64Counter(
+        "fibonacci_requests_total",
+        "Total number of Fibonacci calculations",
+        "requests"
+    );
+
+    auto calculation_duration = meter->CreateUInt64Histogram(
+        "fibonacci_calculation_duration_ms",
+        "Fibonacci calculation duration in milliseconds",
+        "ms"
+    );
+
+    std::cout << "Starting Fibonacci calculations..." << std::endl;
+
+    // Perform calculations with instrumentation
+    for (int i = 1; i <= 20; i++) {
+        trace::StartSpanOptions options;
+        auto span = tracer->StartSpan("fibonacci-request", options);
+        span->SetAttribute("fibonacci.n", i);
+
+        auto start = std::chrono::high_resolution_clock::now();
+
+        // Calculate Fibonacci
+        uint64_t result = fibonacci(i, tracer);
+
+        auto end = std::chrono::high_resolution_clock::now();
+        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+
+        std::cout << "Fibonacci(" << i << ") = " << result << std::endl;
+
+        // Record metrics
+        request_counter->Add(1, {{"result", std::to_string(result)}});
+        calculation_duration->Record(duration.count(), {{"n", std::to_string(i)}});
+
+        span->End();
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(500));
+    }
+
+    std::cout << "Calculations complete!" << std::endl;
+
+    // Shutdown OpenTelemetry
+    otel_demo::shutdownOpenTelemetry();
+
+    return 0;
+}
+```
+
+## Step 5: Build and run locally
+
+Build your application:
 
 ```bash
-// Obtain a reference to the tracer provider
-auto provider = opentelemetry::trace::Provider::GetTracerProvider();
-
-// Get a tracer object
-auto tracer = provider->GetTracer("my-tracer");
-
-// Start a new span
-auto span = tracer->StartSpan("Call to /myendpoint", {
-    { "http.method", "GET" },
-    { "net.protocol.version", "1.1" }
-  }, options);
-
-// Your code logic here
-
-// End the span
-span->End();
+mkdir build
+cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake --build .
 ```
 
-
-### Collect metrics
+Run the application (ensure your collector is running on `localhost:4318`):
 
 ```bash
-// Obtain a reference to the meter provider
-auto provider = metrics_api::Provider::GetMeterProvider();
-
-// Get a meter object
-auto meter = provider->GetMeter("my-meter", "1.0.1");
-
-// Create instruments like a counter
-auto request_counter = meter->CreateUInt64Counter("request_counter");
-
-// Record values with the counter and save additional attributes
-request_counter.Add(1, labelkv);
+./otel-demo
 ```
 
+## Step 6: Deploy with Docker (Optional)
 
-### Connect logs
-OpenTelemetry logging is still under development and not yet available for C++ in FusionReactor.
+Create a `Dockerfile`:
+
+```dockerfile
+# Build stage
+FROM gcc:12 AS builder
+
+# Install CMake and dependencies
+RUN apt-get update && apt-get install -y \
+    cmake \
+    git \
+    curl \
+    libcurl4-openssl-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install vcpkg
+WORKDIR /opt
+RUN git clone https://github.com/Microsoft/vcpkg.git && \
+    ./vcpkg/bootstrap-vcpkg.sh
+
+# Install OpenTelemetry C++
+RUN /opt/vcpkg/vcpkg install opentelemetry-cpp[otlp-http]
+
+# Build application
+WORKDIR /app
+COPY CMakeLists.txt ./
+COPY src/ ./src/
+
+RUN cmake . -DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake && \
+    cmake --build .
+
+# Runtime stage
+FROM debian:bullseye-slim
+
+RUN apt-get update && apt-get install -y \
+    libcurl4 \
+    libprotobuf23 \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=builder /app/otel-demo /usr/local/bin/
+
+CMD ["otel-demo"]
+```
+
+Create a `docker-compose.yml`:
+
+```yaml
+services:
+  otelcollector:
+    image: otel/opentelemetry-collector-contrib:latest
+    container_name: otelcollector
+    restart: unless-stopped
+    environment:
+      - FR_API_KEY=${FR_API_KEY}
+    ports:
+      - "4317:4317"  # gRPC
+      - "4318:4318"  # HTTP
+    volumes:
+      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
+    command: ["--config=/etc/otelcol-contrib/config.yaml"]
+
+  cpp-app:
+    build: .
+    container_name: cpp-otel-demo
+    depends_on:
+      - otelcollector
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
+```
+
+Deploy:
+
+```bash
+export FR_API_KEY=your-api-key-here
+docker-compose up -d
+```
+
+## Step 7: Verify in FusionReactor Cloud
+
+1. Log in to **FusionReactor Cloud**
+
+2. Navigate to **Explore**:
+   - **Traces**: Select `Resource Service Name = cpp-otel-demo`
+   - **Metrics**: Search for `fibonacci_requests_total{job="cpp-otel-demo"}`
+
+You should see:
+- Trace spans for each Fibonacci calculation
+- Nested spans showing `fibonacci-request` and `fibonacci-calculation`
+- Metrics tracking request counts and calculation duration
+- Span attributes showing the iteration count
+
+## Next steps
+
+* Instrument HTTP clients using [OpenTelemetry C++ HTTP instrumentation](https://github.com/open-telemetry/opentelemetry-cpp-contrib/tree/main/instrumentation)
+* Add gRPC instrumentation with [opentelemetry-cpp-contrib](https://github.com/open-telemetry/opentelemetry-cpp-contrib)
+* Implement custom context propagation for distributed tracing
+* Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud
 
 !!! info "Learn more"
-    [OpenTelemetry](https://opentelemetry.io/docs/instrumentation/cpp/)
-
-
-
-___
+    [OpenTelemetry C++ Documentation](https://opentelemetry.io/docs/instrumentation/cpp/)
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.

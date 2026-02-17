@@ -106,7 +106,6 @@ services:
 1. **Run the Collector**:
 ```bash
 docker-compose up -d
-
 ```
 
 
@@ -114,7 +113,6 @@ docker-compose up -d
 Check the logs to ensure everything is running smoothly:
 ```bash
 docker logs -f fusionreactor-collector
-
 ```
 
 
@@ -137,7 +135,7 @@ docker run --network host ghcr.io/open-telemetry/opentelemetry-collector-contrib
 2. **Check FusionReactor Cloud**:
 * Log in to your **FusionReactor Cloud** dashboard.
 * Navigate to **Explore > Traces**.
-* You should see a service named **`telemetrygen`** appearing shortly.
+* You should see a service named **`telemetrygen`** appearing within 60 seconds.
 
 
 
