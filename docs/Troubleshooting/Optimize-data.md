@@ -4,11 +4,10 @@ This guide explains how to **reduce trace sampling data** sent to FusionReactor 
 
 ## Overview
 
-When you need to **reduce trace sampling data** to manage costs or bandwidth, FusionReactor provides flexible sampling controls for both FusionReactor agent and OpenTelemetry applications. All tracing data uses sampling to capture representative examples of normal transactions alongside errors and slow requests for comparison.
+When you need to **reduce trace sampling data** to manage costs or bandwidth, FusionReactor provides flexible sampling controls for the FusionReactor agent. All tracing data uses sampling to capture representative examples of normal transactions alongside errors and slow requests for comparison.
 
-!!! note "Default sampling rates"
-    - **FusionReactor Agent**: Default sampling ratio is **5%** (0.05) of all traces
-    - **OpenTelemetry**: Default sampling ratio is **100%** (1.0) of all traces
+!!! note "Default sampling rate"
+    **FusionReactor Agent**: Default sampling ratio is **5%** (0.05) of all traces
 
 ## When to reduce trace sampling data
 
