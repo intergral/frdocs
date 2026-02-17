@@ -1,18 +1,16 @@
-
-
 # OpenTelemetry Collector
 
 The OpenTelemetry (OTel) Collector is a high-performance, vendor-agnostic proxy that receives, processes, and exports telemetry data. It acts as the central hub of your observability pipeline, allowing you to aggregate data from multiple services before securely shipping it to FusionReactor Cloud.
 
 ### Key Components
 
-* **Receivers**: The "front door" for your applications. These ingest data via the OTLP protocol (gRPC or HTTP).
-* **Processors**: The "logic center" where data is refined. Common tasks include batching for efficiency and memory limiting for stability.
-* **Exporters**: The "exit door" that sends your refined telemetry to FusionReactor Cloud.
+* **Receivers**: Ingest data from your applications via the OTLP protocol (gRPC or HTTP).
+* **Processors**: Refine and transform data through batching, filtering, and resource limiting for efficiency and stability.
+* **Exporters**: Send processed telemetry to FusionReactor Cloud via OTLP/HTTP.
 
 ## Shipping Telemetry to FusionReactor Cloud
 
-The standard practice is to use a **Unified OTLP Pipeline**. This allows you to send Traces, Metrics, and Logs through a single, efficient exporter.
+The recommended approach is to use a **Unified OTLP Pipeline**. This allows you to send Traces, Metrics, and Logs through a single, efficient exporter.
 
 ### Prerequisites
 
@@ -92,7 +90,7 @@ services:
     container_name: fusionreactor-collector
     restart: unless-stopped
     environment:
-      - FR_API_KEY=your_key_here
+      - FR_API_KEY=${FR_API_KEY}  # Set this in your environment or .env file
     ports:
       - "4317:4317" # gRPC Receiver
       - "4318:4318" # HTTP Receiver
@@ -121,7 +119,7 @@ docker logs -f fusionreactor-collector
 
 
 
-Once the log says `Everything is ready`, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP).
+Once the log says `Everything is ready`, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP)..
 
 
 ### **Step 5**: Verify the Connection
@@ -139,7 +137,7 @@ docker run --network host ghcr.io/open-telemetry/opentelemetry-collector-contrib
 2. **Check FusionReactor Cloud**:
 * Log in to your **FusionReactor Cloud** dashboard.
 * Navigate to **Explore > Traces**.
-* You should see a service named **`telemetrygen`** appearing within 60 seconds.
+* You should see a service named **`telemetrygen`** appearing shortly.
 
 
 

@@ -1,14 +1,12 @@
-
-
 # Shipping with Grafana Alloy
 
-Grafana Alloy is a vendor-neutral distribution of the OpenTelemetry Collector. It is designed to be "big tent," natively supporting OpenTelemetry, Prometheus, and Loki formats within a single agent.
+Grafana Alloy is a vendor-neutral distribution of the OpenTelemetry Collector. It natively supports OpenTelemetry, Prometheus, and Loki formats within a single agent, making it highly versatile.
 
-For FusionReactor users, Alloy is an excellent choice if you require a highly programmable telemetry pipeline using **Alloy Flow** or if you want a **visual dashboard** to monitor your data pipeline's health in real-time.
+For FusionReactor users, Alloy is recommended when you need a highly programmable telemetry pipeline using **Alloy Flow** or a **visual dashboard** to monitor your data pipeline's health in real-time.
 
 ## How it works
 
-Alloy acts as a programmable middleman. It receives OTLP data from your instrumented applications, processes it for efficiency or security, and exports it to FusionReactor Cloud using the OTLP protocol.
+Alloy acts as a programmable intermediary. It receives OTLP data from your instrumented applications, processes it for efficiency or security, and exports it to FusionReactor Cloud using the OTLP protocol.
 
 
 
@@ -69,7 +67,7 @@ services:
     container_name: fusionreactor-alloy
     restart: unless-stopped
     environment:
-      - FR_API_KEY=your_api_key_here
+      - FR_API_KEY=${FR_API_KEY}  # Set this in your environment or .env file
     ports:
       - "4317:4317"   # OTLP gRPC
       - "4318:4318"   # OTLP HTTP
@@ -77,14 +75,14 @@ services:
     volumes:
       - ./config.alloy:/etc/alloy/config.alloy
     command: [
-      "run", 
-      "--server.http.listen-addr=0.0.0.0:12345", 
+      "run",
+      "--server.http.listen-addr=0.0.0.0:12345",
       "/etc/alloy/config.alloy"
     ]
 
 ```
 
-### **Step 4**: Verify Your Pipeline
+### **Step 3**: Verify Your Pipeline
 
 1. **Start Alloy**: Run `docker-compose up -d` in your terminal.
 2. **Access the UI**: Open your browser to `http://localhost:12345` to see a live graph of your pipeline.
@@ -99,7 +97,7 @@ docker run --network host ghcr.io/open-telemetry/opentelemetry-collector-contrib
 
 * **Native Prometheus Support**: If you have existing Prometheus scraping jobs, Alloy handles them more natively than the standard OTel Collector.
 * **Modular Configuration**: The "Flow" syntax is component-based (similar to Terraform), making it easier to scale and debug complex data routes.
-* **Visual Troubleshooting**: The built-in UI allows you to see the health of every component and "Live Tail" telemetry as it moves through the system.
+* **Visual Troubleshooting**: The built-in UI allows you to see the health of every component and Live Tail telemetry as it moves through the system.
 
 !!! question "Need more help?"
     Contact support in the chat bubble or check out the [Grafana Alloy Concepts](https://grafana.com/docs/alloy/latest/concepts/) and [OpenTelemetry OTLP Exporter](https://opentelemetry.io/docs/specs/otel/protocol/exporter/) documentation.
