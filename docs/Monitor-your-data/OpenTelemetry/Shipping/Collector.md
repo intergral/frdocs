@@ -119,7 +119,7 @@ docker logs -f fusionreactor-collector
 
 
 
-Once the log says `Everything is ready`, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP)..
+Once the log says `Everything is ready`, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP).
 
 
 ### **Step 5**: Verify the Connection
