@@ -251,67 +251,11 @@ curl http://localhost:3000/health
 
 The application will send telemetry to your local collector at `localhost:4318`.
 
-## Step 6: Deploy with Docker
+!!! warning "Cannot connect to collector?"
+    **If you see:** `ECONNREFUSED` or `connect ECONNREFUSED 127.0.0.1:4318`
+    **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-Create a `Dockerfile`:
-
-```dockerfile
-FROM node:18-alpine
-
-WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install --production
-
-# Copy application files
-COPY tracing.js app.js ./
-
-# Expose port
-EXPOSE 3000
-
-# Start the application
-CMD ["npm", "start"]
-```
-
-Create a `docker-compose.yml` to run both the collector and your Node.js app:
-
-```yaml
-services:
-  otelcollector:
-    image: otel/opentelemetry-collector-contrib:latest
-    container_name: otelcollector
-    restart: unless-stopped
-    environment:
-      - FR_API_KEY=${FR_API_KEY}
-    ports:
-      - "4317:4317"  # gRPC
-      - "4318:4318"  # HTTP
-    volumes:
-      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
-    command: ["--config=/etc/otelcol-contrib/config.yaml"]
-
-  node-app:
-    build: .
-    container_name: node-otel-demo
-    depends_on:
-      - otelcollector
-    ports:
-      - "3000:3000"
-    environment:
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-```
-
-Deploy the services:
-
-```bash
-export FR_API_KEY=your-api-key-here
-docker-compose up -d
-```
-
-## Step 7: Verify in FusionReactor Cloud
+## Step 6: Verify in FusionReactor Cloud
 
 1. Generate some traffic:
    ```bash
@@ -338,6 +282,17 @@ You should see:
 * Add custom business metrics using the Metrics API
 * Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud
 * Enable additional auto-instrumentations for your specific frameworks
+
+---
+
+## Related Guides
+
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common instrumentation issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about instrumentation
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry Node.js Documentation](https://opentelemetry.io/docs/languages/js/getting-started/nodejs/)

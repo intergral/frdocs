@@ -284,85 +284,11 @@ curl http://localhost:8000/health
 
 The application will send telemetry to your local collector at `localhost:4318`.
 
-## Step 5: Deploy with Docker
+!!! warning "Cannot connect to collector?"
+    **If you see:** `Connection refused` or `Failed to export`
+    **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-Create a `Dockerfile`:
-
-```dockerfile
-FROM php:8.2-apache
-
-# Install required PHP extensions
-RUN apt-get update && apt-get install -y \
-    git \
-    unzip \
-    libzip-dev \
-    && docker-php-ext-install zip \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Set working directory
-WORKDIR /var/www/html
-
-# Copy composer files
-COPY composer.json composer.lock* ./
-
-# Install dependencies
-RUN composer install --no-dev --optimize-autoloader
-
-# Copy application files
-COPY . .
-
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
-
-# Expose port
-EXPOSE 80
-
-# Set environment variables
-ENV OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-
-# Start Apache
-CMD ["apache2-foreground"]
-```
-
-Create a `docker-compose.yml`:
-
-```yaml
-services:
-  otelcollector:
-    image: otel/opentelemetry-collector-contrib:latest
-    container_name: otelcollector
-    restart: unless-stopped
-    environment:
-      - FR_API_KEY=${FR_API_KEY}
-    ports:
-      - "4317:4317"  # gRPC
-      - "4318:4318"  # HTTP
-    volumes:
-      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
-    command: ["--config=/etc/otelcol-contrib/config.yaml"]
-
-  php-app:
-    build: .
-    container_name: php-otel-demo
-    depends_on:
-      - otelcollector
-    ports:
-      - "8000:80"
-    environment:
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-```
-
-Deploy the services:
-
-```bash
-export FR_API_KEY=your-api-key-here
-docker-compose up -d
-```
-
-## Step 6: Verify in FusionReactor Cloud
+## Step 5: Verify in FusionReactor Cloud
 
 1. Generate some traffic:
    ```bash
@@ -389,6 +315,17 @@ You should see:
 * Instrument Symfony applications with [symfony-otel](https://github.com/open-telemetry/opentelemetry-php-contrib/tree/main/src/Instrumentation/Symfony)
 * Add database instrumentation with PDO or Doctrine extensions
 * Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud
+
+---
+
+## Related Guides
+
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common instrumentation issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about instrumentation
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry PHP Documentation](https://opentelemetry.io/docs/languages/php/)

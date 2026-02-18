@@ -179,64 +179,11 @@ python fib.py 20
 
 The application will calculate 20 Fibonacci numbers and send telemetry to your local collector at `localhost:4318`.
 
-## Step 4: Deploy with Docker (Optional)
+!!! warning "Cannot connect to collector?"
+    **If you see:** `Connection refused` or `Max retries exceeded`
+    **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-For production deployment, containerize your application:
-
-Create a `Dockerfile`:
-
-```dockerfile
-FROM python:3.11-slim
-
-WORKDIR /app
-
-# Install dependencies
-RUN pip install --no-cache-dir \
-    opentelemetry-api \
-    opentelemetry-sdk \
-    opentelemetry-exporter-otlp-proto-http
-
-# Copy application
-COPY fib.py .
-
-# Run the application
-CMD ["python", "fib.py", "100"]
-```
-
-Create a `docker-compose.yml` to run both the collector and your Python app:
-
-```yaml
-services:
-  otelcollector:
-    image: otel/opentelemetry-collector-contrib:latest
-    container_name: otelcollector
-    restart: unless-stopped
-    environment:
-      - FR_API_KEY=${FR_API_KEY}
-    ports:
-      - "4317:4317"  # gRPC
-      - "4318:4318"  # HTTP
-    volumes:
-      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
-    command: ["--config=/etc/otelcol-contrib/config.yaml"]
-
-  python-app:
-    build: .
-    container_name: python-fib-demo
-    depends_on:
-      - otelcollector
-    environment:
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-```
-
-Deploy the services:
-
-```bash
-export FR_API_KEY=your-api-key-here
-docker-compose up -d
-```
-
-## Step 5: Verify in FusionReactor Cloud
+## Step 4: Verify in FusionReactor Cloud
 
 1. Log in to **FusionReactor Cloud**
 2. Navigate to **Explore**:
@@ -255,6 +202,17 @@ You should see:
 * Instrument HTTP requests with `opentelemetry-instrumentation-requests`
 * Instrument database calls with `opentelemetry-instrumentation-sqlalchemy`
 * Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud to visualize your Python application metrics
+
+---
+
+## Related Guides
+
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common instrumentation issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about instrumentation
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry Python Documentation](https://opentelemetry.io/docs/languages/python/)

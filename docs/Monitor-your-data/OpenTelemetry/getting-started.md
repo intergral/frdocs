@@ -16,6 +16,114 @@ FusionReactor has simplified the OTel integration process into three straightfor
 
 ---
 
+## Architecture Overview
+
+OpenTelemetry data flows from your instrumented applications through a telemetry pipeline (Collector) to FusionReactor Cloud's observability backends:
+
+```
+┌─────────────────────┐
+│  Your Application   │
+│ (Instrumented with  │
+│   OpenTelemetry)    │
+└──────────┬──────────┘
+           │ OTLP
+           ▼
+┌─────────────────────┐
+│ Telemetry Pipeline  │
+│  ┌───────────────┐  │
+│  │ OTel Collector│  │
+│  │      OR       │  │
+│  │ Grafana Alloy │  │
+│  └───────────────┘  │
+└──────────┬──────────┘
+           │ Process & Forward
+           ▼
+┌─────────────────────┐
+│ FusionReactor Cloud │
+│                     │
+│  ┌─────────────┐    │
+│  │   Tempo     │    │  ← Traces
+│  │   (Traces)  │    │
+│  └─────────────┘    │
+│                     │
+│  ┌─────────────┐    │
+│  │   Mimir     │    │  ← Metrics
+│  │  (Metrics)  │    │
+│  └─────────────┘    │
+│                     │
+│  ┌─────────────┐    │
+│  │    Loki     │    │  ← Logs
+│  │   (Logs)    │    │
+│  └─────────────┘    │
+└─────────────────────┘
+```
+
+**Key Components:**
+
+* **Your Application**: Instrumented with OpenTelemetry SDKs to generate traces, metrics, and logs
+* **Telemetry Pipeline**: Collector (OpenTelemetry Collector or Grafana Alloy) receives, processes, and forwards telemetry data
+* **FusionReactor Cloud**: Stores and visualizes your data in purpose-built backends:
+    - **Tempo**: Distributed tracing backend
+    - **Mimir**: High-performance metrics storage
+    - **Loki**: Log aggregation system
+
+---
+
+## Quickstart: Get up and running in 15 minutes
+
+This quickstart provides the fastest path to see OpenTelemetry data flowing into FusionReactor Cloud while following production-ready practices.
+
+!!! tip "Production-ready from the start"
+    This quickstart uses the OpenTelemetry Collector from the beginning to ensure data reliability and prevent data loss. All production deployments should use a Collector.
+
+### Prerequisites
+
+* **FusionReactor API Key**: Get this from **Account Settings > API Keys** in FusionReactor Cloud
+* **Docker & Docker Compose**: For running the Collector ([Install Docker](https://docs.docker.com/get-docker/))
+* **Your language runtime**: Python, Java, Node.js, Go, .NET, etc.
+
+### Step 1: Set up the OpenTelemetry Collector (5 minutes)
+
+The Collector is a central hub that receives, processes, and forwards your telemetry data to FusionReactor Cloud.
+
+**[Follow the Collector setup guide →](/Monitor-your-data/OpenTelemetry/Shipping/Collector/)**
+
+This will walk you through:
+- Installing the Collector with Docker Compose
+- Configuring it with your FusionReactor API key
+- Verifying it's running correctly
+
+### Step 2: Instrument your application (5 minutes)
+
+Add OpenTelemetry to your application to generate traces, metrics, and logs. Most languages support automatic instrumentation requiring no code changes.
+
+**[Choose your language from the instrumentation guides →](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)**
+
+Available languages:
+- **Java**, **Python**, **.NET**, **Node.js**, **PHP** (Zero-code instrumentation available)
+- **Go**, **Ruby**, **Rust**, **Swift**, **Erlang/Elixir**, **Kotlin**, **C++** (Manual instrumentation)
+
+### Step 3: Verify data in FusionReactor Cloud (5 minutes)
+
+Once your application is running and generating traffic, view your telemetry data in FusionReactor Cloud.
+
+**[Learn how to visualize your data →](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**
+
+You should see:
+- **Traces**: Request flows across your services
+- **Metrics**: Runtime performance data (CPU, memory, request rates)
+- **Logs**: Application logs correlated with traces
+
+!!! success "What's next?"
+    Now that you have data flowing, explore these topics:
+
+    - [Configure sampling strategies](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) to manage data volume
+    - [Create custom dashboards](/Getting-started/Tutorials/create-dashboard/) to visualize your metrics
+    - [Review FAQ](/Monitor-your-data/OpenTelemetry/FAQ/) for common questions
+    - [Troubleshooting guide](/Monitor-your-data/OpenTelemetry/Troubleshooting/) if you encounter issues
+
+---
+
 ## Core concepts & components
 
 ### The signals: Traces, Metrics, and Logs

@@ -303,87 +303,13 @@ Run the application (ensure your collector is running on `localhost:4318`):
 ./otel-demo
 ```
 
-## Step 6: Deploy with Docker (Optional)
+The application will send telemetry to your local collector at `localhost:4318`.
 
-Create a `Dockerfile`:
+!!! warning "Cannot connect to collector?"
+    **If you see:** `Connection refused` or connection errors
+    **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-```dockerfile
-# Build stage
-FROM gcc:12 AS builder
-
-# Install CMake and dependencies
-RUN apt-get update && apt-get install -y \
-    cmake \
-    git \
-    curl \
-    libcurl4-openssl-dev \
-    libprotobuf-dev \
-    protobuf-compiler \
-    && rm -rf /var/lib/apt/lists/*
-
-# Install vcpkg
-WORKDIR /opt
-RUN git clone https://github.com/Microsoft/vcpkg.git && \
-    ./vcpkg/bootstrap-vcpkg.sh
-
-# Install OpenTelemetry C++
-RUN /opt/vcpkg/vcpkg install opentelemetry-cpp[otlp-http]
-
-# Build application
-WORKDIR /app
-COPY CMakeLists.txt ./
-COPY src/ ./src/
-
-RUN cmake . -DCMAKE_TOOLCHAIN_FILE=/opt/vcpkg/scripts/buildsystems/vcpkg.cmake && \
-    cmake --build .
-
-# Runtime stage
-FROM debian:bullseye-slim
-
-RUN apt-get update && apt-get install -y \
-    libcurl4 \
-    libprotobuf23 \
-    && rm -rf /var/lib/apt/lists/*
-
-COPY --from=builder /app/otel-demo /usr/local/bin/
-
-CMD ["otel-demo"]
-```
-
-Create a `docker-compose.yml`:
-
-```yaml
-services:
-  otelcollector:
-    image: otel/opentelemetry-collector-contrib:latest
-    container_name: otelcollector
-    restart: unless-stopped
-    environment:
-      - FR_API_KEY=${FR_API_KEY}
-    ports:
-      - "4317:4317"  # gRPC
-      - "4318:4318"  # HTTP
-    volumes:
-      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
-    command: ["--config=/etc/otelcol-contrib/config.yaml"]
-
-  cpp-app:
-    build: .
-    container_name: cpp-otel-demo
-    depends_on:
-      - otelcollector
-    environment:
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-```
-
-Deploy:
-
-```bash
-export FR_API_KEY=your-api-key-here
-docker-compose up -d
-```
-
-## Step 7: Verify in FusionReactor Cloud
+## Step 6: Verify in FusionReactor Cloud
 
 1. Log in to **FusionReactor Cloud**
 
@@ -403,6 +329,17 @@ You should see:
 * Add gRPC instrumentation with [opentelemetry-cpp-contrib](https://github.com/open-telemetry/opentelemetry-cpp-contrib)
 * Implement custom context propagation for distributed tracing
 * Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud
+
+---
+
+## Related Guides
+
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common instrumentation issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about instrumentation
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry C++ Documentation](https://opentelemetry.io/docs/instrumentation/cpp/)

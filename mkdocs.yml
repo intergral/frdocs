@@ -156,13 +156,19 @@ nav:
        - Get started: Monitor-your-data/OpenTelemetry/getting-started.md
        - Instrumentation:
          - Overview: Monitor-your-data/OpenTelemetry/Instrumentation/Overview.md
-         - Guides: 
+         - Guides:
             - C++: Monitor-your-data/OpenTelemetry/Instrumentation/Cpp.md
-            - .NET: Cloud/OpenTelemetry/NET.md
+            - .NET: Monitor-your-data/OpenTelemetry/Instrumentation/DotNet.md
+            - Erlang/Elixir: Monitor-your-data/OpenTelemetry/Instrumentation/Erlang.md
             - Go: Monitor-your-data/OpenTelemetry/Instrumentation/Go.md
+            - Java: Monitor-your-data/OpenTelemetry/Instrumentation/Java.md
+            - Kotlin: Monitor-your-data/OpenTelemetry/Instrumentation/Kotlin.md
             - Node.js: Monitor-your-data/OpenTelemetry/Instrumentation/node.md
             - PHP: Monitor-your-data/OpenTelemetry/Instrumentation/PHP.md
             - Python: Monitor-your-data/OpenTelemetry/Instrumentation/Python.md
+            - Ruby: Monitor-your-data/OpenTelemetry/Instrumentation/Ruby.md
+            - Rust: Monitor-your-data/OpenTelemetry/Instrumentation/Rust.md
+            - Swift: Monitor-your-data/OpenTelemetry/Instrumentation/Swift.md
        - Shipping data to FR:
          - Overview: Monitor-your-data/OpenTelemetry/Shipping/overview.md
          - OpenTelemetry Collector: Monitor-your-data/OpenTelemetry/Shipping/Collector.md
@@ -174,6 +180,9 @@ nav:
          - Traces: Monitor-your-data/OpenTelemetry/Visualize/Traces.md
          - Logs: Monitor-your-data/OpenTelemetry/Visualize/Logs.md
          - Distributed tracing: Monitor-your-data/OpenTelemetry/Visualize/Distributed-tracing.md
+       - Configuration: Monitor-your-data/OpenTelemetry/Configuration.md
+       - FAQ: Monitor-your-data/OpenTelemetry/FAQ.md
+       - Troubleshooting: Monitor-your-data/OpenTelemetry/Troubleshooting.md
      - Kubernetes monitoring:
         - Overview: Monitor-your-data/Kubernetes-monitoring/overview.md
         - Shipping K8s data to FR: Monitor-your-data/Kubernetes-monitoring/Shipping.md

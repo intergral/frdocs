@@ -18,6 +18,34 @@ A comprehensive distribution from Grafana Labs that extends beyond OpenTelemetry
 !!! tip "Which should I choose?"
     If you want a **pure, vendor-neutral** setup, choose the **OTel Collector**. If you require **advanced routing** or deep integration with existing Grafana-based tools, choose **Grafana Alloy**.
 
+---
+
+## Related Guides
+
+Before and after setting up your telemetry pipeline, explore these topics:
+
+- **[Instrumentation Overview](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)**: Instrument your application to generate telemetry
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common collector and pipeline issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about shipping telemetry data
+
+---
+
+## Kubernetes Deployment
+
+!!! info "Coming Soon"
+    Comprehensive Kubernetes deployment guides for OpenTelemetry Collector and Grafana Alloy are coming soon. This will include:
+
+    - Helm chart configurations
+    - DaemonSet and Deployment patterns
+    - Service mesh integration
+    - Auto-scaling strategies
+
+    Check back for updates on Kubernetes deployment support.
+
+---
+
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
 

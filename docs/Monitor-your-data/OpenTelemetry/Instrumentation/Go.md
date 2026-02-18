@@ -208,67 +208,13 @@ func main() {
 }
 ```
 
-## Step 4: Create Docker configuration
+!!! warning "Cannot connect to collector?"
+    **If you see:** `connection refused` or `dial tcp: connect: connection refused`
+    **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-Create a `Dockerfile` in your project directory:
+## Step 4: Verify in FusionReactor Cloud
 
-```dockerfile
-FROM golang:1.21-alpine
-
-WORKDIR /app
-
-COPY go.mod go.sum ./
-RUN go mod download && go mod verify
-
-COPY *.go ./
-RUN go build -o /go-otel-demo
-
-CMD ["/go-otel-demo"]
-```
-
-Create a `docker-compose.yml` to run both the OTel Collector and your Go application:
-
-```yaml
-services:
-  otelcollector:
-    image: otel/opentelemetry-collector-contrib:latest
-    container_name: otelcollector
-    restart: unless-stopped
-    environment:
-      - FR_API_KEY=${FR_API_KEY}
-    ports:
-      - "4317:4317"  # gRPC
-      - "4318:4318"  # HTTP
-    volumes:
-      - ./otel-config.yaml:/etc/otelcol-contrib/config.yaml
-    command: ["--config=/etc/otelcol-contrib/config.yaml"]
-
-  go-app:
-    build: .
-    container_name: go-otel-demo
-    depends_on:
-      - otelcollector
-    environment:
-      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcollector:4318
-```
-
-!!! tip "Security best practice"
-    Set `FR_API_KEY` as an environment variable on your host system or in a `.env` file. Never commit API keys to source control.
-
-## Step 5: Deploy and verify
-
-1. **Start the services**:
-```bash
-export FR_API_KEY=your-api-key-here
-docker-compose up -d
-```
-
-2. **Check the logs**:
-```bash
-docker logs -f go-otel-demo
-```
-
-3. **View in FusionReactor Cloud**:
+1. **View in FusionReactor Cloud**:
    - Navigate to **Explore > Traces** to see your Go application traces
    - Navigate to **Explore > Metrics** and search for `demo.counter` to see the counter metric
    - Your service should appear as `test-go-server-http`
@@ -278,6 +224,17 @@ docker logs -f go-otel-demo
 * Instrument HTTP handlers using `go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp`
 * Add database instrumentation with `go.opentelemetry.io/contrib/instrumentation/database/sql/otelsql`
 * Create [custom dashboards](/Getting-started/Tutorials/create-dashboard/) in FusionReactor Cloud to visualize your Go application metrics
+
+---
+
+## Related Guides
+
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Query and visualize your telemetry in FusionReactor Cloud
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common instrumentation issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about instrumentation
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry Go Documentation](https://opentelemetry.io/docs/languages/go/)

@@ -115,9 +115,19 @@ Check the logs to ensure everything is running smoothly:
 docker logs -f fusionreactor-collector
 ```
 
+You should see:
+```
+Everything is ready. Begin running and processing data.
+```
 
+Once you see this message, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP).
 
-Once the log says `Everything is ready`, your applications can point their OTLP exporters to `localhost:4317` (gRPC) or `localhost:4318` (HTTP).
+!!! warning "Common startup errors"
+    **If you see:** `cannot unmarshal config` or `yaml: unmarshal errors`
+    **Fix:** Check your YAML syntax in `otel-config.yaml`
+
+    **If you see:** `bind: address already in use`
+    **Fix:** Another process is using port 4317 or 4318. Stop it or use different ports.
 
 
 ### **Step 5**: Verify the Connection
@@ -139,6 +149,26 @@ docker run --network host ghcr.io/open-telemetry/opentelemetry-collector-contrib
 
 
 
+
+---
+
+## Next Steps
+
+Now that your Collector is running, you're ready to instrument your application:
+
+- **[Instrumentation Overview](/Monitor-your-data/OpenTelemetry/Instrumentation/Overview/)**: Choose your language and instrument your application
+- **[Configuration Guide](/Monitor-your-data/OpenTelemetry/Configuration/)**: Configure semantic conventions, resource attributes, and sampling strategies
+- **[Visualize Your Data](/Monitor-your-data/OpenTelemetry/Visualize/Metrics/)**: Create dashboards and query your telemetry
+
+---
+
+## Related Guides
+
+- **[Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/)**: Alternative telemetry collector with Grafana ecosystem integration
+- **[Troubleshooting](/Monitor-your-data/OpenTelemetry/Troubleshooting/)**: Debug common collector issues
+- **[FAQ](/Monitor-your-data/OpenTelemetry/FAQ/)**: Common questions about the OpenTelemetry Collector
+
+---
 
 !!! info "Learn more"
     [OpenTelemetry Collector Documentation](https://opentelemetry.io/docs/collector/getting-started/)
