@@ -1,43 +1,58 @@
-# How to reduce billing usage costs in FusionReactor Cloud
+# How to reduce trace sampling data and optimize billing costs
 
+This guide explains how to **reduce trace sampling data** sent to FusionReactor Cloud, helping you optimize billing costs while maintaining effective observability. By adjusting sampling ratios, you can control data volumes without sacrificing critical insights into application performance.
 
-In certain scenarios, it might be advantageous to optimize the amount of trace data sent to the FusionReactor Cloud to achieve a balance between observability and resource efficiency. All tracing data is sampled, so you get examples of normal transactions as well as error or slow transactions, to compare as required.
+## Overview
 
-!!! note
-    The default sampling ratio for FusionReactor is set to 0.05 or 5% of **all** traces.
+When you need to **reduce trace sampling data** to manage costs or bandwidth, FusionReactor provides flexible sampling controls for the FusionReactor agent. All tracing data uses sampling to capture representative examples of normal transactions alongside errors and slow requests for comparison.
 
-FusionReactor provides a flexible solution by allowing users to control the trace sampling ratio using a configuration parameter. This setting can be adjusted as necessary depending on the amount of tracing data your applications generate.
+!!! note "Default sampling rate"
+    **FusionReactor Agent**: Default sampling ratio is **5%** (0.05) of all traces
 
-## Configuration parameter
+## When to reduce trace sampling data
 
-### Trace Sampling Ratio
+Consider adjusting sampling ratios in these scenarios:
+
+* **High-volume applications** generating thousands of traces per second
+* **Cost optimization** when approaching or exceeding your billing tier
+* **Bandwidth constraints** in network-limited environments
+* **Development/staging environments** where full trace capture isn't necessary
+* **Well-understood services** that don't require detailed monitoring
+
+!!! warning "Important"
+    Lower sampling rates reduce the number of traces captured, which may affect your ability to detect infrequent issues. Always balance cost savings with observability needs.
+
+## Configuration methods
+
+### FusionReactor Java Agent
+
+To **reduce trace sampling data** for FusionReactor's Java agent, use the following JVM property:
 
 **Property:** `-Dfr.observability.trace.sampling.ratio`
 
-This property allows users to specify the sampling ratio for trace data sent to the FusionReactor Cloud. The sampling ratio represents the percentage of traces to be captured. Adjusting this ratio enables users to reduce the volume of trace data transmitted while still maintaining essential insights.
+This property controls the percentage of traces captured and sent to FusionReactor Cloud.
 
-## Benefits of adjusting the sampling ratio
+#### Example: Reduce to 3% sampling
 
-* **Reduced data transmission**  
-  Lowering the sampling ratio decreases the amount of trace data transmitted to the FusionReactor Cloud. This is particularly useful in scenarios where bandwidth or storage considerations are crucial.
-
-* **Resource optimization**  
-  By capturing a fraction of traces, users can optimize resource utilization on both the application and FusionReactor Cloud sides, ensuring efficient performance monitoring without excessive data overhead.
-
-* **Cost-efficiency**  
-  Reduced data transmission can lead to cost savings, especially in cloud environments where data transfer and storage costs are significant factors.
-
-## Example usage
-
-FusionReactor's default trace sampling ratio is set to **`0.05`**, representing a **5%** sampling rate. Larger companies handling extensive data volumes may consider adjusting this setting to further reduce the transmitted trace data.
-
-To set the trace sampling ratio to **3%**, the following JVM argument can be used:
-
-```
+```bash
 -Dfr.observability.trace.sampling.ratio=0.03
 ```
 
-In this example, the value **`0.03`** signifies a **3%** sampling rate. Users can customize this value according to their specific requirements.
+#### Example: Reduce to 1% sampling for high-volume services
+
+```bash
+-Dfr.observability.trace.sampling.ratio=0.01
+```
+
+#### Common sampling ratios
+
+| Sampling Ratio | Percentage | Use Case |
+|---------------|------------|----------|
+| `1.0` | 100% | Development, debugging, critical services |
+| `0.1` | 10% | Standard production monitoring |
+| `0.05` | 5% | Default FusionReactor setting |
+| `0.03` | 3% | High-volume applications |
+| `0.01` | 1% | Very high-volume, cost-sensitive environments |
 
 ---
 
