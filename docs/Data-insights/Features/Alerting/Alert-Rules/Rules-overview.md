@@ -1,8 +1,4 @@
-# Alert Rules
-
 An **Alert Rule** is a set of criteria that defines when FusionReactor should trigger an alert. It continuously evaluates your data and notifies your team when specific conditions are met.
-
-
 
 ## What makes up an Alert Rule?
 
@@ -20,7 +16,7 @@ An alert rule is built from four core components:
         [Queries & conditions](https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/queries-conditions/)
 
 3. **Evaluation schedule**
-    * **Interval:** How often the rule is checked (such as,  every 1 minute).
+    * **Interval:** How often the rule is checked (such as, every 1 minute).
     * **Duration:** How long the condition must stay "True" before the alert actually fires. This helps prevent notifications for temporary spikes.
 
 4. **Customization & routing**
@@ -32,4 +28,3 @@ An alert rule is built from four core components:
 
 !!! info "Learn more"
     [Alert Rules](https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/)
-

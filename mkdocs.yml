@@ -197,22 +197,22 @@ nav:
             - Install MCP: Monitor-your-data/Katie/install.md
   - FEATURES: 
        # - Data-insights/Features/account.md
-        - Alerts & Anomaly Detection: 
+        - Alerts & Anomaly Detection:
             - Alerts:
-               - Overview: Data-insights/Features/Alerts-&-AD/Alerts-overview.md
-               - Rules: 
-                  - Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Rules-overview.md
-                  - Configure Alert Rules: Data-insights/Features/Alerts-&-AD/Alert-Rules/Configure-rules.md
+               - Overview: Data-insights/Features/Alerting/Alerts-overview.md
+               - Rules:
+                  - Alert Rules: Data-insights/Features/Alerting/Alert-Rules/Rules-overview.md
+                  - Configure Alert Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
                - Notifications:
-                  - Contact Points: 
-                     - Overview: Data-insights/Features/Alerts-&-AD/Contact-points.md
-                     - Notification Templates: Data-insights/Features/Alerts-&-AD/Templates.md
-                  - Notification Policies: 
-                     - Overview: Data-insights/Features/Alerts-&-AD/Notifications.md
-                     - Time intervals: Data-insights/Features/Alerts-&-AD/Mute-timings.md
-               - Silences: Data-insights/Features/Alerts-&-AD/Silences.md
-               - Active Notifcations: Data-insights/Features/Alerts-&-AD/Active-alerts.md
-        - Anomaly Detection: 
+                  - Contact Points:
+                     - Overview: Data-insights/Features/Alerting/Contact-points.md
+                     - Notification Templates: Data-insights/Features/Alerting/Templates.md
+                  - Notification Policies:
+                     - Overview: Data-insights/Features/Alerting/Notifications.md
+                     - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
+               - Silences: Data-insights/Features/Alerting/Silences.md
+               - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
+            - Anomaly Detection:
                - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
         - Applications: Data-insights/Features/applications.md

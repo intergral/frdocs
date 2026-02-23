@@ -1,4 +1,4 @@
-
+**Contact points** define where and how FusionReactor sends alert notifications. Each contact point contains one or more integrations, such as, Slack, Email, or PagerDuty, and can be assigned directly to an alert rule or routed via notification policies.
 
 ## What are Contact Points?
 
@@ -30,11 +30,11 @@ To configure Contact Points, define the destinations where your alerts should be
 
 1. Navigate to **Alerting** > **Contact Points**.
 2. Click the **+ Create contact point** button located on the right side of the screen.
-4. In the **Name** field, provide a unique and descriptive name for this contact point.
-5. Choose your desired service (such as Email, Slack, or Webhook) from the **Integration** dropdown menu.
-6. Fill in the mandatory fields for your integration. For example, if using **Email**, enter the recipient addresses in the **Addresses** text area.
-7. Expand **Optional settings** to add specific technical configurations for that service.
-8. Expand **Notification settings** if you wish to customize how messages are bundled or formatted.
+3. In the **Name** field, provide a unique and descriptive name for this contact point.
+4. Choose your desired service (such as, Email, Slack, or Webhook) from the **Integration** dropdown menu.
+5. Fill in the mandatory fields for your integration. For example, if using **Email**, enter the recipient addresses in the **Addresses** text area.
+6. Expand **Optional settings** to add specific technical configurations for that service.
+7. Expand **Notification settings** if you wish to customize how messages are bundled or formatted.
 8. Click **Save contact point** at the bottom of the page to finalize.
 
 ### Adding Multiple Destinations
@@ -52,4 +52,9 @@ If you want one alert to go to multiple places at once (such as, Email *and* a W
 
 ## Notification Templates
 
-To do
+Notification templates allow you to define reusable message formats for your contact point integrations. Instead of writing a custom message for every alert rule, you define the template once and reference it across multiple contact points.
+
+To create and manage templates, navigate to **Alerting** > **Contact Points** and select the **Notification templates** tab.
+
+!!! info "Learn more"
+    [Create notification templates](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/template-notifications/)

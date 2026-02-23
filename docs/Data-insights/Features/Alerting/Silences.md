@@ -30,9 +30,16 @@ A **Silence** allows you to temporarily stop notifications during specific windo
         You can also enter a **Duration** (such as, `2h`), which will automatically calculate the end time for you.
 
 
-5. **Define Matching Labels:** In the **Matching Labels** section, enter the specific **Label** and **Value** pairs to identify which alerts to mute.
+5. **Define Matching Labels:** In the **Matching Labels** section, enter the specific **Label** and **Value** pairs to identify which alerts to mute. The following operators are available:
 
-    !!! Example
+    | Operator | Meaning |
+    | --- | --- |
+    | `=` | Exact match |
+    | `!=` | Does not match |
+    | `=~` | Regex match |
+    | `!~` | Regex does not match |
+
+    !!! example
         Entering `severity` = `critical` will only silence critical alerts, while other alerts will still notify as usual.
 
 
@@ -41,6 +48,3 @@ A **Silence** allows you to temporarily stop notifications during specific windo
 
 !!! info "Learn more"
     [Edit & remove silences](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-silence/#edit-silences)
-
-
-

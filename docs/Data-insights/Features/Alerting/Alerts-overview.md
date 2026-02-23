@@ -14,10 +14,19 @@ Alerting allows you to define granular alert rules across your entire applicatio
 4. Firing (and resolved) alert instances are sent for notifications, either directly to a contact point or through notification policies for more flexibility.
 
 
-## Key concepts:
+## Alert states
 
+Each alert instance will be in one of the following states at any time:
 
+| State | Description |
+| --- | --- |
+| **Normal** | The condition is not met. The alert is healthy. |
+| **Pending** | The condition has been met, but not yet for long enough to fire. Prevents notifications for temporary spikes. |
+| **Firing** | The condition has been met for longer than the pending period. Notifications are being sent. |
+| **No Data** | The query returned no data. Behaviour depends on the rule's **No Data** handling configuration. |
+| **Error** | The rule failed to evaluate (such as, a data source error). Behaviour depends on the rule's **Error** handling configuration. |
 
+## Key concepts
 
 | Component | Description |
 | --- | --- |
@@ -32,3 +41,6 @@ Alerting allows you to define granular alert rules across your entire applicatio
 
 !!! info "Learn more"
     [Alerting fundamentals](https://grafana.com/docs/grafana/latest/alerting/fundamentals/)
+
+!!! tip "Best practices"
+    For guidance on structuring alert rules, avoiding alert fatigue, and managing large alerting setups, see [Best practices for Grafana Alerting](https://grafana.com/docs/grafana/latest/alerting/best-practices/).

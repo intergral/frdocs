@@ -1,14 +1,11 @@
-
 Notification policies are the engine of your alerting system, providing a flexible way to route alerts while minimizing noise. They are organized in a **tree structure**, starting with a **Default (Root) policy** that can branch into various child and sibling policies.
 
-## How policies handle alerts:
+## How policies handle alerts
 
 * **Label Matching:** Alerts are routed based on "label matchers." Each policy looks for specific labels on an alert to decide if it should handle that notification.
 * **Hierarchical Routing:** Because policies are a tree rather than a list, alerts can move through nested levels, inheriting settings from parents or being captured by specific sub-policies.
 * **Alert Grouping:** To prevent alert fatigue, policies bundle multiple related alert instances into a single notification before delivering them to the designated **contact point**.
 * **Timing Control:** Policies define precisely when to send notifications, allowing you to silence or delay alerts based on your specific needs.
-
-
 
 ## Configure Notification Policies
 
@@ -17,7 +14,7 @@ The **Default Policy** handles any alert that doesn’t match a specific rule.
 1. Navigate to **Alerting** > **Notification policies**.
 2. In the **Default policy** section, click **More** and select **Edit**.
 3. Select where to send unmatched alerts.
-4. Choose labels (like `cluster` or `service`) to bundle related alerts together to reduce noise.
+4. Choose labels (such as, `cluster` or `service`) to bundle related alerts together to reduce noise.
 5. Timing options:
 
     * **Group wait:** How long to wait before sending the first alert (default 30s).
@@ -27,11 +24,9 @@ The **Default Policy** handles any alert that doesn’t match a specific rule.
 
 6. Click **Save**.
 
-
-
 ## Creating child and sibling policies
 
-Use these policies to route specific alerts (such as., `severity=critical`) away from the default path.
+Use these policies to route specific alerts (such as, `severity=critical`) away from the default path.
 
 ### Add a child policy (Nesting)
 
@@ -57,5 +52,4 @@ Policies are evaluated from **top to bottom**. Use siblings to prioritize one ru
 * **Continue matching:** If you enable this, the system will keep checking other policies even after a match is found, allowing one alert to trigger multiple notifications.
 
 !!! info "Learn more"
-    [Create Notification Policies](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/)
-
+    [Notification policies](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/)
