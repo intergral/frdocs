@@ -555,7 +555,7 @@ plugins:
          'website/JBoss+AS7.md': 'Monitor-your-data/FR-Agent/Installation/Manual.md'
          'website/Tomcat+6+or+7+in+JBoss+EWS.md': 'Monitor-your-data/FR-Agent/Installation/Manual.md'
          'website/Quick+Start+to+Troubleshooting+Server+Problems+with+FusionReactor.md': 'index.md'
-         'website/Protection+and+Monitoring+with+FusionReactor".md': 'index.md'
+         'website/Protection+and+Monitoring+with+FusionReactor.md': 'index.md'
          'website/JDBC+Monitoring.md': 'Data-insights/Features/JDBC/JDBC-Monitoring.md'
          'website/User+Experience+Monitoring+(UEM).md': 'Data-insights/Features/UEM/User-Experience-Monitoring.md'
          'website/FusionReactor+Report+Plugin.md': 'Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md'
@@ -641,7 +641,6 @@ plugins:
          'Getting-started/DVCloud.md' : 'index.md'
          'Getting-started/GSCloudsetup.md' : 'Getting-started/Trial.md'
          'LogBeta/LogQL-Logfmt.md' : 'Data-insights/Features/Logs/Logs.md'
-         'https://docs.fusion-reactor.com/': 'https://docs.fusionreactor.io/'
          'OP-billing/licenses.md' : 'Admin-and-data/Billing/On-Premise/licenses.md'
          
            

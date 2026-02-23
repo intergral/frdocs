@@ -72,10 +72,13 @@ javac FibonacciApp.java
 ### How automatic instrumentation works
 
 The OpenTelemetry Java Agent automatically:
-- Creates spans for method executions
+- Creates spans for HTTP requests, database calls, and messaging operations
 - Captures JVM metrics (CPU, memory, garbage collection)
 - Instruments HTTP clients/servers, database calls, and messaging
 - Propagates trace context across service boundaries
+
+!!! info "Best suited for web frameworks"
+    The Java agent works by auto-instrumenting supported frameworks such as Spring Boot, Tomcat, JDBC, and gRPC. A plain command-line application like `FibonacciApp` will not produce traces since it contains no instrumented code paths. For full trace, metric, and log output, attach the agent to a web service (e.g. Spring Boot) where HTTP requests are the natural instrumentation entry point.
 
 ## Step 3: Run with OpenTelemetry Agent
 

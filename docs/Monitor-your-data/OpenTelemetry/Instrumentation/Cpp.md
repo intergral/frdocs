@@ -42,6 +42,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(CURL REQUIRED)
 find_package(Protobuf REQUIRED)
+find_package(nlohmann_json REQUIRED)
 find_package(opentelemetry-cpp CONFIG REQUIRED)
 
 # Create executable
@@ -95,13 +96,14 @@ Create `src/otel.cpp`:
 #include "otel.h"
 
 #include "opentelemetry/sdk/trace/tracer_provider.h"
-#include "opentelemetry/sdk/trace/simple_processor.h"
 #include "opentelemetry/sdk/trace/batch_span_processor.h"
+#include "opentelemetry/sdk/trace/batch_span_processor_options.h"
 #include "opentelemetry/exporters/otlp/otlp_http_exporter.h"
 #include "opentelemetry/exporters/otlp/otlp_http_exporter_options.h"
 
 #include "opentelemetry/sdk/metrics/meter_provider.h"
 #include "opentelemetry/sdk/metrics/export/periodic_exporting_metric_reader.h"
+#include "opentelemetry/sdk/metrics/view/view_registry.h"
 #include "opentelemetry/exporters/otlp/otlp_http_metric_exporter.h"
 #include "opentelemetry/exporters/otlp/otlp_http_metric_exporter_options.h"
 
@@ -137,7 +139,8 @@ void initOpenTelemetry(const std::string& endpoint, const std::string& service_n
 
     auto trace_exporter = std::make_unique<otlp::OtlpHttpExporter>(trace_opts);
     auto trace_processor = std::make_unique<trace_sdk::BatchSpanProcessor>(
-        std::move(trace_exporter)
+        std::move(trace_exporter),
+        trace_sdk::BatchSpanProcessorOptions{}
     );
 
     // Create tracer provider
@@ -165,14 +168,15 @@ void initOpenTelemetry(const std::string& endpoint, const std::string& service_n
         reader_options
     );
 
-    // Create meter provider
-    std::shared_ptr<metrics_api::MeterProvider> meter_provider =
-        std::make_shared<metrics_sdk::MeterProvider>(
-            std::move(metric_reader),
-            resource_ptr
-        );
+    // Create meter provider (v1.14+: add reader after construction)
+    auto meter_provider_sdk = std::make_shared<metrics_sdk::MeterProvider>(
+        std::unique_ptr<metrics_sdk::ViewRegistry>(new metrics_sdk::ViewRegistry()),
+        resource_ptr
+    );
+    meter_provider_sdk->AddMetricReader(std::move(metric_reader));
 
     // Set global meter provider
+    std::shared_ptr<metrics_api::MeterProvider> meter_provider = meter_provider_sdk;
     metrics_api::Provider::SetMeterProvider(meter_provider);
 
     std::cout << "OpenTelemetry initialized successfully" << std::endl;
@@ -195,16 +199,21 @@ Create `src/main.cpp`:
 #include "opentelemetry/trace/provider.h"
 #include "opentelemetry/metrics/provider.h"
 #include "opentelemetry/trace/span_startoptions.h"
+#include "opentelemetry/common/attribute_value.h"
 
 #include <iostream>
 #include <thread>
 #include <chrono>
+#include <map>
+#include <string>
 
 namespace trace = opentelemetry::trace;
 namespace metrics = opentelemetry::metrics;
+namespace nostd = opentelemetry::nostd;
 
 // Fibonacci calculation with tracing
-uint64_t fibonacci(int n, const std::shared_ptr<trace::Tracer>& tracer) {
+// v1.14+: GetTracer() returns nostd::shared_ptr, not std::shared_ptr
+uint64_t fibonacci(int n, nostd::shared_ptr<trace::Tracer> tracer) {
     trace::StartSpanOptions options;
     options.kind = trace::SpanKind::kInternal;
 
@@ -269,8 +278,16 @@ int main() {
         std::cout << "Fibonacci(" << i << ") = " << result << std::endl;
 
         // Record metrics
-        request_counter->Add(1, {{"result", std::to_string(result)}});
-        calculation_duration->Record(duration.count(), {{"n", std::to_string(i)}});
+        // v1.14+: attributes require explicit map type; Histogram::Record requires a Context
+        std::map<std::string, opentelemetry::common::AttributeValue> counter_attrs = {
+            {"result", std::to_string(result)}
+        };
+        request_counter->Add(1, counter_attrs);
+
+        std::map<std::string, opentelemetry::common::AttributeValue> hist_attrs = {
+            {"n", std::to_string(i)}
+        };
+        calculation_duration->Record(duration.count(), hist_attrs, opentelemetry::context::Context{});
 
         span->End();
 
