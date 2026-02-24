@@ -55,7 +55,7 @@ class FibonacciApp
             .AddSource("FibonacciApp")
             .AddOtlpExporter(options =>
             {
-                options.Endpoint = new Uri("http://localhost:4318");
+                options.Endpoint = new Uri("http://localhost:4318/v1/traces");
                 options.Protocol = OpenTelemetry.Exporter.OtlpExportProtocol.HttpProtobuf;
             })
             .Build();
@@ -65,7 +65,7 @@ class FibonacciApp
             .AddRuntimeInstrumentation()
             .AddOtlpExporter(options =>
             {
-                options.Endpoint = new Uri("http://localhost:4318");
+                options.Endpoint = new Uri("http://localhost:4318/v1/metrics");
                 options.Protocol = OpenTelemetry.Exporter.OtlpExportProtocol.HttpProtobuf;
             })
             .Build();
@@ -125,7 +125,7 @@ Both providers use the same service name (`fibonacci-service`), which appears as
 Test your instrumented application:
 
 ```bash
-dotnet run 20
+dotnet run -- 20
 ```
 
 The application will calculate 20 Fibonacci numbers and send telemetry to your local collector at `localhost:4318`.
@@ -139,13 +139,14 @@ The application will calculate 20 Fibonacci numbers and send telemetry to your l
 1. Log in to **FusionReactor Cloud**
 2. Navigate to **Explore**:
    - **Traces**: Select `Resource Service Name = fibonacci-service`
-   - **Metrics**: Search for .NET runtime metrics like `process.runtime.dotnet.gc.collections.count{job="fibonacci-service"}`
-   - **Logs**: Filter by `job = fibonacci-service`
+   - **Metrics**: Go to **Explore > Metrics** and search for .NET runtime metrics prefixed with `process_runtime_dotnet` (e.g. `process_runtime_dotnet_gc_collections_count`)
 
 You should see:
 - Trace activities showing the execution flow (`fibonacci-calculation` and iterations)
 - .NET runtime metrics (GC collections, memory usage, thread counts)
-- Console output from your application
+
+!!! info "Logging"
+    This example does not include OTel log export. In .NET, logging integration works best with the hosted service model (ASP.NET Core). See the [Next steps](#next-steps) section for more details.
 
 ## Next steps
 
