@@ -8,7 +8,7 @@ This guide demonstrates how to instrument a Go application with OpenTelemetry to
 ## Prerequisites
 
 * **FusionReactor API Key**: Obtain this from **Account Settings > API Keys** in FusionReactor Cloud.
-* **Docker Desktop**: Ensure Docker is installed and running.
+* **Go**: Go 1.21 or later installed on your system.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your Go application.
 
 !!! tip "Set up your telemetry pipeline first"
@@ -43,15 +43,18 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetrichttp"
 	"go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp"
+	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/propagation"
-	"go.opentelemetry.io/otel/sdk/metric"
+	sdkmetric "go.opentelemetry.io/otel/sdk/metric"
+	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"go.opentelemetry.io/otel/sdk/resource"
-	"go.opentelemetry.io/otel/sdk/trace"
+	sdktrace "go.opentelemetry.io/otel/sdk/trace"
+	"go.opentelemetry.io/otel/trace"
 	semconv "go.opentelemetry.io/otel/semconv/v1.17.0"
 )
 
 var (
-	endpoint       = "otelcollector:4318"
+	endpoint       = "localhost:4318"
 	serviceName    = "test-go-server-http"
 	serviceVersion = "0.1.0"
 	environment    = "dev"
@@ -63,11 +66,15 @@ var (
 Add a function to configure metrics export:
 
 ```go
-func setupMetrics(ctx context.Context) (*metric.MeterProvider, error) {
+func setupMetrics(ctx context.Context) (*sdkmetric.MeterProvider, error) {
 	exporter, err := otlpmetrichttp.New(
 		ctx,
 		otlpmetrichttp.WithInsecure(),
 		otlpmetrichttp.WithEndpoint(endpoint),
+		// FusionReactor Cloud is Prometheus-based and requires Cumulative temporality
+		otlpmetrichttp.WithTemporalitySelector(func(kind sdkmetric.InstrumentKind) metricdata.Temporality {
+			return metricdata.CumulativeTemporality
+		}),
 	)
 	if err != nil {
 		return nil, err
@@ -81,11 +88,11 @@ func setupMetrics(ctx context.Context) (*metric.MeterProvider, error) {
 		attribute.String("environment", environment),
 	)
 
-	mp := metric.NewMeterProvider(
-		metric.WithResource(res),
-		metric.WithReader(
+	mp := sdkmetric.NewMeterProvider(
+		sdkmetric.WithResource(res),
+		sdkmetric.WithReader(
 			// Export metrics every 5 seconds
-			metric.NewPeriodicReader(exporter, metric.WithInterval(5*time.Second)),
+			sdkmetric.NewPeriodicReader(exporter, sdkmetric.WithInterval(5*time.Second)),
 		),
 	)
 
@@ -99,7 +106,7 @@ func setupMetrics(ctx context.Context) (*metric.MeterProvider, error) {
 Add a function to configure trace export:
 
 ```go
-func setupTracing(ctx context.Context) (*trace.TracerProvider, error) {
+func setupTracing(ctx context.Context) (*sdktrace.TracerProvider, error) {
 	exporter, err := otlptracehttp.New(
 		ctx,
 		otlptracehttp.WithInsecure(),
@@ -117,9 +124,9 @@ func setupTracing(ctx context.Context) (*trace.TracerProvider, error) {
 		attribute.String("environment", environment),
 	)
 
-	tp := trace.NewTracerProvider(
-		trace.WithBatcher(exporter),
-		trace.WithResource(res),
+	tp := sdktrace.NewTracerProvider(
+		sdktrace.WithBatcher(exporter),
+		sdktrace.WithResource(res),
 	)
 
 	otel.SetTracerProvider(tp)
@@ -212,11 +219,19 @@ func main() {
     **If you see:** `connection refused` or `dial tcp: connect: connection refused`
     **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
-## Step 4: Verify in FusionReactor Cloud
+## Step 4: Run the application
+
+Run your instrumented application:
+
+```bash
+go run .
+```
+
+## Step 5: Verify in FusionReactor Cloud
 
 1. **View in FusionReactor Cloud**:
    - Navigate to **Explore > Traces** to see your Go application traces
-   - Navigate to **Explore > Metrics** and search for `demo.counter` to see the counter metric
+   - Navigate to **Explore > Metrics** and search for `demo_counter` to see the counter metric
    - Your service should appear as `test-go-server-http`
 
 ## Next steps
