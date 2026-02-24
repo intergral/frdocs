@@ -47,8 +47,8 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.semconv.resource import ResourceAttributes
 
 # Metric Imports
-from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader
-from opentelemetry.sdk.metrics import MeterProvider
+from opentelemetry.sdk.metrics.export import PeriodicExportingMetricReader, AggregationTemporality
+from opentelemetry.sdk.metrics import MeterProvider, Counter, UpDownCounter, Histogram, ObservableCounter, ObservableUpDownCounter, ObservableGauge
 from opentelemetry.metrics import set_meter_provider, get_meter_provider
 
 # Logs Imports
@@ -113,7 +113,16 @@ def initialize_otel(endpoint: str) -> tuple:
     )
 
     # Initialize Metrics
-    exporter = OTLPMetricExporter(endpoint=endpoint + "/v1/metrics")
+    # FusionReactor Cloud is Prometheus-based and requires Cumulative temporality
+    cumulative = {
+        Counter: AggregationTemporality.CUMULATIVE,
+        UpDownCounter: AggregationTemporality.CUMULATIVE,
+        Histogram: AggregationTemporality.CUMULATIVE,
+        ObservableCounter: AggregationTemporality.CUMULATIVE,
+        ObservableUpDownCounter: AggregationTemporality.CUMULATIVE,
+        ObservableGauge: AggregationTemporality.CUMULATIVE,
+    }
+    exporter = OTLPMetricExporter(endpoint=endpoint + "/v1/metrics", preferred_temporality=cumulative)
     reader = PeriodicExportingMetricReader(exporter)
     meter_provider = MeterProvider(metric_readers=[reader], resource=resource)
     set_meter_provider(meter_provider)
@@ -149,6 +158,11 @@ if __name__ == "__main__":
     logging.info(f'Fibonacci by Iteration - {iters} rounds')
     fib(iters)
     logging.info("Fibonacci complete")
+
+    # Flush and shut down providers to ensure all telemetry is exported before exit
+    TRACER_PROVIDER.shutdown()
+    METER_PROVIDER.shutdown()
+    LOG_PROVIDER.shutdown()
 ```
 
 ### How the code works
@@ -188,12 +202,12 @@ The application will calculate 20 Fibonacci numbers and send telemetry to your l
 1. Log in to **FusionReactor Cloud**
 2. Navigate to **Explore**:
    - **Traces**: Select `Resource Service Name = fib_by_iteration`
-   - **Metrics**: Search for `fib_iteration_counter_total{job="fib_by_iteration"}`
+   - **Metrics**: Go to **Explore > Metrics**, select `fib_iteration_counter`, and run the query. Filter by `job = fib_by_iteration` to scope to your service.
    - **Logs**: Filter by `job = fib_by_iteration`
 
 You should see:
 - Trace spans showing the execution flow (`fib-outer` and `fib-inner`)
-- A counter metric tracking iterations
+- A counter metric showing the total number of iterations
 - Log entries for each Fibonacci number calculated
 
 ## Next steps
