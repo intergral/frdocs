@@ -2,28 +2,57 @@
 
 This guide demonstrates how to instrument a Node.js application with OpenTelemetry to send traces, metrics, and logs to FusionReactor Cloud.
 
+<iframe src="https://player.vimeo.com/video/816527416?h=34c72de814" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/816527416">Instrumenting a Go app using OpenTelemetry</a> from <a href="https://vimeo.com/user109619720">FusionReactorAPM</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 ## Prerequisites
 
 * **FusionReactor API Key**: Obtain this from **Account Settings > API Keys** in FusionReactor Cloud.
-* **Node.js**: Node.js 18 or later installed on your system.
+* **Docker Desktop**: [Install Docker Desktop](https://www.docker.com/products/docker-desktop/) to build and run the application container.
 * **Telemetry Pipeline**: You must have either an [OpenTelemetry Collector](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) configured and running to receive data from your Node.js application.
 
 !!! tip "Set up your telemetry pipeline first"
     Before instrumenting your Node.js application, ensure you have completed either the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/) or [Grafana Alloy setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Grafana-agent/) so your telemetry data has a destination.
 
-## Step 1: Install dependencies
+## Step 1: Set up your project
 
-Create a new Node.js project and install the required OpenTelemetry packages:
+Create a new directory for your project and add the following files.
 
-```bash
-npm init -y
-npm install express
-npm install @opentelemetry/sdk-node
-npm install @opentelemetry/auto-instrumentations-node
-npm install @opentelemetry/exporter-trace-otlp-http
-npm install @opentelemetry/exporter-metrics-otlp-http
-npm install @opentelemetry/exporter-logs-otlp-http
-npm install @opentelemetry/api-logs
+**`package.json`** — defines the project and its OpenTelemetry dependencies:
+
+```json
+{
+  "name": "node-otel-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node -r ./tracing.js app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "@opentelemetry/sdk-node": "^0.57.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.57.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.57.0",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.57.0",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.57.0",
+    "@opentelemetry/api-logs": "^0.57.0",
+    "@opentelemetry/sdk-logs": "^0.57.0",
+    "@opentelemetry/sdk-metrics": "^1.30.0",
+    "@opentelemetry/resources": "^1.30.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0"
+  }
+}
+```
+
+**`Dockerfile`** — builds and runs the application:
+
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+COPY tracing.js app.js ./
+EXPOSE 3000
+CMD ["npm", "start"]
 ```
 
 ## Step 2: Configure OpenTelemetry
@@ -101,14 +130,35 @@ Create a file named `app.js` with a simple Express server:
 ```javascript
 // app.js - Simple Express application with custom instrumentation
 const express = require('express');
-const { trace, metrics, context } = require('@opentelemetry/api');
+const { trace, metrics } = require('@opentelemetry/api');
+const { logs, SeverityNumber } = require('@opentelemetry/api-logs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Get tracer and meter
+// Get tracer, meter and logger
 const tracer = trace.getTracer('node-otel-demo');
 const meter = metrics.getMeter('node-otel-demo');
+const logger = logs.getLogger('node-otel-demo');
+
+// Helper to emit log records
+function logInfo(message, attributes = {}) {
+  logger.emit({
+    severityNumber: SeverityNumber.INFO,
+    severityText: 'INFO',
+    body: message,
+    attributes,
+  });
+}
+
+function logError(message, attributes = {}) {
+  logger.emit({
+    severityNumber: SeverityNumber.ERROR,
+    severityText: 'ERROR',
+    body: message,
+    attributes,
+  });
+}
 
 // Create custom metrics
 const requestCounter = meter.createCounter('http_requests_total', {
@@ -147,7 +197,7 @@ app.get('/', (req, res) => {
   span.setAttribute('http.method', 'GET');
   span.setAttribute('http.route', '/');
 
-  console.log('Handling root request');
+  logInfo('Handling root request');
   res.json({ message: 'Hello from OpenTelemetry instrumented Node.js app!' });
 
   span.end();
@@ -164,13 +214,13 @@ app.get('/fibonacci/:n', (req, res) => {
     }
 
     const result = fibonacci(n);
-    console.log(`Calculated Fibonacci(${n}) = ${result}`);
+    logInfo(`Calculated Fibonacci(${n}) = ${result}`, { 'fibonacci.n': n, 'fibonacci.result': result });
 
     res.json({ n, result });
   } catch (error) {
     span.recordException(error);
     span.setStatus({ code: 2, message: error.message });
-    console.error(`Error calculating Fibonacci: ${error.message}`);
+    logError(`Error calculating Fibonacci: ${error.message}`, { error: error.message });
     res.status(400).json({ error: error.message });
   } finally {
     span.end();
@@ -205,38 +255,33 @@ app.listen(PORT, () => {
 });
 ```
 
-## Step 4: Create startup script
+## Step 4: Add to Docker Compose
 
-Create a `package.json` script to ensure tracing is loaded first:
+Add the following service to your `docker-compose.yml` alongside the collector:
 
-```json
-{
-  "name": "node-otel-demo",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "node -r ./tracing.js app.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "@opentelemetry/sdk-node": "^0.45.0",
-    "@opentelemetry/auto-instrumentations-node": "^0.39.0",
-    "@opentelemetry/exporter-trace-otlp-http": "^0.45.0",
-    "@opentelemetry/exporter-metrics-otlp-http": "^0.45.0",
-    "@opentelemetry/exporter-logs-otlp-http": "^0.45.0",
-    "@opentelemetry/api-logs": "^0.45.0"
-  }
-}
+```yaml
+  node-otel-demo:
+    build: ./node/otel-demo
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4318
+    ports:
+      - "3000:3000"
+    depends_on:
+      - otel-collector
 ```
 
-## Step 5: Run locally
+!!! warning "Insecure configuration"
+    The example above uses an unencrypted connection to the local collector. In production, configure TLS and use secure authentication with your API key.
 
-Start your instrumented application:
+## Step 5: Run with Docker Compose
+
+Build and start the application:
 
 ```bash
-npm start
+docker compose up --build node-otel-demo
 ```
 
-Test the endpoints:
+The application starts an Express server on port 3000. Send some test requests to generate telemetry:
 
 ```bash
 # Test root endpoint
@@ -245,27 +290,19 @@ curl http://localhost:3000/
 # Calculate Fibonacci
 curl http://localhost:3000/fibonacci/20
 
-# Check health
-curl http://localhost:3000/health
+# Generate more traffic
+for i in {1..10}; do curl http://localhost:3000/fibonacci/$i; done
 ```
 
-The application will send telemetry to your local collector at `localhost:4318`.
-
 !!! warning "Cannot connect to collector?"
-    **If you see:** `ECONNREFUSED` or `connect ECONNREFUSED 127.0.0.1:4318`
+    **If you see:** `ECONNREFUSED` or `connect ECONNREFUSED`
     **Fix:** Your collector is not running. Start it first using the [Collector setup guide](/Monitor-your-data/OpenTelemetry/Shipping/Collector/).
 
 ## Step 6: Verify in FusionReactor Cloud
 
-1. Generate some traffic:
-   ```bash
-   # Make several requests
-   for i in {1..10}; do curl http://localhost:3000/fibonacci/$i; done
-   ```
+1. Log in to **FusionReactor Cloud**
 
-2. Log in to **FusionReactor Cloud**
-
-3. Navigate to **Explore**:
+2. Navigate to **Explore**:
    - **Traces**: Select `Resource Service Name = node-otel-demo`
    - **Metrics**: Search for `http_requests_total{job="node-otel-demo"}`
    - **Logs**: Filter by `job = node-otel-demo`
