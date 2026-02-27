@@ -7,7 +7,7 @@ Each notification group will be in one of the following states:
 | State | Description |
 | --- | --- |
 | **Active** | The alert is firing and notifications are being delivered to the configured contact point. |
-| **Suppressed** | The alert is firing but notifications are being held back by a **Silence** or **Mute Timing**. The alert is still visible here but no messages are being sent. |
+| **Suppressed** | The alert is firing but notifications are being held back by a **[Silence](Silences.md)** or **[Mute Timing](Mute-timings.md)**. The alert is still visible here but no messages are being sent. |
 | **Unprocessed** | The alert has been received by the Alertmanager but has not yet been matched to a notification policy. |
 
 ## Viewing Active Notifications
@@ -47,4 +47,4 @@ You can create a silence directly from an active notification without navigating
 4. Click **Submit** to suppress notifications immediately.
 
 !!! info "Learn more"
-    [View and manage firing alerts](https://grafana.com/docs/grafana/latest/alerting/monitor-status/view-alert-rules/)
+    [View and manage firing alerts](https://grafana.com/docs/grafana/latest/alerting/monitor-status/view-alert-state/)

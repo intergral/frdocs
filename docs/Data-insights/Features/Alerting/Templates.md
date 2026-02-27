@@ -22,7 +22,7 @@ Use templating to transform raw technical metrics—like heap usage or slow requ
 
 ## Notification Templates
 
-Managed in the [Contact Points](/Data-insights/Features/Alerting/Contact-points/) section, these define the wrapper or envelope for your notifications.
+Managed in the [Contact Points](Contact-points.md) section, these define the wrapper or envelope for your notifications.
 
 * **Purpose:** Ensure every Slack alert from FusionReactor has the same layout, icon, or link to your runbooks.
 * **Centralization:** Instead of writing the same Slack block for 50 different alert rules, you define it once in a **Notification Template** and reuse it across all FusionReactor alerts.

@@ -200,18 +200,18 @@ nav:
         - Alerts & Anomaly Detection:
             - Alerts:
                - Overview: Data-insights/Features/Alerting/Alerts-overview.md
-               - Rules:
-                  - Alert Rules: Data-insights/Features/Alerting/Alert-Rules/Rules-overview.md
-                  - Configure Alert Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
-               - Notifications:
-                  - Contact Points:
-                     - Overview: Data-insights/Features/Alerting/Contact-points.md
-                     - Notification Templates: Data-insights/Features/Alerting/Templates.md
-                  - Notification Policies:
-                     - Overview: Data-insights/Features/Alerting/Notifications.md
-                     - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
+               - Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
+               - Contact Points:
+                  - Overview: Data-insights/Features/Alerting/Contact-points.md
+                  - Notification Templates: Data-insights/Features/Alerting/Templates.md
+               - Notification Policy:
+                  - Overview: Data-insights/Features/Alerting/Notifications.md
+                  - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
                - Silences: Data-insights/Features/Alerting/Silences.md
                - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
+               - Examples: Data-insights/Features/alerting-examples.md
+               - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
+               - FAQ: Data-insights/Features/Alerting/FAQ.md
             - Anomaly Detection:
                - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md

@@ -1,4 +1,4 @@
-**Contact points** define where and how FusionReactor sends alert notifications. Each contact point contains one or more integrations, such as, Slack, Email, or PagerDuty, and can be assigned directly to an alert rule or routed via notification policies.
+**Contact points** define where and how FusionReactor sends alert notifications. Each contact point contains one or more integrations, such as, Slack, Email, or PagerDuty, and can be assigned directly to an [alert rule](Alert-Rules/Configure-rules.md) or routed via [notification policies](Notifications.md).
 
 ## What are Contact Points?
 
@@ -23,8 +23,7 @@ Grafana supports dozens of platforms, including **Slack, Microsoft Teams, Email,
 
 ## Configure Contact Points
 
-To configure Contact Points, define the destinations where your alerts should be sent, such as Slack, Email, or PagerDuty. You can combine multiple services into a single contact point to ensure the right people are notified across different platforms simultaneously.
-
+Create one contact point per notification destination. Notification policies will route alerts to the correct contact point based on the `channel` label on your alert rules — see [Notification Policies](Notifications.md) for the recommended routing setup.
 
 ### How to Add a Contact Point
 
@@ -52,7 +51,7 @@ If you want one alert to go to multiple places at once (such as, Email *and* a W
 
 ## Notification Templates
 
-Notification templates allow you to define reusable message formats for your contact point integrations. Instead of writing a custom message for every alert rule, you define the template once and reference it across multiple contact points.
+[Notification templates](Templates.md) allow you to define reusable message formats for your contact point integrations. Instead of writing a custom message for every alert rule, you define the template once and reference it across multiple contact points.
 
 To create and manage templates, navigate to **Alerting** > **Contact Points** and select the **Notification templates** tab.
 
