@@ -1,9 +1,6 @@
-
-![Screenshot](../../images/Anomaly-detection/anomalyreport.png)
+![!Screenshot](../../images/Anomaly-detection/anomalyreport.png)
 
 ## What is anomaly detection?
-
-
 
 Anomaly detection is an algorithmic capability designed to recognize instances when a metric displays behavior that diverges from its historical patterns. This process considers trends, seasonal variations, and time-of-day patterns. It is particularly effective for metrics exhibiting robust trends and recurring patterns, which are challenging to monitor using threshold-based alerting systems.
 
@@ -11,29 +8,26 @@ Anomaly detection is an algorithmic capability designed to recognize instances w
 
 In monitoring systems, potential anomalies can manifest across various vectors, with the most common examples including:
 
-| Type         | Description     | 
-|--------------|-----------|
-| **Response delays** | Unexpected increases in server response time compared to historical measurements or anticipated benchmarks.|
-|**Resource usage peaks** | Sudden spikes in CPU, RAM, disk, or network utilization during performance assessments.|
-|**Transaction errors**| Elevated occurrences of errors like 500 (server errors) or 404 (not found) that were absent in prior tests.|
-|**Connection limits** | Instances where the system reaches its maximum allowable concurrent connections, resulting in the rejection of new requests.|
-|**Database replication errors** | Delays or failures in replicating data between clusters or servers.|
-|**Sudden throughput reduction**| Decreases in the number of requests processed per second, even without reaching the system's theoretical maximum capacity.|
-
+| Type | Description |
+| --- | --- |
+| **Response delays** | Unexpected increases in server response time compared to historical measurements or anticipated benchmarks. |
+| **Resource usage peaks** | Sudden spikes in CPU, RAM, disk, or network utilization during performance assessments. |
+| **Transaction errors** | Elevated occurrences of errors such as, 500 (server errors) or 404 (not found) that were absent in prior tests. |
+| **Connection limits** | Instances where the system reaches its maximum allowable concurrent connections, resulting in the rejection of new requests. |
+| **Database replication errors** | Delays or failures in replicating data between clusters or servers. |
+| **Sudden throughput reduction** | Decreases in the number of requests processed per second, even without reaching the system's theoretical maximum capacity. |
 
 In summary, anomalies can emerge in various facets of system operation and can be categorized by their nature:
 
-| Type         | Description     | 
-|--------------|-----------|
-|Outliers| Brief, minor irregularities that sporadically surface during data collection.|
-|Event shifts | Systematic or sudden alterations relative to established patterns of behavior.|
-|Drifts | Gradual, directionless, long-term shifts in data trends.|
+| Type | Description |
+| --- | --- |
+| **Outliers** | Brief, minor irregularities that sporadically surface during data collection. |
+| **Event shifts** | Systematic or sudden alterations relative to established patterns of behavior. |
+| **Drifts** | Gradual, directionless, long-term shifts in data trends. |
 
 Understanding and categorizing anomalies is crucial for effective system monitoring and troubleshooting.
 
-
-
-## Benefits 
+## Benefits
 
 * **Early issue identification**: Anomaly detection helps identify deviations from normal behavior or patterns in data, allowing organizations to detect issues at an early stage before they escalate into significant problems.
 
@@ -56,13 +50,3 @@ ___
 
 !!! question "Need more help?"
     Contact support in the chat bubble and let us know how we can assist.
-
-
-
-
-
-
-
-
-
-
