@@ -80,3 +80,8 @@
 }
   
 
+/* This targets all ordered lists and turns the numbers red */
+ol li::marker {
+  color: #53AFDA;
+  font-weight: bold;
+}
