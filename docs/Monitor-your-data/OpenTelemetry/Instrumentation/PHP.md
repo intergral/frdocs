@@ -37,17 +37,20 @@ Create a file named `otel-bootstrap.php` to configure OpenTelemetry:
 
 require 'vendor/autoload.php';
 
-use OpenTelemetry\API\Globals;
 use OpenTelemetry\API\Trace\Propagation\TraceContextPropagator;
+use OpenTelemetry\SDK\Sdk;
 use OpenTelemetry\SDK\Trace\TracerProvider;
-use OpenTelemetry\SDK\Trace\SpanProcessor\BatchSpanProcessor;
+use OpenTelemetry\SDK\Trace\SpanProcessor\SimpleSpanProcessor;
 use OpenTelemetry\SDK\Resource\ResourceInfoFactory;
 use OpenTelemetry\SDK\Resource\ResourceInfo;
 use OpenTelemetry\SDK\Common\Attribute\Attributes;
 use OpenTelemetry\Contrib\Otlp\SpanExporter;
 use OpenTelemetry\Contrib\Otlp\MetricExporter;
+use OpenTelemetry\Contrib\Otlp\LogsExporter;
 use OpenTelemetry\SDK\Metrics\MeterProvider;
 use OpenTelemetry\SDK\Metrics\MetricReader\ExportingReader;
+use OpenTelemetry\SDK\Logs\LoggerProvider;
+use OpenTelemetry\SDK\Logs\Processor\SimpleLogRecordProcessor;
 use OpenTelemetry\SDK\Common\Export\Http\PsrTransportFactory;
 
 // Get OTLP endpoint from environment or use default
@@ -61,49 +64,52 @@ $resource = ResourceInfoFactory::emptyResource()->merge(
     ]))
 );
 
+$transportFactory = new PsrTransportFactory();
+
 // Configure trace exporter
-$transport = (new PsrTransportFactory())->create(
-    $otlpEndpoint . '/v1/traces',
-    'application/json'
+$spanExporter = new SpanExporter(
+    $transportFactory->create($otlpEndpoint . '/v1/traces', 'application/json')
 );
 
-$spanExporter = new SpanExporter($transport);
-
-// Create tracer provider
 $tracerProvider = TracerProvider::builder()
-    ->addSpanProcessor(
-        new BatchSpanProcessor($spanExporter)
-    )
+    ->addSpanProcessor(new SimpleSpanProcessor($spanExporter))
     ->setResource($resource)
     ->build();
-
-// Set global tracer provider
-Globals::registerInitializer(function () use ($tracerProvider) {
-    return $tracerProvider;
-});
 
 // Configure metric exporter
-$metricTransport = (new PsrTransportFactory())->create(
-    $otlpEndpoint . '/v1/metrics',
-    'application/json'
+$metricExporter = new MetricExporter(
+    $transportFactory->create($otlpEndpoint . '/v1/metrics', 'application/json')
 );
 
-$metricExporter = new MetricExporter($metricTransport);
-
-// Create meter provider
-$metricReader = new ExportingReader($metricExporter);
 $meterProvider = MeterProvider::builder()
     ->setResource($resource)
-    ->addReader($metricReader)
+    ->addReader(new ExportingReader($metricExporter))
     ->build();
 
-// Set global meter provider
-Globals::registerInitializer(function () use ($meterProvider) {
-    return $meterProvider;
-});
+// Configure logs exporter
+$logsExporter = new LogsExporter(
+    $transportFactory->create($otlpEndpoint . '/v1/logs', 'application/json')
+);
 
-// Configure trace context propagation
-TraceContextPropagator::getInstance();
+$loggerProvider = LoggerProvider::builder()
+    ->setResource($resource)
+    ->addLogRecordProcessor(new SimpleLogRecordProcessor($logsExporter))
+    ->build();
+
+// Register all providers globally (single call — avoids overwriting)
+Sdk::builder()
+    ->setTracerProvider($tracerProvider)
+    ->setMeterProvider($meterProvider)
+    ->setLoggerProvider($loggerProvider)
+    ->setPropagator(TraceContextPropagator::getInstance())
+    ->buildAndRegisterGlobal();
+
+// Flush all providers when the PHP process exits
+register_shutdown_function(function () use ($tracerProvider, $meterProvider, $loggerProvider) {
+    $tracerProvider->shutdown();
+    $meterProvider->shutdown();
+    $loggerProvider->shutdown();
+});
 
 echo "OpenTelemetry initialized successfully\n";
 ```
@@ -118,12 +124,14 @@ Create a file named `index.php` with a simple web application:
 require 'otel-bootstrap.php';
 
 use OpenTelemetry\API\Globals;
+use OpenTelemetry\API\Logs\LogRecord;
 use OpenTelemetry\API\Trace\SpanKind;
 use OpenTelemetry\API\Trace\StatusCode;
 
-// Get tracer and meter
+// Get tracer, meter, and logger
 $tracer = Globals::tracerProvider()->getTracer('php-otel-demo', '1.0.0');
 $meter = Globals::meterProvider()->getMeter('php-otel-demo', '1.0.0');
+$logger = Globals::loggerProvider()->getLogger('php-otel-demo', '1.0.0');
 
 // Create custom metrics
 $requestCounter = $meter->createCounter(
@@ -147,20 +155,27 @@ $rootSpan->setAttribute('http.method', $_SERVER['REQUEST_METHOD'] ?? 'GET');
 $rootSpan->setAttribute('http.url', $_SERVER['REQUEST_URI'] ?? '/');
 $rootSpan->setAttribute('http.user_agent', $_SERVER['HTTP_USER_AGENT'] ?? 'unknown');
 
+// Activate the root span so child spans are linked to it
+$rootScope = $rootSpan->activate();
+
 $startTime = microtime(true);
 
 try {
     // Route handling
     $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 
+    $logger->emit((new LogRecord('Incoming request'))
+        ->setSeverityText('INFO')
+        ->setAttributes(['http.method' => $_SERVER['REQUEST_METHOD'] ?? 'GET', 'http.path' => $path]));
+
     switch ($path) {
         case '/':
-            handleHome($tracer);
+            handleHome($tracer, $logger);
             break;
 
         case '/fibonacci':
             $n = isset($_GET['n']) ? (int)$_GET['n'] : 10;
-            handleFibonacci($tracer, $n);
+            handleFibonacci($tracer, $logger, $n);
             break;
 
         case '/health':
@@ -182,6 +197,10 @@ try {
     $rootSpan->recordException($e);
     $rootSpan->setStatus(StatusCode::STATUS_ERROR, $e->getMessage());
 
+    $logger->emit((new LogRecord($e->getMessage()))
+        ->setSeverityText('ERROR')
+        ->setAttributes(['exception.type' => get_class($e)]));
+
 } finally {
     $duration = (microtime(true) - $startTime) * 1000;
 
@@ -198,10 +217,14 @@ try {
     ]);
 
     $rootSpan->end();
+    $rootScope->detach();
 }
 
-function handleHome($tracer) {
+function handleHome($tracer, $logger) {
     $span = $tracer->spanBuilder('handle-home')->startSpan();
+    $scope = $span->activate();
+
+    $logger->emit((new LogRecord('Handling home request'))->setSeverityText('INFO'));
 
     header('Content-Type: application/json');
     echo json_encode([
@@ -214,10 +237,12 @@ function handleHome($tracer) {
     ]);
 
     $span->end();
+    $scope->detach();
 }
 
-function handleFibonacci($tracer, $n) {
+function handleFibonacci($tracer, $logger, $n) {
     $span = $tracer->spanBuilder('handle-fibonacci')->startSpan();
+    $scope = $span->activate();
     $span->setAttribute('fibonacci.n', $n);
 
     if ($n < 0 || $n > 50) {
@@ -226,6 +251,10 @@ function handleFibonacci($tracer, $n) {
 
     $result = calculateFibonacci($tracer, $n);
 
+    $logger->emit((new LogRecord('Fibonacci calculated'))
+        ->setSeverityText('INFO')
+        ->setAttributes(['fibonacci.n' => $n, 'fibonacci.result' => $result]));
+
     header('Content-Type: application/json');
     echo json_encode([
         'n' => $n,
@@ -233,10 +262,12 @@ function handleFibonacci($tracer, $n) {
     ]);
 
     $span->end();
+    $scope->detach();
 }
 
 function calculateFibonacci($tracer, $n) {
     $span = $tracer->spanBuilder('fibonacci-calculation')->startSpan();
+    $scope = $span->activate();
     $span->setAttribute('iteration.count', $n);
 
     $a = 0;
@@ -249,6 +280,7 @@ function calculateFibonacci($tracer, $n) {
     }
 
     $span->end();
+    $scope->detach();
     return $a;
 }
 
@@ -301,12 +333,14 @@ The application will send telemetry to your local collector at `localhost:4318`.
 3. Navigate to **Explore**:
    - **Traces**: Select `Resource Service Name = php-otel-demo`
    - **Metrics**: Search for `http_requests_total{job="php-otel-demo"}`
+   - **Logs**: Filter by `service.name = php-otel-demo`
 
 You should see:
 - Trace spans for each HTTP request
 - Nested spans showing request handling and Fibonacci calculation
 - Metrics tracking request counts and durations
 - Span attributes showing HTTP method, URL, and user agent
+- Log records correlated to each request
 
 ## Next steps
 
