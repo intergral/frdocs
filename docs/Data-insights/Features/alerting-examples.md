@@ -25,7 +25,7 @@ Each example below covers both options in the notifications step.
 
 This rule monitors all FusionReactor instances on your Cloud license and fires when any of them stops reporting data.
 
-Offline detection uses the built-in **No Data** state — when an instance goes offline its metrics disappear, the query returns no data, and the rule fires automatically. No special functions are required.
+Offline detection works in two ways: if `app_up` drops to `0`, the alert condition (**IS BELOW 1**) triggers directly. If the instance stops reporting entirely and metrics disappear, the **No Data → Alerting** setting fires the alert. Both cases are covered by this rule.
 
 Because the rule produces one alert instance per time series, each FusionReactor instance is monitored independently. If one instance goes offline, only that instance's alert fires.
 
@@ -40,8 +40,8 @@ Enter a name such as `Any Instance Offline`.
 **2. Query and condition**
 
 - Select your FusionReactor data source.
-- Select the `up` metric. Leave instance and job filters unset to monitor all instances.
-- Set the alert condition to **IS ABOVE 0**. While online, this metric is always `1`. The alert fires when data disappears, handled by the No Data setting below.
+- Select the `app_up` metric. Leave instance and job filters unset to monitor all instances.
+- Set the alert condition to **IS BELOW 1**. When an instance is online, `app_up` returns `1` — so the condition is false and the alert stays normal. When an instance goes offline, `app_up` drops to `0` or stops reporting entirely, which triggers the alert.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -89,8 +89,8 @@ Enter a name such as `Instance Offline — [instance name]`.
 **2. Query and condition**
 
 - Select your FusionReactor data source.
-- Select the `up` metric and filter by the specific **Job** or **Instance** label you want to monitor (such as, `instance = "production-server-01"`).
-- Set the alert condition to **IS ABOVE 0**.
+- Select the `app_up` metric and filter by the specific **Job** or **Instance** label you want to monitor (such as, `instance = "production-server-01"`).
+- Set the alert condition to **IS BELOW 1**. When the instance is online, `app_up` returns `1` — so the condition is false and the alert stays normal. When the instance goes offline, `app_up` drops to `0` or stops reporting, which triggers the alert.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
