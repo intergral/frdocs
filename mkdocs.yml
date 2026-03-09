@@ -205,7 +205,8 @@ nav:
         - Katie - Kubernetes tooling for AI:
             - Overview: Monitor-your-data/Katie/overview.md
             - Install MCP: Monitor-your-data/Katie/install.md
-  - FEATURES: 
+  - FEATURES:
+        - Overview: Data-insights/Features/overview.md
        # - Data-insights/Features/account.md
         - Alerts & Anomaly Detection:
             - Alerts:
