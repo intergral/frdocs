@@ -1,5 +1,35 @@
 # What's New in FusionReactor
 
+## FusionReactor Cloud is now OpsPilot
+
+**Published: March 9, 2026**
+
+FusionReactor Cloud is officially becoming **OpsPilot**.
+
+Your account, pricing, integrations, and support team remain exactly as they were. What's changing is the identity of the platform — and for good reason.
+
+OpsPilot has been the AI engine at the heart of the product for the past three years. As the platform grew to proactively guide teams, score stack health, investigate incidents, and deliver prioritised recommendations, it became clear that OpsPilot wasn't just a feature. It was the product. The rename reflects that reality.
+
+### What's new in this release
+
+Alongside the rebrand, this is the biggest UI update in FusionReactor's history:
+
+- **Fully refreshed interface** - Modern, unified, and designed for clarity
+- **Side navigation** - Faster and more intuitive product navigation
+- **Full mobile and tablet support** - The navigation is now fully responsive
+- **Multi-tenancy built in** - Seamless switching between multiple organisations
+- **New homepage** - Clear summaries, current statuses, and onboarding guidance
+- **Alerting engine front and centre** - Easier to configure, monitor, and act on alerts
+- **Improved Servers view** - Now the default view, with real-time and historic data side by side and built-in crash protection analysis
+- **OpsPilot AI throughout the product** - AI-powered chat and analysis accessible from anywhere in the product
+
+!!! note
+    To get the most out of these new features, we recommend upgrading to the **FusionReactor Agent 2025.2** release.
+
+### What comes next
+
+The roadmap for 2026 is anchored around AI and OpenTelemetry — deeper AI-powered investigation and root cause analysis, broader OpenTelemetry support across languages and frameworks, and more intelligence built into every layer of the product.
+
 ### FusionReactor 2025.2.1 released
 
 - Added support for Jersey classes that use Jakarta  (e.g. ColdFusion REST) while also prevent errors.
