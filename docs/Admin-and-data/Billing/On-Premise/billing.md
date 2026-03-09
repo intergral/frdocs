@@ -8,7 +8,7 @@ FusionReactor is available in 2 editions with or without Cloud features:
 |**Edition**| **Annual** | **Monthly** | 
 |------------ | ------------- | ------------ | 
 | Ultimate | $79 | $95 |
-| Developer | $19 | $22 |
+| Developer | $22 | $25 |
 
 Each edition utilizes the same powerful agent, ensuring a consistent and efficient monitoring experience across all environments. You can purchase as many Ultimate/Developer seats you need and assign them to a license.
 
@@ -29,7 +29,7 @@ Developer on-premise edition has the same features as Ultimate, but should be ex
 
 |**Edition**| **Annual** | **Monthly** | 
 |------------ | ------------- | ------------ | 
-| Developer | $19 | $22 |
+| Developer | $22 | $25 |
 
 
 ## What is a seat? 
