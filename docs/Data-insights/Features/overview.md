@@ -10,13 +10,13 @@ If your account has no data yet, each section of the Overview displays a **Get S
 
 ![!Screenshot](../../Data-insights/Features/images/New-account-overview.png)
 
-| Section | Prompt | Action |
-|---|---|---|
-| **Services** | You'll need an API key to instrument your application with OpenTelemetry. | **Create** - generates an API key |
-| **Servers** | Install FusionReactor on your servers to start monitoring. You'll need a license key. | **View docs** - opens the installation guide |
-| **Applications** | Install FusionReactor to monitor your applications. You'll need a license key. | **View docs** - opens the installation guide |
-| **Alerts** | Configure alert rules to monitor your infrastructure. | **Create** - opens the alert rules editor |
-| **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. | **Enable** - activates anomaly detection |
+| Section | Prompt |
+|---|---|
+| **Services** | You'll need an API key to instrument your application with OpenTelemetry. |
+| **Servers** | Install FusionReactor on your servers to start monitoring. You'll need a license key. |
+| **Applications** | Install FusionReactor to monitor your applications. You'll need a license key. |
+| **Alerts** | Configure alert rules to monitor your infrastructure. |
+| **Anomaly Detection** | Enable anomaly detection to automatically detect unusual behavior in your data. |
 
 The **Servers** and **Applications** prompts also display your **FusionReactor Cloud license key** directly on the page so you can copy it for use during agent installation.
 
