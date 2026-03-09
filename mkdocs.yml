@@ -423,7 +423,7 @@ nav:
             - Sessions: Data-insights/Features/UEM/Sessions.md
             - Data-insights/Features/UEM/Settings.md
         - FAQs & troubleshooting:
-            - Cloud: 
+            - Cloud:
               - Troubleshooting/logging-regex-pattern-hints.md
               - Troubleshooting cloud connections: Troubleshooting/trouble.md
               - Troubleshooting/Cloud-historical-data.md
@@ -432,6 +432,7 @@ nav:
               - Troubleshooting/Cloud-find-slow-pages.md
               - Troubleshooting/Cloud-offline.md
               - Troubleshooting/cloud-storing-logs.md
+              - FusionReactor Cloud Has Moved: Troubleshooting/Cloud-has-moved.md
             - On-Premise:  
               - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
               - Troubleshooting/Resetting-Instance-Password.md #onprem
