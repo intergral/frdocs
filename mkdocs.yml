@@ -215,26 +215,25 @@ nav:
         - Metrics Drilldown: Data-insights/Features/explore-metrics.md
         - Logs Drilldown: Data-insights/Features/explore-logs.md
         - Traces Drilldown: Data-insights/Features/explore-traces.md
-        - Alerts & Anomaly Detection:
-            - Alerts:
-               - Overview: Data-insights/Features/Alerting/Alerts-overview.md
-               - Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
-               - Contact Points:
-                  - Overview: Data-insights/Features/Alerting/Contact-points.md
-                  - Notification Templates: Data-insights/Features/Alerting/Templates.md
-               - Notification Policy:
-                  - Overview: Data-insights/Features/Alerting/Notifications.md
-                  - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
-               - Silences: Data-insights/Features/Alerting/Silences.md
-               - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
-               - Examples:
-                  - Overview: Data-insights/Features/alerting-examples.md
-                  - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
-               - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
-               - FAQ: Data-insights/Features/Alerting/FAQ.md
+        - Alerts:
+            - Overview: Data-insights/Features/Alerting/Alerts-overview.md
             - Anomaly Detection:
                - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
+            - Rules: Data-insights/Features/Alerting/Alert-Rules/Configure-rules.md
+            - Contact Points:
+               - Overview: Data-insights/Features/Alerting/Contact-points.md
+               - Notification Templates: Data-insights/Features/Alerting/Templates.md
+            - Notification Policy:
+               - Overview: Data-insights/Features/Alerting/Notifications.md
+               - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
+            - Silences: Data-insights/Features/Alerting/Silences.md
+            - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
+            - Examples:
+               - Overview: Data-insights/Features/alerting-examples.md
+               - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
+            - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
+            - FAQ: Data-insights/Features/Alerting/FAQ.md
         - Incidents:
           - Overview: Data-insights/Features/Incidents/incidents.md
           - Settings: Data-insights/Features/Incidents/Settings.md
