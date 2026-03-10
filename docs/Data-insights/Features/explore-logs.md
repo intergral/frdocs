@@ -2,7 +2,7 @@
 
 
 
-FusionReactor’s **Logs Drilldown** makes log exploration effortless with an intuitive, no-query interface. It automatically turns your log data into interactive visualizations, enabling engineers of all experience levels to investigate and gain insights—no LogQL required.
+FusionReactor’s **Logs Drilldown** makes log exploration effortless with an intuitive, no-query interface. It automatically turns your log data into interactive visualizations, enabling engineers of all experience levels to investigate and gain insights-no LogQL required.
 
 ![!Screenshot](../../Data-insights/Features/images/logs-main.png)
 

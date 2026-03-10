@@ -43,7 +43,7 @@ You can create a silence directly from an active notification without navigating
 
 1. Expand a notification group by clicking the **>** arrow on the left.
 2. Click the **Silence** button on the alert instance row.
-3. The silence form will be pre-filled with the alert's labels — adjust the duration as needed.
+3. The silence form will be pre-filled with the alert's labels - adjust the duration as needed.
 4. Click **Submit** to suppress notifications immediately.
 
 !!! info "Learn more"

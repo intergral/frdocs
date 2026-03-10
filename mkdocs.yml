@@ -207,7 +207,14 @@ nav:
             - Install MCP: Monitor-your-data/Katie/install.md
   - FEATURES:
         - Overview: Data-insights/Features/overview.md
-       # - Data-insights/Features/account.md
+        - Servers: Data-insights/Features/Explore-servers.md
+        - Applications: Data-insights/Features/applications.md
+        - Database: Data-insights/Features/database.md
+        - Dashboards: Data-insights/Features/dashboards.md
+        - Explore: Data-insights/Features/explore.md
+        - Metrics Drilldown: Data-insights/Features/explore-metrics.md
+        - Logs Drilldown: Data-insights/Features/explore-logs.md
+        - Traces Drilldown: Data-insights/Features/explore-traces.md
         - Alerts & Anomaly Detection:
             - Alerts:
                - Overview: Data-insights/Features/Alerting/Alerts-overview.md
@@ -220,13 +227,21 @@ nav:
                   - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
                - Silences: Data-insights/Features/Alerting/Silences.md
                - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
-               - Examples: Data-insights/Features/alerting-examples.md
+               - Examples:
+                  - Overview: Data-insights/Features/alerting-examples.md
+                  - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
                - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
                - FAQ: Data-insights/Features/Alerting/FAQ.md
             - Anomaly Detection:
                - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
-        - Applications: Data-insights/Features/applications.md
+        - Incidents:
+          - Overview: Data-insights/Features/Incidents/incidents.md
+          - Settings: Data-insights/Features/Incidents/Settings.md
+        - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
+        - OpsPilot Assistant:
+              - Overview: Data-insights/Features/OpsPilot/AIoverview.md
+              - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
         - CPU Sampler:
           - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
           - Settings: Data-insights/Features/CPU-Sampler/CPU-Sampler-Settings.md
@@ -234,18 +249,17 @@ nav:
             - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
             - Events: Data-insights/Features/Crash-protection/Events.md
             - Settings: Data-insights/Features/Crash-protection/Settings.md
-        - Dashboards: Data-insights/Features/dashboards.md
         - Debugger:
            - Data-insights/Features/Debugger/Overview.md
            - Data-insights/Features/Debugger/Breakpoints.md
            - Data-insights/Features/Debugger/Debug-Email-Alert.md
-           - Data-insights/Features/Debugger//Event-Snapshot.md
+           - Data-insights/Features/Debugger/Event-Snapshot.md
            - Data-insights/Features/Debugger/Security.md
            - Data-insights/Features/Debugger/Settings.md
            - Data-insights/Features/Debugger/Sources.md
-        - Deep: 
+        - Deep:
            - Overview: Monitor-your-data/Deep/overview.md
-           - Features: 
+           - Features:
               - Search: Data-insights/Features/Deep/Search.md
               - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
         - Enterprise Dashboard:
@@ -255,17 +269,63 @@ nav:
                 - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting.md
                 - Scripting example: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting-Example.md
                 - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
-        - Explore: 
-            - Overview: Data-insights/Features/explore.md
-            - Metrics: Data-insights/Features/explore-metrics.md
-            - Logs: Data-insights/Features/explore-logs.md
-            - Traces: Data-insights/Features/explore-traces.md
-            - Servers: Data-insights/Features/Explore-servers.md
-            - Applications: Data-insights/Features/new-applications.md
+        - Extras:
+            - FRAPI: Data-insights/Extras/FRAPI.md
+            - Distributed tracing:
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
+               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
+            - Plugins:
+              - Data-insights/Extras/Plugins/Overview.md
+              - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Line-Performance-Profiler.md
+              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Deadlock-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Heartbeat-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-HitCount-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-JRun-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Log-Rotator-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Log-Tracker-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Lucee-and-Railo-Line-Performance-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Notification-Generator-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Production-Debugger-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
+              - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
+        - FAQs & troubleshooting:
+            - Cloud:
+              - Troubleshooting/logging-regex-pattern-hints.md
+              - Troubleshooting cloud connections: Troubleshooting/trouble.md
+              - Troubleshooting/Cloud-historical-data.md
+              - Troubleshooting/Optimize-data.md
+              - Troubleshooting/Cloud-span-name.md
+              - Troubleshooting/Cloud-find-slow-pages.md
+              - Troubleshooting/Cloud-offline.md
+              - Troubleshooting/cloud-storing-logs.md
+              - FusionReactor Cloud Has Moved: Troubleshooting/Cloud-has-moved.md
+            - On-Premise:
+              - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
+              - Troubleshooting/Resetting-Instance-Password.md #onprem
+              - Troubleshooting/Server-is-suffering-from-Clock-Drift.md #onprem
+              - Troubleshooting/OnPrem-Exception-Support.md
+              - Troubleshooting/Configuration/Application-Naming-Configuration.md
+              - Troubleshooting/Configuration/Automatic-FusionReactor-Login.md
+              - Troubleshooting/Configuration/Copying-FusionReactor-Configuration-Between_Instances.md
+              - Troubleshooting/Configuration/Email-Configuration.md
+              - Troubleshooting/Configuration/Enabling-and-Disabling-FusionReactor-functions.md
+              - Troubleshooting/Configuration/Enterprise-Dashboard-Configuration.md
+              - Troubleshooting/Configuration/Transaction-Naming-Configuration.md
+              - Troubleshooting/Configuration/Using-FusionReactor-via-external-web-server.md
+              - Troubleshooting/OP-historical-data.md
+              - Troubleshooting/OP-deadlocks.md
+              - Troubleshooting/OP-offline-server.md
+              - Troubleshooting/storing-fr-logs.md
+              - Troubleshooting/OP-setting-up-reports.md
         - Historic data: Data-insights/Features/timepicker.md
-        - Incidents: 
-          - Overview: Data-insights/Features/Incidents/incidents.md
-          - Settings: Data-insights/Features/Incidents/Settings.md
         - JDBC:
           - Data-insights/Features/JDBC/Databases.md
           - Data-insights/Features/JDBC/JDBC-Activity-Graph.md
@@ -313,9 +373,9 @@ nav:
             - Overview: Data-insights/Features/Metrics/Metrics-Page.md
             - Archive Metrics: Data-insights/Features/Metrics/Archive-Metrics.md
             - AWS:
-               - CloudWatch Metrics: Data-insights/Features/Metrics/AWS-CloudWatch-Metrics.md 
+               - CloudWatch Metrics: Data-insights/Features/Metrics/AWS-CloudWatch-Metrics.md
                - Configuration: Data-insights/Features/Metrics/AWS-CloudMetrics-Configuration.md
-            - ColdFusion: 
+            - ColdFusion:
                - Metrics: Data-insights/Features/Metrics/ColdFusion-Metrics.md
                - System Metrics: Data-insights/Features/Metrics/ColdFusion-System-Metrics.md
             - Custom Metrics: Data-insights/Features/Metrics/Custom-Metrics.md
@@ -323,21 +383,6 @@ nav:
             - Kafka: Data-insights/Features/Metrics/Kafka-Metrics.md
            #- Metrics/Kafka-Node-Metrics.md
             - Web Metrics: Data-insights/Features/Metrics/Web-Metrics.md
-        - OpsPilot:
-            - OpsPilot Assistant:
-              - Overview: Data-insights/Features/OpsPilot/AIoverview.md
-            - OpsPilot Integrations:
-              - Overview: Data-insights/Features/OpsPilot/OpsPilot-Hub/integrations-overview.md
-            - OpsPilot Hub: 
-              - Overview: Data-insights/Features/OpsPilot/OpsPilot-Hub/overview.md 
-              - Assistant:
-                - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
-              - Services: Data-insights/Features/OpsPilot/OpsPilot-Hub/Services.md
-              - Knowledge: Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge.md
-              - Integrations:
-                - Jira: Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira.md
-                - Microsoft Teams: Data-insights/Features/OpsPilot/OpsPilot-Hub/Teams.md
-                - Slack: Data-insights/Features/OpsPilot/OpsPilot-Hub/Slack.md
         - Profiler:
             - Data-insights/Features/Profiler/Profiler.md
             - Settings: Data-insights/Features/Profiler/Profiler-Settings.md
@@ -357,7 +402,7 @@ nav:
             - Data-insights/Features/Requests/Response-Codes.md
             - Data-insights/Features/Requests/Settings.md
             - Data-insights/Features/Requests/Slow-Requests.md
-        - Resources: 
+        - Resources:
             - Data-insights/Features/Resources/Buffer-Pool.md
             - Data-insights/Features/Resources/Classes.md
             - Data-insights/Features/Resources/Class-Loading.md
@@ -372,8 +417,7 @@ nav:
             - Data-insights/Features/Resources/Threads.md
             - Data-insights/Features/Resources/Thread-State.md
             - Data-insights/Features/Resources/Thread-Visualizer.md
-        - Servers: Data-insights/Features/servers.md
-        - Settings: 
+        - Settings:
             - Data-insights/Features/Settings/CPU-Sampler.md
             - Data-insights/Features/Settings/Debugger.md
             - Enterprise Dashboard: Data-insights/Features/Enterprise-Dashboard/Settings/
@@ -422,87 +466,30 @@ nav:
             - Overview: Data-insights/Features/UEM/User-Experience-Monitoring.md
             - Sessions: Data-insights/Features/UEM/Sessions.md
             - Data-insights/Features/UEM/Settings.md
-        - FAQs & troubleshooting:
-            - Cloud:
-              - Troubleshooting/logging-regex-pattern-hints.md
-              - Troubleshooting cloud connections: Troubleshooting/trouble.md
-              - Troubleshooting/Cloud-historical-data.md
-              - Troubleshooting/Optimize-data.md
-              - Troubleshooting/Cloud-span-name.md
-              - Troubleshooting/Cloud-find-slow-pages.md
-              - Troubleshooting/Cloud-offline.md
-              - Troubleshooting/cloud-storing-logs.md
-              - FusionReactor Cloud Has Moved: Troubleshooting/Cloud-has-moved.md
-            - On-Premise:  
-              - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
-              - Troubleshooting/Resetting-Instance-Password.md #onprem
-              - Troubleshooting/Server-is-suffering-from-Clock-Drift.md #onprem
-              - Troubleshooting/OnPrem-Exception-Support.md
-              - Troubleshooting/Configuration/Application-Naming-Configuration.md
-              - Troubleshooting/Configuration/Automatic-FusionReactor-Login.md
-              - Troubleshooting/Configuration/Copying-FusionReactor-Configuration-Between_Instances.md
-              - Troubleshooting/Configuration/Email-Configuration.md
-              - Troubleshooting/Configuration/Enabling-and-Disabling-FusionReactor-functions.md
-              - Troubleshooting/Configuration/Enterprise-Dashboard-Configuration.md
-              - Troubleshooting/Configuration/Transaction-Naming-Configuration.md
-              - Troubleshooting/Configuration/Using-FusionReactor-via-external-web-server.md
-              - Troubleshooting/OP-historical-data.md
-              - Troubleshooting/OP-deadlocks.md
-              - Troubleshooting/OP-offline-server.md
-              - Troubleshooting/storing-fr-logs.md
-              - Troubleshooting/OP-setting-up-reports.md 
-        - Extras: 
-            - FRAPI: Data-insights/Extras/FRAPI.md
-            - Distributed tracing: 
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
-            - Plugins:
-              - Data-insights/Extras/Plugins/Overview.md
-              - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Line-Performance-Profiler.md
-              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Deadlock-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Heartbeat-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-HitCount-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-JRun-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Log-Rotator-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Log-Tracker-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Lucee-and-Railo-Line-Performance-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Notification-Generator-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Production-Debugger-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
-  - ADMIN & DATA:
-     - Account & member management: 
-        - Cloud: 
-            - Account: 
-                  - Organization: Admin-and-data/Account/Cloud/users.md
-                  - Roles: Admin-and-data/Account/Cloud/roles.md
-            - Profile Settings:
-                  - Profile: Admin-and-data/Account/Cloud/profile.md
-                  - Security: Admin-and-data/Account/Cloud/security.md
-        - On-Premise: Admin-and-data/Account/On-Premise/OPusers.md
+  - ADMINISTRATION:
+     - Usage & Details: Admin-and-data/usage-and-details.md
      - Billing:
         - Cloud: Admin-and-data/Billing/Cloud/overview.md
         - On-Premise:
              - Overview: Admin-and-data/Billing/On-Premise/billing.md
              - Licenses: Admin-and-data/Billing/On-Premise/licenses.md
-     - Data limits: Admin-and-data/Limits.md
-     - Licensing:
+     - Invoices: Admin-and-data/invoices.md
+     - Licenses:
         - Overview: Admin-and-data/Licensing/Licensing.md
         - Manual activation: Admin-and-data/Licensing/Manual-Activation.md
         - Static endpoints: Admin-and-data/Licensing/Static-Licensing-Endpoints.md
         - Troubleshooting: Admin-and-data/Licensing/Troubleshooting.md
         - EULA: Admin-and-data/EULA.md
+     - API Keys: Admin-and-data/api-keys.md
+     - Organization Settings: Admin-and-data/organization-settings.md
+     - Organization Users: Admin-and-data/Account/Cloud/users.md
+     - User Profile: Admin-and-data/Account/Cloud/profile.md
+     - User Security: Admin-and-data/Account/Cloud/security.md
+     - Data limits: Admin-and-data/Limits.md
+     - On-Premise users: Admin-and-data/Account/On-Premise/OPusers.md
      - Security: Admin-and-data/security.md
      - Terms of Service: Admin-and-data/tos.md
-     - Third Party Licenses: 
+     - Third Party Licenses:
         - Cloud: Admin-and-data/Third-Party-Licenses/licenses.md
         - On-Premise: Admin-and-data/Third-Party-Licenses/Third_Party_License_Agreements.md
      - HOW TO CONTRIBUTE:
@@ -510,7 +497,7 @@ nav:
            - Style Guide:
               - Overview: Contribute/style-guide/overview.md
               - Images: Contribute/style-guide/images.md
-              - Language & grammar: 
+              - Language & grammar:
                   - Abbreviations: Contribute/style-guide/Language-and-grammar/Abbreviations.md
                   - Capitalization: Contribute/style-guide/Language-and-grammar/Capitalization.md
                   - Contractions: Contribute/style-guide/Language-and-grammar/Contractions.md

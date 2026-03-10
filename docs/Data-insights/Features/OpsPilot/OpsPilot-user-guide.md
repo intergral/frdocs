@@ -2,7 +2,7 @@
 
 # User Guide
 
-OpsPilot is your intelligent AI assistant for full-stack observability. It’s built to help every team member — from developers to operations engineers — understand, diagnose, and optimize complex systems with ease.
+OpsPilot is your intelligent AI assistant for full-stack observability. It’s built to help every team member - from developers to operations engineers - understand, diagnose, and optimize complex systems with ease.
 
 By combining FusionReactor’s powerful telemetry platform with advanced large language models (LLMs), OpsPilot transforms complex data into clear, actionable insights. It understands the context of your applications, explains what’s happening in natural language, and helps you resolve issues faster.
 

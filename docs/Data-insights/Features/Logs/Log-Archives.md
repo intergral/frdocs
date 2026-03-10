@@ -38,7 +38,7 @@ found in the [Log Settings](Settings.md) section.
 
 ## Clear All Archives
 
-To delete all archives, click **Clear All Archives**. You’ll be asked to confirm—select Yes to remove every archive from the instance’s archive folder.
+To delete all archives, click **Clear All Archives**. You’ll be asked to confirm-select Yes to remove every archive from the instance’s archive folder.
 
 !!! warning
     Make sure you are 100% sure before

@@ -25,7 +25,7 @@ You can configure:
 * **Rotation frequency:** create a new folder every *n* minutes, or rotate logs at a specific daily time
 * **Retention:** limit how much log data is saved by disk usage, time period, or keep all logs if storage allows
 
-The key advantage over the older Traditional method is that it’s easier to batch a complete set of logs for a defined period—useful for comparing logs over time.
+The key advantage over the older Traditional method is that it’s easier to batch a complete set of logs for a defined period-useful for comparing logs over time.
 
 All settings are configurable on the [Log Settings](/Data-insights/Features/Logs/Settings/) page.
 

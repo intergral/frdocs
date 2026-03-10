@@ -16,7 +16,7 @@ FusionReactor Cloud is able to provide distributed trace information which is ca
 
 Distributed tracing occurs when a single request is assigned a unique trace ID. As user requests travel through a distributed system, sets of spans are generated for every new operation that is required on the journey.
 
-Multiple functions are performed on the request that generate different connected and/or nested spans — all of which have trace data encoded in them. This data can include recorded annotation information like date, time, duration, error messages, service names or any metadata.
+Multiple functions are performed on the request that generate different connected and/or nested spans - all of which have trace data encoded in them. This data can include recorded annotation information like date, time, duration, error messages, service names or any metadata.
 
 This trace data, logs and signal information provides a metric enabling developers to not only debug current systems, but to optimize their code for future service enhancement.
 

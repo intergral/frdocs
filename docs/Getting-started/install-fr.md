@@ -30,7 +30,7 @@ The **automated installation** deploys the FusionReactor Administration Manager,
 
 #### **Benefits**
 
-- Simplifies configuration—no need to modify files manually.
+- Simplifies configuration-no need to modify files manually.
 - Allows setting an instance password before running it.
 - Provides access control over specific ports or IP addresses.
 

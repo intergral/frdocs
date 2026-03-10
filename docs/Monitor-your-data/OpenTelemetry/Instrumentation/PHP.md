@@ -96,7 +96,7 @@ $loggerProvider = LoggerProvider::builder()
     ->addLogRecordProcessor(new SimpleLogRecordProcessor($logsExporter))
     ->build();
 
-// Register all providers globally (single call — avoids overwriting)
+// Register all providers globally (single call - avoids overwriting)
 Sdk::builder()
     ->setTracerProvider($tracerProvider)
     ->setMeterProvider($meterProvider)

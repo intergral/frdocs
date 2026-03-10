@@ -2,7 +2,7 @@
 
 ## What is OpenTelemetry?
 
-OpenTelemetry (OTel) is an industry-standard, open-source observability framework designed to create and manage telemetry data—**Metrics, Traces, and Logs**. It provides a unified set of APIs and libraries that allow you to instrument your applications once and send the data to any backend, such as FusionReactor Cloud.
+OpenTelemetry (OTel) is an industry-standard, open-source observability framework designed to create and manage telemetry data-**Metrics, Traces, and Logs**. It provides a unified set of APIs and libraries that allow you to instrument your applications once and send the data to any backend, such as FusionReactor Cloud.
 
 By adopting OpenTelemetry, you avoid vendor lock-in and gain deep visibility into the performance and health of your distributed systems.
 

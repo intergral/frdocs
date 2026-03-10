@@ -45,9 +45,9 @@ See [Silences](Silences.md) and [Time Intervals](Mute-timings.md) for setup inst
 
 Yes. There are two ways:
 
-1. **Single contact point with multiple integrations** — Add both a Slack integration and an email integration to the same contact point. Both will receive every notification sent to that contact point.
+1. **Single contact point with multiple integrations** - Add both a Slack integration and an email integration to the same contact point. Both will receive every notification sent to that contact point.
 
-2. **Multiple policies with Continue matching** — Create separate child policies for each destination and enable **Continue matching** on each one. An alert matching the first policy will continue to be evaluated against sibling policies.
+2. **Multiple policies with Continue matching** - Create separate child policies for each destination and enable **Continue matching** on each one. An alert matching the first policy will continue to be evaluated against sibling policies.
 
 ---
 
@@ -81,7 +81,7 @@ Setting it to `0s` means the alert fires immediately on the first evaluation whe
 - The query label selectors are too specific and match no active series.
 - The data source connection is temporarily unavailable.
 
-Review the **No Data** handling option on the rule — **Keep last state** is usually the safest default. See [Troubleshooting](Troubleshooting.md#alert-is-in-no-data-state) for more detail.
+Review the **No Data** handling option on the rule - **Keep last state** is usually the safest default. See [Troubleshooting](Troubleshooting.md#alert-is-in-no-data-state) for more detail.
 
 ---
 
@@ -89,7 +89,7 @@ Review the **No Data** handling option on the rule — **Keep last state** is us
 
 Enable **Keep firing for** on the alert rule. This holds the alert in a firing state for a defined period after the condition resolves, preventing noisy recovered/re-fired cycles for metrics that fluctuate around the threshold.
 
-Increasing the **Pending period** also helps — a longer pending period requires the condition to be stable before firing.
+Increasing the **Pending period** also helps - a longer pending period requires the condition to be stable before firing.
 
 ---
 

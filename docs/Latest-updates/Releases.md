@@ -177,7 +177,7 @@ We're excited to unveil the latest enhancements to FusionReactor's servers view,
 
 ## Oracle Database Monitor
 
-Introducing the latest advancement in monitoring capabilities — FusionReactor's cutting-edge integration with Oracle Database which uses metrics you can easily send to FusionReactor using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/). Seamlessly embedded within the FusionReactor ecosystem, the Oracle Database Monitor offers comprehensive visibility into critical database metrics, query execution times, resource utilization, and more. Try FusionReactor's Oracle Database integration to collect key performance metrics on databases, tablespaces, and memory by default and experience firsthand the transformative potential of enhanced Oracle monitoring.
+Introducing the latest advancement in monitoring capabilities - FusionReactor's cutting-edge integration with Oracle Database which uses metrics you can easily send to FusionReactor using the [Observability Agent](/Monitor-your-data/Observability-agent/overview/). Seamlessly embedded within the FusionReactor ecosystem, the Oracle Database Monitor offers comprehensive visibility into critical database metrics, query execution times, resource utilization, and more. Try FusionReactor's Oracle Database integration to collect key performance metrics on databases, tablespaces, and memory by default and experience firsthand the transformative potential of enhanced Oracle monitoring.
 
 
 

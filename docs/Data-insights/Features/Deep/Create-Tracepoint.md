@@ -19,7 +19,7 @@ To create a tracepoint, open **Explore**, select the **Deep** data source, and n
 
 ![!Screenshot](/Monitor-your-data/Deep/images/create.png)
 
-You now need to configure the tracepoint to trigger as required. To do this, you **must** set the file path and line number— all other settings are optional.
+You now need to configure the tracepoint to trigger as required. To do this, you **must** set the file path and line number- all other settings are optional.
 
 ![!Screenshot](/Monitor-your-data/Deep/images/tracepoint-details.png)
 

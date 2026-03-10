@@ -1,6 +1,6 @@
 Alerting allows you to define granular alert rules across your entire application environment and manage notifications using powerful, flexible routing. Built to handle complex, distributed architectures, it integrates seamlessly with the FusionReactor Cloud stack to provide a scalable and proactive monitoring solution that ensures high availability across any environment.
 
-FusionReactor's alerting system is built on Grafana's **Ruler** (for rule evaluation) and **Alertmanager** (for notification routing) — the industry-standard open-source alerting stack used across Prometheus-based environments. All core concepts described in the [Grafana Alerting documentation](https://grafana.com/docs/grafana/latest/alerting/) apply directly here.
+FusionReactor's alerting system is built on Grafana's **Ruler** (for rule evaluation) and **Alertmanager** (for notification routing) - the industry-standard open-source alerting stack used across Prometheus-based environments. All core concepts described in the [Grafana Alerting documentation](https://grafana.com/docs/grafana/latest/alerting/) apply directly here.
 
 !!! info "Migrating from simple alerting?"
     The advanced alerting system is more powerful but requires a few additional setup steps compared to the previous Mimir-based alerting. The key differences are:
@@ -42,7 +42,7 @@ Each individual alert instance (one per time series) will be in one of the follo
 
 ### Alert rule state
 
-The overall state of an alert rule is determined by the **worst-case** state across all of its instances. If any instance is Firing, the rule is considered Firing — even if all other instances are Normal.
+The overall state of an alert rule is determined by the **worst-case** state across all of its instances. If any instance is Firing, the rule is considered Firing - even if all other instances are Normal.
 
 ### Alert rule health
 

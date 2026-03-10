@@ -104,7 +104,7 @@ The columns in this section include:
 
 The **Remove** button can be used to stop sending a metric to CloudWatch.
 
-**Stale JMX Metrics** (metrics that have not published a new datapoint recently—usually because the JMX bean has stopped) are listed under the **Stale** tab.
+**Stale JMX Metrics** (metrics that have not published a new datapoint recently-usually because the JMX bean has stopped) are listed under the **Stale** tab.
 
 To update the dimensions of a metric:
 

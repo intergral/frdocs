@@ -63,7 +63,7 @@ This page covers common issues when setting up and operating FusionReactor alert
 
 1. Open the alert rule and confirm a `channel` label is present with the correct value (such as, `channel=slack`).
 2. Navigate to **Alerting** > **Notification policies** and confirm a child policy exists with a matcher like `channel =~ .*slack.*`.
-3. Verify the operator is `=~` (regex match) and the regex value is correct — `.*slack.*` will match any label value containing the word "slack".
+3. Verify the operator is `=~` (regex match) and the regex value is correct - `.*slack.*` will match any label value containing the word "slack".
 
 !!! tip
     You can verify which policy an alert will match by using the **Test** option on the Default policy in **Notification policies**. Enter the label key/value pairs from your alert rule to simulate routing.
@@ -85,7 +85,7 @@ This page covers common issues when setting up and operating FusionReactor alert
 1. Run the query manually in **Explore** to confirm whether data is being returned.
 2. Check the agent or data source connection.
 3. Review the **No Data** handling setting on the rule:
-    - **Keep last state** is a safe default — the alert will not change state until data resumes.
+    - **Keep last state** is a safe default - the alert will not change state until data resumes.
     - **Alerting** causes the alert to fire when no data is received, which is appropriate for availability monitoring.
     - **Normal** suppresses the alert, which may hide genuine outages.
 
@@ -99,10 +99,10 @@ This page covers common issues when setting up and operating FusionReactor alert
 
 **Fix:**
 
-1. **Increase the Pending period** — A pending period of `5m` or `10m` requires the condition to be continuously true before firing, smoothing out brief spikes.
-2. **Use "Keep firing for"** — This holds the alert in a firing state for a period after the condition resolves, preventing rapid recovered/re-fired cycles.
-3. **Adjust the threshold** — If the metric hovers just at the threshold, add a buffer (such as, changing `> 80` to `> 85`).
-4. **Increase the Repeat interval** on the [notification policy](Notifications.md) — This reduces re-notification frequency without changing how the rule evaluates.
+1. **Increase the Pending period** - A pending period of `5m` or `10m` requires the condition to be continuously true before firing, smoothing out brief spikes.
+2. **Use "Keep firing for"** - This holds the alert in a firing state for a period after the condition resolves, preventing rapid recovered/re-fired cycles.
+3. **Adjust the threshold** - If the metric hovers just at the threshold, add a buffer (such as, changing `> 80` to `> 85`).
+4. **Increase the Repeat interval** on the [notification policy](Notifications.md) - This reduces re-notification frequency without changing how the rule evaluates.
 
 ---
 
@@ -112,10 +112,10 @@ This page covers common issues when setting up and operating FusionReactor alert
 
 **Fixes:**
 
-1. **Grouping** — Ensure your [notification policy](Notifications.md) has appropriate **Group by** labels (such as, `alertname` or `cluster`). This bundles related alerts into a single notification.
-2. **Repeat interval** — Increase the **Repeat interval** on the notification policy (default `4h`). This controls how often a persistently firing alert re-notifies.
-3. **Group wait / Group interval** — Increasing these values batches notifications over a longer window before sending.
-4. **Flapping metric** — If the alert is repeatedly firing and resolving, see [Alert is flapping](#alert-is-flapping) above.
+1. **Grouping** - Ensure your [notification policy](Notifications.md) has appropriate **Group by** labels (such as, `alertname` or `cluster`). This bundles related alerts into a single notification.
+2. **Repeat interval** - Increase the **Repeat interval** on the notification policy (default `4h`). This controls how often a persistently firing alert re-notifies.
+3. **Group wait / Group interval** - Increasing these values batches notifications over a longer window before sending.
+4. **Flapping metric** - If the alert is repeatedly firing and resolving, see [Alert is flapping](#alert-is-flapping) above.
 
 ---
 
@@ -140,6 +140,6 @@ This page covers common issues when setting up and operating FusionReactor alert
 
 **Common causes:**
 
-1. **No folder selected** — Every alert rule must be placed in a folder. If none exist, click **+ New folder** in the rule editor to create one.
-2. **No evaluation group selected** — The rule must belong to an evaluation group. Create a new group if needed and set an evaluation interval (such as, `1m`).
-3. **Invalid query** — If the query editor shows an error, the rule cannot be saved. Use the **Preview** button to validate your query before saving.
+1. **No folder selected** - Every alert rule must be placed in a folder. If none exist, click **+ New folder** in the rule editor to create one.
+2. **No evaluation group selected** - The rule must belong to an evaluation group. Create a new group if needed and set an evaluation interval (such as, `1m`).
+3. **Invalid query** - If the query editor shows an error, the rule cannot be saved. Use the **Preview** button to validate your query before saving.

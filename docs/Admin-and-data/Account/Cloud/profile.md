@@ -1,36 +1,37 @@
-# Profile
+# User Profile
 
-This section lets you manage your personal profile settings, including your profile details, email addresses, and connected accounts.
-
-
-## Accessing profile settings
-
-![!Screenshot](../../Account/Cloud/access-profile.png)
-
-!!! tip
-    You can also quickly access your profile by clicking your name and avatar at the bottom left corner of the screen on the Account page.
+The **User Profile** page lets you manage your personal account settings and preferences, including your display name, email addresses, and connected accounts.
 
 ## Profile details
 
-In **Profile details**, you’ll see your profile photo (or initials if no image is uploaded) along with your display name. You’ll also find a list of the email addresses linked to your account. 
+The **Profile details** section shows your current profile photo (or initials if no image has been uploaded) and your display name.
 
+### Updating your profile
 
-### Updating your Profile Settings
+Click **Update profile** to open the edit panel where you can:
 
-You can update your profile settings by clicking **Update profile** in the Profile section. This brings up a panel where you can change your profile photo, first name, and last name. To update your image, click the **Upload** button—make sure your file is a square (1:1 aspect ratio) and no larger than 10MB.
+- Upload a new profile photo (must be square, 1:1 aspect ratio, max 10 MB)
+- Update your first and last name
 
-Below the image, you’ll find fields for your first and last name. Make any changes as needed, then click **Save** to apply them. If you change your mind, you can click **Cancel** to exit without saving.
-
+Click **Save** to apply changes, or **Cancel** to exit without saving.
 
 ![!Screenshot](../../Account/Cloud/update.png)
 
-### Updating your email address
+## Email addresses
 
-To add another email address to your account, click the **+ Add email address** button. A field will appear where you can type in the new email you'd like to associate with your profile.
+This section lists all email addresses linked to your account, with your primary address clearly labelled.
 
-After entering the address, click **Add**. You’ll be asked to verify the new email before it’s officially added to your account. This ensures that the email belongs to you and can be used for login, notifications, or as a backup. If you change your mind, just click **Cancel** to exit without adding it.
+### Adding an email address
+
+Click **+ Add email address**, enter the new address, then click **Add**. You will receive a verification email before the address is officially added to your account.
 
 ![!Screenshot](../../Account/Cloud/add-email.png)
 
+## Connected accounts
 
+The **Connected accounts** section shows any third-party accounts linked to your profile (e.g. Google). These can be used for single sign-on (SSO) when logging in to OpsPilot.
 
+---
+
+!!! question "Need more help?"
+    Contact support in the chat bubble and let us know how we can assist.
