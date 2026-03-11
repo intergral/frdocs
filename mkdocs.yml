@@ -217,6 +217,9 @@ nav:
         - Traces Drilldown: Data-insights/Features/explore-traces.md
         - Alerts:
             - Overview: Data-insights/Features/Alerting/Alerts-overview.md
+            - Examples:
+               - Overview: Data-insights/Features/alerting-examples.md
+               - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
             - Anomaly Detection:
                - Overview: Data-insights/Features/Anomaly-Detection/ADoverview.md
                - User guide: Data-insights/Features/Anomaly-Detection/ADuserguide.md
@@ -229,9 +232,6 @@ nav:
                - Time intervals: Data-insights/Features/Alerting/Mute-timings.md
             - Silences: Data-insights/Features/Alerting/Silences.md
             - Firing Alerts: Data-insights/Features/Alerting/Active-alerts.md
-            - Examples:
-               - Overview: Data-insights/Features/alerting-examples.md
-               - FR Agent metrics: Data-insights/Features/FR-Agent-Metrics.md
             - Troubleshooting: Data-insights/Features/Alerting/Troubleshooting.md
             - FAQ: Data-insights/Features/Alerting/FAQ.md
         - Incidents:
@@ -241,230 +241,231 @@ nav:
         - OpsPilot Assistant:
               - Overview: Data-insights/Features/OpsPilot/AIoverview.md
               - User guide: Data-insights/Features/OpsPilot/OpsPilot-user-guide.md
-        - CPU Sampler:
-          - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
-          - Settings: Data-insights/Features/CPU-Sampler/CPU-Sampler-Settings.md
-        - Crash Protection:
-            - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
-            - Events: Data-insights/Features/Crash-protection/Events.md
-            - Settings: Data-insights/Features/Crash-protection/Settings.md
-        - Debugger:
-           - Data-insights/Features/Debugger/Overview.md
-           - Data-insights/Features/Debugger/Breakpoints.md
-           - Data-insights/Features/Debugger/Debug-Email-Alert.md
-           - Data-insights/Features/Debugger/Event-Snapshot.md
-           - Data-insights/Features/Debugger/Security.md
-           - Data-insights/Features/Debugger/Settings.md
-           - Data-insights/Features/Debugger/Sources.md
-        - Deep:
-           - Overview: Monitor-your-data/Deep/overview.md
-           - Features:
-              - Search: Data-insights/Features/Deep/Search.md
-              - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
-        - Enterprise Dashboard:
-            - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard.md
-            - Settings: Data-insights/Features/Enterprise-Dashboard/Settings.md
-            - Enterprise scripting:
-                - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting.md
-                - Scripting example: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting-Example.md
-                - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
-        - Extras:
-            - FRAPI: Data-insights/Extras/FRAPI.md
-            - Distributed tracing:
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
-               - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
-            - Plugins:
-              - Data-insights/Extras/Plugins/Overview.md
-              - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Line-Performance-Profiler.md
-              - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Deadlock-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Heartbeat-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-HitCount-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-JRun-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Log-Rotator-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Log-Tracker-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Lucee-and-Railo-Line-Performance-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Notification-Generator-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Production-Debugger-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
-              - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
-        - FAQs & troubleshooting:
-            - Cloud:
-              - Troubleshooting/logging-regex-pattern-hints.md
-              - Troubleshooting cloud connections: Troubleshooting/trouble.md
-              - Troubleshooting/Cloud-historical-data.md
-              - Troubleshooting/Optimize-data.md
-              - Troubleshooting/Cloud-span-name.md
-              - Troubleshooting/Cloud-find-slow-pages.md
-              - Troubleshooting/Cloud-offline.md
-              - Troubleshooting/cloud-storing-logs.md
-              - FusionReactor Cloud Has Moved: Troubleshooting/Cloud-has-moved.md
-            - On-Premise:
-              - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
-              - Troubleshooting/Resetting-Instance-Password.md #onprem
-              - Troubleshooting/Server-is-suffering-from-Clock-Drift.md #onprem
-              - Troubleshooting/OnPrem-Exception-Support.md
-              - Troubleshooting/Configuration/Application-Naming-Configuration.md
-              - Troubleshooting/Configuration/Automatic-FusionReactor-Login.md
-              - Troubleshooting/Configuration/Copying-FusionReactor-Configuration-Between_Instances.md
-              - Troubleshooting/Configuration/Email-Configuration.md
-              - Troubleshooting/Configuration/Enabling-and-Disabling-FusionReactor-functions.md
-              - Troubleshooting/Configuration/Enterprise-Dashboard-Configuration.md
-              - Troubleshooting/Configuration/Transaction-Naming-Configuration.md
-              - Troubleshooting/Configuration/Using-FusionReactor-via-external-web-server.md
-              - Troubleshooting/OP-historical-data.md
-              - Troubleshooting/OP-deadlocks.md
-              - Troubleshooting/OP-offline-server.md
-              - Troubleshooting/storing-fr-logs.md
-              - Troubleshooting/OP-setting-up-reports.md
-        - Historic data: Data-insights/Features/timepicker.md
-        - JDBC:
-          - Data-insights/Features/JDBC/Databases.md
-          - Data-insights/Features/JDBC/JDBC-Activity-Graph.md
-          - Data-insights/Features/JDBC/JDBC-Activity.md
-          - Data-insights/Features/JDBC/JDBC-By-Mem.md
-          - Data-insights/Features/JDBC/JDBC-Error-History.md
-          - Data-insights/Features/JDBC/JDBC-Event-Snapshot-History.md
-          - Data-insights/Features/JDBC/JDBC-History.md
-          - Data-insights/Features/JDBC/JDBC-Monitoring.md
-          - Data-insights/Features/JDBC/JDBC-Time-Graph.md
-          - Data-insights/Features/JDBC/Long-JDBC.md
-          - Data-insights/Features/JDBC/Settings.md
-          - Data-insights/Features/JDBC/Slow-JDBC.md
-        - Logs:
-                - Overview: Data-insights/Features/Logs/Logs.md
-                - Data-insights/Features/Logs/Importing-and-Graphing-Data-in-Excel.md
-                - Log Archives:
-                  - Overview: Data-insights/Features/Logs/Log-Archives.md
-                  - Data-insights/Features/Logs/Log-Archive-Viewer.md
-                - Data-insights/Features/Logs/Settings.md
+        - FusionReactor Agent UI:
+            - CPU Sampler:
+              - Data-insights/Features/CPU-Sampler/CPU-Sampler.md
+              - Settings: Data-insights/Features/CPU-Sampler/CPU-Sampler-Settings.md
+            - Crash Protection:
+                - Overview: Data-insights/Features/Crash-protection/Crash-Protection.md
+                - Events: Data-insights/Features/Crash-protection/Events.md
+                - Settings: Data-insights/Features/Crash-protection/Settings.md
+            - Debugger:
+               - Data-insights/Features/Debugger/Overview.md
+               - Data-insights/Features/Debugger/Breakpoints.md
+               - Data-insights/Features/Debugger/Debug-Email-Alert.md
+               - Data-insights/Features/Debugger/Event-Snapshot.md
+               - Data-insights/Features/Debugger/Security.md
+               - Data-insights/Features/Debugger/Settings.md
+               - Data-insights/Features/Debugger/Sources.md
+            - Deep:
+               - Overview: Monitor-your-data/Deep/overview.md
+               - Features:
+                  - Search: Data-insights/Features/Deep/Search.md
+                  - Tracepoints: Data-insights/Features/Deep/Create-Tracepoint.md
+            - Enterprise Dashboard:
+                - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Dashboard.md
+                - Settings: Data-insights/Features/Enterprise-Dashboard/Settings.md
+                - Enterprise scripting:
+                    - Overview: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting.md
+                    - Scripting example: Data-insights/Features/Enterprise-Dashboard/Enterprise-Scripting-Example.md
+                    - Monitored server scripts: Data-insights/Features/Enterprise-Dashboard/Using-Monitored-Server-Scripts.md
+            - Extras:
+                - FRAPI: Data-insights/Extras/FRAPI.md
+                - Distributed tracing:
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/attributes.md
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/propagators.md
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/sampling.md
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/exporting.md
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/span-lifecycle.md
+                   - Monitor-your-data/FR-Agent/More/Distributed-Tracing/linkage-in-grafana.md
+                - Plugins:
+                  - Data-insights/Extras/Plugins/Overview.md
+                  - Data-insights/Extras/Plugins/FusionReactor-AMF-Dissector-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Line-Performance-Profiler.md
+                  - Data-insights/Extras/Plugins/FusionReactor-ColdFusion-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Deadlock-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Heartbeat-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-HitCount-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-JRun-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Json-Data-Tracker-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Log-Rotator-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Log-Tracker-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Lucee-and-Railo-Line-Performance-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Notification-Generator-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Production-Debugger-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Reports-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-System-Monitor-Plugin.md
+                  - Data-insights/Extras/Plugins/FusionReactor-Transaction-Logger-Plugin.md
+            - FAQs & troubleshooting:
                 - Cloud:
-                     - Data-insights/Features/Logs/Cloud-Settings.md
-                     - Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules.md
-                     - Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks.md
-                - Files:
-                   - Data-insights/Features/Logs/Memory-Logs.md
-                   - Data-insights/Features/Logs/Files/Class-Loading-Log.md
-                   - Data-insights/Features/Logs/Files/Cloud-State-Log.md
-                   - Data-insights/Features/Logs/Files/CPU-Thread-Log.md
-                   - Data-insights/Features/Logs/Files/Crash-Protection-Log.md
-                   - Data-insights/Features/Logs/Files/Device-Log.md
-                   - Data-insights/Features/Logs/Files/Garbage-Collection-Logs.md
-                   - Data-insights/Features/Logs/Files/Instance-Manager-Log.md
-                   - Data-insights/Features/Logs/Files/JDBC-Log.md
-                   - Data-insights/Features/Logs/Files/Notification-Log.md
-                   - Data-insights/Features/Logs/Files/Reactor-Log.md
-                   - Data-insights/Features/Logs/Files/Request-Log.md
-                   - Data-insights/Features/Logs/Files/Resource-Log.md
-                   - Data-insights/Features/Logs/Files/Stdout.log-and-Stderr.log.md
-                   - Data-insights/Features/Logs/Files/Thread-State-Log.md
-        - Memory:
-            -  Data-insights/Features/Memory/Overview.md
-            -  Data-insights/Features/Memory/Settings.md
-        - Metrics:
-            - Overview: Data-insights/Features/Metrics/Metrics-Page.md
-            - Archive Metrics: Data-insights/Features/Metrics/Archive-Metrics.md
-            - AWS:
-               - CloudWatch Metrics: Data-insights/Features/Metrics/AWS-CloudWatch-Metrics.md
-               - Configuration: Data-insights/Features/Metrics/AWS-CloudMetrics-Configuration.md
-            - ColdFusion:
-               - Metrics: Data-insights/Features/Metrics/ColdFusion-Metrics.md
-               - System Metrics: Data-insights/Features/Metrics/ColdFusion-System-Metrics.md
-            - Custom Metrics: Data-insights/Features/Metrics/Custom-Metrics.md
-            - JMX-MBeans: Data-insights/Features/Metrics/JMX-MBeans.md
-            - Kafka: Data-insights/Features/Metrics/Kafka-Metrics.md
-           #- Metrics/Kafka-Node-Metrics.md
-            - Web Metrics: Data-insights/Features/Metrics/Web-Metrics.md
-        - Profiler:
-            - Data-insights/Features/Profiler/Profiler.md
-            - Settings: Data-insights/Features/Profiler/Profiler-Settings.md
-        - Pyroscope: Data-insights/Features/Pyroscope/pyroscope.md
-        - Requests:
-            - Data-insights/Features/Requests/Applications.md
-            - Data-insights/Features/Requests/Compression.md
-            - Data-insights/Features/Requests/Content-Filters.md
-            - Data-insights/Features/Requests/Long-Requests.md
-            - Data-insights/Features/Requests/Req-By-Mem.md
-            - Data-insights/Features/Requests/Request-Activity.md
-            - Data-insights/Features/Requests/Request-Details.md
-            - Data-insights/Features/Requests/Request-Error-History.md
-            - Data-insights/Features/Requests/Request-Event-Snapshot-History.md
-            - Data-insights/Features/Requests/Request-History.md
-            - Data-insights/Features/Requests/Request-Time-Graph.md
-            - Data-insights/Features/Requests/Response-Codes.md
-            - Data-insights/Features/Requests/Settings.md
-            - Data-insights/Features/Requests/Slow-Requests.md
-        - Resources:
-            - Data-insights/Features/Resources/Buffer-Pool.md
-            - Data-insights/Features/Resources/Classes.md
-            - Data-insights/Features/Resources/Class-Loading.md
-            - Data-insights/Features/Resources/CPU-Graph.md
-            - Data-insights/Features/Resources/Garbage-Collection.md
-            - Data-insights/Features/Resources/Heap-Non-Heap-Memory.md
-            - Data-insights/Features/Resources/JIT-Time.md
-            - Data-insights/Features/Resources/Memory-Heap.md
-            - Data-insights/Features/Resources/Memory-Spaces.md
-            - Data-insights/Features/Resources/Settings.md
-            - Data-insights/Features/Resources/Thread-Activity.md
-            - Data-insights/Features/Resources/Threads.md
-            - Data-insights/Features/Resources/Thread-State.md
-            - Data-insights/Features/Resources/Thread-Visualizer.md
-        - Settings:
-            - Data-insights/Features/Settings/CPU-Sampler.md
-            - Data-insights/Features/Settings/Debugger.md
-            - Enterprise Dashboard: Data-insights/Features/Enterprise-Dashboard/Settings/
-            - Data-insights/Features/Settings/Filter-Restrictions.md
-            - Data-insights/Features/Settings/JDBC.md
-            - Data-insights/Features/Settings/Logging.md
-            - Data-insights/Features/Settings/Logging-Cloud.md
-            - Data-insights/Features/Settings/Main-Menu.md
-            - Data-insights/Features/Settings/Memory.md
-            - Data-insights/Features/Settings/Profiler.md
-            - Data-insights/Features/Settings/Protection.md
-            - Requests: Data-insights/Features/Settings/Requests.md
-            - Data-insights/Features/Settings/Resources.md
-            - Data-insights/Features/Settings/System-Resources.md
-            - Data-insights/Features/Settings/UEM-Sessions.md
-        - System Resources:
-            -  Data-insights/Features/System-Resources/CPU.md
-            -  Data-insights/Features/System-Resources/Disk.md
-            -  Data-insights/Features/System-Resources/Network-Usage.md
-            -  Data-insights/Features/System-Resources/Process-Details.md
-            -  Data-insights/Features/System-Resources/Processes.md
-            -  Data-insights/Features/System-Resources/Server-Info.md
-            -  Data-insights/Features/System-Resources/Settings.md
-            -  Data-insights/Features/System-Resources/System-Memory.md
-            -  Data-insights/Features/System-Resources/System-Metrics.md
-        - Transactions:
-            - Data-insights/Features/Transactions/Activity.md
-            - Data-insights/Features/Transactions/Activity-Graph.md
-            - Data-insights/Features/Transactions/Error-History.md
-            - Data-insights/Features/Transactions/Event-Snapshot-History.md
-            - Data-insights/Features/Transactions/External-Sources.md
-            - Data-insights/Features/Transactions/Longest-Transactions.md
-            - Data-insights/Features/Transactions/Middleware-Sources.md
-            - Data-insights/Features/Transactions/MongoDB-Transactions.md
-            - Data-insights/Features/Transactions/Slow-Transactions.md
-            - Data-insights/Features/Transactions/Stack-Tracing.md
-            - Data-insights/Features/Transactions/SubFlavors.md
-            - Data-insights/Features/Transactions/Time-Graph.md
-            - Transaction History: Data-insights/Features/Transactions/History.md
-            - Data-insights/Features/Transactions/Transaction-Naming.md
-            - Data-insights/Features/Transactions/Transaction-Settings.md
-            - Data-insights/Features/Transactions/Transactions.md
-            - Data-insights/Features/Transactions/Trans.-By-Mem.md
-            - Data-insights/Features/Transactions/Transit.md
-        - UEM Sessions:
-            - Overview: Data-insights/Features/UEM/User-Experience-Monitoring.md
-            - Sessions: Data-insights/Features/UEM/Sessions.md
-            - Data-insights/Features/UEM/Settings.md
+                  - Troubleshooting/logging-regex-pattern-hints.md
+                  - Troubleshooting cloud connections: Troubleshooting/trouble.md
+                  - Troubleshooting/Cloud-historical-data.md
+                  - Troubleshooting/Optimize-data.md
+                  - Troubleshooting/Cloud-span-name.md
+                  - Troubleshooting/Cloud-find-slow-pages.md
+                  - Troubleshooting/Cloud-offline.md
+                  - Troubleshooting/cloud-storing-logs.md
+                  - FusionReactor Cloud Has Moved: Troubleshooting/Cloud-has-moved.md
+                - On-Premise:
+                  - Troubleshooting/Known-Issues/Web-Sockets-In-WildFly.md #onprem
+                  - Troubleshooting/Resetting-Instance-Password.md #onprem
+                  - Troubleshooting/Server-is-suffering-from-Clock-Drift.md #onprem
+                  - Troubleshooting/OnPrem-Exception-Support.md
+                  - Troubleshooting/Configuration/Application-Naming-Configuration.md
+                  - Troubleshooting/Configuration/Automatic-FusionReactor-Login.md
+                  - Troubleshooting/Configuration/Copying-FusionReactor-Configuration-Between_Instances.md
+                  - Troubleshooting/Configuration/Email-Configuration.md
+                  - Troubleshooting/Configuration/Enabling-and-Disabling-FusionReactor-functions.md
+                  - Troubleshooting/Configuration/Enterprise-Dashboard-Configuration.md
+                  - Troubleshooting/Configuration/Transaction-Naming-Configuration.md
+                  - Troubleshooting/Configuration/Using-FusionReactor-via-external-web-server.md
+                  - Troubleshooting/OP-historical-data.md
+                  - Troubleshooting/OP-deadlocks.md
+                  - Troubleshooting/OP-offline-server.md
+                  - Troubleshooting/storing-fr-logs.md
+                  - Troubleshooting/OP-setting-up-reports.md
+            - Historic data: Data-insights/Features/timepicker.md
+            - JDBC:
+              - Data-insights/Features/JDBC/Databases.md
+              - Data-insights/Features/JDBC/JDBC-Activity-Graph.md
+              - Data-insights/Features/JDBC/JDBC-Activity.md
+              - Data-insights/Features/JDBC/JDBC-By-Mem.md
+              - Data-insights/Features/JDBC/JDBC-Error-History.md
+              - Data-insights/Features/JDBC/JDBC-Event-Snapshot-History.md
+              - Data-insights/Features/JDBC/JDBC-History.md
+              - Data-insights/Features/JDBC/JDBC-Monitoring.md
+              - Data-insights/Features/JDBC/JDBC-Time-Graph.md
+              - Data-insights/Features/JDBC/Long-JDBC.md
+              - Data-insights/Features/JDBC/Settings.md
+              - Data-insights/Features/JDBC/Slow-JDBC.md
+            - Logs:
+                    - Overview: Data-insights/Features/Logs/Logs.md
+                    - Data-insights/Features/Logs/Importing-and-Graphing-Data-in-Excel.md
+                    - Log Archives:
+                      - Overview: Data-insights/Features/Logs/Log-Archives.md
+                      - Data-insights/Features/Logs/Log-Archive-Viewer.md
+                    - Data-insights/Features/Logs/Settings.md
+                    - Cloud:
+                         - Data-insights/Features/Logs/Cloud-Settings.md
+                         - Data-insights/Features/Logs/Cloud-Log-Obfuscation-Rules.md
+                         - Data-insights/Features/Logs/Cloud-Log-MultiLine-Blocks.md
+                    - Files:
+                       - Data-insights/Features/Logs/Memory-Logs.md
+                       - Data-insights/Features/Logs/Files/Class-Loading-Log.md
+                       - Data-insights/Features/Logs/Files/Cloud-State-Log.md
+                       - Data-insights/Features/Logs/Files/CPU-Thread-Log.md
+                       - Data-insights/Features/Logs/Files/Crash-Protection-Log.md
+                       - Data-insights/Features/Logs/Files/Device-Log.md
+                       - Data-insights/Features/Logs/Files/Garbage-Collection-Logs.md
+                       - Data-insights/Features/Logs/Files/Instance-Manager-Log.md
+                       - Data-insights/Features/Logs/Files/JDBC-Log.md
+                       - Data-insights/Features/Logs/Files/Notification-Log.md
+                       - Data-insights/Features/Logs/Files/Reactor-Log.md
+                       - Data-insights/Features/Logs/Files/Request-Log.md
+                       - Data-insights/Features/Logs/Files/Resource-Log.md
+                       - Data-insights/Features/Logs/Files/Stdout.log-and-Stderr.log.md
+                       - Data-insights/Features/Logs/Files/Thread-State-Log.md
+            - Memory:
+                -  Data-insights/Features/Memory/Overview.md
+                -  Data-insights/Features/Memory/Settings.md
+            - Metrics:
+                - Overview: Data-insights/Features/Metrics/Metrics-Page.md
+                - Archive Metrics: Data-insights/Features/Metrics/Archive-Metrics.md
+                - AWS:
+                   - CloudWatch Metrics: Data-insights/Features/Metrics/AWS-CloudWatch-Metrics.md
+                   - Configuration: Data-insights/Features/Metrics/AWS-CloudMetrics-Configuration.md
+                - ColdFusion:
+                   - Metrics: Data-insights/Features/Metrics/ColdFusion-Metrics.md
+                   - System Metrics: Data-insights/Features/Metrics/ColdFusion-System-Metrics.md
+                - Custom Metrics: Data-insights/Features/Metrics/Custom-Metrics.md
+                - JMX-MBeans: Data-insights/Features/Metrics/JMX-MBeans.md
+                - Kafka: Data-insights/Features/Metrics/Kafka-Metrics.md
+               #- Metrics/Kafka-Node-Metrics.md
+                - Web Metrics: Data-insights/Features/Metrics/Web-Metrics.md
+            - Profiler:
+                - Data-insights/Features/Profiler/Profiler.md
+                - Settings: Data-insights/Features/Profiler/Profiler-Settings.md
+            - Pyroscope: Data-insights/Features/Pyroscope/pyroscope.md
+            - Requests:
+                - Data-insights/Features/Requests/Applications.md
+                - Data-insights/Features/Requests/Compression.md
+                - Data-insights/Features/Requests/Content-Filters.md
+                - Data-insights/Features/Requests/Long-Requests.md
+                - Data-insights/Features/Requests/Req-By-Mem.md
+                - Data-insights/Features/Requests/Request-Activity.md
+                - Data-insights/Features/Requests/Request-Details.md
+                - Data-insights/Features/Requests/Request-Error-History.md
+                - Data-insights/Features/Requests/Request-Event-Snapshot-History.md
+                - Data-insights/Features/Requests/Request-History.md
+                - Data-insights/Features/Requests/Request-Time-Graph.md
+                - Data-insights/Features/Requests/Response-Codes.md
+                - Data-insights/Features/Requests/Settings.md
+                - Data-insights/Features/Requests/Slow-Requests.md
+            - Resources:
+                - Data-insights/Features/Resources/Buffer-Pool.md
+                - Data-insights/Features/Resources/Classes.md
+                - Data-insights/Features/Resources/Class-Loading.md
+                - Data-insights/Features/Resources/CPU-Graph.md
+                - Data-insights/Features/Resources/Garbage-Collection.md
+                - Data-insights/Features/Resources/Heap-Non-Heap-Memory.md
+                - Data-insights/Features/Resources/JIT-Time.md
+                - Data-insights/Features/Resources/Memory-Heap.md
+                - Data-insights/Features/Resources/Memory-Spaces.md
+                - Data-insights/Features/Resources/Settings.md
+                - Data-insights/Features/Resources/Thread-Activity.md
+                - Data-insights/Features/Resources/Threads.md
+                - Data-insights/Features/Resources/Thread-State.md
+                - Data-insights/Features/Resources/Thread-Visualizer.md
+            - Settings:
+                - Data-insights/Features/Settings/CPU-Sampler.md
+                - Data-insights/Features/Settings/Debugger.md
+                - Enterprise Dashboard: Data-insights/Features/Enterprise-Dashboard/Settings/
+                - Data-insights/Features/Settings/Filter-Restrictions.md
+                - Data-insights/Features/Settings/JDBC.md
+                - Data-insights/Features/Settings/Logging.md
+                - Data-insights/Features/Settings/Logging-Cloud.md
+                - Data-insights/Features/Settings/Main-Menu.md
+                - Data-insights/Features/Settings/Memory.md
+                - Data-insights/Features/Settings/Profiler.md
+                - Data-insights/Features/Settings/Protection.md
+                - Requests: Data-insights/Features/Settings/Requests.md
+                - Data-insights/Features/Settings/Resources.md
+                - Data-insights/Features/Settings/System-Resources.md
+                - Data-insights/Features/Settings/UEM-Sessions.md
+            - System Resources:
+                -  Data-insights/Features/System-Resources/CPU.md
+                -  Data-insights/Features/System-Resources/Disk.md
+                -  Data-insights/Features/System-Resources/Network-Usage.md
+                -  Data-insights/Features/System-Resources/Process-Details.md
+                -  Data-insights/Features/System-Resources/Processes.md
+                -  Data-insights/Features/System-Resources/Server-Info.md
+                -  Data-insights/Features/System-Resources/Settings.md
+                -  Data-insights/Features/System-Resources/System-Memory.md
+                -  Data-insights/Features/System-Resources/System-Metrics.md
+            - Transactions:
+                - Data-insights/Features/Transactions/Activity.md
+                - Data-insights/Features/Transactions/Activity-Graph.md
+                - Data-insights/Features/Transactions/Error-History.md
+                - Data-insights/Features/Transactions/Event-Snapshot-History.md
+                - Data-insights/Features/Transactions/External-Sources.md
+                - Data-insights/Features/Transactions/Longest-Transactions.md
+                - Data-insights/Features/Transactions/Middleware-Sources.md
+                - Data-insights/Features/Transactions/MongoDB-Transactions.md
+                - Data-insights/Features/Transactions/Slow-Transactions.md
+                - Data-insights/Features/Transactions/Stack-Tracing.md
+                - Data-insights/Features/Transactions/SubFlavors.md
+                - Data-insights/Features/Transactions/Time-Graph.md
+                - Transaction History: Data-insights/Features/Transactions/History.md
+                - Data-insights/Features/Transactions/Transaction-Naming.md
+                - Data-insights/Features/Transactions/Transaction-Settings.md
+                - Data-insights/Features/Transactions/Transactions.md
+                - Data-insights/Features/Transactions/Trans.-By-Mem.md
+                - Data-insights/Features/Transactions/Transit.md
+            - UEM Sessions:
+                - Overview: Data-insights/Features/UEM/User-Experience-Monitoring.md
+                - Sessions: Data-insights/Features/UEM/Sessions.md
+                - Data-insights/Features/UEM/Settings.md
   - ADMINISTRATION:
      - Usage & Details: Admin-and-data/usage-and-details.md
      - Billing:
