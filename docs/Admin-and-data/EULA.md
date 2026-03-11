@@ -48,7 +48,7 @@ You shall not: <br>
 **Provided, however**, notwithstanding the foregoing, you are **strictly prohibited** from installing or using the Trial Version of the Software for any **commercial training purpose**.
 
 
-You shall not use the Developer Version for any application deployment in a **live**, **stand-by production**, or **staging** environment — in each case including, without limitation, any environment accessed by application end-users, including but not limited to:
+You shall not use the Developer Version for any application deployment in a **live**, **stand-by production**, or **staging** environment - in each case including, without limitation, any environment accessed by application end-users, including but not limited to:
 
 * servers,
 * workstations,

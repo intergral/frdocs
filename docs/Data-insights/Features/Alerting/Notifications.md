@@ -9,13 +9,13 @@ Notification policies are the engine of your alerting system, providing a flexib
 
 ## Recommended routing setup
 
-The simplest approach — and the one we recommend to get started — is to use a **`channel` label** on your alert rules and match it with a regex policy per destination. This keeps your policy tree flat and makes routing immediately visible on the alert rule itself.
+The simplest approach - and the one we recommend to get started - is to use a **`channel` label** on your alert rules and match it with a regex policy per destination. This keeps your policy tree flat and makes routing immediately visible on the alert rule itself.
 
-### Step 1 — Create a contact point per destination
+### Step 1 - Create a contact point per destination
 
 Navigate to **Alerting** > **Contact Points** and create one contact point for each notification destination you need (such as, a Slack workspace, an email address, or a webhook endpoint). See [Contact Points](Contact-points.md) for setup instructions.
 
-### Step 2 — Create a child policy per destination
+### Step 2 - Create a child policy per destination
 
 Navigate to **Alerting** > **Notification policies** and add a child policy under the Default policy for each destination:
 
@@ -35,7 +35,7 @@ The result is a flat set of policies, each routing a specific channel label to i
 | `channel =~ .*slack.*` | Slack contact point |
 | `channel =~ .*webhook.*` | Webhook contact point |
 
-### Step 3 — Label your alert rules
+### Step 3 - Label your alert rules
 
 When creating an [alert rule](Alert-Rules/Configure-rules.md), add a `channel` label with the value matching the destination you want (such as, `channel=slack`). The matching child policy routes it automatically.
 
@@ -45,7 +45,7 @@ Any alert without a matching `channel` label falls through to the **Default poli
     Using a regex matcher (`=~`) rather than an exact match (`=`) gives you flexibility. A label value of `slack-critical` will still be matched by `.*slack.*`, so you can be more specific on your rules without having to update the policy.
 
 !!! info "Advanced routing"
-    For more complex setups — such as nested policy trees, multi-team routing, or routing by severity across multiple destinations simultaneously — see [Notification policies](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/) in the Grafana documentation.
+    For more complex setups - such as nested policy trees, multi-team routing, or routing by severity across multiple destinations simultaneously - see [Notification policies](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/) in the Grafana documentation.
 
 ## Configuring the Default policy
 

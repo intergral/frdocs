@@ -22,8 +22,8 @@ This guide explains how to use **FusionReactor Cloud** to diagnose and prevent a
 
 | Feature                 | Description                                                                 |
 |-------------------------|-----------------------------------------------------------------------------|
-| **Historic Metrics**    | Retained for **13 months** — accessible even after server restarts.         |
-| **Traces & Logs**       | Stored for **30 days** — detailed transaction-level visibility.             |
+| **Historic Metrics**    | Retained for **13 months** - accessible even after server restarts.         |
+| **Traces & Logs**       | Stored for **30 days** - detailed transaction-level visibility.             |
 | **Anomaly Detection**   | Uses R.E.D. metrics to automatically flag unusual application behavior.     |
 | **Custom Alerts**       | User-defined thresholds for memory, latency, CPU, and uptime monitoring.    |
 
@@ -123,7 +123,7 @@ Get real-time alerts to act quickly when thresholds are breached.
 
 By following this process, you can:
 
-- Identify the specific cause of a crash — whether memory, CPU, thread, or database related.  
+- Identify the specific cause of a crash - whether memory, CPU, thread, or database related.  
 - Correlate data between metrics, transactions, and logs. 
 - Configure automated alerts to catch early warning signs and avoid recurrence. 
 

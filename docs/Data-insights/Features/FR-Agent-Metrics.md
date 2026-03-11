@@ -36,7 +36,7 @@ These labels are automatically attached to each metric and do not need to be con
 Some metrics also include **[additional labels](/Data-insights/Features/FR-Agent-Metrics/#labels)** to provide more specific context. For example:
 
 * `jvm_threads_state` includes a `state` label (e.g. `RUNNABLE`, `WAITING`, `BLOCKED`).
-* `fr_cf_requests_throughput_error_time` may include `status` to  distinguish between successful vs. failed requests (e.g., 200, 404, 500) and `type` to categorize request origin or type — such as api, static, internal, etc.
+* `fr_cf_requests_throughput_error_time` may include `status` to  distinguish between successful vs. failed requests (e.g., 200, 404, 500) and `type` to categorize request origin or type - such as api, static, internal, etc.
 
 When extra labels are used, they are shown in the **Labels** column of the tables below. If a metric only uses the default labels, this is marked as **Default**.
 

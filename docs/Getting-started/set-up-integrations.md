@@ -6,13 +6,13 @@ Welcome to the **Set up integrations** guide. This page introduces the **Observa
 
 ## Observability Agent overview
 
-The **Observability Agent** by FusionReactor is built as a wrapper around **Grafana Alloy**, providing a simplified way to forward metrics from various parts of your tech stack to **FusionReactor Cloud** — all with minimal configuration.
+The **Observability Agent** by FusionReactor is built as a wrapper around **Grafana Alloy**, providing a simplified way to forward metrics from various parts of your tech stack to **FusionReactor Cloud** - all with minimal configuration.
 
 
 
 ### Key features
 
-- **Centralized Monitoring**: Collect metrics from across your entire stack — ColdFusion, Java, databases, servers, containers, and more.
+- **Centralized Monitoring**: Collect metrics from across your entire stack - ColdFusion, Java, databases, servers, containers, and more.
 - **Simple Installation**: Deploy quickly using **FRAM**, **Docker**, or install snippets.
 - **Cloud Dashboards**: Visualize data in **Explore** and the **Integration Dashboards** in FusionReactor Cloud.
 

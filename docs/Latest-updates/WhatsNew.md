@@ -6,7 +6,7 @@
 
 FusionReactor Cloud is officially becoming **OpsPilot**.
 
-Your account, pricing, integrations, and support team remain exactly as they were. What's changing is the identity of the platform — and for good reason.
+Your account, pricing, integrations, and support team remain exactly as they were. What's changing is the identity of the platform - and for good reason.
 
 OpsPilot has been the AI engine at the heart of the product for the past three years. As the platform grew to proactively guide teams, score stack health, investigate incidents, and deliver prioritised recommendations, it became clear that OpsPilot wasn't just a feature. It was the product. The rename reflects that reality.
 
@@ -28,7 +28,7 @@ Alongside the rebrand, this is the biggest UI update in FusionReactor's history:
 
 ### What comes next
 
-The roadmap for 2026 is anchored around AI and OpenTelemetry — deeper AI-powered investigation and root cause analysis, broader OpenTelemetry support across languages and frameworks, and more intelligence built into every layer of the product.
+The roadmap for 2026 is anchored around AI and OpenTelemetry - deeper AI-powered investigation and root cause analysis, broader OpenTelemetry support across languages and frameworks, and more intelligence built into every layer of the product.
 
 ### FusionReactor 2025.2.1 released
 
@@ -77,13 +77,13 @@ This feature transforms OpsPilot from a monitoring assistant into a true root ca
 
 ## Model Context Protocol (MCP) Support in FusionReactor
 
-FusionReactor now supports the Model Context Protocol (MCP) — a vendor-neutral standard that allows AI tools to securely connect with external systems in real time. MCP enables AI models to access up-to-date information and even interact with supported tools.
+FusionReactor now supports the Model Context Protocol (MCP) - a vendor-neutral standard that allows AI tools to securely connect with external systems in real time. MCP enables AI models to access up-to-date information and even interact with supported tools.
 
 ### FR Cloud MCP
 
 <div style="display: flex; gap: 20px;">
   <div style="flex: 1;">
-    Connect AI assistants like Claude Desktop directly to your FusionReactor Cloud data using MCP. Gain real-time insights, run queries, and integrate FR Cloud with your AI workflows — powered by the open-source Grafana MCP project.
+    Connect AI assistants like Claude Desktop directly to your FusionReactor Cloud data using MCP. Gain real-time insights, run queries, and integrate FR Cloud with your AI workflows - powered by the open-source Grafana MCP project.
   </div>
   
   <div style="flex: 1;">
@@ -126,7 +126,7 @@ We’ve added a new way to investigate issues by exploring logs directly inside 
 
 **Highlights:**
 
-* Instantly see log volume and sample log lines when opening Explore Logs — no more blank screen.
+* Instantly see log volume and sample log lines when opening Explore Logs - no more blank screen.
 * Browse labels and detected fields with volume and distribution insights; refine results without writing LogQL.
 * Spot common patterns to filter noise or focus on anomalies.
 
@@ -158,7 +158,7 @@ We’re excited to announce the availability  of Traces Drilldown in Explore, de
 
 You now have more control over your queries in OpsPilot with the new **Web Search Toggle**!
 
-Easily **enable or disable web search** depending on your needs — perfect for switching between private/internal topics and general web lookups.
+Easily **enable or disable web search** depending on your needs - perfect for switching between private/internal topics and general web lookups.
 
 **Where to find it:**
 Look for the **globe icon** next to the mic in the chat bar.

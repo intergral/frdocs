@@ -67,7 +67,7 @@ To start:
 
 ### Open a metric in Explore
 
-Explore lets you interact with your data in real time. You can build, test, and refine queries without needing to create a dashboard. If your data source supports it, you’ll see results in both graph and table views—perfect for quick and detailed analysis.
+Explore lets you interact with your data in real time. You can build, test, and refine queries without needing to create a dashboard. If your data source supports it, you’ll see results in both graph and table views-perfect for quick and detailed analysis.
 
 To drill deeper into a specific metric using Explore:
 
@@ -84,7 +84,7 @@ To drill deeper into a specific metric using Explore:
 
     ![!Screenshot](../../Data-insights/Features/images/explore-metrics.png) 
 
-Explore is great for experimenting with queries and uncovering deeper insights—without needing to build a full dashboard.
+Explore is great for experimenting with queries and uncovering deeper insights-without needing to build a full dashboard.
 
 ### Add metrics visualization to a dashboard
 

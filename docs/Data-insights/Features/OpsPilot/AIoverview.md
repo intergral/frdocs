@@ -27,7 +27,7 @@ The latest version of OpsPilot introduces a suite of advanced capabilities desig
 
 - **Actionable recommendations** – Prioritizes fixes and next steps to help you focus on what matters most.
 
-- **Seamless integrations** – Works with Microsoft Teams, Jira, and Slack — and can automatically create tickets to accelerate issue resolution.
+- **Seamless integrations** – Works with Microsoft Teams, Jira, and Slack - and can automatically create tickets to accelerate issue resolution.
 
 - **OpsPilot Vision** – Allows you to upload screenshots from FusionReactor, Grafana, or similar tools for instant, readable insights.
 
@@ -51,7 +51,7 @@ Engage with OpsPilot anytime through the interactive chat interface. Simply sele
 
 - Retrieve external patch, release, and version data.
 
-**OpsPilot communicates naturally — so you can ask things like:**
+**OpsPilot communicates naturally - so you can ask things like:**
 
 - “What’s causing memory spikes in the last hour?”
 - “Show me slow transaction trends this week.”

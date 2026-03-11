@@ -18,7 +18,7 @@ This guide demonstrates how to instrument a Node.js application with OpenTelemet
 
 Create a new directory for your project and add the following files.
 
-**`package.json`** — defines the project and its OpenTelemetry dependencies:
+**`package.json`** - defines the project and its OpenTelemetry dependencies:
 
 ```json
 {
@@ -43,7 +43,7 @@ Create a new directory for your project and add the following files.
 }
 ```
 
-**`Dockerfile`** — builds and runs the application:
+**`Dockerfile`** - builds and runs the application:
 
 ```dockerfile
 FROM node:18-alpine

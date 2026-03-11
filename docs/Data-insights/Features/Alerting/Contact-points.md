@@ -23,7 +23,7 @@ Grafana supports dozens of platforms, including **Slack, Microsoft Teams, Email,
 
 ## Configure Contact Points
 
-Create one contact point per notification destination. Notification policies will route alerts to the correct contact point based on the `channel` label on your alert rules — see [Notification Policies](Notifications.md) for the recommended routing setup.
+Create one contact point per notification destination. Notification policies will route alerts to the correct contact point based on the `channel` label on your alert rules - see [Notification Policies](Notifications.md) for the recommended routing setup.
 
 ### How to Add a Contact Point
 

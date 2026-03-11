@@ -42,7 +42,7 @@ Contributing to our documentation is simpler than you might think. While you don
 
 - Click the pencil icon to enter edit mode.
 - Make your desired changes to the content.
-- Don't worry about perfect formatting or grammar — our team will help with that.
+- Don't worry about perfect formatting or grammar - our team will help with that.
 
 **Step 3: Save your work**
 

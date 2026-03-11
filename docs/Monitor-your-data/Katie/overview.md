@@ -48,7 +48,7 @@ As a cluster administrator, you’ll need to install the Katie Agent in each Kub
 
 ### Katie MCP
 
-Once the agent is installed, you can use the Katie MCP with any compatible MCP host — such as Claude Desktop — to interact with your cluster and gain real-time insights into its performance.
+Once the agent is installed, you can use the Katie MCP with any compatible MCP host - such as Claude Desktop - to interact with your cluster and gain real-time insights into its performance.
 
 !!! info 
     [Installing Katie MCP](/Monitor-your-data/Katie/install/)

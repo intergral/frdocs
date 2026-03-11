@@ -142,7 +142,7 @@ Graphs include:
 * Request and error rates
 * Database and trace throughput
 
-This helps with **root-cause analysis** — understanding what led to a performance change or incident.
+This helps with **root-cause analysis** - understanding what led to a performance change or incident.
 
 
 ### Metric graph actions
@@ -164,7 +164,7 @@ These actions provide quick access to troubleshooting and monitoring capabilitie
 
 ### Threshold Configuration 
 
-The **Configuration** page allows you to set and manage warning and critical thresholds for key performance metrics across your application. Thresholds help you identify performance degradation early — when a metric exceeds a configured limit, it triggers visual alerts in dashboards and monitoring panels.
+The **Configuration** page allows you to set and manage warning and critical thresholds for key performance metrics across your application. Thresholds help you identify performance degradation early - when a metric exceeds a configured limit, it triggers visual alerts in dashboards and monitoring panels.
 
 You can adjust thresholds individually on certain graphs using the icon in the top right, or view and edit all thresholds in one place via **Quick Nav** → **Configuration**. 
 

@@ -35,9 +35,9 @@ Grafana-managed rules also offer additional flexibility, including:
 !!! info "Migrating from simple alerting?"
     If you previously used FusionReactor's Mimir-based alerting, there are three key differences to be aware of:
 
-    - **Folders** — Alert rules must now be placed in a folder. You will need to create one if you haven't already.
-    - **Evaluation groups** — Rules are assigned to a group that controls their evaluation interval. Each rule must belong to a group.
-    - **Labels for routing** — Alerts are routed to contact points via notification policies using label matchers. You must add the correct label to your rule for it to reach the right destination. See [Notification Policies](../Notifications.md) for the recommended approach.
+    - **Folders** - Alert rules must now be placed in a folder. You will need to create one if you haven't already.
+    - **Evaluation groups** - Rules are assigned to a group that controls their evaluation interval. Each rule must belong to a group.
+    - **Labels for routing** - Alerts are routed to contact points via notification policies using label matchers. You must add the correct label to your rule for it to reach the right destination. See [Notification Policies](../Notifications.md) for the recommended approach.
 
 !!! tip "Getting started"
     For quick-start tutorials on key alerting features, see [Getting started with Grafana Alerting tutorials](https://grafana.com/docs/grafana/latest/alerting/best-practices/tutorials/).
@@ -50,7 +50,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 ### 1. Name the Alert Rule
 
-Enter a descriptive and unique name in the **Name** field. This name appears in notifications, so make it meaningful (such as, `High CPU — Production Server`).
+Enter a descriptive and unique name in the **Name** field. This name appears in notifications, so make it meaningful (such as, `High CPU - Production Server`).
 
 !!! note
     The rule name automatically becomes the `alertname` label on every alert instance the rule produces. This label can be used in notification policy matchers and in notification message templates (such as, `{{ $labels.alertname }}`).
@@ -71,7 +71,7 @@ Enter a descriptive and unique name in the **Name** field. This name appears in 
     Every alert rule must be assigned to a **folder** and an **evaluation group**. This is new compared to the previous alerting setup.
 
 * **Folder:** Select an existing folder or click **+ New folder** to create one. Folders keep your rules organised and control access permissions.
-* **Evaluation group:** Select an existing group or create a new one. The group sets the **evaluation interval** — how often all rules in the group are checked (such as, `1m`).
+* **Evaluation group:** Select an existing group or create a new one. The group sets the **evaluation interval** - how often all rules in the group are checked (such as, `1m`).
 * **Pending period:** Set how long the condition must be continuously met before the alert fires (such as, `5m`). This prevents notifications for temporary spikes.
 * **Keep firing for:** Optionally hold the alert in a firing state for a period after the condition resolves, to avoid noisy recovered/re-fired cycles for flapping metrics.
 
@@ -99,12 +99,12 @@ Use the **Configure no data and error handling** section to define what state th
 | Scenario | Option | Behaviour |
 | --- | --- | --- |
 | **No Data** | No Data | Alert enters the **No Data** state. |
-| **No Data** | Alerting | Treat as if the condition was met — alert fires. |
-| **No Data** | Normal | Treat as healthy — no notification sent. |
+| **No Data** | Alerting | Treat as if the condition was met - alert fires. |
+| **No Data** | Normal | Treat as healthy - no notification sent. |
 | **No Data** | Keep last state | Hold the previous evaluation result until data returns. |
 | **Error** | Error | Alert enters the **Error** state. |
-| **Error** | Alerting | Treat as if the condition was met — alert fires. |
-| **Error** | Normal | Treat as healthy — no notification sent. |
+| **Error** | Alerting | Treat as if the condition was met - alert fires. |
+| **Error** | Normal | Treat as healthy - no notification sent. |
 | **Error** | Keep last state | Hold the previous evaluation result until the error clears. |
 
 !!! tip
@@ -145,7 +145,7 @@ Click **Save rule and exit** to activate the alert rule. It will begin evaluatin
 
 ## Pausing evaluation
 
-After saving, you can pause evaluation of a rule without deleting it. From the **Alert rules** list, click the **pause** icon on any rule. While paused, the rule stops evaluating and no new alert instances are created or updated. Existing firing instances are not resolved — they remain in their last state until evaluation resumes.
+After saving, you can pause evaluation of a rule without deleting it. From the **Alert rules** list, click the **pause** icon on any rule. While paused, the rule stops evaluating and no new alert instances are created or updated. Existing firing instances are not resolved - they remain in their last state until evaluation resumes.
 
 This is useful for temporarily disabling a noisy rule without losing its configuration.
 

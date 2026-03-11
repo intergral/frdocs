@@ -158,7 +158,7 @@ If enabled, FusionReactor disables autocommit for all statements from this data 
 
 - Provided as a workaround for certain J2EE servers that require autocommit to be disabled.
 
-- Not recommended for general use—must be tested carefully to ensure transactional integrity.
+- Not recommended for general use-must be tested carefully to ensure transactional integrity.
 
 ## Specifying JDBC Monitoring Options0
 

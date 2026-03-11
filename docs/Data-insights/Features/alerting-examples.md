@@ -1,4 +1,4 @@
-The following examples demonstrate how to create common FusionReactor alert rules using the Grafana Ruler-based alerting system. Each example covers the full configuration — query, condition, folder, evaluation group, No Data handling, and notifications.
+The following examples demonstrate how to create common FusionReactor alert rules using the Grafana Ruler-based alerting system. Each example covers the full configuration - query, condition, folder, evaluation group, No Data handling, and notifications.
 
 Before following these examples, make sure you have:
 
@@ -12,7 +12,7 @@ There are two ways to route notifications when creating an alert rule:
 
 | Approach | When to use | Setup required |
 | --- | --- | --- |
-| **Direct contact point** | You want all notifications from this rule to go to one specific destination. | No extra setup — select the contact point in the rule editor. |
+| **Direct contact point** | You want all notifications from this rule to go to one specific destination. | No extra setup - select the contact point in the rule editor. |
 | **Label-based routing** | You want flexible routing through notification policies (such as, routing by severity or team). | Requires **Advanced Alerting** to be enabled and notification policies configured. See [Notification Policies](Alerting/Notifications.md). |
 
 Each example below covers both options in the notifications step.
@@ -41,7 +41,7 @@ Enter a name such as `Any Instance Offline`.
 
 - Select your FusionReactor data source.
 - Select the `app_up` metric. Leave instance and job filters unset to monitor all instances.
-- Set the alert condition to **IS BELOW 1**. When an instance is online, `app_up` returns `1` — so the condition is false and the alert stays normal. When an instance goes offline, `app_up` drops to `0` or stops reporting entirely, which triggers the alert.
+- Set the alert condition to **IS BELOW 1**. When an instance is online, `app_up` returns `1` - so the condition is false and the alert stays normal. When an instance goes offline, `app_up` drops to `0` or stops reporting entirely, which triggers the alert.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -59,7 +59,7 @@ Under **Configure no data and error handling**, set **No Data** to **Alerting**.
 **5. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies — for example, `channel` = `slack`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies - for example, `channel` = `slack`.
 
 **6. Annotations**
 
@@ -84,13 +84,13 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `Instance Offline — [instance name]`.
+Enter a name such as `Instance Offline - [instance name]`.
 
 **2. Query and condition**
 
 - Select your FusionReactor data source.
 - Select the `app_up` metric and filter by the specific **Job** or **Instance** label you want to monitor (such as, `instance = "production-server-01"`).
-- Set the alert condition to **IS BELOW 1**. When the instance is online, `app_up` returns `1` — so the condition is false and the alert stays normal. When the instance goes offline, `app_up` drops to `0` or stops reporting, which triggers the alert.
+- Set the alert condition to **IS BELOW 1**. When the instance is online, `app_up` returns `1` - so the condition is false and the alert stays normal. When the instance goes offline, `app_up` drops to `0` or stops reporting, which triggers the alert.
 
 !!! tip
     Click **Preview alert rule condition** to confirm data is being returned before continuing.
@@ -108,7 +108,7 @@ Under **Configure no data and error handling**, set **No Data** to **Alerting**.
 **5. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies — for example, `channel` = `slack`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies - for example, `channel` = `slack`.
 
 **6. Annotations**
 
@@ -128,7 +128,7 @@ Click **Save rule and exit**.
 This rule fires when any FusionReactor instance sustains high system CPU usage, helping you catch runaway processes or capacity issues before they affect users.
 
 !!! tip
-    You can also use a **less than** threshold for underflow alerts — for example, alert when request volume drops below a baseline. This is useful for high-traffic services where unexpectedly low activity may indicate requests are not reaching the service.
+    You can also use a **less than** threshold for underflow alerts - for example, alert when request volume drops below a baseline. This is useful for high-traffic services where unexpectedly low activity may indicate requests are not reaching the service.
 
 #### Configuration
 
@@ -136,7 +136,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `High CPU — Any Instance`.
+Enter a name such as `High CPU - Any Instance`.
 
 **2. Query and condition**
 
@@ -156,7 +156,7 @@ Enter a name such as `High CPU — Any Instance`.
 **4. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies — for example, `channel` = `slack`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies - for example, `channel` = `slack`.
 
 **5. Annotations**
 
@@ -175,7 +175,7 @@ Click **Save rule and exit**.
 
 This rule monitors memory allocation across all instances sharing a specific group label, and fires when any of them sustains high memory usage for an extended period.
 
-Instances can be assigned a group in FusionReactor, which appears as a label on their metrics. Filtering by group lets you scope an alert to a logical subset of your estate — for example, all instances in a production environment or a specific application tier.
+Instances can be assigned a group in FusionReactor, which appears as a label on their metrics. Filtering by group lets you scope an alert to a logical subset of your estate - for example, all instances in a production environment or a specific application tier.
 
 #### Configuration
 
@@ -183,7 +183,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `High Memory — [Group Name] Group`.
+Enter a name such as `High Memory - [Group Name] Group`.
 
 **2. Query and condition**
 
@@ -199,12 +199,12 @@ Enter a name such as `High Memory — [Group Name] Group`.
 
 - Select or create a folder.
 - Select or create an evaluation group with an interval of `1m`.
-- Set the **Pending period** to `10m`. This prevents noise from short-lived spikes — the alert only fires if memory pressure is sustained for 10 full minutes.
+- Set the **Pending period** to `10m`. This prevents noise from short-lived spikes - the alert only fires if memory pressure is sustained for 10 full minutes.
 
 **4. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies — for example, `channel` = `slack`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a label to route through your notification policies - for example, `channel` = `slack`.
 
 **5. Annotations**
 
@@ -247,7 +247,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `On-Demand Charges — [Service Name]`.
+Enter a name such as `On-Demand Charges - [Service Name]`.
 
 **2. Query and condition**
 
@@ -267,7 +267,7 @@ Enter a name such as `On-Demand Charges — [Service Name]`.
 **4. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label — for example, `channel` = `email`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label - for example, `channel` = `email`.
 
 **5. Annotations**
 
@@ -292,7 +292,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `Billable Data Usage — [Service Name]`.
+Enter a name such as `Billable Data Usage - [Service Name]`.
 
 **2. Query and condition**
 
@@ -312,7 +312,7 @@ Enter a name such as `Billable Data Usage — [Service Name]`.
 **4. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label — for example, `channel` = `email`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label - for example, `channel` = `email`.
 
 **5. Annotations**
 
@@ -337,7 +337,7 @@ Navigate to **Alerting** > **Alert rules** and click **+ New alert rule**.
 
 **1. Name**
 
-Enter a name such as `Total Billing Charges — [Service Name]`.
+Enter a name such as `Total Billing Charges - [Service Name]`.
 
 **2. Query and condition**
 
@@ -357,7 +357,7 @@ Enter a name such as `Total Billing Charges — [Service Name]`.
 **4. Notifications**
 
 - **Direct contact point (simple):** Under **Notifications**, select your contact point directly from the **Contact point** dropdown.
-- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label — for example, `channel` = `email`.
+- **Label-based routing (advanced alerting):** Leave the contact point unset and add a routing label - for example, `channel` = `email`.
 
 **5. Annotations**
 
