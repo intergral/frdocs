@@ -57,6 +57,7 @@ nav:
         - Downloads: Latest-updates/Downloads.md
   - TUTORIALS & WALKTHROUGHS: 
      - Overview: Getting-started/Tutorials/Overview.md
+     - New UI FAQ: Getting-started/Tutorials/new-ui-faq.md
      - Performance analysis:
         - Post-crash troubleshooting:
             Overview: Getting-started/Tutorials/troubleshoot-crash.md
