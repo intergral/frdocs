@@ -45,6 +45,15 @@ The new alerting system is built on Grafana Alertmanager and is more powerful th
 
 ---
 
+## How do I purchase a subscription?
+
+To purchase a subscription, navigate to **Administration** in the left-hand menu and click the gear icon on either the **Cloud Trial** or **On-Premise Subscription** box, then select **Manage Settings**.
+
+!!! info "Learn more"
+    [Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription) for full step-by-step instructions for both Cloud and On-Premise.
+
+---
+
 ## How do I update my credit card details?
 
 To update your credit card or billing information:

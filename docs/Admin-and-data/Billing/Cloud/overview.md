@@ -7,6 +7,47 @@ To start your FusionReactor journey, first sign up for a free, no-obligation [tr
 ![!Screenshot](../../Billing/Cloud/newbilling.png)
 
 
+## Purchasing a Subscription
+
+### Cloud
+
+1. [Log in](https://app.fusionreactor.io) to the FusionReactor Portal.
+2. Navigate to **Administration** in the left-hand menu.
+3. In the **Cloud Trial** box, click the gear icon and select **Manage Settings**.
+4. You will be redirected to the **Billing** page. At the top of the page, select the subscription frequency you prefer, either **Yearly** or **Monthly**.
+    !!! note
+        The Yearly option is approximately 20% less expensive than the monthly plan.
+5. Select the number of **FusionReactor Ultimate** reservations you require.
+    !!! tip
+        If you need more in the future, you can add additional servers at any time, either on demand or as additional reservations.
+6. Select the **AI plan** you would like to use.
+    !!! note
+        If you have more than 4 servers or 16 containers, we recommend the **Pro AI plan**.
+
+Once the subscription has been processed, any discounts required will be applied to your account.
+
+---
+
+### On-Premise
+
+1. [Log in](https://app.fusionreactor.io) to the FusionReactor Portal.
+2. Navigate to **Administration** in the left-hand menu.
+3. In the **On-Premise Subscription** box, click the gear icon and select **Manage Settings**.
+4. You will be redirected to the **Billing** page. At the top of the page, select **On-Premise Plans**.
+5. Select the subscription frequency you prefer, either **Yearly** or **Monthly**.
+    !!! note
+        The Yearly option is approximately 20% less expensive than the monthly plan.
+6. Select the number of **FusionReactor Ultimate** reservations you require.
+    !!! note
+        Each seat typically covers one server (host). For containers, each seat covers 4 containers. If you need more in the future, you can add additional seats at any time by returning to the **Manage Subscription** page.
+7. If needed, you can also add **FusionReactor Developer** seats for development or QA environments.
+8. Review the **Plan Summary** on the right side of the page and select **Review & Confirm**.
+9. **Confirm** the changes to complete the purchase.
+
+Once your subscription has been processed, your new licenses will become available immediately. Any discounts required will be added retrospectively to the subscription.
+
+---
+
 ## What's included
 
 |**Product**| **Price** | **Metrics** | **Logs** | **Traces** | **OpsPilot tokens**|
