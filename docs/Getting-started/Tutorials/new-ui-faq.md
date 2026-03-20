@@ -45,6 +45,30 @@ The new alerting system is built on Grafana Alertmanager and is more powerful th
 
 ---
 
+## How do I purchase a subscription?
+
+To purchase a subscription, navigate to **Administration** in the left-hand menu and click the gear icon on either the **Cloud Trial** or **On-Premise Subscription** box, then select **Manage Settings**.
+
+!!! info "Learn more"
+    [Cloud — Purchasing a Subscription](/Admin-and-data/Billing/Cloud/overview/#purchasing-a-subscription)
+
+    [On-Premise — Purchasing a Subscription](/Admin-and-data/Billing/On-Premise/billing/#purchasing-a-subscription)
+
+---
+
+## How do I update my credit card details?
+
+To update your credit card or billing information:
+
+1. Go to **Administration > Invoices**.
+2. In the **Upcoming Bill** panel on the right, click **Edit Details**.
+3. Update your card or billing information and save your changes.
+
+!!! info "Learn more"
+    [Invoices](/Admin-and-data/invoices/) for full details on managing your invoices and billing.
+
+---
+
 ## The FR tunnel isn't working
 
 If the UI Tunnel tab is not connecting to your FusionReactor instance, the most common cause is a blocked port.
