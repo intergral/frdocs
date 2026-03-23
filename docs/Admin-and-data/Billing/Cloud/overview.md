@@ -279,11 +279,11 @@ Alongside each data source is a graph that provides further information on your 
 To control your usage and spending costs it is possible to create an alert to fire if you exceed the allowed usage. 
 
 !!! info "Learn more"
-    [Create a check](/Data-insights/Features/alerting/#create-a-check)
+    [Create a check](/Data-insights/Features/Alerting/Alerts-overview/)
 
 #### Example billing usage checks
 
-For instructions on configuring billing checks, see the [Billing usage checks](/Data-insights/Features/billing-check) section. The following are examples of common billing usage checks: 
+For instructions on configuring billing checks, see the [Billing usage checks](/Data-insights/Features/alerting-examples/) section. The following are examples of common billing usage checks: 
 
 * `fr_billing_usage_current`
 * `fr_billing_charges_metered`

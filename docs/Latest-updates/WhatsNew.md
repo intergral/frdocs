@@ -223,7 +223,7 @@ OpsPilot now integrates directly with Jira Cloud and Data Center, enabling you t
 ![!Screenshot](../../Latest-updates/images/Jira1.png)
 
 !!! info "Learn more"
-    [Jira integration](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Jira/)
+    [Jira integration](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/)
 
 ## Explore: Servers 
 The new Servers tab in Explore provides enhanced server monitoring capabilities:
@@ -251,7 +251,7 @@ Introducing OpsPilot Hub: Your centralized knowledge repository for enhanced ope
 
 
 !!! info "Learn more"
-    [OpsPilot Hub](/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
+    [OpsPilot Hub](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/)
 
 ## FusionReactor 12.1
 

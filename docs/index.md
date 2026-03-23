@@ -501,7 +501,7 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/Data-insights/Features/alerting/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Alerting/Alerts-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;
@@ -846,7 +846,7 @@ hide:
   </a>
 
   
-  <a href="/Data-insights/Features/servers/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
+  <a href="/Data-insights/Features/Explore-servers/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
       padding: 12px;

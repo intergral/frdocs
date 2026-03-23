@@ -34,7 +34,7 @@ Introducing OpsPilot Hub: Your centralized knowledge repository for enhanced ope
 
 
 !!! info "Learn more"
-    [OpsPilot Hub](/Data-insights/Features/OpsPilot/OpsPilot-Hub/overview/)
+    [OpsPilot Hub](/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge/)
 
 
 ### FusionReactor 12.1
