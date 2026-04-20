@@ -21,7 +21,7 @@
 - Improved error capture for Lucee requests
   - `-Dfr.lucee.exception.request.enabled=false` to disable if error capture is too sensitive in your case.
 - Improvements made to increase the reliability of the UI tunnel connection.
-- [Various bug fixes and improvements](/release-notes.md)
+- [Various bug fixes and improvements](./release-notes.md)
 
 ## FusionReactor Cloud is now OpsPilot
 
