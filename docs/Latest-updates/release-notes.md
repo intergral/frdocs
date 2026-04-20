@@ -1,6 +1,30 @@
 
 # FusionReactor Agent Releases
 
+## 2026.1.0 - 20th Apr. 2026
+
+| Issue Type  | Summary                                                                                      |
+|-------------|----------------------------------------------------------------------------------------------|
+| New Feature | Add new request metrics for HTTP, database, and messaging transactions.                      |
+| New Feature | Add new/improved JVM metrics.                                                                |
+| New Feature | Add support for changing metric names and recordings to be more OTel-like.                   |
+| New Feature | Add ability to exports JVM metrics similar to Prometheus' JMX exporter.                      |
+| Improvement | Add support for sending emails without requiring an SMTP server.                             | 
+| Bug         | Fix variables not showing within the debugger, when using Java 21+                           | 
+| New Feature | Include ColdFusion DB Pool metrics in the exported metrics.                                  |
+| Bug         | Prevent debugger from showing the incorrect Lucee file contents when sources are configured. | 
+| Bug         | Separate Lucee classes by filename when different files are compiled to the same class name. | 
+| Bug         | Fix thread ID parsing, in the debugger, when the ID is a single digit (<10)                  |
+| Improvement | Update support for tracking later versions of Mongo transactions to prevent errors.          |
+| Improvement | Capture additional Lucee request errors.                                                     |
+| New Feature | Add support for capturing Lucee stack trace on errors.                                       |
+| New Feature | Add support for disabling/enabling specific locations on installed breakpoints.              | 
+| Bug         | Increase reliability of the UI tunnel connection.                                            |
+| Improvement | Add status page for non-cloud users that export data.                                        |
+| Bug         | Prevent possible IllegalArgumentException when using Framework One (FW/1)                    |
+| New Feature | Add option to add query parameters to request metrics' route label/attribute                 |
+| Improvement | Update automatic installer (FRAM) to use correct debug library for Mac ARM64.                |
+
 ## 2025.2.1 - 3rd feb. 2026
 
 | Issue Type | Summary                                                                                         |

@@ -1,5 +1,28 @@
 # What's New in FusionReactor
 
+## FusionReactor 2026.1.0 released
+
+**Published: April 20, 2026**
+
+- New and improved metrics
+  - Additional request metrics (HTTP, database, and messaging)
+  - Additional/improved JVM metrics
+  - ColdFusion DB Pools stats are now exported
+  - Option to switch metric names and recording to other formats (FR/OTel/Prometheus)
+    - `-Dfr.observability.metric.names=` with `fr`, `otel` or `all` (both) as options
+    - `-Dfr.observability.metric.prometheus.jvm.enabled=true` to enable Prometheus-like JVM metrics
+- New ability to send emails without requiring an SMTP server     
+- Debugger improvements and fixes:     
+  - Fixed issues with listing variables when using Java 21+
+  - Added support for enabling/disabling breakpoints per location
+    - Be careful, this isn't persisted across restarts. An enabled breakpoint will trigger on all locations when the agent is restarted.
+  - Lucee specific fixes for showing correct source files on triggered breakpoints
+    - Lucee users, who don't use the debugger, may wish to disable this functionality to prevent unnecessary class processing `-Dfr.lucee.debugger.fullfilename.enabled=false`
+- Improved error capture for Lucee requests
+  - `-Dfr.lucee.exception.request.enabled=false` to disable if error capture is too sensitive in your case.
+- Improvements made to increase the reliability of the UI tunnel connection.
+- [Various bug fixes and improvements](/release-notes.md)
+
 ## FusionReactor Cloud is now OpsPilot
 
 **Published: March 9, 2026**
