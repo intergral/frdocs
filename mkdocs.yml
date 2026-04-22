@@ -61,7 +61,7 @@ nav:
         - Infrastructure observability:
            - Getting-started/Tutorials/scalability.md
            - Getting-started/Troubleshooting/reports.md
-- Getting-started/Tutorials/capacity-planning.md
+           - Getting-started/Tutorials/capacity-planning.md
         - Common support issues:
            - Getting-started/Tutorials/Common-issues/find-license-key.md
            - Getting-started/Tutorials/Common-issues/move-license-key.md
