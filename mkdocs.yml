@@ -50,8 +50,7 @@ nav:
         - Introduction to FusionReactor: Getting-started/intro-to-fr.md
      - Tutorials:
         - Overview: Getting-started/Tutorials/Overview.md
-        - New UI FAQ: Getting-started/Tutorials/new-ui-faq.md
-        - Performance analysis:
+- Performance analysis:
            - Post-crash troubleshooting:
                Overview: Getting-started/Tutorials/troubleshoot-crash.md
                On-Premise: Getting-started/Tutorials/crash-troubleshoot-onprem.md
