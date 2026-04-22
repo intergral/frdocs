@@ -1,4 +1,4 @@
-# Checking license seats & usage (On-Premise)
+# Checking license seats & usage
 
 If you encounter a **“No seats available”** error when attempting to activate a FusionReactor on-premise instance, this means your license has reached its **seat limit**.
 

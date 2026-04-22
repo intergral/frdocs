@@ -1,4 +1,4 @@
-# Setting up email report alerts in FusionReactor (On-Premise)
+# Setting up email report alerts in FusionReactor
 
 ## Overview
 
