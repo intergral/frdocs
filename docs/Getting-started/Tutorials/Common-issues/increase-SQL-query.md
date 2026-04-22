@@ -27,24 +27,9 @@ FusionReactor offers settings to increase the default character limit for displa
 
 
 
-### Cloud environment
-
-To view the full SQL queries in FusionReactor Cloud transactions, you need to perform two steps:
-
-1.  **Apply On-Premise Settings:**
-    As described in the [On-Premise environment](#on-premise-environment) section, adjust the **SQL Text Limiting (Log and Display)** setting within the on-premise tab of your FusionReactor Cloud server configuration.
-2.  **Add JVM Argument:**
-    Apply the following JVM argument to your application server instance:
-
-    ```
-    -Dfr.observability.trace.value.limit=1000
-    ```
-
-    Adjust the value `1000` in the JVM argument as necessary to match or exceed the character limit you set in the on-premise UI. 
-
 ## Important considerations
 
 * **Memory usage:** Increasing or disabling the SQL text limit can potentially increase FusionReactor's memory usage, as it will need to store and display larger query strings.
 * **Monitoring for impact:** After adjusting the settings, monitor your FusionReactor instance for any unexpected performance or memory impact. If you observe any issues, you can revert the settings to their previous values once you have completed your troubleshooting.
 
-By following these steps, you can customize the SQL query display limit in FusionReactor for both on-premise and Cloud environments, enabling you to gain a comprehensive view of your database interactions.
+By following these steps, you can customize the SQL query display limit in FusionReactor, enabling you to gain a comprehensive view of your database interactions.

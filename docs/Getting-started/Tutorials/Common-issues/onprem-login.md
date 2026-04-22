@@ -4,8 +4,6 @@
 
 If you're unable to log in to the local **on-premise FusionReactor UI** or the **FusionReactor Administration Manager (FRAM)**, you can reset the admin credentials by modifying the instance configuration.
 
-!!! note
-    In the latest versions of FusionReactor, if you're using a **cloud license**, you can log in to the local UI using your **FusionReactor Cloud credentials** - no reset required.
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1084583396?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="How to reset your on-premise or FRAM login credentials"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 

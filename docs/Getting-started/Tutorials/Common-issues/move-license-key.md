@@ -15,7 +15,6 @@ If you cannot uninstall the old instance immediately, you can deactivate the lic
 
 1.  Access the **On-Premise UI**:
       * Open your web browser and navigate to the default port: `localhost:8088`.
-      * Alternatively, access the **On-Premise** tab for the instance within the Cloud UI.
 2.  On the **About** page, click the **Deactivate** button.
 3.  **License Freed:** The license seat will now be freed up without requiring a server restart. You can now use your license key on your new server.
 
@@ -25,7 +24,6 @@ If your previous FusionReactor instance was manually activated, follow these ste
 
 1.  Access the **On-Premise UI**:
       * Open your web browser and navigate to the default port: `localhost:8088`.
-      * Alternatively, access the **On-Premise** tab for the instance within the Cloud UI.
 2.  Navigate to the **About** page and click **Manual Activation**.
 4.  Generate **Deactivation Code**: Follow the on-screen instructions to generate a deactivation code.
 5.  Complete Deactivation Online: On a machine with internet access, go to [https://fusion-reactor.com/manual/](https://fusion-reactor.com/manual/) and follow the instructions to complete the deactivation process using the code you generated.

@@ -9,6 +9,4 @@
 Your FusionReactor license key is required to activate your instance. You can find it in two ways:
 
 * **Email:** Sent shortly after your trial begins or purchase is complete.
-* **FusionReactor account:**
-    * **Cloud License:** Log in at app.fusionreactor.io, click the top-right icon, and select **Account**.
-    * **On-Premise License:** Log in at app.fusionreactor.io, navigate to the **On-Premise** tab (may require expanding the menu via three dots).
+* **FusionReactor account:** Log in at [app.fusionreactor.io](https://app.fusionreactor.io), navigate to the **On-Premise** tab (may require expanding the menu via three dots).
