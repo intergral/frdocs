@@ -203,30 +203,6 @@ hide:
 }
 </style>
 
-<h3 style="margin-bottom: 20px;">POPULAR DOCS</h3>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-
-  <a href="/Getting-started/Tutorials/troubleshoot-crash/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Troubleshooting</h4>
-      <p style="font-size: 0.85em;">Post crash troubleshooting with FR.</p>
-    </div>
-  </a>
-
-  </div>
-
 <h3 style="margin-bottom: 20px;">LATEST NEWS</h3>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -326,24 +302,6 @@ hide:
       <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
       <h4 style="margin: 10px 0 6px;">FusionReactor Agent</h4>
       <p style="font-size: 0.85em;">Monitor Java & CF apps for real-time and historical insights into transactions, memory, etc.</p>
-    </div>
-  </a>
-
-   <a href="/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Deep</h4>
-      <p style="font-size: 0.85em;">FusionReactor integrates with Deep, a dynamic tool that enhances real-time observability & collects application data.</p>
     </div>
   </a>
 
