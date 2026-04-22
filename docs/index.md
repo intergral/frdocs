@@ -144,11 +144,11 @@ hide:
 </head>
 <body>
     <div class="fr-journey-container">
-        <h1 class="fr-journey-title">Start your FusionReactor journey in 4 easy steps!</h1>
+        <h1 class="fr-journey-title">Start your FusionReactor journey in 3 easy steps!</h1>
         <div class="fr-steps">
             <div class="fr-step">
                 <div class="fr-step-number">1</div>
-                <div class="fr-step-title"> Create your account</div>
+                <div class="fr-step-title">Create your account</div>
                 <div class="fr-step-description">Don't have an account? Signing up is easy and only takes a few minutes.</div>
                 <div class="fr-step-action">
                     <a href="https://app.fusionreactor.io/auth/login" class="fr-btn">Sign up here</a>
@@ -164,18 +164,17 @@ hide:
             </div>
             <div class="fr-step">
                 <div class="fr-step-number">3</div>
-                <div class="fr-step-title">Set up integrations</div>
-                <div class="fr-step-description">Monitor key parts of your infrastructure like databases, Docker etc.</div>
-                <div class="fr-step-action">
-                    <a href="/Getting-started/set-up-integrations/" class="fr-btn">Install Observability Agent</a>
-                </div>
-            </div>
-            <div class="fr-step">
-                <div class="fr-step-number">4</div>
                 <div class="fr-step-title">Start your FR journey</div>
                 <div class="fr-step-description">Familiarize yourself with our comprehensive monitoring platform.</div>
                 <div class="fr-step-action">
                     <a href="/Getting-started/intro-to-fr/" class="fr-btn">Learn more about FR</a>
+                </div>
+            </div>
+            <div class="fr-step">
+                <div class="fr-step-title">Want full-stack observability?</div>
+                <div class="fr-step-description">Need OTel, cloud dashboards, alerting, log monitoring, and AI-powered insights? Try OpsPilot, our cloud-native observability platform.</div>
+                <div class="fr-step-action">
+                    <a href="https://app.opspilot.com" class="fr-btn">Explore OpsPilot</a>
                 </div>
             </div>
         </div>
@@ -208,24 +207,6 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Anomaly Detection</h4>
-      <p style="font-size: 0.85em;">Identify anomalies with precision.</p>
-    </div>
-  </a>
-
   <a href="/Getting-started/Tutorials/troubleshoot-crash/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -241,42 +222,6 @@ hide:
       <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
       <h4 style="margin: 10px 0 6px;">Troubleshooting</h4>
       <p style="font-size: 0.85em;">Post crash troubleshooting with FR.</p>
-    </div>
-  </a>
-
-   <a href="/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Incidents</h4>
-      <p style="font-size: 0.85em;">Track & resolve incidents in real-time.</p>
-    </div>
-  </a>
-
-   <a href="/Getting-started/Tutorials/know-the-ui/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Get to know the UI</h4>
-      <p style="font-size: 0.85em;">Familiarize yourself with the UI.</p>
     </div>
   </a>
 
@@ -384,79 +329,6 @@ hide:
     </div>
   </a>
 
-   <a href="/Monitor-your-data/Observability-agent/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Observability Agent</h4>
-      <p style="font-size: 0.85em;">Monitor infrastructure components like databases, Kafka, Docker, system metrics, and more.</p>
-    </div>
-  </a>
-
-   <a href="/Monitor-your-data/OpenTelemetry/getting-started/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">OpenTelemetry</h4>
-      <p style="font-size: 0.85em;">Monitor app performance with OTel, an open-source framework for collecting and exporting telemetry data.</p>
-    </div>
-  </a>
-
-  
-  <a href="/Monitor-your-data/Kubernetes-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Kubernetes</h4>
-      <p style="font-size: 0.85em;">Monitor K8s clusters by tracking pod health, performance, resource usage, scaling, and real-time observability.</p>
-    </div>
-  </a>
-
-  <a href="/Monitor-your-data/Log-monitoring/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Log Monitoring</h4>
-      <p style="font-size: 0.85em;">Monitor logs alongside FusionReactor data for unified observability and deeper insights.</p>
-    </div>
-  </a>
-
    <a href="/Monitor-your-data/Deep/overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -501,60 +373,6 @@ hide:
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <a href="/Data-insights/Features/Alerting/Alerts-overview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Alerting</h4>
-      <p style="font-size: 0.85em;">Get notifications for performance issues.</p>
-    </div>
-  </a>
-
-  <a href="/Data-insights/Features/Anomaly-Detection/ADoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Anomaly Detection</h4>
-      <p style="font-size: 0.85em;">Detect unusual application behavior.</p>
-    </div>
-  </a>
-
-   <a href="/Data-insights/Features/applications/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Applications</h4>
-      <p style="font-size: 0.85em;">Overview of your monitored Java apps.</p>
-    </div>
-  </a>
-
    <a href="/Data-insights/Features/CPU-Sampler/CPU-Sampler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -589,24 +407,6 @@ hide:
       <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
       <h4 style="margin: 10px 0 6px;">Crash Potection</h4>
       <p style="font-size: 0.85em;">Monitor server issues & prevent crashes.</p>
-    </div>
-  </a>
-
-  <a href="/Data-insights/Features/dashboards/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Dashboards</h4>
-      <p style="font-size: 0.85em;">Visualize key performance data.</p>
     </div>
   </a>
 
@@ -664,24 +464,6 @@ hide:
         </div>
   </a>
 
-  <a href="/Data-insights/Features/explore/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-plug fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Explore</h4>
-      <p style="font-size: 0.85em;"> Analyse your performance data.</p>
-    </div>
-  </a>
-
    <a href="/Data-insights/Features/timepicker/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -700,25 +482,6 @@ hide:
     </div>
   </a>
 
-   <a href="/Data-insights/Features/Incidents/incidents/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Incidents</h4>
-      <p style="font-size: 0.85em;">Track & manage performance issues.</p>
-    </div>
-  </a>
-
-  
   <a href="/Data-insights/Features/JDBC/Databases/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -773,24 +536,6 @@ hide:
     </div>
   </a>
 
-  <a href="/Data-insights/Features/OpsPilot/AIoverview/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">OpsPilot</h4>
-      <p style="font-size: 0.85em;">Troubleshoot with AI insights.</p>
-    </div>
-  </a>
-
   <a href="/Data-insights/Features/Profiler/Profiler/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
     <div style="
       border: 1px solid #ccc;
@@ -842,25 +587,6 @@ hide:
       <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
       <h4 style="margin: 10px 0 6px;">Resources</h4>
       <p style="font-size: 0.85em;">Monitor system CPU, memory, etc.</p>
-    </div>
-  </a>
-
-  
-  <a href="/Data-insights/Features/Explore-servers/" style="text-decoration: none; color: inherit; width: calc(25% - 20px);" class="doc-grid-item-link">
-    <div style="
-      border: 1px solid #ccc;
-      padding: 12px;
-      box-sizing: border-box;
-      text-align: center;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background-color: var(--card-bg, white);
-      color: var(--card-text, #333);
-    ">
-      <i class="fas fa-server fa-2x" style="margin-bottom: 10px; color: purple;"></i>
-      <h4 style="margin: 10px 0 6px;">Servers</h4>
-      <p style="font-size: 0.85em;">Monitor your app server instances.</p>
     </div>
   </a>
 
