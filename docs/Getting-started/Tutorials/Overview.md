@@ -10,7 +10,7 @@ Through these guides, you will:
 
 ✅ **Optimize** performance by diagnosing and resolving slow queries.
 
-✅ **Improve** observability with dashboards, alerts, and root cause analysis.
+✅ **Improve** observability with real-time metrics and root cause analysis.
 
 ✅ **Enhance** infrastructure monitoring with scalability testing and troubleshooting techniques.
 
@@ -19,7 +19,7 @@ Through these guides, you will:
 ### Topics covered
 
 - **Performance analysis**: Learn how to detect and fix performance bottlenecks, analyze slow requests, and improve application efficiency.
-- **Application observability**: Understand how to create dashboards, track real-time metrics, and set up alerts for proactive monitoring.
+- **Application observability**: Understand how to track real-time metrics and analyze application performance data.
 - **Infrastructure observability**: Explore best practices for scaling systems, troubleshooting CPU spikes, and gathering valuable system statistics.
 - **Common support issues**: Find quick solutions and step-by-step guides for frequently encountered problems and their resolutions.
 

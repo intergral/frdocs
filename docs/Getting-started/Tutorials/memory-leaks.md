@@ -7,8 +7,8 @@
 **Solution using FusionReactor:**
 
 1.  **Detect memory leaks:**
-    * Open FusionReactor (Cloud UI or On-Premise UI).
-    * Monitor **heap usage trends** over time using the **memory metrics graphs** (Cloud) or **Memory Overview page** (On-Premise).
+    * Open FusionReactor.
+    * Monitor **heap usage trends** over time using the **Memory Overview page**.
     * Pay attention to **garbage collection activity**.
     * Look for **unusual memory growth patterns** that indicate objects are not being garbage collected properly.
     * Identify any consistent increases in heap memory that do not return to baseline.
@@ -19,7 +19,7 @@
 
 2.  **Analyze the root cause:**
     * If a potential leak is detected, investigate further using FusionReactor.
-    * Analyze **thread activity** (On-Premise UI) to detect blocked or excessive memory-holding threads.
+    * Analyze **thread activity** to detect blocked or excessive memory-holding threads.
     * Use **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** to trigger Garbage Collection at key moments and observe the impact.
     * Take **heap dumps** and analyze them using third-party tools like **[Eclipse MAT](https://eclipse.dev/mat/)**.
     * Inspect the heap dump to identify **large or continuously growing objects** that are not being released.

@@ -4,7 +4,7 @@
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1075725452?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Capacity Planning &amp; Resource Optimization with FusionReactor"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-**Problem:** Ensuring optimal performance of ColdFusion applications in dynamic cloud environments while controlling costs.
+**Problem:** Ensuring optimal performance of ColdFusion applications while controlling resource costs.
 
 **Solution using FusionReactor:**
 
@@ -21,13 +21,12 @@
 2.  **Optimize resource allocation:**
     * Leverage the insights gained from understanding application demand.
     * If using **auto-scaling**, use FusionReactor metrics to fine-tune configurations.
-    * Utilize **FusionReactor dashboards** to gain a comprehensive view of resource utilization.
-    * Make informed decisions about **adjusting cloud resources** based on real-time data.
+    * Make informed decisions about **adjusting server resources** based on real-time data.
     * Aim for efficient resource utilization to handle traffic fluctuations without over-provisioning.
 
 3.  **Plan for future capacity needs:**
     * Use **historical data trends** from FusionReactor to forecast future resource requirements.
-    * Set up **[Anomaly Detection](/Data-insights/Features/Anomaly-Detection/ADuserguide/) alerts** (with the Pro AI plan) to get early warnings of potential resource strain.
+    * Use **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** to get early warnings of potential resource strain.
     * Implement **scaling strategies** proactively to handle future growth.
     * Ensure your application can handle increased demand without performance degradation.
 
