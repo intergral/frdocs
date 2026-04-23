@@ -1,4 +1,4 @@
-# Memory leak detection & analysis 
+# Memory leak detection & analysis
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1075712868?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Memory Leak Detection &amp; Analysis with FusionReactor"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -6,43 +6,29 @@
 
 **Solution using FusionReactor:**
 
-1.  **Detect memory leaks:**
-    * Open FusionReactor.
-    * Monitor **heap usage trends** over time using the **Memory Overview page**.
-    * Pay attention to **garbage collection activity**.
-    * Look for **unusual memory growth patterns** that indicate objects are not being garbage collected properly.
-    * Identify any consistent increases in heap memory that do not return to baseline.
-
+1. **Detect memory leaks:**
+    - Open FusionReactor and navigate to the **Memory Overview** page.
+    - Monitor heap usage trends over time and watch for consistent growth that does not return to baseline.
+    - Pay attention to **garbage collection activity** - excessive GC with little memory recovery is a key warning sign.
 
     !!! info "Learn more"
         [Garbage Collection](/Data-insights/Features/Resources/Garbage-Collection/)
 
-2.  **Analyze the root cause:**
-    * If a potential leak is detected, investigate further using FusionReactor.
-    * Analyze **thread activity** to detect blocked or excessive memory-holding threads.
-    * Use **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** to trigger Garbage Collection at key moments and observe the impact.
-    * Take **heap dumps** and analyze them using third-party tools like **[Eclipse MAT](https://eclipse.dev/mat/)**.
-    * Inspect the heap dump to identify **large or continuously growing objects** that are not being released.
-    * Combine these analysis techniques to pinpoint the exact source of the leak, such as:
-        * **Static collections** that retain objects indefinitely.
-        * **Listeners** that are not properly unregistered.
-        * **Caching issues** that lead to excessive memory consumption.
+2. **Analyze the root cause:**
+    - Review **thread activity** to detect blocked or memory-holding threads.
+    - Use **[Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/)** to trigger garbage collection at key moments and observe the impact.
+    - Take **heap dumps** and analyze them with **[Eclipse MAT](https://eclipse.dev/mat/)** to identify large or growing objects not being released.
+    - Common causes include:
+        - Static collections retaining objects indefinitely.
+        - Listeners not properly unregistered.
+        - Caching issues causing excessive memory consumption.
 
-3.  **Resolve the issue:**
-    * Apply the necessary fixes based on the identified root cause.
-    * **Optimize object lifecycles** by removing unnecessary references and ensuring objects are released when no longer needed.
-    * Address **code patterns** that cause memory retention, such as those mentioned above.
-    * Adjust **JVM memory settings** and **garbage collection strategies** if necessary to better manage memory usage.
-    * Implement code changes to release objects when they are no longer required.
+3. **Resolve the issue:**
+    - Remove unnecessary object references and ensure objects are released when no longer needed.
+    - Fix code patterns causing memory retention (see above).
+    - Adjust **JVM memory settings** and **garbage collection strategies** if needed.
 
-4.  **Validate the fix:**
-    * After applying the fixes, **re-check the memory metrics graphs** in FusionReactor.
-    * Confirm that **heap usage has improved** and returned to expected levels.
-    * Monitor **garbage collection behavior** to ensure memory pressure has been reduced.
-    * Set up **Crash Protection alerts** for abnormal memory consumption trends to prevent future memory leaks.
-
-5.  **Maintain continuous monitoring:**
-    * Continuously monitor memory usage and garbage collection activity with FusionReactor.
-    * Proactively address any potential memory leaks to ensure application stability and efficiency.
-
-
+4. **Validate the fix:**
+    - Re-check memory metrics in FusionReactor and confirm heap usage has returned to expected levels.
+    - Monitor GC behavior to ensure memory pressure has reduced.
+    - Configure **Crash Protection alerts** for abnormal memory trends to catch future regressions early.

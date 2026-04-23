@@ -3,7 +3,7 @@
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1080792100?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Increasing SQL query character limit (On-prem &amp; Cloud)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-This page explains how to adjust the displayed character limit for SQL queries tracked by FusionReactor's JDBC monitoring, both for on-premise and Cloud environments. Increasing or disabling this limit allows you to view complete long SQL queries for better code efficiency analysis and issue rectification.
+This page explains how to adjust the displayed character limit for SQL queries tracked by FusionReactor's JDBC monitoring. Increasing or disabling this limit allows you to view complete long SQL queries for better debugging and analysis.
 
 ## Understanding the issue
 
@@ -14,7 +14,6 @@ FusionReactor's JDBC tracking provides insights into SQL queries executed within
 FusionReactor offers settings to increase the default character limit for displayed SQL queries or disable it entirely.
 
 
-### On-Premise environment
 1.  **Navigate to JDBC Settings:**
     In the FusionReactor on-premise UI, locate and click on the **JDBC** section in the left-hand navigation menu.
 2.  **Access Logging / Metrics Settings:**
