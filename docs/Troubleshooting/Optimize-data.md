@@ -4,4 +4,4 @@ This guide explains how to reduce the volume of trace data sent to FusionReactor
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Troubleshooting/Optimize-data) or [start a free trial](https://app.opspilot.com).

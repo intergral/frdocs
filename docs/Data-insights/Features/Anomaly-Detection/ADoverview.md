@@ -4,4 +4,4 @@ Anomaly detection is an algorithmic capability that recognizes when a metric div
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/Anomaly-Detection/ADoverview) or [start a free trial](https://app.opspilot.com).

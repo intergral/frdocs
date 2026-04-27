@@ -4,4 +4,4 @@ The OpsPilot User Guide covers how to interact with the OpsPilot AI assistant th
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/OpsPilot/OpsPilot-user-guide) or [start a free trial](https://app.opspilot.com).

@@ -4,4 +4,4 @@ The Usage & Details page gives you a real-time view of your cloud subscription s
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Admin-and-data/usage-and-details) or [start a free trial](https://app.opspilot.com).

@@ -4,4 +4,4 @@ Alert rules define the queries, conditions, and evaluation schedules that determ
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/Alerting/Alert-Rules/Configure-rules) or [start a free trial](https://app.opspilot.com).

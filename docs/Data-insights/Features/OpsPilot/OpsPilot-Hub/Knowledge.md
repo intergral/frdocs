@@ -4,4 +4,4 @@ The Knowledge page lets you build a context library for the OpsPilot AI assistan
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/OpsPilot/OpsPilot-Hub/Knowledge) or [start a free trial](https://app.opspilot.com).

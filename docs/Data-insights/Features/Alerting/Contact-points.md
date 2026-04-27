@@ -4,4 +4,4 @@ Contact points define where and how alert notifications are delivered, supportin
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/Alerting/Contact-points) or [start a free trial](https://app.opspilot.com).

@@ -4,4 +4,4 @@ FusionReactor Cloud stores up to 13 months of metric data and up to 30 days of t
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Troubleshooting/Cloud-historical-data) or [start a free trial](https://app.opspilot.com).

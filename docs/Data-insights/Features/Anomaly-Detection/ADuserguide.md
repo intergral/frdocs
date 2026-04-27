@@ -4,4 +4,4 @@ The Anomaly Detection user guide covers how to enable, configure, and tune anoma
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Data-insights/Features/Anomaly-Detection/ADuserguide) or [start a free trial](https://app.opspilot.com).

@@ -4,4 +4,4 @@ The Explore Search feature lets you find traces by service name, span name, tags
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.
-    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
+    [View the OpsPilot documentation](https://docs.opspilot.com/Troubleshooting/Cloud-span-name) or [start a free trial](https://app.opspilot.com).
