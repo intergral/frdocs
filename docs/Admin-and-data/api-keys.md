@@ -1,33 +1,7 @@
 # API Keys
 
-The **API Keys** page lets you manage access credentials used by services and agents to communicate with OpsPilot.
+The API Keys page lets you generate and manage access credentials used by services and agents to authenticate with OpsPilot, with the ability to enable, disable, or permanently revoke individual keys.
 
-## Viewing & managing keys
-
-Each listed API key displays:
-
-| Field | Description |
-|---|---|
-| **Name** | A user-defined label for the key |
-| **Description** | A short explanation of the key's purpose |
-| **Status toggle** | Temporarily enable or disable the key |
-| **Copy icon** | Copies the key value to your clipboard |
-| **Actions (...)** | Edit the key's name or description, or permanently remove it |
-
-!!! note
-    Deleting a key immediately revokes access for anything using it.
-
-## Creating a new key
-
-Click **+ Generate** to create a new API key:
-
-1. Enter a **Name** (required).
-2. Enter a **Description** (optional).
-3. Click **Generate** to create the key.
-
-Copy the key immediately after creation - it will not be shown again in full.
-
----
-
-!!! question "Need more help?"
-    Contact support in the chat bubble and let us know how we can assist.
+!!! info "This feature is part of OpsPilot"
+    This functionality is available in **OpsPilot**, our cloud-native observability platform.
+    [View the OpsPilot documentation](https://docs.opspilot.com) or [start a free trial](https://app.opspilot.com).
