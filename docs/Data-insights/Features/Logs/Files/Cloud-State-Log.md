@@ -1,6 +1,8 @@
 # Cloud State Log
 
-This log records changes in the state of the **Control Channel** - the connection between FusionReactor and OpsPilot. For a detailed overview of the channel’s status, see the [Cloud Status page](/Monitor-your-data/FR-Agent/Agent/Cloud-Status).
+**Available exclusively with FusionReactor Cloud licenses.**
+
+This log records changes in the state of the **Control Channel**, the cloud connection channel. For a detailed overview of the channel’s status, see the [Cloud Status page](/Monitor-your-data/FR-Agent/Agent/Cloud-Status).
 
 
 |Field Name|Column|Description|
