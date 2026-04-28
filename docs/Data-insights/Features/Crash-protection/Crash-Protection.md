@@ -1,4 +1,4 @@
-
+﻿
 # Crash protection
 
 <iframe src="https://player.vimeo.com/video/847319207?h=4962eb8710" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -9,7 +9,7 @@ Crash protection attempts to keep your server alive by watching for and preventi
 
 * Requests taking too long are often an indicator of poor code design. In interactive systems like the web, requests must run in as short a time as possible. It's often preferable to receive an error message rather than continue waiting for a request which may never complete.
 
-* Too many requests running simultaneously often leads to resource starvation, and although it's usually possible to tune this using the J2EE engine itself, the system must usually be restarted for it to take effect – and the option is usually well hidden. The majority of J2EE engines – including Adobe's JRun – control resource access using thread pools, and having too many requests running at once can reduce or exhaust these pools to the state where it's no longer possible to recover the system, leading to a costly restart.
+* Too many requests running simultaneously often leads to resource starvation, and although it's usually possible to tune this using the J2EE engine itself, the system must usually be restarted for it to take effect  -  and the option is usually well hidden. The majority of J2EE engines  -  including Adobe's JRun  -  control resource access using thread pools, and having too many requests running at once can reduce or exhaust these pools to the state where it's no longer possible to recover the system, leading to a costly restart.
 
 * Exhausted memory occurs very frequently in production environments. On shared installations as well as dedicated servers there never seems to be enough memory. Approaching memory margins is a sign that the server is overloaded, or one or more requests are creating a lot of objects and using more than their fair share of storage.
 
@@ -45,7 +45,7 @@ Crash Protection is fired. To do this you need to setup the [email configuration
 
 To avoid a flood of email in marginal situations, notification can be
 turned off completely, or can be set to only send email once in a given
-period – by default one minute. All three survival strategies are
+period  -  by default one minute. All three survival strategies are
 available for each of the three rules, except **Timeout Protection**,
 which can't use the **Queue** rule, since the requests it monitors can't
 be queued once they've started.
@@ -151,8 +151,8 @@ of requests is known and not expected to become prohibitive.
 ### Reject
 
 This strategy rejects requests. The request is summarily rejected and
-not allowed to proceed inside the J2EE engine. The abort strategy –
-**redirect to URL** or display of **fixed message** – is applied prior
+not allowed to proceed inside the J2EE engine. The abort strategy  - 
+**redirect to URL** or display of **fixed message**  -  is applied prior
 to the abort action.
 
 
@@ -187,7 +187,7 @@ What happens next depends on which type of lock is in use by your J2EE
 software.
 
 When a hard kill is performed, any VM Monitors
-are **automatically freed** by Java, with (almost) no side effects – the
+are **automatically freed** by Java, with (almost) no side effects  -  the
 system continues normally.
 
 Any **Ownable Synchronizers** are **not** freed - they remain in the
@@ -214,8 +214,8 @@ For this reason, you may not see requests disappear immediately when
 aborted with Protection or killed manually from the FusionReactor
 Administrator.
 
-We're continuing to investigate this problem – which is a restriction of
-the Java virtual machine – and will release an updated version of
+We're continuing to investigate this problem  -  which is a restriction of
+the Java virtual machine  -  and will release an updated version of
 FusionReactor when we have a solution.
 
 ##### J2EE containers & dead threads
@@ -232,7 +232,7 @@ object back to their internal thread pool.
 In some cases, this object can then be picked by the pool to run a new
 incoming request. This will then fail immediately, at which point the
 engine **will** remove the thread from the pool. The client then sees an
-error message, usually accompanied by a HTTP status 500 –
+error message, usually accompanied by a HTTP status 500  - 
 Internal Server Error.
 
 Again, this happens infrequently and is preferable to a total outage.
@@ -260,7 +260,7 @@ request URI.  The exact components used during the match are selectable
 using the fields on the rules form.
 
 The exact options available depend on the current mode of the engine: 
-in **Protect** mode, the **Statistics** option is not available – all
+in **Protect** mode, the **Statistics** option is not available  -  all
 requests which match a rule are tracked for timing statistics.  The
 labels used also change to reflect the mode of the system, and the make
 the meaning of the rule easier to understand.
@@ -310,7 +310,7 @@ and decide whether to protect them based on the URL parameters.
 Specifies which specific protection is affected by this rule. 
 
 * **If the engine is in Exclude mode,** this field specifies which
-protections any matching requests will be exempt from – either **Timeout
+protections any matching requests will be exempt from  -  either **Timeout
 Protection** or **All Protection**.  If exempt from only Timeout
 Protection, a matching requests will still be protected by Request
 Quantity Protection (i.e. will be rejected if the request load is too
@@ -320,7 +320,7 @@ allowed to run to completion, provided neither the Memory nor Request
 Quantity protections are activate.
 
 * **If the engine is in Protect mode**, this field specifies which
-protections will apply to any matching requests – either **Timeout
+protections will apply to any matching requests  -  either **Timeout
 Protection** or **All Protection**.  Any requests which don't match will
 proceed into the J2EE container unprotected.
 
@@ -442,10 +442,10 @@ A rule is specified as an exact match or a Regular Expression as defined
 by the relevant Java JRE specification.  As well as the URL path, the
 following optional components can be used to define the rule:
 
- - The **requested hostname** – useful to differentiate requests on
+ - The **requested hostname**  -  useful to differentiate requests on
     multi-homed systems
 
--  The **URL parameters** – useful for requests whose behavior changes
+-  The **URL parameters**  -  useful for requests whose behavior changes
     according to their parameters
 
 Additionally, each rule can specify whether pages matched by that rule

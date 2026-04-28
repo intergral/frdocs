@@ -1,4 +1,4 @@
-# AWS CloudWatch Metrics
+﻿# AWS CloudWatch Metrics
 
 [Amazon Web Services CloudWatch](https://aws.amazon.com/cloudwatch/) is a fully managed cloud service that **ingests, stores, visualizes, and monitors metrics**. It is part of the broader AWS ecosystem, a comprehensive suite of tightly integrated cloud services. CloudWatch integrates seamlessly with other AWS products, providing a robust framework for **metric collection, alerting, and notifications**.
 
@@ -33,10 +33,10 @@ Detailed instructions for configuration are available [here](#aws-cloudmetrics-s
 
 The **Metrics Selection** screen is divided into a **selector area**, which includes:
 
-* **Filter** – Narrow down the list of metrics.
-* **Series Selector** – Choose the metric series you want to send.
-* **Dimensions Selector** – Specify the dimensions for the selected series.
-* **Add to CloudWatch** button – Send the selected series to AWS CloudWatch.
+* **Filter**  -  Narrow down the list of metrics.
+* **Series Selector**  -  Choose the metric series you want to send.
+* **Dimensions Selector**  -  Specify the dimensions for the selected series.
+* **Add to CloudWatch** button  -  Send the selected series to AWS CloudWatch.
 
 All series, including [JMX MBean](JMX-MBeans.md) series, are displayed in this screen. The displayed series can be further filtered to quickly locate and select the metrics you want to upload.
 
@@ -82,8 +82,8 @@ All series, including [JMX MBean](JMX-MBeans.md) series, are displayed in this s
 
 FusionReactor allows several dimensions to be dynamically filled using **curly-brace templates**. Clicking the **Info** icon next to the Dimensions field displays the supported placeholders:
 
-* **{hostname}** – The hostname of the machine.
-* **{instancename}** – The name of the FusionReactor instance.
+* **{hostname}**  -  The hostname of the machine.
+* **{instancename}**  -  The name of the FusionReactor instance.
 
 
 
@@ -95,12 +95,12 @@ The lower half of the screen displays the current **Available** and **Stale** me
 
 The columns in this section include:
 
-* **Name** – The name of the metric.
-* **Description** – A brief description of the metric.
-* **Dimensions** – The associated dimensions for this metric.
-* **AWS Metric Name** – The corresponding metric name in AWS CloudWatch.
-* **Full ID** – The full identifier of the metric.
-* **Last Sampled Value** – The most recent recorded value.
+* **Name**  -  The name of the metric.
+* **Description**  -  A brief description of the metric.
+* **Dimensions**  -  The associated dimensions for this metric.
+* **AWS Metric Name**  -  The corresponding metric name in AWS CloudWatch.
+* **Full ID**  -  The full identifier of the metric.
+* **Last Sampled Value**  -  The most recent recorded value.
 
 The **Remove** button can be used to stop sending a metric to CloudWatch.
 

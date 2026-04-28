@@ -1,4 +1,4 @@
-
+﻿
 # TLS Deprecation Guide
 
 As of 2025, support for **TLS 1.0 and 1.1 has been deprecated** across many platforms and JVMs. FusionReactor requires a modern TLS connection to activate and communicate securely.  
@@ -79,7 +79,7 @@ If your system fails the TLS probe, you have three main options:
 
 ---
 
-### Path 1 – Upgrade the JVM (Preferred)
+### Path 1  -  Upgrade the JVM (Preferred)
 
 1. Install Java **8u121+, 11, 17, or 21**.
 2. Point your service to use the new JVM.
@@ -89,7 +89,7 @@ Done.
 
 ---
 
-### Path 2 – Retrofit your current JVM
+### Path 2  -  Retrofit your current JVM
 
 1. Download **ISRG Root X1 and X2** certificates from [Let’s Encrypt](https://letsencrypt.org/certificates/).
 
@@ -129,7 +129,7 @@ Done.
 
 ---
 
-### Path 3 – Manual / Offline Activation
+### Path 3  -  Manual / Offline Activation
 
 Use this if you cannot enable TLS 1.2 or add Let’s Encrypt roots.
 

@@ -1,4 +1,4 @@
-
+﻿
 # FusionReactor Agent Releases
 
 ## 2026.1.0 - 20th Apr. 2026
@@ -397,7 +397,7 @@
 |FR8066|Improvement|Add hostname and ipaddress of instances from EDDS.|
 |FR8062|Improvement|Remove the final page of the installer and automatically show Instance Manager.|
 |FR8060|Improvement|Improce Lucee line performance so it uses<br>pagePoolClear function, rather than resseting the engine, this prevents<br>CFML pages being aborted.|
-|FR8054|Improvement|Bump ASM to 8.0.1 – to support newest Java versions|
+|FR8054|Improvement|Bump ASM to 8.0.1  -  to support newest Java versions|
 |FR7885|Improvement|Enable System Resources when a CF server is running as a non admin user on windows.|
 |FR8073|Improvement|Decompililation support for java 10-15|
 |FR8085|Bug|Fix data truncation for massive JDBC statements /  BLOBS going to FusionReactor Cloud.|
@@ -460,7 +460,7 @@
 ## 8.2.3
 |Key|Issue Type|Summary|
 | --- | --- | --- |
-|FR7953|Improvement|Track RMI calls in java 6 – 8.|
+|FR7953|Improvement|Track RMI calls in java 6  -  8.|
 |FR7952|Bug|Fix the Enterprise Dashboard proxy so that it honors the ‘use proxy’ setting for local connections.|
 |FR7951|Bug|Fix an ArrayIndexOutOfBounds exception in licensing on some RedHat operating systems.|
 

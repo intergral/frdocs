@@ -1,4 +1,4 @@
-
+﻿
 
 To search for triggered snapshots, open **Explore**, select the **Deep** data source, and choose **Search**.  
 
@@ -6,8 +6,8 @@ To search for triggered snapshots, open **Explore**, select the **Deep** data so
 
 You can refine your search using the following filters:  
 
-- **Service Name** – Select a service that has sent snapshots.  
-- **Tags** – Filter by specific attributes or resource values.  
+- **Service Name**  -  Select a service that has sent snapshots.  
+- **Tags**  -  Filter by specific attributes or resource values.  
 
 Results are displayed in a table, where you can select a snapshot to view.  
 

@@ -1,4 +1,4 @@
-# Troubleshooting Cloud connections
+﻿# Troubleshooting Cloud connections
 
 ## System status
 The status of various components of the **FusionReactor Cloud** system can be seen [here](https://fusionreactor-status.freshstatus.io/).
@@ -99,7 +99,7 @@ If the IP addresses are required, nslookup can be used to find their current val
 If you are unable or unwilling to use the dynamic DNS rules above, we have provided a static IP addresses which can be used for all services.
 
 ```
-46.137.127.35 – port tcp/443 and port tcp/2804.
+46.137.127.35  -  port tcp/443 and port tcp/2804.
 ```
 
 After enabling this firewall rule, the following -D options need to be applied to your JVM environment, to instruct FusionReactor to use the single address:

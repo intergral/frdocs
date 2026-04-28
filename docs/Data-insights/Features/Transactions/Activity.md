@@ -1,4 +1,4 @@
-#  Activity
+﻿#  Activity
 
 This activity page shows which transactions are running when the page was loaded or last
 refreshed.   There are 2 specific variations on this page:
@@ -28,7 +28,7 @@ overview. It is displayed in the following four columns:
 |Name|Description|
 |--- |--- |
 |**Max**|The amount of memory available to the JVM (this is a hard upper limit).|
-|**Alloc**|The amount of memory currently allocated by the JVM for its heap – this may grow until the max value is reached.|
+|**Alloc**|The amount of memory currently allocated by the JVM for its heap  -  this may grow until the max value is reached.|
 |**Free**|The amount of free memory from the currently-allocated heap.|
 |**Used (%)**|The amount of memory which is actually in use. This is expressed as a percentage as well as in KB.|
 
@@ -103,7 +103,7 @@ On the page, to the right of the filtering options there are two options:
 
     If FusionReactor detects that the candidate request owns any ownable synchronizers, it will not proceed to a hard kill in order to preserve the integrity of the locking system. If you use the user interface to **Force Thread Death**, FusionReactor will attempt the hard kill, but any locks will not be released (You could end up with a system hang. Use this feature with caution).
 
-    If you're using Protection rules set up to Abort requests – for example the Request Runtime Protection, FusionReactor won't automatically proceed to hard kill. You'll be able to identify these requests in the request history lists, because they will have a tab called **Transit - Locks**, listing the locks that the request owned.
+    If you're using Protection rules set up to Abort requests  -  for example the Request Runtime Protection, FusionReactor won't automatically proceed to hard kill. You'll be able to identify these requests in the request history lists, because they will have a tab called **Transit - Locks**, listing the locks that the request owned.
 
 ## Managing Requests
 

@@ -1,4 +1,4 @@
-
+﻿
 
 # Kafka Metrics
 
@@ -6,15 +6,15 @@ FusionReactor tracks a variety of metrics for **Kafka consumers**. Each consumer
 
 Tracked metrics include (but are not limited to):
 
-* **Assigned Partitions** – Number of partitions assigned to the consumer.
-* **Commit Rate** – Frequency of offset commits.
-* **Heartbeat Rate** – Frequency of heartbeat messages sent to the broker.
-* **Commit Latency Average** – Average time taken to commit offsets.
-* **Bytes Consumed Rate** – Rate of bytes consumed from Kafka.
-* **Record Consumed Rate** – Number of records consumed per unit time.
-* **Fetch Size Average** – Average size of fetch requests.
-* **Request Size Average** – Average size of requests sent to the broker.
-* **Outgoing and Incoming Byte Rate** – Network throughput to and from the Kafka broker.
+* **Assigned Partitions**  -  Number of partitions assigned to the consumer.
+* **Commit Rate**  -  Frequency of offset commits.
+* **Heartbeat Rate**  -  Frequency of heartbeat messages sent to the broker.
+* **Commit Latency Average**  -  Average time taken to commit offsets.
+* **Bytes Consumed Rate**  -  Rate of bytes consumed from Kafka.
+* **Record Consumed Rate**  -  Number of records consumed per unit time.
+* **Fetch Size Average**  -  Average size of fetch requests.
+* **Request Size Average**  -  Average size of requests sent to the broker.
+* **Outgoing and Incoming Byte Rate**  -  Network throughput to and from the Kafka broker.
 
 
 !!! info "Learn more"

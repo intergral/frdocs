@@ -1,6 +1,6 @@
-# Logging
+﻿# Logging
 
-Log dashboards provide preconfigured views for browsing, searching, and analysing ingested log data by source — including application server logs, ColdFusion logs, error logs, and usage statistics.
+Log dashboards provide preconfigured views for browsing, searching, and analysing ingested log data by source  -  including application server logs, ColdFusion logs, error logs, and usage statistics.
 
 !!! info "This feature is part of OpsPilot"
     This functionality is available in **OpsPilot**, our cloud-native observability platform.

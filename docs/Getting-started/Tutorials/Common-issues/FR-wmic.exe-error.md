@@ -1,5 +1,5 @@
-
-# FusionReactor – `wmic.exe cannot be found` Error
+﻿
+# FusionReactor  -  `wmic.exe cannot be found` Error
 
 When installing FusionReactor on some Windows servers, you may encounter the error:
 

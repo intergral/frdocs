@@ -1,4 +1,4 @@
-# Enterprise Dashboard
+﻿# Enterprise Dashboard
 
 With FusionReactor Enterprise Edition, you have the ability to monitor more than one server instances easily with the use of the
 **Enterprise Dashboard**. Any FusionReactor Enterprise Edition
@@ -234,7 +234,7 @@ The Ephemeral Data Service provides **Enterprise Dashboard** services to contain
 
 You can use the Ephemeral Data Service to get instant insight into your fleet of containers. It is possible to mix Ephemeral instances and traditionally-configured instances in the same dashboard, and you can group them together or separately.
 
-When an instance registers to the **Enterprise Dashboard**, it establishes an SSL secure channel to FRAM.  This tunnel is used to get metric data and as a proxy for web requests.  This means that FusionReactor instances within your containerized overlay network – which were previously opaque and unavailable to you – can now be accessed directly from the **Enterprise Dashboard**.  All the functionality of FusionReactor's user interface is available.
+When an instance registers to the **Enterprise Dashboard**, it establishes an SSL secure channel to FRAM.  This tunnel is used to get metric data and as a proxy for web requests.  This means that FusionReactor instances within your containerized overlay network  -  which were previously opaque and unavailable to you  -  can now be accessed directly from the **Enterprise Dashboard**.  All the functionality of FusionReactor's user interface is available.
 
 !!! info "Learn more"
     [Automatically registering FusionReactor instances to the dashboard](/Troubleshooting/Configuration/Enterprise-Dashboard-Configuration/).

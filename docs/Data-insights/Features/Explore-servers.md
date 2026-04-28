@@ -1,4 +1,4 @@
-# Servers
+﻿# Servers
 
 
 The Servers Overview, accessible under the **Explore** tab, provides a visual and intuitive representation of all monitored servers across various environments. This dashboard is designed to enable quick identification of performance issues, health states, and environment status at a glance.
@@ -194,9 +194,9 @@ Click **Update Thresholds** to apply your configuration. The new thresholds take
 
 At the top of the screen, you can:
 
-* **Select Group, Node, Job, Instance** – to view data for specific servers or services. You can select multiple servers to compare metrics across your infrastructure.
-* **Set Time Range** – focus on the last hour, day, or a custom range.
-* **Add Adhoc Filters** – isolate data for specific endpoints, users, or environments.
+* **Select Group, Node, Job, Instance**  -  to view data for specific servers or services. You can select multiple servers to compare metrics across your infrastructure.
+* **Set Time Range**  -  focus on the last hour, day, or a custom range.
+* **Add Adhoc Filters**  -  isolate data for specific endpoints, users, or environments.
 
 These dynamic filters make it easy to **narrow down the view** when diagnosing an issue. **Filters persist across tabs**, so when you switch between different dashboard views, your selected filters remain applied for consistent analysis.
 

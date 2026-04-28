@@ -1,4 +1,4 @@
-# Settings
+﻿# Settings
 
 ![!Screenshot](/Data-insights/Features/Incidents/images/setting-main.png)
 
@@ -32,19 +32,19 @@ Labels help categorize incidents for better tracking and filtering.
 
 Severities define the impact level of an incident. The available severities are:  
 
--  **Pending** – Severity not yet determined.  
-- **Low** – Limited impact on business operations.  
--  **Medium** – Some impact on business operations.  
--  **High** – Significant impact on business operations.  
--  **Critical** – Severe business impact requiring immediate attention.  
+-  **Pending**  -  Severity not yet determined.  
+- **Low**  -  Limited impact on business operations.  
+-  **Medium**  -  Some impact on business operations.  
+-  **High**  -  Significant impact on business operations.  
+-  **Critical**  -  Severe business impact requiring immediate attention.  
 
 
 ### Statuses
 
 Statuses indicate the current state of an incident.  
 
-- 🟠 **Active** – The incident is currently ongoing.  
-- 🟢 **Resolved** – The incident has been resolved.  
+- 🟠 **Active**  -  The incident is currently ongoing.  
+- 🟢 **Resolved**  -  The incident has been resolved.  
  
 
 ### Roles
@@ -52,8 +52,8 @@ Statuses indicate the current state of an incident.
 Roles define responsibilities within an incident response.  
 
 - **Default Roles:**  
-    - **Commander** – Manages the incident response.  
-    - **Investigator** – Handles the technical investigation.  
+    - **Commander**  -  Manages the incident response.  
+    - **Investigator**  -  Handles the technical investigation.  
 
 - To add a role, click **+ Add Role**, enter a name and description.  
 

@@ -92,7 +92,7 @@ The **Invoice** box contains the following following information regarding your 
 * Invoice status
 
 !!! note
-    Cloud invoices are also displayed in this table if applicable.  
+    OpsPilot invoices are also displayed in this table if applicable.
 
 ![!Screenshot](../../Billing/On-Premise//invoice.png)
 
@@ -114,4 +114,14 @@ It is important to note that any upgrades you make to your billing plan occur im
 
 !!! info
     Changing to monthly billing is considered a downgrade.
+
+---
+
+## Using OpsPilot alongside FusionReactor?
+
+If you ship metrics, logs, or traces to OpsPilot, you will need an OpsPilot plan in addition to your on-premise seats. The **Metric Shipping** add-on ($59/mo) covers third-party data shipment from the FR Agent to OpsPilot.
+
+Your FusionReactor Ultimate and Developer seats are also visible in the OpsPilot billing portal, giving you a single view of your combined costs.
+
+[View OpsPilot billing documentation](https://docs.opspilot.com/Admin-and-data/Billing/Cloud/overview/) for full plan details and pricing.
 

@@ -1,4 +1,4 @@
-## System Requirements
+﻿## System Requirements
 
 ### Operating Systems
 
@@ -31,7 +31,7 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 #### ![](/Monitor-your-data/FR-Agent/More/requirements/tux.gif) Linux
 
   * Red Hat Enterprise Linux 5 + Above
-  * openSuse Linux 10.2 – 12.2
+  * openSuse Linux 10.2  -  12.2
   * SuSE Linux Enterprise Server 8 + Above
   * Debian Linux 3 + Above
   * Oracle Linux 6 + Above
@@ -49,8 +49,8 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 ### Java
 
-* Oracle Java 8 – 21
-* Open JDK 8 – 21
+* Oracle Java 8  -  21
+* Open JDK 8  -  21
 * Liberica JDK 8, 11, 16
 * Amazon Corretto 8, 11, 17
 * Azul Zulu 11, 17
@@ -65,10 +65,10 @@ available; **System Monitor** and **System CPU** may be missing depending on the
 
 #### ![](/Monitor-your-data/FR-Agent/More/requirements/j2eee.gif) J2EE / Other Servers
 
-  * Apache Tomcat 7 – 10
+  * Apache Tomcat 7  -  10
   * JBoss AS 6 / 7
-  * WildFly 8 – 29
-  * Jetty 7 – 11
+  * WildFly 8  -  29
+  * Jetty 7  -  11
   * GlassFish 4 / 5
   * Payara 5
 

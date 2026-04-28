@@ -1,4 +1,4 @@
-# What's New in FusionReactor
+﻿# What's New in FusionReactor
 
 ## FusionReactor 2026.1.0 released
 
@@ -164,15 +164,15 @@ We’re excited to announce the availability  of Traces Drilldown in Explore, de
 
 **Highlights:**
 
-- **No queries needed** – Jump straight from dashboards to detailed trace insights, connecting RED (Rate, Errors, Duration) metrics with exact trace data.
+- **No queries needed**  -  Jump straight from dashboards to detailed trace insights, connecting RED (Rate, Errors, Duration) metrics with exact trace data.
 
-- **Seamless navigation** – Move smoothly from high-level overviews to detailed span views while keeping context, making root cause analysis faster.
+- **Seamless navigation**  -  Move smoothly from high-level overviews to detailed span views while keeping context, making root cause analysis faster.
 
-- **Built-in tools** – Use integrated filtering, highlighting, comparisons, and correlation to quickly spot anomalies without leaving the interface.
+- **Built-in tools**  -  Use integrated filtering, highlighting, comparisons, and correlation to quickly spot anomalies without leaving the interface.
 
-- **Rich trace visualization** – Inspect spans with metadata, duration, and status to pinpoint bottlenecks and errors.
+- **Rich trace visualization**  -  Inspect spans with metadata, duration, and status to pinpoint bottlenecks and errors.
 
-- **Unified workflow** – Link traces with logs, metrics, and profiles for a complete observability view, enabling rapid investigation from any signal.
+- **Unified workflow**  -  Link traces with logs, metrics, and profiles for a complete observability view, enabling rapid investigation from any signal.
 
 !!! info 
     [Explore Traces](/Data-insights/Features/explore-traces/)
@@ -204,9 +204,9 @@ We’ve launched a major upgrade to FusionReactor’s authentication system to e
 
 **Here’s what’s new:**
 
-* **🔑 Passwordless Logins with Passkeys** – A faster, phishing-resistant way to log in using device-based authentication.
-* **🛡️ Built-in Multi-Factor Authentication (MFA)** – Add an extra layer of protection with TOTP or biometric verification.
-* **🔁 Seamless Multi-Account Switching** – Easily move between accounts and organizations without logging out.
+* **🔑 Passwordless Logins with Passkeys**  -  A faster, phishing-resistant way to log in using device-based authentication.
+* **🛡️ Built-in Multi-Factor Authentication (MFA)**  -  Add an extra layer of protection with TOTP or biometric verification.
+* **🔁 Seamless Multi-Account Switching**  -  Easily move between accounts and organizations without logging out.
 
 
 These changes help secure your FusionReactor access while reducing friction in your daily workflow.
@@ -456,7 +456,7 @@ Access intelligent crash analysis directly from the Cloud interface. The new **A
 Send your FusionReactor data to popular APM tools like Grafana and Datadog. Our OpenTelemetry-compliant agent gives you the flexibility to work with the platforms you already use.
 
 ### Unified Billing Model
-A simplified billing approach that supports on-premises, cloud, and hybrid deployments. Switch between environments without billing complexity – pay only for what you need.
+A simplified billing approach that supports on-premises, cloud, and hybrid deployments. Switch between environments without billing complexity  -  pay only for what you need.
 
 ### Server View
 A centralized dashboard for monitoring all your servers in one place. Get high-level visibility into server health, performance metrics, and alerts, with the ability to drill down into individual server details and analyze historical trends.

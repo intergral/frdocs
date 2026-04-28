@@ -1,5 +1,5 @@
-
-# ColdFusion 2025 & FusionReactor 2025 – Startup Issue
+﻿
+# ColdFusion 2025 & FusionReactor 2025  -  Startup Issue
 
 When installing **FusionReactor 2025** with **ColdFusion 2025**, the server may fail to start if FusionReactor’s JVM arguments are added. This usually occurs because ColdFusion is not resolving the correct Java runtime during startup.
 
