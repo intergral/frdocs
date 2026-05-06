@@ -54,7 +54,6 @@ nav:
         - Downloads: Latest-updates/Downloads.md
   - TUTORIALS & WALKTHROUGHS:
      - Overview: Getting-started/Tutorials/Overview.md
-     - New UI FAQ: Getting-started/Tutorials/new-ui-faq.md
      - Performance analysis:
         - Post-crash troubleshooting: Getting-started/Tutorials/crash-troubleshoot-onprem.md
         - Getting-started/Tutorials/resolve-slow-queries.md
@@ -344,6 +343,7 @@ nav:
         - Troubleshooting/storing-fr-logs.md
         - Troubleshooting/OP-setting-up-reports.md
      - OpsPilot UI:
+        - New UI FAQ: Getting-started/Tutorials/new-ui-faq.md
         - Overview: Data-insights/Features/overview.md
         - Servers: Data-insights/Features/Explore-servers.md
         - Applications: Data-insights/Features/applications.md
