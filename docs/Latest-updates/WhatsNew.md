@@ -1,5 +1,18 @@
 ﻿# What's New in FusionReactor
 
+## FusionReactor 2026.1.1 released
+
+**Published: May 6, 2026**
+
+Reduces the cardinality of the request metrics added in 2026.1.0. Some users experienced a substantial metric usage increase due to certain metric labels, these have been removed by default while keeping the metrics.   
+
+Removed labels:
+- `http.route` for `http.server.request.duration` metrics
+- `db.collection.name` and `db.namespace` for `db.client.operation.duration` metrics
+- `messaging.consumer.group.name`, `messaging.destination.name`, and `messaging.destination.partition.id` for messaging request metrics
+
+These labels can be re-enabled via the high_cardinality [properties](../Troubleshooting/Configuration/FusionReactor-System-Properties.md#observability-metrics). If metric usage is still an issue, you may wish to disable the metrics. 
+
 ## FusionReactor 2026.1.0 released
 
 **Published: April 20, 2026**
