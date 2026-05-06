@@ -1,4 +1,4 @@
-
+﻿
 
 # Web Metrics
 
@@ -49,7 +49,7 @@ This modal allows you to change titles, colors, and data series for the selected
 
 | Field             | Description                                                                                                                                                                                                                                     |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Select Series** | Choose which data series to display. If the series has not yet been detected, an ID path will appear instead of a friendly title (e.g., `/transit/txntracker/JDBCRequest/history/activity` instead of *JDBCRequest – Activity (Requests/sec)*). |
+| **Select Series** | Choose which data series to display. If the series has not yet been detected, an ID path will appear instead of a friendly title (e.g., `/transit/txntracker/JDBCRequest/history/activity` instead of *JDBCRequest  -  Activity (Requests/sec)*). |
 | **Fill Color**    | Sets the fill color of the series in the graph.                                                                                                                                                                                                 |
 | **Line Color**    | Sets the line color of the series in the graph.                                                                                                                                                                                                 |
 
@@ -113,14 +113,14 @@ The **Counts** table provides a snapshot of **Web Requests** and **JDBC Requests
 
 | Field                                      | Description                                                                               |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------- |
-| **WebRequest – Errors**                    | Number of Web Requests with errors in the last 60 seconds.                                |
-| **WebRequest – Slow Requests**             | Number of Web Requests that exceeded the slow request threshold in the last 60 seconds.   |
-| **WebRequest – Average Request Duration**  | Average processing time of Web Requests in the last 60 seconds.                           |
-| **WebRequest – Total Requests**            | Total number of Web Requests processed by the application server in the last 60 seconds.  |
-| **JDBCRequest – Errors**                   | Number of JDBC Requests with errors in the last 60 seconds.                               |
-| **JDBCRequest – Slow Requests**            | Number of JDBC Requests that exceeded the slow request threshold in the last 60 seconds.  |
-| **JDBCRequest – Average Request Duration** | Average processing time of JDBC Requests in the last 60 seconds.                          |
-| **JDBCRequest – Total Requests**           | Total number of JDBC Requests processed by the application server in the last 60 seconds. |
+| **WebRequest  -  Errors**                    | Number of Web Requests with errors in the last 60 seconds.                                |
+| **WebRequest  -  Slow Requests**             | Number of Web Requests that exceeded the slow request threshold in the last 60 seconds.   |
+| **WebRequest  -  Average Request Duration**  | Average processing time of Web Requests in the last 60 seconds.                           |
+| **WebRequest  -  Total Requests**            | Total number of Web Requests processed by the application server in the last 60 seconds.  |
+| **JDBCRequest  -  Errors**                   | Number of JDBC Requests with errors in the last 60 seconds.                               |
+| **JDBCRequest  -  Slow Requests**            | Number of JDBC Requests that exceeded the slow request threshold in the last 60 seconds.  |
+| **JDBCRequest  -  Average Request Duration** | Average processing time of JDBC Requests in the last 60 seconds.                          |
+| **JDBCRequest  -  Total Requests**           | Total number of JDBC Requests processed by the application server in the last 60 seconds. |
 
 
 
@@ -138,10 +138,10 @@ The following values are displayed in this table:
 
 | Field                                                     | Description                                                                                                                                      |
 | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **WebRequest – Recent Slow Pages (within 60s)**           | Lists any Web Requests in the last 60 seconds that exceeded the threshold defined in **Transactions → Settings** and were classified as *slow*.  |
-| **WebRequest – Recent Performance Average (within 60s)**  | The average duration of *slow* Web Requests in the last 60 seconds.                                                                              |
-| **JDBCRequest – Recent Slow Pages (within 60s)**          | Lists any JDBC Requests in the last 60 seconds that exceeded the threshold defined in **Transactions → Settings** and were classified as *slow*. |
-| **JDBCRequest – Recent Performance Average (within 60s)** | The average duration of *slow* JDBC Requests in the last 60 seconds.                                                                             |
+| **WebRequest  -  Recent Slow Pages (within 60s)**           | Lists any Web Requests in the last 60 seconds that exceeded the threshold defined in **Transactions → Settings** and were classified as *slow*.  |
+| **WebRequest  -  Recent Performance Average (within 60s)**  | The average duration of *slow* Web Requests in the last 60 seconds.                                                                              |
+| **JDBCRequest  -  Recent Slow Pages (within 60s)**          | Lists any JDBC Requests in the last 60 seconds that exceeded the threshold defined in **Transactions → Settings** and were classified as *slow*. |
+| **JDBCRequest  -  Recent Performance Average (within 60s)** | The average duration of *slow* JDBC Requests in the last 60 seconds.                                                                             |
 
 
 
@@ -155,11 +155,11 @@ Each value includes both the **last 60 seconds** count and the **total since the
 
 | Field                                            | Description                                                                                                                         |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Memory Protection – Page Aborts**              | Number of requests aborted because the JVM heap exceeded the configured threshold for the configured duration.                      |
-| **Memory Protection – Queue Timeouts**           | Number of requests queued because the JVM heap exceeded the configured threshold for the configured duration.                       |
-| **Request Quantity Protection – Page Aborts**    | Number of requests aborted because the number of running requests exceeded the configured limit.                                    |
-| **Request Quantity Protection – Queue Timeouts** | Number of requests queued because the number of running requests exceeded the configured limit.                                     |
-| **Request Timeout Protection – Page Aborts**     | Number of requests aborted because they exceeded the configured maximum execution time. Values are shown as **(last 60s / total)**. |
+| **Memory Protection  -  Page Aborts**              | Number of requests aborted because the JVM heap exceeded the configured threshold for the configured duration.                      |
+| **Memory Protection  -  Queue Timeouts**           | Number of requests queued because the JVM heap exceeded the configured threshold for the configured duration.                       |
+| **Request Quantity Protection  -  Page Aborts**    | Number of requests aborted because the number of running requests exceeded the configured limit.                                    |
+| **Request Quantity Protection  -  Queue Timeouts** | Number of requests queued because the number of running requests exceeded the configured limit.                                     |
+| **Request Timeout Protection  -  Page Aborts**     | Number of requests aborted because they exceeded the configured maximum execution time. Values are shown as **(last 60s / total)**. |
 
 
 

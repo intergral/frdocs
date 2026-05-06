@@ -1,4 +1,4 @@
-# Overview
+﻿# Overview
 
 <iframe src="https://player.vimeo.com/video/847319190?h=732325e769" width="640" height="363" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -57,7 +57,7 @@ every page refresh.
 The Deltas feature in the CPU Sampler is an incredibly useful feature.
 Once delta values are tracked, they can provide the user with the
 current CPU usage since the button was clicked till the current time. A
-reset button will appear once Deltas is pressed – clicking this button
+reset button will appear once Deltas is pressed  -  clicking this button
 will allow you to set a new time (baseline) from where the thread CPU
 time is calculated.
 
@@ -147,13 +147,13 @@ this:
 
 There are several cases where an error page will be returned:
 
--   Unsupported Java Version – this is when FusionReactor is installed
+-   Unsupported Java Version  -  this is when FusionReactor is installed
     on a system with an unsupported Java Runtime Environment (anything
     below Java 6).
--   Unsupported Java Management Extension – this is thrown when the JVM
+-   Unsupported Java Management Extension  -  this is thrown when the JVM
     vendor does not support thread CPU timing. To fix this, run
     FusionReactor in a supported JVM.
--   Disabled Thread CPU Time – the sampler uses a Java Management
+-   Disabled Thread CPU Time  -  the sampler uses a Java Management
     Extension to capture a thread's special meta information. This error
     page is rendered when the thread CPU timing within this extension is
     disabled. This can be resolved by following these steps:

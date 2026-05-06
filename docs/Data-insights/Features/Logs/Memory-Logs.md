@@ -1,8 +1,8 @@
-# Memory Logs
+﻿# Memory Logs
 
 The **Memory Logs** section contains two pages:
 
-1. **[memorysummary.log](#memory-summary-log)** – a log containing heap and non-heap memory information.
+1. **[memorysummary.log](#memory-summary-log)**  -  a log containing heap and non-heap memory information.
 2. A page explaining how different servers reference memory, and how FusionReactor adapts to capture logs that accurately reflect the types of memory used by each server.
 
 

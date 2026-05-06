@@ -1,4 +1,4 @@
-
+﻿
 
 # Static endpoints
 
@@ -8,8 +8,8 @@ Some users run FusionReactor behind restricted firewalls which don't allow all o
 
 In order to communicate with the FusionReactor infrastructure, each FusionReactor instance attempts to connect to the following services, which are identified by their DNS names:
 
-* wss://cc.fusionreactor.io – port tcp/2804 (FR 12 and below)
-* https://api.fusionreactor.io – port tcp/443
+* wss://cc.fusionreactor.io  -  port tcp/2804 (FR 12 and below)
+* https://api.fusionreactor.io  -  port tcp/443
 
 
 ### Firewall configuration
@@ -27,7 +27,7 @@ In order to communicate with the FusionReactor infrastructure, each FusionReacto
 
 If you're unable or unwilling to use the dynamic DNS rules above, we've provided a static IP addresses which can be used for all services.
 
-* 46.137.127.35 – port tcp/443 and port tcp/2804
+* 46.137.127.35  -  port tcp/443 and port tcp/2804
 
 After enabling this firewall rule, the following -D options need to be applied to your JVM environment, to instruct FusionReactor to use the single address:
 

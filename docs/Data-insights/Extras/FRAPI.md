@@ -1,4 +1,4 @@
-# FusionReactor API (FRAPI)
+﻿# FusionReactor API (FRAPI)
 
 ## What is FRAPI?
 
@@ -221,7 +221,7 @@ Enterprise Dashboard monitored remote server online/offline
 programmatically.
 
 In the reactor.conf file the keys "remoting.server.X.\*" control the ED
-monitored servers. The key of interest is "remoting.server.X.online" –
+monitored servers. The key of interest is "remoting.server.X.online"  - 
 you'll have to figure out what "X" is in your case; it's just a serial
 number. Once you have that, you can use FRAPI to toggle the online
 state. Here's some CF to do it: \*NB you must not have reactor.conf

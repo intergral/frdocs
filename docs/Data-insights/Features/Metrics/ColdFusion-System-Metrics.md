@@ -1,4 +1,4 @@
-
+﻿
 
 # ColdFusion System Metrics
 
@@ -31,11 +31,11 @@ The **Scopes** graph provides an overview of the size of different ColdFusion me
 
 The supported scope areas include:
 
-* **Session Scope Size** – Memory used by active user sessions.
-* **Query Cache** – Memory consumed by cached query results.
-* **Template Cache Size** – Memory used to store compiled templates.
-* **Application Scope** – Memory allocated for application-wide variables.
-* **Server Scope Size** – Memory reserved for server-wide variables.
+* **Session Scope Size**  -  Memory used by active user sessions.
+* **Query Cache**  -  Memory consumed by cached query results.
+* **Template Cache Size**  -  Memory used to store compiled templates.
+* **Application Scope**  -  Memory allocated for application-wide variables.
+* **Server Scope Size**  -  Memory reserved for server-wide variables.
 
 
 

@@ -1,4 +1,4 @@
-# Setting up email report alerts in FusionReactor (On-Premise)
+# Setting up email report alerts in FusionReactor
 
 ## Overview
 
@@ -58,5 +58,26 @@ FusionReactor’s **Email Reports** offer an efficient way to monitor server per
 
 
 
-Once setup is complete, reports will be automatically delivered to your inbox at the specified frequency and time. This allows you to proactively monitor your server's performance without manual intervention.
+Once setup is complete, reports will be automatically delivered to your inbox at the specified frequency and time.
+
+---
+
+## Troubleshooting: reports not arriving
+
+If reports are configured but not arriving, the Daily Report Plugin config may be corrupted due to an improper server shutdown.
+
+The config files are located at:
+
+`<fusionreactordir>/instance/<instancename>/cmconfig/com/intergral/fusionreactor/plugin/reports/internal/data/`
+
+Each file should contain a line like:
+
+`service.pid="com/intergral/fusionreactor/plugin/reports/internal/data/DataStore"`
+
+If the `service.pid` line is missing, the file is corrupt. To fix it:
+
+1. Stop the Application Server (ColdFusion, Tomcat, Lucee, etc.).
+2. Navigate to `{fusionreactordir}/instance/{instancename}`.
+3. Delete all files in `/cmconfig/com/intergral/fusionreactor/plugin/reports/internal/data`.
+4. Restart the Application Server to regenerate the config files.
 

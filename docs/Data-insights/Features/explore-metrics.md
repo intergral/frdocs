@@ -1,4 +1,4 @@
-# Overview
+﻿# Overview
 
 FusionReactor’s **Metrics Drilldown**  offers a seamless, query-free way to explore Prometheus-compatible metrics. With just a few clicks, you can uncover related metrics and insights - no need to write a single PromQL query.
 
@@ -92,9 +92,9 @@ Explore is great for experimenting with queries and uncovering deeper insights-w
 
 2. Choose one of the following:
 
-    * New dashboard – to create a new one
+    * New dashboard  -  to create a new one
 
-    * Existing dashboard – and pick one from the list
+    * Existing dashboard  -  and pick one from the list
 
 3. Click **Open dashboard** to view it.
 

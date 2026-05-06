@@ -1,33 +1,25 @@
 # How to identify the real cause of slow requests
 
-
-
-## Identifying the real cause of slow requests
-
 !!! question
-    We often see slow requests, but they may just be symptoms, not the actual problem. How can we tell the real cause (e.g., CPU-heavy process, database issue, etc.)?
+    We often see slow requests, but they may just be symptoms. How can we identify the real cause (e.g., CPU-heavy process, database issue)?
 
-There are a few things you can do to check the cause of slow requests, either by looking at the requests themselves or by examining the wider environment, including your database performance within the FusionReactor UI.
+## 1. Analyze transactions for slow sub-transactions
 
-1. **Analyze the transaction(s) for slow sub-transactions:**  
-    - Go to the Web Requests screen and select **History** or **Slow Transactions** from the dropdown.
-    - Optionally, set a minimum request duration using the right-hand filter.
-    - Select a slow-running request, then navigate to **Tracing -> Transaction Hierarchy**.
-    - This view highlights the slowest path, helping to pinpoint where the transaction slowed down.
-    - Send the slowest request into **OpsPilot** (using the dedicated button) to receive a performance analysis and suggested solutions.
+- Go to **Web Requests** and select **History** or **Slow Transactions** from the dropdown.
+- Optionally set a minimum request duration using the right-hand filter.
+- Select a slow request and navigate to **Tracing > Transaction Hierarchy**.
+- This highlights the slowest path through the transaction, helping to pinpoint where time was lost.
 
-2. **Examine the Detailed Trace:**  
-    - On the same screen where you selected Tracing, find the button on the far right to access the **Detailed Trace**.
-    - This trace shows all spans involved in the transaction, including external applications used.
-    - Use this to pinpoint where delays occurred.
+## 2. Examine the Detailed Trace
 
-3. **Get an overview of server performance:**  
-    - Navigate to **Explore -> Servers** to assess system-wide performance.
-    - Use the left dropdown to group and filter data, and the right dropdown to choose metrics.
-    - **Request Duration** and **Throughput** metrics indicate if performance is in a warning or critical state (thresholds can be adjusted here).
-    - Clicking into any tile reveals a set of performance graphs, allowing deeper analysis of system load (adjustable via the timeframe dropdown at the top).
+- From the same Tracing screen, click the button on the far right to open the **Detailed Trace**.
+- This shows all spans involved in the transaction, including any external calls.
+- Use this to identify exactly where delays occurred.
 
-4. **Check database performance (if instrumented with OTEL agent):**  
-    - Go to **Dashboards -> Integrations** to review database behavior.
-    - This can reveal if the database is facing issues that may be impacting request speed.
+## 3. Review server-level metrics
 
+- Open the **Metrics** tab in FusionReactor to review CPU, memory, and request throughput at the time of the slowdown.
+- Check the **Enterprise Dashboard** for a multi-instance overview and to spot resource saturation across servers.
+
+!!! info "Learn more"
+    [Crash Protection](/Data-insights/Features/Crash-protection/Crash-Protection/) can be configured to alert you when requests exceed defined thresholds.

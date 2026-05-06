@@ -10,7 +10,7 @@ Through these guides, you will:
 
 ✅ **Optimize** performance by diagnosing and resolving slow queries.
 
-✅ **Improve** observability with dashboards, alerts, and root cause analysis.
+✅ **Improve** observability with real-time metrics and root cause analysis.
 
 ✅ **Enhance** infrastructure monitoring with scalability testing and troubleshooting techniques.
 
@@ -19,8 +19,7 @@ Through these guides, you will:
 ### Topics covered
 
 - **Performance analysis**: Learn how to detect and fix performance bottlenecks, analyze slow requests, and improve application efficiency.
-- **Application observability**: Understand how to create dashboards, track real-time metrics, and set up alerts for proactive monitoring.
-- **Infrastructure observability**: Explore best practices for scaling systems, troubleshooting CPU spikes, and gathering valuable system statistics.
+- **Infrastructure observability**: Explore best practices for scaling systems, gathering system statistics, and planning for capacity growth.
 - **Common support issues**: Find quick solutions and step-by-step guides for frequently encountered problems and their resolutions.
 
 Each tutorial provides a step-by-step approach to help you maximize your monitoring tools and improve system reliability. Start exploring and unlock the full potential of your monitoring strategy, and find immediate help with common challenges in our new support section!

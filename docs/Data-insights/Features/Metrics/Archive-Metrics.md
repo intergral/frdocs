@@ -1,4 +1,4 @@
-# Archive metrics
+﻿# Archive metrics
 
 🔎**Find it**: **Logging** → **Archive Viewer** or **Metrics** →
 **Archived Metrics**.
@@ -192,7 +192,7 @@ The **Line Render Limit** controls the number of lines FusionReactor reads, pars
 * Increasing this limit allows you to view more data from the log file.
 * However, higher limits consume more system memory and can affect server performance.
 
-**Default:** 20,000 lines – sufficient for most daily resource log files.
+**Default:** 20,000 lines  -  sufficient for most daily resource log files.
 **Optional:** For complex log files, increasing the limit may be beneficial, but should be done with caution.
 
 ___

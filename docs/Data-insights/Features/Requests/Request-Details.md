@@ -1,4 +1,4 @@
-# Request Details
+﻿# Request Details
 
 You can get to the **Request Detail** page from any page which lists requests and
 pages linked from [Request Metrics](/Data-insights/Features/Metrics/Web-Metrics/).
@@ -74,10 +74,10 @@ Parent and Children requests for the transaction. This tab will only appear if t
 
 ## Profiler
 
-FusionReactor Ultimate, Developer and Trial Edition includes an integrated low-overhead [Java Profiler](../Profiler/Profiler.md) – which is the
+FusionReactor Ultimate, Developer and Trial Edition includes an integrated low-overhead [Java Profiler](../Profiler/Profiler.md)  -  which is the
 perfect tool for identifying poorly performing code in your production environment.  The profiler shows the percentage and actual time spent within each method call.   When the Profiler is enabled, requests and transactions will be automatically profiled and stored so you can analyze them at your leisure.  
 
-You can profile any requests or transactions which are running on the JVM – e.g. Tomcat, JBoss, WildFly, Glassfish, Jetty etc. CFML applications can also be profiled.    
+You can profile any requests or transactions which are running on the JVM  -  e.g. Tomcat, JBoss, WildFly, Glassfish, Jetty etc. CFML applications can also be profiled.    
 
 !!! tip
     Click on individual classes or methods, to perform [instant de-compilation](/UI/Overview)  

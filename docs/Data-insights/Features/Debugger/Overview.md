@@ -1,4 +1,4 @@
-
+﻿
 
 # Overview
 
@@ -22,10 +22,10 @@ The **FusionReactor Production Debugger** is available in the Ultimate(6.0+), De
      - Field access/modification breakpoints  
      - Exception thrown/caught breakpoints  
      - Conditional breakpoints & rate limiting  
-     - **Breakpoint Email Alerts** – Get notifications with stack traces and variable context  
+     - **Breakpoint Email Alerts**  -  Get notifications with stack traces and variable context  
 
 - **Additional Debugging Tools**  
-     - **Breakpoint Samplers** – Capture debugging data without disrupting execution  
+     - **Breakpoint Samplers**  -  Capture debugging data without disrupting execution  
 
 The **Debugger** is accessible from the left navigation bar in FusionReactor. Paused threads are indicated by an icon in the top navigation bar:  
 
@@ -109,9 +109,9 @@ The **Paused Threads** section at the bottom of the page displays all threads cu
 ![](/Data-insights/Features/Debugger/images/245552842.png)  
 
 This table provides details about paused threads, including:  
-- **Thread** – The name or identifier of the thread.  
-- **Location** – The class, method, and line number where the thread is paused.  
-- **Timeout** – The time remaining before the thread resumes execution, unless it hits another interactive breakpoint (only shown if a timeout is configured).  
+- **Thread**  -  The name or identifier of the thread.  
+- **Location**  -  The class, method, and line number where the thread is paused.  
+- **Timeout**  -  The time remaining before the thread resumes execution, unless it hits another interactive breakpoint (only shown if a timeout is configured).  
 
 Each thread has a dedicated row with control buttons, allowing you to view thread details or manage its execution.  
 

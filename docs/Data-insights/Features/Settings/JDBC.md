@@ -1,4 +1,4 @@
-# JDBC Settings
+﻿# JDBC Settings
 
 **JDBC &gt; Settings** allows you to modify various elements and
 behaviours relating to JDBC. The page is broken up into sections, each
@@ -148,7 +148,7 @@ Choosing when to close a transaction alters the timing data for JDBC statements.
 
 #### When statement execution completes
 
-The transaction closes as soon as the database finishes executing the statement.  The timing of the transaction – start / end / duration – is therefore tied solely to the time it took the engine to execute the statement.
+The transaction closes as soon as the database finishes executing the statement.  The timing of the transaction  -  start / end / duration  -  is therefore tied solely to the time it took the engine to execute the statement.
 Use this mode if you are happy with your result set handling, and you suspect the database is slowing you down.
 
 #### When the first result set closes
@@ -158,7 +158,7 @@ Use this mode if you suspect your page is spending too long processing a result 
 Caveat: if your statement doesn't have a result set (it might be a delete statement, for instance), then the JDBC transaction will close:
 
 When the statement is closed, or
-When its parent transaction – probably a Web Request – is closed.  In this case, you'll see **Cascade Closed** as the transaction status, indicating the parent was closed while the JDBC transaction was still open.
+When its parent transaction  -  probably a Web Request  -  is closed.  In this case, you'll see **Cascade Closed** as the transaction status, indicating the parent was closed while the JDBC transaction was still open.
 
 If your statement produces multiple result sets, all subsequent sets will be counted for aggregates (Row count etc.) but only the first will be used for transaction timing.|When statement execution completes|
 
