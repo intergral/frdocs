@@ -80,6 +80,9 @@ nav:
         - Getting-started/Tutorials/Common-issues/CF2025-and-FR-2025-Startup-issue.md
         - Getting-started/Tutorials/Common-issues/FR-wmic.exe-error.md
         - Getting-started/Tutorials/Common-issues/TLS-deprecation-guide.md
+     - OpenTelemetry:
+        - OTel shipping with FusionReactor: Getting-started/Tutorials/otel-shipping.md
+        - Migrating from a dual OTel + FR agent setup: Getting-started/Tutorials/otel-migration.md
   - INSTALLATION GUIDES:
      - Best Practices:
         - Overview: Best-Practices/Installation/installation-overview.md
@@ -561,6 +564,8 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - attr_list
   - md_in_html
