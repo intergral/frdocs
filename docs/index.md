@@ -67,7 +67,7 @@ hide:
     font-size: 0.75rem;
     margin-bottom: 10px;
     flex-grow: 1;
-    color: #555;
+    color: var(--md-default-fg-color--light);
 }
 
 .fr-step-action {
@@ -93,6 +93,14 @@ hide:
 .fr-opspilot {
     background: linear-gradient(135deg, #fff4f0 0%, #ffe0d6 100%);
     border-color: #FF4F00;
+}
+
+[data-md-color-scheme="slate"] .fr-opspilot {
+    background: linear-gradient(135deg, rgba(255,79,0,0.12) 0%, rgba(255,79,0,0.2) 100%);
+}
+
+[data-md-color-scheme="slate"] .fr-opspilot-box {
+    background: linear-gradient(135deg, rgba(255,79,0,0.12) 0%, rgba(255,79,0,0.2) 100%) !important;
 }
 
 @media (max-width: 600px) {
@@ -146,12 +154,12 @@ hide:
 
     <div style="padding: 20px; border-radius: 8px; border: 1px solid rgba(198,203,206,0.6); background: var(--md-default-bg-color, white);">
       <h3 style="margin-top: 0; font-size: 1rem;">What is FusionReactor?</h3>
-      <p style="font-size: 0.82rem; color: #555; margin: 0;">FusionReactor is an <strong>on-premise application performance monitoring (APM)</strong> agent for Java and ColdFusion applications. It installs directly on your server and gives you real-time visibility into requests, transactions, JDBC queries, memory, CPU, threads, and more, all without sending data to the cloud. The <strong>FusionReactor Agent</strong> is the core component; everything runs locally on your infrastructure, giving you full control over your data.</p>
+      <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); margin: 0;">FusionReactor is an <strong>on-premise application performance monitoring (APM)</strong> agent for Java and ColdFusion applications. It installs directly on your server and gives you real-time visibility into requests, transactions, JDBC queries, memory, CPU, threads, and more, all without sending data to the cloud. The <strong>FusionReactor Agent</strong> is the core component; everything runs locally on your infrastructure, giving you full control over your data.</p>
     </div>
 
-    <div style="padding: 20px; border-radius: 8px; border: 1px solid #FF4F00; background: linear-gradient(135deg, #fff4f0 0%, #ffe0d6 100%);">
+    <div class="fr-opspilot-box" style="padding: 20px; border-radius: 8px; border: 1px solid #FF4F00; background: linear-gradient(135deg, #fff4f0 0%, #ffe0d6 100%);">
       <h3 style="margin-top: 0; font-size: 1rem;">Need cloud observability?</h3>
-      <p style="font-size: 0.82rem; color: #555; margin: 0;">For full-stack observability including OpenTelemetry, cloud dashboards, alerting, log monitoring, and AI-powered insights, check out <strong><a href="https://docs.opspilot.com" style="color: #FF4F00;">OpsPilot</a></strong>, our cloud-native observability platform.</p>
+      <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); margin: 0;">For full-stack observability including OpenTelemetry, cloud dashboards, alerting, log monitoring, and AI-powered insights, check out <strong><a href="https://docs.opspilot.com" style="color: #FF4F00;">OpsPilot</a></strong>, our cloud-native observability platform.</p>
     </div>
 
   </div>
