@@ -25,7 +25,7 @@
 | New Feature | Add option to add query parameters to request metrics' route label/attribute                 |
 | Improvement | Update automatic installer (FRAM) to use correct debug library for Mac ARM64.                |
 
-## 2025.2.1 - 3rd feb. 2026
+## 2025.2.1 - 3rd Feb. 2026
 
 | Issue Type | Summary                                                                                         |
 |------------|-------------------------------------------------------------------------------------------------|
@@ -47,10 +47,10 @@
 | Improvement | Update the JRE bundled with FRAM.                                                                    |
 
 
-!!! Warning
+!!! warning
     If you are upgrading to **FusionReactor 2025.2** and are already using **OTel**, FusionReactor will now automatically use any existing configured endpoints. To ensure you continue receiving data in **FusionReactor Cloud** while using an OTel Collector, you must update your `collector.yaml` configuration file. Please refer to the [documentation linked here](https://docs.fusionreactor.io/Monitor-your-data/FR-Agent/Configuration/OTel-shipping-config/) for the required changes.
 
-## 2025.1.0 - 3rd March 2025
+## 2025.1.0 - 3rd Mar. 2025
 
 
 | Issue Type  | Summary                                                                                                |
@@ -281,7 +281,7 @@
 | FR8309 | Improvement | In web request details, service time has been renamed to API time |
 | FR8307 | Improvement | Included CFHTTP in the request API time |
 
-##8.7.5
+## 8.7.5
 | Key | Issue Type | Summary |
 | --- | --- | --- |
 | FR8301 | Improvement | Added the ability to preview Headers in the transaction history summary views via a settings page |
