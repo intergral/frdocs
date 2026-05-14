@@ -1,4 +1,4 @@
-# New UI FAQ
+﻿# New UI FAQ
 
 Frequently asked questions about finding features in the OpsPilot UI.
 

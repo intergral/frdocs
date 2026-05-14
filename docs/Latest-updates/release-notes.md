@@ -1,6 +1,12 @@
 ﻿
 # FusionReactor Agent Releases
 
+## 2026.1.1 - 6th May 2026
+
+| Issue Type  | Summary                                |
+|-------------|----------------------------------------|
+| Improvement | Reduce cardinality of request metrics. |
+
 ## 2026.1.0 - 20th Apr. 2026
 
 | Issue Type  | Summary                                                                                      |

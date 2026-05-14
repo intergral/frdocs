@@ -1,4 +1,4 @@
-# Servers
+﻿# Servers
 
 The Servers view provides a visual overview of all monitored servers, enabling quick identification of performance issues, health states, and environment status across your entire fleet.
 
