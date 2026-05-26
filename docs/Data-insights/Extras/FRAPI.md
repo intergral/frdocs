@@ -8,7 +8,7 @@ and web pages.
 
 !!! info "Learn more"
     [FusionReactor API JavaDoc](https://fusion-reactor.com/frapi/8_0_0/)    
-    [FusionReactor API JavaDoc 2026.1.2](./frapi)
+    [FusionReactor API JavaDoc 2026.1.2](../frapi)
 
 ## FRAPI Examples in ColdFusion
 
