@@ -7,7 +7,8 @@ FusionReactor functionality from directly within your application code
 and web pages.
 
 !!! info "Learn more"
-    [FusionReactor API JavaDoc](https://fusion-reactor.com/frapi/8_0_0/)
+    [FusionReactor API JavaDoc](https://fusion-reactor.com/frapi/8_0_0/)    
+    [FusionReactor API JavaDoc 2026.1.2](./frapi)
 
 ## FRAPI Examples in ColdFusion
 
@@ -302,6 +303,77 @@ The code:
     request.fusionreactor.reqdetails = request.fusionreactor.protocol & request.fusionreactor.host & ':' & request.fusionreactor.port & '/fusionreactor/findex.htm?p=reqDetails&id=' & request.fusionreactor.transactionId;
     writedump(request.fusionreactor);
 </cfscript>
+```
+
+
+### Transaction Surrogate
+
+Introduced in 2026.1.2, ITransactionSurrogate is a new interface that allows you to access more transaction details. IFusionRequestSurrogate extends this interface to provide the same insights.
+
+FRAPI has new methods to retrieve details:
+- `getClientID` to return the instance's FR client ID (this can change during runtime)
+- `getRunningTransactions` to return an array of running transactions (not just web requests)
+- `getRecentTransactions` to return an array of recent, finished transactions (not just web requests)
+
+Usage example:
+
+```cfm
+<cfset frapiClass = createObject("java", "com.intergral.fusionreactor.api.FRAPI")>
+<cfset frapi = frapiClass.getInstance()>
+
+<cfoutput>
+#frapi.getClientId()#
+</cfoutput>
+
+<hr>
+
+<cfset txnArray = frapi.getRecentTransactions()/>
+
+<cfloop index="i" from=1 to=#ArrayLen(txnArray)#>
+
+   <cfset txn = txnArray[i]>
+
+   <cfset masterTxn = txn.getMasterTransaction()>
+   <cfset parentTxn = txn.getParentTransaction()>
+   <cfset deepestActiveChild = txn.getDeepestActiveChild()>
+   <cfset directChildren = txn.getDirectChildren()>
+   <cfset trappedThrowable = txn.getTrappedThrowable()>
+
+   <cfoutput>
+	Description: #txn.getDescription()#<br/>
+	Secure Description: #txn.getSecureDescription()#<br/>
+	Application Name: #txn.getApplicationName()#<br/>
+	Transaction Name: #txn.getTransactionName()#<br/>
+	Flavor: #txn.getFlavor()#<br/>
+	Sub Flavor: #txn.getSubFlavor()#<br/>
+	Full Transaction ID: #txn.getFullTransactionId()#<br/>
+	Transaction ID: #txn.getTransactionId()#<br/>
+	Per-Flavor Transaction ID: #txn.getPerFlavorTransactionId()#<br/>
+	Start Time Millis: #txn.getStartTime()#<br/>
+	Start Time Nanos: #txn.getStartTimeNanos()#<br/>
+	End Time Millis: #txn.getEndTime()#<br/>
+	End Time Nanos: #txn.getEndTimeNanos()#<br/>
+	Duration Millis: #txn.getDuration()#<br/>
+	Duration Nanos: #txn.getDurationNanos()#<br/>
+	Properties Size: #txn.getProperties().size()#<br/>
+	Master Transaction Txn ID: #isNull(masterTxn) ? "no master transaction" : masterTxn.getTransactionId()#<br/>
+	Parent Transaction Txn ID: #isNull(parentTxn) ? "no parent transaction" : parentTxn.getTransactionId()#<br/>
+	Deepest Active Child Txn ID: #isNull(deepestActiveChild) ? "no deepest active child transaction" : deepestActiveChild.getTransactionId()#<br/>
+	Direct Children (count): #ArrayLen(directChildren)#<br/>
+	Has Children: #txn.hasChildren()#</br>
+	Is Master Transaction: #txn.isMasterTransaction()#<br/>
+	Status: #txn.getStatus()#<br/>
+	Thread ID: #txn.getThreadId()#<br/>
+	Thread Name: #txn.getThreadName()#<br/>
+	Is Finished: #txn.isFinished()#<br/>
+	Is In Error: #txn.isInError()#<br/>
+	Trapped Throwable: #isNull(trappedThrowable) ? "no trapped throwable" : trappedThrowable.getMessage()#<br/>
+	Trace ID: #txn.getTraceId()#<br/>
+	Span ID: #txn.getSpanId()#<br/>
+	Sampled State: #txn.getSampledState()#<br/>
+	<hr/>
+   </cfoutput>
+</cfloop>
 ```
 
 
