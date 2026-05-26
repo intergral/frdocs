@@ -5,7 +5,7 @@
 **Published: May 26, 2026**
 
 - Fixed issues with cfhttp tracking for Lucee 7
-- Exposes more transaction info within FRAPI (see [FRAPI docs](../Data-insights/Extras/FRAPI.md#transaction-surrogate)
+- Exposes more transaction info within FRAPI (see [FRAPI docs](../Data-insights/Extras/FRAPI.md#transaction-surrogate))
 - Exports Linux meminfo as `fr.system.memory.` metrics (`-Dfr.observability.metric.linux.system.memory.enabled=false` to disable)
 
 ## FusionReactor 2026.1.1 released
@@ -15,6 +15,7 @@
 Reduces the cardinality of the request metrics added in 2026.1.0. Some users experienced a substantial metric usage increase due to certain metric labels, these have been removed by default while keeping the metrics.   
 
 Removed labels:
+
 - `http.route` for `http.server.request.duration` metrics
 - `db.collection.name` and `db.namespace` for `db.client.operation.duration` metrics
 - `messaging.consumer.group.name`, `messaging.destination.name`, and `messaging.destination.partition.id` for messaging request metrics
