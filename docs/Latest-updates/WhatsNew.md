@@ -5,7 +5,7 @@
 **Published: May 26, 2026**
 
 - Fixed issues with cfhttp tracking for Lucee 7
-- Exposes more transaction info within FRAPI
+- Exposes more transaction info within FRAPI (see [FRAPI docs](../Data-insights/Extras/FRAPI.md#transaction-surrogate)
 - Exports Linux meminfo as `fr.system.memory.` metrics (`-Dfr.observability.metric.linux.system.memory.enabled=false` to disable)
 
 ## FusionReactor 2026.1.1 released
