@@ -146,6 +146,7 @@ Property | Default value| Version added | Description
 | `fr.observability.metric.cf.dbpool.enabled`                                           | `true`        | 2026.1.0      | If true, enables CF DB Pool metrics in cloud.                                                                                                                                                                                         |
 | `fr.observability.metric.names`                                                       | `fr`          | 2026.1.0      | Sets which metric name and recording strategy to take. `fr` (default) for unchanged (1 min avg recording), `otel` for different names and records last/latest value (where implemented/possible), `all`,`otel/fr`,`fr/otel` for both. |
 | `fr.observability.metric.capture_gc_cause`                                            | `false`       | 2026.1.0      | If true, and OTel metrics/names enabled, records cause of garbage collection on `jvm.gc.duration` metric as `jvm.gc.cause`                                                                                                            |
+| `fr.observability.metric.linux.system.memory.enabled`                                 | `true`        | 2026.1.2      | If true, exports Linux `/proc/meminfo` as metrics prefixed with `fr.system.memory.`                                                                                                                                                   |
 
 
 

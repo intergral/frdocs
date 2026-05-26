@@ -1,5 +1,13 @@
 ﻿# What's New in FusionReactor
 
+## FusionReactor 2026.1.2 released
+
+**Published: May 26, 2026**
+
+- Fixed issues with cfhttp tracking for Lucee 7
+- Exposes more transaction info within FRAPI
+- Exports Linux meminfo as `fr.system.memory.` metrics (`-Dfr.observability.metric.linux.system.memory.enabled=false` to disable)
+
 ## FusionReactor 2026.1.1 released
 
 **Published: May 6, 2026**

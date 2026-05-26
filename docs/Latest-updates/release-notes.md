@@ -1,6 +1,15 @@
 ﻿
 # FusionReactor Agent Releases
 
+
+## 2026.1.2 - 26th May 2026
+
+| Issue Type  | Summary                               |
+|-------------|---------------------------------------|
+| Bug         | Fix cfhttp tracking for Lucee 7       |
+| Improvement | Expose more transaction info in FRAPI |
+| Improvement | Export Linux meminfo as metrics       |
+
 ## 2026.1.1 - 6th May 2026
 
 | Issue Type  | Summary                                |
