@@ -1,5 +1,15 @@
 ﻿# What's New in FusionReactor
 
+## FusionReactor 2026.1.3 released
+
+**Published: June 29, 2026**
+
+- Exposes license and signal/data-export states in FRAPI via `getLicenseState()` and `getSignalState()` functions. See [FRAPI docs](../Data-insights/Extras/FRAPI.md) 
+- Improves UI cloud tunnel connection stability.
+- Fixes issues with instance name changes not being reflected in exported data (metrics etc.).
+- Makes config corruption less likely.
+- Persists log scraping offset, to config, less frequently. Use `-Dfr.observability.log.scrape.offsets.persist.rate=` to set the interval in milliseconds.
+
 ## FusionReactor 2026.1.2 released
 
 **Published: May 26, 2026**

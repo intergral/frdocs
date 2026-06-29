@@ -1,6 +1,15 @@
 ﻿
 # FusionReactor Agent Releases
 
+## 2026.1.3 - 29th Jun. 2026
+
+| Issue Type  | Summary                                                             |
+|-------------|---------------------------------------------------------------------|
+| Improvement | Expose license and data shipping state in FRAPI                     |
+| Bug         | Further increase the reliability of the UI tunnel connection.       |
+| Bug         | Ensure instance name config changes are reflected in exported data. |
+| Bug         | Decrease likelihood of config corruption on unplanned shutdowns.    |
+
 
 ## 2026.1.2 - 26th May 2026
 
