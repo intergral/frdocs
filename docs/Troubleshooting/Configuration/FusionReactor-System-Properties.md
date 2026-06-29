@@ -126,6 +126,7 @@ Property | Default value| Version added | Description
 `fr.observability.log.labels`|	Not defined|	9.0.0|A comma-separated key-value list of labels to add a maximum of 8 (by default) to logs. Format  `labelKey1:labelValue1,labelKey2:labelValue2,...`
 `fr.observability.log.scrape.path`	|Not defined	|9.1.0	|Set the path(s) for the log scraper. Format `/{directory}/*.log,/{directory}/*.txt`
 `fr.observability.log.send.level` | INFO | 12.1.0 | Sets the minimum log level to send/ship to cloud. Case-insensitive. Also available as an evironment variable `FR_OBSERVABILITY_LOG_SEND_LEVEL`. One of `ALL`, `FINEST`, `FINER`, `FINE`, `CONFIG`, `INFO`, `WARNING`, `SEVERE`, `OFF`.
+`fr.observability.log.scrape.offsets.persist.rate` | 30000 | 2026.1.3 | How often (ms) the log scraper persists file read offsets to reactor.conf |
 
 ## Observability Metrics
 
