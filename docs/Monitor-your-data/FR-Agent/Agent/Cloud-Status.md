@@ -40,8 +40,7 @@ provide immediate, accurate information to the Cloud and is the basis
 for real-time functionality like **Stack trace**, **Running
 Requests **etc.
 
-This channel is established between FusionReactor and FusionReactor
-Cloud when the instance starts.  FusionReactor tries to keep this
+This channel is established between FusionReactor and OpsPilot when the instance starts.  FusionReactor tries to keep this
 channel open as long as the instance is running, and will attempt to
 reconnect it if it becomes unavailable.
 
