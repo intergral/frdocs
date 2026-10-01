@@ -1,8 +1,8 @@
-# ColdFusion 2023 Update 25 prevents startup with FusionReactor on Windows
+# ColdFusion 2023 Update 25: Windows startup issue with Java agents
 
-After applying ColdFusion 2023 Update 25 on Windows, ColdFusion may fail to start while the FusionReactor Java agent is configured in `jvm.config`.
+Some Windows installations may fail to start after applying ColdFusion 2023 Update 25 when a Java agent, including FusionReactor, is configured. The reported issue concerns ColdFusion's startup environment and is not specific to FusionReactor. This page describes the symptoms and available workarounds.
 
-This is caused by a change in ColdFusion 2023 Update 25 and is not a defect in FusionReactor. Any product that loads the Java instrumentation library can trigger the same failure. We are working with Adobe towards a permanent fix.
+We have reported the issue to Adobe and will update this guidance as further public information becomes available.
 
 !!! info "Affected platforms"
     Only Windows installations are known to be affected. Linux and container installations are not currently known to be affected.
@@ -31,9 +31,7 @@ Removing the `-javaagent` and `-agentpath` arguments from `jvm.config` allows Co
 
 ## Cause
 
-At startup, ColdFusion builds a PATH for its own process. This is separate from the Windows system PATH and is used only by ColdFusion. It begins with the system PATH and then appends several ColdFusion directories, including the `bin` folder beneath the Java home that ColdFusion is configured to use.
-
-As of Update 25 on Windows, that process PATH is limited to 260 characters. On servers where the system PATH is already long, the appended entries are cut off before the end, so the Java `bin` folder is missing. The Java agent cannot then be loaded, and ColdFusion fails to start.
+Charlie Arehart's published investigation describes truncation of the PATH used by ColdFusion during startup. On affected installations, this can leave required Java libraries unavailable and prevent startup when a Java agent is configured.
 
 ## Workarounds
 
@@ -48,7 +46,7 @@ Two workarounds are available. Either should work, so choose whichever suits you
 
 ### Workaround 1: place the Java bin directory first in the system PATH
 
-Adobe has advised placing the Java `bin` directory at the very start of the system PATH. Adding it at the end has no effect, because the end of the PATH is the part that gets truncated.
+Adobe's published [Update 25 release notes](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/coldfusion-2023-release-update-25.html) describe this startup issue and recommend placing the configured JDK's `bin` directory first in the Windows system PATH. Adding it at the end has no effect.
 
 Keep the FusionReactor `-javaagent` argument in `jvm.config`, then:
 
@@ -85,14 +83,8 @@ This applies only to that command prompt window.
 3. Enter `path=xx` on a single line. If regedit warns about empty strings, click OK.
 4. Start the ColdFusion 2023 Application Server service.
 
-The same change can be made from an elevated command prompt:
-
-```
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\ColdFusion 2023 Application Server" /v Environment /t REG_MULTI_SZ /d "path=xx"
-```
-
 !!! note "Editing the registry"
-    Back up the registry key before making changes. Note that the command above overwrites any existing `Environment` value, so check for one first.
+    Back up the registry key before making changes.
 
 Full background and root cause analysis are available in Charlie's post, [Solving a new problem as of CF2023 update 25 that can cause CF to not start](https://www.carehart.org/blog/2026/9/29/solving_new_cf2023_update_25_startup_problem).
 
@@ -116,6 +108,6 @@ Once Adobe releases a fix, remove whichever workaround you applied.
 
 ## Status
 
-A permanent fix needs to come from Adobe. The issue is tracked under [CF-4234454](https://tracker.adobe.com/#/view/CF-4234454), and this page will be updated as the position changes.
+Adobe's [Update 25 release notes](https://guides.adobe.com/coldfusion/en/docs/install-and-configure-coldfusion/coldfusion-2023-release-update-25.html) are the primary source for the current position, and we will update this page as further public information becomes available.
 
 If you are affected and neither workaround resolves the problem, contact [support@fusion-reactor.com](mailto:support@fusion-reactor.com) with your ColdFusion version and update level, your FusionReactor version, and the output of `cfstart.bat` run from a command prompt.
