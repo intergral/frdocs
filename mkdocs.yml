@@ -133,6 +133,7 @@ nav:
            - Troubleshooting/Cloned-FusionReactor-Instances.md
            - Troubleshooting/Debugger-will-not-start-without-Glibc.md
            - Troubleshooting/Known-Issues/JVM-crash-JDK-11.md
+           - Troubleshooting/Known-Issues/CF2023-Update-25-Startup-Failure.md
            - Troubleshooting/Known-Issues/System-Metrics-unavailable-in-Locked-down-ColdFusion.md
            - Troubleshooting/Requests-from-Adobe-PMT-tracked-in-FusionReactor.md
            - Troubleshooting/Adding-FR-Error-Stack-Trace-On-CFCatch-CFOnError.md
