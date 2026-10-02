@@ -1,6 +1,6 @@
 # ColdFusion 2023 Update 25: Windows startup issue with Java agents
 
-Some Windows installations may fail to start after applying ColdFusion 2023 Update 25 when a Java agent, including FusionReactor, is configured. The reported issue concerns ColdFusion's startup environment and is not specific to FusionReactor. This page describes the symptoms and available workarounds.
+Some ColdFusion 2023 installations on Windows may fail to start after applying Update 25 when a Java agent, including FusionReactor, is configured. The reported issue concerns ColdFusion's startup environment and is not specific to FusionReactor. This page describes the symptoms and available workarounds.
 
 We have reported the issue to Adobe and will update this guidance as further public information becomes available.
 
@@ -50,23 +50,25 @@ Adobe's published [Update 25 release notes](https://guides.adobe.com/coldfusion/
 
 Keep the FusionReactor `-javaagent` argument in `jvm.config`, then:
 
-1. Note the `java.home` value in `jvm.config`, found in the same `bin` folder as `cfstart.bat`, for example `C:\Program Files\Java\jdk-17.0.6`.
+1. Note the `java.home` value in `jvm.config`, found in the same `bin` folder as `cfstart.bat`. The examples below use `C:\Program Files\Java\jdk-17.0.6`, so substitute your own path throughout.
 
 2. To test without changing the system, stop the ColdFusion service, then open a new Command Prompt as Administrator and run:
 
     ```
-    set "PATH=<java.home>\bin;%PATH%"
+    set "PATH=C:\Program Files\Java\jdk-17.0.6\bin;%PATH%"
     cd /d C:\ColdFusion2023\cfusion\bin
     cfstart.bat
     ```
 
-3. To apply the change permanently, go to **System Properties > Environment Variables > System variables > Path > New**, add `<java.home>\bin`, then use **Move Up** until it is the first entry in the list.
+3. To apply the change permanently, go to **System Properties > Environment Variables > System variables > Path > New**, add `C:\Program Files\Java\jdk-17.0.6\bin`, then use **Move Up** until it is the first entry in the list.
 
 4. Reboot the machine. The Windows service only picks up system PATH changes after a reboot. Then start the **ColdFusion 2023 Application Server** service.
 
 ### Workaround 2: set the PATH for the ColdFusion service only
 
-Charlie Arehart has published an alternative that changes the PATH for ColdFusion only and leaves the system PATH untouched. It sets the PATH that ColdFusion sees to a short placeholder string, so that ColdFusion's own appended directories fit within the limit. The value cannot be empty, as ColdFusion only appends its directories when it finds a non-empty PATH.
+This works differently to Workaround 1. Rather than moving the Java directory to the front so it survives truncation, it shortens the PATH that ColdFusion starts from, so that everything ColdFusion appends fits within the limit. That is why the value below is a short placeholder rather than a Java path.
+
+Charlie Arehart has published this alternative, which changes the PATH for ColdFusion only and leaves the system PATH untouched. The value cannot be empty, as ColdFusion only appends its directories when it finds a non-empty PATH.
 
 **When starting ColdFusion from the command line:**
 
@@ -102,7 +104,7 @@ For Workaround 2, each service has its own registry key named after that service
 
 Once Adobe releases a fix, remove whichever workaround you applied.
 
-**Workaround 1:** go to **System Properties > Environment Variables > System variables > Path**, select the `<java.home>\bin` entry you added, and remove it. Reboot the machine, then start the ColdFusion service.
+**Workaround 1:** go to **System Properties > Environment Variables > System variables > Path**, select the Java `bin` entry you added, and remove it. Reboot the machine, then start the ColdFusion service.
 
 **Workaround 2:** stop the ColdFusion service, open `regedit` and go to the service key, then delete the `Environment` value. If you added `path=xx` to an existing `Environment` value, remove only that line and leave the rest in place. Start the service again.
 
